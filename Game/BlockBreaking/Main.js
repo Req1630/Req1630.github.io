@@ -3,7 +3,7 @@ var canvas = document.getElementById("myCanvas");	// <Canvas>の要素への参�
 var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを保存.
 
 import CBall from './Ball.js';
-var ball = new CBall();
+var ball = new CBall(1,1,1,1,1);
 
 var ball_x = canvas.width / 2;
 var ball_y = canvas.height - 100;
