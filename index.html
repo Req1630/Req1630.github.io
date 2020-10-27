@@ -24,11 +24,13 @@
 	var s_y = canvas.height-30;
 	var s_speed = 2;
 	
-	function circleDraw()
+	function ballUpdate()
 	{
-		// 描画領域のクリア.
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		
+		s_x += s_speed;
+		s_y += s_speed;
+	}
+	function ballDraw()
+	{
 		// 円形の描画開始.
 		ctx.beginPath();
 		// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
@@ -37,8 +39,23 @@
 		ctx.fill();
 		// 円形の描画終了.
 		ctx.closePath();
-		s_x += s_speed;
-		s_y += s_speed;
+	}
+	// 更新関数.
+	function update()
+	{
+		ballUpdate();	// ボールの更新.
+	}
+	// 描画関数.
+	function draw()
+	{
+		// 描画領域のクリア.
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ballDraw();	// ボールの描画.
+	}
+	function main()
+	{
+		update();
+		draw();
 	}
 	
 	// 矩形の描画開始.
@@ -58,8 +75,8 @@
 	// 矩形の輪郭線の描画終了.
 	ctx.closePath();
 	
-	// 10ミリ秒おきに描画する.
-	setInterval(circleDraw,10);
+	// 10ミリ秒おきに更新する.
+	setInterval(main,10);
 </script>
 
 </body>
