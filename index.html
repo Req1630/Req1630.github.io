@@ -132,7 +132,7 @@
 				var b = bricks[c][r];
 				if (b.status == 1) {
 					if (ball_x > b.x && ball_x < b.x + brickWidth && ball_y > b.y && ball_y < b.y + brickHeight) {
-						dy = -dy;
+						ball_speed_y = -ball_speed_y;
 						b.status = 0;
 					}
 				}
