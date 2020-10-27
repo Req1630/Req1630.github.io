@@ -29,10 +29,10 @@
 	// ボールの更新.
 	function ballUpdate()
 	{
-		if( ball_x + ball_speed_x > canvas.width-ball_radius || ball_x + ball_speed_x < ball_radisu ){
+		if( ball_x + ball_speed_x > canvas.width-ball_radius || ball_x + ball_speed_x < ball_radius ){
 			ball_speed_x = -ball_speed_x;
 		}
-		if( ball_y + ball_speed_y > canvas.height-ball_radius || ball_y +ball_speed_y < ball_radisu ){
+		if( ball_y + ball_speed_y > canvas.height-ball_radius || ball_y +ball_speed_y < ball_radius ){
 			ball_speed_y = -ball_speed_y;
 		}
 		ball_x += ball_speed_x;
