@@ -1,6 +1,6 @@
-export class CBall
+export default class CBall
 {
-	// ƒRƒ“ƒXƒgƒ‰ƒNƒ^.
+	// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿.
 	constructor( x, y, s_x, s_y, r )
 	{
 		this.x		= x;
@@ -12,13 +12,13 @@ export class CBall
 
 	draw( ctx )
 	{
-		// ‰~Œ`‚Ì•`‰æŠJn.
+		// å††å½¢ã®æç”»é–‹å§‹.
 		ctx.beginPath();
-		// ‰~Œ`‚Æ‚µ‚Ä•`‰æ. arc(À•Wx,À•Wy,”¼Œa,ŠJnŠp“xƒ‰ƒWƒAƒ“,I—¹Šp“xƒ‰ƒWƒAƒ“,Œvü‚è‚©).
+		// å††å½¢ã¨ã—ã¦æç”». arc(åº§æ¨™x,åº§æ¨™y,åŠå¾„,é–‹å§‹è§’åº¦ãƒ©ã‚¸ã‚¢ãƒ³,çµ‚äº†è§’åº¦ãƒ©ã‚¸ã‚¢ãƒ³,æ™‚è¨ˆå‘¨ã‚Šã‹).
 		ctx.arc(ball_x, ball_y, ball_radius, 0, Math.PI * 2, false);
-		ctx.fillStyle = "green";	// F‚Ìw’è.
+		ctx.fillStyle = "green";	// è‰²ã®æŒ‡å®š.
 		ctx.fill();
-		// ‰~Œ`‚Ì•`‰æI—¹.
+		// å††å½¢ã®æç”»çµ‚äº†.
 		ctx.closePath();
 	}
 }
