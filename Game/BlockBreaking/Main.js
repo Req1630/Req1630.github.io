@@ -2,7 +2,7 @@
 var canvas = document.getElementById("myCanvas");	// <Canvas>の要素への参照を保存.
 var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを保存.
 
-import CBall from "/Ball.js";
+import CBall from "Game/BlockBreaking/Ball.js";
 
 var ball = new CBall;
 
