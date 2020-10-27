@@ -29,6 +29,7 @@
 	var paddle_width = 75;
 	var paddle_height = 10;
 	var paddle_x = (canvas.width-paddle_height)/2;
+	var paddle_y = canvas.height-paddle_height;
 	
 	var rightPressed = false;
 	var leftPressed = false;
@@ -65,7 +66,7 @@
 	{
 		// 矩形の輪郭線の描画開始.
 		ctx.beginPath();
-		ctx.rect(paddle_x, canvas.height-paddle_height, paddle_width, paddle_height);
+		ctx.rect(paddle_x, paddle_y, paddle_width, paddle_height);
 		ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
 		ctx.stroke();	// 輪郭線として指定.
 		// 矩形の輪郭線の描画終了.
@@ -82,7 +83,7 @@
 			ball_speed_y = -ball_speed_y;
 		} 
 		else if( ball_y + ball_speed_y > canvas.height-ball_radius ){
-			if(ball_x > paddle_x && x < paddle_x + paddle_width){
+			if( paddle_x <= ball_x  && ball_x <= paddle_x + paddle_width){
 				ball_speed_y = -ball_speed_y;
 			}
 			else
