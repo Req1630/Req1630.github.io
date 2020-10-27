@@ -157,8 +157,6 @@ function update() {
     paddleUpdate();
     ballUpdate();	// ボールの更新.
     brickColiision();
-    
-    ball.draw( ctx );
 }
 // 描画関数.
 function draw() {
@@ -168,6 +166,7 @@ function draw() {
     ballDraw();	// ボールの描画.
     brickDraw();
     drawScore();
+    ball.draw( ctx );
 }
 function main() {
     update();
