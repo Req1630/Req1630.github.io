@@ -2,11 +2,24 @@
 var canvas = document.getElementById("myCanvas");	// <Canvas>の要素への参照を保存.
 var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを保存.
 
+// ボール.
 import CBall from './Ball.js';
-var ball = new CBall(30, 30, 1, 1, 20 );
-
+var ball = new CBall(30, 30, 5, 5, 5 );
+// バー.
 import CPaddle from './Paddle.js';
 var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
+// ブロック.
+import CBlock from './Block.js';
+var blocks = [];
+
+for (var c = 0; c < 5; c++) {
+    blocks[c] = [];
+    for (var r = 0; r < 5; r++) {
+        var brickX = (c * (30 + 10)) + 30;
+        var brickY = (r * (30 + 10)) + 30;
+        blocks[c][r] = new CBlock( brickX, brickY, 30, 30, 1);
+    }
+}
 
 var rightPressed = false;
 var leftPressed = false;
@@ -48,58 +61,47 @@ function keyUpHandler(e) {
     }
 }
 
-function paddleUpdate() {
-    if (rightPressed && paddle_x < canvas.width - paddle_width) {
-        paddle_x += 7;
-    }
-    else if (leftPressed && paddle_x > 0) {
-        paddle_x -= 7;
-    }
-}
-
-function paddleDraw() {
-    // 矩形の輪郭線の描画開始.
-    ctx.beginPath();
-    ctx.rect(paddle_x, paddle_y, paddle_width, paddle_height);
-    ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
-    ctx.stroke();	// 輪郭線として指定.
-    // 矩形の輪郭線の描画終了.
-    ctx.closePath();
-};
-
 function brickColiision() {
-    for (var c = 0; c < brickColumnCount; c++) {
-        for (var r = 0; r < brickRowCount; r++) {
-            var b = bricks[c][r];
-            if (b.status == 1) {
-                if (ball.x > b.x && ball.x < b.x + brickWidth && 
-                    ball.y > b.y && ball.y < b.y + brickHeight) {
-                    ball.s_y = -ball.s_y;
-                    b.status = 0;
-                    score++;
-                    if (score == brickRowCount * brickColumnCount) {
-                        alert("YOU WIN, CONGRATULATIONS!");
-                        document.location.reload();
-                    }
+    for (var c = 0; c < 5; c++) {
+        for (var r = 0; r < 5; r++) {
+            var b = blocks[c][r];
+            if (b.hp <= 0) continue;
+            if (ball.x > b.x && ball.x < b.x + b.w && 
+                ball.y > b.y && ball.y < b.y + b.h) {
+                ball.s_y = -ball.s_y;
+                b.hp--;
+                score++;
+                if (score == brickRowCount * brickColumnCount) {
+                    alert("YOU WIN, CONGRATULATIONS!");
+                    document.location.reload();
                 }
             }
         }
     }
+    // for (var c = 0; c < brickColumnCount; c++) {
+    //     for (var r = 0; r < brickRowCount; r++) {
+    //         var b = bricks[c][r];
+    //         if (b.status == 1) {
+    //             if (ball.x > b.x && ball.x < b.x + brickWidth && 
+    //                 ball.y > b.y && ball.y < b.y + brickHeight) {
+    //                 ball.s_y = -ball.s_y;
+    //                 b.status = 0;
+    //                 score++;
+    //                 if (score == brickRowCount * brickColumnCount) {
+    //                     alert("YOU WIN, CONGRATULATIONS!");
+    //                     document.location.reload();
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 function brickDraw() {
-    for (var c = 0; c < brickColumnCount; c++) {
-        for (var r = 0; r < brickRowCount; r++) {
-            if (bricks[c][r].status == 0) continue;
-            var brickX = (c * (brickWidth + brickPadding)) + brickOffsetLeft;
-            var brickY = (r * (brickHeight + brickPadding)) + brickOffsetTop;
-            bricks[c][r].x = brickX;
-            bricks[c][r].y = brickY;
-            ctx.beginPath();
-            ctx.rect(brickX, brickY, brickWidth, brickHeight);
-            ctx.fillStyle = "#0095DD";
-            ctx.fill();
-            ctx.closePath();
+    for (var c = 0; c < 5; c++) {
+        for (var r = 0; r < 5; r++) {
+            var b = bricks[c][r];
+            b.draw( ctx );
         }
     }
 }

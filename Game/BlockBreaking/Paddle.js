@@ -3,11 +3,11 @@ export default class CPaddle
     // コンストラクタ.
 	constructor( x, y, w, h, s )
 	{
-		this.x	= x;
-        this.y	= y;
-		this.w	= w;
-		this.h	= h;
-		this.s	= s;
+		this.x	= x;    // 座標.
+        this.y	= y;    // 座標.
+		this.w	= w;    // 幅.
+		this.h	= h;    // 高さ.
+		this.s	= s;    // 移動速度.
     }
     update(canvas, {rightPressed,leftPressed}) 
     {

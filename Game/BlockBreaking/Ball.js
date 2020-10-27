@@ -3,11 +3,11 @@ export default class CBall
 	// コンストラクタ.
 	constructor( x, y, s_x, s_y, r )
 	{
-		this.x		= x;
-		this.y		= y;
-		this.s_x	= s_x;
-		this.s_y	= s_y;
-		this.r		= r;
+		this.x		= x;	// 座標.
+		this.y		= y;	// 座標.
+		this.s_x	= s_x;	// 移動速度.
+		this.s_y	= s_y;	// 移動速度.
+		this.r		= r;	// 半径.
 	}
 
 	update( canvas, paddle )
