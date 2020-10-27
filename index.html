@@ -78,8 +78,19 @@
 		if( ball_x + ball_speed_x > canvas.width-ball_radius || ball_x + ball_speed_x < ball_radius ){
 			ball_speed_x = -ball_speed_x;
 		}
-		if( ball_y + ball_speed_y > canvas.height-ball_radius || ball_y +ball_speed_y < ball_radius ){
+		if( ball_y +ball_speed_y < ball_radius ){
 			ball_speed_y = -ball_speed_y;
+		} 
+		else if( ball_y + ball_speed_y > canvas.height-ball_radius ){
+			if(ball_x > paddle_x && x < paddle_x + paddle_width){
+				ball_speed_y = -ball_speed_y;
+			}
+			else
+			{
+				alert("GAME OVER");
+				document.location.reload();
+				clearInterval(interval); // Needed for Chrome to end game
+			}
 		}
 		ball_x += ball_speed_x;
 		ball_y += ball_speed_y;
