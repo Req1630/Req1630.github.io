@@ -5,12 +5,6 @@ var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを
 import CBall from './Ball.js';
 var ball = new CBall(30, 30, 1, 1, 20 );
 
-var ball_x = canvas.width / 2;
-var ball_y = canvas.height - 100;
-var ball_speed_x = 2;
-var ball_speed_y = 2;
-var ball_radius = 10;
-
 var paddle_width = 75;
 var paddle_height = 10;
 var paddle_x = (canvas.width - paddle_height) / 2;
@@ -74,46 +68,14 @@ function paddleDraw() {
     ctx.closePath();
 };
 
-// ボールの更新.
-function ballUpdate() {
-    if (ball_x + ball_speed_x > canvas.width - ball_radius || ball_x + ball_speed_x < ball_radius) {
-        ball_speed_x = -ball_speed_x;
-    }
-    if (ball_y + ball_speed_y < ball_radius) {
-        ball_speed_y = -ball_speed_y;
-    }
-    else if (ball_y + ball_speed_y > canvas.height - ball_radius) {
-        if (paddle_x <= ball_x && ball_x <= paddle_x + paddle_width) {
-            ball_speed_y = -ball_speed_y;
-        }
-        else {
-            alert("GAME OVER");
-            document.location.reload();
-            clearInterval(interval); // Needed for Chrome to end game
-        }
-    }
-    ball_x += ball_speed_x;
-    ball_y += ball_speed_y;
-}
-// ボールの描画.
-function ballDraw() {
-    // 円形の描画開始.
-    ctx.beginPath();
-    // 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
-    ctx.arc(ball_x, ball_y, ball_radius, 0, Math.PI * 2, false);
-    ctx.fillStyle = "green";	// 色の指定.
-    ctx.fill();
-    // 円形の描画終了.
-    ctx.closePath();
-}
-
 function brickColiision() {
     for (var c = 0; c < brickColumnCount; c++) {
         for (var r = 0; r < brickRowCount; r++) {
             var b = bricks[c][r];
             if (b.status == 1) {
-                if (ball_x > b.x && ball_x < b.x + brickWidth && ball_y > b.y && ball_y < b.y + brickHeight) {
-                    ball_speed_y = -ball_speed_y;
+                if (ball.x > b.x && ball.x < b.x + brickWidth && 
+                    ball.y > b.y && ball.y < b.y + brickHeight) {
+                    ball.s_y = -ball.s_y;
                     b.status = 0;
                     score++;
                     if (score == brickRowCount * brickColumnCount) {
@@ -125,6 +87,7 @@ function brickColiision() {
         }
     }
 }
+
 function brickDraw() {
     for (var c = 0; c < brickColumnCount; c++) {
         for (var r = 0; r < brickRowCount; r++) {
@@ -155,8 +118,11 @@ function update() {
     document.addEventListener("keyup", keyUpHandler, false);
 
     paddleUpdate();
-    ballUpdate();	// ボールの更新.
-    ball.update( canvas,{ paddle_x, paddle_width } );
+    if( ball.update( canvas,{ paddle_x, paddle_width } ) == true ){
+        alert("GAME OVER");
+        document.location.reload();
+        clearInterval(interval); // Needed for Chrome to end game
+    }
     brickColiision();
 }
 // 描画関数.
@@ -164,7 +130,6 @@ function draw() {
     // 描画領域のクリア.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     paddleDraw();
-    ballDraw();	// ボールの描画.
     brickDraw();
     drawScore();
     ball.draw( ctx );
@@ -173,15 +138,6 @@ function main() {
     update();
     draw();
 }
-
-// 矩形の描画開始.
-ctx.beginPath();
-// 矩形として描画 rect(座標x,座標y,幅,高さ).
-ctx.rect(20, 40, 50, 50);
-ctx.fillStyle = "#FF0000";	// 色を指定.
-ctx.fill();
-// 矩形の描画終了.
-ctx.closePath();
 
 // 10ミリ秒おきに更新する.
 var interval = setInterval(main, 10);

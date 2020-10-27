@@ -29,10 +29,13 @@ export default class CBall
 			//	alert("GAME OVER");
 			//	document.location.reload();
 			//	clearInterval(interval); // Needed for Chrome to end game
+				return false;
 			}
 		}
 		this.x += this.s_x;
 		this.y += this.s_y;
+
+		return true;
 	}
 
 
