@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- https://developer.mozilla.org/ja/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript -->
     <!-- 文字コードを指定.-->
     <meta charset="utf-8" />
     <title>Gamedev Canvas Workshop</title>
@@ -19,6 +20,18 @@
 	var canvas = document.getElementById("myCanvas");	// <Canvas>の要素への参照を保存.
 	var ctx = canvas.getContext("2d");			// 2D描画用コンテキストを保存.
 	
+	function circleDraw()
+	{
+		// 円形の描画開始.
+		ctx.beginPath();
+		// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
+		ctx.arc(240, 160, 20, 0, Math.PI*2, false);
+		ctx.fillStyle = "green";	// 色の指定.
+		ctx.fill();
+		// 円形の描画終了.
+		ctx.closePath();
+	}
+	
 	// 矩形の描画開始.
 	ctx.beginPath();
 	// 矩形として描画 rect(座標x,座標y,幅,高さ).
@@ -28,14 +41,8 @@
 	// 矩形の描画終了.
 	ctx.closePath();
 	
-	// 円形の描画開始.
-	ctx.beginPath();
-	// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
-	ctx.arc(240, 160, 20, 0, Math.PI*2, false);
-	ctx.fillStyle = "green";	// 色の指定.
-	ctx.fill();
-	// 円形の描画終了.
-	ctx.closePath();
+	// 10ミリ秒おきに描画する.
+	setInterval(circleDraw,10);
 	
 	// 矩形の輪郭線の描画開始.
 	ctx.beginPath();
