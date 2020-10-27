@@ -1,9 +1,8 @@
-// JavaScript‚ÌƒR[ƒh‚ª‚±‚±‚É“ü‚è‚Ü‚·.
-var canvas = document.getElementById("myCanvas");	// <Canvas>‚Ì—v‘f‚Ö‚ÌQÆ‚ğ•Û‘¶.
-var ctx = canvas.getContext("2d");			        // 2D•`‰æ—pƒRƒ“ƒeƒLƒXƒg‚ğ•Û‘¶.
+// JavaScriptã®ã‚³ãƒ¼ãƒ‰ãŒã“ã“ã«å…¥ã‚Šã¾ã™.
+var canvas = document.getElementById("myCanvas");	// <Canvas>ã®è¦ç´ ã¸ã®å‚ç…§ã‚’ä¿å­˜.
+var ctx = canvas.getContext("2d");			        // 2Dæç”»ç”¨ã‚³ãƒ³ãƒ†ã‚­ã‚¹ãƒˆã‚’ä¿å­˜.
 
 import CBall from './Ball.js';
-
 var ball = new CBall();
 
 var ball_x = canvas.width / 2;
@@ -38,7 +37,7 @@ for (var c = 0; c < brickColumnCount; c++) {
     }
 }
 
-// ƒL[‚ğ‰Ÿ‚µ‚½‚Æ‚«‚Ìˆ—.
+// ã‚­ãƒ¼ã‚’æŠ¼ã—ãŸã¨ãã®å‡¦ç†.
 function keyDownHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
         rightPressed = true;
@@ -47,7 +46,7 @@ function keyDownHandler(e) {
         leftPressed = true;
     }
 }
-// ƒL[‚ğ˜b‚µ‚½‚Ìˆ—.
+// ã‚­ãƒ¼ã‚’è©±ã—ãŸæ™‚ã®å‡¦ç†.
 function keyUpHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
         rightPressed = false;
@@ -66,16 +65,16 @@ function paddleUpdate() {
     }
 }
 function paddleDraw() {
-    // ‹éŒ`‚Ì—ÖŠsü‚Ì•`‰æŠJn.
+    // çŸ©å½¢ã®è¼ªéƒ­ç·šã®æç”»é–‹å§‹.
     ctx.beginPath();
     ctx.rect(paddle_x, paddle_y, paddle_width, paddle_height);
     ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
-    ctx.stroke();	// —ÖŠsü‚Æ‚µ‚Äw’è.
-    // ‹éŒ`‚Ì—ÖŠsü‚Ì•`‰æI—¹.
+    ctx.stroke();	// è¼ªéƒ­ç·šã¨ã—ã¦æŒ‡å®š.
+    // çŸ©å½¢ã®è¼ªéƒ­ç·šã®æç”»çµ‚äº†.
     ctx.closePath();
 };
 
-// ƒ{[ƒ‹‚ÌXV.
+// ãƒœãƒ¼ãƒ«ã®æ›´æ–°.
 function ballUpdate() {
     if (ball_x + ball_speed_x > canvas.width - ball_radius || ball_x + ball_speed_x < ball_radius) {
         ball_speed_x = -ball_speed_x;
@@ -96,15 +95,15 @@ function ballUpdate() {
     ball_x += ball_speed_x;
     ball_y += ball_speed_y;
 }
-// ƒ{[ƒ‹‚Ì•`‰æ.
+// ãƒœãƒ¼ãƒ«ã®æç”».
 function ballDraw() {
-    // ‰~Œ`‚Ì•`‰æŠJn.
+    // å††å½¢ã®æç”»é–‹å§‹.
     ctx.beginPath();
-    // ‰~Œ`‚Æ‚µ‚Ä•`‰æ. arc(À•Wx,À•Wy,”¼Œa,ŠJnŠp“xƒ‰ƒWƒAƒ“,I—¹Šp“xƒ‰ƒWƒAƒ“,Œvü‚è‚©).
+    // å††å½¢ã¨ã—ã¦æç”». arc(åº§æ¨™x,åº§æ¨™y,åŠå¾„,é–‹å§‹è§’åº¦ãƒ©ã‚¸ã‚¢ãƒ³,çµ‚äº†è§’åº¦ãƒ©ã‚¸ã‚¢ãƒ³,æ™‚è¨ˆå‘¨ã‚Šã‹).
     ctx.arc(ball_x, ball_y, ball_radius, 0, Math.PI * 2, false);
-    ctx.fillStyle = "green";	// F‚Ìw’è.
+    ctx.fillStyle = "green";	// è‰²ã®æŒ‡å®š.
     ctx.fill();
-    // ‰~Œ`‚Ì•`‰æI—¹.
+    // å††å½¢ã®æç”»çµ‚äº†.
     ctx.closePath();
 }
 
@@ -149,22 +148,22 @@ function drawScore() {
     ctx.fillText("Score: " + score, 8, 20);
 }
 
-// XVŠÖ”.
+// æ›´æ–°é–¢æ•°.
 function update() {
-    // ƒCƒxƒ“ƒgƒŠƒXƒi[.
+    // ã‚¤ãƒ™ãƒ³ãƒˆãƒªã‚¹ãƒŠãƒ¼.
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
 
     paddleUpdate();
-    ballUpdate();	// ƒ{[ƒ‹‚ÌXV.
+    ballUpdate();	// ãƒœãƒ¼ãƒ«ã®æ›´æ–°.
     brickColiision();
 }
-// •`‰æŠÖ”.
+// æç”»é–¢æ•°.
 function draw() {
-    // •`‰æ—Ìˆæ‚ÌƒNƒŠƒA.
+    // æç”»é ˜åŸŸã®ã‚¯ãƒªã‚¢.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     paddleDraw();
-    ballDraw();	// ƒ{[ƒ‹‚Ì•`‰æ.
+    ballDraw();	// ãƒœãƒ¼ãƒ«ã®æç”».
     brickDraw();
     drawScore();
 }
@@ -173,14 +172,14 @@ function main() {
     draw();
 }
 
-// ‹éŒ`‚Ì•`‰æŠJn.
+// çŸ©å½¢ã®æç”»é–‹å§‹.
 ctx.beginPath();
-// ‹éŒ`‚Æ‚µ‚Ä•`‰æ rect(À•Wx,À•Wy,•,‚‚³).
+// çŸ©å½¢ã¨ã—ã¦æç”» rect(åº§æ¨™x,åº§æ¨™y,å¹…,é«˜ã•).
 ctx.rect(20, 40, 50, 50);
-ctx.fillStyle = "#FF0000";	// F‚ğw’è.
+ctx.fillStyle = "#FF0000";	// è‰²ã‚’æŒ‡å®š.
 ctx.fill();
-// ‹éŒ`‚Ì•`‰æI—¹.
+// çŸ©å½¢ã®æç”»çµ‚äº†.
 ctx.closePath();
 
-// 10ƒ~ƒŠ•b‚¨‚«‚ÉXV‚·‚é.
+// 10ãƒŸãƒªç§’ãŠãã«æ›´æ–°ã™ã‚‹.
 var interval = setInterval(main, 10);
