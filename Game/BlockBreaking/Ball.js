@@ -21,7 +21,6 @@ export default class CBall
 		this.x += this.s_x;
 		this.y += this.s_y;
 	}
-	}
 
 	// 描画関数.
 	draw( ctx )
