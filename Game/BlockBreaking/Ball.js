@@ -10,6 +10,19 @@ export default class CBall
 		this.r		= r;
 	}
 
+	update( canvas )
+	{
+		if (this.x + this.s_x > canvas.width - this.r || this.x + this.s_x < this.r) {
+			this.s_x = -this.s_x;
+		}
+		if (this.y + this.s_Y < this.r) {
+			this.s_y = -this.s_y;
+		}
+		this.x += this.s_x;
+		this.y += this.s_y;
+	}
+	}
+
 	// 描画関数.
 	draw( ctx )
 	{

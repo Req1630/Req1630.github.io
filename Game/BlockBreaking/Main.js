@@ -156,6 +156,7 @@ function update() {
 
     paddleUpdate();
     ballUpdate();	// ボールの更新.
+    ball.update( canvas );
     brickColiision();
 }
 // 描画関数.
