@@ -26,6 +26,52 @@
 	var ball_speed_y = 2;
 	var ball_radius = 10;
 	
+	var paddle_width = 75;
+	var paddle_height = 10;
+	var paddle_x = (canvas.width-paddle_heught)/2;
+	
+	var rightPressed = false;
+	var leftPressed = false;
+	
+	// キーを押したときの処理.
+	function keyDownHandler(e) {
+	    if(e.key == "Right" || e.key == "ArrowRight") {
+		rightPressed = true;
+	    }
+	    else if(e.key == "Left" || e.key == "ArrowLeft") {
+		leftPressed = true;
+	    }
+	}
+	// キーを話した時の処理.
+	function keyUpHandler(e) {
+	    if(e.key == "Right" || e.key == "ArrowRight") {
+		rightPressed = false;
+	    }
+	    else if(e.key == "Left" || e.key == "ArrowLeft") {
+		leftPressed = false;
+	    }
+	}
+	
+	function paddleUpdate()
+	{
+		if(rightPressed && paddle_x < canvas.width-paddle_width) {
+			paddle_x += 7;
+		}
+		else if(leftPressed && paddle_x > 0) {
+			paddle_x -= 7;
+		}
+	}
+	function paddleDraw()
+	{
+		// 矩形の輪郭線の描画開始.
+		ctx.beginPath();
+		ctx.rect(paddle_x, canvas.height-paddle_height, paddle_width, paddle_height);
+		ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+		ctx.stroke();	// 輪郭線として指定.
+		// 矩形の輪郭線の描画終了.
+		ctx.closePath();
+	};
+	
 	// ボールの更新.
 	function ballUpdate()
 	{
@@ -55,6 +101,11 @@
 	// 更新関数.
 	function update()
 	{
+		// イベントリスナー.
+		document.addEventListener("keydown", keyDownHandler, false);
+		document.addEventListener("keyup", keyUpHandler, false);
+		
+		paddleUpdate();
 		ballUpdate();	// ボールの更新.
 	}
 	// 描画関数.
@@ -77,14 +128,6 @@
 	ctx.fillStyle = "#FF0000";	// 色を指定.
 	ctx.fill();
 	// 矩形の描画終了.
-	ctx.closePath();
-
-	// 矩形の輪郭線の描画開始.
-	ctx.beginPath();
-	ctx.rect(160, 10, 100, 40);
-	ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
-	ctx.stroke();	// 輪郭線として指定.
-	// 矩形の輪郭線の描画終了.
 	ctx.closePath();
 	
 	// 10ミリ秒おきに更新する.
