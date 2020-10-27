@@ -46,7 +46,7 @@
 	for(var c=0; c<brickColumnCount; c++) {
 		bricks[c] = [];
 		for(var r=0; r<brickRowCount; r++) {
-			bricks[c][r] = { x: 0, y: 0 };
+			bricks[c][r] = { x: 0, y: 0, status: 1 };
 		}
 	}
 	
@@ -125,10 +125,25 @@
 		ctx.closePath();
 	}
 	
+	function brickColiision()
+	{
+		for(var c=0; c<brickColumnCount; c++) {
+			for(var r=0; r<brickRowCount; r++) {
+				var b = bricks[c][r];
+				if (b.status == 1) {
+					if (ball_x > b.x && ball_x < b.x + brickWidth && ball_y > b.y && ball_y < b.y + brickHeight) {
+						dy = -dy;
+						b.status = 0;
+					}
+				}
+			}
+		}
+	}
 	function brickDraw() 
 	{
 		for(var c=0; c<brickColumnCount; c++) {
 			for(var r=0; r<brickRowCount; r++) {
+				if (bricks[c][r].status == 0) continue;
 				var brickX = (c*(brickWidth+brickPadding))+brickOffsetLeft;
 				var brickY = (r*(brickHeight+brickPadding))+brickOffsetTop;
 				bricks[c][r].x = brickX;
