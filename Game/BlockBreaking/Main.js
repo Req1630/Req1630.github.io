@@ -12,9 +12,13 @@ var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 
 import CBlock from './Block.js';
 var blocks = [];
 
-for (var c = 0; c < 5; c++) {
+import CircleToBoxHit from './Collisions.js'
+
+var brickRowCount = 3;
+var brickColumnCount = 5;
+for (var c = 0; c < brickRowCount; c++) {
     blocks[c] = [];
-    for (var r = 0; r < 5; r++) {
+    for (var r = 0; r < brickColumnCount; r++) {
         var brickX = (c * (30 + 10)) + 30;
         var brickY = (r * (30 + 10)) + 30;
         blocks[c][r] = new CBlock( brickX, brickY, 30, 30, 1);
@@ -24,23 +28,7 @@ for (var c = 0; c < 5; c++) {
 var rightPressed = false;
 var leftPressed = false;
 
-var brickRowCount = 3;
-var brickColumnCount = 5;
-var brickWidth = 75;
-var brickHeight = 20;
-var brickPadding = 10;
-var brickOffsetTop = 30;
-var brickOffsetLeft = 30;
-var bricks = [];
-
 var score = 0;
-
-for (var c = 0; c < brickColumnCount; c++) {
-    bricks[c] = [];
-    for (var r = 0; r < brickRowCount; r++) {
-        bricks[c][r] = { x: 0, y: 0, status: 1 };
-    }
-}
 
 // キーを押したときの処理.
 function keyDownHandler(e) {
@@ -62,16 +50,17 @@ function keyUpHandler(e) {
 }
 
 function brickColiision() {
-    for (var c = 0; c < 5; c++) {
-        for (var r = 0; r < 5; r++) {
+    for (var c = 0; c < brickRowCount; c++) {
+        for (var r = 0; r < brickColumnCount; r++) {
             var b = blocks[c][r];
             if (b.hp <= 0) continue;
-            if (ball.x > b.x && ball.x < b.x + b.w && 
-                ball.y > b.y && ball.y < b.y + b.h) {
+            if( CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, b.r ) == true){
+            // if (ball.x > b.x && ball.x < b.x + b.w && 
+            //     ball.y > b.y && ball.y < b.y + b.h) {
                 ball.s_y = -ball.s_y;
                 b.hp--;
                 score++;
-                if (score == brickRowCount * brickColumnCount) {
+                if (score == brickRowCount*brickColumnCount) {
                     alert("YOU WIN, CONGRATULATIONS!");
                     document.location.reload();
                 }
@@ -81,8 +70,8 @@ function brickColiision() {
 }
 
 function brickDraw() {
-    for (var c = 0; c < 5; c++) {
-        for (var r = 0; r < 5; r++) {
+    for (var c = 0; c < brickRowCount; c++) {
+        for (var r = 0; r < brickColumnCount; r++) {
             var b = blocks[c][r];
             b.draw( ctx );
         }
@@ -113,6 +102,7 @@ function update() {
 function draw() {
     // 描画領域のクリア.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     paddle.draw( ctx );
     ball.draw( ctx );
     brickDraw();
