@@ -1,4 +1,4 @@
-class CBall
+export class CBall
 {
 	// コンストラクタ.
 	constructor( x, y, s_x, s_y, r )
