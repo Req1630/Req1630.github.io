@@ -5,10 +5,8 @@ var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを
 import CBall from './Ball.js';
 var ball = new CBall(30, 30, 1, 1, 20 );
 
-var paddle_width = 75;
-var paddle_height = 10;
-var paddle_x = (canvas.width - paddle_height) / 2;
-var paddle_y = canvas.height - paddle_height;
+import CPaddle from './Paddle.js';
+var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 75, 75, 10, 6 );
 
 var rightPressed = false;
 var leftPressed = false;
@@ -118,8 +116,8 @@ function update() {
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
 
-    paddleUpdate();
-    if( ball.update( canvas,{ paddle_x, paddle_width } ) == false ){
+    paddle.update( canvas, { rightPressed, leftPressed } );
+    if( ball.update( canvas, paddle ) == false ){
         alert("GAME OVER");
         document.location.reload();
         clearInterval(interval); // Needed for Chrome to end game
@@ -130,10 +128,10 @@ function update() {
 function draw() {
     // 描画領域のクリア.
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    paddleDraw();
+    paddle.draw( ctx );
+    ball.draw( ctx );
     brickDraw();
     drawScore();
-    ball.draw( ctx );
 }
 function main() {
     update();

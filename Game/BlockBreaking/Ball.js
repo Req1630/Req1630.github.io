@@ -10,7 +10,7 @@ export default class CBall
 		this.r		= r;
 	}
 
-	update( canvas, { paddle_x, paddle_width } )
+	update( canvas, paddle )
 	{
 		// 横の判定.
 		if (this.x + this.s_x > canvas.width - this.r || this.x + this.s_x < this.r) {
@@ -22,16 +22,14 @@ export default class CBall
 		}
 		// 下の判定.
 		if (this.y + this.s_y > canvas.height - this.r) {
-			if (paddle_x <= this.x && this.x <= paddle_x + paddle_width) {
+			// バーとの判定.
+			if (paddle.x <= this.x && this.x <= paddle.x + paddle.w) {
 				this.s_y = -this.s_y;
-			}
-			else {
-			//	alert("GAME OVER");
-			//	document.location.reload();
-			//	clearInterval(interval); // Needed for Chrome to end game
+			} else {
 				return false;
 			}
 		}
+		// 移動値の加算.
 		this.x += this.s_x;
 		this.y += this.s_y;
 
