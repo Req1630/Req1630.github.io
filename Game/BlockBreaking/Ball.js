@@ -10,17 +10,31 @@ export default class CBall
 		this.r		= r;
 	}
 
-	update( canvas )
+	update( canvas, { paddle_x, paddle_width } )
 	{
+		// 横の判定.
 		if (this.x + this.s_x > canvas.width - this.r || this.x + this.s_x < this.r) {
 			this.s_x = -this.s_x;
 		}
-		if (this.y + this.s_Y < this.r) {
+		// 上の判定.
+		if (this.y + this.s_y < this.r) {
 			this.s_y = -this.s_y;
+		}
+		// 下の判定.
+		if (this.y + this.s_y > canvas.height - this.r) {
+			if (paddle_x <= this.x && this.x <= paddle_x + paddle_width) {
+				this.s_y = -this.s_y;
+			}
+			else {
+			//	alert("GAME OVER");
+			//	document.location.reload();
+			//	clearInterval(interval); // Needed for Chrome to end game
+			}
 		}
 		this.x += this.s_x;
 		this.y += this.s_y;
 	}
+
 
 	// 描画関数.
 	draw( ctx )
