@@ -20,16 +20,22 @@
 	var canvas = document.getElementById("myCanvas");	// <Canvas>の要素への参照を保存.
 	var ctx = canvas.getContext("2d");			// 2D描画用コンテキストを保存.
 	
+	var s_x = canvas.width/2;
+	var s_y = canvas.height-30;
+	var s_speed = 2;
+	
 	function circleDraw()
 	{
 		// 円形の描画開始.
 		ctx.beginPath();
 		// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
-		ctx.arc(240, 160, 20, 0, Math.PI*2, false);
+		ctx.arc(s_x, s_y, 10, 0, Math.PI*2, false);
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fill();
 		// 円形の描画終了.
 		ctx.closePath();
+		s_x += s_speed;
+		s_y += s_speed;
 	}
 	
 	// 矩形の描画開始.
