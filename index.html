@@ -26,6 +26,9 @@
 	
 	function circleDraw()
 	{
+		// 描画領域のクリア.
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		
 		// 円形の描画開始.
 		ctx.beginPath();
 		// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
@@ -46,10 +49,7 @@
 	ctx.fill();
 	// 矩形の描画終了.
 	ctx.closePath();
-	
-	// 10ミリ秒おきに描画する.
-	setInterval(circleDraw,10);
-	
+
 	// 矩形の輪郭線の描画開始.
 	ctx.beginPath();
 	ctx.rect(160, 10, 100, 40);
@@ -57,6 +57,9 @@
 	ctx.stroke();	// 輪郭線として指定.
 	// 矩形の輪郭線の描画終了.
 	ctx.closePath();
+	
+	// 10ミリ秒おきに描画する.
+	setInterval(circleDraw,10);
 </script>
 
 </body>
