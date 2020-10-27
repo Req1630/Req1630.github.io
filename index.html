@@ -43,6 +43,8 @@
 	var brickOffsetLeft = 30;
 	var bricks = [];
 	
+	var score = 0;
+	
 	for(var c=0; c<brickColumnCount; c++) {
 		bricks[c] = [];
 		for(var r=0; r<brickRowCount; r++) {
@@ -134,6 +136,11 @@
 					if (ball_x > b.x && ball_x < b.x + brickWidth && ball_y > b.y && ball_y < b.y + brickHeight) {
 						ball_speed_y = -ball_speed_y;
 						b.status = 0;
+						score++;
+						if(score == brickRowCount*brickColumnCount) {
+							alert("YOU WIN, CONGRATULATIONS!");
+							document.location.reload();
+						}
 					}
 				}
 			}
@@ -157,6 +164,12 @@
 		}
 	}
 	
+	function drawScore() 
+	{
+		ctx.font = "16px Arial";
+		ctx.fillStyle = "#0095DD";
+		ctx.fillText("Score: "+score, 8, 20);
+	}
 	
 	// 更新関数.
 	function update()
@@ -177,6 +190,7 @@
 		paddleDraw();
 		ballDraw();	// ボールの描画.
 		brickDraw();
+		drawScore();
 	}
 	function main()
 	{
