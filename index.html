@@ -34,6 +34,22 @@
 	var rightPressed = false;
 	var leftPressed = false;
 	
+	var brickRowCount = 3;
+	var brickColumnCount = 5;
+	var brickWidth = 75;
+	var brickHeight = 20;
+	var brickPadding = 10;
+	var brickOffsetTop = 30;
+	var brickOffsetLeft = 30;
+	var bricks = [];
+	
+	for(var c=0; c<brickColumnCount; c++) {
+		bricks[c] = [];
+		for(var r=0; r<brickRowCount; r++) {
+			bricks[c][r] = { x: 0, y: 0 };
+		}
+	}
+	
 	// キーを押したときの処理.
 	function keyDownHandler(e) {
 	    if(e.key == "Right" || e.key == "ArrowRight") {
@@ -109,6 +125,23 @@
 		ctx.closePath();
 	}
 	
+	function brickDraw() 
+	{
+		for(var c=0; c<brickColumnCount; c++) {
+        	for(var r=0; r<brickRowCount; r++) {
+				var brickX = (c*(brickWidth+brickPadding))+brickOffsetLeft;
+				var brickY = (r*(brickHeight+brickPadding))+brickOffsetTop;
+            	bricks[c][r].x = 0;
+            	bricks[c][r].y = 0;
+            	ctx.beginPath();
+            	ctx.rect(0, 0, brickWidth, brickHeight);
+            	ctx.fillStyle = "#0095DD";
+            	ctx.fill();
+            	ctx.closePath();
+        	}
+    	}
+	}
+	
 	
 	// 更新関数.
 	function update()
@@ -127,6 +160,7 @@
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		paddleDraw();
 		ballDraw();	// ボールの描画.
+		brickDraw();
 	}
 	function main()
 	{
