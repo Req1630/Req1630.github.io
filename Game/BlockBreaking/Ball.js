@@ -29,7 +29,6 @@ export default class CBall
 			this.x, this.y, this.r );
 		switch(hitNo){
 			case 1:
-				this.s_x = -this.s_x;
 			case 2:
 				this.s_x = -this.s_x;
 				break;

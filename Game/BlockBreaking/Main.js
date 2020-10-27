@@ -58,7 +58,6 @@ function brickColiision() {
             if( hitNo <= 0 ) continue;
             switch(hitNo){
                 case 1:
-                    ball.s_x = -ball.s_x;
                 case 2:
                     ball.s_x = -ball.s_x;
                     break;
