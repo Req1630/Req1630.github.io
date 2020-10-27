@@ -10,6 +10,7 @@ export default class CBall
 		this.r		= r;
 	}
 
+	// 描画関数.
 	draw( ctx )
 	{
 		// 円形の描画開始.
