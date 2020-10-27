@@ -1,5 +1,5 @@
 
-function CircleToBoxHit(L, R, T, B, x, y, radius)
+export default function CircleToBoxHit(L, R, T, B, x, y, radius)
 {
     // 矩形の領域判定1.
     if(L - radius > x || R + radius < x || T - radius > y || B + radius < y){
