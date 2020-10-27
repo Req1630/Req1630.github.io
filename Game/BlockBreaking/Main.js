@@ -54,7 +54,7 @@ function brickColiision() {
         for (var r = 0; r < brickColumnCount; r++) {
             var b = blocks[c][r];
             if (b.hp <= 0) continue;
-            if( CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r ) == 5){
+            if( CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r ) >= 1){
                 ball.s_y = -ball.s_y;
                 b.hp--;
                 score++;
