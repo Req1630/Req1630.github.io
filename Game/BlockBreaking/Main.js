@@ -58,6 +58,7 @@ function paddleUpdate() {
         paddle_x -= 7;
     }
 }
+
 function paddleDraw() {
     // 矩形の輪郭線の描画開始.
     ctx.beginPath();
@@ -118,7 +119,7 @@ function update() {
     document.addEventListener("keyup", keyUpHandler, false);
 
     paddleUpdate();
-    if( ball.update( canvas,{ paddle_x, paddle_width } ) == true ){
+    if( ball.update( canvas,{ paddle_x, paddle_width } ) == false ){
         alert("GAME OVER");
         document.location.reload();
         clearInterval(interval); // Needed for Chrome to end game
