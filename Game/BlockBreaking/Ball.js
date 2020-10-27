@@ -1,3 +1,5 @@
+import CircleToBoxHit from './Collisions.js'
+
 export default class CBall
 {
 	// コンストラクタ.
@@ -20,14 +22,30 @@ export default class CBall
 		if (this.y + this.s_y < this.r) {
 			this.s_y = -this.s_y;
 		}
+
+		var hitNo = CircleToBoxHit( 
+			paddle.x, paddle.x + paddle.w, 
+			paddle.y, paddle.y + paddle.h,
+			this.x, this.y, this.r );
+		switch(hitNo){
+			case 1:
+				this.s_x = -this.s_x;
+			case 2:
+				this.s_x = -this.s_x;
+				break;
+			case 3:
+			case 4:
+				this.s_y = -this.s_y;
+				break;
+			case 5:
+				this.s_x = -this.s_x;
+				this.s_y = -this.s_y;
+				break;
+		}
+
 		// 下の判定.
 		if (this.y + this.s_y > canvas.height - this.r) {
-			// バーとの判定.
-			if (paddle.x <= this.x && this.x <= paddle.x + paddle.w) {
-				this.s_y = -this.s_y;
-			} else {
-				return false;
-			}
+			return false;
 		}
 		// 移動値の加算.
 		this.x += this.s_x;
