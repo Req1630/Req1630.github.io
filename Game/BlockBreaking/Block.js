@@ -8,12 +8,11 @@ export default class CBlock
 		this.w	= w;    // 幅.
         this.h	= h;    // 高さ.
         this.hp = hp;   // 体力.
-        this.isDips = true;
     }
 
     draw( ctx )
     {
-        if( this.isDips == false ) return;
+        if( this.hp <= 0 ) return;
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
         ctx.fillStyle = "#0095DD";
