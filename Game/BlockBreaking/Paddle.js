@@ -9,12 +9,12 @@ export default class CPaddle
 		this.h	= h;
 		this.s	= s;
     }
-    update(canvas, {r,l}) 
+    update(canvas, {rightPressed,leftPressed}) 
     {
-        if (r && this.x < canvas.width - this.w) {
+        if (rightPressed && this.x < canvas.width - this.w) {
             this.x += this.s;
         }
-        if (l && this.x > 0) {
+        if (leftPressed && this.x > 0) {
             this.x -= this.s;
         }
     }

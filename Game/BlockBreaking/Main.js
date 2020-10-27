@@ -6,7 +6,7 @@ import CBall from './Ball.js';
 var ball = new CBall(30, 30, 1, 1, 20 );
 
 import CPaddle from './Paddle.js';
-var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 75, 75, 10, 6 );
+var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
 
 var rightPressed = false;
 var leftPressed = false;
