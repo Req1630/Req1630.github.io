@@ -54,14 +54,28 @@ function brickColiision() {
         for (var r = 0; r < brickColumnCount; r++) {
             var b = blocks[c][r];
             if (b.hp <= 0) continue;
-            if( CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r ) >= 1){
-                ball.s_y = -ball.s_y;
-                b.hp--;
-                score++;
-                if (score == brickRowCount*brickColumnCount) {
-                    alert("YOU WIN, CONGRATULATIONS!");
-                    document.location.reload();
-                }
+            var hitNo = CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r );
+            if( hitNo <= 0 ) continue;
+            switch(hitNo){
+                case 1:
+                    this.s_x = -this.s_x;
+                case 2:
+                    this.s_x = -this.s_x;
+                    break;
+                case 3:
+                case 4:
+                    this.s_y = -this.s_y;
+                    break;
+                case 5:
+                    this.s_x = -this.s_x;
+                    this.s_y = -this.s_y;
+                    break;
+            }
+            b.hp--;
+            score++;
+            if (score == brickRowCount*brickColumnCount) {
+                alert("YOU WIN, CONGRATULATIONS!");
+                document.location.reload();
             }
         }
     }
