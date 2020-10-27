@@ -4,7 +4,7 @@ var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを
 
 // ボール.
 import CBall from './Ball.js';
-var ball = new CBall(30, 30, 5, 5, 5 );
+var ball = new CBall(30, 30, 2, 2, 5 );
 // バー.
 import CPaddle from './Paddle.js';
 var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
@@ -78,29 +78,12 @@ function brickColiision() {
             }
         }
     }
-    // for (var c = 0; c < brickColumnCount; c++) {
-    //     for (var r = 0; r < brickRowCount; r++) {
-    //         var b = bricks[c][r];
-    //         if (b.status == 1) {
-    //             if (ball.x > b.x && ball.x < b.x + brickWidth && 
-    //                 ball.y > b.y && ball.y < b.y + brickHeight) {
-    //                 ball.s_y = -ball.s_y;
-    //                 b.status = 0;
-    //                 score++;
-    //                 if (score == brickRowCount * brickColumnCount) {
-    //                     alert("YOU WIN, CONGRATULATIONS!");
-    //                     document.location.reload();
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
 }
 
 function brickDraw() {
     for (var c = 0; c < 5; c++) {
         for (var r = 0; r < 5; r++) {
-            var b = bricks[c][r];
+            var b = blocks[c][r];
             b.draw( ctx );
         }
     }
