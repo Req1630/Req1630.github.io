@@ -16,7 +16,7 @@ export default class CBall
 		// 円形の描画開始.
 		ctx.beginPath();
 		// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
-		ctx.arc(ball_x, ball_y, ball_radius, 0, Math.PI * 2, false);
+		ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fill();
 		// 円形の描画終了.
