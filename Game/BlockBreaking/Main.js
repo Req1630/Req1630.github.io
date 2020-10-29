@@ -62,11 +62,12 @@ function brickColiision() {
                 case 3:
                 case 4:
                 case 5:
-                    // 左側.
+                    // 横側.
                     if( ball.x > b.x || ball.x < b.x+b.w ){
                         ball.s_x = -ball.s_x;
                     }
-                    // 上側.
+                    else
+                    // 縦側.
                     if( ball.y > b.y ||  ball.y < b.y+b.h ){
                         ball.s_y = -ball.s_y;
                     }
