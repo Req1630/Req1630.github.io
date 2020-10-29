@@ -59,26 +59,14 @@ function brickColiision() {
             switch(hitNo){
                 case 5:
                     // 左側.
-                    if( ball.x > b.x ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    else
-                    // 右側.
-                    if( ball.x < b.x+b.w ){
+                    if( ball.x > b.x || ball.x < b.x+b.w ){
                         ball.s_x = -ball.s_x;
                     }
                     else
                     // 上側.
-                    if( ball.y > b.y ){
+                    if( ball.y > b.y ||  ball.y < b.y+b.h ){
                         ball.s_y = -ball.s_y;
                     }
-                    else
-                    // 下側.
-                    if( ball.y < b.y+b.h ){
-                        ball.s_y = -ball.s_y;
-                    }                   
-                    
-                    
                     break;
             }
             b.hp--;
