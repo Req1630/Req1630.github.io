@@ -9,24 +9,10 @@ var ball = new CBall(30, 30, 2, 2, 5 );
 import CPaddle from './Paddle.js';
 var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
 // ブロック.
-import CBlock from './Block.js';
-var blocks = [];
-
 import CBlocks from './Block.js';
-var bloc = new ();
+var blocks = new CBlocks( 50, 20, 2, 20, 20, 20, 20, 10 );
 
 import CircleToBoxHit from './Collisions.js'
-
-var brickRowCount = 3;
-var brickColumnCount = 5;
-for (var c = 0; c < brickRowCount; c++) {
-    blocks[c] = [];
-    for (var r = 0; r < brickColumnCount; r++) {
-        var brickX = (c * (30 + 10)) + 30;
-        var brickY = (r * (30 + 10)) + 30;
-        blocks[c][r] = new CBlock( brickX, brickY, 30, 30, 1);
-    }
-}
 
 var rightPressed = false;
 var leftPressed = false;
@@ -52,66 +38,6 @@ function keyUpHandler(e) {
     }
 }
 
-function brickColiision() {
-    for (var c = 0; c < brickRowCount; c++) {
-        for (var r = 0; r < brickColumnCount; r++) {
-            var b = blocks[c][r];
-            if (b.hp <= 0) continue;
-            var hitNo = CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r );
-            if( hitNo <= 0 ) continue;
-            switch(hitNo){
-                case 3:
-                case 2:
-                case 1:
-                     // 横側.
-                    if( ball.x > b.x ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    else
-                    if( ball.x < b.x+b.w ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    break;
-                case 4:
-                    // 縦側.
-                    if( ball.y < b.y ){
-                       ball.s_y = -ball.s_y;
-                    }
-                    else
-                    if( ball.y > b.y+b.h ){
-                        ball.s_y = -ball.s_y;
-                    }
-                    else
-                    // 横側.
-                    if( ball.x > b.x ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    else
-                    if( ball.x < b.x+b.w ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    
-                    break;
-            }
-            b.hp--;
-            score++;
-            if (score == brickRowCount*brickColumnCount) {
-                alert("YOU WIN, CONGRATULATIONS!");
-                document.location.reload();
-            }
-        }
-    }
-}
-
-function brickDraw() {
-    for (var c = 0; c < brickRowCount; c++) {
-        for (var r = 0; r < brickColumnCount; r++) {
-            var b = blocks[c][r];
-            b.draw( ctx );
-        }
-    }
-}
-
 function drawScore() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
@@ -130,7 +56,7 @@ function update() {
         document.location.reload();
         clearInterval(interval); // Needed for Chrome to end game
     }
-    brickColiision();
+    blocks.collision( ball, score );
 }
 // 描画関数.
 function draw() {
@@ -139,7 +65,7 @@ function draw() {
 
     paddle.draw( ctx );
     ball.draw( ctx );
-    brickDraw();
+    blocks.draw( ctx );
     drawScore();
 }
 function main() {
