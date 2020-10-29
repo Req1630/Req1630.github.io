@@ -10,7 +10,7 @@ import CPaddle from './Paddle.js';
 var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
 // ブロック.
 import CBlocks from './Block.js';
-var blocks = new CBlocks( 50, 20, 2, 7, 10, 30, 20, 10 );
+var blocks = new CBlocks( 50, 20, 2, 7, , 30, 20, 10 );
 blocks.init();
 
 var rightPressed = false;
