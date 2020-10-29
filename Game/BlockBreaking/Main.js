@@ -65,28 +65,28 @@ function brickColiision() {
                     // 横側.
                     if( ball.x > b.x ){
                         ball.s_x = -ball.s_x;
-                        if( ball.y > b.y ){
+                        if( ball.y < b.y ){
                            ball.s_y = -ball.s_y;
                         }
                         else
-                        if( ball.y < b.y+b.h ){
+                        if( ball.y > b.y+b.h ){
                             ball.s_y = -ball.s_y;
                         }
                     } 
                     else
                     if( ball.x < b.x+b.w ){
                         ball.s_x = -ball.s_x;
-                        if( ball.y > b.y ){
+                        if( ball.y < b.y ){
                            ball.s_y = -ball.s_y;
                         }
                         else
-                        if( ball.y < b.y+b.h ){
+                        if( ball.y > b.y+b.h ){
                             ball.s_y = -ball.s_y;
                         }
                     }
                     else
                     // 縦側.
-                    if( ball.y > b.y ){
+                    if( ball.y < b.y ){
                        ball.s_y = -ball.s_y;
                         if( ball.x > b.x ){
                             ball.s_x = -ball.s_x;
@@ -97,7 +97,7 @@ function brickColiision() {
                         }
                     }
                     else
-                    if( ball.y < b.y+b.h ){
+                    if( ball.y > b.y+b.h ){
                         ball.s_y = -ball.s_y;
                          if( ball.x > b.x ){
                             ball.s_x = -ball.s_x;
