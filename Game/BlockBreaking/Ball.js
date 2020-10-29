@@ -10,10 +10,21 @@ export default class CBall
 		this.s_x	= s_x;	// 移動速度.
 		this.s_y	= s_y;	// 移動速度.
 		this.r		= r;	// 半径.
+		this.isMove	= false;
+		this.angel	= 0.0;
 	}
 
+	initMove()
+	{
+		if( this.isMove == true) return true;
+		
+		
+		
+		return false;
+	}
 	update( canvas, paddle )
 	{
+		if( initMove() == false) return;
 		// 横の判定.
 		if (this.x + this.s_x > canvas.width - this.r || this.x + this.s_x < this.r) {
 			this.s_x = -this.s_x;
@@ -83,6 +94,14 @@ export default class CBall
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fill();
 		// 円形の描画終了.
+		ctx.closePath();
+		
+		ctx.beginPath();
+		ctx.moveTo(this.x,this.y);
+		ctx.lineTo(this.x+10,this.y+10);
+		ctx.lineTo(this.y-10,this.y+10);
+		ctx.fillStyle = "green";	// 色の指定.
+		ctx.fill();
 		ctx.closePath();
 	}
 }
