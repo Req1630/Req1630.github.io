@@ -58,6 +58,7 @@ function brickColiision() {
             if( hitNo <= 0 ) continue;
             switch(hitNo){
                 case 2:
+                case 1:
                      // 横側.
                     if( ball.x > b.x ){
                         ball.s_x = -ball.s_x;
@@ -66,9 +67,9 @@ function brickColiision() {
                     if( ball.x < b.x+b.w ){
                         ball.s_x = -ball.s_x;
                     }
-                case 1:
                     break;
                 case 4:
+                case 3:
                     // 縦側.
                     if( ball.y < b.y ){
                        ball.s_y = -ball.s_y;
@@ -77,7 +78,6 @@ function brickColiision() {
                     if( ball.y > b.y+b.h ){
                         ball.s_y = -ball.s_y;
                     }
-                case 3:
                     break;
                 case 5:
                     // 横側.
