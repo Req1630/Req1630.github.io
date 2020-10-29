@@ -42,8 +42,8 @@ export default class CBlocks
 		for (var c = 0; c < this.w_count; c++) {
 			this.blocks[c] = [];
 			for (var r = 0; r < this.h_count; r++) {
-				var b_posX = (c * (b.w + this.space)) + this.offset_top;
-				var b_posY = (r * (b.y + this.space)) + this.offset_left;
+				var b_posX = (c * (this.w + this.space)) + this.offset_top;
+				var b_posY = (r * (this.y + this.space)) + this.offset_left;
 				this.blocks[c][r] = new CBlock( brickX, brickY, this.w, this.h, this.hp);
 			}
 		}
