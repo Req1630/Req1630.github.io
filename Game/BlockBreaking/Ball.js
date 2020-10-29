@@ -109,10 +109,10 @@ export default class CBall
 		ctx.closePath();
 		
 		ctx.beginPath();
+		ctx.rotate(this.angel);
 		ctx.moveTo(this.x,this.y);
 		ctx.lineTo(this.x+10,this.y+10);
 		ctx.lineTo(this.y-10,this.y+10);
-		ctx.rotate(this.angel);
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fill();
 		ctx.closePath();
