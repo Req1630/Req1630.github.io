@@ -24,7 +24,7 @@ export default class CBall
 	}
 	update( canvas, paddle )
 	{
-		if( initMove() == false) return true;
+		if( this.initMove() == false) return true;
 		// 横の判定.
 		if (this.x + this.s_x > canvas.width - this.r || this.x + this.s_x < this.r) {
 			this.s_x = -this.s_x;
