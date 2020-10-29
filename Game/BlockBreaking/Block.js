@@ -35,12 +35,12 @@ export default class CBlocks
 		this.offset_top		= offset_top;
 		this.offset_left	= offset_left;
 		this.space			= space;
-		CBlock blocks		= [w_count];
+		this.blocks			= [];
     }
 	init()
 	{
 		for (var c = 0; c < this.w_count; c++) {
-//			blocks[c] = [];
+			blocks[c] = [];
 			for (var r = 0; r < this.h_count; r++) {
 				const var b_posX = (c * (b.w + this.space)) + this.offset_top;
 				const var b_posY = (r * (b.y + this.space)) + this.offset_left;
