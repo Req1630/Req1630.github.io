@@ -43,7 +43,7 @@ export default class CBlocks
 			this.blocks[c] = [];
 			for (var r = 0; r < this.h_count; r++) {
 				var b_posX = (c * (this.w + this.space)) + this.offset_top;
-				var b_posY = (r * (this. + this.space)) + this.offset_left;
+				var b_posY = (r * (this.h + this.space)) + this.offset_left;
 				this.blocks[c][r] = new CBlock( b_posX, b_posY, this.w, this.h, this.hp);
 			}
 		}
