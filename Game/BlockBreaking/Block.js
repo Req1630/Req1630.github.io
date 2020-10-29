@@ -1,4 +1,4 @@
-export default class CBlock
+class CBlock
 {
     // コンストラクタ.
 	constructor( x, y, w, h, hp )
