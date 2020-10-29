@@ -12,6 +12,9 @@ var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 
 import CBlock from './Block.js';
 var blocks = [];
 
+import CBlocks from './Block.js';
+var bloc = new ();
+
 import CircleToBoxHit from './Collisions.js'
 
 var brickRowCount = 3;
