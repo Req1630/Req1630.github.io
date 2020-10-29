@@ -11,8 +11,7 @@ var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 
 // ブロック.
 import CBlocks from './Block.js';
 var blocks = new CBlocks( 50, 20, 2, 20, 20, 20, 20, 10 );
-
-import CircleToBoxHit from './Collisions.js'
+blocks.init();
 
 var rightPressed = false;
 var leftPressed = false;
