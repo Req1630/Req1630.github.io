@@ -35,7 +35,7 @@ export default class CBlocks
 		this.offset_top		= offset_top;
 		this.offset_left	= offset_left;
 		this.space			= space;
-		CBlock blocks		= [w_count][h_count];
+		CBlock blocks		= [w_count];
     }
 	init()
 	{
