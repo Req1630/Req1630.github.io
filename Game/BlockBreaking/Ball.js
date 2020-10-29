@@ -109,12 +109,13 @@ export default class CBall
 		ctx.closePath();
 		
 		ctx.beginPath();
-		//回転の中心を中央に移動
-		ctx.rect(this.x, this.y, 10, 20);
+		ctx.save();
 		ctx.translate(parseInt(10 / 2), parseInt(20 / 2)); 
 		ctx.rotate(this.angel);
+		ctx.translate(-parseInt(10 / 2), -parseInt(20 / 2)); 
 		ctx.fillStyle = "green";	// 色の指定.
-		ctx.fillRect();
+		ctx.fillRect(this.x, this.y, 10, 20);
+		ctx.restore();
 		ctx.closePath();
 	}
 }
