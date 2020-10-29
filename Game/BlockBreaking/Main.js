@@ -2,12 +2,12 @@
 var canvas = document.getElementById("myCanvas");	// <Canvas>の要素への参照を保存.
 var ctx = canvas.getContext("2d");			        // 2D描画用コンテキストを保存.
 
-// ボール.
-import CBall from './Ball.js';
-var ball = new CBall(30, 30, 2, 2, 5 );
 // バー.
 import CPaddle from './Paddle.js';
 var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
+// ボール.
+import CBall from './Ball.js';
+var ball = new CBall((canvas.width - 75) / 2, canvas.height - 15, 1, 1, 5 );
 // ブロック.
 import CBlocks from './Block.js';
 var blocks = new CBlocks( 50, 20, 2, 7, 5, 30, 20, 10 );
