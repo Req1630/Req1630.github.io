@@ -57,17 +57,27 @@ function brickColiision() {
             var hitNo = CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r );
             if( hitNo <= 0 ) continue;
             switch(hitNo){
-                case 1:
-                case 2:
-                    ball.s_x = -ball.s_x;
-                    break;
-                case 3:
-                case 4:
-                    ball.s_y = -ball.s_y;
-                    break;
                 case 5:
-                    ball.s_x = -ball.s_x;
-                    ball.s_y = -ball.s_y;
+                    // 左側.
+                    if( ball.x > b.x ){
+                        ball.s_x = -ball.s_x;
+                    }
+                    else
+                    // 上側.
+                    if( ball.y > b.y ){
+                        ball.s_x = -ball.s_x;
+                    }
+                    // 右側.
+                    if( ball.x < b.x+b.w ){
+                        ball.s_y = -ball.s_y;
+                    }
+                    else
+                    // 下側.
+                    if( ball.y < b.y+b.h ){
+                        ball.s_y = -ball.s_y;
+                    }
+                    
+                    
                     break;
             }
             b.hp--;
