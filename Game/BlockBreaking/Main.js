@@ -70,15 +70,6 @@ function brickColiision() {
                     }
                     break;
                 case 4:
-                    // 横側.
-                    if( ball.x > b.x ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    else
-                    if( ball.x < b.x+b.w ){
-                        ball.s_x = -ball.s_x;
-                    }
-                    else
                     // 縦側.
                     if( ball.y < b.y ){
                        ball.s_y = -ball.s_y;
@@ -87,6 +78,16 @@ function brickColiision() {
                     if( ball.y > b.y+b.h ){
                         ball.s_y = -ball.s_y;
                     }
+                    else
+                    // 横側.
+                    if( ball.x > b.x ){
+                        ball.s_x = -ball.s_x;
+                    }
+                    else
+                    if( ball.x < b.x+b.w ){
+                        ball.s_x = -ball.s_x;
+                    }
+                    
                     break;
             }
             b.hp--;
