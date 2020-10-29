@@ -108,7 +108,6 @@ export default class CBall
 		// 円形の描画終了.
 		ctx.closePath();
 		
-		ctx.save();
 		ctx.beginPath();
 		//回転の中心を中央に移動
 		ctx.rect(this.x, this.y, 10, 20);
@@ -117,6 +116,5 @@ export default class CBall
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fill();
 		ctx.closePath();
-		ctx.restore();
 	}
 }
