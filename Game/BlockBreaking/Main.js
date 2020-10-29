@@ -57,6 +57,7 @@ function brickColiision() {
             var hitNo = CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r );
             if( hitNo <= 0 ) continue;
             switch(hitNo){
+                case 3:
                 case 2:
                 case 1:
                      // 横側.
@@ -69,17 +70,6 @@ function brickColiision() {
                     }
                     break;
                 case 4:
-                case 3:
-                    // 縦側.
-                    if( ball.y < b.y ){
-                       ball.s_y = -ball.s_y;
-                    }
-                    else
-                    if( ball.y > b.y+b.h ){
-                        ball.s_y = -ball.s_y;
-                    }
-                    break;
-                case 5:
                     // 横側.
                     if( ball.x > b.x ){
                         ball.s_x = -ball.s_x;
