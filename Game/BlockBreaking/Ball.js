@@ -30,15 +30,34 @@ export default class CBall
 		switch(hitNo){
 			case 1:
 			case 2:
-				this.s_x = -this.s_x;
-				break;
 			case 3:
-			case 4:
-				this.s_y = -this.s_y;
+				 // 横側.
+			    if( this.x > paddle.x ){
+					this.s_x = -this.s_x;
+			    }
+			    else
+			    if( this.x < paddle.x+paddle.w ){
+					this.s_x = -this.s_x;
+			    }
 				break;
-			case 5:
-				this.s_x = -this.s_x;
-				this.s_y = -this.s_y;
+			case 4:
+				// 縦側.
+				if( this.y < paddle.y ){
+				   this.s_y = -this.s_y;
+				}
+				else
+				if( this.y > paddle.y+paddle.h ){
+					this.s_y = -this.s_y;
+				}
+				else
+				// 横側.
+				if( this.x > paddle.x ){
+					this.s_x = -this.s_x;
+				}
+				else
+				if( this.x < paddle.x+paddle.w ){
+					this.s_x = -this.s_x;
+				}
 				break;
 		}
 
