@@ -31,6 +31,7 @@ function keyDownHandler(e) {
 function keyUpHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
         rightPressed = false;
+        ball.shot();
     }
     else if (e.key == "Left" || e.key == "ArrowLeft") {
         leftPressed = false;
@@ -39,7 +40,7 @@ function keyUpHandler(e) {
 
 function ballStartKey(e){
     if (e.key == "Right") {
-        ball.shot();
+        
     }
 }
 
