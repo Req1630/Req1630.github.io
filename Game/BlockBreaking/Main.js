@@ -7,7 +7,7 @@ import CPaddle from './Paddle.js';
 var paddle = new CPaddle((canvas.width - 75) / 2, canvas.height - 10, 75, 10, 6 );
 // ボール.
 import CBall from './Ball.js';
-var ball = new CBall((canvas.width - 75) / 2, canvas.height - 15, 1, 1, 5 );
+var ball = new CBall(paddle.x+paddl.w/2, paddle.y-10, 1, 1, 5 );
 // ブロック.
 import CBlocks from './Block.js';
 var blocks = new CBlocks( 50, 20, 2, 7, 5, 30, 20, 10 );
