@@ -37,6 +37,7 @@ export default class CBall
 	
 	shot()
 	{
+		if( this.isMove == true ) return;
 		this.isMove = true;
 		this.s_x = Math.cos(this.angel+(45.0*Math.PI / 180.0));
 		this.s_y = Math.sin(this.angel+(45.0*Math.PI / 180.0));
@@ -116,6 +117,8 @@ export default class CBall
 		// 円形の描画終了.
 		ctx.closePath();
 		
+		
+		if( this.isMove == true ) return;
 		ctx.save();
 		ctx.beginPath();
 		
