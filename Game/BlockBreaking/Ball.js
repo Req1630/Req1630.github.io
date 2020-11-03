@@ -119,8 +119,8 @@ export default class CBall
 			ctx.moveTo(this.x, this.y);
 			ctx.lineTo(this.x-Math.cos(this.angel+(10.0*Math.PI / 180.0))*15,
 				   this.y-Math.sin(this.angel+(10.0*Math.PI / 180.0))*15);
-			ctx.lineTo(this.x-Math.cos(this.angel+a)*20,
-				   this.y-Math.sin(this.angel+a)*20);
+			ctx.lineTo(this.x-Math.cos(this.angel)*20,
+				   this.y-Math.sin(this.angel)*20);
 			ctx.lineTo(this.x-Math.cos(this.angel-(10.0*Math.PI / 180.0))*15,
 				   this.y-Math.sin(this.angel-(10.0*Math.PI / 180.0))*15);
 			ctx.closePath();
