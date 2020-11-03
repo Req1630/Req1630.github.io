@@ -10,7 +10,7 @@ import CBall from './Ball.js';
 var ball = new CBall(paddle.x+paddle.w/2, paddle.y-10, 2, 2, 5 );
 // ブロック.
 import CBlocks from './Block.js';
-var blocks = new CBlocks( 50, 20, 2, 1, 1, 30, 20, 10 );
+var blocks = new CBlocks( 50, 20, 2, 7, 5, 30, 20, 10 );
 blocks.init();
 
 var rightPressed = false;
