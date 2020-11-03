@@ -38,7 +38,7 @@ function keyUpHandler(e) {
 }
 
 function ballStartKey(e){
-    if (e.key == "space") {
+    if (e.key == "Space") {
         ball.shot();
     }
 }
