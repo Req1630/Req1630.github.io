@@ -47,7 +47,7 @@ function drawScore() {
     
     ctx.font = "32px Arial";
     ctx.fillStyle = "#0095DD";
-    ctx.fillText("Space To Start", canvas.width-(14*32)) / 2, canvas.height/2);
+    ctx.fillText("Space To Start", canvas.width-(14*32) / 2, canvas.height/2);
 }
 
 // 更新関数.
