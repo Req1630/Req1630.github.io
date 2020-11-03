@@ -60,7 +60,7 @@ export default class CBlocks
 			}
 		}
 	}
-	collision( ball, score )
+	collision( ball, score, document )
 	{
 			var deadCount = 0;
 		  for (var c = 0; c < this.w_count; c++) {
