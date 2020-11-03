@@ -38,8 +38,8 @@ export default class CBall
 	shot()
 	{
 		this.isMove = true;
-		this.s_x = Math.cos(this.angel);
-		this.s_y = Math.sin(this.angel);
+		this.s_x = Math.cos(this.angel+(90.0*Math.PI / 180.0));
+		this.s_y = Math.sin(this.angel+(90.0*Math.PI / 180.0));
 	}
 	
 	update( canvas, paddle )
