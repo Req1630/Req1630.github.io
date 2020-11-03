@@ -11,7 +11,7 @@ export default class CBall
 		this.s_y	= s_y;	// 移動速度.
 		this.r		= r;	// 半径.
 		this.isMove	= false;
-		this.angel	= 0.0*Math.PI / 180.0;
+		this.angel	= 270.0*Math.PI / 180.0;
 		this.angelAdd	= 0.5*Math.PI / 180.0;
 		this.isAdd	= true;
 	}
@@ -20,7 +20,7 @@ export default class CBall
 	{
 		if( this.isMove == true) return true;
 		
-		this.angel += this.angelAdd;
+		//this.angel += this.angelAdd;
 		//if( this.isAdd == true ){
 		//	if( this.angel >= 140.0*Math.PI / 180.0){
 		//		this.angelAdd = -this.angelAdd;
