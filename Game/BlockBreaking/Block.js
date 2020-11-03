@@ -15,7 +15,7 @@ class CBlock
         if( this.hp <= 0 ) return;
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle = 'rgb(50,50,${50*this.hp})';
+        ctx.fillStyle = 'rgb(${50},${50},${50*this.hp})';
         ctx.fill();
         ctx.closePath();
     }
