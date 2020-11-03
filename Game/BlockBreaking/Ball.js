@@ -27,7 +27,7 @@ export default class CBall
 				this.isAdd = false;
 			}
 		} else {
-			if( this.angel >= 40.0*Math.PI / 180.0){
+			if( this.angel <= 40.0*Math.PI / 180.0){
 				this.angelAdd = -this.angelAdd;
 				this.isAdd = true;
 			}
@@ -111,9 +111,9 @@ export default class CBall
 		ctx.save();
 		ctx.beginPath();
 		
-		ctx.translate(50, 50);
+		ctx.translate(this.x, this.y);
 		ctx.rotate(this.angel);
-		ctx.translate(-50, -50);
+		ctx.translate(-this.x, -this.y);
 		
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fillRect(50, 50, 50, 50);
