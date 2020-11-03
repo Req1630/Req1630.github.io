@@ -38,7 +38,7 @@ function keyUpHandler(e) {
 }
 
 function ballStartKey(e){
-    if (e.key == 32) {
+    if (e.key == "Right") {
         ball.shot();
     }
 }
