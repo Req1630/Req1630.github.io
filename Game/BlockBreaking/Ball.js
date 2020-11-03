@@ -112,9 +112,9 @@ export default class CBall
 			ctx.save();
 			ctx.beginPath();
 
-			ctx.translate(this.x, this.y);
-			ctx.rotate(this.angel);
-			ctx.translate(-this.x, -this.y);
+			//ctx.translate(this.x, this.y);
+			//ctx.rotate(this.angel);
+			//ctx.translate(-this.x, -this.y);
 
 			ctx.moveTo(this.x, this.y);
 			//ctx.lineTo(this.x-Math.cos(this.angel)*15,
