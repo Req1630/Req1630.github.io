@@ -22,7 +22,7 @@ export default class CBall
 		
 		this.angel += this.angelAdd;
 		if( this.isAdd == true ){
-			if( this.angel >= (360.0*Math.PI / 180.0)){
+			if( this.angel >= (180.0*Math.PI / 180.0)){
 				this.angelAdd = -this.angelAdd;
 				this.isAdd = false;
 			}
