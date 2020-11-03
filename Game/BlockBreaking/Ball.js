@@ -108,7 +108,6 @@ export default class CBall
 		// 円形の描画終了.
 		ctx.closePath();
 		
-		ctx.save();
 		ctx.beginPath();
 		
 		ctx.translate(this.x, this.y); 
@@ -119,6 +118,5 @@ export default class CBall
 		ctx.fillRect(this.x, this.y, 50, 50);
 		
 		ctx.closePath();
-		ctx.restore();
 	}
 }
