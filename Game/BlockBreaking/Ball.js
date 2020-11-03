@@ -108,6 +108,31 @@ export default class CBall
 	// 描画関数.
 	draw( ctx )
 	{
+		if( this.isMove == false ){
+			ctx.save();
+			ctx.beginPath();
+
+			ctx.translate(this.x, this.y);
+			ctx.rotate(this.angel);
+			ctx.translate(-this.x, -this.y);
+
+			ctx.moveTo(this.x, this.y);
+			ctx.lineTo(this.x-Math.cos(this.angel+10.0*Math.PI / 180.0)*15,
+				   this.y-Math.sin(this.angel+10.0*Math.PI / 180.0)*15);
+			ctx.lineTo(this.x-Math.cos(this.angel)*20,
+				   this.y-Math.sin(this.angel)*20);
+			ctx.lineTo(this.x-Math.cos(this.angel-10.0*Math.PI / 180.0)*15,
+				   this.y-Math.sin(this.angel-10.0*Math.PI / 180.0)*15);
+			ctx.closePath();
+
+			ctx.strokeStyle = "rgb(0,0,0)";
+			ctx.stroke();
+
+			ctx.fillStyle = "rgb(10,200,100)";	// 色の指定.
+			ctx.fill();
+			ctx.restore();
+		}
+		
 		// 円形の描画開始.
 		ctx.beginPath();
 		// 円形として描画. arc(座標x,座標y,半径,開始角度ラジアン,終了角度ラジアン,時計周りか).
@@ -116,30 +141,5 @@ export default class CBall
 		ctx.fill();
 		// 円形の描画終了.
 		ctx.closePath();
-		
-		
-		if( this.isMove == true ) return;
-		ctx.save();
-		ctx.beginPath();
-		
-		ctx.translate(this.x, this.y);
-		ctx.rotate(this.angel);
-		ctx.translate(-this.x, -this.y);
-	
-		ctx.moveTo(this.x, this.y);
-		ctx.lineTo(this.x-Math.cos(this.angel+10.0*Math.PI / 180.0)*15,
-			   this.y-Math.sin(this.angel+10.0*Math.PI / 180.0)*15);
-		ctx.lineTo(this.x-Math.cos(this.angel)*20,
-			   this.y-Math.sin(this.angel)*20);
-		ctx.lineTo(this.x-Math.cos(this.angel-10.0*Math.PI / 180.0)*15,
-			   this.y-Math.sin(this.angel-10.0*Math.PI / 180.0)*15);
-		ctx.closePath();
-		
-		ctx.strokeStyle = "rgb(0,0,0)";
-		ctx.stroke();
-		
-		ctx.fillStyle = "green";	// 色の指定.
-		ctx.fill();
-		ctx.restore();
 	}
 }
