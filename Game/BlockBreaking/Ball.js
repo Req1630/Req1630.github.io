@@ -113,7 +113,6 @@ export default class CBall
 		
 		ctx.translate(50, 50); 
 		ctx.rotate(this.angel);
-		ctx.translate(0, 0); 
 		
 		ctx.fillStyle = "green";	// 色の指定.
 		ctx.fillRect(50, 50, 50, 50);
