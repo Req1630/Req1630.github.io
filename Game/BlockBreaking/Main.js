@@ -16,6 +16,8 @@ blocks.init();
 var rightPressed = false;
 var leftPressed = false;
 
+var isStart = false;
+
 var score = 0;
 
 // キーを押したときの処理.
@@ -37,6 +39,7 @@ function keyUpHandler(e) {
     }
     if( e.keyCode == 32 ){
         ball.shot();
+        isStart = true;
     }
 }
 
@@ -45,6 +48,7 @@ function drawScore() {
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Score: " + score, 8, 20);
     
+    if( isStart == true ) return;
     ctx.font = "32px Arial";
     ctx.fillStyle = "#0095DD";
     ctx.fillText("Space To Start", canvas.width-(14*32) / 2, canvas.height/2);
