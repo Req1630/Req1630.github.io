@@ -8,8 +8,8 @@ class CBlock
 		this.w	= w;    // 幅.
        		this.h	= h;    // 高さ.
         	this.hp = hp;   // 体力.
-		this.r = Math.floor(Math.random() * 255);
-		this.g = Math.floor(Math.random() * 255);
+		this.r = 100;
+		this.g = 100;
 		this.b = Math.floor(Math.random() * 255);
     }
 
@@ -18,9 +18,6 @@ class CBlock
         if( this.hp <= 0 ) return;
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-		var r = this.r;
-	    var g = this.g;
-	    var b = this.b*this.hp;
         ctx.fillStyle = "rgb("+this.r+","+this.g+","+this.b*this.hp+")";
         ctx.fill();
         ctx.closePath();
