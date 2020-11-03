@@ -12,7 +12,7 @@ export default class CBall
 		this.r		= r;	// 半径.
 		this.isMove	= false;
 		this.angel	= 30.0*Math.PI / 180.0;
-		this.angelAdd	= 0.5*Math.PI / 180.0;
+		this.angelAdd	= 0.8*Math.PI / 180.0;
 		this.isAdd	= true;
 	}
 
@@ -39,8 +39,8 @@ export default class CBall
 	{
 		if( this.isMove == true ) return;
 		this.isMove = true;
-		this.s_x = -Math.cos(this.angel);
-		this.s_y = -Math.sin(this.angel);
+		this.s_x = -Math.cos(this.angel)*this.s_x;
+		this.s_y = -Math.sin(this.angel)*this.s_y;
 	}
 	
 	update( canvas, paddle )
