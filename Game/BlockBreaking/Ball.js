@@ -117,12 +117,12 @@ export default class CBall
 			ctx.translate(-this.x, -this.y);
 
 			ctx.moveTo(this.x, this.y);
-			ctx.lineTo(this.x-Math.cos(this.angel)*15,
-				   this.y-Math.sin(this.angel)*15);
+			//ctx.lineTo(this.x-Math.cos(this.angel)*15,
+			//	   this.y-Math.sin(this.angel)*15);
 			ctx.lineTo(this.x-Math.cos(this.angel)*20,
 				   this.y-Math.sin(this.angel)*20);
-			ctx.lineTo(this.x-Math.cos(this.angel)*15,
-				   this.y-Math.sin(this.angel)*15);
+			//ctx.lineTo(this.x-Math.cos(this.angel)*15,
+			//	   this.y-Math.sin(this.angel)*15);
 			ctx.closePath();
 
 			ctx.strokeStyle = "rgb(0,0,0)";
