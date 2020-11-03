@@ -18,7 +18,10 @@ class CBlock
         if( this.hp <= 0 ) return;
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle = 'rgb(${this.r},${this.g},${this.b)';
+		var r = this.r;
+	    var g = this.g;
+	    var b = this.b*this.hp;
+        ctx.fillStyle = 'rgb(${r},${g},${b)';
         ctx.fill();
         ctx.closePath();
     }
@@ -103,7 +106,6 @@ export default class CBlocks
 						break;
 				}
 				b.hp--;
-				b.b *= b.hp;
 				score++;
 				if (score == this.w_count*this.h_count) {
 					alert("YOU WIN, CONGRATULATIONS!");
