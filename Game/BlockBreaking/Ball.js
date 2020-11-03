@@ -116,7 +116,7 @@ export default class CBall
 		ctx.translate(-this.x, -this.y);
 		
 		ctx.fillStyle = "green";	// 色の指定.
-		ctx.fillRect(50, 50, 50, 50);
+		ctx.fillRect(this.x, this.y, 20, 20);
 		ctx.fill();
 		ctx.closePath();
 		ctx.restore();
