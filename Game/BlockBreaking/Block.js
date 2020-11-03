@@ -4,10 +4,10 @@ class CBlock
 	constructor( x, y, w, h, hp )
 	{
 		this.x	= x;    // 座標.
-        this.y	= y;    // 座標.
+       		this.y	= y;    // 座標.
 		this.w	= w;    // 幅.
-        this.h	= h;    // 高さ.
-        this.hp = hp;   // 体力.
+       		this.h	= h;    // 高さ.
+        	this.hp = hp;   // 体力.
     }
 
     draw( ctx )
@@ -15,7 +15,7 @@ class CBlock
         if( this.hp <= 0 ) return;
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = 'rgb(50,50,${*50this.hp})';
         ctx.fill();
         ctx.closePath();
     }
@@ -28,12 +28,12 @@ export default class CBlocks
 	constructor( w, h, hp, w_count, h_count, offset_top, offset_left, space )
 	{
 		this.w				= w;    // 幅.
-        this.h				= h;    // 高さ.
-        this.hp				= hp;   // 体力.
-		this.w_count		= w_count;
-		this.h_count		= h_count;
-		this.offset_top		= offset_top;
-		this.offset_left	= offset_left;
+        	this.h				= h;    // 高さ.
+        	this.hp				= hp;   // 体力.
+		this.w_count			= w_count;
+		this.h_count			= h_count;
+		this.offset_top			= offset_top;
+		this.offset_left		= offset_left;
 		this.space			= space;
 		this.blocks			= [];
     }
