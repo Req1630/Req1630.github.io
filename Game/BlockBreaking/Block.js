@@ -21,7 +21,7 @@ class CBlock
 		var r = this.r;
 	    var g = this.g;
 	    var b = this.b*this.hp;
-        ctx.fillStyle = "rgb("+r+","+g+","+b+")";
+        ctx.fillStyle = "rgb("+this.r+","+this.g+","+this.b*this.hp+")";
         ctx.fill();
         ctx.closePath();
     }
