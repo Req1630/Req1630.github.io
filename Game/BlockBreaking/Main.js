@@ -18,7 +18,7 @@ var leftPressed = false;
 
 var isStart = false;
 
-var score = 0;
+var score = [0];
 
 // キーを押したときの処理.
 function keyDownHandler(e) {
