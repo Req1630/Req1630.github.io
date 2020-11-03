@@ -109,11 +109,11 @@ export default class CBlocks
 				b.hp--;
 				score[0]++;
 				if( b.hp <= 0 ) deadCount++;
-				if (deadCount == this.w_count*this.h_count) {
-					alert("YOU WIN, CONGRATULATIONS!");
-					document.location.reload();
-				}
 			}
+		}
+		if (deadCount == this.w_count*this.h_count) {
+			alert("YOU WIN, CONGRATULATIONS!");
+			document.location.reload();
 		}
 	}
 }
