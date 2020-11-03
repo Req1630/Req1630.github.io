@@ -60,7 +60,7 @@ export default class CBlocks
 			}
 		}
 	}
-	collision( ball, score, document )
+	collision( ball, score, interval )
 	{
 			var deadCount = 0;
 		  for (var c = 0; c < this.w_count; c++) {
@@ -114,6 +114,7 @@ export default class CBlocks
 		if (deadCount == this.w_count*this.h_count) {
 			alert("YOU WIN, CONGRATULATIONS!");
 			document.location.reload();
+			clearInterval(interval); // Needed for Chrome to end game
 		}
 	}
 }
