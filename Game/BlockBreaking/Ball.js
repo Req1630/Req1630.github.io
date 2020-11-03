@@ -127,7 +127,14 @@ export default class CBall
 		ctx.translate(-this.x, -this.y);
 		
 		ctx.fillStyle = "green";	// 色の指定.
-		ctx.fillRect(this.x, this.y, 20, 20);
+		
+		ctx.moveTo(this.x, this.y);
+		ctx.lineTo(this.x+Math.cos(this.angel+5.0*Math.PI / 180.0)*5,
+			   this.y+Math.sin(this.angel+5.0*Math.PI / 180.0)*5)
+		ctx.lineTo(this.x+Math.cos(this.angel)*7,
+			   this.y+Math.sin(this.angel)*7)
+		ctx.lineTo(this.x-Math.cos(this.angel+5.0*Math.PI / 180.0)*5,
+			   this.y-Math.sin(this.angel+5.0*Math.PI / 180.0)*5)
 		ctx.fill();
 		ctx.closePath();
 		ctx.restore();
