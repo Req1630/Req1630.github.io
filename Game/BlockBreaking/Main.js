@@ -50,7 +50,7 @@ function drawScore() {
     
     if( isStart == true ) return;
     ctx.font = "32px Arial";
-    ctx.fillStyle = "#0095DD";
+    ctx.fillStyle = "#FF9555";
     ctx.fillText("Space To Start", canvas.width-(14*32) / 2, canvas.height/2);
 }
 
