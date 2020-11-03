@@ -11,7 +11,7 @@ export default class CBall
 		this.s_y	= s_y;	// 移動速度.
 		this.r		= r;	// 半径.
 		this.isMove	= false;
-		this.angel	= -30.0*Math.PI / 180.0;
+		this.angel	= 0.0*Math.PI / 180.0;
 		this.angelAdd	= 0.5*Math.PI / 180.0;
 		this.isAdd	= true;
 	}
@@ -22,12 +22,12 @@ export default class CBall
 		
 		this.angel += this.angelAdd;
 		if( this.isAdd == true ){
-			if( this.angel >= 150.0*Math.PI / 180.0){
+			if( this.angel >= -(30.0*Math.PI / 180.0)+(90.0*Math.PI / 180.0)){
 				this.angelAdd = -this.angelAdd;
 				this.isAdd = false;
 			}
 		} else {
-			if( this.angel <= 30.0*Math.PI / 180.0){
+			if( this.angel <= (30.0*Math.PI / 180.0)+(90.0*Math.PI / 180.0)){
 				this.angelAdd = -this.angelAdd;
 				this.isAdd = true;
 			}
@@ -116,13 +116,14 @@ export default class CBall
 			ctx.rotate(this.angel);
 			ctx.translate(-this.x, -this.y);
 
+			var a = (30.0*Math.PI / 180.0);
 			ctx.moveTo(this.x, this.y);
-			ctx.lineTo(this.x-Math.cos(this.angel+10.0*Math.PI / 180.0)*15,
-				   this.y-Math.sin(this.angel+10.0*Math.PI / 180.0)*15);
-			ctx.lineTo(this.x-Math.cos(this.angel)*20,
-				   this.y-Math.sin(this.angel)*20);
-			ctx.lineTo(this.x-Math.cos(this.angel-10.0*Math.PI / 180.0)*15,
-				   this.y-Math.sin(this.angel-10.0*Math.PI / 180.0)*15);
+			ctx.lineTo(this.x-Math.cos(this.angel+(10.0*Math.PI / 180.0)+a)*15,
+				   this.y-Math.sin(this.angel+(10.0*Math.PI / 180.0)+a)*15);
+			ctx.lineTo(this.x-Math.cos(this.angel+a)*20,
+				   this.y-Math.sin(this.angel+a)*20);
+			ctx.lineTo(this.x-Math.cos(this.angel-(10.0*Math.PI / 180.0)+a)*15,
+				   this.y-Math.sin(this.angel-(10.0*Math.PI / 180.0)+a)*15);
 			ctx.closePath();
 
 			ctx.strokeStyle = "rgb(0,0,0)";
