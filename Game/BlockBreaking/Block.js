@@ -8,6 +8,9 @@ class CBlock
 		this.w	= w;    // 幅.
        		this.h	= h;    // 高さ.
         	this.hp = hp;   // 体力.
+		this.r = Math.floor(Math.random() * 255);
+		this.g = Math.floor(Math.random() * 255);
+		this.b = Math.floor(Math.random() * 255);
     }
 
     draw( ctx )
@@ -15,7 +18,7 @@ class CBlock
         if( this.hp <= 0 ) return;
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle = 'rgb(${50},${50},${50*this.hp})';
+        ctx.fillStyle = 'rgb(${this.r},${this.g},${this.b)';
         ctx.fill();
         ctx.closePath();
     }
@@ -100,6 +103,7 @@ export default class CBlocks
 						break;
 				}
 				b.hp--;
+				b.b *= b.hp;
 				score++;
 				if (score == this.w_count*this.h_count) {
 					alert("YOU WIN, CONGRATULATIONS!");
