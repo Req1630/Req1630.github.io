@@ -34,6 +34,14 @@ export default class CBall
 		}
 		return false;
 	}
+	
+	shot()
+	{
+		this.isMove = true;
+		this.s_x = Math.cos(this.angel);
+		this.s_y = Math.sin(this.angel);
+	}
+	
 	update( canvas, paddle )
 	{
 		if( this.initMove() == false) return true;
