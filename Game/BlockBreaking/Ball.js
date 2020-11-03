@@ -40,7 +40,7 @@ export default class CBall
 		if( this.isMove == true ) return;
 		this.isMove = true;
 		this.s_x = Math.cos(this.angel);
-		this.s_y = -Math.sin(this.angel);
+		this.s_y = Math.sin(this.angel);
 	}
 	
 	update( canvas, paddle )
