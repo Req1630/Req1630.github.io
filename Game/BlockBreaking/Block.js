@@ -103,7 +103,7 @@ export default class CBlocks
 						break;
 				}
 				b.hp--;
-				score++;
+				score[0]++;
 				if (score == this.w_count*this.h_count) {
 					alert("YOU WIN, CONGRATULATIONS!");
 					document.location.reload();
