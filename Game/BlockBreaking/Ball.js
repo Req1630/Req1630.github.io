@@ -11,7 +11,7 @@ export default class CBall
 		this.s_y	= s_y;	// 移動速度.
 		this.r		= r;	// 半径.
 		this.isMove	= false;
-		this.angel	= 40.0*Math.PI / 180.0;
+		this.angel	= 30.0*Math.PI / 180.0;
 		this.angelAdd	= 0.5*Math.PI / 180.0;
 		this.isAdd	= true;
 	}
@@ -20,28 +20,27 @@ export default class CBall
 	{
 		if( this.isMove == true) return true;
 		
-		//this.angel += this.angelAdd;
-		//if( this.isAdd == true ){
-		//	if( this.angel >= 270.0*Math.PI / 180.0){
-		//		this.angelAdd = -this.angelAdd;
-		//		this.isAdd = false;
-		//	}
-		//} else {
-		//	if( this.angel <= 180.0*Math.PI / 180.0){
-		//		this.angelAdd = -this.angelAdd;
-		//		this.isAdd = true;
-		//	}
-		//}
+		this.angel += this.angelAdd;
+		if( this.isAdd == true ){
+			if( this.angel >= 150.0*Math.PI / 180.0){
+				this.angelAdd = -this.angelAdd;
+				this.isAdd = false;
+			}
+		} else {
+			if( this.angel <= 30.0*Math.PI / 180.0){
+				this.angelAdd = -this.angelAdd;
+				this.isAdd = true;
+			}
+		}
 		return false;
 	}
 	
 	shot()
 	{
-		this.angel += this.angelAdd;
-		//if( this.isMove == true ) return;
-		//this.isMove = true;
-		//this.s_x = Math.cos(this.angel);
-		//this.s_y = Math.sin(this.angel);
+		if( this.isMove == true ) return;
+		this.isMove = true;
+		this.s_x = Math.cos(this.angel);
+		this.s_y = Math.sin(this.angel);
 	}
 	
 	update( canvas, paddle )
