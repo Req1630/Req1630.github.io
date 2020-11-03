@@ -23,7 +23,7 @@ export default class CPaddle
         // 矩形の輪郭線の描画開始.
         ctx.beginPath();
         ctx.rect(this.x, this.y, this.w, this.h);
-        ctx.fillStyle = "rgba(0, 0, 255, 0.5)";
+        ctx.fillStyle = "rgba(50, 100, 255, 0.5)";
         ctx.fill();	// 輪郭線として指定.
         // 矩形の輪郭線の描画終了.
         ctx.closePath();
