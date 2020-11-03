@@ -31,16 +31,12 @@ function keyDownHandler(e) {
 function keyUpHandler(e) {
     if (e.key == "Right" || e.key == "ArrowRight") {
         rightPressed = false;
-        ball.shot();
     }
     else if (e.key == "Left" || e.key == "ArrowLeft") {
         leftPressed = false;
     }
-}
-
-function ballStartKey(e){
-    if (e.key == "Right") {
-        
+    if( e.key == "Space" ){
+        ball.shot();
     }
 }
 
@@ -55,7 +51,6 @@ function update() {
     // イベントリスナー.
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
-    document.addEventListener("keyup", ballStartKey, false);
 
     paddle.update( canvas, { rightPressed, leftPressed } );
     if( ball.update( canvas, paddle ) == false ){
