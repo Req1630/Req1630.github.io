@@ -62,10 +62,14 @@ export default class CBlocks
 	}
 	collision( ball, score )
 	{
+			var deadCount = 0;
 		  for (var c = 0; c < this.w_count; c++) {
 			for (var r = 0; r < this.h_count; r++) {
 				var b = this.blocks[c][r];
-				if (b.hp <= 0) continue;
+				if (b.hp <= 0){
+					deadCount++;
+					continue;
+				}
 				var hitNo = CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r );
 				if( hitNo <= 0 ) continue;
 				switch(hitNo){
@@ -104,7 +108,8 @@ export default class CBlocks
 				}
 				b.hp--;
 				score[0]++;
-				if (score == this.w_count*this.h_count) {
+				if( b.hp <= 0 ) deadCount++;
+				if (deadCount == this.w_count*this.h_count) {
 					alert("YOU WIN, CONGRATULATIONS!");
 					document.location.reload();
 				}
