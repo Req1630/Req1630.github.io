@@ -66,7 +66,7 @@ function update() {
         document.location.reload();
         clearInterval(interval); // Needed for Chrome to end game
     }
-    blocks.collision( ball, score );
+    blocks.collision( ball, score, document );
 }
 // 描画関数.
 function draw() {
