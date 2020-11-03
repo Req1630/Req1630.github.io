@@ -128,7 +128,7 @@ export default class CBall
 			ctx.strokeStyle = "rgb(0,0,0)";
 			ctx.stroke();
 
-			ctx.fillStyle = "rgb(10,200,100)";	// 色の指定.
+			ctx.fillStyle = "rgb(100,40,70)";	// 色の指定.
 			ctx.fill();
 			ctx.restore();
 		}
