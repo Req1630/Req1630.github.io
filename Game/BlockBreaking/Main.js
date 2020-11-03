@@ -35,7 +35,7 @@ function keyUpHandler(e) {
     else if (e.key == "Left" || e.key == "ArrowLeft") {
         leftPressed = false;
     }
-    if( e.key == "Space" ){
+    if( e.keyCode == 32 ){
         ball.shot();
     }
 }
