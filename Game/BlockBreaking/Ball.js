@@ -11,7 +11,7 @@ export default class CBall
 		this.s_y	= s_y;	// 移動速度.
 		this.r		= r;	// 半径.
 		this.isMove	= false;
-		this.angel	= 30.0*Math.PI / 180.0;
+		this.angel	= -30.0*Math.PI / 180.0;
 		this.angelAdd	= 0.5*Math.PI / 180.0;
 		this.isAdd	= true;
 	}
