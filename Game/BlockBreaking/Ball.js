@@ -27,7 +27,7 @@ export default class CBall
 				this.isAdd = false;
 			}
 		} else {
-			if( this.angel <= 160.0*Math.PI / 180.0){
+			if( this.angel <= 180.0*Math.PI / 180.0){
 				this.angelAdd = -this.angelAdd;
 				this.isAdd = true;
 			}
