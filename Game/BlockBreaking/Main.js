@@ -37,6 +37,12 @@ function keyUpHandler(e) {
     }
 }
 
+function ballStartKey(e){
+    if (e.key == "space") {
+        ball.shot();
+    }
+}
+
 function drawScore() {
     ctx.font = "16px Arial";
     ctx.fillStyle = "#0095DD";
@@ -48,6 +54,7 @@ function update() {
     // イベントリスナー.
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
+    document.addEventListener("keyup", ballStartKey, false);
 
     paddle.update( canvas, { rightPressed, leftPressed } );
     if( ball.update( canvas, paddle ) == false ){
