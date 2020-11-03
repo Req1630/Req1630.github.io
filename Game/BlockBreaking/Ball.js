@@ -119,6 +119,6 @@ export default class CBall
 		ctx.fillRect(this.x, this.y, 50, 50);
 		
 		ctx.closePath();
-		ctx.restre();
+		ctx.restore();
 	}
 }
