@@ -20,18 +20,18 @@ export default class CBall
 	{
 		if( this.isMove == true) return true;
 		
-		//this.angel += this.angelAdd;
-		//if( this.isAdd == true ){
-		//	if( this.angel >= 140.0*Math.PI / 180.0){
-		//		this.angelAdd = -this.angelAdd;
-		//		this.isAdd = false;
-		//	}
-		//} else {
-		//	if( this.angel <= 40.0*Math.PI / 180.0){
-		//		this.angelAdd = -this.angelAdd;
-		//		this.isAdd = true;
-		//	}
-		//}
+		this.angel += this.angelAdd;
+		if( this.isAdd == true ){
+			if( this.angel >= 270.0*Math.PI / 180.0){
+				this.angelAdd = -this.angelAdd;
+				this.isAdd = false;
+			}
+		} else {
+			if( this.angel <= 140.0*Math.PI / 180.0){
+				this.angelAdd = -this.angelAdd;
+				this.isAdd = true;
+			}
+		}
 		return false;
 	}
 	update( canvas, paddle )
