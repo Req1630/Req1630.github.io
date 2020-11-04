@@ -26,7 +26,7 @@ class CBlock
 
 import CircleToBoxHit from './Collisions.js'
 
-var hitSE = new Auio('./Sound/Hit.mp3');
+var hitSE = new Audio('./Sound/Hit.mp3');
 
 export default class CBlocks
 {
