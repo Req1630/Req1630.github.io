@@ -26,6 +26,8 @@ class CBlock
 
 import CircleToBoxHit from './Collisions.js'
 
+var hitSE = new Auio('./Sound/Hit.mp3');
+
 export default class CBlocks
 {
 	constructor( w, h, hp, w_count, h_count, offset_top, offset_left, space )
@@ -106,6 +108,8 @@ export default class CBlocks
 
 						break;
 				}
+				hitSE.currentTime = 0;
+				hitSE.play();
 				b.hp--;
 				score[0]++;
 				if( b.hp <= 0 ) deadCount++;
