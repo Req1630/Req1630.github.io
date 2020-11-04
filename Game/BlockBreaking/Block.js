@@ -108,8 +108,8 @@ export default class CBlocks
 
 						break;
 				}
-				//hitSE.currentTime = 0;
-				//hitSE.play();
+				hitSE.currentTime = 0;
+				hitSE.play();
 				b.hp--;
 				score[0]++;
 				if( b.hp <= 0 ) deadCount++;
