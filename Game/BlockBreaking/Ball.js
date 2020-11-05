@@ -38,6 +38,12 @@ export default class CBall
 		return false;
 	}
 	
+	setPositionX( x )
+	{
+		if( this.isMove == true) return true;
+		this.x = x;
+	}
+	
 	shot()
 	{
 		if( this.isMove == true ) return;
