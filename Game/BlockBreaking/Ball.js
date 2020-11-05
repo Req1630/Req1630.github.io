@@ -7,6 +7,8 @@ export default class CBall
 	{
 		this.x		= x;	// 座標.
 		this.y		= y;	// 座標.
+		this.old_x	~ x;	// 前回の座標.
+		this.old_y	= y;	// 前回の座標.
 		this.s_x	= s_x;	// 移動速度.
 		this.s_y	= s_y;	// 移動速度.
 		this.r		= r;	// 半径.
@@ -54,49 +56,24 @@ export default class CBall
 		if (this.y + this.s_y < this.r) {
 			this.s_y = -this.s_y;
 		}
-
-		var hitNo = CircleToBoxHit( 
-			paddle.x, paddle.x + paddle.w, 
-			paddle.y, paddle.y + paddle.h,
-			this.x, this.y, this.r );
-		switch(hitNo){
-			case 1:
-			case 2:
-			case 3:
-				 // 横側.
-			    if( this.x > paddle.x ){
-					this.s_x = -this.s_x;
-			    }
-			    else
-			    if( this.x < paddle.x+paddle.w ){
-					this.s_x = -this.s_x;
-			    }
-				break;
-			case 4:
-				// 縦側.
-				if( this.y < paddle.y ){
-				   this.s_y = -this.s_y;
-				}
-				else
-				if( this.y > paddle.y+paddle.h ){
-					this.s_y = -this.s_y;
-				}
-				else
-				// 横側.
-				if( this.x > paddle.x ){
-					this.s_x = -this.s_x;
-				}
-				else
-				if( this.x < paddle.x+paddle.w ){
-					this.s_x = -this.s_x;
-				}
-				break;
-		}
-
+		
 		// 下の判定.
 		if (this.y + this.s_y > canvas.height - this.r) {
 			return false;
 		}
+		
+		// バーの左右.
+		if( this.x + this.r < paddle.x || paddle.x + paddle.w < this.x + this.r ){
+			this.s_x = -this.s_x;
+		}
+		// バーの上下.
+		if( this.y + this.r < paddle.y || paddle.y + paddle.h < this.y + this.r ){
+			this.s_y = -this.s_y;
+		}
+
+		
+		this.old_x = this.x;
+		this.old_y = this.y;
 		// 移動値の加算.
 		this.x += this.s_x;
 		this.y += this.s_y;
