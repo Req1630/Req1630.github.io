@@ -63,11 +63,11 @@ export default class CBall
 		}
 		
 		// バーの左右.
-		if( this.x + this.r < paddle.x || paddle.x + paddle.w < this.x + this.r ){
+		if( this.x + this.r > paddle.x || paddle.x + paddle.w > this.x + this.r ){
 			this.s_x = -this.s_x;
 		}
 		// バーの上下.
-		if( this.y + this.r < paddle.y || paddle.y + paddle.h < this.y + this.r ){
+		if( this.y + this.r > paddle.y || paddle.y + paddle.h > this.y + this.r ){
 			this.s_y = -this.s_y;
 		}
 
