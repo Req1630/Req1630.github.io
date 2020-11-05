@@ -72,42 +72,21 @@ export default class CBlocks
 					deadCount++;
 					continue;
 				}
-				var hitNo = CircleToBoxHit( b.x, b.x+b.w, b.y, b.y+b.h, ball.x, ball.y, ball.r );
-				if( hitNo <= 0 ) continue;
-				switch(hitNo){
-					case 3:
-					case 2:
-					case 1:
-						 // 横側.
-						if( ball.x > b.x ){
-							ball.s_x = -ball.s_x;
-						}
-						else
-						if( ball.x < b.x+b.w ){
-							ball.s_x = -ball.s_x;
-						}
-						break;
-					case 4:
-						// 縦側.
-						if( ball.y < b.y ){
-						   ball.s_y = -ball.s_y;
-						}
-						else
-						if( ball.y > b.y+b.h ){
-							ball.s_y = -ball.s_y;
-						}
-						else
-						// 横側.
-						if( ball.x > b.x ){
-							ball.s_x = -ball.s_x;
-						}
-						else
-						if( ball.x < b.x+b.w ){
-							ball.s_x = -ball.s_x;
-						}
-
-						break;
+				if( ball.x + ball.r < b.x || b.x + b.w > ball.x - ball.r ||
+				    ball.y + ball.r < b.y || b.y + b.h > ball.y - ball.r ){
+					continue;
 				}
+				if( b.x < ball.old_x && b.x + b.w > ball.old_x ){
+					ball.s_y = -ball.s_y;
+				}
+				else if( b.y < ball.old_y && b.y + b.h > ball.old_y ){
+					ball.s_x = -ball.s_x;
+				}
+				else {
+					ball.s_x = -ball.s_x;
+					ball.s_y = -ball.s_y;
+				}
+
 				hitSE.currentTime = 0;
 				hitSE.play();
 				b.hp--;
