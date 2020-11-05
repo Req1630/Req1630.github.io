@@ -65,6 +65,8 @@ export default class CBall
 		// バーの左右.
 		if(!( this.x + this.r > paddle.x && paddle.x + paddle.w > this.x - this.r && 
 		      this.y + this.r > paddle.y && paddle.y + paddle.h > this.y - this.r )){
+			this.old_x = this.x;
+			this.old_y = this.y;
 			this.x += this.s_x;
 			this.y += this.s_y;
 			return true;
