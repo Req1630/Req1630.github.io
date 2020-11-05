@@ -40,7 +40,7 @@ export default class CBall
 	
 	setPositionX( x )
 	{
-		if( this.isMove == true) return true;
+		if( this.isMove == true) return;
 		this.x = x;
 	}
 	
