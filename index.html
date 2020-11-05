@@ -7,15 +7,18 @@
     <style>
     	* { padding: 0; margin: 0; }
     	canvas { background: #eeee55; display: block; margin: 0 auto; }
+	.a_button {
+		display: inline-block;
+		border-style: solid;
+		background-color: lightgray;
+		border-width:1px;
+		border-color: darkgray;
+		color: black;
+		text-decoration: none;
+	}
     </style>
 </head>
 	<body>
-		<button type="button" name="name" value="value">button</button>
-		<!--キャンバスのサイズを指定.-->
-		<canvas id="myCanvas" width="480" height="320"></canvas>
-
-		<!-- jsの読み込み. -->
-		<script type="module" src="Game/BlockBreaking/Main.js"></script>
-
+		<a class="a_button" href="https://techacademy.jp/magazine/">Techacademyマガジン(aタグにスタイルを適用)</a>
 	</body>
 </html>
