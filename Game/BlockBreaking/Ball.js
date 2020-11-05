@@ -11,6 +11,8 @@ export default class CBall
 		this.old_y	= y;	// 前回の座標.
 		this.s_x	= s_x;	// 移動速度.
 		this.s_y	= s_y;	// 移動速度.
+		this.old_s_x	= s_x;
+		this.old_s_y	= s_x;
 		this.r		= r;	// 半径.
 		this.isMove	= false;
 		this.angel	= 30.0*Math.PI / 180.0;
@@ -71,15 +73,18 @@ export default class CBall
 			this.y += this.s_y;
 			return true;
 		}
+		var c = this.x - ( paddle.x + paddle.w/2 );
 		var s = Math.abs( paddle.x - paddle.old_x );
 		if( paddle.x < this.old_x && paddle.x + paddle.w > this.old_x ){
 			this.s_y = -this.s_y;
+			this.s_x = c/6.0;
 		}
 		else if( paddle.y < this.old_y && paddle.y + paddle.h > this.old_y ){
-			this.s_x = -this.s_x + s;
+			this.s_x = -this.s_x;
 		}
 		else {
-			this.s_x = -this.s_x + s;
+			this.s_x = -this.s_x;
+			this.s_x = c/6.0;
 			this.s_y = -this.s_y;
 		}
 
