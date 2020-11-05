@@ -72,8 +72,8 @@ export default class CBlocks
 					deadCount++;
 					continue;
 				}
-				if( ball.x + ball.r < b.x || b.x + b.w > ball.x - ball.r ||
-				    ball.y + ball.r < b.y || b.y + b.h > ball.y - ball.r ){
+				if(!( ball.x + ball.r > b.x && b.x + b.w > ball.x - ball.r &&
+				      ball.y + ball.r > b.y && b.y + b.h > ball.y - ball.r )){
 					continue;
 				}
 				if( b.x < ball.old_x && b.x + b.w > ball.old_x ){
