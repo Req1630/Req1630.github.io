@@ -73,8 +73,7 @@ export default class CBall
 			this.y += this.s_y;
 			return true;
 		}
-		var c = this.x - ( paddle.x + paddle.w/2 )*0.05;
-		var s = Math.abs( paddle.x - paddle.old_x );
+		var c = (this.x - ( paddle.x + paddle.w/2 ))*0.05;
 		if( paddle.x < this.old_x && paddle.x + paddle.w > this.old_x ){
 			this.s_y = -this.s_y;
 			this.s_x = c;
