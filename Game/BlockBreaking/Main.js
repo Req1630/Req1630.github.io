@@ -59,8 +59,9 @@ function update() {
     // イベントリスナー.
     document.addEventListener("keydown", keyDownHandler, false);
     document.addEventListener("keyup", keyUpHandler, false);
-
+	
     paddle.update( canvas, { rightPressed, leftPressed } );
+	ball.setPositionX( paddle.x+paddle.w/2 );
     if( ball.update( canvas, paddle ) == false ){
         alert("GAME OVER");
         document.location.reload();
