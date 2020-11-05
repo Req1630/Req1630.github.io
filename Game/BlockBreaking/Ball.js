@@ -80,12 +80,12 @@ export default class CBall
 			var o = this.old_x - this.x;
 			if( o < 0.0 ){
 				// 左.
-				if( c < 0.0 ){
+				if( c > 0.0 ){
 					this.s_x = c;
 				}
 			} else {
 				// 右.
-				if( c > 0.0 ){
+				if( c < 0.0 ){
 					this.s_x = c;
 				}
 			}
