@@ -71,14 +71,15 @@ export default class CBall
 			this.y += this.s_y;
 			return true;
 		}
+		var s = Math.abs( paddle.x - paddle.old_x );
 		if( paddle.x < this.old_x && paddle.x + paddle.w > this.old_x ){
 			this.s_y = -this.s_y;
 		}
 		else if( paddle.y < this.old_y && paddle.y + paddle.h > this.old_y ){
-			this.s_x = -this.s_x;
+			this.s_x = -this.s_x + s;
 		}
 		else {
-			this.s_x = -this.s_x;
+			this.s_x = -this.s_x + s;
 			this.s_y = -this.s_y;
 		}
 
