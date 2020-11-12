@@ -1,15 +1,142 @@
-<!DOCTYPE html>
-<html>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
-	<!-- https://developer.mozilla.org/ja/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript -->
-    <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
-    <style>
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+    <title>自作ゲーム一覧</title>
+
+    <meta name="keywords" content="ページのキーワードA,B,C" />
+    <meta name="description" content="ページの説明" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
 </head>
 <body>
-	<a href="https://req1630.github.io/Game/BlockBreaking/BlockBreaking.html">ブロック崩し</a>
-	<br><br>
-	<a href="https://req1630.github.io/index.html">戻る</a>
+    <div id="outer">
+        <div id="header">
+            <div id="head-inner">
+                <h1>自作ゲーム一覧</h1>
+            </div>
+        </div>
+
+        <div id="contents">
+            <br />
+            <!-------------------------------------->
+            <!-- 1年 -->
+            <!-------------------------------------->
+            <div class="hidden_box">
+                <label for="label1">一年時の作品を表示</label>
+                <input type="checkbox" id="label1" />
+                <div class="hidden_show">
+                    <!--非表示ここから-->
+                    <div class="game_display">
+                        <a for="game1"
+                           href="https://req1630.github.io/Game/BlockBreaking/BlockBreaking.html">
+                            Run&Avoid
+                        </a>
+                        <img src="Image/blockBreaking.png"
+                             width="480"
+                             height="319" />
+                        <br />
+                        <gameDetailTitle>
+                            説明
+                        </gameDetailTitle>
+                        <p>
+                            あれこれaajslM<br>
+                            k;fajsdl;fkasjfklajadj;j
+                        </p>
+                    </div>
+
+                    <!--ここまで-->
+                </div>
+            </div>
+            <!-------------------------------------->
+            <!-- 2年 -->
+            <!-------------------------------------->
+            <div class="hidden_box">
+                <label for="label2">二年時の作品を表示</label>
+                <input type="checkbox" id="label2" />
+                <div class="hidden_show">
+                    <!--非表示ここから-->
+                    <!-------------------------------------->
+                    <h2>
+                        <a href="https://req1630.github.io/Game/BlockBreaking/BlockBreaking.html">
+                            <font size="5">
+                                オバケノイエ
+                            </font>
+                        </a>
+                    </h2>
+                    <br />
+                    <img src="Image/blockBreaking.png"
+                         alt="オバケノイエ" =
+                         title="オバケノイエ"
+                         width="50%" height="50%" />
+                    <h3>説明</h3>
+                    <p>あれこれ</p>
+                    <!-------------------------------------->
+                    <!--ここまで-->
+                </div>
+
+            </div>
+            <!-------------------------------------->
+            <!-- 3年 -->
+            <!-------------------------------------->
+            <div class="hidden_box">
+                <label for="label3">三年時の作品を表示</label>
+                <input type="checkbox" id="label3" />
+                <div class="hidden_show">
+                    <!--非表示ここから-->
+                    <!-------------------------------------->
+                    <h2>
+                        <a href="https://req1630.github.io/Game/BlockBreaking/BlockBreaking.html">
+                            <font size="4">
+                                ブロック崩し
+                            </font>
+                        </a>
+                    </h2>
+                    <br />
+                    <img src="Image/blockBreaking.png"
+                         alt="ブロック崩し"
+                         title="ブロック崩し"
+                         width="50%" height="50%" />
+                    <h3>説明</h3>
+                    <p>あれこれ</p>
+                    <!-------------------------------------->
+                    <!-------------------------------------->
+                    <h2>
+                        <a href="https://req1630.github.io/Game/BlockBreaking/BlockBreaking.html">
+                            <font size="4">
+                                Hulien
+                            </font>
+                        </a>
+                    </h2>
+                    <br />
+                    <img src="Image/blockBreaking.png"
+                         alt="Hulien"
+                         title="Hulien"
+                         width="50%" height="50%" />
+                    <h3>説明</h3>
+                    <p>あれこれ</p>
+                    <!-------------------------------------->
+                    <!--ここまで-->
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="middle">
+            <div class="side-title">menu</div>
+            <div class="side">
+                <ul>
+                    <li>記事ページへのリンク</li>
+                    <li>記事ページへのリンク</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">© 2020 ReqさんGames</div>
+    </div>
 </body>
+
 </html>
