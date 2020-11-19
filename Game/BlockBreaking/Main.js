@@ -41,7 +41,6 @@ function keyUpHandler(e) {
     else if (e.key == "Left" || e.key == "ArrowLeft") {
         leftPressed = false;
     }
-	passive = false;
     if( e.keyCode == 32 ){
         ball.shot();
         isStart = true;
