@@ -1,22 +1,60 @@
-<!DOCTYPE html>
-<html>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
-	<!-- https://developer.mozilla.org/ja/docs/Games/Workflows/2D_Breakout_game_pure_JavaScript -->
-    <meta charset="utf-8" />
-    <title>Gamedev Canvas Workshop</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <title>自作ゲーム一覧 : ブロック崩し</title>
+    <meta name="keywords" content="ページのキーワードA,B,C" />
+    <meta name="description" content="ページの説明" />
+    <link rel="stylesheet" href="../../index.css" type="text/css" />
+    <link rel="stylesheet" href="../gameExp.css" type="text/css" />
     <style>
     	* { padding: 0; margin: 0; }
     	canvas { background: #eeee55; display: block; margin: 0 auto; }
     </style>
 </head>
-	<body>
+<body>
+    <div id="outer">
+        <div id="header">
+            <div id="head-inner">
+                <h1>自作ゲーム一覧</h1>
+            </div>
+        </div>
+        <div class="gameExp">
+            <p class="p-title">ブロック崩し</p>
+            <canvas id="myCanvas" width="480" height="320"></canvas>
+            <!-- jsの読み込み. -->
+            <script type="module" src="Main.js"></script>
 
-		<!--キャンバスのサイズを指定.-->
-		<canvas id="myCanvas" width="480" height="320"></canvas>
-
-		<!-- jsの読み込み. -->
-		<script type="module" src="Main.js"></script>
-		<br><br>
-		<a href="https://req1630.github.io/GameIndex.html">戻る</a>
-	</body>
+            <div class="gameDetails">
+                <p class="p-expTitle">説明</p>
+                <p class="p-exp">
+                    専門学校に入り、一年目の進級制作で、<br />
+                    プログラマー二人でチームを組み、<br />
+                    作成したゲームです。<br />
+                    このゲームは前後からくる障害物をよけながら、<br />
+                    ゴールを目指すゲームです。
+                </p>
+                <p class="p-b">
+                    <span>開発環境</span>: VisualStudio 2012 C++<br />
+                    <span>制作期間</span>: 3ヵ月<br />
+                    <span>GitHub</span>: <a class="a-gameLink" href="">link</a><br />
+                    <span>ゲーム本体</span>: <a class="a-gameLink" href="">Download</a>
+                </p>
+            </div>
+        </div>
+        <div id="middle">
+            <div class="side-title">menu</div>
+            <div class="side">
+                <ul>
+                    <li>記事ページへのリンク</li>
+                    <li>記事ページへのリンク</li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">© 2020 ReqさんGames</div>
+    </div>
+</body>
 </html>
