@@ -40,7 +40,11 @@ function keyUpHandler(e) {
     if( e.keyCode == 32 ){
         ball.shot();
         isStart = true;
-	    return false;
+	return false
+	if (e.preventDefault) {
+		e.preventDefault();
+	}
+	e.returnValue = false;
     }
 }
 
