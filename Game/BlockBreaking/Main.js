@@ -31,6 +31,10 @@ function keyDownHandler(e) {
 }
 // キーを話した時の処理.
 function keyUpHandler(e) {
+	if (e.preventDefault) {
+		e.preventDefault();
+	}
+	e.returnValue = false;
     if (e.key == "Right" || e.key == "ArrowRight") {
         rightPressed = false;
     }
@@ -41,10 +45,6 @@ function keyUpHandler(e) {
     if( e.keyCode == 32 ){
         ball.shot();
         isStart = true;
-	if (e.preventDefault) {
-		e.preventDefault();
-	}
-	e.returnValue = false;
 	return false
     }
 }
