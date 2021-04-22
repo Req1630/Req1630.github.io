@@ -1,0 +1,241 @@
+\hypertarget{class_c_widget}{}\doxysection{CWidget クラス}
+\label{class_c_widget}\index{CWidget@{CWidget}}
+
+
+{\ttfamily \#include $<$Widget.\+h$>$}
+
+
+
+CWidget の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CWidget 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_widget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aa}{EFade\+State}} \{ \mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaaefeb369cccbd560588a756610865664c}{In}}
+, \mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaa7c147cda9e49590f6abe83d118b7353b}{Out}}
+, \mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaaa20ddccbb6f808ec42cd66323e6c6061}{Finish}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_widget_a75927ff55c428fc529078aa58a644eba}{CWidget}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_widget_acf4d2ef3c2872a34e56c95eb3fc82a78}{$\sim$\+CWidget}} ()
+\item 
+void \mbox{\hyperlink{class_c_widget_af96dea44877fe247433c860e36486255}{Set\+Fade\+In}} (const float \&alpha\+Speed)
+\item 
+void \mbox{\hyperlink{class_c_widget_af9446f2b5d8c962e11195accc125faeb}{Set\+Fade\+Out}} (const float \&alpha\+Speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_c_widget_a8566f088fe63a269004a7d81b67f21bf}{Sprite\+Setting}} ()=0
+\item 
+void \mbox{\hyperlink{class_c_widget_a0fe417d34953f48329c652593d87373e}{Fade\+In}} (float \&alpha)
+\item 
+void \mbox{\hyperlink{class_c_widget_adf1583d52fb07c71081e516cdf397117}{Fade\+Out}} (float \&alpha)
+\item 
+void \mbox{\hyperlink{class_c_widget_a4ecbe6ff68d6cc6edc7cc963e5bd6762}{Fade\+Update}} (float \&alpha)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_c_widget_a0482d44f5d7da5da9f31e7c12e9cacbc}{ALPHA\+\_\+\+MAX}} = 1.\+0f
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_sprite}{CSprite}} $>$ \mbox{\hyperlink{class_c_widget_a65b2032af6be39c88fe333b15711bc04}{m\+\_\+p\+Sprite}}
+\item 
+\mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aa}{EFade\+State}} \mbox{\hyperlink{class_c_widget_afa968609441422aa943419b3f675a71b}{m\+\_\+\+Fade\+State}}
+\item 
+float \mbox{\hyperlink{class_c_widget_a33c7607435f8efdc7a01f5664c7f5e24}{m\+\_\+\+Alpha}}
+\item 
+float \mbox{\hyperlink{class_c_widget_a7d7a4769be44db820e4b40e425ae3ea2}{m\+\_\+\+Alpha\+Max}}
+\item 
+float \mbox{\hyperlink{class_c_widget_a067d1803b2d285487ff1ef0752ab19f8}{m\+\_\+\+Alpha\+Speed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aa}\label{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aa}} 
+\index{CWidget@{CWidget}!EFadeState@{EFadeState}}
+\index{EFadeState@{EFadeState}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{EFadeState}{EFadeState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aa}{CWidget\+::\+EFade\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{In@{In}!CWidget@{CWidget}}\index{CWidget@{CWidget}!In@{In}}}\mbox{\Hypertarget{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaaefeb369cccbd560588a756610865664c}\label{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaaefeb369cccbd560588a756610865664c}} 
+In&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Out@{Out}!CWidget@{CWidget}}\index{CWidget@{CWidget}!Out@{Out}}}\mbox{\Hypertarget{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaa7c147cda9e49590f6abe83d118b7353b}\label{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaa7c147cda9e49590f6abe83d118b7353b}} 
+Out&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Finish@{Finish}!CWidget@{CWidget}}\index{CWidget@{CWidget}!Finish@{Finish}}}\mbox{\Hypertarget{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaaa20ddccbb6f808ec42cd66323e6c6061}\label{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aaaa20ddccbb6f808ec42cd66323e6c6061}} 
+Finish&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_widget_a75927ff55c428fc529078aa58a644eba}\label{class_c_widget_a75927ff55c428fc529078aa58a644eba}} 
+\index{CWidget@{CWidget}!CWidget@{CWidget}}
+\index{CWidget@{CWidget}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{CWidget()}{CWidget()}}
+{\footnotesize\ttfamily CWidget\+::\+CWidget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_widget_acf4d2ef3c2872a34e56c95eb3fc82a78}\label{class_c_widget_acf4d2ef3c2872a34e56c95eb3fc82a78}} 
+\index{CWidget@{CWidget}!````~CWidget@{$\sim$CWidget}}
+\index{````~CWidget@{$\sim$CWidget}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{$\sim$CWidget()}{~CWidget()}}
+{\footnotesize\ttfamily CWidget\+::$\sim$\+CWidget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_widget_a0fe417d34953f48329c652593d87373e}\label{class_c_widget_a0fe417d34953f48329c652593d87373e}} 
+\index{CWidget@{CWidget}!FadeIn@{FadeIn}}
+\index{FadeIn@{FadeIn}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{FadeIn()}{FadeIn()}}
+{\footnotesize\ttfamily void CWidget\+::\+Fade\+In (\begin{DoxyParamCaption}\item[{float \&}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_widget_a0fe417d34953f48329c652593d87373e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_widget_adf1583d52fb07c71081e516cdf397117}\label{class_c_widget_adf1583d52fb07c71081e516cdf397117}} 
+\index{CWidget@{CWidget}!FadeOut@{FadeOut}}
+\index{FadeOut@{FadeOut}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{FadeOut()}{FadeOut()}}
+{\footnotesize\ttfamily void CWidget\+::\+Fade\+Out (\begin{DoxyParamCaption}\item[{float \&}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_widget_adf1583d52fb07c71081e516cdf397117_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_widget_a4ecbe6ff68d6cc6edc7cc963e5bd6762}\label{class_c_widget_a4ecbe6ff68d6cc6edc7cc963e5bd6762}} 
+\index{CWidget@{CWidget}!FadeUpdate@{FadeUpdate}}
+\index{FadeUpdate@{FadeUpdate}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{FadeUpdate()}{FadeUpdate()}}
+{\footnotesize\ttfamily void CWidget\+::\+Fade\+Update (\begin{DoxyParamCaption}\item[{float \&}]{alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_c_widget_a4ecbe6ff68d6cc6edc7cc963e5bd6762_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_widget_a4ecbe6ff68d6cc6edc7cc963e5bd6762_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_widget_af96dea44877fe247433c860e36486255}\label{class_c_widget_af96dea44877fe247433c860e36486255}} 
+\index{CWidget@{CWidget}!SetFadeIn@{SetFadeIn}}
+\index{SetFadeIn@{SetFadeIn}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{SetFadeIn()}{SetFadeIn()}}
+{\footnotesize\ttfamily void CWidget\+::\+Set\+Fade\+In (\begin{DoxyParamCaption}\item[{const float \&}]{alpha\+Speed }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_widget_af96dea44877fe247433c860e36486255_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_widget_af9446f2b5d8c962e11195accc125faeb}\label{class_c_widget_af9446f2b5d8c962e11195accc125faeb}} 
+\index{CWidget@{CWidget}!SetFadeOut@{SetFadeOut}}
+\index{SetFadeOut@{SetFadeOut}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{SetFadeOut()}{SetFadeOut()}}
+{\footnotesize\ttfamily void CWidget\+::\+Set\+Fade\+Out (\begin{DoxyParamCaption}\item[{const float \&}]{alpha\+Speed }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_widget_af9446f2b5d8c962e11195accc125faeb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_widget_a8566f088fe63a269004a7d81b67f21bf}\label{class_c_widget_a8566f088fe63a269004a7d81b67f21bf}} 
+\index{CWidget@{CWidget}!SpriteSetting@{SpriteSetting}}
+\index{SpriteSetting@{SpriteSetting}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{SpriteSetting()}{SpriteSetting()}}
+{\footnotesize\ttfamily virtual bool CWidget\+::\+Sprite\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_widget_a0482d44f5d7da5da9f31e7c12e9cacbc}\label{class_c_widget_a0482d44f5d7da5da9f31e7c12e9cacbc}} 
+\index{CWidget@{CWidget}!ALPHA\_MAX@{ALPHA\_MAX}}
+\index{ALPHA\_MAX@{ALPHA\_MAX}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{ALPHA\_MAX}{ALPHA\_MAX}}
+{\footnotesize\ttfamily const float CWidget\+::\+ALPHA\+\_\+\+MAX = 1.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_widget_a33c7607435f8efdc7a01f5664c7f5e24}\label{class_c_widget_a33c7607435f8efdc7a01f5664c7f5e24}} 
+\index{CWidget@{CWidget}!m\_Alpha@{m\_Alpha}}
+\index{m\_Alpha@{m\_Alpha}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{m\_Alpha}{m\_Alpha}}
+{\footnotesize\ttfamily float CWidget\+::m\+\_\+\+Alpha\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_widget_a7d7a4769be44db820e4b40e425ae3ea2}\label{class_c_widget_a7d7a4769be44db820e4b40e425ae3ea2}} 
+\index{CWidget@{CWidget}!m\_AlphaMax@{m\_AlphaMax}}
+\index{m\_AlphaMax@{m\_AlphaMax}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{m\_AlphaMax}{m\_AlphaMax}}
+{\footnotesize\ttfamily float CWidget\+::m\+\_\+\+Alpha\+Max\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_widget_a067d1803b2d285487ff1ef0752ab19f8}\label{class_c_widget_a067d1803b2d285487ff1ef0752ab19f8}} 
+\index{CWidget@{CWidget}!m\_AlphaSpeed@{m\_AlphaSpeed}}
+\index{m\_AlphaSpeed@{m\_AlphaSpeed}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{m\_AlphaSpeed}{m\_AlphaSpeed}}
+{\footnotesize\ttfamily float CWidget\+::m\+\_\+\+Alpha\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_widget_afa968609441422aa943419b3f675a71b}\label{class_c_widget_afa968609441422aa943419b3f675a71b}} 
+\index{CWidget@{CWidget}!m\_FadeState@{m\_FadeState}}
+\index{m\_FadeState@{m\_FadeState}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{m\_FadeState}{m\_FadeState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_widget_ac16a3734f7aa48fca0f6c9f57a78a1aa}{EFade\+State}} CWidget\+::m\+\_\+\+Fade\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_widget_a65b2032af6be39c88fe333b15711bc04}\label{class_c_widget_a65b2032af6be39c88fe333b15711bc04}} 
+\index{CWidget@{CWidget}!m\_pSprite@{m\_pSprite}}
+\index{m\_pSprite@{m\_pSprite}!CWidget@{CWidget}}
+\doxysubsubsection{\texorpdfstring{m\_pSprite}{m\_pSprite}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_sprite}{CSprite}}$>$ CWidget\+::m\+\_\+p\+Sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\mbox{\hyperlink{_widget_8h}{Widget.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\mbox{\hyperlink{_widget_8cpp}{Widget.\+cpp}}\end{DoxyCompactItemize}

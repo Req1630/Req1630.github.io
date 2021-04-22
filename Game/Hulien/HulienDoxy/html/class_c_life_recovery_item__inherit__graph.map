@@ -1,0 +1,6 @@
+<map id="CLifeRecoveryItem" name="CLifeRecoveryItem">
+<area shape="rect" id="node1" title=" " alt="" coords="5,229,135,256"/>
+<area shape="rect" id="node2" href="$class_c_item_base.html" title=" " alt="" coords="27,155,113,181"/>
+<area shape="rect" id="node3" href="$class_c_actor.html" title=" " alt="" coords="39,80,101,107"/>
+<area shape="rect" id="node4" href="$class_c_game_object.html" title=" " alt="" coords="18,5,122,32"/>
+</map>

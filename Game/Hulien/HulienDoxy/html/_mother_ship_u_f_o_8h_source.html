@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/MotherShipUFO/MotherShipUFO.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_55c6fe635dcd44e1da15f8d23351175e.html">MotherShipUFO</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MotherShipUFO.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mother_ship_u_f_o_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef MOTHER_SHIP_UFO_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define MOTHER_SHIP_UFO_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\GameObject.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_actor.html">CActor</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_collision_manager.html">CCollisionManager</a>;    <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_u_f_o_light.html">CUFOLight</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/**********************************************</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*   マザーシップUFOクラス.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_mother_ship_u_f_o.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mother_ship_u_f_o.html">CMotherShipUFO</a> : <span class="keyword">public</span> <a class="code" href="class_c_game_object.html">CGameObject</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// マザーシップのパラメータ.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html">   22</a></span>&#160;    <span class="keyword">struct </span>stMotherShipUFOParam</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#acc87f57e2bc125afa2ec7f6521deeb53">   24</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#acc87f57e2bc125afa2ec7f6521deeb53">Position</a>;           <span class="comment">// 座標.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a361929532a6721a7c97385b6dcadc41f">   25</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a361929532a6721a7c97385b6dcadc41f">AddPosYPower</a>;       <span class="comment">// 持ち上げる力.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#ac3c31cc1d6cd00d1b46e0daeb55f16f6">   26</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#ac3c31cc1d6cd00d1b46e0daeb55f16f6">SphereAdjPos</a>;       <span class="comment">// スフィアの調整座標.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a9c3aa94e15b2cba21bc5d79d82bbb860">   27</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a9c3aa94e15b2cba21bc5d79d82bbb860">CollisionRadius</a>;    <span class="comment">// 当たり判定の半径.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a03a22306209ff44d674d317b7b79a71f">   28</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a03a22306209ff44d674d317b7b79a71f">LightPosition</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#acf8477d48ed9f574181aa9ede7225fde">   29</a></span>&#160;        D3DXVECTOR2 <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#acf8477d48ed9f574181aa9ede7225fde">LightSize</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a6ecca897121ab3f086c29ede662fb861">   31</a></span>&#160;        <a class="code" href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a6ecca897121ab3f086c29ede662fb861">stMotherShipUFOParam</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            : Position          ( 0.0f, 0.0f, 0.0f )</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            , AddPosYPower      ( 0.0f )</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            , SphereAdjPos      ( 0.0f, 0.0f, 0.0f )</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            , CollisionRadius   ( 1.0f )</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            , LightPosition     ( 0.0f, 0.0f, 0.0f )</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            , LightSize         ( 2.85f, 2.5f )</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    } <span class="keyword">typedef</span> SMotherShipUFOParam;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME = <span class="stringliteral">&quot;ufo&quot;</span>; <span class="comment">// モデル名.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* PARAMETER_FILE_PATH = <span class="stringliteral">&quot;Data\\GameParam\\Alien\\MotherShipUFOParam\\MotherShipUFOParam.bin&quot;</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> WND_OUT_SIZE = 700.0f;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_c_mother_ship_u_f_o.html#aa5c9bd7d4e07037e2af8d7447ec59050">CMotherShipUFO</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a89ef9347a227dbe602d10e158a82556e">~CMotherShipUFO</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a71beb7e8878c30f97dedf949188af58a">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a73d8176667ce58ce1302519a0fc595dd">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#ab63ece9c5cee9a624fca448fa5292cf6">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// 当たり判定.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a75be84fc3340ca7c86af0e3856cc2bb3">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// パラメータの設定.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#afe9f1aa9f9a3dc281de3d09515631398">SetParameter</a>( <span class="keyword">const</span> SMotherShipUFOParam&amp; param );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// 描画フラグ設定関数.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_mother_ship_u_f_o.html#a8b79dee826d84ad8969e136dc2dc9908">   62</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a8b79dee826d84ad8969e136dc2dc9908">SetDisp</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; disp) { m_IsDisp = disp; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 宇宙人が帰還したか取得関数.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_c_mother_ship_u_f_o.html#aec686d6b92e12760d95d01f7ed6c9268">   64</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_mother_ship_u_f_o.html#aec686d6b92e12760d95d01f7ed6c9268">IsReturnAlien</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsReturnAlien; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// ライトを取り出す.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#ad8b949fdac1149722048b53b8ffd3baf">LightDischarge</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// ライトをしまう.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a9ffe5fc98c7cf33c8dd1b4a3394208c5">LightCleanUP</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 光を完全に放出する.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a1d9c2e902ccae4a2145631cad6462328">DischargePreparation</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// 光を片づける.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mother_ship_u_f_o.html#a381a002f7b53c0e6cdc2dd6a3344644f">CleanUPPreparation</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 当たり判定(イベントで使用).</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_mother_ship_u_f_o.html#a75be84fc3340ca7c86af0e3856cc2bb3">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isEvent );</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// モデルの取得.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> GetModel();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> CollisionSetting();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::shared_ptr&lt;CDX9StaticMesh&gt;     m_pStaticMesh;  <span class="comment">// スタティックメッシュ.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::shared_ptr&lt;CCollisionManager&gt;  m_pCollManager; <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::unique_ptr&lt;CUFOLight&gt;          m_pUFOLight;    <span class="comment">// UFOのライト.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    SMotherShipUFOParam                 m_Param;        <span class="comment">// パラメーター.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span>                                m_IsDisp;       <span class="comment">// 描画しているか.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span>                                m_IsReturnAlien;<span class="comment">// 宇宙人が帰還したか.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef MOTHER_SHIP_UFO_H.</span></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_collision_manager_html"><div class="ttname"><a href="class_c_collision_manager.html">CCollisionManager</a></div><div class="ttdef"><b>Definition:</b> CollsionManager.h:20</div></div>
+<div class="ttc" id="aclass_c_game_object_html"><div class="ttname"><a href="class_c_game_object.html">CGameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:17</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html">CMotherShipUFO</a></div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:19</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a1d9c2e902ccae4a2145631cad6462328"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a1d9c2e902ccae4a2145631cad6462328">CMotherShipUFO::DischargePreparation</a></div><div class="ttdeci">void DischargePreparation()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:127</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a381a002f7b53c0e6cdc2dd6a3344644f"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a381a002f7b53c0e6cdc2dd6a3344644f">CMotherShipUFO::CleanUPPreparation</a></div><div class="ttdeci">void CleanUPPreparation()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:133</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a71beb7e8878c30f97dedf949188af58a"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a71beb7e8878c30f97dedf949188af58a">CMotherShipUFO::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:27</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a73d8176667ce58ce1302519a0fc595dd"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a73d8176667ce58ce1302519a0fc595dd">CMotherShipUFO::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:40</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a75be84fc3340ca7c86af0e3856cc2bb3"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a75be84fc3340ca7c86af0e3856cc2bb3">CMotherShipUFO::Collision</a></div><div class="ttdeci">void Collision(CActor *pActor)</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:77</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a89ef9347a227dbe602d10e158a82556e"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a89ef9347a227dbe602d10e158a82556e">CMotherShipUFO::~CMotherShipUFO</a></div><div class="ttdeci">virtual ~CMotherShipUFO()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:22</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a8b79dee826d84ad8969e136dc2dc9908"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a8b79dee826d84ad8969e136dc2dc9908">CMotherShipUFO::SetDisp</a></div><div class="ttdeci">void SetDisp(const bool &amp;disp)</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:62</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_a9ffe5fc98c7cf33c8dd1b4a3394208c5"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#a9ffe5fc98c7cf33c8dd1b4a3394208c5">CMotherShipUFO::LightCleanUP</a></div><div class="ttdeci">void LightCleanUP()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:121</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_aa5c9bd7d4e07037e2af8d7447ec59050"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#aa5c9bd7d4e07037e2af8d7447ec59050">CMotherShipUFO::CMotherShipUFO</a></div><div class="ttdeci">CMotherShipUFO()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:10</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_ab63ece9c5cee9a624fca448fa5292cf6"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#ab63ece9c5cee9a624fca448fa5292cf6">CMotherShipUFO::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:46</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_ad8b949fdac1149722048b53b8ffd3baf"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#ad8b949fdac1149722048b53b8ffd3baf">CMotherShipUFO::LightDischarge</a></div><div class="ttdeci">void LightDischarge()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:115</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_aec686d6b92e12760d95d01f7ed6c9268"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#aec686d6b92e12760d95d01f7ed6c9268">CMotherShipUFO::IsReturnAlien</a></div><div class="ttdeci">bool IsReturnAlien() const</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:64</div></div>
+<div class="ttc" id="aclass_c_mother_ship_u_f_o_html_afe9f1aa9f9a3dc281de3d09515631398"><div class="ttname"><a href="class_c_mother_ship_u_f_o.html#afe9f1aa9f9a3dc281de3d09515631398">CMotherShipUFO::SetParameter</a></div><div class="ttdeci">void SetParameter(const SMotherShipUFOParam &amp;param)</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.cpp:98</div></div>
+<div class="ttc" id="aclass_c_u_f_o_light_html"><div class="ttname"><a href="class_c_u_f_o_light.html">CUFOLight</a></div><div class="ttdef"><b>Definition:</b> UFOLight.h:15</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_a03a22306209ff44d674d317b7b79a71f"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a03a22306209ff44d674d317b7b79a71f">CMotherShipUFO::SMotherShipUFOParam::LightPosition</a></div><div class="ttdeci">D3DXVECTOR3 LightPosition</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:28</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_a361929532a6721a7c97385b6dcadc41f"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a361929532a6721a7c97385b6dcadc41f">CMotherShipUFO::SMotherShipUFOParam::AddPosYPower</a></div><div class="ttdeci">float AddPosYPower</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:25</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_a6ecca897121ab3f086c29ede662fb861"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a6ecca897121ab3f086c29ede662fb861">CMotherShipUFO::SMotherShipUFOParam::stMotherShipUFOParam</a></div><div class="ttdeci">stMotherShipUFOParam()</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:31</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_a9c3aa94e15b2cba21bc5d79d82bbb860"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#a9c3aa94e15b2cba21bc5d79d82bbb860">CMotherShipUFO::SMotherShipUFOParam::CollisionRadius</a></div><div class="ttdeci">float CollisionRadius</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:27</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_ac3c31cc1d6cd00d1b46e0daeb55f16f6"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#ac3c31cc1d6cd00d1b46e0daeb55f16f6">CMotherShipUFO::SMotherShipUFOParam::SphereAdjPos</a></div><div class="ttdeci">D3DXVECTOR3 SphereAdjPos</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:26</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_acc87f57e2bc125afa2ec7f6521deeb53"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#acc87f57e2bc125afa2ec7f6521deeb53">CMotherShipUFO::SMotherShipUFOParam::Position</a></div><div class="ttdeci">D3DXVECTOR3 Position</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:24</div></div>
+<div class="ttc" id="astruct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param_html_acf8477d48ed9f574181aa9ede7225fde"><div class="ttname"><a href="struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param.html#acf8477d48ed9f574181aa9ede7225fde">CMotherShipUFO::SMotherShipUFOParam::LightSize</a></div><div class="ttdeci">D3DXVECTOR2 LightSize</div><div class="ttdef"><b>Definition:</b> MotherShipUFO.h:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

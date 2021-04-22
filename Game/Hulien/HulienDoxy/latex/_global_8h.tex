@@ -1,0 +1,160 @@
+\hypertarget{_global_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Global.h ファイル}
+\label{_global_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Global.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Global.h}}
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include $<$crtdbg.\+h$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$D3\+DX11.\+h$>$}\newline
+{\ttfamily \#include $<$D3\+D11.\+h$>$}\newline
+{\ttfamily \#include $<$D3\+DX10.\+h$>$}\newline
+{\ttfamily \#include $<$D3\+D10.\+h$>$}\newline
+{\ttfamily \#include $<$d3dx9.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Utility/\+My\+Log/\+My\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$codecvt$>$}\newline
+Global.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_global_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_global_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_global_8h_a6038f7bdb274c2e159988a57dedbf93d}{SAFE\+\_\+\+RELEASE}}(p)~if(p!=nullptr)\{(p)-\/$>$Release();(p)=nullptr;\}
+\item 
+\#define \mbox{\hyperlink{_global_8h_a9bbcd82e77c41df827c09759def05c9a}{SAFE\+\_\+\+DELETE}}(p)~if(p!=nullptr)\{delete (p);(p)=nullptr;\}
+\item 
+\#define \mbox{\hyperlink{_global_8h_a506b3685b3eb05aac751f9e14cbed93b}{SAFE\+\_\+\+DELETE\+\_\+\+ARRAY}}(p)~if(p!=nullptr)\{delete\mbox{[}$\,$\mbox{]} (p);(p) = nullptr;\}
+\item 
+\#define \mbox{\hyperlink{_global_8h_af95298b7181f9b9484f4b76e794c8d25}{ALIGN16}}~\+\_\+declspec(align(16))
+\end{DoxyCompactItemize}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T  = std\+::string$>$ }\\void \mbox{\hyperlink{_global_8h_aa283894c924650d8db619a0f93f97b25}{ERROR\+\_\+\+MESSAGE}} (const std\+::string \&error)
+\end{DoxyCompactItemize}
+\doxysubsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_global_8h_a6a02f87f580d8b9e0e5b3bbc964efb1c}{WND\+\_\+W}} = 1280
+\item 
+const int \mbox{\hyperlink{_global_8h_a6ba6a18a896a6e1a88f7ec592f5efc20}{WND\+\_\+H}} = 720
+\item 
+const int \mbox{\hyperlink{_global_8h_ac5090a6568797128b0a5545228bb8b75}{FPS}} = 60
+\item 
+const int \mbox{\hyperlink{_global_8h_a17ea9a1a2620d169f72371688662d357}{FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+INT}} = 0
+\item 
+const float \mbox{\hyperlink{_global_8h_a7dad2dfe77a5bb1f6bef37e844f103f3}{FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+FLOAT}} = 0.\+0f
+\item 
+const double \mbox{\hyperlink{_global_8h_a34e09b0aec373307376c4acaa61bec7c}{FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+DOUBLE}} = 0.\+0
+\item 
+const D3\+DXVECTOR3 \mbox{\hyperlink{_global_8h_abd190dcad080b8ff453a293859784058}{FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+VEC3}} = \{ 0.\+0f, 0.\+0f, 0.\+0f \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{_global_8h_af95298b7181f9b9484f4b76e794c8d25}\label{_global_8h_af95298b7181f9b9484f4b76e794c8d25}} 
+\index{Global.h@{Global.h}!ALIGN16@{ALIGN16}}
+\index{ALIGN16@{ALIGN16}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{ALIGN16}{ALIGN16}}
+{\footnotesize\ttfamily \#define ALIGN16~\+\_\+declspec(align(16))}
+
+\mbox{\Hypertarget{_global_8h_a9bbcd82e77c41df827c09759def05c9a}\label{_global_8h_a9bbcd82e77c41df827c09759def05c9a}} 
+\index{Global.h@{Global.h}!SAFE\_DELETE@{SAFE\_DELETE}}
+\index{SAFE\_DELETE@{SAFE\_DELETE}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{SAFE\_DELETE}{SAFE\_DELETE}}
+{\footnotesize\ttfamily \#define SAFE\+\_\+\+DELETE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~if(p!=nullptr)\{delete (p);(p)=nullptr;\}}
+
+\mbox{\Hypertarget{_global_8h_a506b3685b3eb05aac751f9e14cbed93b}\label{_global_8h_a506b3685b3eb05aac751f9e14cbed93b}} 
+\index{Global.h@{Global.h}!SAFE\_DELETE\_ARRAY@{SAFE\_DELETE\_ARRAY}}
+\index{SAFE\_DELETE\_ARRAY@{SAFE\_DELETE\_ARRAY}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{SAFE\_DELETE\_ARRAY}{SAFE\_DELETE\_ARRAY}}
+{\footnotesize\ttfamily \#define SAFE\+\_\+\+DELETE\+\_\+\+ARRAY(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~if(p!=nullptr)\{delete\mbox{[}$\,$\mbox{]} (p);(p) = nullptr;\}}
+
+\mbox{\Hypertarget{_global_8h_a6038f7bdb274c2e159988a57dedbf93d}\label{_global_8h_a6038f7bdb274c2e159988a57dedbf93d}} 
+\index{Global.h@{Global.h}!SAFE\_RELEASE@{SAFE\_RELEASE}}
+\index{SAFE\_RELEASE@{SAFE\_RELEASE}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{SAFE\_RELEASE}{SAFE\_RELEASE}}
+{\footnotesize\ttfamily \#define SAFE\+\_\+\+RELEASE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~if(p!=nullptr)\{(p)-\/$>$Release();(p)=nullptr;\}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{_global_8h_aa283894c924650d8db619a0f93f97b25}\label{_global_8h_aa283894c924650d8db619a0f93f97b25}} 
+\index{Global.h@{Global.h}!ERROR\_MESSAGE@{ERROR\_MESSAGE}}
+\index{ERROR\_MESSAGE@{ERROR\_MESSAGE}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{ERROR\_MESSAGE()}{ERROR\_MESSAGE()}}
+{\footnotesize\ttfamily template$<$class T  = std\+::string$>$ \\
+void ERROR\+\_\+\+MESSAGE (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{error }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_global_8h_aa283894c924650d8db619a0f93f97b25_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_global_8h_aa283894c924650d8db619a0f93f97b25_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{変数詳解}
+\mbox{\Hypertarget{_global_8h_a34e09b0aec373307376c4acaa61bec7c}\label{_global_8h_a34e09b0aec373307376c4acaa61bec7c}} 
+\index{Global.h@{Global.h}!FOR\_INIT\_ZERO\_DOUBLE@{FOR\_INIT\_ZERO\_DOUBLE}}
+\index{FOR\_INIT\_ZERO\_DOUBLE@{FOR\_INIT\_ZERO\_DOUBLE}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{FOR\_INIT\_ZERO\_DOUBLE}{FOR\_INIT\_ZERO\_DOUBLE}}
+{\footnotesize\ttfamily const double FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+DOUBLE = 0.\+0}
+
+\mbox{\Hypertarget{_global_8h_a7dad2dfe77a5bb1f6bef37e844f103f3}\label{_global_8h_a7dad2dfe77a5bb1f6bef37e844f103f3}} 
+\index{Global.h@{Global.h}!FOR\_INIT\_ZERO\_FLOAT@{FOR\_INIT\_ZERO\_FLOAT}}
+\index{FOR\_INIT\_ZERO\_FLOAT@{FOR\_INIT\_ZERO\_FLOAT}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{FOR\_INIT\_ZERO\_FLOAT}{FOR\_INIT\_ZERO\_FLOAT}}
+{\footnotesize\ttfamily const float FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+FLOAT = 0.\+0f}
+
+\mbox{\Hypertarget{_global_8h_a17ea9a1a2620d169f72371688662d357}\label{_global_8h_a17ea9a1a2620d169f72371688662d357}} 
+\index{Global.h@{Global.h}!FOR\_INIT\_ZERO\_INT@{FOR\_INIT\_ZERO\_INT}}
+\index{FOR\_INIT\_ZERO\_INT@{FOR\_INIT\_ZERO\_INT}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{FOR\_INIT\_ZERO\_INT}{FOR\_INIT\_ZERO\_INT}}
+{\footnotesize\ttfamily const int FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+INT = 0}
+
+\mbox{\Hypertarget{_global_8h_abd190dcad080b8ff453a293859784058}\label{_global_8h_abd190dcad080b8ff453a293859784058}} 
+\index{Global.h@{Global.h}!FOR\_INIT\_ZERO\_VEC3@{FOR\_INIT\_ZERO\_VEC3}}
+\index{FOR\_INIT\_ZERO\_VEC3@{FOR\_INIT\_ZERO\_VEC3}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{FOR\_INIT\_ZERO\_VEC3}{FOR\_INIT\_ZERO\_VEC3}}
+{\footnotesize\ttfamily const D3\+DXVECTOR3 FOR\+\_\+\+INIT\+\_\+\+ZERO\+\_\+\+VEC3 = \{ 0.\+0f, 0.\+0f, 0.\+0f \}}
+
+\mbox{\Hypertarget{_global_8h_ac5090a6568797128b0a5545228bb8b75}\label{_global_8h_ac5090a6568797128b0a5545228bb8b75}} 
+\index{Global.h@{Global.h}!FPS@{FPS}}
+\index{FPS@{FPS}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{FPS}{FPS}}
+{\footnotesize\ttfamily const int FPS = 60}
+
+\mbox{\Hypertarget{_global_8h_a6ba6a18a896a6e1a88f7ec592f5efc20}\label{_global_8h_a6ba6a18a896a6e1a88f7ec592f5efc20}} 
+\index{Global.h@{Global.h}!WND\_H@{WND\_H}}
+\index{WND\_H@{WND\_H}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{WND\_H}{WND\_H}}
+{\footnotesize\ttfamily const int WND\+\_\+H = 720}
+
+\mbox{\Hypertarget{_global_8h_a6a02f87f580d8b9e0e5b3bbc964efb1c}\label{_global_8h_a6a02f87f580d8b9e0e5b3bbc964efb1c}} 
+\index{Global.h@{Global.h}!WND\_W@{WND\_W}}
+\index{WND\_W@{WND\_W}!Global.h@{Global.h}}
+\doxysubsubsection{\texorpdfstring{WND\_W}{WND\_W}}
+{\footnotesize\ttfamily const int WND\+\_\+W = 1280}
+

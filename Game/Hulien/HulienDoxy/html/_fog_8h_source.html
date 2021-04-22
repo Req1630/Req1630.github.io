@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Fog/Fog.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_7a0772782fe72a5ea1e9414fc75fd5fe.html">Fog</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Fog.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_fog_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef FOG_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define FOG_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//------------------------------.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// フォグの構造体.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//------------------------------.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// フォグの情報 : 16byteにするために調整変数追加.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_s_fog_state.html">   15</a></span>&#160;<span class="keyword">struct </span>stFogState</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_s_fog_state.html#a8ba9db1e6c76f25dc958676b6ab6a6fc">   17</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_fog_state.html#a8ba9db1e6c76f25dc958676b6ab6a6fc">MinHeight</a>;    <span class="comment">// フォグの最小高さ.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_s_fog_state.html#a3dcf47e16593100a354aeb103dfb11c6">   18</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_fog_state.html#a3dcf47e16593100a354aeb103dfb11c6">MaxHeight</a>;    <span class="comment">// フォグの最大高さ.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_s_fog_state.html#aafaf1366055a89417f447596c4c55630">   19</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_fog_state.html#aafaf1366055a89417f447596c4c55630">TexScale</a>;     <span class="comment">// フォグのテクセルスケール値.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_s_fog_state.html#a52f814c662a48f8acc5cc0393075c6f3">   20</a></span>&#160;    <a class="code" href="struct_s_fog_state.html#a52f814c662a48f8acc5cc0393075c6f3">stFogState</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        : MinHeight ( 0.0f )</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        , MaxHeight ( 10.0f )</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        , TexScale  ( 0.03f )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">float</span> MemoryAdj;    <span class="comment">// メモリ調整用 16byteに設定するため.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="struct_s_fog_state.html">SFogState</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// フォグの情報 : コンスタントバッファに渡すよう.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_s_fog.html">   30</a></span>&#160;<span class="keyword">struct </span>stFog</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_s_fog.html#a6686d9f823b608ba3639b13e8ae2d9fb">   32</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_s_fog.html#a6686d9f823b608ba3639b13e8ae2d9fb">Tex</a>;    <span class="comment">// フォグのテクスチャ座標.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_s_fog.html#aeb3e13f9ecd166f98fe1d3a72ce854b7">   33</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_s_fog.html#aeb3e13f9ecd166f98fe1d3a72ce854b7">Color</a>;  <span class="comment">// フォグの色.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_s_fog.html#a9ca9ed9f5cfa0ab634eb6de7ce1472e2">   34</a></span>&#160;    <a class="code" href="struct_s_fog_state.html">SFogState</a>   <a class="code" href="struct_s_fog.html#a9ca9ed9f5cfa0ab634eb6de7ce1472e2">State</a>;  <span class="comment">// フォグのステータス.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_s_fog.html#a17f0820c4edbd3fcfb74d326bbc0e528">   36</a></span>&#160;    <a class="code" href="struct_s_fog.html#a17f0820c4edbd3fcfb74d326bbc0e528">stFog</a>()</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        : Tex   { 0.0f, 0.0f, 0.5f, 0.5f }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        , Color { 1.0f, 1.0f, 1.0f, 1.0f }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        , State ()</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="struct_s_fog.html">SFog</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_fog.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_fog.html">CFog</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_c_fog.html#aacf95321b6c88b8349591ca0dd7aa6a9">CFog</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_fog.html#ad21e5142e0589fc10cdfc1724ae65d39">~CFog</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// インスタンスの取得.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_fog.html">CFog</a>* <a class="code" href="class_c_fog.html#aa2131ba35e2efaf906fad79279fc1879">GetInstance</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// 更新.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_fog.html#aa03239241c34922daa0db100e4b9dd55">Update</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// フォグのテクスチャ座標取得.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_fog.html#aa2d70300fd562c1d1278ae6e36cf93c1">   55</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="struct_s_fog.html">SFog</a> <a class="code" href="class_c_fog.html#aa2d70300fd562c1d1278ae6e36cf93c1">GetFog</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_fog.html#aa2131ba35e2efaf906fad79279fc1879">GetInstance</a>()-&gt;m_Fog; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="struct_s_fog.html">SFog</a> m_Fog; <span class="comment">// フォグのテクスチャ座標.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// コピー・ムーブコンストラクタ, 代入演算子の削除.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_c_fog.html#aacf95321b6c88b8349591ca0dd7aa6a9">CFog</a>( <span class="keyword">const</span> <a class="code" href="class_c_fog.html">CFog</a> &amp; )                = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_c_fog.html#aacf95321b6c88b8349591ca0dd7aa6a9">CFog</a>( <a class="code" href="class_c_fog.html">CFog</a> &amp;&amp; )                     = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_c_fog.html">CFog</a>&amp; operator = ( <span class="keyword">const</span> <a class="code" href="class_c_fog.html">CFog</a> &amp; )   = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_c_fog.html">CFog</a>&amp; operator = ( <a class="code" href="class_c_fog.html">CFog</a> &amp;&amp; )        = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef FOG_H.</span></div>
+<div class="ttc" id="aclass_c_fog_html"><div class="ttname"><a href="class_c_fog.html">CFog</a></div><div class="ttdef"><b>Definition:</b> Fog.h:44</div></div>
+<div class="ttc" id="aclass_c_fog_html_aa03239241c34922daa0db100e4b9dd55"><div class="ttname"><a href="class_c_fog.html#aa03239241c34922daa0db100e4b9dd55">CFog::Update</a></div><div class="ttdeci">static void Update()</div><div class="ttdef"><b>Definition:</b> Fog.cpp:35</div></div>
+<div class="ttc" id="aclass_c_fog_html_aa2131ba35e2efaf906fad79279fc1879"><div class="ttname"><a href="class_c_fog.html#aa2131ba35e2efaf906fad79279fc1879">CFog::GetInstance</a></div><div class="ttdeci">static CFog * GetInstance()</div><div class="ttdef"><b>Definition:</b> Fog.cpp:28</div></div>
+<div class="ttc" id="aclass_c_fog_html_aa2d70300fd562c1d1278ae6e36cf93c1"><div class="ttname"><a href="class_c_fog.html#aa2d70300fd562c1d1278ae6e36cf93c1">CFog::GetFog</a></div><div class="ttdeci">static SFog GetFog()</div><div class="ttdef"><b>Definition:</b> Fog.h:55</div></div>
+<div class="ttc" id="aclass_c_fog_html_aacf95321b6c88b8349591ca0dd7aa6a9"><div class="ttname"><a href="class_c_fog.html#aacf95321b6c88b8349591ca0dd7aa6a9">CFog::CFog</a></div><div class="ttdeci">CFog()</div><div class="ttdef"><b>Definition:</b> Fog.cpp:14</div></div>
+<div class="ttc" id="aclass_c_fog_html_ad21e5142e0589fc10cdfc1724ae65d39"><div class="ttname"><a href="class_c_fog.html#ad21e5142e0589fc10cdfc1724ae65d39">CFog::~CFog</a></div><div class="ttdeci">~CFog()</div><div class="ttdef"><b>Definition:</b> Fog.cpp:23</div></div>
+<div class="ttc" id="astruct_s_fog_html"><div class="ttname"><a href="struct_s_fog.html">SFog</a></div><div class="ttdef"><b>Definition:</b> Fog.h:31</div></div>
+<div class="ttc" id="astruct_s_fog_html_a17f0820c4edbd3fcfb74d326bbc0e528"><div class="ttname"><a href="struct_s_fog.html#a17f0820c4edbd3fcfb74d326bbc0e528">SFog::stFog</a></div><div class="ttdeci">stFog()</div><div class="ttdef"><b>Definition:</b> Fog.h:36</div></div>
+<div class="ttc" id="astruct_s_fog_html_a6686d9f823b608ba3639b13e8ae2d9fb"><div class="ttname"><a href="struct_s_fog.html#a6686d9f823b608ba3639b13e8ae2d9fb">SFog::Tex</a></div><div class="ttdeci">D3DXVECTOR4 Tex</div><div class="ttdef"><b>Definition:</b> Fog.h:32</div></div>
+<div class="ttc" id="astruct_s_fog_html_a9ca9ed9f5cfa0ab634eb6de7ce1472e2"><div class="ttname"><a href="struct_s_fog.html#a9ca9ed9f5cfa0ab634eb6de7ce1472e2">SFog::State</a></div><div class="ttdeci">SFogState State</div><div class="ttdef"><b>Definition:</b> Fog.h:34</div></div>
+<div class="ttc" id="astruct_s_fog_html_aeb3e13f9ecd166f98fe1d3a72ce854b7"><div class="ttname"><a href="struct_s_fog.html#aeb3e13f9ecd166f98fe1d3a72ce854b7">SFog::Color</a></div><div class="ttdeci">D3DXVECTOR4 Color</div><div class="ttdef"><b>Definition:</b> Fog.h:33</div></div>
+<div class="ttc" id="astruct_s_fog_state_html"><div class="ttname"><a href="struct_s_fog_state.html">SFogState</a></div><div class="ttdef"><b>Definition:</b> Fog.h:16</div></div>
+<div class="ttc" id="astruct_s_fog_state_html_a3dcf47e16593100a354aeb103dfb11c6"><div class="ttname"><a href="struct_s_fog_state.html#a3dcf47e16593100a354aeb103dfb11c6">SFogState::MaxHeight</a></div><div class="ttdeci">float MaxHeight</div><div class="ttdef"><b>Definition:</b> Fog.h:18</div></div>
+<div class="ttc" id="astruct_s_fog_state_html_a52f814c662a48f8acc5cc0393075c6f3"><div class="ttname"><a href="struct_s_fog_state.html#a52f814c662a48f8acc5cc0393075c6f3">SFogState::stFogState</a></div><div class="ttdeci">stFogState()</div><div class="ttdef"><b>Definition:</b> Fog.h:20</div></div>
+<div class="ttc" id="astruct_s_fog_state_html_a8ba9db1e6c76f25dc958676b6ab6a6fc"><div class="ttname"><a href="struct_s_fog_state.html#a8ba9db1e6c76f25dc958676b6ab6a6fc">SFogState::MinHeight</a></div><div class="ttdeci">float MinHeight</div><div class="ttdef"><b>Definition:</b> Fog.h:17</div></div>
+<div class="ttc" id="astruct_s_fog_state_html_aafaf1366055a89417f447596c4c55630"><div class="ttname"><a href="struct_s_fog_state.html#aafaf1366055a89417f447596c4c55630">SFogState::TexScale</a></div><div class="ttdeci">float TexScale</div><div class="ttdef"><b>Definition:</b> Fog.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

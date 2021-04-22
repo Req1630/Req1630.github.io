@@ -1,0 +1,186 @@
+\hypertarget{class_s_t_g_1_1_c_bullet}{}\doxysection{STG\+::CBullet クラス}
+\label{class_s_t_g_1_1_c_bullet}\index{STG::CBullet@{STG::CBullet}}
+
+
+{\ttfamily \#include $<$STGBullet.\+h$>$}
+
+
+
+STG\+::CBullet の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_s_t_g_1_1_c_bullet__inherit__graph}
+\end{center}
+\end{figure}
+
+
+STG\+::CBullet 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_s_t_g_1_1_c_bullet__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a4fcf7c2042969fd475791a14b792fcdf}{CBullet}} ()
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a7bd7561b36a5e3542bb7b9c851c46636}{CBullet}} (const char $\ast$model\+Name)
+\item 
+virtual \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a08be203e1318050777fa0f66776234c4}{$\sim$\+CBullet}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_abc198dba0114999ea14130cab9ede414}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_acdc51ffae36aff81241ed4329baf859b}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a9f7570d924e9efc8438e4a7ff561b4b5}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a5e2e230fbcf751edbd3c30893dbfc36b}{Collision}} (\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$p\+Actor) override
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_acc7f2298bfc6b5f6c2d2209cb8e1d61e}{Shoot}} (const D3\+DXVECTOR3 \&pos, const float \&rot, const float \&move\+Speed)
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a93e0fdf107d51aa958145e917730c478}{Set\+Color}} (const D3\+DXVECTOR3 \&color)
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a8384b0851df68f1cb2df29d24e39e132}{Is\+Shot}} () const
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_adcc1e7fec911d53383a6436c44cd613e}{Set\+Coll\+Disappear}} ()
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a3261e368df683114de5027da5d4dd151}{Is\+Update\+End}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a4fcf7c2042969fd475791a14b792fcdf}\label{class_s_t_g_1_1_c_bullet_a4fcf7c2042969fd475791a14b792fcdf}} 
+\index{STG::CBullet@{STG::CBullet}!CBullet@{CBullet}}
+\index{CBullet@{CBullet}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{CBullet()}{CBullet()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily STG\+::\+CBullet\+::\+CBullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a7bd7561b36a5e3542bb7b9c851c46636}\label{class_s_t_g_1_1_c_bullet_a7bd7561b36a5e3542bb7b9c851c46636}} 
+\index{STG::CBullet@{STG::CBullet}!CBullet@{CBullet}}
+\index{CBullet@{CBullet}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{CBullet()}{CBullet()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily STG\+::\+CBullet\+::\+CBullet (\begin{DoxyParamCaption}\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a08be203e1318050777fa0f66776234c4}\label{class_s_t_g_1_1_c_bullet_a08be203e1318050777fa0f66776234c4}} 
+\index{STG::CBullet@{STG::CBullet}!````~CBullet@{$\sim$CBullet}}
+\index{````~CBullet@{$\sim$CBullet}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBullet()}{~CBullet()}}
+{\footnotesize\ttfamily STG\+::\+CBullet\+::$\sim$\+CBullet (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a5e2e230fbcf751edbd3c30893dbfc36b}\label{class_s_t_g_1_1_c_bullet_a5e2e230fbcf751edbd3c30893dbfc36b}} 
+\index{STG::CBullet@{STG::CBullet}!Collision@{Collision}}
+\index{Collision@{Collision}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}{STG\+::\+CActor}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_bullet_a5e2e230fbcf751edbd3c30893dbfc36b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_abc198dba0114999ea14130cab9ede414}\label{class_s_t_g_1_1_c_bullet_abc198dba0114999ea14130cab9ede414}} 
+\index{STG::CBullet@{STG::CBullet}!Init@{Init}}
+\index{Init@{Init}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_bullet_abc198dba0114999ea14130cab9ede414_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a8384b0851df68f1cb2df29d24e39e132}\label{class_s_t_g_1_1_c_bullet_a8384b0851df68f1cb2df29d24e39e132}} 
+\index{STG::CBullet@{STG::CBullet}!IsShot@{IsShot}}
+\index{IsShot@{IsShot}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{IsShot()}{IsShot()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+::\+Is\+Shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a3261e368df683114de5027da5d4dd151}\label{class_s_t_g_1_1_c_bullet_a3261e368df683114de5027da5d4dd151}} 
+\index{STG::CBullet@{STG::CBullet}!IsUpdateEnd@{IsUpdateEnd}}
+\index{IsUpdateEnd@{IsUpdateEnd}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{IsUpdateEnd()}{IsUpdateEnd()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+::\+Is\+Update\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a9f7570d924e9efc8438e4a7ff561b4b5}\label{class_s_t_g_1_1_c_bullet_a9f7570d924e9efc8438e4a7ff561b4b5}} 
+\index{STG::CBullet@{STG::CBullet}!Render@{Render}}
+\index{Render@{Render}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_bullet_a9f7570d924e9efc8438e4a7ff561b4b5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_adcc1e7fec911d53383a6436c44cd613e}\label{class_s_t_g_1_1_c_bullet_adcc1e7fec911d53383a6436c44cd613e}} 
+\index{STG::CBullet@{STG::CBullet}!SetCollDisappear@{SetCollDisappear}}
+\index{SetCollDisappear@{SetCollDisappear}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{SetCollDisappear()}{SetCollDisappear()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+::\+Set\+Coll\+Disappear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_a93e0fdf107d51aa958145e917730c478}\label{class_s_t_g_1_1_c_bullet_a93e0fdf107d51aa958145e917730c478}} 
+\index{STG::CBullet@{STG::CBullet}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_acc7f2298bfc6b5f6c2d2209cb8e1d61e}\label{class_s_t_g_1_1_c_bullet_acc7f2298bfc6b5f6c2d2209cb8e1d61e}} 
+\index{STG::CBullet@{STG::CBullet}!Shoot@{Shoot}}
+\index{Shoot@{Shoot}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{Shoot()}{Shoot()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+::\+Shoot (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos,  }\item[{const float \&}]{rot,  }\item[{const float \&}]{move\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_acdc51ffae36aff81241ed4329baf859b}\label{class_s_t_g_1_1_c_bullet_acdc51ffae36aff81241ed4329baf859b}} 
+\index{STG::CBullet@{STG::CBullet}!Update@{Update}}
+\index{Update@{Update}!STG::CBullet@{STG::CBullet}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_bullet_acdc51ffae36aff81241ed4329baf859b_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Bullet/\mbox{\hyperlink{_s_t_g_bullet_8h}{STGBullet.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Bullet/\mbox{\hyperlink{_s_t_g_bullet_8cpp}{STGBullet.\+cpp}}\end{DoxyCompactItemize}

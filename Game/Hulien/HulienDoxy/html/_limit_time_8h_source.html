@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget/LimitTime/LimitTime.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_c815d2af617786c0f5a537c28156456c.html">GameWidget</a></li><li class="navelem"><a class="el" href="dir_071ab43ce7236e0f2e33218b81598415.html">LimitTime</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LimitTime.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_limit_time_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIMITTIME_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIMITTIME_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\SceneWidget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*****************************************</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*   制限時間クラス.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_limit_time.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_limit_time.html">CLimitTime</a> : <span class="keyword">public</span> <a class="code" href="class_c_scene_widget.html">CSceneWidget</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TIME             = <span class="stringliteral">&quot;timeNumber&quot;</span>;     <span class="comment">//時間のスプライト名.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TIME_BACK        = <span class="stringliteral">&quot;timeBack&quot;</span>;       <span class="comment">//時間の背景スプライト名.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TIME_BACK_MINI   = <span class="stringliteral">&quot;timeBackMini&quot;</span>;   <span class="comment">//時間のミニ背景スプライト名.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> D3DXVECTOR3 ONETIME_INITPOS   = D3DXVECTOR3(655.0f, 80.0f, 0.0f); <span class="comment">//時間一の位初期位置.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> D3DXVECTOR3 TENTIME_INITPOS   = D3DXVECTOR3(625.0f, 80.0f, 0.0f); <span class="comment">//時間十の位初期位置.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> D3DXVECTOR3 MINIBACK_INITPOS  = D3DXVECTOR3(640, 40.0f, 0.0f);    <span class="comment">//ミミ背景の初期位置.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> MINIBACK_MAX_WIDTH      = 50.0f;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> MINIBACK_COUNT_ADD      = 0.005f;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> TIME_BACK_NUM             = 2;    <span class="comment">// 背景の配列番号.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> LIMITTIME_MAX             = 60;   <span class="comment">//制限時間最大.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> FRAME_DIVISION            = 100;<span class="comment">//フレーム割る数.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> ANIM_MAX                  = 10;   <span class="comment">//アニメーション最大数.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> TEN                       = 10;   <span class="comment">//十.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_c_limit_time.html#a8a92013ae3a2fc65e455d781484639c9">CLimitTime</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_limit_time.html#a5d43e7c712961cc659c7294b615be127">~CLimitTime</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_limit_time.html#a7a736315a61f20c2aaa54362a0062cae">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_limit_time.html#a1d2606f63706b92d030eaa5787778c82">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_limit_time.html#a8bdf1bba9403d2a26eebd61d788f7d8c">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// 終了の取得関数.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_limit_time.html#a639b68147af0caa5bc360dc67d10739d">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_limit_time.html#a639b68147af0caa5bc360dc67d10739d">IsFinish</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsFinish; } </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 位置設定関数.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> PositionSetting();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// アニメーション番号設定関数.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> AnimSetting();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// カウントダウン関数.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> CountDown();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// フレームから秒に変換関数.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> FramesToSeconds();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// ミニ背景の座標更新.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> MiniBackPositionUpdate();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pTimeSprites;     <span class="comment">// スプライトクラス.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pMiniBackSprites;     <span class="comment">// スプライトクラス.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::vector&lt;D3DXVECTOR3&gt;                m_vTimePosition;    <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::vector&lt;D3DXVECTOR3&gt;                m_vMiniBackPosition;    <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::vector&lt;float&gt;                      m_vMiniBackScale;   <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::vector&lt;int&gt;                        m_Anim;         <span class="comment">// アニメーション番号.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span>                                     m_FrameCount;   <span class="comment">// フレームカウント.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span>                                     m_Seconds;      <span class="comment">// 秒.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span>                                    m_IsFinish;     <span class="comment">// 終了したかどうか.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">float</span>   m_RotationCount;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef LIMITTIME_H.</span></div>
+<div class="ttc" id="aclass_c_limit_time_html"><div class="ttname"><a href="class_c_limit_time.html">CLimitTime</a></div><div class="ttdef"><b>Definition:</b> LimitTime.h:11</div></div>
+<div class="ttc" id="aclass_c_limit_time_html_a1d2606f63706b92d030eaa5787778c82"><div class="ttname"><a href="class_c_limit_time.html#a1d2606f63706b92d030eaa5787778c82">CLimitTime::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> LimitTime.cpp:42</div></div>
+<div class="ttc" id="aclass_c_limit_time_html_a5d43e7c712961cc659c7294b615be127"><div class="ttname"><a href="class_c_limit_time.html#a5d43e7c712961cc659c7294b615be127">CLimitTime::~CLimitTime</a></div><div class="ttdeci">virtual ~CLimitTime()</div><div class="ttdef"><b>Definition:</b> LimitTime.cpp:23</div></div>
+<div class="ttc" id="aclass_c_limit_time_html_a639b68147af0caa5bc360dc67d10739d"><div class="ttname"><a href="class_c_limit_time.html#a639b68147af0caa5bc360dc67d10739d">CLimitTime::IsFinish</a></div><div class="ttdeci">bool IsFinish() const</div><div class="ttdef"><b>Definition:</b> LimitTime.h:39</div></div>
+<div class="ttc" id="aclass_c_limit_time_html_a7a736315a61f20c2aaa54362a0062cae"><div class="ttname"><a href="class_c_limit_time.html#a7a736315a61f20c2aaa54362a0062cae">CLimitTime::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> LimitTime.cpp:28</div></div>
+<div class="ttc" id="aclass_c_limit_time_html_a8a92013ae3a2fc65e455d781484639c9"><div class="ttname"><a href="class_c_limit_time.html#a8a92013ae3a2fc65e455d781484639c9">CLimitTime::CLimitTime</a></div><div class="ttdeci">CLimitTime()</div><div class="ttdef"><b>Definition:</b> LimitTime.cpp:9</div></div>
+<div class="ttc" id="aclass_c_limit_time_html_a8bdf1bba9403d2a26eebd61d788f7d8c"><div class="ttname"><a href="class_c_limit_time.html#a8bdf1bba9403d2a26eebd61d788f7d8c">CLimitTime::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> LimitTime.cpp:50</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html"><div class="ttname"><a href="class_c_scene_widget.html">CSceneWidget</a></div><div class="ttdef"><b>Definition:</b> SceneWidget.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

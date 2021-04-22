@@ -1,0 +1,443 @@
+\hypertarget{class_c_character}{}\doxysection{CCharacter クラス}
+\label{class_c_character}\index{CCharacter@{CCharacter}}
+
+
+{\ttfamily \#include $<$Character.\+h$>$}
+
+
+
+CCharacter の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CCharacter 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_character_1_1_s_parameter}{SParameter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_character_a94574d74f605d70d70acb96e01233adf}{CCharacter}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_character_a8f8fb8991776a6b6a49c796e79968c91}{$\sim$\+CCharacter}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_character_a6d62c33daf1af24222f91d35f897b11a}{Move}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_character_a267ad6ac87787684bc6065d8b0dc3ff2}{Sprite\+Render}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_character_a1aa522374e1b582a403fbab51f4f2a90}{Stop\+Animation}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_character_aa1ed50f7ba225fd42456316d9813d90f}{Resume\+Animation}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_c_character_a0304f51b45af604a256a23a0647d2db4}{EFoot\+Number}} \+: char \{ \mbox{\hyperlink{class_c_character_a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92}{EFoot\+Number\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{class_c_character_a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf}{EFoot\+Number\+\_\+\+Right}}
+, \mbox{\hyperlink{class_c_character_a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b}{EFoot\+Number\+\_\+\+Left}}
+, \mbox{\hyperlink{class_c_character_a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9}{EFoot\+Number\+\_\+\+Max}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_character_a9bfd48a8880d012a0c17f6aff88fef81}{Mesh\+Render}} ()
+\item 
+bool \mbox{\hyperlink{class_c_character_a28e5ef01e14b38c14b49a8bc68cd09bc}{Is\+Invincible\+Time}} (const int \&invincible\+Time)
+\item 
+bool \mbox{\hyperlink{class_c_character_acd0b3103ff6d118340a824e3258d46b8}{Get\+Model}} (const char $\ast$model\+Name)
+\item 
+bool \mbox{\hyperlink{class_c_character_abdbc6385d746c0364b12293d5da81b70}{Collider\+Setting}} ()
+\item 
+{\footnotesize template$<$class in\+Param $>$ }\\bool \mbox{\hyperlink{class_c_character_a1d5f11cb4b469258a8622168bb01c6f5}{Parameter\+Setting}} (const char $\ast$file\+Name, in\+Param \&param)
+\item 
+bool \mbox{\hyperlink{class_c_character_a54508afb9aa422b4a3765245e52511ac}{Target\+Rotation}} (const D3\+DXVECTOR3 \&target\+Vec, const float \&rot\+Speed, const float \&Tolerance\+Radian)
+\item 
+void \mbox{\hyperlink{class_c_character_a0ca58686329d1caf5b67460d32ffac25}{Set\+Animation}} (const int \&anim\+No, LPD3\+DXANIMATIONCONTROLLER p\+Ac=nullptr)
+\item 
+void \mbox{\hyperlink{class_c_character_a5aa82299129161e6db10943df30bec8f}{Set\+Animation\+Blend}} (const int \&anim\+No)
+\item 
+virtual bool \mbox{\hyperlink{class_c_character_a1a46fffa2ba8c712ea46bcb1acc14cb0}{Set\+Anim\+Frame\+List}} ()=0
+\item 
+void \mbox{\hyperlink{class_c_character_aacda61080a566126a05cf71f8fc53566}{Foot\+Step}} (const char $\ast$rightfoot, const char $\ast$leftfoot)
+\item 
+bool \mbox{\hyperlink{class_c_character_ac7be4546b3b18c7bfe3dacb8cd24614c}{Foot\+Step\+Collision\+Setting}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}} $>$ \mbox{\hyperlink{class_c_character_acecf7013e7389b7b53fa479e667f0347}{m\+\_\+p\+Skin\+Mesh}}
+\item 
+\mbox{\hyperlink{namespaceanim_a68d2d2cd7731372f3f57e24df472067f}{anim\+::\+AAnim\+Frame\+List}} \mbox{\hyperlink{class_c_character_a1c2e4fef035865575b0ceb77387dd460}{m\+\_\+\+Anim\+Frame\+List}}
+\item 
+int \mbox{\hyperlink{class_c_character_a86212daacaf52be6024b4655a8aa8031}{m\+\_\+\+Now\+Anim\+No}}
+\item 
+int \mbox{\hyperlink{class_c_character_aae5570ac44de7f54756ddebbc9dd9d7b}{m\+\_\+\+Old\+Anim\+No}}
+\item 
+double \mbox{\hyperlink{class_c_character_aab0dd105eeb80b038c3b2ab4092e030c}{m\+\_\+\+Anim\+Speed}}
+\item 
+double \mbox{\hyperlink{class_c_character_acc5984d75f9e32d396fa9e886350900d}{m\+\_\+\+Old\+Anim\+Speed}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_character_afa6109019e55d57e4a4e670c7558be6b}{m\+\_\+\+Move\+Vector}}
+\item 
+int \mbox{\hyperlink{class_c_character_a6560e2fa7f43b5d2e13021ad8bf11772}{m\+\_\+\+Invincible\+Count}}
+\item 
+bool \mbox{\hyperlink{class_c_character_a3a51c1d65f7fea3af54872a3d14d12f2}{m\+\_\+\+Has\+Finished\+Param\+Setting}}
+\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr double \mbox{\hyperlink{class_c_character_a62e1803ad918c196c9f660dbcd989b3d}{DEFAULT\+\_\+\+ANIM\+\_\+\+SPEED}} = 0.\+01
+\item 
+static constexpr double \mbox{\hyperlink{class_c_character_a3d59c093a8badf818a5c4694ac0e1fc2}{DEFAULT\+\_\+\+ANIM\+\_\+\+HALF\+\_\+\+SPEED}} = \mbox{\hyperlink{class_c_character_a62e1803ad918c196c9f660dbcd989b3d}{DEFAULT\+\_\+\+ANIM\+\_\+\+SPEED}}$\ast$0.\+5
+\item 
+static constexpr double \mbox{\hyperlink{class_c_character_ac1ecf460028f528c8419ff2e1653c817}{STOP\+\_\+\+ANIM\+\_\+\+SPEED}} = 0.\+0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_character_a0304f51b45af604a256a23a0647d2db4}\label{class_c_character_a0304f51b45af604a256a23a0647d2db4}} 
+\index{CCharacter@{CCharacter}!EFootNumber@{EFootNumber}}
+\index{EFootNumber@{EFootNumber}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{EFootNumber}{EFootNumber}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_character_a0304f51b45af604a256a23a0647d2db4}{CCharacter\+::\+EFoot\+Number}} \+: char\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EFootNumber\_None@{EFootNumber\_None}!CCharacter@{CCharacter}}\index{CCharacter@{CCharacter}!EFootNumber\_None@{EFootNumber\_None}}}\mbox{\Hypertarget{class_c_character_a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92}\label{class_c_character_a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92}} 
+EFoot\+Number\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EFootNumber\_Right@{EFootNumber\_Right}!CCharacter@{CCharacter}}\index{CCharacter@{CCharacter}!EFootNumber\_Right@{EFootNumber\_Right}}}\mbox{\Hypertarget{class_c_character_a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf}\label{class_c_character_a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf}} 
+EFoot\+Number\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EFootNumber\_Left@{EFootNumber\_Left}!CCharacter@{CCharacter}}\index{CCharacter@{CCharacter}!EFootNumber\_Left@{EFootNumber\_Left}}}\mbox{\Hypertarget{class_c_character_a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b}\label{class_c_character_a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b}} 
+EFoot\+Number\+\_\+\+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EFootNumber\_Max@{EFootNumber\_Max}!CCharacter@{CCharacter}}\index{CCharacter@{CCharacter}!EFootNumber\_Max@{EFootNumber\_Max}}}\mbox{\Hypertarget{class_c_character_a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9}\label{class_c_character_a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9}} 
+EFoot\+Number\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_character_a94574d74f605d70d70acb96e01233adf}\label{class_c_character_a94574d74f605d70d70acb96e01233adf}} 
+\index{CCharacter@{CCharacter}!CCharacter@{CCharacter}}
+\index{CCharacter@{CCharacter}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{CCharacter()}{CCharacter()}}
+{\footnotesize\ttfamily CCharacter\+::\+CCharacter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_character_a8f8fb8991776a6b6a49c796e79968c91}\label{class_c_character_a8f8fb8991776a6b6a49c796e79968c91}} 
+\index{CCharacter@{CCharacter}!````~CCharacter@{$\sim$CCharacter}}
+\index{````~CCharacter@{$\sim$CCharacter}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCharacter()}{~CCharacter()}}
+{\footnotesize\ttfamily CCharacter\+::$\sim$\+CCharacter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_character_abdbc6385d746c0364b12293d5da81b70}\label{class_c_character_abdbc6385d746c0364b12293d5da81b70}} 
+\index{CCharacter@{CCharacter}!ColliderSetting@{ColliderSetting}}
+\index{ColliderSetting@{ColliderSetting}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{ColliderSetting()}{ColliderSetting()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Collider\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_aacda61080a566126a05cf71f8fc53566}\label{class_c_character_aacda61080a566126a05cf71f8fc53566}} 
+\index{CCharacter@{CCharacter}!FootStep@{FootStep}}
+\index{FootStep@{FootStep}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{FootStep()}{FootStep()}}
+{\footnotesize\ttfamily void CCharacter\+::\+Foot\+Step (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rightfoot,  }\item[{const char $\ast$}]{leftfoot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_aacda61080a566126a05cf71f8fc53566_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_c_character_aacda61080a566126a05cf71f8fc53566_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_ac7be4546b3b18c7bfe3dacb8cd24614c}\label{class_c_character_ac7be4546b3b18c7bfe3dacb8cd24614c}} 
+\index{CCharacter@{CCharacter}!FootStepCollisionSetting@{FootStepCollisionSetting}}
+\index{FootStepCollisionSetting@{FootStepCollisionSetting}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{FootStepCollisionSetting()}{FootStepCollisionSetting()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Foot\+Step\+Collision\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_c_character_ac7be4546b3b18c7bfe3dacb8cd24614c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_acd0b3103ff6d118340a824e3258d46b8}\label{class_c_character_acd0b3103ff6d118340a824e3258d46b8}} 
+\index{CCharacter@{CCharacter}!GetModel@{GetModel}}
+\index{GetModel@{GetModel}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{GetModel()}{GetModel()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Get\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_acd0b3103ff6d118340a824e3258d46b8_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_c_character_acd0b3103ff6d118340a824e3258d46b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_a28e5ef01e14b38c14b49a8bc68cd09bc}\label{class_c_character_a28e5ef01e14b38c14b49a8bc68cd09bc}} 
+\index{CCharacter@{CCharacter}!IsInvincibleTime@{IsInvincibleTime}}
+\index{IsInvincibleTime@{IsInvincibleTime}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{IsInvincibleTime()}{IsInvincibleTime()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Is\+Invincible\+Time (\begin{DoxyParamCaption}\item[{const int \&}]{invincible\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_a9bfd48a8880d012a0c17f6aff88fef81}\label{class_c_character_a9bfd48a8880d012a0c17f6aff88fef81}} 
+\index{CCharacter@{CCharacter}!MeshRender@{MeshRender}}
+\index{MeshRender@{MeshRender}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{MeshRender()}{MeshRender()}}
+{\footnotesize\ttfamily void CCharacter\+::\+Mesh\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=317pt]{class_c_character_a9bfd48a8880d012a0c17f6aff88fef81_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_a6d62c33daf1af24222f91d35f897b11a}\label{class_c_character_a6d62c33daf1af24222f91d35f897b11a}} 
+\index{CCharacter@{CCharacter}!Move@{Move}}
+\index{Move@{Move}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily virtual void CCharacter\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_edit_alien_aa0caaad3bf5e281335a137803f78c7a7}{CEdit\+Alien}}, \mbox{\hyperlink{class_c_alien_afa501215cc5ab04525e6d04848f26211}{CAlien}}で実装されています。
+
+\mbox{\Hypertarget{class_c_character_a1d5f11cb4b469258a8622168bb01c6f5}\label{class_c_character_a1d5f11cb4b469258a8622168bb01c6f5}} 
+\index{CCharacter@{CCharacter}!ParameterSetting@{ParameterSetting}}
+\index{ParameterSetting@{ParameterSetting}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{ParameterSetting()}{ParameterSetting()}}
+{\footnotesize\ttfamily template$<$class in\+Param $>$ \\
+bool CCharacter\+::\+Parameter\+Setting (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{in\+Param \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a1d5f11cb4b469258a8622168bb01c6f5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_c_character_a1d5f11cb4b469258a8622168bb01c6f5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_aa1ed50f7ba225fd42456316d9813d90f}\label{class_c_character_aa1ed50f7ba225fd42456316d9813d90f}} 
+\index{CCharacter@{CCharacter}!ResumeAnimation@{ResumeAnimation}}
+\index{ResumeAnimation@{ResumeAnimation}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{ResumeAnimation()}{ResumeAnimation()}}
+{\footnotesize\ttfamily virtual void CCharacter\+::\+Resume\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a788304eb4f7cb0170630b74dbef108f3}{CActor}}を再実装しています。
+
+
+
+\mbox{\hyperlink{class_c_player_a83fcaa076fceaecdced51b98d94533ed}{CPlayer}}, \mbox{\hyperlink{class_c_alien_ab6ef6f8287500a5eea8ad0279e6ce512}{CAlien}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_character_a0ca58686329d1caf5b67460d32ffac25}\label{class_c_character_a0ca58686329d1caf5b67460d32ffac25}} 
+\index{CCharacter@{CCharacter}!SetAnimation@{SetAnimation}}
+\index{SetAnimation@{SetAnimation}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{SetAnimation()}{SetAnimation()}}
+{\footnotesize\ttfamily void CCharacter\+::\+Set\+Animation (\begin{DoxyParamCaption}\item[{const int \&}]{anim\+No,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+Ac = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a0ca58686329d1caf5b67460d32ffac25_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_a5aa82299129161e6db10943df30bec8f}\label{class_c_character_a5aa82299129161e6db10943df30bec8f}} 
+\index{CCharacter@{CCharacter}!SetAnimationBlend@{SetAnimationBlend}}
+\index{SetAnimationBlend@{SetAnimationBlend}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{SetAnimationBlend()}{SetAnimationBlend()}}
+{\footnotesize\ttfamily void CCharacter\+::\+Set\+Animation\+Blend (\begin{DoxyParamCaption}\item[{const int \&}]{anim\+No }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_c_character_a5aa82299129161e6db10943df30bec8f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_character_a1a46fffa2ba8c712ea46bcb1acc14cb0}\label{class_c_character_a1a46fffa2ba8c712ea46bcb1acc14cb0}} 
+\index{CCharacter@{CCharacter}!SetAnimFrameList@{SetAnimFrameList}}
+\index{SetAnimFrameList@{SetAnimFrameList}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{SetAnimFrameList()}{SetAnimFrameList()}}
+{\footnotesize\ttfamily virtual bool CCharacter\+::\+Set\+Anim\+Frame\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_alien_a2f0f5791e25d0c01d3c9639e1acb50df}{CAlien}}で実装されています。
+
+\mbox{\Hypertarget{class_c_character_a267ad6ac87787684bc6065d8b0dc3ff2}\label{class_c_character_a267ad6ac87787684bc6065d8b0dc3ff2}} 
+\index{CCharacter@{CCharacter}!SpriteRender@{SpriteRender}}
+\index{SpriteRender@{SpriteRender}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{SpriteRender()}{SpriteRender()}}
+{\footnotesize\ttfamily virtual void CCharacter\+::\+Sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_player_ad6511559416f260d6ac4063984c7564b}{CPlayer}}, \mbox{\hyperlink{class_c_girl_a16b40c80620efae7d618382ac7c9ff27}{CGirl}}, \mbox{\hyperlink{class_c_alien_d_a9796cd4089a75a9ce49030d195350070}{CAlienD}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_character_a1aa522374e1b582a403fbab51f4f2a90}\label{class_c_character_a1aa522374e1b582a403fbab51f4f2a90}} 
+\index{CCharacter@{CCharacter}!StopAnimation@{StopAnimation}}
+\index{StopAnimation@{StopAnimation}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{StopAnimation()}{StopAnimation()}}
+{\footnotesize\ttfamily virtual void CCharacter\+::\+Stop\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ae7697e329ccac87a1f4aa7940b4c158d}{CActor}}を再実装しています。
+
+
+
+\mbox{\hyperlink{class_c_alien_a1866baeaa100349f810c91d2338f7b8c}{CAlien}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_character_a54508afb9aa422b4a3765245e52511ac}\label{class_c_character_a54508afb9aa422b4a3765245e52511ac}} 
+\index{CCharacter@{CCharacter}!TargetRotation@{TargetRotation}}
+\index{TargetRotation@{TargetRotation}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{TargetRotation()}{TargetRotation()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Target\+Rotation (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{target\+Vec,  }\item[{const float \&}]{rot\+Speed,  }\item[{const float \&}]{Tolerance\+Radian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_character_a54508afb9aa422b4a3765245e52511ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_character_a3d59c093a8badf818a5c4694ac0e1fc2}\label{class_c_character_a3d59c093a8badf818a5c4694ac0e1fc2}} 
+\index{CCharacter@{CCharacter}!DEFAULT\_ANIM\_HALF\_SPEED@{DEFAULT\_ANIM\_HALF\_SPEED}}
+\index{DEFAULT\_ANIM\_HALF\_SPEED@{DEFAULT\_ANIM\_HALF\_SPEED}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ANIM\_HALF\_SPEED}{DEFAULT\_ANIM\_HALF\_SPEED}}
+{\footnotesize\ttfamily constexpr double CCharacter\+::\+DEFAULT\+\_\+\+ANIM\+\_\+\+HALF\+\_\+\+SPEED = \mbox{\hyperlink{class_c_character_a62e1803ad918c196c9f660dbcd989b3d}{DEFAULT\+\_\+\+ANIM\+\_\+\+SPEED}}$\ast$0.\+5\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_a62e1803ad918c196c9f660dbcd989b3d}\label{class_c_character_a62e1803ad918c196c9f660dbcd989b3d}} 
+\index{CCharacter@{CCharacter}!DEFAULT\_ANIM\_SPEED@{DEFAULT\_ANIM\_SPEED}}
+\index{DEFAULT\_ANIM\_SPEED@{DEFAULT\_ANIM\_SPEED}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ANIM\_SPEED}{DEFAULT\_ANIM\_SPEED}}
+{\footnotesize\ttfamily constexpr double CCharacter\+::\+DEFAULT\+\_\+\+ANIM\+\_\+\+SPEED = 0.\+01\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_a1c2e4fef035865575b0ceb77387dd460}\label{class_c_character_a1c2e4fef035865575b0ceb77387dd460}} 
+\index{CCharacter@{CCharacter}!m\_AnimFrameList@{m\_AnimFrameList}}
+\index{m\_AnimFrameList@{m\_AnimFrameList}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_AnimFrameList}{m\_AnimFrameList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceanim_a68d2d2cd7731372f3f57e24df472067f}{anim\+::\+AAnim\+Frame\+List}} CCharacter\+::m\+\_\+\+Anim\+Frame\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_aab0dd105eeb80b038c3b2ab4092e030c}\label{class_c_character_aab0dd105eeb80b038c3b2ab4092e030c}} 
+\index{CCharacter@{CCharacter}!m\_AnimSpeed@{m\_AnimSpeed}}
+\index{m\_AnimSpeed@{m\_AnimSpeed}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_AnimSpeed}{m\_AnimSpeed}}
+{\footnotesize\ttfamily double CCharacter\+::m\+\_\+\+Anim\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_a3a51c1d65f7fea3af54872a3d14d12f2}\label{class_c_character_a3a51c1d65f7fea3af54872a3d14d12f2}} 
+\index{CCharacter@{CCharacter}!m\_HasFinishedParamSetting@{m\_HasFinishedParamSetting}}
+\index{m\_HasFinishedParamSetting@{m\_HasFinishedParamSetting}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_HasFinishedParamSetting}{m\_HasFinishedParamSetting}}
+{\footnotesize\ttfamily bool CCharacter\+::m\+\_\+\+Has\+Finished\+Param\+Setting\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_a6560e2fa7f43b5d2e13021ad8bf11772}\label{class_c_character_a6560e2fa7f43b5d2e13021ad8bf11772}} 
+\index{CCharacter@{CCharacter}!m\_InvincibleCount@{m\_InvincibleCount}}
+\index{m\_InvincibleCount@{m\_InvincibleCount}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_InvincibleCount}{m\_InvincibleCount}}
+{\footnotesize\ttfamily int CCharacter\+::m\+\_\+\+Invincible\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_afa6109019e55d57e4a4e670c7558be6b}\label{class_c_character_afa6109019e55d57e4a4e670c7558be6b}} 
+\index{CCharacter@{CCharacter}!m\_MoveVector@{m\_MoveVector}}
+\index{m\_MoveVector@{m\_MoveVector}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_MoveVector}{m\_MoveVector}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCharacter\+::m\+\_\+\+Move\+Vector\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_a86212daacaf52be6024b4655a8aa8031}\label{class_c_character_a86212daacaf52be6024b4655a8aa8031}} 
+\index{CCharacter@{CCharacter}!m\_NowAnimNo@{m\_NowAnimNo}}
+\index{m\_NowAnimNo@{m\_NowAnimNo}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_NowAnimNo}{m\_NowAnimNo}}
+{\footnotesize\ttfamily int CCharacter\+::m\+\_\+\+Now\+Anim\+No\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_aae5570ac44de7f54756ddebbc9dd9d7b}\label{class_c_character_aae5570ac44de7f54756ddebbc9dd9d7b}} 
+\index{CCharacter@{CCharacter}!m\_OldAnimNo@{m\_OldAnimNo}}
+\index{m\_OldAnimNo@{m\_OldAnimNo}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_OldAnimNo}{m\_OldAnimNo}}
+{\footnotesize\ttfamily int CCharacter\+::m\+\_\+\+Old\+Anim\+No\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_acc5984d75f9e32d396fa9e886350900d}\label{class_c_character_acc5984d75f9e32d396fa9e886350900d}} 
+\index{CCharacter@{CCharacter}!m\_OldAnimSpeed@{m\_OldAnimSpeed}}
+\index{m\_OldAnimSpeed@{m\_OldAnimSpeed}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_OldAnimSpeed}{m\_OldAnimSpeed}}
+{\footnotesize\ttfamily double CCharacter\+::m\+\_\+\+Old\+Anim\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_acecf7013e7389b7b53fa479e667f0347}\label{class_c_character_acecf7013e7389b7b53fa479e667f0347}} 
+\index{CCharacter@{CCharacter}!m\_pSkinMesh@{m\_pSkinMesh}}
+\index{m\_pSkinMesh@{m\_pSkinMesh}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_pSkinMesh}{m\_pSkinMesh}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}}$>$ CCharacter\+::m\+\_\+p\+Skin\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_character_ac1ecf460028f528c8419ff2e1653c817}\label{class_c_character_ac1ecf460028f528c8419ff2e1653c817}} 
+\index{CCharacter@{CCharacter}!STOP\_ANIM\_SPEED@{STOP\_ANIM\_SPEED}}
+\index{STOP\_ANIM\_SPEED@{STOP\_ANIM\_SPEED}!CCharacter@{CCharacter}}
+\doxysubsubsection{\texorpdfstring{STOP\_ANIM\_SPEED}{STOP\_ANIM\_SPEED}}
+{\footnotesize\ttfamily constexpr double CCharacter\+::\+STOP\+\_\+\+ANIM\+\_\+\+SPEED = 0.\+0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\mbox{\hyperlink{_character_8h}{Character.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\mbox{\hyperlink{_character_8cpp}{Character.\+cpp}}\end{DoxyCompactItemize}

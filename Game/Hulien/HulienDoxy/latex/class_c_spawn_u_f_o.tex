@@ -1,0 +1,246 @@
+\hypertarget{class_c_spawn_u_f_o}{}\doxysection{CSpawn\+UFO クラス}
+\label{class_c_spawn_u_f_o}\index{CSpawnUFO@{CSpawnUFO}}
+
+
+{\ttfamily \#include $<$Spawn\+UFO.\+h$>$}
+
+
+
+CSpawn\+UFO の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_spawn_u_f_o__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CSpawn\+UFO 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_spawn_u_f_o__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_spawn_u_f_o_a4a22589624426ba8abf63ea9c6bdb0d9}{CSpawn\+UFO}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_spawn_u_f_o_a7e2d1b72338ff0bf2aed501098ba1eac}{$\sim$\+CSpawn\+UFO}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_spawn_u_f_o_aaf7d7985b6b1da5035d48ed28f0eef16}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_spawn_u_f_o_a8961b5a57d400970e42d9bcf3c0c06a7}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_spawn_u_f_o_a8717e1580fc9a12e9bc39652bad0a349}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_a6863c1f3d5a6de72fbbed8d768af7f8d}{Sprite\+Render}} ()
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_abd362171e82d0e1d9050a5a03577cabd}{Spawn\+Alien}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_alien}{CAlien}} $>$$>$ \&)
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_ad4dd231b31f0f920889abd939488364d}{Set\+Alien\+Parameter\+List}} (std\+::vector$<$ \mbox{\hyperlink{struct_s_alien_param}{SAlien\+Param}} $>$ $\ast$)
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_a43b197f470660dc692cae10d9528c9d7}{Set\+Spawn\+Parameter}} (const \mbox{\hyperlink{struct_s_spawn_u_f_o_param}{SSpawn\+UFOParam}} \&param)
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_ab6aaa518cece3251eb8a426577363ba1}{Set\+Abduct\+UFOPosition}} (D3\+DXVECTOR3 $\ast$p\+Pos)
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_aa1bbe5958c0e574e6af697151d41b30e}{Light\+Discharge}} ()
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_ab6f59e843e9d89ee46d487db9e0d5d5f}{Light\+Clean\+UP}} ()
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_a8c5b70bd59e595a49888bdd22b06981e}{Discharge\+Preparation}} ()
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_aae13b75c27e18f20f1b6cd794d1c0d13}{Clean\+UPPreparation}} ()
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_afcf9f3b0ec0b87206889e8f5d825d33f}{Set\+Disp}} (const bool \&disp)
+\item 
+void \mbox{\hyperlink{class_c_spawn_u_f_o_adabddc9f3373a40b734559eaa8305e69}{Set\+Scale}} (const D3\+DXVECTOR3 \&scale)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_spawn_u_f_o_ae9918c23520a0a8ffc9e2eaede217e8d}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a4a22589624426ba8abf63ea9c6bdb0d9}\label{class_c_spawn_u_f_o_a4a22589624426ba8abf63ea9c6bdb0d9}} 
+\index{CSpawnUFO@{CSpawnUFO}!CSpawnUFO@{CSpawnUFO}}
+\index{CSpawnUFO@{CSpawnUFO}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{CSpawnUFO()}{CSpawnUFO()}}
+{\footnotesize\ttfamily CSpawn\+UFO\+::\+CSpawn\+UFO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a7e2d1b72338ff0bf2aed501098ba1eac}\label{class_c_spawn_u_f_o_a7e2d1b72338ff0bf2aed501098ba1eac}} 
+\index{CSpawnUFO@{CSpawnUFO}!````~CSpawnUFO@{$\sim$CSpawnUFO}}
+\index{````~CSpawnUFO@{$\sim$CSpawnUFO}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSpawnUFO()}{~CSpawnUFO()}}
+{\footnotesize\ttfamily CSpawn\+UFO\+::$\sim$\+CSpawn\+UFO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_aae13b75c27e18f20f1b6cd794d1c0d13}\label{class_c_spawn_u_f_o_aae13b75c27e18f20f1b6cd794d1c0d13}} 
+\index{CSpawnUFO@{CSpawnUFO}!CleanUPPreparation@{CleanUPPreparation}}
+\index{CleanUPPreparation@{CleanUPPreparation}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{CleanUPPreparation()}{CleanUPPreparation()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Clean\+UPPreparation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_ae9918c23520a0a8ffc9e2eaede217e8d}\label{class_c_spawn_u_f_o_ae9918c23520a0a8ffc9e2eaede217e8d}} 
+\index{CSpawnUFO@{CSpawnUFO}!Collision@{Collision}}
+\index{Collision@{Collision}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CSpawn\+UFO\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_ae9918c23520a0a8ffc9e2eaede217e8d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a8c5b70bd59e595a49888bdd22b06981e}\label{class_c_spawn_u_f_o_a8c5b70bd59e595a49888bdd22b06981e}} 
+\index{CSpawnUFO@{CSpawnUFO}!DischargePreparation@{DischargePreparation}}
+\index{DischargePreparation@{DischargePreparation}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{DischargePreparation()}{DischargePreparation()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Discharge\+Preparation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_aaf7d7985b6b1da5035d48ed28f0eef16}\label{class_c_spawn_u_f_o_aaf7d7985b6b1da5035d48ed28f0eef16}} 
+\index{CSpawnUFO@{CSpawnUFO}!Init@{Init}}
+\index{Init@{Init}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CSpawn\+UFO\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_ab6f59e843e9d89ee46d487db9e0d5d5f}\label{class_c_spawn_u_f_o_ab6f59e843e9d89ee46d487db9e0d5d5f}} 
+\index{CSpawnUFO@{CSpawnUFO}!LightCleanUP@{LightCleanUP}}
+\index{LightCleanUP@{LightCleanUP}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{LightCleanUP()}{LightCleanUP()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Light\+Clean\+UP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_ab6f59e843e9d89ee46d487db9e0d5d5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_aa1bbe5958c0e574e6af697151d41b30e}\label{class_c_spawn_u_f_o_aa1bbe5958c0e574e6af697151d41b30e}} 
+\index{CSpawnUFO@{CSpawnUFO}!LightDischarge@{LightDischarge}}
+\index{LightDischarge@{LightDischarge}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{LightDischarge()}{LightDischarge()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Light\+Discharge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_aa1bbe5958c0e574e6af697151d41b30e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a8717e1580fc9a12e9bc39652bad0a349}\label{class_c_spawn_u_f_o_a8717e1580fc9a12e9bc39652bad0a349}} 
+\index{CSpawnUFO@{CSpawnUFO}!Render@{Render}}
+\index{Render@{Render}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_a8717e1580fc9a12e9bc39652bad0a349_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_ab6aaa518cece3251eb8a426577363ba1}\label{class_c_spawn_u_f_o_ab6aaa518cece3251eb8a426577363ba1}} 
+\index{CSpawnUFO@{CSpawnUFO}!SetAbductUFOPosition@{SetAbductUFOPosition}}
+\index{SetAbductUFOPosition@{SetAbductUFOPosition}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SetAbductUFOPosition()}{SetAbductUFOPosition()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Set\+Abduct\+UFOPosition (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_ad4dd231b31f0f920889abd939488364d}\label{class_c_spawn_u_f_o_ad4dd231b31f0f920889abd939488364d}} 
+\index{CSpawnUFO@{CSpawnUFO}!SetAlienParameterList@{SetAlienParameterList}}
+\index{SetAlienParameterList@{SetAlienParameterList}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SetAlienParameterList()}{SetAlienParameterList()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Set\+Alien\+Parameter\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_s_alien_param}{SAlien\+Param}} $>$ $\ast$}]{alien\+Param\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_afcf9f3b0ec0b87206889e8f5d825d33f}\label{class_c_spawn_u_f_o_afcf9f3b0ec0b87206889e8f5d825d33f}} 
+\index{CSpawnUFO@{CSpawnUFO}!SetDisp@{SetDisp}}
+\index{SetDisp@{SetDisp}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SetDisp()}{SetDisp()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Set\+Disp (\begin{DoxyParamCaption}\item[{const bool \&}]{disp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_adabddc9f3373a40b734559eaa8305e69}\label{class_c_spawn_u_f_o_adabddc9f3373a40b734559eaa8305e69}} 
+\index{CSpawnUFO@{CSpawnUFO}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a43b197f470660dc692cae10d9528c9d7}\label{class_c_spawn_u_f_o_a43b197f470660dc692cae10d9528c9d7}} 
+\index{CSpawnUFO@{CSpawnUFO}!SetSpawnParameter@{SetSpawnParameter}}
+\index{SetSpawnParameter@{SetSpawnParameter}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SetSpawnParameter()}{SetSpawnParameter()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Set\+Spawn\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_spawn_u_f_o_param}{SSpawn\+UFOParam}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_abd362171e82d0e1d9050a5a03577cabd}\label{class_c_spawn_u_f_o_abd362171e82d0e1d9050a5a03577cabd}} 
+\index{CSpawnUFO@{CSpawnUFO}!SpawnAlien@{SpawnAlien}}
+\index{SpawnAlien@{SpawnAlien}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SpawnAlien()}{SpawnAlien()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Spawn\+Alien (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_alien}{CAlien}} $>$$>$ \&}]{alien\+List }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_abd362171e82d0e1d9050a5a03577cabd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a6863c1f3d5a6de72fbbed8d768af7f8d}\label{class_c_spawn_u_f_o_a6863c1f3d5a6de72fbbed8d768af7f8d}} 
+\index{CSpawnUFO@{CSpawnUFO}!SpriteRender@{SpriteRender}}
+\index{SpriteRender@{SpriteRender}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{SpriteRender()}{SpriteRender()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_spawn_u_f_o_a8961b5a57d400970e42d9bcf3c0c06a7}\label{class_c_spawn_u_f_o_a8961b5a57d400970e42d9bcf3c0c06a7}} 
+\index{CSpawnUFO@{CSpawnUFO}!Update@{Update}}
+\index{Update@{Update}!CSpawnUFO@{CSpawnUFO}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CSpawn\+UFO\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_a8961b5a57d400970e42d9bcf3c0c06a7_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_spawn_u_f_o_a8961b5a57d400970e42d9bcf3c0c06a7_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Spawn\+UFO/\mbox{\hyperlink{_spawn_u_f_o_8h}{Spawn\+UFO.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Spawn\+UFO/\mbox{\hyperlink{_spawn_u_f_o_8cpp}{Spawn\+UFO.\+cpp}}\end{DoxyCompactItemize}

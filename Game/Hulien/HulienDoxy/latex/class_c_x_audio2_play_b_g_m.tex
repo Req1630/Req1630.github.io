@@ -1,0 +1,556 @@
+\hypertarget{class_c_x_audio2_play_b_g_m}{}\doxysection{CXAudio2\+Play\+BGM クラス}
+\label{class_c_x_audio2_play_b_g_m}\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+
+
+{\ttfamily \#include $<$XAudio2\+Play\+BGM.\+h$>$}
+
+
+
+CXAudio2\+Play\+BGM 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_c_x_audio2_play_b_g_m__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a86ee3d97bdea6c5033e6ebc97ac3447f}{CXAudio2\+Play\+BGM}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aa19b5f99942f73f9a2ad56cd4c0ef22d}{$\sim$\+CXAudio2\+Play\+BGM}} ()
+\item 
+const bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a749a22736e54fd236969253781ecbca0}{Is\+Playing}} ()
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a894da484e8b861487fa540fa62d50e2a}{Play}} (bool \&is\+End)
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aa860042796b504bdcb1bf1ae95f4519a}{Play\+Start}} ()
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a52afb16d9a4392aede0afaf498198212}{Stop}} ()
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ac7b9081a6459d30d24e7d1a23868813f}{Pause}} ()
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a285bf4d3ea66ad65f07dc29b59f8903a}{Set\+Pitch}} (float value)
+\item 
+const float \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a31b5070575d44bd84912218299d6c716}{Get\+Pitch}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a6b4bd983c3aa037398c6419184984d32}{Set\+Max\+Pitch}} (float value)
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ac3f7ad5b41a46ab55a2678c2acc97465}{Set\+Pitch\+Value}} (const float value)
+\item 
+HRESULT \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ab1fa773960c2477a213e01ac4d1e450e}{Create\+Ogg\+Sound}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_ogg_load}{COgg\+Load}} $>$ p\+Ogg\+Data, const char $\ast$filename)
+\item 
+const float \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aad89737704be79c2469b7b238e4c2b0a}{Get\+Volume}} ()
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a9214a07f35c7cf90f01a4b030b11b512}{Set\+BGMVolume}} (float value)
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a53dd94f68fe53aa8936a2dd9499a21b5}{Set\+Operation\+BGMVolume\+Flag}} (const bool \&b\+Flag)
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a513d2de0cc1d811465eeb6a3c37e7846}{Adjust\+Volume}} (float value)
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a3a5c9816f630883d7afb884e14a4e356}{Fade\+Out\+BGM}} (float value, bool \&is\+Emergency\+Call)
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_acbac2f9d8e046997a4096754d3aff28b}{Fade\+In\+BGM}} (float value, bool \&is\+Emergency\+Call)
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a7644b237e798ae1f0eeaaacfc832f1f5}{Destoroy\+Source}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a6cb976e1f02cdd673c4b66816e6561ec}{Set\+Fade\+Out\+Flag}} (bool BGMFade\+Out\+Flag)
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ac41d4efb4d0db586dca19eae0c734201}{Get\+Fade\+Out\+Flag}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aa187d6e6ae224c1755d1f11971b6029c}{Set\+Fade\+In\+Flag}} (bool BGMFade\+In\+Flag)
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a1a3b0b5c6866471c23042ecf6111a2b5}{Get\+Fade\+In\+Flag}} ()
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ac6c0900d03344fafdba95417e5a02474}{Hundle\+Is\+Signal}} (const bool \&is\+End=false)
+\item 
+void \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a2b131655c592947912c876c85a434702}{BGMPoint\+Seek}} (int \&Hour, int \&Minutes, double \&Second)
+\item 
+double \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_af1d67d9f25e3251e145a6e5e2d252d70}{Get\+Now\+Play\+Frame}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+HRESULT \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a1e4e196055d4a09486afb469362a6596}{Ogg\+Submit}} ()
+\begin{DoxyCompactList}\small\item\em 音源データをストリームに流し込みます. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aee5c4771673bf1adc9f440bfa89f0113}{m\+\_\+mtx}}
+\item 
+\mbox{\hyperlink{class_c_ogg_load}{COgg\+Load}} $\ast$ \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ad0313b865b386c434ac4100aee937f66}{m\+\_\+p\+Ogg\+Data}}
+\item 
+\mbox{\hyperlink{class_voice_callback}{Voice\+Callback}} \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a4d565b0e9314f7302005c93a32a633a8}{m\+\_\+\+Callback}}
+\item 
+XAUDIO2\+\_\+\+BUFFER \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a3d47e246bd57a0d5318944cecaa4ce10}{m\+\_\+\+Buffer}}
+\item 
+int \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aa899bbbd301b014a41979a1edcfb37e9}{m\+\_\+\+Buff\+\_\+len}}
+\item 
+BYTE $\ast$$\ast$ \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a56aaf68f4a0cf053be8bc5a817156f55}{m\+\_\+\+Buff}}
+\item 
+int \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aef19debf2d85e2473a1e44115b0eeddc}{m\+\_\+\+Len}}
+\item 
+int \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_ac9efe093c83d4948975a8002392e5b5a}{m\+\_\+\+Buff\+\_\+cnt}}
+\item 
+int \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_acd8a8d5a03c81c0c88347b7dbd9686f0}{m\+\_\+\+Size}}
+\item 
+IXAudio2\+Source\+Voice $\ast$ \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a2551b1d7c8224fe3813ef8143ed65596}{m\+\_\+p\+Source\+Voice}}
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_aa43e1545c55c8f007f568a4389d530cf}{m\+\_\+b\+Can\+Change\+Volume}}
+\item 
+float \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a54ce2bd4f7bd8214d25bbc46992cd7a4}{m\+\_\+f\+Max\+Pitch}}
+\item 
+float \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a26e1fc93668c206d3faefd5479995d1f}{m\+\_\+f\+Pitch}}
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a7228b66de1c23fc7413c86be08c1ca9c}{m\+\_\+b\+Fade\+Out\+Start}}
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a9c76c1e232f8cc809a333bb13dc7a8f0}{m\+\_\+b\+Fade\+In\+Start}}
+\item 
+float \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a6d5821b74a92e624bb6502bbe02d8d80}{m\+\_\+f\+Fade\+In\+Value}}
+\item 
+float \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a8004b9b9c69a6e971e20e1fdab830cea}{m\+\_\+f\+Fade\+Out\+Value}}
+\item 
+bool \mbox{\hyperlink{class_c_x_audio2_play_b_g_m_a0b81a42735c49d62d7d1a0bda23d02c6}{m\+\_\+b\+First\+Play}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a86ee3d97bdea6c5033e6ebc97ac3447f}\label{class_c_x_audio2_play_b_g_m_a86ee3d97bdea6c5033e6ebc97ac3447f}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{CXAudio2PlayBGM()}{CXAudio2PlayBGM()}}
+{\footnotesize\ttfamily CXAudio2\+Play\+BGM\+::\+CXAudio2\+Play\+BGM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aa19b5f99942f73f9a2ad56cd4c0ef22d}\label{class_c_x_audio2_play_b_g_m_aa19b5f99942f73f9a2ad56cd4c0ef22d}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!````~CXAudio2PlayBGM@{$\sim$CXAudio2PlayBGM}}
+\index{````~CXAudio2PlayBGM@{$\sim$CXAudio2PlayBGM}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{$\sim$CXAudio2PlayBGM()}{~CXAudio2PlayBGM()}}
+{\footnotesize\ttfamily CXAudio2\+Play\+BGM\+::$\sim$\+CXAudio2\+Play\+BGM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a513d2de0cc1d811465eeb6a3c37e7846}\label{class_c_x_audio2_play_b_g_m_a513d2de0cc1d811465eeb6a3c37e7846}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!AdjustVolume@{AdjustVolume}}
+\index{AdjustVolume@{AdjustVolume}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{AdjustVolume()}{AdjustVolume()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Adjust\+Volume (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a513d2de0cc1d811465eeb6a3c37e7846_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a513d2de0cc1d811465eeb6a3c37e7846_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a2b131655c592947912c876c85a434702}\label{class_c_x_audio2_play_b_g_m_a2b131655c592947912c876c85a434702}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!BGMPointSeek@{BGMPointSeek}}
+\index{BGMPointSeek@{BGMPointSeek}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{BGMPointSeek()}{BGMPointSeek()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+BGMPoint\+Seek (\begin{DoxyParamCaption}\item[{int \&}]{Hour,  }\item[{int \&}]{Minutes,  }\item[{double \&}]{Second }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a2b131655c592947912c876c85a434702_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ab1fa773960c2477a213e01ac4d1e450e}\label{class_c_x_audio2_play_b_g_m_ab1fa773960c2477a213e01ac4d1e450e}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!CreateOggSound@{CreateOggSound}}
+\index{CreateOggSound@{CreateOggSound}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{CreateOggSound()}{CreateOggSound()}}
+{\footnotesize\ttfamily HRESULT CXAudio2\+Play\+BGM\+::\+Create\+Ogg\+Sound (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_ogg_load}{COgg\+Load}} $>$}]{p\+Ogg\+Data,  }\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_ab1fa773960c2477a213e01ac4d1e450e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a7644b237e798ae1f0eeaaacfc832f1f5}\label{class_c_x_audio2_play_b_g_m_a7644b237e798ae1f0eeaaacfc832f1f5}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!DestoroySource@{DestoroySource}}
+\index{DestoroySource@{DestoroySource}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{DestoroySource()}{DestoroySource()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Destoroy\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_acbac2f9d8e046997a4096754d3aff28b}\label{class_c_x_audio2_play_b_g_m_acbac2f9d8e046997a4096754d3aff28b}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!FadeInBGM@{FadeInBGM}}
+\index{FadeInBGM@{FadeInBGM}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{FadeInBGM()}{FadeInBGM()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Fade\+In\+BGM (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{bool \&}]{is\+Emergency\+Call }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_acbac2f9d8e046997a4096754d3aff28b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_acbac2f9d8e046997a4096754d3aff28b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a3a5c9816f630883d7afb884e14a4e356}\label{class_c_x_audio2_play_b_g_m_a3a5c9816f630883d7afb884e14a4e356}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!FadeOutBGM@{FadeOutBGM}}
+\index{FadeOutBGM@{FadeOutBGM}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{FadeOutBGM()}{FadeOutBGM()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Fade\+Out\+BGM (\begin{DoxyParamCaption}\item[{float}]{value,  }\item[{bool \&}]{is\+Emergency\+Call }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a3a5c9816f630883d7afb884e14a4e356_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a3a5c9816f630883d7afb884e14a4e356_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a1a3b0b5c6866471c23042ecf6111a2b5}\label{class_c_x_audio2_play_b_g_m_a1a3b0b5c6866471c23042ecf6111a2b5}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!GetFadeInFlag@{GetFadeInFlag}}
+\index{GetFadeInFlag@{GetFadeInFlag}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{GetFadeInFlag()}{GetFadeInFlag()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Get\+Fade\+In\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ac41d4efb4d0db586dca19eae0c734201}\label{class_c_x_audio2_play_b_g_m_ac41d4efb4d0db586dca19eae0c734201}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!GetFadeOutFlag@{GetFadeOutFlag}}
+\index{GetFadeOutFlag@{GetFadeOutFlag}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{GetFadeOutFlag()}{GetFadeOutFlag()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Get\+Fade\+Out\+Flag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_af1d67d9f25e3251e145a6e5e2d252d70}\label{class_c_x_audio2_play_b_g_m_af1d67d9f25e3251e145a6e5e2d252d70}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!GetNowPlayFrame@{GetNowPlayFrame}}
+\index{GetNowPlayFrame@{GetNowPlayFrame}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{GetNowPlayFrame()}{GetNowPlayFrame()}}
+{\footnotesize\ttfamily double CXAudio2\+Play\+BGM\+::\+Get\+Now\+Play\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_af1d67d9f25e3251e145a6e5e2d252d70_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a31b5070575d44bd84912218299d6c716}\label{class_c_x_audio2_play_b_g_m_a31b5070575d44bd84912218299d6c716}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!GetPitch@{GetPitch}}
+\index{GetPitch@{GetPitch}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{GetPitch()}{GetPitch()}}
+{\footnotesize\ttfamily const float CXAudio2\+Play\+BGM\+::\+Get\+Pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aad89737704be79c2469b7b238e4c2b0a}\label{class_c_x_audio2_play_b_g_m_aad89737704be79c2469b7b238e4c2b0a}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!GetVolume@{GetVolume}}
+\index{GetVolume@{GetVolume}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{GetVolume()}{GetVolume()}}
+{\footnotesize\ttfamily const float CXAudio2\+Play\+BGM\+::\+Get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_aad89737704be79c2469b7b238e4c2b0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ac6c0900d03344fafdba95417e5a02474}\label{class_c_x_audio2_play_b_g_m_ac6c0900d03344fafdba95417e5a02474}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!HundleIsSignal@{HundleIsSignal}}
+\index{HundleIsSignal@{HundleIsSignal}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{HundleIsSignal()}{HundleIsSignal()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Hundle\+Is\+Signal (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+End = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a749a22736e54fd236969253781ecbca0}\label{class_c_x_audio2_play_b_g_m_a749a22736e54fd236969253781ecbca0}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!IsPlaying@{IsPlaying}}
+\index{IsPlaying@{IsPlaying}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{IsPlaying()}{IsPlaying()}}
+{\footnotesize\ttfamily const bool CXAudio2\+Play\+BGM\+::\+Is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a749a22736e54fd236969253781ecbca0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a1e4e196055d4a09486afb469362a6596}\label{class_c_x_audio2_play_b_g_m_a1e4e196055d4a09486afb469362a6596}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!OggSubmit@{OggSubmit}}
+\index{OggSubmit@{OggSubmit}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{OggSubmit()}{OggSubmit()}}
+{\footnotesize\ttfamily HRESULT CXAudio2\+Play\+BGM\+::\+Ogg\+Submit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+音源データをストリームに流し込みます. 
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a1e4e196055d4a09486afb469362a6596_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a1e4e196055d4a09486afb469362a6596_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ac7b9081a6459d30d24e7d1a23868813f}\label{class_c_x_audio2_play_b_g_m_ac7b9081a6459d30d24e7d1a23868813f}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!Pause@{Pause}}
+\index{Pause@{Pause}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a894da484e8b861487fa540fa62d50e2a}\label{class_c_x_audio2_play_b_g_m_a894da484e8b861487fa540fa62d50e2a}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!Play@{Play}}
+\index{Play@{Play}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Play (\begin{DoxyParamCaption}\item[{bool \&}]{is\+End }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a894da484e8b861487fa540fa62d50e2a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aa860042796b504bdcb1bf1ae95f4519a}\label{class_c_x_audio2_play_b_g_m_aa860042796b504bdcb1bf1ae95f4519a}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!PlayStart@{PlayStart}}
+\index{PlayStart@{PlayStart}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{PlayStart()}{PlayStart()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Play\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_aa860042796b504bdcb1bf1ae95f4519a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a9214a07f35c7cf90f01a4b030b11b512}\label{class_c_x_audio2_play_b_g_m_a9214a07f35c7cf90f01a4b030b11b512}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetBGMVolume@{SetBGMVolume}}
+\index{SetBGMVolume@{SetBGMVolume}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetBGMVolume()}{SetBGMVolume()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Set\+BGMVolume (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a9214a07f35c7cf90f01a4b030b11b512_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a9214a07f35c7cf90f01a4b030b11b512_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aa187d6e6ae224c1755d1f11971b6029c}\label{class_c_x_audio2_play_b_g_m_aa187d6e6ae224c1755d1f11971b6029c}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetFadeInFlag@{SetFadeInFlag}}
+\index{SetFadeInFlag@{SetFadeInFlag}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetFadeInFlag()}{SetFadeInFlag()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Set\+Fade\+In\+Flag (\begin{DoxyParamCaption}\item[{bool}]{BGMFade\+In\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a6cb976e1f02cdd673c4b66816e6561ec}\label{class_c_x_audio2_play_b_g_m_a6cb976e1f02cdd673c4b66816e6561ec}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetFadeOutFlag@{SetFadeOutFlag}}
+\index{SetFadeOutFlag@{SetFadeOutFlag}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetFadeOutFlag()}{SetFadeOutFlag()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Set\+Fade\+Out\+Flag (\begin{DoxyParamCaption}\item[{bool}]{BGMFade\+Out\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a6b4bd983c3aa037398c6419184984d32}\label{class_c_x_audio2_play_b_g_m_a6b4bd983c3aa037398c6419184984d32}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetMaxPitch@{SetMaxPitch}}
+\index{SetMaxPitch@{SetMaxPitch}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetMaxPitch()}{SetMaxPitch()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Set\+Max\+Pitch (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a53dd94f68fe53aa8936a2dd9499a21b5}\label{class_c_x_audio2_play_b_g_m_a53dd94f68fe53aa8936a2dd9499a21b5}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetOperationBGMVolumeFlag@{SetOperationBGMVolumeFlag}}
+\index{SetOperationBGMVolumeFlag@{SetOperationBGMVolumeFlag}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetOperationBGMVolumeFlag()}{SetOperationBGMVolumeFlag()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Set\+Operation\+BGMVolume\+Flag (\begin{DoxyParamCaption}\item[{const bool \&}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a285bf4d3ea66ad65f07dc29b59f8903a}\label{class_c_x_audio2_play_b_g_m_a285bf4d3ea66ad65f07dc29b59f8903a}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetPitch@{SetPitch}}
+\index{SetPitch@{SetPitch}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetPitch()}{SetPitch()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Set\+Pitch (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a285bf4d3ea66ad65f07dc29b59f8903a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ac3f7ad5b41a46ab55a2678c2acc97465}\label{class_c_x_audio2_play_b_g_m_ac3f7ad5b41a46ab55a2678c2acc97465}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!SetPitchValue@{SetPitchValue}}
+\index{SetPitchValue@{SetPitchValue}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{SetPitchValue()}{SetPitchValue()}}
+{\footnotesize\ttfamily void CXAudio2\+Play\+BGM\+::\+Set\+Pitch\+Value (\begin{DoxyParamCaption}\item[{const float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a52afb16d9a4392aede0afaf498198212}\label{class_c_x_audio2_play_b_g_m_a52afb16d9a4392aede0afaf498198212}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!Stop@{Stop}}
+\index{Stop@{Stop}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_audio2_play_b_g_m_a52afb16d9a4392aede0afaf498198212_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aa43e1545c55c8f007f568a4389d530cf}\label{class_c_x_audio2_play_b_g_m_aa43e1545c55c8f007f568a4389d530cf}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_bCanChangeVolume@{m\_bCanChangeVolume}}
+\index{m\_bCanChangeVolume@{m\_bCanChangeVolume}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_bCanChangeVolume}{m\_bCanChangeVolume}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::m\+\_\+b\+Can\+Change\+Volume\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a9c76c1e232f8cc809a333bb13dc7a8f0}\label{class_c_x_audio2_play_b_g_m_a9c76c1e232f8cc809a333bb13dc7a8f0}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_bFadeInStart@{m\_bFadeInStart}}
+\index{m\_bFadeInStart@{m\_bFadeInStart}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_bFadeInStart}{m\_bFadeInStart}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::m\+\_\+b\+Fade\+In\+Start\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a7228b66de1c23fc7413c86be08c1ca9c}\label{class_c_x_audio2_play_b_g_m_a7228b66de1c23fc7413c86be08c1ca9c}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_bFadeOutStart@{m\_bFadeOutStart}}
+\index{m\_bFadeOutStart@{m\_bFadeOutStart}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_bFadeOutStart}{m\_bFadeOutStart}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::m\+\_\+b\+Fade\+Out\+Start\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a0b81a42735c49d62d7d1a0bda23d02c6}\label{class_c_x_audio2_play_b_g_m_a0b81a42735c49d62d7d1a0bda23d02c6}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_bFirstPlay@{m\_bFirstPlay}}
+\index{m\_bFirstPlay@{m\_bFirstPlay}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_bFirstPlay}{m\_bFirstPlay}}
+{\footnotesize\ttfamily bool CXAudio2\+Play\+BGM\+::m\+\_\+b\+First\+Play\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a56aaf68f4a0cf053be8bc5a817156f55}\label{class_c_x_audio2_play_b_g_m_a56aaf68f4a0cf053be8bc5a817156f55}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Buff@{m\_Buff}}
+\index{m\_Buff@{m\_Buff}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Buff}{m\_Buff}}
+{\footnotesize\ttfamily BYTE$\ast$$\ast$ CXAudio2\+Play\+BGM\+::m\+\_\+\+Buff\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ac9efe093c83d4948975a8002392e5b5a}\label{class_c_x_audio2_play_b_g_m_ac9efe093c83d4948975a8002392e5b5a}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Buff\_cnt@{m\_Buff\_cnt}}
+\index{m\_Buff\_cnt@{m\_Buff\_cnt}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Buff\_cnt}{m\_Buff\_cnt}}
+{\footnotesize\ttfamily int CXAudio2\+Play\+BGM\+::m\+\_\+\+Buff\+\_\+cnt\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aa899bbbd301b014a41979a1edcfb37e9}\label{class_c_x_audio2_play_b_g_m_aa899bbbd301b014a41979a1edcfb37e9}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Buff\_len@{m\_Buff\_len}}
+\index{m\_Buff\_len@{m\_Buff\_len}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Buff\_len}{m\_Buff\_len}}
+{\footnotesize\ttfamily int CXAudio2\+Play\+BGM\+::m\+\_\+\+Buff\+\_\+len\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a3d47e246bd57a0d5318944cecaa4ce10}\label{class_c_x_audio2_play_b_g_m_a3d47e246bd57a0d5318944cecaa4ce10}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Buffer@{m\_Buffer}}
+\index{m\_Buffer@{m\_Buffer}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Buffer}{m\_Buffer}}
+{\footnotesize\ttfamily XAUDIO2\+\_\+\+BUFFER CXAudio2\+Play\+BGM\+::m\+\_\+\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a4d565b0e9314f7302005c93a32a633a8}\label{class_c_x_audio2_play_b_g_m_a4d565b0e9314f7302005c93a32a633a8}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Callback@{m\_Callback}}
+\index{m\_Callback@{m\_Callback}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Callback}{m\_Callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_voice_callback}{Voice\+Callback}} CXAudio2\+Play\+BGM\+::m\+\_\+\+Callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a6d5821b74a92e624bb6502bbe02d8d80}\label{class_c_x_audio2_play_b_g_m_a6d5821b74a92e624bb6502bbe02d8d80}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_fFadeInValue@{m\_fFadeInValue}}
+\index{m\_fFadeInValue@{m\_fFadeInValue}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_fFadeInValue}{m\_fFadeInValue}}
+{\footnotesize\ttfamily float CXAudio2\+Play\+BGM\+::m\+\_\+f\+Fade\+In\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a8004b9b9c69a6e971e20e1fdab830cea}\label{class_c_x_audio2_play_b_g_m_a8004b9b9c69a6e971e20e1fdab830cea}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_fFadeOutValue@{m\_fFadeOutValue}}
+\index{m\_fFadeOutValue@{m\_fFadeOutValue}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_fFadeOutValue}{m\_fFadeOutValue}}
+{\footnotesize\ttfamily float CXAudio2\+Play\+BGM\+::m\+\_\+f\+Fade\+Out\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a54ce2bd4f7bd8214d25bbc46992cd7a4}\label{class_c_x_audio2_play_b_g_m_a54ce2bd4f7bd8214d25bbc46992cd7a4}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_fMaxPitch@{m\_fMaxPitch}}
+\index{m\_fMaxPitch@{m\_fMaxPitch}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_fMaxPitch}{m\_fMaxPitch}}
+{\footnotesize\ttfamily float CXAudio2\+Play\+BGM\+::m\+\_\+f\+Max\+Pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a26e1fc93668c206d3faefd5479995d1f}\label{class_c_x_audio2_play_b_g_m_a26e1fc93668c206d3faefd5479995d1f}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_fPitch@{m\_fPitch}}
+\index{m\_fPitch@{m\_fPitch}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_fPitch}{m\_fPitch}}
+{\footnotesize\ttfamily float CXAudio2\+Play\+BGM\+::m\+\_\+f\+Pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aef19debf2d85e2473a1e44115b0eeddc}\label{class_c_x_audio2_play_b_g_m_aef19debf2d85e2473a1e44115b0eeddc}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Len@{m\_Len}}
+\index{m\_Len@{m\_Len}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Len}{m\_Len}}
+{\footnotesize\ttfamily int CXAudio2\+Play\+BGM\+::m\+\_\+\+Len\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_aee5c4771673bf1adc9f440bfa89f0113}\label{class_c_x_audio2_play_b_g_m_aee5c4771673bf1adc9f440bfa89f0113}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_mtx@{m\_mtx}}
+\index{m\_mtx@{m\_mtx}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_mtx}{m\_mtx}}
+{\footnotesize\ttfamily std\+::mutex CXAudio2\+Play\+BGM\+::m\+\_\+mtx\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_ad0313b865b386c434ac4100aee937f66}\label{class_c_x_audio2_play_b_g_m_ad0313b865b386c434ac4100aee937f66}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_pOggData@{m\_pOggData}}
+\index{m\_pOggData@{m\_pOggData}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_pOggData}{m\_pOggData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_ogg_load}{COgg\+Load}}$\ast$ CXAudio2\+Play\+BGM\+::m\+\_\+p\+Ogg\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_a2551b1d7c8224fe3813ef8143ed65596}\label{class_c_x_audio2_play_b_g_m_a2551b1d7c8224fe3813ef8143ed65596}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_pSourceVoice@{m\_pSourceVoice}}
+\index{m\_pSourceVoice@{m\_pSourceVoice}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_pSourceVoice}{m\_pSourceVoice}}
+{\footnotesize\ttfamily IXAudio2\+Source\+Voice$\ast$ CXAudio2\+Play\+BGM\+::m\+\_\+p\+Source\+Voice\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_x_audio2_play_b_g_m_acd8a8d5a03c81c0c88347b7dbd9686f0}\label{class_c_x_audio2_play_b_g_m_acd8a8d5a03c81c0c88347b7dbd9686f0}} 
+\index{CXAudio2PlayBGM@{CXAudio2PlayBGM}!m\_Size@{m\_Size}}
+\index{m\_Size@{m\_Size}!CXAudio2PlayBGM@{CXAudio2PlayBGM}}
+\doxysubsubsection{\texorpdfstring{m\_Size}{m\_Size}}
+{\footnotesize\ttfamily int CXAudio2\+Play\+BGM\+::m\+\_\+\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\+XAudio2\+Play/\mbox{\hyperlink{_x_audio2_play_b_g_m_8h}{XAudio2\+Play\+BGM.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\+XAudio2\+Play/\mbox{\hyperlink{_x_audio2_play_b_g_m_8cpp}{XAudio2\+Play\+BGM.\+cpp}}\end{DoxyCompactItemize}

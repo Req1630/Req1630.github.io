@@ -1,0 +1,19 @@
+<map id="CMain::Release" name="CMain::Release">
+<area shape="rect" id="node1" title=" " alt="" coords="5,177,120,204"/>
+<area shape="rect" id="node2" href="$class_c_direct_x11.html#a8f588359637552ca9a52cf024ea89d85" title=" " alt="" coords="197,7,338,33"/>
+<area shape="rect" id="node4" href="$class_c_direct_x9.html#a7c325b03eee74d325714130b6fa5a27f" title=" " alt="" coords="200,57,335,84"/>
+<area shape="rect" id="node6" href="$class_c_scene_tex_renderer.html#aa1ff3e132611de2afa015640c2add3d5" title=" " alt="" coords="193,110,342,151"/>
+<area shape="rect" id="node8" href="$class_c_im_gui_manager.html#a1b2f4134aeb4bf4e7afe9bfd5c50c9d0" title=" " alt="" coords="182,177,353,204"/>
+<area shape="rect" id="node9" href="$class_c_sound_manager.html#abccaea208bd166835bbea5c2f2116fce" title=" " alt="" coords="181,232,354,259"/>
+<area shape="rect" id="node14" href="$class_c_shadow_map.html#a41e7515191bdb0014f9de7bdfd7443da" title=" " alt="" coords="168,337,367,364"/>
+<area shape="rect" id="node16" href="$class_c_translucent_shader.html#a168d1319f7825f3d9ea49e0ef6b85b95" title=" " alt="" coords="198,389,337,430"/>
+<area shape="rect" id="node3" href="$class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="444,5,608,32"/>
+<area shape="rect" id="node5" href="$class_c_direct_x9.html#a76dff58bce2ec4ac5c4b109067574c02" title=" " alt="" coords="447,56,605,83"/>
+<area shape="rect" id="node7" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="451,107,601,149"/>
+<area shape="rect" id="node10" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="685,261,881,288"/>
+<area shape="rect" id="node11" href="$class_c_sound_manager.html#a227ed1037326d485f7f342540ca1c25e" title=" " alt="" coords="417,225,635,266"/>
+<area shape="rect" id="node12" href="$class_c_sound_manager.html#a6c6461fcd5d67d79cca2d09a5c6b63e3" title=" " alt="" coords="433,291,619,317"/>
+<area shape="rect" id="node13" href="$class_c_sound_manager.html#aa788dd79b3775927bc0ca39a1b1486d7" title=" " alt="" coords="415,341,637,368"/>
+<area shape="rect" id="node15" href="$class_c_shadow_map.html#a15e896c4d598666bd65d01146ca9e02f" title=" " alt="" coords="436,392,616,419"/>
+<area shape="rect" id="node17" href="$class_c_translucent_shader.html#ad97580615f8d24304476523c3f573663" title=" " alt="" coords="457,443,595,485"/>
+</map>

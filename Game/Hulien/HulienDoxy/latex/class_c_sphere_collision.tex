@@ -1,0 +1,166 @@
+\hypertarget{class_c_sphere_collision}{}\doxysection{CSphere\+Collision クラス}
+\label{class_c_sphere_collision}\index{CSphereCollision@{CSphereCollision}}
+
+
+{\ttfamily \#include $<$Sphere\+Collision.\+h$>$}
+
+
+
+CSphere\+Collision の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_c_sphere_collision__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CSphere\+Collision 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_c_sphere_collision__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_sphere_collision_aa7fc6c87bef15647cbce13a4faa065a1}{CSphere\+Collision}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_sphere_collision_add76339749cd45e57b2b4edc645ee658}{$\sim$\+CSphere\+Collision}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_sphere_collision_a5f89cf3c6934850031092e196d8a1f8d}{Init\+Model\+Radius}} (LPD3\+DXMESH p\+Mesh)
+\item 
+HRESULT \mbox{\hyperlink{class_c_sphere_collision_a85e5406d3728dea18489bba898a340fe}{Init\+Model\+Radius}} (const float \&radius)
+\item 
+virtual void \mbox{\hyperlink{class_c_sphere_collision_a48cba9a82505edbbd7c97c651ab97a84}{Debug\+Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_sphere_collision_a7d4e7ba3ae5e70f03fcf529074af4834}{Set\+Change\+Color}} (const bool \&changed)
+\item 
+float \mbox{\hyperlink{class_c_sphere_collision_a6e5e23f773be11ab2d236c6d898dc4f0}{Get\+Radius}} () const
+\item 
+void \mbox{\hyperlink{class_c_sphere_collision_ac969a1bff85bafb78192941abefb2390}{Set\+Adj\+Radius}} (const float \&radius)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_sphere_collision_aa7fc6c87bef15647cbce13a4faa065a1}\label{class_c_sphere_collision_aa7fc6c87bef15647cbce13a4faa065a1}} 
+\index{CSphereCollision@{CSphereCollision}!CSphereCollision@{CSphereCollision}}
+\index{CSphereCollision@{CSphereCollision}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{CSphereCollision()}{CSphereCollision()}}
+{\footnotesize\ttfamily CSphere\+Collision\+::\+CSphere\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sphere_collision_add76339749cd45e57b2b4edc645ee658}\label{class_c_sphere_collision_add76339749cd45e57b2b4edc645ee658}} 
+\index{CSphereCollision@{CSphereCollision}!````~CSphereCollision@{$\sim$CSphereCollision}}
+\index{````~CSphereCollision@{$\sim$CSphereCollision}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSphereCollision()}{~CSphereCollision()}}
+{\footnotesize\ttfamily CSphere\+Collision\+::$\sim$\+CSphere\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_sphere_collision_a48cba9a82505edbbd7c97c651ab97a84}\label{class_c_sphere_collision_a48cba9a82505edbbd7c97c651ab97a84}} 
+\index{CSphereCollision@{CSphereCollision}!DebugRender@{DebugRender}}
+\index{DebugRender@{DebugRender}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{DebugRender()}{DebugRender()}}
+{\footnotesize\ttfamily void CSphere\+Collision\+::\+Debug\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_collider_base_a5277b3ffd6abed9c34b61a6ed51d83db}{CCollider\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sphere_collision_a48cba9a82505edbbd7c97c651ab97a84_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sphere_collision_a6e5e23f773be11ab2d236c6d898dc4f0}\label{class_c_sphere_collision_a6e5e23f773be11ab2d236c6d898dc4f0}} 
+\index{CSphereCollision@{CSphereCollision}!GetRadius@{GetRadius}}
+\index{GetRadius@{GetRadius}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{GetRadius()}{GetRadius()}}
+{\footnotesize\ttfamily float CSphere\+Collision\+::\+Get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sphere_collision_a6e5e23f773be11ab2d236c6d898dc4f0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sphere_collision_a85e5406d3728dea18489bba898a340fe}\label{class_c_sphere_collision_a85e5406d3728dea18489bba898a340fe}} 
+\index{CSphereCollision@{CSphereCollision}!InitModelRadius@{InitModelRadius}}
+\index{InitModelRadius@{InitModelRadius}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{InitModelRadius()}{InitModelRadius()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT CSphere\+Collision\+::\+Init\+Model\+Radius (\begin{DoxyParamCaption}\item[{const float \&}]{radius }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sphere_collision_a85e5406d3728dea18489bba898a340fe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sphere_collision_a5f89cf3c6934850031092e196d8a1f8d}\label{class_c_sphere_collision_a5f89cf3c6934850031092e196d8a1f8d}} 
+\index{CSphereCollision@{CSphereCollision}!InitModelRadius@{InitModelRadius}}
+\index{InitModelRadius@{InitModelRadius}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{InitModelRadius()}{InitModelRadius()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CSphere\+Collision\+::\+Init\+Model\+Radius (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sphere_collision_a5f89cf3c6934850031092e196d8a1f8d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sphere_collision_a5f89cf3c6934850031092e196d8a1f8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sphere_collision_ac969a1bff85bafb78192941abefb2390}\label{class_c_sphere_collision_ac969a1bff85bafb78192941abefb2390}} 
+\index{CSphereCollision@{CSphereCollision}!SetAdjRadius@{SetAdjRadius}}
+\index{SetAdjRadius@{SetAdjRadius}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{SetAdjRadius()}{SetAdjRadius()}}
+{\footnotesize\ttfamily void CSphere\+Collision\+::\+Set\+Adj\+Radius (\begin{DoxyParamCaption}\item[{const float \&}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_c_sphere_collision_ac969a1bff85bafb78192941abefb2390_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sphere_collision_a7d4e7ba3ae5e70f03fcf529074af4834}\label{class_c_sphere_collision_a7d4e7ba3ae5e70f03fcf529074af4834}} 
+\index{CSphereCollision@{CSphereCollision}!SetChangeColor@{SetChangeColor}}
+\index{SetChangeColor@{SetChangeColor}!CSphereCollision@{CSphereCollision}}
+\doxysubsubsection{\texorpdfstring{SetChangeColor()}{SetChangeColor()}}
+{\footnotesize\ttfamily void CSphere\+Collision\+::\+Set\+Change\+Color (\begin{DoxyParamCaption}\item[{const bool \&}]{changed }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sphere_collision_a7d4e7ba3ae5e70f03fcf529074af4834_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Colliders/\+Sphere/\mbox{\hyperlink{_sphere_collision_8h}{Sphere\+Collision.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Colliders/\+Sphere/\mbox{\hyperlink{_sphere_collision_8cpp}{Sphere\+Collision.\+cpp}}\end{DoxyCompactItemize}

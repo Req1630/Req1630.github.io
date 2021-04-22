@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/EventCharacter/EventCharacter.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_3b40eb3617dd027f5a51cc61911a014f.html">EventCharacter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EventCharacter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_event_character_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EVENT_CHARACTER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EVENT_CHARACTER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Actor.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\Character\AnimationParamInfo.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_collision_manager.html">CCollisionManager</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/***************************************</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*   イベント用キャラクタクラス.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_c_event_character.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_event_character.html">CEventCharacter</a> : <span class="keyword">public</span> <a class="code" href="class_c_actor.html">CActor</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ROTATIONAL_SPEED = 0.05f;   <span class="comment">// 回転速度.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> TOLERANCE_RADIAN = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DXToRadian(10.0));  <span class="comment">// 回転の許容範囲.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a9d351622764acedfd7a516b3cacbf61a">   18</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_event_character.html#a9d351622764acedfd7a516b3cacbf61a">MODEL_ALPHA_MAX</a> = 1.0f; <span class="comment">// モデルアルファの最大値.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_event_character.html#ada9757a489dae0e17428c0d889d8aaac">   19</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_event_character.html#ada9757a489dae0e17428c0d889d8aaac">MODEL_SCALE_MAX</a> = 1.0f; <span class="comment">// モデルの大きさ最大値.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// 任意で設定する情報.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html">   23</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_event_character_1_1st_optional_state.html">stOptionalState</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    {</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#aa4c8b41adc082d8368adf5e3cd11ab76">   25</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_character_1_1st_optional_state.html#aa4c8b41adc082d8368adf5e3cd11ab76">vPosition</a>;          <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#a041a48e7e4b462974c6dbbf090e11c8f">   26</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a041a48e7e4b462974c6dbbf090e11c8f">vRotation</a>;          <span class="comment">// 回転値.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#a97d0d85d3b119059aedcd36975240db4">   27</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a97d0d85d3b119059aedcd36975240db4">vScale</a>;             <span class="comment">// 大きさ.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#a56d030b28d4341d2271d5b5e77e2c807">   28</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a56d030b28d4341d2271d5b5e77e2c807">ModelAlpha</a>;         <span class="comment">// モデルの透過値.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#a8b8868b3b1cde99581be2db06ae2b00a">   29</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a8b8868b3b1cde99581be2db06ae2b00a">MoveSpeed</a>;          <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#a9fb8f69732540b94b3fec0a45ca5a929">   30</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a9fb8f69732540b94b3fec0a45ca5a929">RotationalSpeed</a>;    <span class="comment">// 回転速度.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#aff8a3bba602a330b9df8e80963f4ff43">   31</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_character_1_1st_optional_state.html#aff8a3bba602a330b9df8e80963f4ff43">ScaleSpeed</a>;         <span class="comment">// 拡大速度.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#ae43f5c9585d08c8979680cbaef908453">   32</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_character_1_1st_optional_state.html#ae43f5c9585d08c8979680cbaef908453">AlphaSpeed</a>;         <span class="comment">// 透過速度.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#a3e7c2fcda340a596a581248154b45c7d">   33</a></span>&#160;        <span class="keywordtype">bool</span>        <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a3e7c2fcda340a596a581248154b45c7d">IsDisp</a>;             <span class="comment">// 描画するか.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_optional_state.html#ae675a491b6a4c9c247012941934f559c">   35</a></span>&#160;        <a class="code" href="struct_c_event_character_1_1st_optional_state.html#ae675a491b6a4c9c247012941934f559c">stOptionalState</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            : <a class="code" href="struct_c_event_character_1_1st_optional_state.html#aa4c8b41adc082d8368adf5e3cd11ab76">vPosition</a>         ( {0.0f,0.0f,0.0f} )</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a041a48e7e4b462974c6dbbf090e11c8f">vRotation</a>         ( {0.0f,0.0f,0.0f} )</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a97d0d85d3b119059aedcd36975240db4">vScale</a>            ( {1.0f,1.0f,1.0f} )</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a56d030b28d4341d2271d5b5e77e2c807">ModelAlpha</a>        ( 1.0f )</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a8b8868b3b1cde99581be2db06ae2b00a">MoveSpeed</a>         ( 0.1f )</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a9fb8f69732540b94b3fec0a45ca5a929">RotationalSpeed</a>   ( 0.01f )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#aff8a3bba602a330b9df8e80963f4ff43">ScaleSpeed</a>        ( 0.006f )</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#ae43f5c9585d08c8979680cbaef908453">AlphaSpeed</a>        ( 0.03f )</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_optional_state.html#a3e7c2fcda340a596a581248154b45c7d">IsDisp</a>            ( <span class="keyword">true</span> )</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a5edbd0c057775def9c7a4ae5b5414b68">   46</a></span>&#160;    }<span class="keyword">typedef</span> <a class="code" href="class_c_event_character.html#a5edbd0c057775def9c7a4ae5b5414b68">SOptionalState</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// キャラクタの情報.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_character_param.html">   51</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_event_character_1_1st_character_param.html">stCharacterParam</a> : <span class="keyword">public</span> <a class="code" href="class_c_event_character.html#a5edbd0c057775def9c7a4ae5b5414b68">SOptionalState</a></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_character_param.html#aa61dc0a4ff5c7bf773792c3c04726874">   53</a></span>&#160;        <span class="keywordtype">float</span>           <a class="code" href="struct_c_event_character_1_1st_character_param.html#aa61dc0a4ff5c7bf773792c3c04726874">ResearchLenght</a>;     <span class="comment">// 再検査する際の距離.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_character_param.html#ac95f0ef05d50cb466d0da8dabf9e50b3">   54</a></span>&#160;        D3DXVECTOR3     <a class="code" href="struct_c_event_character_1_1st_character_param.html#ac95f0ef05d50cb466d0da8dabf9e50b3">SphereAdjPos</a>;       <span class="comment">// スフィアの調整座標.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_character_param.html#a733e3e650740cdb65617db84c78cd2f6">   55</a></span>&#160;        <span class="keywordtype">float</span>           <a class="code" href="struct_c_event_character_1_1st_character_param.html#a733e3e650740cdb65617db84c78cd2f6">SphereAdjRadius</a>;    <span class="comment">// スフィアの調整半径.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_c_event_character_1_1st_character_param.html#a5a660fd60e071aade3dd65cf7e13a3dc">   57</a></span>&#160;        <a class="code" href="struct_c_event_character_1_1st_character_param.html#a5a660fd60e071aade3dd65cf7e13a3dc">stCharacterParam</a>()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            : <a class="code" href="struct_c_event_character_1_1st_character_param.html#aa61dc0a4ff5c7bf773792c3c04726874">ResearchLenght</a>(0.0f)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_character_param.html#ac95f0ef05d50cb466d0da8dabf9e50b3">SphereAdjPos</a>(0.0f, 0.0f, 0.0f)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            , <a class="code" href="struct_c_event_character_1_1st_character_param.html#a733e3e650740cdb65617db84c78cd2f6">SphereAdjRadius</a>(0.0f)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_event_character.html#aee081fce441d65149f0763fca03b6bf3">   62</a></span>&#160;    }<span class="keyword">typedef</span> <a class="code" href="class_c_event_character.html#aee081fce441d65149f0763fca03b6bf3">SCharacterParam</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_c_event_character.html#a665e1f01847f6be0468639d6748e9f24">CEventCharacter</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_event_character.html#a17882587ddcc62408f618db674814d6a">~CEventCharacter</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// 移動関数.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a4b44b20c6ed315b2c39220a386370edc">   69</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a4b44b20c6ed315b2c39220a386370edc">Move</a>() = 0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 情報設定関数.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#ab9a0184a2edef78f2c9bcece5f2469d1">SetOptionalState</a>(<span class="keyword">const</span> <a class="code" href="class_c_event_character.html#a5edbd0c057775def9c7a4ae5b5414b68">SOptionalState</a>&amp; state);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 座標別位置設定関数.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#ab7cf24abd70b5d1c3423237b7551bf99">SetPositionX</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vPos_x);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a80212bdd3047efdbfbd8f0aa04b01255">SetPositionY</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vPos_y);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a7edd30b22aad2cc3519f617b99d75372">SetPositionZ</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vPos_z);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// 回転値取得関数.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_event_character.html#abf63033fcb04310e9429015167dc59e6">GetRotation</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// 回転値設定関数.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#adc403eb27363115237e3fe10e249857c">SetRotation</a>(<span class="keyword">const</span> D3DXVECTOR3&amp; vRot);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#acac6006e44d35bc7ab12cf16fcc1acef">SetRotationX</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vRot_x);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a0ef868890ed9287fbf8f9fbb26037cd5">SetRotationY</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vRot_y);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a8a355e52986d17d1c9ef3ccde9cc4665">SetRotationZ</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vRot_z);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// 大きさ取得関数.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_event_character.html#af0da0056d1f945abebb97327002a3621">GetScale</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// 大きさ設定関数.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a2c0137b582ae82060cc90c5b3e53dbfb">SetScale</a>(<span class="keyword">const</span> D3DXVECTOR3&amp; vScale);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a7465df9275c209a4cd854e71e969943f">SetScaleX</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vScale_x);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a1c31416c11ef623baa011dfad2cadcc4">SetScaleY</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vScale_y);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a49682b56e06d2b70091ac375b3211ea6">SetScaleZ</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; vScale_z);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// 右回転の設定.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_event_character.html#aafab048f35da16746738b343a01e1f73">RotationMoveRight</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rotValue, </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rotSpeed, <span class="keywordtype">bool</span> IsRightRot = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// アニメーション設定.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a290dff06d5af9656f33ae1d952565767">SetAnimation</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animNo);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// アニメーションをブレンドして設定.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a910483c2528486ff4363888c1b2ccb12">SetAnimationBlend</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animNo);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// アニメーション速度の設定.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a65ef5fb1ea425a7edefae491d5d170ea">  103</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a65ef5fb1ea425a7edefae491d5d170ea">SetAnimSpeed</a>( <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; speed ){ <a class="code" href="class_c_event_character.html#a374cca72c53328ad9d15c26c0b8c6e5c">m_AnimSpeed</a> = speed; }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// メッシュの表示関数.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#a70401b6c2c1f66ed7a76630339cdef15">MeshRender</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// モデルの取得関数.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_event_character.html#a320671eaf8de601debc2537a3c6b730f">GetModel</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* modelName);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// 足音.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_character.html#abd5e073f7477bd3fd0766a41393aa645">FootStep</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* rightfoot, <span class="keyword">const</span> <span class="keywordtype">char</span>* leftfoot);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 足音用当たり判定の設定.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_event_character.html#abb6f14e944f25a655730badb78ad301d">FootStepCollisionSetting</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_c_event_character.html#aa9040f6020859827c0143c8bf2e64d28">  116</a></span>&#160;    std::shared_ptr&lt;CDX9SkinMesh&gt;   <a class="code" href="class_c_event_character.html#aa9040f6020859827c0143c8bf2e64d28">m_pSkinMesh</a>;        <span class="comment">// スキンメッシュ.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_c_event_character.html#aabf6965a1df1d917f3b53e00a637ffac">  117</a></span>&#160;    <a class="code" href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a>            <a class="code" href="class_c_event_character.html#aabf6965a1df1d917f3b53e00a637ffac">m_AnimFrameList</a>;    <span class="comment">// アニメーションフレームのリスト.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_c_event_character.html#aafee229f7ccf42b8557f2b051daa8994">  118</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="class_c_event_character.html#aafee229f7ccf42b8557f2b051daa8994">m_NowAnimNo</a>;                <span class="comment">// 現在のアニメーション番号.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a19bb3f13b445fe6faaa03c8c03c437ca">  119</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="class_c_event_character.html#a19bb3f13b445fe6faaa03c8c03c437ca">m_OldAnimNo</a>;                <span class="comment">// 過去のアニメーション番号.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a374cca72c53328ad9d15c26c0b8c6e5c">  120</a></span>&#160;    <span class="keywordtype">double</span>          <a class="code" href="class_c_event_character.html#a374cca72c53328ad9d15c26c0b8c6e5c">m_AnimSpeed</a>;                <span class="comment">// アニメーション速度.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_c_event_character.html#a96fad4f6f5bff0de64cad59407887565">  121</a></span>&#160;    <a class="code" href="class_c_event_character.html#aee081fce441d65149f0763fca03b6bf3">SCharacterParam</a> <a class="code" href="class_c_event_character.html#a96fad4f6f5bff0de64cad59407887565">m_Parameter</a>;                <span class="comment">// パラメータ.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::vector&lt;std::shared_ptr&lt;CCollisionManager&gt;&gt; m_pFootCollision;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    std::shared_ptr&lt;CCollisionManager&gt;              m_pGroundCollision;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    D3DXVECTOR3 m_vGroundPosition;  <span class="comment">// 地面の位置.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    D3DXVECTOR3 m_vRightPosition;   <span class="comment">// 右足の位置.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    D3DXVECTOR3 m_vLeftPosition;    <span class="comment">// 左足の位置.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef EVENT_CHARACTER_H.</span></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_collision_manager_html"><div class="ttname"><a href="class_c_collision_manager.html">CCollisionManager</a></div><div class="ttdef"><b>Definition:</b> CollsionManager.h:20</div></div>
+<div class="ttc" id="aclass_c_event_character_html"><div class="ttname"><a href="class_c_event_character.html">CEventCharacter</a></div><div class="ttdef"><b>Definition:</b> EventCharacter.h:13</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a0ef868890ed9287fbf8f9fbb26037cd5"><div class="ttname"><a href="class_c_event_character.html#a0ef868890ed9287fbf8f9fbb26037cd5">CEventCharacter::SetRotationY</a></div><div class="ttdeci">void SetRotationY(const float &amp;vRot_y)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:193</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a17882587ddcc62408f618db674814d6a"><div class="ttname"><a href="class_c_event_character.html#a17882587ddcc62408f618db674814d6a">CEventCharacter::~CEventCharacter</a></div><div class="ttdeci">virtual ~CEventCharacter()</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:33</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a19bb3f13b445fe6faaa03c8c03c437ca"><div class="ttname"><a href="class_c_event_character.html#a19bb3f13b445fe6faaa03c8c03c437ca">CEventCharacter::m_OldAnimNo</a></div><div class="ttdeci">int m_OldAnimNo</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:119</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a1c31416c11ef623baa011dfad2cadcc4"><div class="ttname"><a href="class_c_event_character.html#a1c31416c11ef623baa011dfad2cadcc4">CEventCharacter::SetScaleY</a></div><div class="ttdeci">void SetScaleY(const float &amp;vScale_y)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:223</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a290dff06d5af9656f33ae1d952565767"><div class="ttname"><a href="class_c_event_character.html#a290dff06d5af9656f33ae1d952565767">CEventCharacter::SetAnimation</a></div><div class="ttdeci">void SetAnimation(const int &amp;animNo)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:76</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a2c0137b582ae82060cc90c5b3e53dbfb"><div class="ttname"><a href="class_c_event_character.html#a2c0137b582ae82060cc90c5b3e53dbfb">CEventCharacter::SetScale</a></div><div class="ttdeci">void SetScale(const D3DXVECTOR3 &amp;vScale)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:211</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a320671eaf8de601debc2537a3c6b730f"><div class="ttname"><a href="class_c_event_character.html#a320671eaf8de601debc2537a3c6b730f">CEventCharacter::GetModel</a></div><div class="ttdeci">bool GetModel(const char *modelName)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:64</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a374cca72c53328ad9d15c26c0b8c6e5c"><div class="ttname"><a href="class_c_event_character.html#a374cca72c53328ad9d15c26c0b8c6e5c">CEventCharacter::m_AnimSpeed</a></div><div class="ttdeci">double m_AnimSpeed</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:120</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a49682b56e06d2b70091ac375b3211ea6"><div class="ttname"><a href="class_c_event_character.html#a49682b56e06d2b70091ac375b3211ea6">CEventCharacter::SetScaleZ</a></div><div class="ttdeci">void SetScaleZ(const float &amp;vScale_z)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:229</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a4b44b20c6ed315b2c39220a386370edc"><div class="ttname"><a href="class_c_event_character.html#a4b44b20c6ed315b2c39220a386370edc">CEventCharacter::Move</a></div><div class="ttdeci">virtual void Move()=0</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a5edbd0c057775def9c7a4ae5b5414b68"><div class="ttname"><a href="class_c_event_character.html#a5edbd0c057775def9c7a4ae5b5414b68">CEventCharacter::SOptionalState</a></div><div class="ttdeci">struct CEventCharacter::stOptionalState SOptionalState</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a65ef5fb1ea425a7edefae491d5d170ea"><div class="ttname"><a href="class_c_event_character.html#a65ef5fb1ea425a7edefae491d5d170ea">CEventCharacter::SetAnimSpeed</a></div><div class="ttdeci">void SetAnimSpeed(const double &amp;speed)</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:103</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a665e1f01847f6be0468639d6748e9f24"><div class="ttname"><a href="class_c_event_character.html#a665e1f01847f6be0468639d6748e9f24">CEventCharacter::CEventCharacter</a></div><div class="ttdeci">CEventCharacter()</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:16</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a70401b6c2c1f66ed7a76630339cdef15"><div class="ttname"><a href="class_c_event_character.html#a70401b6c2c1f66ed7a76630339cdef15">CEventCharacter::MeshRender</a></div><div class="ttdeci">void MeshRender()</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:52</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a7465df9275c209a4cd854e71e969943f"><div class="ttname"><a href="class_c_event_character.html#a7465df9275c209a4cd854e71e969943f">CEventCharacter::SetScaleX</a></div><div class="ttdeci">void SetScaleX(const float &amp;vScale_x)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:217</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a7edd30b22aad2cc3519f617b99d75372"><div class="ttname"><a href="class_c_event_character.html#a7edd30b22aad2cc3519f617b99d75372">CEventCharacter::SetPositionZ</a></div><div class="ttdeci">void SetPositionZ(const float &amp;vPos_z)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:169</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a80212bdd3047efdbfbd8f0aa04b01255"><div class="ttname"><a href="class_c_event_character.html#a80212bdd3047efdbfbd8f0aa04b01255">CEventCharacter::SetPositionY</a></div><div class="ttdeci">void SetPositionY(const float &amp;vPos_y)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:163</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a8a355e52986d17d1c9ef3ccde9cc4665"><div class="ttname"><a href="class_c_event_character.html#a8a355e52986d17d1c9ef3ccde9cc4665">CEventCharacter::SetRotationZ</a></div><div class="ttdeci">void SetRotationZ(const float &amp;vRot_z)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:199</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a910483c2528486ff4363888c1b2ccb12"><div class="ttname"><a href="class_c_event_character.html#a910483c2528486ff4363888c1b2ccb12">CEventCharacter::SetAnimationBlend</a></div><div class="ttdeci">void SetAnimationBlend(const int &amp;animNo)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:86</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a96fad4f6f5bff0de64cad59407887565"><div class="ttname"><a href="class_c_event_character.html#a96fad4f6f5bff0de64cad59407887565">CEventCharacter::m_Parameter</a></div><div class="ttdeci">SCharacterParam m_Parameter</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:121</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a9d351622764acedfd7a516b3cacbf61a"><div class="ttname"><a href="class_c_event_character.html#a9d351622764acedfd7a516b3cacbf61a">CEventCharacter::MODEL_ALPHA_MAX</a></div><div class="ttdeci">const float MODEL_ALPHA_MAX</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:18</div></div>
+<div class="ttc" id="aclass_c_event_character_html_aa9040f6020859827c0143c8bf2e64d28"><div class="ttname"><a href="class_c_event_character.html#aa9040f6020859827c0143c8bf2e64d28">CEventCharacter::m_pSkinMesh</a></div><div class="ttdeci">std::shared_ptr&lt; CDX9SkinMesh &gt; m_pSkinMesh</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:116</div></div>
+<div class="ttc" id="aclass_c_event_character_html_aabf6965a1df1d917f3b53e00a637ffac"><div class="ttname"><a href="class_c_event_character.html#aabf6965a1df1d917f3b53e00a637ffac">CEventCharacter::m_AnimFrameList</a></div><div class="ttdeci">anim::AAnimFrameList m_AnimFrameList</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:117</div></div>
+<div class="ttc" id="aclass_c_event_character_html_aafab048f35da16746738b343a01e1f73"><div class="ttname"><a href="class_c_event_character.html#aafab048f35da16746738b343a01e1f73">CEventCharacter::RotationMoveRight</a></div><div class="ttdeci">float RotationMoveRight(const float &amp;rotValue, const float &amp;rotSpeed, bool IsRightRot=true)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:234</div></div>
+<div class="ttc" id="aclass_c_event_character_html_aafee229f7ccf42b8557f2b051daa8994"><div class="ttname"><a href="class_c_event_character.html#aafee229f7ccf42b8557f2b051daa8994">CEventCharacter::m_NowAnimNo</a></div><div class="ttdeci">int m_NowAnimNo</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:118</div></div>
+<div class="ttc" id="aclass_c_event_character_html_ab7cf24abd70b5d1c3423237b7551bf99"><div class="ttname"><a href="class_c_event_character.html#ab7cf24abd70b5d1c3423237b7551bf99">CEventCharacter::SetPositionX</a></div><div class="ttdeci">void SetPositionX(const float &amp;vPos_x)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:157</div></div>
+<div class="ttc" id="aclass_c_event_character_html_ab9a0184a2edef78f2c9bcece5f2469d1"><div class="ttname"><a href="class_c_event_character.html#ab9a0184a2edef78f2c9bcece5f2469d1">CEventCharacter::SetOptionalState</a></div><div class="ttdeci">virtual void SetOptionalState(const SOptionalState &amp;state)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:38</div></div>
+<div class="ttc" id="aclass_c_event_character_html_abb6f14e944f25a655730badb78ad301d"><div class="ttname"><a href="class_c_event_character.html#abb6f14e944f25a655730badb78ad301d">CEventCharacter::FootStepCollisionSetting</a></div><div class="ttdeci">bool FootStepCollisionSetting()</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:116</div></div>
+<div class="ttc" id="aclass_c_event_character_html_abd5e073f7477bd3fd0766a41393aa645"><div class="ttname"><a href="class_c_event_character.html#abd5e073f7477bd3fd0766a41393aa645">CEventCharacter::FootStep</a></div><div class="ttdeci">void FootStep(const char *rightfoot, const char *leftfoot)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:96</div></div>
+<div class="ttc" id="aclass_c_event_character_html_abf63033fcb04310e9429015167dc59e6"><div class="ttname"><a href="class_c_event_character.html#abf63033fcb04310e9429015167dc59e6">CEventCharacter::GetRotation</a></div><div class="ttdeci">D3DXVECTOR3 GetRotation() const</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:175</div></div>
+<div class="ttc" id="aclass_c_event_character_html_acac6006e44d35bc7ab12cf16fcc1acef"><div class="ttname"><a href="class_c_event_character.html#acac6006e44d35bc7ab12cf16fcc1acef">CEventCharacter::SetRotationX</a></div><div class="ttdeci">void SetRotationX(const float &amp;vRot_x)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:187</div></div>
+<div class="ttc" id="aclass_c_event_character_html_ada9757a489dae0e17428c0d889d8aaac"><div class="ttname"><a href="class_c_event_character.html#ada9757a489dae0e17428c0d889d8aaac">CEventCharacter::MODEL_SCALE_MAX</a></div><div class="ttdeci">const float MODEL_SCALE_MAX</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:19</div></div>
+<div class="ttc" id="aclass_c_event_character_html_adc403eb27363115237e3fe10e249857c"><div class="ttname"><a href="class_c_event_character.html#adc403eb27363115237e3fe10e249857c">CEventCharacter::SetRotation</a></div><div class="ttdeci">void SetRotation(const D3DXVECTOR3 &amp;vRot)</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:181</div></div>
+<div class="ttc" id="aclass_c_event_character_html_aee081fce441d65149f0763fca03b6bf3"><div class="ttname"><a href="class_c_event_character.html#aee081fce441d65149f0763fca03b6bf3">CEventCharacter::SCharacterParam</a></div><div class="ttdeci">CEventCharacter::stCharacterParam SCharacterParam</div></div>
+<div class="ttc" id="aclass_c_event_character_html_af0da0056d1f945abebb97327002a3621"><div class="ttname"><a href="class_c_event_character.html#af0da0056d1f945abebb97327002a3621">CEventCharacter::GetScale</a></div><div class="ttdeci">D3DXVECTOR3 GetScale() const</div><div class="ttdef"><b>Definition:</b> EventCharacter.cpp:205</div></div>
+<div class="ttc" id="anamespaceanim_html_a68d2d2cd7731372f3f57e24df472067f"><div class="ttname"><a href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a></div><div class="ttdeci">std::vector&lt; SAnimFrame &gt; AAnimFrameList</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:35</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_character_param_html"><div class="ttname"><a href="struct_c_event_character_1_1st_character_param.html">CEventCharacter::stCharacterParam</a></div><div class="ttdef"><b>Definition:</b> EventCharacter.h:52</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_character_param_html_a5a660fd60e071aade3dd65cf7e13a3dc"><div class="ttname"><a href="struct_c_event_character_1_1st_character_param.html#a5a660fd60e071aade3dd65cf7e13a3dc">CEventCharacter::stCharacterParam::stCharacterParam</a></div><div class="ttdeci">stCharacterParam()</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:57</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_character_param_html_a733e3e650740cdb65617db84c78cd2f6"><div class="ttname"><a href="struct_c_event_character_1_1st_character_param.html#a733e3e650740cdb65617db84c78cd2f6">CEventCharacter::stCharacterParam::SphereAdjRadius</a></div><div class="ttdeci">float SphereAdjRadius</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:55</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_character_param_html_aa61dc0a4ff5c7bf773792c3c04726874"><div class="ttname"><a href="struct_c_event_character_1_1st_character_param.html#aa61dc0a4ff5c7bf773792c3c04726874">CEventCharacter::stCharacterParam::ResearchLenght</a></div><div class="ttdeci">float ResearchLenght</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:53</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_character_param_html_ac95f0ef05d50cb466d0da8dabf9e50b3"><div class="ttname"><a href="struct_c_event_character_1_1st_character_param.html#ac95f0ef05d50cb466d0da8dabf9e50b3">CEventCharacter::stCharacterParam::SphereAdjPos</a></div><div class="ttdeci">D3DXVECTOR3 SphereAdjPos</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:54</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html">CEventCharacter::stOptionalState</a></div><div class="ttdef"><b>Definition:</b> EventCharacter.h:24</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_a041a48e7e4b462974c6dbbf090e11c8f"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#a041a48e7e4b462974c6dbbf090e11c8f">CEventCharacter::stOptionalState::vRotation</a></div><div class="ttdeci">D3DXVECTOR3 vRotation</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:26</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_a3e7c2fcda340a596a581248154b45c7d"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#a3e7c2fcda340a596a581248154b45c7d">CEventCharacter::stOptionalState::IsDisp</a></div><div class="ttdeci">bool IsDisp</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:33</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_a56d030b28d4341d2271d5b5e77e2c807"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#a56d030b28d4341d2271d5b5e77e2c807">CEventCharacter::stOptionalState::ModelAlpha</a></div><div class="ttdeci">float ModelAlpha</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:28</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_a8b8868b3b1cde99581be2db06ae2b00a"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#a8b8868b3b1cde99581be2db06ae2b00a">CEventCharacter::stOptionalState::MoveSpeed</a></div><div class="ttdeci">float MoveSpeed</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:29</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_a97d0d85d3b119059aedcd36975240db4"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#a97d0d85d3b119059aedcd36975240db4">CEventCharacter::stOptionalState::vScale</a></div><div class="ttdeci">D3DXVECTOR3 vScale</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:27</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_a9fb8f69732540b94b3fec0a45ca5a929"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#a9fb8f69732540b94b3fec0a45ca5a929">CEventCharacter::stOptionalState::RotationalSpeed</a></div><div class="ttdeci">float RotationalSpeed</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:30</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_aa4c8b41adc082d8368adf5e3cd11ab76"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#aa4c8b41adc082d8368adf5e3cd11ab76">CEventCharacter::stOptionalState::vPosition</a></div><div class="ttdeci">D3DXVECTOR3 vPosition</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:25</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_ae43f5c9585d08c8979680cbaef908453"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#ae43f5c9585d08c8979680cbaef908453">CEventCharacter::stOptionalState::AlphaSpeed</a></div><div class="ttdeci">float AlphaSpeed</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:32</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_ae675a491b6a4c9c247012941934f559c"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#ae675a491b6a4c9c247012941934f559c">CEventCharacter::stOptionalState::stOptionalState</a></div><div class="ttdeci">stOptionalState()</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:35</div></div>
+<div class="ttc" id="astruct_c_event_character_1_1st_optional_state_html_aff8a3bba602a330b9df8e80963f4ff43"><div class="ttname"><a href="struct_c_event_character_1_1st_optional_state.html#aff8a3bba602a330b9df8e80963f4ff43">CEventCharacter::stOptionalState::ScaleSpeed</a></div><div class="ttdeci">float ScaleSpeed</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

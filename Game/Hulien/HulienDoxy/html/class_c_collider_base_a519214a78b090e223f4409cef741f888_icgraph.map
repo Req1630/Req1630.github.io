@@ -1,0 +1,5 @@
+<map id="CColliderBase::GetRotation" name="CColliderBase::GetRotation">
+<area shape="rect" id="node1" title=" " alt="" coords="261,42,443,69"/>
+<area shape="rect" id="node2" href="$class_c_capsule_collision.html#a5dbe6be88f59876b9499c769c6664b19" title=" " alt="" coords="42,5,177,47"/>
+<area shape="rect" id="node3" href="$class_c_o_b_box_collision.html#a4e9daacdbe7600f1db73eada94d4cfdf" title=" " alt="" coords="5,71,213,98"/>
+</map>

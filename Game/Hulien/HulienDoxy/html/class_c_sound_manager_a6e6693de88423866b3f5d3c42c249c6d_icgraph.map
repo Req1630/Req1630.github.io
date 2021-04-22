@@ -1,0 +1,11 @@
+<map id="CSoundManager::ThreadPlayBGM" name="CSoundManager::ThreadPlayBGM">
+<area shape="rect" id="node1" title=" " alt="" coords="217,183,439,209"/>
+<area shape="rect" id="node2" href="$class_c_config.html#acfcbaa03159360129f5cd8a5fd53d806" title=" " alt="" coords="36,5,139,32"/>
+<area shape="rect" id="node3" href="$class_c_editor.html#a9aff35dac676527f5e1ec8fade01875f" title=" " alt="" coords="37,56,138,83"/>
+<area shape="rect" id="node4" href="$class_c_game_clear.html#a7b9d98ca879f2b10dd9126d050778614" title=" " alt="" coords="21,107,153,133"/>
+<area shape="rect" id="node5" href="$class_c_game_over.html#a852b6bfc0638bd23176bd7f997357b28" title=" " alt="" coords="23,157,151,184"/>
+<area shape="rect" id="node6" href="$class_c_title.html#a9370f8925d0381bba8fedd7d2834ab74" title=" " alt="" coords="42,208,133,235"/>
+<area shape="rect" id="node7" href="$class_c_game_clear_event.html#a1dab676fd2def2f7fd4236632a851102" title=" " alt="" coords="5,259,169,285"/>
+<area shape="rect" id="node8" href="$class_c_game_over_event.html#a97f5e3a7bcec69ed6a3e5be735e2a648" title=" " alt="" coords="7,309,167,336"/>
+<area shape="rect" id="node9" href="$class_c_game_start_event.html#a4ea7ca47cd2a3fbe768a40408fbc807c" title=" " alt="" coords="6,360,169,387"/>
+</map>

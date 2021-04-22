@@ -1,0 +1,145 @@
+\hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h}{}\doxysection{SKIN\+\_\+\+PARTS\+\_\+\+MESH 構造体}
+\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h}\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+
+
+{\ttfamily \#include $<$CDX9\+Skin\+Mesh\+Parser.\+h$>$}
+
+
+
+SKIN\+\_\+\+PARTS\+\_\+\+MESH 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{struct_s_k_i_n___p_a_r_t_s___m_e_s_h__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a1e6603d4108fe315bae05740001e22e3}{SKIN\+\_\+\+PARTS\+\_\+\+MESH}} ()
+\item 
+\mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a758fdc3eda689357979242c8160f4b87}{$\sim$\+SKIN\+\_\+\+PARTS\+\_\+\+MESH}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+DWORD \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a173efad60e832b9e09ccdb6fb03a3b8c}{dw\+Num\+Vert}}
+\item 
+DWORD \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a6a0d672f87d286161f155be70597b4eb}{dw\+Num\+Face}}
+\item 
+DWORD \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_adf137410ed7008020f84ac8259fb46b3}{dw\+Num\+UV}}
+\item 
+DWORD \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_ae6e78a569ec8fcca27efd507b96bd78d}{dw\+Num\+Material}}
+\item 
+\mbox{\hyperlink{struct_m_y___s_k_i_n_m_a_t_e_r_i_a_l}{MY\+\_\+\+SKINMATERIAL}} $\ast$ \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_ac89f572025af2f2867bc32e0302ebd9c}{p\+Material}}
+\item 
+char \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_acc365afcae20a4a537eadca0c228c529}{Texture\+File\+Name}} \mbox{[}8\mbox{]}\mbox{[}256\mbox{]}
+\item 
+bool \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a898cd39c38dbcc9f8f680492bb8ee2ae}{b\+Tex}}
+\item 
+ID3\+D11\+Buffer $\ast$ \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a5bc1c251c7e6a8c565739732595f8849}{p\+Vertex\+Buffer}}
+\item 
+ID3\+D11\+Buffer $\ast$$\ast$ \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_afd0584cb5def306ab81265ebce034ba9}{pp\+Index\+Buffer}}
+\item 
+int \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a262073f5a063c3772190fef54f5729d2}{i\+Num\+Bone}}
+\item 
+\mbox{\hyperlink{struct_b_o_n_e}{BONE}} $\ast$ \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a5b17705f4677f615aaa572f804cd1d88}{p\+Bone\+Array}}
+\item 
+bool \mbox{\hyperlink{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_afd6a6b0c23ccc7b608886d38b1c3dff6}{b\+Enable\+Bones}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a1e6603d4108fe315bae05740001e22e3}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a1e6603d4108fe315bae05740001e22e3}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{SKIN\_PARTS\_MESH()}{SKIN\_PARTS\_MESH()}}
+{\footnotesize\ttfamily SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::\+SKIN\+\_\+\+PARTS\+\_\+\+MESH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a758fdc3eda689357979242c8160f4b87}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a758fdc3eda689357979242c8160f4b87}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!````~SKIN\_PARTS\_MESH@{$\sim$SKIN\_PARTS\_MESH}}
+\index{````~SKIN\_PARTS\_MESH@{$\sim$SKIN\_PARTS\_MESH}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{$\sim$SKIN\_PARTS\_MESH()}{~SKIN\_PARTS\_MESH()}}
+{\footnotesize\ttfamily SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::$\sim$\+SKIN\+\_\+\+PARTS\+\_\+\+MESH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_afd6a6b0c23ccc7b608886d38b1c3dff6}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_afd6a6b0c23ccc7b608886d38b1c3dff6}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!bEnableBones@{bEnableBones}}
+\index{bEnableBones@{bEnableBones}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{bEnableBones}{bEnableBones}}
+{\footnotesize\ttfamily bool SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::b\+Enable\+Bones}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a898cd39c38dbcc9f8f680492bb8ee2ae}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a898cd39c38dbcc9f8f680492bb8ee2ae}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!bTex@{bTex}}
+\index{bTex@{bTex}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{bTex}{bTex}}
+{\footnotesize\ttfamily bool SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::b\+Tex}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a6a0d672f87d286161f155be70597b4eb}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a6a0d672f87d286161f155be70597b4eb}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!dwNumFace@{dwNumFace}}
+\index{dwNumFace@{dwNumFace}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{dwNumFace}{dwNumFace}}
+{\footnotesize\ttfamily DWORD SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::dw\+Num\+Face}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_ae6e78a569ec8fcca27efd507b96bd78d}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_ae6e78a569ec8fcca27efd507b96bd78d}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!dwNumMaterial@{dwNumMaterial}}
+\index{dwNumMaterial@{dwNumMaterial}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{dwNumMaterial}{dwNumMaterial}}
+{\footnotesize\ttfamily DWORD SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::dw\+Num\+Material}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_adf137410ed7008020f84ac8259fb46b3}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_adf137410ed7008020f84ac8259fb46b3}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!dwNumUV@{dwNumUV}}
+\index{dwNumUV@{dwNumUV}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{dwNumUV}{dwNumUV}}
+{\footnotesize\ttfamily DWORD SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::dw\+Num\+UV}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a173efad60e832b9e09ccdb6fb03a3b8c}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a173efad60e832b9e09ccdb6fb03a3b8c}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!dwNumVert@{dwNumVert}}
+\index{dwNumVert@{dwNumVert}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{dwNumVert}{dwNumVert}}
+{\footnotesize\ttfamily DWORD SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::dw\+Num\+Vert}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a262073f5a063c3772190fef54f5729d2}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a262073f5a063c3772190fef54f5729d2}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!iNumBone@{iNumBone}}
+\index{iNumBone@{iNumBone}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{iNumBone}{iNumBone}}
+{\footnotesize\ttfamily int SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::i\+Num\+Bone}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a5b17705f4677f615aaa572f804cd1d88}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a5b17705f4677f615aaa572f804cd1d88}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!pBoneArray@{pBoneArray}}
+\index{pBoneArray@{pBoneArray}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{pBoneArray}{pBoneArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_b_o_n_e}{BONE}}$\ast$ SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::p\+Bone\+Array}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_ac89f572025af2f2867bc32e0302ebd9c}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_ac89f572025af2f2867bc32e0302ebd9c}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!pMaterial@{pMaterial}}
+\index{pMaterial@{pMaterial}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{pMaterial}{pMaterial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_m_y___s_k_i_n_m_a_t_e_r_i_a_l}{MY\+\_\+\+SKINMATERIAL}}$\ast$ SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::p\+Material}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_afd0584cb5def306ab81265ebce034ba9}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_afd0584cb5def306ab81265ebce034ba9}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!ppIndexBuffer@{ppIndexBuffer}}
+\index{ppIndexBuffer@{ppIndexBuffer}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{ppIndexBuffer}{ppIndexBuffer}}
+{\footnotesize\ttfamily ID3\+D11\+Buffer$\ast$$\ast$ SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::pp\+Index\+Buffer}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a5bc1c251c7e6a8c565739732595f8849}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_a5bc1c251c7e6a8c565739732595f8849}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!pVertexBuffer@{pVertexBuffer}}
+\index{pVertexBuffer@{pVertexBuffer}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{pVertexBuffer}{pVertexBuffer}}
+{\footnotesize\ttfamily ID3\+D11\+Buffer$\ast$ SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::p\+Vertex\+Buffer}
+
+\mbox{\Hypertarget{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_acc365afcae20a4a537eadca0c228c529}\label{struct_s_k_i_n___p_a_r_t_s___m_e_s_h_acc365afcae20a4a537eadca0c228c529}} 
+\index{SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}!TextureFileName@{TextureFileName}}
+\index{TextureFileName@{TextureFileName}!SKIN\_PARTS\_MESH@{SKIN\_PARTS\_MESH}}
+\doxysubsubsection{\texorpdfstring{TextureFileName}{TextureFileName}}
+{\footnotesize\ttfamily char SKIN\+\_\+\+PARTS\+\_\+\+MESH\+::\+Texture\+File\+Name\mbox{[}8\mbox{]}\mbox{[}256\mbox{]}}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Mesh/\+Dx9\+Skin\+Mesh/\+Parser/\mbox{\hyperlink{_c_d_x9_skin_mesh_parser_8h}{CDX9\+Skin\+Mesh\+Parser.\+h}}\end{DoxyCompactItemize}

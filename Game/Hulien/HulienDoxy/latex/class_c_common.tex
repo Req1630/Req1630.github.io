@@ -1,0 +1,256 @@
+\hypertarget{class_c_common}{}\doxysection{CCommon クラス}
+\label{class_c_common}\index{CCommon@{CCommon}}
+
+
+{\ttfamily \#include $<$Common.\+h$>$}
+
+
+
+CCommon の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_c_common__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_common_a0a9c20e4f2a759656268abcd9e1c3203}{CCommon}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_common_aca463a355382ea5dce55a47861f00b0b}{$\sim$\+CCommon}} ()
+\item 
+void \mbox{\hyperlink{class_c_common_ac899c42445ea8bfc89de4198ed43ad2b}{Set\+Position}} (const D3\+DXVECTOR3 \&v\+Pos)
+\item 
+void \mbox{\hyperlink{class_c_common_ab0f7d0a9a93de6d3a7af4cf386bb1000}{Set\+Rotation}} (const D3\+DXVECTOR3 \&v\+Rot)
+\item 
+void \mbox{\hyperlink{class_c_common_a68e63573a80b7c2b23d6487df744f163}{Set\+Scale}} (const D3\+DXVECTOR3 \&v\+Scale)
+\item 
+void \mbox{\hyperlink{class_c_common_a9ece88af3f6094a3bd5d52fd344bed05}{Set\+Scale}} (const float \&f\+Scale)
+\item 
+void \mbox{\hyperlink{class_c_common_adac5c0e866ecafe70e65b76735f72473}{Set\+Color}} (const D3\+DXVECTOR4 \&v\+Color)
+\item 
+void \mbox{\hyperlink{class_c_common_a460ad0d33978d4a113c826af361b9332}{Set\+Alpha}} (const float \&f\+Alpha)
+\item 
+void \mbox{\hyperlink{class_c_common_a56422d04008fb6b3964d1a8ddd5da932}{Set\+Blend}} (bool Enable\+Alpha)
+\item 
+void \mbox{\hyperlink{class_c_common_a91151834da63c329921a25ccfe15c368}{Set\+Coverage}} (bool Enable\+Coverage)
+\item 
+void \mbox{\hyperlink{class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb}{Set\+Deprh}} (bool flag)
+\item 
+void \mbox{\hyperlink{class_c_common_a9a82de660386c013541b68d7113a0bc2}{Set\+Rasterizer\+State}} (const \mbox{\hyperlink{_d3_d_x11_8h_a8af445d37ec08e03396d04112dcd4a47}{ERS\+\_\+\+STATE}} \&rs\+State)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+HRESULT \mbox{\hyperlink{class_c_common_aa1dcfc47dd8c2105466ca640ed7cd927}{Init\+Pram}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+ID3\+D11\+Device $\ast$ \mbox{\hyperlink{class_c_common_ab994321fe30b33edd1aa18c635b4dbd8}{m\+\_\+p\+Device11}}
+\item 
+ID3\+D11\+Device\+Context $\ast$ \mbox{\hyperlink{class_c_common_a99f115ba0acc7c91266535e6ea42a1ad}{m\+\_\+p\+Context11}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_common_aae821a41c6dbdaa1c56a66465206ed4d}{m\+\_\+v\+Pos}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_common_aea940fa0f9194144f013fb9da8b7c4a5}{m\+\_\+v\+Rot}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_common_a3e38785d1391f3ab4c8905e6a7afbc57}{m\+\_\+v\+Scale}}
+\item 
+D3\+DXVECTOR4 \mbox{\hyperlink{class_c_common_a874124175f3e45be8acba5c666be77c7}{m\+\_\+v\+Color}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_common_a0a9c20e4f2a759656268abcd9e1c3203}\label{class_c_common_a0a9c20e4f2a759656268abcd9e1c3203}} 
+\index{CCommon@{CCommon}!CCommon@{CCommon}}
+\index{CCommon@{CCommon}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{CCommon()}{CCommon()}}
+{\footnotesize\ttfamily CCommon\+::\+CCommon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_common_aca463a355382ea5dce55a47861f00b0b}\label{class_c_common_aca463a355382ea5dce55a47861f00b0b}} 
+\index{CCommon@{CCommon}!````~CCommon@{$\sim$CCommon}}
+\index{````~CCommon@{$\sim$CCommon}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCommon()}{~CCommon()}}
+{\footnotesize\ttfamily CCommon\+::$\sim$\+CCommon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_common_aa1dcfc47dd8c2105466ca640ed7cd927}\label{class_c_common_aa1dcfc47dd8c2105466ca640ed7cd927}} 
+\index{CCommon@{CCommon}!InitPram@{InitPram}}
+\index{InitPram@{InitPram}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{InitPram()}{InitPram()}}
+{\footnotesize\ttfamily HRESULT CCommon\+::\+Init\+Pram (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_aa1dcfc47dd8c2105466ca640ed7cd927_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_common_a460ad0d33978d4a113c826af361b9332}\label{class_c_common_a460ad0d33978d4a113c826af361b9332}} 
+\index{CCommon@{CCommon}!SetAlpha@{SetAlpha}}
+\index{SetAlpha@{SetAlpha}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetAlpha()}{SetAlpha()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Alpha (\begin{DoxyParamCaption}\item[{const float \&}]{f\+Alpha }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_common_a56422d04008fb6b3964d1a8ddd5da932}\label{class_c_common_a56422d04008fb6b3964d1a8ddd5da932}} 
+\index{CCommon@{CCommon}!SetBlend@{SetBlend}}
+\index{SetBlend@{SetBlend}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetBlend()}{SetBlend()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Blend (\begin{DoxyParamCaption}\item[{bool}]{Enable\+Alpha }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_a56422d04008fb6b3964d1a8ddd5da932_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_c_common_a56422d04008fb6b3964d1a8ddd5da932_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_common_adac5c0e866ecafe70e65b76735f72473}\label{class_c_common_adac5c0e866ecafe70e65b76735f72473}} 
+\index{CCommon@{CCommon}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR4 \&}]{v\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_common_a91151834da63c329921a25ccfe15c368}\label{class_c_common_a91151834da63c329921a25ccfe15c368}} 
+\index{CCommon@{CCommon}!SetCoverage@{SetCoverage}}
+\index{SetCoverage@{SetCoverage}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetCoverage()}{SetCoverage()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Coverage (\begin{DoxyParamCaption}\item[{bool}]{Enable\+Coverage }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_a91151834da63c329921a25ccfe15c368_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb}\label{class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb}} 
+\index{CCommon@{CCommon}!SetDeprh@{SetDeprh}}
+\index{SetDeprh@{SetDeprh}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetDeprh()}{SetDeprh()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Deprh (\begin{DoxyParamCaption}\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_common_ac899c42445ea8bfc89de4198ed43ad2b}\label{class_c_common_ac899c42445ea8bfc89de4198ed43ad2b}} 
+\index{CCommon@{CCommon}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_common_a9a82de660386c013541b68d7113a0bc2}\label{class_c_common_a9a82de660386c013541b68d7113a0bc2}} 
+\index{CCommon@{CCommon}!SetRasterizerState@{SetRasterizerState}}
+\index{SetRasterizerState@{SetRasterizerState}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetRasterizerState()}{SetRasterizerState()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Rasterizer\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_d3_d_x11_8h_a8af445d37ec08e03396d04112dcd4a47}{ERS\+\_\+\+STATE}} \&}]{rs\+State }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_a9a82de660386c013541b68d7113a0bc2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_common_a9a82de660386c013541b68d7113a0bc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_common_ab0f7d0a9a93de6d3a7af4cf386bb1000}\label{class_c_common_ab0f7d0a9a93de6d3a7af4cf386bb1000}} 
+\index{CCommon@{CCommon}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_common_a68e63573a80b7c2b23d6487df744f163}\label{class_c_common_a68e63573a80b7c2b23d6487df744f163}} 
+\index{CCommon@{CCommon}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_common_a9ece88af3f6094a3bd5d52fd344bed05}\label{class_c_common_a9ece88af3f6094a3bd5d52fd344bed05}} 
+\index{CCommon@{CCommon}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CCommon\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const float \&}]{f\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_common_a99f115ba0acc7c91266535e6ea42a1ad}\label{class_c_common_a99f115ba0acc7c91266535e6ea42a1ad}} 
+\index{CCommon@{CCommon}!m\_pContext11@{m\_pContext11}}
+\index{m\_pContext11@{m\_pContext11}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{m\_pContext11}{m\_pContext11}}
+{\footnotesize\ttfamily ID3\+D11\+Device\+Context$\ast$ CCommon\+::m\+\_\+p\+Context11\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_common_ab994321fe30b33edd1aa18c635b4dbd8}\label{class_c_common_ab994321fe30b33edd1aa18c635b4dbd8}} 
+\index{CCommon@{CCommon}!m\_pDevice11@{m\_pDevice11}}
+\index{m\_pDevice11@{m\_pDevice11}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{m\_pDevice11}{m\_pDevice11}}
+{\footnotesize\ttfamily ID3\+D11\+Device$\ast$ CCommon\+::m\+\_\+p\+Device11\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_common_a874124175f3e45be8acba5c666be77c7}\label{class_c_common_a874124175f3e45be8acba5c666be77c7}} 
+\index{CCommon@{CCommon}!m\_vColor@{m\_vColor}}
+\index{m\_vColor@{m\_vColor}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{m\_vColor}{m\_vColor}}
+{\footnotesize\ttfamily D3\+DXVECTOR4 CCommon\+::m\+\_\+v\+Color\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_common_aae821a41c6dbdaa1c56a66465206ed4d}\label{class_c_common_aae821a41c6dbdaa1c56a66465206ed4d}} 
+\index{CCommon@{CCommon}!m\_vPos@{m\_vPos}}
+\index{m\_vPos@{m\_vPos}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{m\_vPos}{m\_vPos}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCommon\+::m\+\_\+v\+Pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_common_aea940fa0f9194144f013fb9da8b7c4a5}\label{class_c_common_aea940fa0f9194144f013fb9da8b7c4a5}} 
+\index{CCommon@{CCommon}!m\_vRot@{m\_vRot}}
+\index{m\_vRot@{m\_vRot}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{m\_vRot}{m\_vRot}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCommon\+::m\+\_\+v\+Rot\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_common_a3e38785d1391f3ab4c8905e6a7afbc57}\label{class_c_common_a3e38785d1391f3ab4c8905e6a7afbc57}} 
+\index{CCommon@{CCommon}!m\_vScale@{m\_vScale}}
+\index{m\_vScale@{m\_vScale}!CCommon@{CCommon}}
+\doxysubsubsection{\texorpdfstring{m\_vScale}{m\_vScale}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCommon\+::m\+\_\+v\+Scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\mbox{\hyperlink{_common_8h}{Common.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\mbox{\hyperlink{_common_8cpp}{Common.\+cpp}}\end{DoxyCompactItemize}

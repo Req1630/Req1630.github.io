@@ -1,0 +1,7 @@
+<map id="CEffect::Render" name="CEffect::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,119,91"/>
+<area shape="rect" id="node2" href="$class_c_camera_manager.html#ac60999cfe7c66600c721367dc3d87c45" title=" " alt="" coords="169,5,383,32"/>
+<area shape="rect" id="node3" href="$class_c_scene_tex_renderer.html#a654751fbf5f69dc92062d281f66add3b" title=" " alt="" coords="201,57,351,98"/>
+<area shape="rect" id="node5" href="$class_c_camera_manager.html#a52bbaea5e90b571603d650f46db105de" title=" " alt="" coords="167,123,385,149"/>
+<area shape="rect" id="node4" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="433,57,583,98"/>
+</map>

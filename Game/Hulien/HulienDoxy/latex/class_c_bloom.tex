@@ -1,0 +1,128 @@
+\hypertarget{class_c_bloom}{}\doxysection{CBloom クラス}
+\label{class_c_bloom}\index{CBloom@{CBloom}}
+
+
+{\ttfamily \#include $<$Bloom.\+h$>$}
+
+
+
+CBloom の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_bloom__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CBloom 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_bloom__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_bloom_ac167edabec2646b572eb2bf1a505200d}{CBloom}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_bloom_a4951e0d58a8bc33740d11201b407f182}{$\sim$\+CBloom}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_bloom_ad71e5040a0392137f672436a355882ce}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+void \mbox{\hyperlink{class_c_bloom_a39e3ca8e2ed143844a8e07cb2577e6cf}{Release}} ()
+\item 
+void \mbox{\hyperlink{class_c_bloom_a4b199faf0b590e9afa0d8211e81059c7}{Sampling}} (ID3\+D11\+Shader\+Resource\+View $\ast$tex)
+\item 
+void \mbox{\hyperlink{class_c_bloom_a9a07b0947d8646456ce02174c9388a85}{Clear\+Buffer}} ()
+\item 
+std\+::vector$<$ ID3\+D11\+Shader\+Resource\+View $\ast$ $>$ \mbox{\hyperlink{class_c_bloom_acad2ae4dc63581b8a77f01d528aa9fd9}{Get\+Blur\+Tex}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_c_bloom_ab53efe2d2a4a788264a6ae1171df988b}{SAMPLE\+\_\+\+BLUR\+\_\+\+MAX}} = 6
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_bloom_ac167edabec2646b572eb2bf1a505200d}\label{class_c_bloom_ac167edabec2646b572eb2bf1a505200d}} 
+\index{CBloom@{CBloom}!CBloom@{CBloom}}
+\index{CBloom@{CBloom}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{CBloom()}{CBloom()}}
+{\footnotesize\ttfamily CBloom\+::\+CBloom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_bloom_a4951e0d58a8bc33740d11201b407f182}\label{class_c_bloom_a4951e0d58a8bc33740d11201b407f182}} 
+\index{CBloom@{CBloom}!````~CBloom@{$\sim$CBloom}}
+\index{````~CBloom@{$\sim$CBloom}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBloom()}{~CBloom()}}
+{\footnotesize\ttfamily CBloom\+::$\sim$\+CBloom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_bloom_a9a07b0947d8646456ce02174c9388a85}\label{class_c_bloom_a9a07b0947d8646456ce02174c9388a85}} 
+\index{CBloom@{CBloom}!ClearBuffer@{ClearBuffer}}
+\index{ClearBuffer@{ClearBuffer}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{ClearBuffer()}{ClearBuffer()}}
+{\footnotesize\ttfamily void CBloom\+::\+Clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_bloom_acad2ae4dc63581b8a77f01d528aa9fd9}\label{class_c_bloom_acad2ae4dc63581b8a77f01d528aa9fd9}} 
+\index{CBloom@{CBloom}!GetBlurTex@{GetBlurTex}}
+\index{GetBlurTex@{GetBlurTex}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{GetBlurTex()}{GetBlurTex()}}
+{\footnotesize\ttfamily std\+::vector$<$ID3\+D11\+Shader\+Resource\+View$\ast$$>$ CBloom\+::\+Get\+Blur\+Tex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_bloom_ad71e5040a0392137f672436a355882ce}\label{class_c_bloom_ad71e5040a0392137f672436a355882ce}} 
+\index{CBloom@{CBloom}!Init@{Init}}
+\index{Init@{Init}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CBloom\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_bloom_ad71e5040a0392137f672436a355882ce_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_bloom_a39e3ca8e2ed143844a8e07cb2577e6cf}\label{class_c_bloom_a39e3ca8e2ed143844a8e07cb2577e6cf}} 
+\index{CBloom@{CBloom}!Release@{Release}}
+\index{Release@{Release}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void CBloom\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_bloom_a4b199faf0b590e9afa0d8211e81059c7}\label{class_c_bloom_a4b199faf0b590e9afa0d8211e81059c7}} 
+\index{CBloom@{CBloom}!Sampling@{Sampling}}
+\index{Sampling@{Sampling}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{Sampling()}{Sampling()}}
+{\footnotesize\ttfamily void CBloom\+::\+Sampling (\begin{DoxyParamCaption}\item[{ID3\+D11\+Shader\+Resource\+View $\ast$}]{tex }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_bloom_a4b199faf0b590e9afa0d8211e81059c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_bloom_ab53efe2d2a4a788264a6ae1171df988b}\label{class_c_bloom_ab53efe2d2a4a788264a6ae1171df988b}} 
+\index{CBloom@{CBloom}!SAMPLE\_BLUR\_MAX@{SAMPLE\_BLUR\_MAX}}
+\index{SAMPLE\_BLUR\_MAX@{SAMPLE\_BLUR\_MAX}!CBloom@{CBloom}}
+\doxysubsubsection{\texorpdfstring{SAMPLE\_BLUR\_MAX}{SAMPLE\_BLUR\_MAX}}
+{\footnotesize\ttfamily const int CBloom\+::\+SAMPLE\+\_\+\+BLUR\+\_\+\+MAX = 6}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Bloom/\mbox{\hyperlink{_bloom_8h}{Bloom.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Bloom/\mbox{\hyperlink{_bloom_8cpp}{Bloom.\+cpp}}\end{DoxyCompactItemize}

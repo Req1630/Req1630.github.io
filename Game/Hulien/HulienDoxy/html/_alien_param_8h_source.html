@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/Alien/AlienParam.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1bdeeabc02c3c6e2721e886e81d33611.html">Character</a></li><li class="navelem"><a class="el" href="dir_2e01101a93361756afb0059fe9ed4443.html">Alien</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AlienParam.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_alien_param_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ALIEN_PARAM_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ALIEN_PARAM_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Character.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// 宇宙人パラメータ.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html">   12</a></span>&#160;<span class="keyword">struct </span>stAlienParam : <span class="keyword">public</span> <a class="code" href="struct_c_character_1_1_s_parameter.html">CCharacter::SParameter</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// 共通パラメータ---------------------.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a50e5fe64bd45a68fe9f73397ac59faa6">   15</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a50e5fe64bd45a68fe9f73397ac59faa6">RotationalSpeed</a>;            <span class="comment">// 回転速度.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a86858ecbc9b89bf12f040bb92ca0c9d8">   17</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a86858ecbc9b89bf12f040bb92ca0c9d8">SpawnScaleAddValue</a>;         <span class="comment">// スポーン時のスケールの加算値.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a7563bc0cb88a3c0bec7188e71dca06ba">   18</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a7563bc0cb88a3c0bec7188e71dca06ba">SpawnDownSpeed</a>;             <span class="comment">// スポーン時の降下速度.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a61cabe81dc22313c1c071adcd8fb45ad">   19</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a61cabe81dc22313c1c071adcd8fb45ad">MotherShipUpScaleSubValue</a>;  <span class="comment">// マザーシップに上昇する時のスケールの減算値.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a5e251ac829669163585b67cb7a9935fc">   21</a></span>&#160;    <span class="keywordtype">int</span>         <a class="code" href="struct_s_alien_param.html#a5e251ac829669163585b67cb7a9935fc">WaitTime</a>;                   <span class="comment">// 待機時間.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a4a4158b68b5ded618f71457a9b43d3a7">   22</a></span>&#160;    <span class="keywordtype">int</span>         <a class="code" href="struct_s_alien_param.html#a4a4158b68b5ded618f71457a9b43d3a7">KnockBackTime</a>;              <span class="comment">// ノックバックの時間.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#ac0d49e1c7e677361f1c0b340e3e8880e">   24</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#ac0d49e1c7e677361f1c0b340e3e8880e">DeadCountAddValue</a>;          <span class="comment">// 死亡カウントの加算値.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#acea71b1f07da81165bf71346e049e3a6">   25</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#acea71b1f07da81165bf71346e049e3a6">DeadScaleSubValue</a>;          <span class="comment">// 死亡時のスケールの減算値.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 宇宙人Bパラメータ------------------.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a58de3ddcbf6906824dcda336f7dfe38e">   28</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a58de3ddcbf6906824dcda336f7dfe38e">PlayerAimLenght</a>;            <span class="comment">// プレイヤーを狙う範囲.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a267d0f5370e286cde7704b1f8cf4923a">   30</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a267d0f5370e286cde7704b1f8cf4923a">ResearchLenght</a>;             <span class="comment">// 再検査する際の距離.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a9840d9781e81ed7a2b5d6b92675f8458">   32</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a9840d9781e81ed7a2b5d6b92675f8458">AttackLenght</a>;               <span class="comment">// 攻撃する距離.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#acaa562fed350b1b939dc90527bea4bae">   33</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#acaa562fed350b1b939dc90527bea4bae">AttackRotInitPower</a>;         <span class="comment">// 攻撃時の初期回転力.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a8ed2877753e8c0da0a2d5d63d08a9576">   34</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a8ed2877753e8c0da0a2d5d63d08a9576">AttackRotPower</a>;             <span class="comment">// 攻撃時の回転力.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a57d06a1dd822e8b92d344436727789a5">   35</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a57d06a1dd822e8b92d344436727789a5">AttackRotAddValue</a>;          <span class="comment">// 攻撃時の回転加算値.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a9813a0e601b8b3a9a19e8603cf2d4b3f">   36</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a9813a0e601b8b3a9a19e8603cf2d4b3f">AttackMoveSpeed</a>;            <span class="comment">// 攻撃移動速度.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#afcc7874acb4769363c2030b391964d59">   37</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#afcc7874acb4769363c2030b391964d59">AttackMoveRange</a>;            <span class="comment">// 攻撃移動範囲.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 宇宙人Dパラメータ------------------.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#ae4aef8cdb803bff8dfa8079c13a6f204">   40</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#ae4aef8cdb803bff8dfa8079c13a6f204">LaserMoveSpeed</a>;             <span class="comment">// レーザーの移動速度.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a620668764149ee5bcf45a90289f7dae3">   41</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a620668764149ee5bcf45a90289f7dae3">ParalysisTime</a>;              <span class="comment">// 麻痺の時間.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a64fb9e5aacf26303e37677f185a3b807">   43</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a64fb9e5aacf26303e37677f185a3b807">AttackRangeSpritePosY</a>;      <span class="comment">// 攻撃時の範囲表示の調整用.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a94ac48c2f3e065f157d0d7d93c26ffdd">   44</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a94ac48c2f3e065f157d0d7d93c26ffdd">AttackRangeSpriteScale</a>;     <span class="comment">// 攻撃時の範囲表示の画像サイズ.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a2a95072343f6bb9885d6dcd9f10f6cac">   45</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a2a95072343f6bb9885d6dcd9f10f6cac">AttackRangeAddValue</a>;        <span class="comment">// 攻撃時の範囲表示のアルファが足される値.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#af29148f53ea38bee4a01b2f52029e974">   46</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#af29148f53ea38bee4a01b2f52029e974">AttackRangeSubValue</a>;        <span class="comment">// 攻撃時の範囲表示のアルファが引かれる値.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a99c732f8b16ce142ada7e2d415a5c2bc">   48</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a99c732f8b16ce142ada7e2d415a5c2bc">ControlPointOneLenght</a>;      <span class="comment">// ベジェ曲線の一つ目操作座標の距離.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#aea47e8c27d68827e204ab050ee6dd59f">   49</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#aea47e8c27d68827e204ab050ee6dd59f">ControlPointOneLenghtY</a>;     <span class="comment">// ベジェ曲線の一つ目操作座標のy座標の距離.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a167bdfc2882fc589917ce54bcee87928">   50</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a167bdfc2882fc589917ce54bcee87928">ControlPointTwoLenght</a>;      <span class="comment">// ベジェ曲線の二つ目操作座標の距離.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a3b5df326d32c03b81527af1bef3906bd">   51</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a3b5df326d32c03b81527af1bef3906bd">ControlPointTwoLenghtY</a>;     <span class="comment">// ベジェ曲線の二つ目操作座標のy座標の距離.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a76e613606a273a5375d4d70c6e19692c">   53</a></span>&#160;    D3DXVECTOR3 <a class="code" href="struct_s_alien_param.html#a76e613606a273a5375d4d70c6e19692c">SphereAdjPos</a>;               <span class="comment">// スフィアの調整座標.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#aa8668108d9898d59d0c38f62a9315544">   54</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#aa8668108d9898d59d0c38f62a9315544">SphereAdjRadius</a>;            <span class="comment">// スフィアの調整半径.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a06e338f8133bc65d60b0b10b282fce57">   55</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="struct_s_alien_param.html#a06e338f8133bc65d60b0b10b282fce57">CapsuleAdjRadius</a>;           <span class="comment">// カプセルの調整半径.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="struct_s_alien_param.html#a29ab82a1f4c4349f22b6340a6d3af26b">   57</a></span>&#160;    <a class="code" href="struct_s_alien_param.html#a29ab82a1f4c4349f22b6340a6d3af26b">stAlienParam</a>()</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        : RotationalSpeed           ( 0.0f )</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        , SpawnScaleAddValue        ( 0.0f )</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        , SpawnDownSpeed            ( 0.0f )</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        , MotherShipUpScaleSubValue ( 0.0f )</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        , WaitTime                  ( 0 )</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        , KnockBackTime             ( 0 )</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        , DeadCountAddValue         ( 0.0f )</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        , DeadScaleSubValue         ( 0.0f )</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        , PlayerAimLenght           ( 0.0f )</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        , ResearchLenght            ( 0.0f )</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        , AttackLenght              ( 0.0f )</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        , AttackRotInitPower        ( 0.0f )</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        , AttackRotPower            ( 0.0f )</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        , AttackRotAddValue         ( 0.0f )</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        , AttackMoveSpeed           ( 0.0f )</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        , AttackMoveRange           ( 0.0f )</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        , LaserMoveSpeed            ( 0.0f )</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        , ParalysisTime             ( 0.0f )</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        , AttackRangeSpritePosY     ( 0.0f )</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        , AttackRangeSpriteScale    ( 1.0f )</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        , AttackRangeSubValue       ( 0.0f )</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        , ControlPointOneLenght     ( 0.0f )</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        , ControlPointOneLenghtY    ( 0.0f )</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        , ControlPointTwoLenght     ( 0.0f )</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        , ControlPointTwoLenghtY    ( 0.0f )</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        , SphereAdjPos              ( 0.0f, 0.0f, 0.0f )</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        , SphereAdjRadius           ( 0.0f )</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        , CapsuleAdjRadius          ( 0.0f )</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="struct_s_alien_param.html">SAlienParam</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespacealien.html">   98</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacealien.html">alien</a></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;{</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 宇宙人状態.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411">  101</a></span>&#160;    <span class="keyword">enum class</span> enAlienState : unsigned char</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e">Spawn</a>,              <span class="comment">// スポーン.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5">Move</a>,               <span class="comment">// 移動.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e">Abduct</a>,             <span class="comment">// 拐う.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63">KnockBack</a>,          <span class="comment">// ノックバック.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e">Fright</a>,             <span class="comment">// 怯み.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f">Death</a>,              <span class="comment">// 死亡.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224">Escape</a>,             <span class="comment">// 逃げる.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188">RisingMotherShip</a>,   <span class="comment">// 上に上がる(マザーシップに).</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411">EAlienState</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// 移動状態.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243">  119</a></span>&#160;    <span class="keyword">enum class</span> enMoveState : unsigned char</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a">Rotation</a>,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5">Move</a>,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a">Attack</a>,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652">Wait</a>,</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243">EMoveState</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// アニメーション番号.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326">  132</a></span>&#160;    <span class="keyword">enum</span> enAnimNo : <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b">  134</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b">EAnimNo_None</a> = -1,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655">  136</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655">EAnimNo_Move</a>,       <span class="comment">// 移動.</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67">  137</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67">EAnimNo_Arm</a>,        <span class="comment">// アーム.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17">  138</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17">EAnimNo_Damage</a>,     <span class="comment">// ダメージ.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a">  139</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a">EAnimNo_Dead</a>,       <span class="comment">// 死亡.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7">  141</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7">EAnimNo_Max</a>,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163">  143</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163">EAnimNo_Attack</a>  = <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67">EAnimNo_Arm</a>,  <span class="comment">// 攻撃.</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b">  145</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b">EAnimNo_Begin</a>   = <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655">EAnimNo_Move</a>,</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e">  146</a></span>&#160;        <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e">EAnimNo_End</a>     = <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7">EAnimNo_Max</a>,</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326">EAnimNo</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// エフェクト番号.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7f">  150</a></span>&#160;    <span class="keyword">enum</span> enEffectNo : <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    {</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d">  152</a></span>&#160;        <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d">EEffectNo_None</a> = -1,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8">  154</a></span>&#160;        <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8">EEffectNo_Hit</a>,          <span class="comment">// ヒット.</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178">  155</a></span>&#160;        <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178">EEffectNo_Spawn</a>,        <span class="comment">// スポーン.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69">  156</a></span>&#160;        <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69">EEffectNo_Dead</a>,         <span class="comment">// 死亡.</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3">  157</a></span>&#160;        <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3">EEffectNo_Attack</a>,       <span class="comment">// 攻撃.</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c">  159</a></span>&#160;        <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c">EEffectNo_Max</a>,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7f">EEffectNo</a>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;};</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef ALIEN_PARAM_H.</span></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">ERS_STATE::Max</a></div><div class="ttdeci">@ Max</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="anamespacealien_html"><div class="ttname"><a href="namespacealien.html">alien</a></div><div class="ttdef"><b>Definition:</b> AlienParam.h:99</div></div>
+<div class="ttc" id="anamespacealien_html_aa01fe5773378e77edfda68177f2e9243"><div class="ttname"><a href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243">alien::EMoveState</a></div><div class="ttdeci">EMoveState</div><div class="ttdef"><b>Definition:</b> AlienParam.h:120</div></div>
+<div class="ttc" id="anamespacealien_html_aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652"><div class="ttname"><a href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652">alien::EMoveState::Wait</a></div><div class="ttdeci">@ Wait</div></div>
+<div class="ttc" id="anamespacealien_html_aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a"><div class="ttname"><a href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a">alien::EMoveState::Attack</a></div><div class="ttdeci">@ Attack</div></div>
+<div class="ttc" id="anamespacealien_html_aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a"><div class="ttname"><a href="namespacealien.html#aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a">alien::EMoveState::Rotation</a></div><div class="ttdeci">@ Rotation</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326">alien::EAnimNo</a></div><div class="ttdeci">EAnimNo</div><div class="ttdef"><b>Definition:</b> AlienParam.h:133</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e">alien::EAnimNo_End</a></div><div class="ttdeci">@ EAnimNo_End</div><div class="ttdef"><b>Definition:</b> AlienParam.h:146</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b">alien::EAnimNo_Begin</a></div><div class="ttdeci">@ EAnimNo_Begin</div><div class="ttdef"><b>Definition:</b> AlienParam.h:145</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7">alien::EAnimNo_Max</a></div><div class="ttdeci">@ EAnimNo_Max</div><div class="ttdef"><b>Definition:</b> AlienParam.h:141</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17">alien::EAnimNo_Damage</a></div><div class="ttdeci">@ EAnimNo_Damage</div><div class="ttdef"><b>Definition:</b> AlienParam.h:138</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67">alien::EAnimNo_Arm</a></div><div class="ttdeci">@ EAnimNo_Arm</div><div class="ttdef"><b>Definition:</b> AlienParam.h:137</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b">alien::EAnimNo_None</a></div><div class="ttdeci">@ EAnimNo_None</div><div class="ttdef"><b>Definition:</b> AlienParam.h:134</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a">alien::EAnimNo_Dead</a></div><div class="ttdeci">@ EAnimNo_Dead</div><div class="ttdef"><b>Definition:</b> AlienParam.h:139</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655">alien::EAnimNo_Move</a></div><div class="ttdeci">@ EAnimNo_Move</div><div class="ttdef"><b>Definition:</b> AlienParam.h:136</div></div>
+<div class="ttc" id="anamespacealien_html_ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163"><div class="ttname"><a href="namespacealien.html#ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163">alien::EAnimNo_Attack</a></div><div class="ttdeci">@ EAnimNo_Attack</div><div class="ttdef"><b>Definition:</b> AlienParam.h:143</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411">alien::EAlienState</a></div><div class="ttdeci">EAlienState</div><div class="ttdef"><b>Definition:</b> AlienParam.h:102</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224">alien::EAlienState::Escape</a></div><div class="ttdeci">@ Escape</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e">alien::EAlienState::Abduct</a></div><div class="ttdeci">@ Abduct</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63">alien::EAlienState::KnockBack</a></div><div class="ttdeci">@ KnockBack</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e">alien::EAlienState::Spawn</a></div><div class="ttdeci">@ Spawn</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f">alien::EAlienState::Death</a></div><div class="ttdeci">@ Death</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5">alien::EAlienState::Move</a></div><div class="ttdeci">@ Move</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188">alien::EAlienState::RisingMotherShip</a></div><div class="ttdeci">@ RisingMotherShip</div></div>
+<div class="ttc" id="anamespacealien_html_ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e"><div class="ttname"><a href="namespacealien.html#ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e">alien::EAlienState::Fright</a></div><div class="ttdeci">@ Fright</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7f"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7f">alien::EEffectNo</a></div><div class="ttdeci">EEffectNo</div><div class="ttdef"><b>Definition:</b> AlienParam.h:151</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3">alien::EEffectNo_Attack</a></div><div class="ttdeci">@ EEffectNo_Attack</div><div class="ttdef"><b>Definition:</b> AlienParam.h:157</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d">alien::EEffectNo_None</a></div><div class="ttdeci">@ EEffectNo_None</div><div class="ttdef"><b>Definition:</b> AlienParam.h:152</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8">alien::EEffectNo_Hit</a></div><div class="ttdeci">@ EEffectNo_Hit</div><div class="ttdef"><b>Definition:</b> AlienParam.h:154</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c">alien::EEffectNo_Max</a></div><div class="ttdeci">@ EEffectNo_Max</div><div class="ttdef"><b>Definition:</b> AlienParam.h:159</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69">alien::EEffectNo_Dead</a></div><div class="ttdeci">@ EEffectNo_Dead</div><div class="ttdef"><b>Definition:</b> AlienParam.h:156</div></div>
+<div class="ttc" id="anamespacealien_html_af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178"><div class="ttname"><a href="namespacealien.html#af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178">alien::EEffectNo_Spawn</a></div><div class="ttdeci">@ EEffectNo_Spawn</div><div class="ttdef"><b>Definition:</b> AlienParam.h:155</div></div>
+<div class="ttc" id="astruct_c_character_1_1_s_parameter_html"><div class="ttname"><a href="struct_c_character_1_1_s_parameter.html">CCharacter::SParameter</a></div><div class="ttdef"><b>Definition:</b> Character.h:38</div></div>
+<div class="ttc" id="astruct_s_alien_param_html"><div class="ttname"><a href="struct_s_alien_param.html">SAlienParam</a></div><div class="ttdef"><b>Definition:</b> AlienParam.h:13</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a06e338f8133bc65d60b0b10b282fce57"><div class="ttname"><a href="struct_s_alien_param.html#a06e338f8133bc65d60b0b10b282fce57">SAlienParam::CapsuleAdjRadius</a></div><div class="ttdeci">float CapsuleAdjRadius</div><div class="ttdef"><b>Definition:</b> AlienParam.h:55</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a167bdfc2882fc589917ce54bcee87928"><div class="ttname"><a href="struct_s_alien_param.html#a167bdfc2882fc589917ce54bcee87928">SAlienParam::ControlPointTwoLenght</a></div><div class="ttdeci">float ControlPointTwoLenght</div><div class="ttdef"><b>Definition:</b> AlienParam.h:50</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a267d0f5370e286cde7704b1f8cf4923a"><div class="ttname"><a href="struct_s_alien_param.html#a267d0f5370e286cde7704b1f8cf4923a">SAlienParam::ResearchLenght</a></div><div class="ttdeci">float ResearchLenght</div><div class="ttdef"><b>Definition:</b> AlienParam.h:30</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a29ab82a1f4c4349f22b6340a6d3af26b"><div class="ttname"><a href="struct_s_alien_param.html#a29ab82a1f4c4349f22b6340a6d3af26b">SAlienParam::stAlienParam</a></div><div class="ttdeci">stAlienParam()</div><div class="ttdef"><b>Definition:</b> AlienParam.h:57</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a2a95072343f6bb9885d6dcd9f10f6cac"><div class="ttname"><a href="struct_s_alien_param.html#a2a95072343f6bb9885d6dcd9f10f6cac">SAlienParam::AttackRangeAddValue</a></div><div class="ttdeci">float AttackRangeAddValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:45</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a3b5df326d32c03b81527af1bef3906bd"><div class="ttname"><a href="struct_s_alien_param.html#a3b5df326d32c03b81527af1bef3906bd">SAlienParam::ControlPointTwoLenghtY</a></div><div class="ttdeci">float ControlPointTwoLenghtY</div><div class="ttdef"><b>Definition:</b> AlienParam.h:51</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a4a4158b68b5ded618f71457a9b43d3a7"><div class="ttname"><a href="struct_s_alien_param.html#a4a4158b68b5ded618f71457a9b43d3a7">SAlienParam::KnockBackTime</a></div><div class="ttdeci">int KnockBackTime</div><div class="ttdef"><b>Definition:</b> AlienParam.h:22</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a50e5fe64bd45a68fe9f73397ac59faa6"><div class="ttname"><a href="struct_s_alien_param.html#a50e5fe64bd45a68fe9f73397ac59faa6">SAlienParam::RotationalSpeed</a></div><div class="ttdeci">float RotationalSpeed</div><div class="ttdef"><b>Definition:</b> AlienParam.h:15</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a57d06a1dd822e8b92d344436727789a5"><div class="ttname"><a href="struct_s_alien_param.html#a57d06a1dd822e8b92d344436727789a5">SAlienParam::AttackRotAddValue</a></div><div class="ttdeci">float AttackRotAddValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:35</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a58de3ddcbf6906824dcda336f7dfe38e"><div class="ttname"><a href="struct_s_alien_param.html#a58de3ddcbf6906824dcda336f7dfe38e">SAlienParam::PlayerAimLenght</a></div><div class="ttdeci">float PlayerAimLenght</div><div class="ttdef"><b>Definition:</b> AlienParam.h:28</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a5e251ac829669163585b67cb7a9935fc"><div class="ttname"><a href="struct_s_alien_param.html#a5e251ac829669163585b67cb7a9935fc">SAlienParam::WaitTime</a></div><div class="ttdeci">int WaitTime</div><div class="ttdef"><b>Definition:</b> AlienParam.h:21</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a61cabe81dc22313c1c071adcd8fb45ad"><div class="ttname"><a href="struct_s_alien_param.html#a61cabe81dc22313c1c071adcd8fb45ad">SAlienParam::MotherShipUpScaleSubValue</a></div><div class="ttdeci">float MotherShipUpScaleSubValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:19</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a620668764149ee5bcf45a90289f7dae3"><div class="ttname"><a href="struct_s_alien_param.html#a620668764149ee5bcf45a90289f7dae3">SAlienParam::ParalysisTime</a></div><div class="ttdeci">float ParalysisTime</div><div class="ttdef"><b>Definition:</b> AlienParam.h:41</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a64fb9e5aacf26303e37677f185a3b807"><div class="ttname"><a href="struct_s_alien_param.html#a64fb9e5aacf26303e37677f185a3b807">SAlienParam::AttackRangeSpritePosY</a></div><div class="ttdeci">float AttackRangeSpritePosY</div><div class="ttdef"><b>Definition:</b> AlienParam.h:43</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a7563bc0cb88a3c0bec7188e71dca06ba"><div class="ttname"><a href="struct_s_alien_param.html#a7563bc0cb88a3c0bec7188e71dca06ba">SAlienParam::SpawnDownSpeed</a></div><div class="ttdeci">float SpawnDownSpeed</div><div class="ttdef"><b>Definition:</b> AlienParam.h:18</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a76e613606a273a5375d4d70c6e19692c"><div class="ttname"><a href="struct_s_alien_param.html#a76e613606a273a5375d4d70c6e19692c">SAlienParam::SphereAdjPos</a></div><div class="ttdeci">D3DXVECTOR3 SphereAdjPos</div><div class="ttdef"><b>Definition:</b> AlienParam.h:53</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a86858ecbc9b89bf12f040bb92ca0c9d8"><div class="ttname"><a href="struct_s_alien_param.html#a86858ecbc9b89bf12f040bb92ca0c9d8">SAlienParam::SpawnScaleAddValue</a></div><div class="ttdeci">float SpawnScaleAddValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:17</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a8ed2877753e8c0da0a2d5d63d08a9576"><div class="ttname"><a href="struct_s_alien_param.html#a8ed2877753e8c0da0a2d5d63d08a9576">SAlienParam::AttackRotPower</a></div><div class="ttdeci">float AttackRotPower</div><div class="ttdef"><b>Definition:</b> AlienParam.h:34</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a94ac48c2f3e065f157d0d7d93c26ffdd"><div class="ttname"><a href="struct_s_alien_param.html#a94ac48c2f3e065f157d0d7d93c26ffdd">SAlienParam::AttackRangeSpriteScale</a></div><div class="ttdeci">float AttackRangeSpriteScale</div><div class="ttdef"><b>Definition:</b> AlienParam.h:44</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a9813a0e601b8b3a9a19e8603cf2d4b3f"><div class="ttname"><a href="struct_s_alien_param.html#a9813a0e601b8b3a9a19e8603cf2d4b3f">SAlienParam::AttackMoveSpeed</a></div><div class="ttdeci">float AttackMoveSpeed</div><div class="ttdef"><b>Definition:</b> AlienParam.h:36</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a9840d9781e81ed7a2b5d6b92675f8458"><div class="ttname"><a href="struct_s_alien_param.html#a9840d9781e81ed7a2b5d6b92675f8458">SAlienParam::AttackLenght</a></div><div class="ttdeci">float AttackLenght</div><div class="ttdef"><b>Definition:</b> AlienParam.h:32</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_a99c732f8b16ce142ada7e2d415a5c2bc"><div class="ttname"><a href="struct_s_alien_param.html#a99c732f8b16ce142ada7e2d415a5c2bc">SAlienParam::ControlPointOneLenght</a></div><div class="ttdeci">float ControlPointOneLenght</div><div class="ttdef"><b>Definition:</b> AlienParam.h:48</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_aa8668108d9898d59d0c38f62a9315544"><div class="ttname"><a href="struct_s_alien_param.html#aa8668108d9898d59d0c38f62a9315544">SAlienParam::SphereAdjRadius</a></div><div class="ttdeci">float SphereAdjRadius</div><div class="ttdef"><b>Definition:</b> AlienParam.h:54</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_ac0d49e1c7e677361f1c0b340e3e8880e"><div class="ttname"><a href="struct_s_alien_param.html#ac0d49e1c7e677361f1c0b340e3e8880e">SAlienParam::DeadCountAddValue</a></div><div class="ttdeci">float DeadCountAddValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:24</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_acaa562fed350b1b939dc90527bea4bae"><div class="ttname"><a href="struct_s_alien_param.html#acaa562fed350b1b939dc90527bea4bae">SAlienParam::AttackRotInitPower</a></div><div class="ttdeci">float AttackRotInitPower</div><div class="ttdef"><b>Definition:</b> AlienParam.h:33</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_acea71b1f07da81165bf71346e049e3a6"><div class="ttname"><a href="struct_s_alien_param.html#acea71b1f07da81165bf71346e049e3a6">SAlienParam::DeadScaleSubValue</a></div><div class="ttdeci">float DeadScaleSubValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:25</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_ae4aef8cdb803bff8dfa8079c13a6f204"><div class="ttname"><a href="struct_s_alien_param.html#ae4aef8cdb803bff8dfa8079c13a6f204">SAlienParam::LaserMoveSpeed</a></div><div class="ttdeci">float LaserMoveSpeed</div><div class="ttdef"><b>Definition:</b> AlienParam.h:40</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_aea47e8c27d68827e204ab050ee6dd59f"><div class="ttname"><a href="struct_s_alien_param.html#aea47e8c27d68827e204ab050ee6dd59f">SAlienParam::ControlPointOneLenghtY</a></div><div class="ttdeci">float ControlPointOneLenghtY</div><div class="ttdef"><b>Definition:</b> AlienParam.h:49</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_af29148f53ea38bee4a01b2f52029e974"><div class="ttname"><a href="struct_s_alien_param.html#af29148f53ea38bee4a01b2f52029e974">SAlienParam::AttackRangeSubValue</a></div><div class="ttdeci">float AttackRangeSubValue</div><div class="ttdef"><b>Definition:</b> AlienParam.h:46</div></div>
+<div class="ttc" id="astruct_s_alien_param_html_afcc7874acb4769363c2030b391964d59"><div class="ttname"><a href="struct_s_alien_param.html#afcc7874acb4769363c2030b391964d59">SAlienParam::AttackMoveRange</a></div><div class="ttdeci">float AttackMoveRange</div><div class="ttdef"><b>Definition:</b> AlienParam.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

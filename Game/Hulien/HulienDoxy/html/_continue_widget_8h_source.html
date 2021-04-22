@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/ContinueWidget/ContinueWidget.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_9f21901b9ace8d99fdf8103774ab2db6.html">ContinueWidget</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ContinueWidget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_continue_widget_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CONTINUEWIDGET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CONTINUEWIDGET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\SceneWidget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/********************************************</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*   コンテニューUIクラス.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_continue_widget.html">CContinueWidget</a> : <span class="keyword">public</span> <a class="code" href="class_c_scene_widget.html">CSceneWidget</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#ae63029c22574cd3dc7fcdf46c7e3deb5">   13</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_continue_widget.html#ae63029c22574cd3dc7fcdf46c7e3deb5">SPRITE_BACK</a>             = <span class="stringliteral">&quot;Fade&quot;</span>;       <span class="comment">//背景</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a09e8f5465921e49fca11c0ace5ac4871">   14</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_continue_widget.html#a09e8f5465921e49fca11c0ace5ac4871">SPRITE_CONTINUE</a>         = <span class="stringliteral">&quot;continue&quot;</span>;   <span class="comment">//コンテニュー.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#afcaa02f03ad295b673274b2a4fe9aa5a">   15</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_continue_widget.html#afcaa02f03ad295b673274b2a4fe9aa5a">SPRITE_YES</a>              = <span class="stringliteral">&quot;yes&quot;</span>;        <span class="comment">//イエス</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a4a0f359295097412043107509b7e4218">   16</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_continue_widget.html#a4a0f359295097412043107509b7e4218">SPRITE_NO</a>               = <span class="stringliteral">&quot;no&quot;</span>;         <span class="comment">//ノー.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#acdd90522f77687c8297b49945182cbc4">   17</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_c_continue_widget.html#acdd90522f77687c8297b49945182cbc4">BACKGROUND</a>                = 0;                <span class="comment">//背景配列番号.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a109252de2c9556c447ae570ab0465e53">   18</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_c_continue_widget.html#a109252de2c9556c447ae570ab0465e53">YES</a>                       = 1;                <span class="comment">//イエス配列番号.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#aaa7a8051bca1c63b549573ea3668c7a8">   19</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_c_continue_widget.html#aaa7a8051bca1c63b549573ea3668c7a8">NO</a>                        = 2;                <span class="comment">//ノー配列番号.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#aadede8c1e901836ba438a1baa23b52f7">   20</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_continue_widget.html#aadede8c1e901836ba438a1baa23b52f7">BACKGROUND_ALPHA</a>        = 0.7f;             <span class="comment">//背景透過値.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a11d0f2404074fe00c8d1663ea5eb263f">   21</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_continue_widget.html#a11d0f2404074fe00c8d1663ea5eb263f">BACKGROUND_ALPHA_SPEED</a>  = 0.005f;           <span class="comment">//背景透過速度.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#aaaae6ba3fefa970d63df0c9eb6bc99f0">   22</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_continue_widget.html#aaaae6ba3fefa970d63df0c9eb6bc99f0">TEXT_ALPHA_SPEED</a>        = 0.005f;           <span class="comment">//文字透過速度.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                                            <span class="comment">//選択状態.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#ab45ce6137ab91236db79b4f22896a22c">   25</a></span>&#160;    <span class="keyword">enum class</span> enSelectState</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        Yes,        <span class="comment">//イエス.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        No,     <span class="comment">//ノー..</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_continue_widget.html#ab45ce6137ab91236db79b4f22896a22c">ESelectState</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 描画順.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34c">   32</a></span>&#160;    <span class="keyword">enum class</span> <a class="code" href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34c">enDrawTurn</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34ca1298798308dfb56829d42c252adbd973">BackGround</a>, <span class="comment">//背景.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34ca9dffbf69ffba8bc38bc4e01abf4b1675">Text</a>,               <span class="comment">//文字.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#ac65f195b0bf3638b2cede9648059ce94">   36</a></span>&#160;    }<span class="keyword">typedef</span> <a class="code" href="class_c_continue_widget.html#ac65f195b0bf3638b2cede9648059ce94">EDrawTurn</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_c_continue_widget.html#abf4ae350c9f624daa4bc1f799403677e">CContinueWidget</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_continue_widget.html#ab2aa245aea39c7e19f51e34ae6e57314">~CContinueWidget</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_continue_widget.html#adcc5f3d5136fb78c94e535f5793c4edf">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_continue_widget.html#af2ca55df96cc7081dbfe67fca97d0fa0">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_continue_widget.html#a2b436e346dfe181b7becc9beb2427eed">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 選択状態の取得関数.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a914f47dc550dffee3116030bd8834b46">   50</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_c_continue_widget.html#ab45ce6137ab91236db79b4f22896a22c">ESelectState</a> <a class="code" href="class_c_continue_widget.html#a914f47dc550dffee3116030bd8834b46">GetSelectState</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_SelectState; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 描画中か取得関数.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_continue_widget.html#a058402c875a7d74360852d3134efceb7">   52</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_continue_widget.html#a058402c875a7d74360852d3134efceb7">GetIsDrawing</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsDrawing; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// カーソル設定関数.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> CursorSetting();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// スプライトの描画.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> SpriteDrawing();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pSprite;              <span class="comment">//スプライトクラス.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::shared_ptr&lt;CCursor&gt;                    m_pCursor;              <span class="comment">//カーソルクラス.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">float</span>                                               m_TextAlpha;            <span class="comment">//文字の透過値.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span>                                                m_IsDrawing;            <span class="comment">//描画中か.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_c_continue_widget.html#ab45ce6137ab91236db79b4f22896a22c">ESelectState</a>                                    m_SelectState;      <span class="comment">//選択状態.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="class_c_continue_widget.html#ab45ce6137ab91236db79b4f22896a22c">ESelectState</a>                                    m_OldSelectState;   <span class="comment">//選択前状態.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_c_continue_widget.html#ac65f195b0bf3638b2cede9648059ce94">EDrawTurn</a>                                       m_DrawTurn;         <span class="comment">//描画順.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef CONTINUEWIDGET_H</span></div>
+<div class="ttc" id="aclass_c_continue_widget_html"><div class="ttname"><a href="class_c_continue_widget.html">CContinueWidget</a></div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:11</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a058402c875a7d74360852d3134efceb7"><div class="ttname"><a href="class_c_continue_widget.html#a058402c875a7d74360852d3134efceb7">CContinueWidget::GetIsDrawing</a></div><div class="ttdeci">bool GetIsDrawing() const</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:52</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a09e8f5465921e49fca11c0ace5ac4871"><div class="ttname"><a href="class_c_continue_widget.html#a09e8f5465921e49fca11c0ace5ac4871">CContinueWidget::SPRITE_CONTINUE</a></div><div class="ttdeci">const char * SPRITE_CONTINUE</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:14</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a109252de2c9556c447ae570ab0465e53"><div class="ttname"><a href="class_c_continue_widget.html#a109252de2c9556c447ae570ab0465e53">CContinueWidget::YES</a></div><div class="ttdeci">const int YES</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:18</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a11d0f2404074fe00c8d1663ea5eb263f"><div class="ttname"><a href="class_c_continue_widget.html#a11d0f2404074fe00c8d1663ea5eb263f">CContinueWidget::BACKGROUND_ALPHA_SPEED</a></div><div class="ttdeci">const float BACKGROUND_ALPHA_SPEED</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:21</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a2b436e346dfe181b7becc9beb2427eed"><div class="ttname"><a href="class_c_continue_widget.html#a2b436e346dfe181b7becc9beb2427eed">CContinueWidget::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> ContinueWidget.cpp:60</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a4a0f359295097412043107509b7e4218"><div class="ttname"><a href="class_c_continue_widget.html#a4a0f359295097412043107509b7e4218">CContinueWidget::SPRITE_NO</a></div><div class="ttdeci">const char * SPRITE_NO</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:16</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a72ac6888a065e0c16c1e1faff087c34c"><div class="ttname"><a href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34c">CContinueWidget::enDrawTurn</a></div><div class="ttdeci">enDrawTurn</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:33</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a72ac6888a065e0c16c1e1faff087c34ca1298798308dfb56829d42c252adbd973"><div class="ttname"><a href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34ca1298798308dfb56829d42c252adbd973">CContinueWidget::enDrawTurn::BackGround</a></div><div class="ttdeci">@ BackGround</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a72ac6888a065e0c16c1e1faff087c34ca9dffbf69ffba8bc38bc4e01abf4b1675"><div class="ttname"><a href="class_c_continue_widget.html#a72ac6888a065e0c16c1e1faff087c34ca9dffbf69ffba8bc38bc4e01abf4b1675">CContinueWidget::enDrawTurn::Text</a></div><div class="ttdeci">@ Text</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_a914f47dc550dffee3116030bd8834b46"><div class="ttname"><a href="class_c_continue_widget.html#a914f47dc550dffee3116030bd8834b46">CContinueWidget::GetSelectState</a></div><div class="ttdeci">ESelectState GetSelectState() const</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:50</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_aaa7a8051bca1c63b549573ea3668c7a8"><div class="ttname"><a href="class_c_continue_widget.html#aaa7a8051bca1c63b549573ea3668c7a8">CContinueWidget::NO</a></div><div class="ttdeci">const int NO</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:19</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_aaaae6ba3fefa970d63df0c9eb6bc99f0"><div class="ttname"><a href="class_c_continue_widget.html#aaaae6ba3fefa970d63df0c9eb6bc99f0">CContinueWidget::TEXT_ALPHA_SPEED</a></div><div class="ttdeci">const float TEXT_ALPHA_SPEED</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:22</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_aadede8c1e901836ba438a1baa23b52f7"><div class="ttname"><a href="class_c_continue_widget.html#aadede8c1e901836ba438a1baa23b52f7">CContinueWidget::BACKGROUND_ALPHA</a></div><div class="ttdeci">const float BACKGROUND_ALPHA</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:20</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_ab2aa245aea39c7e19f51e34ae6e57314"><div class="ttname"><a href="class_c_continue_widget.html#ab2aa245aea39c7e19f51e34ae6e57314">CContinueWidget::~CContinueWidget</a></div><div class="ttdeci">virtual ~CContinueWidget()</div><div class="ttdef"><b>Definition:</b> ContinueWidget.cpp:24</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_ab45ce6137ab91236db79b4f22896a22c"><div class="ttname"><a href="class_c_continue_widget.html#ab45ce6137ab91236db79b4f22896a22c">CContinueWidget::ESelectState</a></div><div class="ttdeci">ESelectState</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:26</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_abf4ae350c9f624daa4bc1f799403677e"><div class="ttname"><a href="class_c_continue_widget.html#abf4ae350c9f624daa4bc1f799403677e">CContinueWidget::CContinueWidget</a></div><div class="ttdeci">CContinueWidget()</div><div class="ttdef"><b>Definition:</b> ContinueWidget.cpp:11</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_ac65f195b0bf3638b2cede9648059ce94"><div class="ttname"><a href="class_c_continue_widget.html#ac65f195b0bf3638b2cede9648059ce94">CContinueWidget::EDrawTurn</a></div><div class="ttdeci">enum CContinueWidget::enDrawTurn EDrawTurn</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_acdd90522f77687c8297b49945182cbc4"><div class="ttname"><a href="class_c_continue_widget.html#acdd90522f77687c8297b49945182cbc4">CContinueWidget::BACKGROUND</a></div><div class="ttdeci">const int BACKGROUND</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:17</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_adcc5f3d5136fb78c94e535f5793c4edf"><div class="ttname"><a href="class_c_continue_widget.html#adcc5f3d5136fb78c94e535f5793c4edf">CContinueWidget::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> ContinueWidget.cpp:29</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_ae63029c22574cd3dc7fcdf46c7e3deb5"><div class="ttname"><a href="class_c_continue_widget.html#ae63029c22574cd3dc7fcdf46c7e3deb5">CContinueWidget::SPRITE_BACK</a></div><div class="ttdeci">const char * SPRITE_BACK</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:13</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_af2ca55df96cc7081dbfe67fca97d0fa0"><div class="ttname"><a href="class_c_continue_widget.html#af2ca55df96cc7081dbfe67fca97d0fa0">CContinueWidget::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> ContinueWidget.cpp:40</div></div>
+<div class="ttc" id="aclass_c_continue_widget_html_afcaa02f03ad295b673274b2a4fe9aa5a"><div class="ttname"><a href="class_c_continue_widget.html#afcaa02f03ad295b673274b2a4fe9aa5a">CContinueWidget::SPRITE_YES</a></div><div class="ttdeci">const char * SPRITE_YES</div><div class="ttdef"><b>Definition:</b> ContinueWidget.h:15</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html"><div class="ttname"><a href="class_c_scene_widget.html">CSceneWidget</a></div><div class="ttdef"><b>Definition:</b> SceneWidget.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

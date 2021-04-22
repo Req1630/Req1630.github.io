@@ -1,0 +1,231 @@
+\hypertarget{class_c_blend_sprite}{}\doxysection{CBlend\+Sprite クラス}
+\label{class_c_blend_sprite}\index{CBlendSprite@{CBlendSprite}}
+
+
+{\ttfamily \#include $<$Blend\+Sprite.\+h$>$}
+
+
+
+CBlend\+Sprite の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_c_blend_sprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CBlend\+Sprite 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_c_blend_sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_blend_sprite_1_1_s_p_s_shader_name}{SPSShader\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_blend_sprite_a04c6cec1e65a27f60c466b7477ebda07}{CBlend\+Sprite}} ()
+\item 
+\mbox{\hyperlink{class_c_blend_sprite_a04354262fc4bf66d614178513cc39112}{CBlend\+Sprite}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, const char $\ast$file\+Name, const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&p\+Ss)
+\item 
+virtual \mbox{\hyperlink{class_c_blend_sprite_a8805366267a987105969c0b8fb83fe1a}{$\sim$\+CBlend\+Sprite}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_blend_sprite_a8ff6e8c5f70d84ecf8471e2464041dd2}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, const char $\ast$file\+Name, const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&p\+Ss)
+\item 
+HRESULT \mbox{\hyperlink{class_c_blend_sprite_a3c465c77198a4c69adad1f0af0b4972f}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_ad7cf996dd07f6122eb3b38641cb8c6d3}{Release}} ()
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_a19f0ab91de0690db0a06a659b09bfde2}{Render}} (const bool \&is\+Billboard=false)
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_a12dbba2dbad08a8bcb1759bb2d34baef}{Render\+UI}} ()
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_a93c2977f4ae94c89522847fb50730c5a}{Set\+Anim\+Number}} (const int \&anim\+Number)
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_a115b4a01fbc8a2ffb31c47a818420398}{Set\+Frame\+Time}} (const int \&frame\+Time)
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_aff3939d07f0a98fa2339c4449f860266}{Play\+Animation}} ()
+\item 
+D3\+DXVECTOR2 \mbox{\hyperlink{class_c_blend_sprite_a024b1751d0b1bac1b7e63b10061407e4}{Get\+Sprite\+Size}} ()
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_blend_sprite_a57929c93f0065fd3f7d5d8ba463393c8}{Get\+Render\+Pos}} ()
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_aef51d549becd9d45ed0dc1a015698707}{Set\+Sprite\+Data}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}} $>$ \&p\+Sprite\+Data)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}} $>$ \mbox{\hyperlink{class_c_blend_sprite_ab7a8bdbc0b30f2efd9c41608984f6644}{Get\+Sprite\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_c_blend_sprite_acfc85996efcb290c593fb34b820c4cfc}{Set\+Dest\+Texture}} (ID3\+D11\+Shader\+Resource\+View $\ast$p\+Dest\+Texture)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_blend_sprite_a04c6cec1e65a27f60c466b7477ebda07}\label{class_c_blend_sprite_a04c6cec1e65a27f60c466b7477ebda07}} 
+\index{CBlendSprite@{CBlendSprite}!CBlendSprite@{CBlendSprite}}
+\index{CBlendSprite@{CBlendSprite}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{CBlendSprite()}{CBlendSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CBlend\+Sprite\+::\+CBlend\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_blend_sprite_a04354262fc4bf66d614178513cc39112}\label{class_c_blend_sprite_a04354262fc4bf66d614178513cc39112}} 
+\index{CBlendSprite@{CBlendSprite}!CBlendSprite@{CBlendSprite}}
+\index{CBlendSprite@{CBlendSprite}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{CBlendSprite()}{CBlendSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CBlend\+Sprite\+::\+CBlend\+Sprite (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{const char $\ast$}]{file\+Name,  }\item[{const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&}]{p\+Ss }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_blend_sprite_a04354262fc4bf66d614178513cc39112_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blend_sprite_a8805366267a987105969c0b8fb83fe1a}\label{class_c_blend_sprite_a8805366267a987105969c0b8fb83fe1a}} 
+\index{CBlendSprite@{CBlendSprite}!````~CBlendSprite@{$\sim$CBlendSprite}}
+\index{````~CBlendSprite@{$\sim$CBlendSprite}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBlendSprite()}{~CBlendSprite()}}
+{\footnotesize\ttfamily CBlend\+Sprite\+::$\sim$\+CBlend\+Sprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_blend_sprite_a8805366267a987105969c0b8fb83fe1a_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_blend_sprite_a57929c93f0065fd3f7d5d8ba463393c8}\label{class_c_blend_sprite_a57929c93f0065fd3f7d5d8ba463393c8}} 
+\index{CBlendSprite@{CBlendSprite}!GetRenderPos@{GetRenderPos}}
+\index{GetRenderPos@{GetRenderPos}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{GetRenderPos()}{GetRenderPos()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CBlend\+Sprite\+::\+Get\+Render\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blend_sprite_ab7a8bdbc0b30f2efd9c41608984f6644}\label{class_c_blend_sprite_ab7a8bdbc0b30f2efd9c41608984f6644}} 
+\index{CBlendSprite@{CBlendSprite}!GetSpriteData@{GetSpriteData}}
+\index{GetSpriteData@{GetSpriteData}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{GetSpriteData()}{GetSpriteData()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}}$>$ CBlend\+Sprite\+::\+Get\+Sprite\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blend_sprite_a024b1751d0b1bac1b7e63b10061407e4}\label{class_c_blend_sprite_a024b1751d0b1bac1b7e63b10061407e4}} 
+\index{CBlendSprite@{CBlendSprite}!GetSpriteSize@{GetSpriteSize}}
+\index{GetSpriteSize@{GetSpriteSize}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{GetSpriteSize()}{GetSpriteSize()}}
+{\footnotesize\ttfamily D3\+DXVECTOR2 CBlend\+Sprite\+::\+Get\+Sprite\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blend_sprite_a3c465c77198a4c69adad1f0af0b4972f}\label{class_c_blend_sprite_a3c465c77198a4c69adad1f0af0b4972f}} 
+\index{CBlendSprite@{CBlendSprite}!Init@{Init}}
+\index{Init@{Init}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT CBlend\+Sprite\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_c_blend_sprite_a3c465c77198a4c69adad1f0af0b4972f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blend_sprite_a8ff6e8c5f70d84ecf8471e2464041dd2}\label{class_c_blend_sprite_a8ff6e8c5f70d84ecf8471e2464041dd2}} 
+\index{CBlendSprite@{CBlendSprite}!Init@{Init}}
+\index{Init@{Init}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CBlend\+Sprite\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{const char $\ast$}]{file\+Name,  }\item[{const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&}]{p\+Ss }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_c_blend_sprite_a8ff6e8c5f70d84ecf8471e2464041dd2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_c_blend_sprite_a8ff6e8c5f70d84ecf8471e2464041dd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blend_sprite_aff3939d07f0a98fa2339c4449f860266}\label{class_c_blend_sprite_aff3939d07f0a98fa2339c4449f860266}} 
+\index{CBlendSprite@{CBlendSprite}!PlayAnimation@{PlayAnimation}}
+\index{PlayAnimation@{PlayAnimation}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{PlayAnimation()}{PlayAnimation()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Play\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blend_sprite_ad7cf996dd07f6122eb3b38641cb8c6d3}\label{class_c_blend_sprite_ad7cf996dd07f6122eb3b38641cb8c6d3}} 
+\index{CBlendSprite@{CBlendSprite}!Release@{Release}}
+\index{Release@{Release}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_blend_sprite_ad7cf996dd07f6122eb3b38641cb8c6d3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blend_sprite_a19f0ab91de0690db0a06a659b09bfde2}\label{class_c_blend_sprite_a19f0ab91de0690db0a06a659b09bfde2}} 
+\index{CBlendSprite@{CBlendSprite}!Render@{Render}}
+\index{Render@{Render}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Render (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Billboard = {\ttfamily false} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_blend_sprite_a19f0ab91de0690db0a06a659b09bfde2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blend_sprite_a12dbba2dbad08a8bcb1759bb2d34baef}\label{class_c_blend_sprite_a12dbba2dbad08a8bcb1759bb2d34baef}} 
+\index{CBlendSprite@{CBlendSprite}!RenderUI@{RenderUI}}
+\index{RenderUI@{RenderUI}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{RenderUI()}{RenderUI()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Render\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_blend_sprite_a93c2977f4ae94c89522847fb50730c5a}\label{class_c_blend_sprite_a93c2977f4ae94c89522847fb50730c5a}} 
+\index{CBlendSprite@{CBlendSprite}!SetAnimNumber@{SetAnimNumber}}
+\index{SetAnimNumber@{SetAnimNumber}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{SetAnimNumber()}{SetAnimNumber()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Set\+Anim\+Number (\begin{DoxyParamCaption}\item[{const int \&}]{anim\+Number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_blend_sprite_acfc85996efcb290c593fb34b820c4cfc}\label{class_c_blend_sprite_acfc85996efcb290c593fb34b820c4cfc}} 
+\index{CBlendSprite@{CBlendSprite}!SetDestTexture@{SetDestTexture}}
+\index{SetDestTexture@{SetDestTexture}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{SetDestTexture()}{SetDestTexture()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Set\+Dest\+Texture (\begin{DoxyParamCaption}\item[{ID3\+D11\+Shader\+Resource\+View $\ast$}]{p\+Dest\+Texture }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blend_sprite_a115b4a01fbc8a2ffb31c47a818420398}\label{class_c_blend_sprite_a115b4a01fbc8a2ffb31c47a818420398}} 
+\index{CBlendSprite@{CBlendSprite}!SetFrameTime@{SetFrameTime}}
+\index{SetFrameTime@{SetFrameTime}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{SetFrameTime()}{SetFrameTime()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Set\+Frame\+Time (\begin{DoxyParamCaption}\item[{const int \&}]{frame\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blend_sprite_aef51d549becd9d45ed0dc1a015698707}\label{class_c_blend_sprite_aef51d549becd9d45ed0dc1a015698707}} 
+\index{CBlendSprite@{CBlendSprite}!SetSpriteData@{SetSpriteData}}
+\index{SetSpriteData@{SetSpriteData}!CBlendSprite@{CBlendSprite}}
+\doxysubsubsection{\texorpdfstring{SetSpriteData()}{SetSpriteData()}}
+{\footnotesize\ttfamily void CBlend\+Sprite\+::\+Set\+Sprite\+Data (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}} $>$ \&}]{p\+Sprite\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Sprite/\+Blend\+Sprite/\mbox{\hyperlink{_blend_sprite_8h}{Blend\+Sprite.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Sprite/\+Blend\+Sprite/\mbox{\hyperlink{_blend_sprite_8cpp}{Blend\+Sprite.\+cpp}}\end{DoxyCompactItemize}

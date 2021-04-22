@@ -1,0 +1,6 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$class_c_event_base.html" title=" " alt="" coords="5,56,99,83"/>
+<area shape="rect" id="node2" href="$class_c_game_clear_event.html" title=" " alt="" coords="147,5,275,32"/>
+<area shape="rect" id="node3" href="$class_c_game_over_event.html" title=" " alt="" coords="149,56,273,83"/>
+<area shape="rect" id="node4" href="$class_c_game_start_event.html" title=" " alt="" coords="147,107,274,133"/>
+</map>

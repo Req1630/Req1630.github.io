@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget/CharacterWidget/BackGauge/BackGauge.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_c815d2af617786c0f5a537c28156456c.html">GameWidget</a></li><li class="navelem"><a class="el" href="dir_de75b8b0a54ec62b68d83c00686fcff3.html">CharacterWidget</a></li><li class="navelem"><a class="el" href="dir_5ef3d6b1cc7bfa18809f44b8b70f6aa7.html">BackGauge</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BackGauge.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_back_gauge_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BACK_GAUGE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BACK_GAUGE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\ChatacterWidget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/*************************************</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*   ライフゲージクラス.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_back_gauge.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_back_gauge.html">CBackGauge</a> : <span class="keyword">public</span> <a class="code" href="class_c_character_widget.html">CCharacterWidget</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_GAUGEBACK    = <span class="stringliteral">&quot;gaugeWaku&quot;</span>;  <span class="comment">//ゲージ背景.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_c_back_gauge.html#a404247b145ae81e0e1ec65724c0bfae5">CBackGauge</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_back_gauge.html#a788bc82f7407dcf0ace3dd3fcd74c688">~CBackGauge</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_back_gauge.html#ab492bef768a0721a0fe7170dbf90bb39">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_back_gauge.html#a3cd2b6fd34254ec15732755760fda8a7">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//描画関数.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_back_gauge.html#a1c01b438f722048f1e3b5359d1b7aa3d">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef BACK_GAUGE_H.</span></div>
+<div class="ttc" id="aclass_c_back_gauge_html"><div class="ttname"><a href="class_c_back_gauge.html">CBackGauge</a></div><div class="ttdef"><b>Definition:</b> BackGauge.h:10</div></div>
+<div class="ttc" id="aclass_c_back_gauge_html_a1c01b438f722048f1e3b5359d1b7aa3d"><div class="ttname"><a href="class_c_back_gauge.html#a1c01b438f722048f1e3b5359d1b7aa3d">CBackGauge::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> BackGauge.cpp:33</div></div>
+<div class="ttc" id="aclass_c_back_gauge_html_a3cd2b6fd34254ec15732755760fda8a7"><div class="ttname"><a href="class_c_back_gauge.html#a3cd2b6fd34254ec15732755760fda8a7">CBackGauge::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> BackGauge.cpp:28</div></div>
+<div class="ttc" id="aclass_c_back_gauge_html_a404247b145ae81e0e1ec65724c0bfae5"><div class="ttname"><a href="class_c_back_gauge.html#a404247b145ae81e0e1ec65724c0bfae5">CBackGauge::CBackGauge</a></div><div class="ttdeci">CBackGauge()</div><div class="ttdef"><b>Definition:</b> BackGauge.cpp:10</div></div>
+<div class="ttc" id="aclass_c_back_gauge_html_a788bc82f7407dcf0ace3dd3fcd74c688"><div class="ttname"><a href="class_c_back_gauge.html#a788bc82f7407dcf0ace3dd3fcd74c688">CBackGauge::~CBackGauge</a></div><div class="ttdeci">virtual ~CBackGauge()</div><div class="ttdef"><b>Definition:</b> BackGauge.cpp:14</div></div>
+<div class="ttc" id="aclass_c_back_gauge_html_ab492bef768a0721a0fe7170dbf90bb39"><div class="ttname"><a href="class_c_back_gauge.html#ab492bef768a0721a0fe7170dbf90bb39">CBackGauge::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> BackGauge.cpp:19</div></div>
+<div class="ttc" id="aclass_c_character_widget_html"><div class="ttname"><a href="class_c_character_widget.html">CCharacterWidget</a></div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:11</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: CCommon クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="class_c_common-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CCommon クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_common_8h_source.html">Common.h</a>&gt;</code></p>
+<div class="dynheader">
+CCommon の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common__inherit__graph.png" border="0" usemap="#a_c_common_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_c_common_inherit__map" id="a_c_common_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,385,88,412"/>
+<area shape="rect" href="class_c_blend_sprite.html" title=" " alt="" coords="158,5,257,32"/>
+<area shape="rect" href="class_c_bloom.html" title=" " alt="" coords="173,56,241,83"/>
+<area shape="rect" href="class_c_blur.html" title=" " alt="" coords="180,107,235,133"/>
+<area shape="rect" href="class_c_box_model.html" title=" " alt="" coords="163,157,252,184"/>
+<area shape="rect" href="class_c_capsule_model.html" title=" " alt="" coords="151,208,264,235"/>
+<area shape="rect" href="class_c_circle_gage.html" title=" " alt="" coords="160,259,255,285"/>
+<area shape="rect" href="class_c_d_x9_skin_mesh.html" title=" " alt="" coords="151,309,263,336"/>
+<area shape="rect" href="class_c_d_x9_static_mesh.html" title=" " alt="" coords="147,360,267,387"/>
+<area shape="rect" href="class_c_debug_text.html" title=" " alt="" coords="161,411,254,437"/>
+<area shape="rect" href="class_c_font.html" title=" " alt="" coords="179,461,236,488"/>
+<area shape="rect" href="class_c_gage.html" title=" " alt="" coords="176,512,239,539"/>
+<area shape="rect" href="class_c_invisible_wall_shader.html" title=" " alt="" coords="136,563,279,589"/>
+<area shape="rect" href="class_c_sky_dome_model.html" title=" " alt="" coords="146,613,269,640"/>
+<area shape="rect" href="class_c_sphere_model.html" title=" " alt="" coords="154,664,261,691"/>
+<area shape="rect" href="class_c_sprite.html" title=" " alt="" coords="175,715,240,741"/>
+<area shape="rect" href="class_c_transition.html" title=" " alt="" coords="164,765,251,792"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0a9c20e4f2a759656268abcd9e1c3203"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a0a9c20e4f2a759656268abcd9e1c3203">CCommon</a> ()</td></tr>
+<tr class="separator:a0a9c20e4f2a759656268abcd9e1c3203"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca463a355382ea5dce55a47861f00b0b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#aca463a355382ea5dce55a47861f00b0b">~CCommon</a> ()</td></tr>
+<tr class="separator:aca463a355382ea5dce55a47861f00b0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac899c42445ea8bfc89de4198ed43ad2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#ac899c42445ea8bfc89de4198ed43ad2b">SetPosition</a> (const D3DXVECTOR3 &amp;vPos)</td></tr>
+<tr class="separator:ac899c42445ea8bfc89de4198ed43ad2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f7d0a9a93de6d3a7af4cf386bb1000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#ab0f7d0a9a93de6d3a7af4cf386bb1000">SetRotation</a> (const D3DXVECTOR3 &amp;vRot)</td></tr>
+<tr class="separator:ab0f7d0a9a93de6d3a7af4cf386bb1000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68e63573a80b7c2b23d6487df744f163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a68e63573a80b7c2b23d6487df744f163">SetScale</a> (const D3DXVECTOR3 &amp;vScale)</td></tr>
+<tr class="separator:a68e63573a80b7c2b23d6487df744f163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ece88af3f6094a3bd5d52fd344bed05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a9ece88af3f6094a3bd5d52fd344bed05">SetScale</a> (const float &amp;fScale)</td></tr>
+<tr class="separator:a9ece88af3f6094a3bd5d52fd344bed05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adac5c0e866ecafe70e65b76735f72473"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#adac5c0e866ecafe70e65b76735f72473">SetColor</a> (const D3DXVECTOR4 &amp;vColor)</td></tr>
+<tr class="separator:adac5c0e866ecafe70e65b76735f72473"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a460ad0d33978d4a113c826af361b9332"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a460ad0d33978d4a113c826af361b9332">SetAlpha</a> (const float &amp;fAlpha)</td></tr>
+<tr class="separator:a460ad0d33978d4a113c826af361b9332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56422d04008fb6b3964d1a8ddd5da932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a56422d04008fb6b3964d1a8ddd5da932">SetBlend</a> (bool EnableAlpha)</td></tr>
+<tr class="separator:a56422d04008fb6b3964d1a8ddd5da932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91151834da63c329921a25ccfe15c368"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a91151834da63c329921a25ccfe15c368">SetCoverage</a> (bool EnableCoverage)</td></tr>
+<tr class="separator:a91151834da63c329921a25ccfe15c368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b4cc503db5f5ed64fb81dd815343eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#aa2b4cc503db5f5ed64fb81dd815343eb">SetDeprh</a> (bool flag)</td></tr>
+<tr class="separator:aa2b4cc503db5f5ed64fb81dd815343eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a82de660386c013541b68d7113a0bc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a9a82de660386c013541b68d7113a0bc2">SetRasterizerState</a> (const <a class="el" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47">ERS_STATE</a> &amp;rsState)</td></tr>
+<tr class="separator:a9a82de660386c013541b68d7113a0bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa1dcfc47dd8c2105466ca640ed7cd927"><td class="memItemLeft" align="right" valign="top">HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#aa1dcfc47dd8c2105466ca640ed7cd927">InitPram</a> (ID3D11Device *pDevice11, ID3D11DeviceContext *pContext11)</td></tr>
+<tr class="separator:aa1dcfc47dd8c2105466ca640ed7cd927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:ab994321fe30b33edd1aa18c635b4dbd8"><td class="memItemLeft" align="right" valign="top">ID3D11Device *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#ab994321fe30b33edd1aa18c635b4dbd8">m_pDevice11</a></td></tr>
+<tr class="separator:ab994321fe30b33edd1aa18c635b4dbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f115ba0acc7c91266535e6ea42a1ad"><td class="memItemLeft" align="right" valign="top">ID3D11DeviceContext *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a99f115ba0acc7c91266535e6ea42a1ad">m_pContext11</a></td></tr>
+<tr class="separator:a99f115ba0acc7c91266535e6ea42a1ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae821a41c6dbdaa1c56a66465206ed4d"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#aae821a41c6dbdaa1c56a66465206ed4d">m_vPos</a></td></tr>
+<tr class="separator:aae821a41c6dbdaa1c56a66465206ed4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea940fa0f9194144f013fb9da8b7c4a5"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#aea940fa0f9194144f013fb9da8b7c4a5">m_vRot</a></td></tr>
+<tr class="separator:aea940fa0f9194144f013fb9da8b7c4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e38785d1391f3ab4c8905e6a7afbc57"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a3e38785d1391f3ab4c8905e6a7afbc57">m_vScale</a></td></tr>
+<tr class="separator:a3e38785d1391f3ab4c8905e6a7afbc57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874124175f3e45be8acba5c666be77c7"><td class="memItemLeft" align="right" valign="top">D3DXVECTOR4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_common.html#a874124175f3e45be8acba5c666be77c7">m_vColor</a></td></tr>
+<tr class="separator:a874124175f3e45be8acba5c666be77c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a0a9c20e4f2a759656268abcd9e1c3203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9c20e4f2a759656268abcd9e1c3203">&#9670;&nbsp;</a></span>CCommon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCommon::CCommon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca463a355382ea5dce55a47861f00b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca463a355382ea5dce55a47861f00b0b">&#9670;&nbsp;</a></span>~CCommon()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CCommon::~CCommon </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aa1dcfc47dd8c2105466ca640ed7cd927"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1dcfc47dd8c2105466ca640ed7cd927">&#9670;&nbsp;</a></span>InitPram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CCommon::InitPram </td>
+          <td>(</td>
+          <td class="paramtype">ID3D11Device *&#160;</td>
+          <td class="paramname"><em>pDevice11</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ID3D11DeviceContext *&#160;</td>
+          <td class="paramname"><em>pContext11</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_aa1dcfc47dd8c2105466ca640ed7cd927_icgraph.png" border="0" usemap="#aclass_c_common_aa1dcfc47dd8c2105466ca640ed7cd927_icgraph" alt=""/></div>
+<map name="aclass_c_common_aa1dcfc47dd8c2105466ca640ed7cd927_icgraph" id="aclass_c_common_aa1dcfc47dd8c2105466ca640ed7cd927_icgraph">
+<area shape="rect" title=" " alt="" coords="476,233,615,260"/>
+<area shape="rect" href="class_c_sky_dome_model.html#ac646233789a0a13854ce31a1171aaceb" title=" " alt="" coords="280,5,428,32"/>
+<area shape="rect" href="class_c_box_model.html#a928db4486157a0fb5cab4b67d71643a6" title=" " alt="" coords="297,56,411,83"/>
+<area shape="rect" href="class_c_capsule_model.html#a7ad94811c33dc04e68189888c1b6bd89" title=" " alt="" coords="285,107,423,133"/>
+<area shape="rect" href="class_c_sphere_model.html#a08b0e9320796c9b24e53f8f67ff9c38f" title=" " alt="" coords="288,157,420,184"/>
+<area shape="rect" href="class_c_d_x9_skin_mesh.html#a7a8b7ab6fa660f0048d9ac38e0d38411" title=" " alt="" coords="285,208,423,235"/>
+<area shape="rect" href="class_c_d_x9_static_mesh.html#ac45f9ddd4a53186febd7253bba213506" title=" " alt="" coords="281,259,427,285"/>
+<area shape="rect" href="class_c_font.html#a7cac194e5b1edbbb842f594a1bc01eca" title=" " alt="" coords="313,309,395,336"/>
+<area shape="rect" href="class_c_blend_sprite.html#a8ff6e8c5f70d84ecf8471e2464041dd2" title=" " alt="" coords="293,360,415,387"/>
+<area shape="rect" href="class_c_sprite.html#acc86d110750d89f7c29c8c54fe3ea447" title=" " alt="" coords="309,411,399,437"/>
+<area shape="rect" href="class_c_debug_text.html#afccda2c34be996e8f222f27d497e5b06" title=" " alt="" coords="295,461,413,488"/>
+<area shape="rect" href="class_c_d_x9_skin_mesh.html#a0c04c97adf2e731ad45456db83c05b92" title=" " alt="" coords="13,208,224,235"/>
+<area shape="rect" href="class_c_d_x9_static_mesh.html#af022cb18b5a2b4930dae37bf66d6bf38" title=" " alt="" coords="5,259,232,285"/>
+<area shape="rect" href="class_c_blend_sprite.html#a04354262fc4bf66d614178513cc39112" title=" " alt="" coords="27,360,210,387"/>
+<area shape="rect" href="class_c_sprite.html#a0b964b5be463b270f415f6fd084453e8" title=" " alt="" coords="61,411,177,437"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a460ad0d33978d4a113c826af361b9332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a460ad0d33978d4a113c826af361b9332">&#9670;&nbsp;</a></span>SetAlpha()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetAlpha </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>fAlpha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56422d04008fb6b3964d1a8ddd5da932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56422d04008fb6b3964d1a8ddd5da932">&#9670;&nbsp;</a></span>SetBlend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetBlend </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>EnableAlpha</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_a56422d04008fb6b3964d1a8ddd5da932_cgraph.png" border="0" usemap="#aclass_c_common_a56422d04008fb6b3964d1a8ddd5da932_cgraph" alt=""/></div>
+<map name="aclass_c_common_a56422d04008fb6b3964d1a8ddd5da932_cgraph" id="aclass_c_common_a56422d04008fb6b3964d1a8ddd5da932_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" href="class_c_direct_x11.html#ae0fa024003a1699636a65bf48db36918" title=" " alt="" coords="197,5,344,32"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="392,5,556,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_a56422d04008fb6b3964d1a8ddd5da932_icgraph.png" border="0" usemap="#aclass_c_common_a56422d04008fb6b3964d1a8ddd5da932_icgraph" alt=""/></div>
+<map name="aclass_c_common_a56422d04008fb6b3964d1a8ddd5da932_icgraph" id="aclass_c_common_a56422d04008fb6b3964d1a8ddd5da932_icgraph">
+<area shape="rect" title=" " alt="" coords="197,85,341,112"/>
+<area shape="rect" href="class_c_circle_gage.html#a6638f255f2e5f523b8c369b181812a10" title=" " alt="" coords="5,5,149,32"/>
+<area shape="rect" href="class_c_gage.html#a34ddc7b628d6622b922e1d1830b0df8a" title=" " alt="" coords="22,56,133,83"/>
+<area shape="rect" href="class_c_invisible_wall_shader.html#ac3e522be43257c226037abbd18796ece" title=" " alt="" coords="6,107,149,149"/>
+<area shape="rect" href="class_c_transition.html#a20761caaf3ad75f11b78ae2a223dc2d3" title=" " alt="" coords="9,173,145,200"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adac5c0e866ecafe70e65b76735f72473"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adac5c0e866ecafe70e65b76735f72473">&#9670;&nbsp;</a></span>SetColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetColor </td>
+          <td>(</td>
+          <td class="paramtype">const D3DXVECTOR4 &amp;&#160;</td>
+          <td class="paramname"><em>vColor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91151834da63c329921a25ccfe15c368"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91151834da63c329921a25ccfe15c368">&#9670;&nbsp;</a></span>SetCoverage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetCoverage </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>EnableCoverage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_a91151834da63c329921a25ccfe15c368_cgraph.png" border="0" usemap="#aclass_c_common_a91151834da63c329921a25ccfe15c368_cgraph" alt=""/></div>
+<map name="aclass_c_common_a91151834da63c329921a25ccfe15c368_cgraph" id="aclass_c_common_a91151834da63c329921a25ccfe15c368_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,32"/>
+<area shape="rect" href="class_c_direct_x11.html#a9c5991e10c5e133f41bf46ee806e8213" title=" " alt="" coords="217,5,384,32"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="432,5,596,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa2b4cc503db5f5ed64fb81dd815343eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b4cc503db5f5ed64fb81dd815343eb">&#9670;&nbsp;</a></span>SetDeprh()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetDeprh </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>flag</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_cgraph.png" border="0" usemap="#aclass_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_cgraph" alt=""/></div>
+<map name="aclass_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_cgraph" id="aclass_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,151,32"/>
+<area shape="rect" href="class_c_direct_x11.html#aef503e8641a39cda992d9fe675529ac5" title=" " alt="" coords="199,5,347,32"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="395,5,559,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_icgraph.png" border="0" usemap="#aclass_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_icgraph" alt=""/></div>
+<map name="aclass_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_icgraph" id="aclass_c_common_aa2b4cc503db5f5ed64fb81dd815343eb_icgraph">
+<area shape="rect" title=" " alt="" coords="225,107,371,133"/>
+<area shape="rect" href="class_c_circle_gage.html#a6638f255f2e5f523b8c369b181812a10" title=" " alt="" coords="19,5,163,32"/>
+<area shape="rect" href="class_c_gage.html#a34ddc7b628d6622b922e1d1830b0df8a" title=" " alt="" coords="36,56,147,83"/>
+<area shape="rect" href="class_c_sky_dome_model.html#a54ad99eafdd817220cc49d3daa13609b" title=" " alt="" coords="5,107,177,133"/>
+<area shape="rect" href="class_c_transition.html#a20761caaf3ad75f11b78ae2a223dc2d3" title=" " alt="" coords="23,157,159,184"/>
+<area shape="rect" href="class_c_debug_text.html#ab8a3c4263fe5e3a24aab57ab6188e63b" title=" " alt="" coords="20,208,163,235"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac899c42445ea8bfc89de4198ed43ad2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac899c42445ea8bfc89de4198ed43ad2b">&#9670;&nbsp;</a></span>SetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>vPos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a82de660386c013541b68d7113a0bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a82de660386c013541b68d7113a0bc2">&#9670;&nbsp;</a></span>SetRasterizerState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetRasterizerState </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47">ERS_STATE</a> &amp;&#160;</td>
+          <td class="paramname"><em>rsState</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_a9a82de660386c013541b68d7113a0bc2_cgraph.png" border="0" usemap="#aclass_c_common_a9a82de660386c013541b68d7113a0bc2_cgraph" alt=""/></div>
+<map name="aclass_c_common_a9a82de660386c013541b68d7113a0bc2_cgraph" id="aclass_c_common_a9a82de660386c013541b68d7113a0bc2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,207,39"/>
+<area shape="rect" href="class_c_direct_x11.html#a4c9d51b0bee13857e3b5e68a48c7ff12" title=" " alt="" coords="255,5,428,47"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="476,13,640,39"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_common_a9a82de660386c013541b68d7113a0bc2_icgraph.png" border="0" usemap="#aclass_c_common_a9a82de660386c013541b68d7113a0bc2_icgraph" alt=""/></div>
+<map name="aclass_c_common_a9a82de660386c013541b68d7113a0bc2_icgraph" id="aclass_c_common_a9a82de660386c013541b68d7113a0bc2_icgraph">
+<area shape="rect" title=" " alt="" coords="216,56,417,83"/>
+<area shape="rect" href="class_c_capsule_model.html#ad8a0d1c33d16d6a0d27b5b0e7b132465" title=" " alt="" coords="5,5,168,32"/>
+<area shape="rect" href="class_c_box_model.html#afdb7fb12cbb4ede8f813003bb58ca303" title=" " alt="" coords="17,56,156,83"/>
+<area shape="rect" href="class_c_sphere_model.html#a9d965c3e39fac2896b7963f4998243a7" title=" " alt="" coords="9,107,165,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab0f7d0a9a93de6d3a7af4cf386bb1000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f7d0a9a93de6d3a7af4cf386bb1000">&#9670;&nbsp;</a></span>SetRotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetRotation </td>
+          <td>(</td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>vRot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68e63573a80b7c2b23d6487df744f163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68e63573a80b7c2b23d6487df744f163">&#9670;&nbsp;</a></span>SetScale() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">const D3DXVECTOR3 &amp;&#160;</td>
+          <td class="paramname"><em>vScale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ece88af3f6094a3bd5d52fd344bed05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ece88af3f6094a3bd5d52fd344bed05">&#9670;&nbsp;</a></span>SetScale() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCommon::SetScale </td>
+          <td>(</td>
+          <td class="paramtype">const float &amp;&#160;</td>
+          <td class="paramname"><em>fScale</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a99f115ba0acc7c91266535e6ea42a1ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99f115ba0acc7c91266535e6ea42a1ad">&#9670;&nbsp;</a></span>m_pContext11</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11DeviceContext* CCommon::m_pContext11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab994321fe30b33edd1aa18c635b4dbd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab994321fe30b33edd1aa18c635b4dbd8">&#9670;&nbsp;</a></span>m_pDevice11</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11Device* CCommon::m_pDevice11</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a874124175f3e45be8acba5c666be77c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a874124175f3e45be8acba5c666be77c7">&#9670;&nbsp;</a></span>m_vColor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR4 CCommon::m_vColor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aae821a41c6dbdaa1c56a66465206ed4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae821a41c6dbdaa1c56a66465206ed4d">&#9670;&nbsp;</a></span>m_vPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 CCommon::m_vPos</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea940fa0f9194144f013fb9da8b7c4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea940fa0f9194144f013fb9da8b7c4a5">&#9670;&nbsp;</a></span>m_vRot</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 CCommon::m_vRot</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e38785d1391f3ab4c8905e6a7afbc57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e38785d1391f3ab4c8905e6a7afbc57">&#9670;&nbsp;</a></span>m_vScale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">D3DXVECTOR3 CCommon::m_vScale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/<a class="el" href="_common_8h_source.html">Common.h</a></li>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/<a class="el" href="_common_8cpp.html">Common.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

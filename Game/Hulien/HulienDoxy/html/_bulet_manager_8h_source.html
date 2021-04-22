@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/STG/Bullet/BuletManager/BuletManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_276a54fb21f513fac7132c893a2a5fc2.html">STG</a></li><li class="navelem"><a class="el" href="dir_f2913bce47ff317ab744fa7bb209cf47.html">Bullet</a></li><li class="navelem"><a class="el" href="dir_704a491ec1c18d53d84bb19de8274532.html">BuletManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BuletManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_bulet_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef BULLET_MANAGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define BULLET_MANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\STGBullet.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_bullet_manager_param_8h.html">BulletManagerParam.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespace_s_t_g.html">   12</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    /*********************************************</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    *   弾管理クラス.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet_manager.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_bullet_manager.html">CBulletManager</a> : <span class="keyword">public</span> <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME    = <span class="stringliteral">&quot;SpawnPoint&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> BULLET_COLOR = 0.5f;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a380d1c0017ac521f4d442c0f33541c9b">CBulletManager</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a380d1c0017ac521f4d442c0f33541c9b">CBulletManager</a>( <span class="keyword">const</span> <a class="code" href="struct_s_t_g_1_1_s_bullet_manager_param.html">SBulletManagerParam</a>&amp; param );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a6e78585f836919d56e776d17e763e798">~CBulletManager</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#ac65ac78a9916dc1b7f0a614920658863">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#ab5246a88f70e399e522b9d9c2554f059">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a11418fd63eb0c85936dee27ff4398e26">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// 当たり判定.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a3c3fc3658eaa219be08153f3d69154a7">Collision</a>( <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// 弾を撃つ.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a132162c8c34732f2fae5cc1aa5dc33c6">Shot</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// ランダムで撃つ.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#a0522c5cacbc853fe07973f70bcba0b5b">RandomShot</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// 弾が撃ち終わったかどうか.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet_manager.html#aecdfb34386d544ed808605e47ecad6eb">   40</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#aecdfb34386d544ed808605e47ecad6eb">IsShotEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsShotEnd; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// 初期角度の設定.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#aff5774b1352a17ae83abde432285f0cb">SetInitAngle</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; pos, <span class="keyword">const</span> D3DXVECTOR3&amp; targetPos );</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// 全弾の動作が終了したか.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet_manager.html#af4b8540985a63eac35923f994698a345">   45</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet_manager.html#af4b8540985a63eac35923f994698a345">IsAllBulletUpdateEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsAllBulletUpdateEnd; }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">// 弾を撃つ.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> BulletShot( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rot, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; moveSpeed );</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// 弾の初期化.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> BulletInit();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_s_t_g_1_1_s_bullet_manager_param.html">SBulletManagerParam</a> PARAMETER;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        std::vector&lt;std::shared_ptr&lt;CBullet&gt;&gt;   m_pBullets; <span class="comment">// 弾.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        D3DXVECTOR3 m_BulletColor;              <span class="comment">// 弾の色.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">float</span>       m_BulletAddAngle;           <span class="comment">// 弾の加算角度.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">float</span>       m_BulletAngleAccValue;      <span class="comment">// 弾の角度の加速値.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">float</span>       m_BulletAngleAddAccValue;   <span class="comment">// 弾の角度の加速値.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">float</span>       m_ShotAngle;                <span class="comment">// 現在の撃つ角度.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">int</span>         m_ShotCount;                <span class="comment">// 弾を撃つカウント値.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">int</span>         m_NowShotBulletCount;       <span class="comment">// 撃った弾の数.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">bool</span>        m_IsShotEnd;                <span class="comment">// 弾が撃ち終わったか.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">bool</span>        m_IsAllBulletUpdateEnd;     <span class="comment">// 弾の動作が全部終了したか.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef BULLET_MANAGER_H.</span></div>
+<div class="ttc" id="a_bullet_manager_param_8h_html"><div class="ttname"><a href="_bullet_manager_param_8h.html">BulletManagerParam.h</a></div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div><div class="ttdef"><b>Definition:</b> STGActor.h:22</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html">STG::CBulletManager</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:18</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_a0522c5cacbc853fe07973f70bcba0b5b"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#a0522c5cacbc853fe07973f70bcba0b5b">STG::CBulletManager::RandomShot</a></div><div class="ttdeci">void RandomShot()</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:116</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_a11418fd63eb0c85936dee27ff4398e26"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#a11418fd63eb0c85936dee27ff4398e26">STG::CBulletManager::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:56</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_a132162c8c34732f2fae5cc1aa5dc33c6"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#a132162c8c34732f2fae5cc1aa5dc33c6">STG::CBulletManager::Shot</a></div><div class="ttdeci">void Shot()</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:72</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_a380d1c0017ac521f4d442c0f33541c9b"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#a380d1c0017ac521f4d442c0f33541c9b">STG::CBulletManager::CBulletManager</a></div><div class="ttdeci">CBulletManager()</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:3</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_a3c3fc3658eaa219be08153f3d69154a7"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#a3c3fc3658eaa219be08153f3d69154a7">STG::CBulletManager::Collision</a></div><div class="ttdeci">virtual void Collision(STG::CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:65</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_a6e78585f836919d56e776d17e763e798"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#a6e78585f836919d56e776d17e763e798">STG::CBulletManager::~CBulletManager</a></div><div class="ttdeci">virtual ~CBulletManager()</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:23</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_ab5246a88f70e399e522b9d9c2554f059"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#ab5246a88f70e399e522b9d9c2554f059">STG::CBulletManager::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:44</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_ac65ac78a9916dc1b7f0a614920658863"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#ac65ac78a9916dc1b7f0a614920658863">STG::CBulletManager::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:28</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_aecdfb34386d544ed808605e47ecad6eb"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#aecdfb34386d544ed808605e47ecad6eb">STG::CBulletManager::IsShotEnd</a></div><div class="ttdeci">bool IsShotEnd() const</div><div class="ttdef"><b>Definition:</b> BuletManager.h:40</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_af4b8540985a63eac35923f994698a345"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#af4b8540985a63eac35923f994698a345">STG::CBulletManager::IsAllBulletUpdateEnd</a></div><div class="ttdeci">bool IsAllBulletUpdateEnd() const</div><div class="ttdef"><b>Definition:</b> BuletManager.h:45</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html_aff5774b1352a17ae83abde432285f0cb"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html#aff5774b1352a17ae83abde432285f0cb">STG::CBulletManager::SetInitAngle</a></div><div class="ttdeci">void SetInitAngle(const D3DXVECTOR3 &amp;pos, const D3DXVECTOR3 &amp;targetPos)</div><div class="ttdef"><b>Definition:</b> BuletManager.cpp:121</div></div>
+<div class="ttc" id="anamespace_s_t_g_html"><div class="ttname"><a href="namespace_s_t_g.html">STG</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:13</div></div>
+<div class="ttc" id="astruct_s_t_g_1_1_s_bullet_manager_param_html"><div class="ttname"><a href="struct_s_t_g_1_1_s_bullet_manager_param.html">STG::SBulletManagerParam</a></div><div class="ttdef"><b>Definition:</b> BulletManagerParam.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

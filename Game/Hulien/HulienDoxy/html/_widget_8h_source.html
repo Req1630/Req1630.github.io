@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/Widget.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Widget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_widget_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WIDGET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WIDGET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\GameObject.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/****************************************</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*   UI元クラス.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_widget.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_widget.html">CWidget</a> : <span class="keyword">public</span> <a class="code" href="class_c_game_object.html">CGameObject</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// フェードの状態.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_widget.html#ac16a3734f7aa48fca0f6c9f57a78a1aa">   13</a></span>&#160;    <span class="keyword">enum class</span> enFadeState</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        In,         <span class="comment">//フェードイン.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        Out,        <span class="comment">//フェードアウト.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        Finish,     <span class="comment">//フェード終了.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_widget.html#ac16a3734f7aa48fca0f6c9f57a78a1aa">EFadeState</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_widget.html#a0482d44f5d7da5da9f31e7c12e9cacbc">   21</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_widget.html#a0482d44f5d7da5da9f31e7c12e9cacbc">ALPHA_MAX</a> = 1.0f;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_c_widget.html#a75927ff55c428fc529078aa58a644eba">CWidget</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_widget.html#acf4d2ef3c2872a34e56c95eb3fc82a78">~CWidget</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// フェードイン設定関数.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_widget.html#af96dea44877fe247433c860e36486255">SetFadeIn</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>&amp; alphaSpeed );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// フェードアウト設定関数.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_widget.html#af9446f2b5d8c962e11195accc125faeb">SetFadeOut</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; alphaSpeed );</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_widget.html#a8566f088fe63a269004a7d81b67f21bf">   34</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_widget.html#a8566f088fe63a269004a7d81b67f21bf">SpriteSetting</a>() = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// フェードイン.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_widget.html#a0fe417d34953f48329c652593d87373e">FadeIn</a>( <span class="keywordtype">float</span>&amp; alpha);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// フェードアウト.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_widget.html#adf1583d52fb07c71081e516cdf397117">FadeOut</a>( <span class="keywordtype">float</span>&amp; alpha );</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// フェード更新関数.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_widget.html#a4ecbe6ff68d6cc6edc7cc963e5bd6762">FadeUpdate</a>( <span class="keywordtype">float</span>&amp; alpha );</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_c_widget.html#a65b2032af6be39c88fe333b15711bc04">   43</a></span>&#160;    std::shared_ptr&lt;CSprite&gt;    <a class="code" href="class_c_widget.html#a65b2032af6be39c88fe333b15711bc04">m_pSprite</a>;      <span class="comment">//スプライトクラス.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_widget.html#afa968609441422aa943419b3f675a71b">   44</a></span>&#160;    <a class="code" href="class_c_widget.html#ac16a3734f7aa48fca0f6c9f57a78a1aa">EFadeState</a>                  <a class="code" href="class_c_widget.html#afa968609441422aa943419b3f675a71b">m_FadeState</a>;    <span class="comment">//フェード状態.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_widget.html#a33c7607435f8efdc7a01f5664c7f5e24">   45</a></span>&#160;    <span class="keywordtype">float</span>                       <a class="code" href="class_c_widget.html#a33c7607435f8efdc7a01f5664c7f5e24">m_Alpha</a>;        <span class="comment">//透過値.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_widget.html#a7d7a4769be44db820e4b40e425ae3ea2">   46</a></span>&#160;    <span class="keywordtype">float</span>                       <a class="code" href="class_c_widget.html#a7d7a4769be44db820e4b40e425ae3ea2">m_AlphaMax</a>;     <span class="comment">//透過最大値.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_widget.html#a067d1803b2d285487ff1ef0752ab19f8">   47</a></span>&#160;    <span class="keywordtype">float</span>                       <a class="code" href="class_c_widget.html#a067d1803b2d285487ff1ef0752ab19f8">m_AlphaSpeed</a>;   <span class="comment">//透過値速度.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// 透過値設定関数.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> SetAlpha(<span class="keywordtype">float</span>&amp; alpha, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; alphaSpeed);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_c_widget.html#ac16a3734f7aa48fca0f6c9f57a78a1aa">EFadeState</a>      m_OldFadeState;     <span class="comment">//過去のフェード状態.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef WIDGET_H.</span></div>
+<div class="ttc" id="aclass_c_game_object_html"><div class="ttname"><a href="class_c_game_object.html">CGameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:17</div></div>
+<div class="ttc" id="aclass_c_widget_html"><div class="ttname"><a href="class_c_widget.html">CWidget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:10</div></div>
+<div class="ttc" id="aclass_c_widget_html_a0482d44f5d7da5da9f31e7c12e9cacbc"><div class="ttname"><a href="class_c_widget.html#a0482d44f5d7da5da9f31e7c12e9cacbc">CWidget::ALPHA_MAX</a></div><div class="ttdeci">const float ALPHA_MAX</div><div class="ttdef"><b>Definition:</b> Widget.h:21</div></div>
+<div class="ttc" id="aclass_c_widget_html_a067d1803b2d285487ff1ef0752ab19f8"><div class="ttname"><a href="class_c_widget.html#a067d1803b2d285487ff1ef0752ab19f8">CWidget::m_AlphaSpeed</a></div><div class="ttdeci">float m_AlphaSpeed</div><div class="ttdef"><b>Definition:</b> Widget.h:47</div></div>
+<div class="ttc" id="aclass_c_widget_html_a0fe417d34953f48329c652593d87373e"><div class="ttname"><a href="class_c_widget.html#a0fe417d34953f48329c652593d87373e">CWidget::FadeIn</a></div><div class="ttdeci">void FadeIn(float &amp;alpha)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:37</div></div>
+<div class="ttc" id="aclass_c_widget_html_a33c7607435f8efdc7a01f5664c7f5e24"><div class="ttname"><a href="class_c_widget.html#a33c7607435f8efdc7a01f5664c7f5e24">CWidget::m_Alpha</a></div><div class="ttdeci">float m_Alpha</div><div class="ttdef"><b>Definition:</b> Widget.h:45</div></div>
+<div class="ttc" id="aclass_c_widget_html_a4ecbe6ff68d6cc6edc7cc963e5bd6762"><div class="ttname"><a href="class_c_widget.html#a4ecbe6ff68d6cc6edc7cc963e5bd6762">CWidget::FadeUpdate</a></div><div class="ttdeci">void FadeUpdate(float &amp;alpha)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:61</div></div>
+<div class="ttc" id="aclass_c_widget_html_a65b2032af6be39c88fe333b15711bc04"><div class="ttname"><a href="class_c_widget.html#a65b2032af6be39c88fe333b15711bc04">CWidget::m_pSprite</a></div><div class="ttdeci">std::shared_ptr&lt; CSprite &gt; m_pSprite</div><div class="ttdef"><b>Definition:</b> Widget.h:43</div></div>
+<div class="ttc" id="aclass_c_widget_html_a75927ff55c428fc529078aa58a644eba"><div class="ttname"><a href="class_c_widget.html#a75927ff55c428fc529078aa58a644eba">CWidget::CWidget</a></div><div class="ttdeci">CWidget()</div><div class="ttdef"><b>Definition:</b> Widget.cpp:9</div></div>
+<div class="ttc" id="aclass_c_widget_html_a7d7a4769be44db820e4b40e425ae3ea2"><div class="ttname"><a href="class_c_widget.html#a7d7a4769be44db820e4b40e425ae3ea2">CWidget::m_AlphaMax</a></div><div class="ttdeci">float m_AlphaMax</div><div class="ttdef"><b>Definition:</b> Widget.h:46</div></div>
+<div class="ttc" id="aclass_c_widget_html_a8566f088fe63a269004a7d81b67f21bf"><div class="ttname"><a href="class_c_widget.html#a8566f088fe63a269004a7d81b67f21bf">CWidget::SpriteSetting</a></div><div class="ttdeci">virtual bool SpriteSetting()=0</div></div>
+<div class="ttc" id="aclass_c_widget_html_ac16a3734f7aa48fca0f6c9f57a78a1aa"><div class="ttname"><a href="class_c_widget.html#ac16a3734f7aa48fca0f6c9f57a78a1aa">CWidget::EFadeState</a></div><div class="ttdeci">EFadeState</div><div class="ttdef"><b>Definition:</b> Widget.h:14</div></div>
+<div class="ttc" id="aclass_c_widget_html_acf4d2ef3c2872a34e56c95eb3fc82a78"><div class="ttname"><a href="class_c_widget.html#acf4d2ef3c2872a34e56c95eb3fc82a78">CWidget::~CWidget</a></div><div class="ttdeci">virtual ~CWidget()</div><div class="ttdef"><b>Definition:</b> Widget.cpp:18</div></div>
+<div class="ttc" id="aclass_c_widget_html_adf1583d52fb07c71081e516cdf397117"><div class="ttname"><a href="class_c_widget.html#adf1583d52fb07c71081e516cdf397117">CWidget::FadeOut</a></div><div class="ttdeci">void FadeOut(float &amp;alpha)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:49</div></div>
+<div class="ttc" id="aclass_c_widget_html_af9446f2b5d8c962e11195accc125faeb"><div class="ttname"><a href="class_c_widget.html#af9446f2b5d8c962e11195accc125faeb">CWidget::SetFadeOut</a></div><div class="ttdeci">void SetFadeOut(const float &amp;alphaSpeed)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:30</div></div>
+<div class="ttc" id="aclass_c_widget_html_af96dea44877fe247433c860e36486255"><div class="ttname"><a href="class_c_widget.html#af96dea44877fe247433c860e36486255">CWidget::SetFadeIn</a></div><div class="ttdeci">void SetFadeIn(const float &amp;alphaSpeed)</div><div class="ttdef"><b>Definition:</b> Widget.cpp:23</div></div>
+<div class="ttc" id="aclass_c_widget_html_afa968609441422aa943419b3f675a71b"><div class="ttname"><a href="class_c_widget.html#afa968609441422aa943419b3f675a71b">CWidget::m_FadeState</a></div><div class="ttdeci">EFadeState m_FadeState</div><div class="ttdef"><b>Definition:</b> Widget.h:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

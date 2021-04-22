@@ -1,0 +1,6 @@
+<map id="CExplosion::Collision" name="CExplosion::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,151,83"/>
+<area shape="rect" id="node2" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="213,5,376,32"/>
+<area shape="rect" id="node3" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="199,56,391,83"/>
+<area shape="rect" id="node4" href="$class_c_actor.html#a29421b3908b94cc34745430bb7662866" title=" " alt="" coords="217,107,372,133"/>
+</map>

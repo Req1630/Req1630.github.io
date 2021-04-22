@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/GameObject.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameObject.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_object_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef GAME_OBJECT_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define GAME_OBJECT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Global.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;..\Common\Shader\ShadowMap\ShadowMap.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_object_list_8h.html">ObjectList.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/****************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*   ゲームオブジェクト元クラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_game_object.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_game_object.html">CGameObject</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// ウィンドウ外の調整値.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> WND_OUT_ADJ_SIZE = 300.0f;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_c_game_object.html#a055661cb4f987643e335c1648ed0b2ea">CGameObject</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_game_object.html#a2a248dc92f6c4eb96c484cc51f21010c">~CGameObject</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_game_object.html#ad898aaafe84a7975ed56a1630f75aa61">   25</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_game_object.html#ad898aaafe84a7975ed56a1630f75aa61">Init</a>() = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a0cac96898083c118adc5c054af44b37b">   27</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#a0cac96898083c118adc5c054af44b37b">Update</a>() = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a7b7202d2b8c34d76baab6dce15de2070">   29</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#a7b7202d2b8c34d76baab6dce15de2070">Render</a>() = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// オブジェクトタグ取得関数.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345">   32</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a> <a class="code" href="class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345">GetObjectTag</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_game_object.html#a774fe22417d43d6560a52797dd61d20d">m_ObjectTag</a>; }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 座標取得関数.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_game_object.html#aa11137b89bb1cde166bbb55620d6b89f">   34</a></span>&#160;    <span class="keyword">inline</span> D3DXVECTOR3 <a class="code" href="class_c_game_object.html#aa11137b89bb1cde166bbb55620d6b89f">GetPosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">m_vPosition</a>; }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 座標設定関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_game_object.html#ac96a6cda895f9d0f520e6b43b82d2d77">   36</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#ac96a6cda895f9d0f520e6b43b82d2d77">SetPosition</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vPos ){ <a class="code" href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">m_vPosition</a> = vPos; }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Y軸の回転値の取得.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_game_object.html#aa8c00285792e75730bdaacd588951ab4">   38</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="class_c_game_object.html#aa8c00285792e75730bdaacd588951ab4">GetRotatinY</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">m_vRotation</a>.y; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// X軸の回転値の設定.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a244d5b282a24e5b0c11430d7c0841ac2">   40</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#a244d5b282a24e5b0c11430d7c0841ac2">SetRotationX</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rotX ){ <a class="code" href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">m_vRotation</a>.x = rotX; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Y軸の回転値の設定.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_game_object.html#ae521d08312342c055e9543c7d145682a">   42</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#ae521d08312342c055e9543c7d145682a">SetRotationY</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rotY ){ <a class="code" href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">m_vRotation</a>.y = rotY; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Z軸の回転値の設定.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_game_object.html#ac4019bf271843c6ae6dc542e8671f167">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#ac4019bf271843c6ae6dc542e8671f167">SetRotationZ</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rotZ ){ <a class="code" href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">m_vRotation</a>.z = rotZ; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// サイズの設定.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a6897eb0511df6b293459e9b984658db1">   46</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#a6897eb0511df6b293459e9b984658db1">SetScale</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; size ){ <a class="code" href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">m_vScale</a> = { size, size, size }; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// サイズの設定.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a1d181a4d2b8df958b267fcd8ebe8e4e6">   48</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_game_object.html#a1d181a4d2b8df958b267fcd8ebe8e4e6">SetScale</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vScale ){ <a class="code" href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">m_vScale</a> = vScale; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// 画面の外に出ているか.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_object.html#af0892117053801153554374c1b87babd">IsDisplayOut</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; adjSize = WND_OUT_ADJ_SIZE );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a774fe22417d43d6560a52797dd61d20d">   54</a></span>&#160;    <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a>  <a class="code" href="class_c_game_object.html#a774fe22417d43d6560a52797dd61d20d">m_ObjectTag</a>;    <span class="comment">// オブジェクトタグ.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">   55</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">m_vPosition</a>;    <span class="comment">// 座標.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">   56</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">m_vRotation</a>;    <span class="comment">// 回転.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">   57</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">m_vScale</a>;       <span class="comment">// 大きさ.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef GAME_OBJECT_H.</span></div>
+<div class="ttc" id="a_object_list_8h_html"><div class="ttname"><a href="_object_list_8h.html">ObjectList.h</a></div><div class="ttdoc">ゲーム内で出てくるオブジェクトのタグリスト.</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95c"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a></div><div class="ttdeci">EObjectTag</div><div class="ttdef"><b>Definition:</b> ObjectList.h:11</div></div>
+<div class="ttc" id="aclass_c_game_object_html"><div class="ttname"><a href="class_c_game_object.html">CGameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:17</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a055661cb4f987643e335c1648ed0b2ea"><div class="ttname"><a href="class_c_game_object.html#a055661cb4f987643e335c1648ed0b2ea">CGameObject::CGameObject</a></div><div class="ttdeci">CGameObject()</div><div class="ttdef"><b>Definition:</b> GameObject.cpp:9</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a0cac96898083c118adc5c054af44b37b"><div class="ttname"><a href="class_c_game_object.html#a0cac96898083c118adc5c054af44b37b">CGameObject::Update</a></div><div class="ttdeci">virtual void Update()=0</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a1712afa4cd98a989014e6b685ff616a3"><div class="ttname"><a href="class_c_game_object.html#a1712afa4cd98a989014e6b685ff616a3">CGameObject::m_vRotation</a></div><div class="ttdeci">D3DXVECTOR3 m_vRotation</div><div class="ttdef"><b>Definition:</b> GameObject.h:56</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a1d181a4d2b8df958b267fcd8ebe8e4e6"><div class="ttname"><a href="class_c_game_object.html#a1d181a4d2b8df958b267fcd8ebe8e4e6">CGameObject::SetScale</a></div><div class="ttdeci">void SetScale(const D3DXVECTOR3 &amp;vScale)</div><div class="ttdef"><b>Definition:</b> GameObject.h:48</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a244d5b282a24e5b0c11430d7c0841ac2"><div class="ttname"><a href="class_c_game_object.html#a244d5b282a24e5b0c11430d7c0841ac2">CGameObject::SetRotationX</a></div><div class="ttdeci">void SetRotationX(const float &amp;rotX)</div><div class="ttdef"><b>Definition:</b> GameObject.h:40</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a2a248dc92f6c4eb96c484cc51f21010c"><div class="ttname"><a href="class_c_game_object.html#a2a248dc92f6c4eb96c484cc51f21010c">CGameObject::~CGameObject</a></div><div class="ttdeci">virtual ~CGameObject()</div><div class="ttdef"><b>Definition:</b> GameObject.cpp:17</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a67f2224f36e99bfa9a1bf17f4cb28a78"><div class="ttname"><a href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">CGameObject::m_vPosition</a></div><div class="ttdeci">D3DXVECTOR3 m_vPosition</div><div class="ttdef"><b>Definition:</b> GameObject.h:55</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a6897eb0511df6b293459e9b984658db1"><div class="ttname"><a href="class_c_game_object.html#a6897eb0511df6b293459e9b984658db1">CGameObject::SetScale</a></div><div class="ttdeci">void SetScale(const float &amp;size)</div><div class="ttdef"><b>Definition:</b> GameObject.h:46</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a774fe22417d43d6560a52797dd61d20d"><div class="ttname"><a href="class_c_game_object.html#a774fe22417d43d6560a52797dd61d20d">CGameObject::m_ObjectTag</a></div><div class="ttdeci">EObjectTag m_ObjectTag</div><div class="ttdef"><b>Definition:</b> GameObject.h:54</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a7b04075e2da10eac9c131ec427bf9eef"><div class="ttname"><a href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">CGameObject::m_vScale</a></div><div class="ttdeci">D3DXVECTOR3 m_vScale</div><div class="ttdef"><b>Definition:</b> GameObject.h:57</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a7b7202d2b8c34d76baab6dce15de2070"><div class="ttname"><a href="class_c_game_object.html#a7b7202d2b8c34d76baab6dce15de2070">CGameObject::Render</a></div><div class="ttdeci">virtual void Render()=0</div></div>
+<div class="ttc" id="aclass_c_game_object_html_aa11137b89bb1cde166bbb55620d6b89f"><div class="ttname"><a href="class_c_game_object.html#aa11137b89bb1cde166bbb55620d6b89f">CGameObject::GetPosition</a></div><div class="ttdeci">D3DXVECTOR3 GetPosition() const</div><div class="ttdef"><b>Definition:</b> GameObject.h:34</div></div>
+<div class="ttc" id="aclass_c_game_object_html_aa8c00285792e75730bdaacd588951ab4"><div class="ttname"><a href="class_c_game_object.html#aa8c00285792e75730bdaacd588951ab4">CGameObject::GetRotatinY</a></div><div class="ttdeci">float GetRotatinY() const</div><div class="ttdef"><b>Definition:</b> GameObject.h:38</div></div>
+<div class="ttc" id="aclass_c_game_object_html_ac4019bf271843c6ae6dc542e8671f167"><div class="ttname"><a href="class_c_game_object.html#ac4019bf271843c6ae6dc542e8671f167">CGameObject::SetRotationZ</a></div><div class="ttdeci">void SetRotationZ(const float &amp;rotZ)</div><div class="ttdef"><b>Definition:</b> GameObject.h:44</div></div>
+<div class="ttc" id="aclass_c_game_object_html_ac96a6cda895f9d0f520e6b43b82d2d77"><div class="ttname"><a href="class_c_game_object.html#ac96a6cda895f9d0f520e6b43b82d2d77">CGameObject::SetPosition</a></div><div class="ttdeci">virtual void SetPosition(const D3DXVECTOR3 &amp;vPos)</div><div class="ttdef"><b>Definition:</b> GameObject.h:36</div></div>
+<div class="ttc" id="aclass_c_game_object_html_ad898aaafe84a7975ed56a1630f75aa61"><div class="ttname"><a href="class_c_game_object.html#ad898aaafe84a7975ed56a1630f75aa61">CGameObject::Init</a></div><div class="ttdeci">virtual bool Init()=0</div></div>
+<div class="ttc" id="aclass_c_game_object_html_ae27e9fdbbfa03a20b111d95ece9ff345"><div class="ttname"><a href="class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345">CGameObject::GetObjectTag</a></div><div class="ttdeci">EObjectTag GetObjectTag() const</div><div class="ttdef"><b>Definition:</b> GameObject.h:32</div></div>
+<div class="ttc" id="aclass_c_game_object_html_ae521d08312342c055e9543c7d145682a"><div class="ttname"><a href="class_c_game_object.html#ae521d08312342c055e9543c7d145682a">CGameObject::SetRotationY</a></div><div class="ttdeci">void SetRotationY(const float &amp;rotY)</div><div class="ttdef"><b>Definition:</b> GameObject.h:42</div></div>
+<div class="ttc" id="aclass_c_game_object_html_af0892117053801153554374c1b87babd"><div class="ttname"><a href="class_c_game_object.html#af0892117053801153554374c1b87babd">CGameObject::IsDisplayOut</a></div><div class="ttdeci">bool IsDisplayOut(const float &amp;adjSize=WND_OUT_ADJ_SIZE)</div><div class="ttdef"><b>Definition:</b> GameObject.cpp:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

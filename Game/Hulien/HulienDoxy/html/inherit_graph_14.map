@@ -1,0 +1,6 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$class_c_collider_base.html" title=" " alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$class_c_capsule_collision.html" title=" " alt="" coords="157,5,284,32"/>
+<area shape="rect" id="node3" href="$class_c_o_b_box_collision.html" title=" " alt="" coords="159,56,282,83"/>
+<area shape="rect" id="node4" href="$class_c_sphere_collision.html" title=" " alt="" coords="160,107,281,133"/>
+</map>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/STG/Bullet/STGBullet.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_276a54fb21f513fac7132c893a2a5fc2.html">STG</a></li><li class="navelem"><a class="el" href="dir_f2913bce47ff317ab744fa7bb209cf47.html">Bullet</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">STGBullet.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_t_g_bullet_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STG_BULLET_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STG_BULLET_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\STGActor.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    /**************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    *   弾クラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_bullet.html">CBullet</a> : <span class="keyword">public</span> <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  COLLISION_SCALE = 1.0f; <span class="comment">// 当たり判定の大きさ.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  ATTACK_POWAR    = 1.0f; <span class="comment">// 攻撃力.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_bullet.html#a4fcf7c2042969fd475791a14b792fcdf">CBullet</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_bullet.html#a4fcf7c2042969fd475791a14b792fcdf">CBullet</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* modelName );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#a08be203e1318050777fa0f66776234c4">~CBullet</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#abc198dba0114999ea14130cab9ede414">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#acdc51ffae36aff81241ed4329baf859b">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#a9f7570d924e9efc8438e4a7ff561b4b5">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// 当たり判定.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#a5e2e230fbcf751edbd3c30893dbfc36b">Collision</a>( <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// 撃つ.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#acc7f2298bfc6b5f6c2d2209cb8e1d61e">Shoot</a>( </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">const</span> D3DXVECTOR3&amp; pos,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rot, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; moveSpeed );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// 色の設定.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet.html#a93e0fdf107d51aa958145e917730c478">   40</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#a93e0fdf107d51aa958145e917730c478">SetColor</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; color ){ m_Color = { color.x, color.y, color.z, 1.0f }; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// 撃ったか.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet.html#a8384b0851df68f1cb2df29d24e39e132">   42</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#a8384b0851df68f1cb2df29d24e39e132">IsShot</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">m_IsActive</a>; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// 当たった弾が消える設定.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet.html#adcc1e7fec911d53383a6436c44cd613e">   44</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#adcc1e7fec911d53383a6436c44cd613e">SetCollDisappear</a>(){ m_IsBulletToBulletCollJudge = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// 更新が終了したか.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_bullet.html#a3261e368df683114de5027da5d4dd151">   47</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_bullet.html#a3261e368df683114de5027da5d4dd151">IsUpdateEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsUpdateEnd; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// 当たり判定の作成.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">bool</span> CollisionInit();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME;                     <span class="comment">// モデル名 : 外部から取得.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        D3DXVECTOR4 m_Color;                        <span class="comment">// 弾の色.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">float</span>       m_MoveSpeed;                    <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">bool</span>        m_IsBulletToBulletCollJudge;    <span class="comment">// 弾どうしの当たり判定を行うか.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">bool</span>        m_IsUpdateEnd;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef STG_BULLET_H</span></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div><div class="ttdef"><b>Definition:</b> STGActor.h:22</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a232d4f587e8f4704ae432579c67357fb"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">STG::CActor::m_IsActive</a></div><div class="ttdeci">bool m_IsActive</div><div class="ttdef"><b>Definition:</b> STGActor.h:53</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html">STG::CBullet</a></div><div class="ttdef"><b>Definition:</b> STGBullet.h:17</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a08be203e1318050777fa0f66776234c4"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a08be203e1318050777fa0f66776234c4">STG::CBullet::~CBullet</a></div><div class="ttdeci">virtual ~CBullet()</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:24</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a3261e368df683114de5027da5d4dd151"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a3261e368df683114de5027da5d4dd151">STG::CBullet::IsUpdateEnd</a></div><div class="ttdeci">bool IsUpdateEnd() const</div><div class="ttdef"><b>Definition:</b> STGBullet.h:47</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a4fcf7c2042969fd475791a14b792fcdf"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a4fcf7c2042969fd475791a14b792fcdf">STG::CBullet::CBullet</a></div><div class="ttdeci">CBullet()</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:8</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a5e2e230fbcf751edbd3c30893dbfc36b"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a5e2e230fbcf751edbd3c30893dbfc36b">STG::CBullet::Collision</a></div><div class="ttdeci">virtual void Collision(STG::CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:62</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a8384b0851df68f1cb2df29d24e39e132"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a8384b0851df68f1cb2df29d24e39e132">STG::CBullet::IsShot</a></div><div class="ttdeci">bool IsShot() const</div><div class="ttdef"><b>Definition:</b> STGBullet.h:42</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a93e0fdf107d51aa958145e917730c478"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a93e0fdf107d51aa958145e917730c478">STG::CBullet::SetColor</a></div><div class="ttdeci">void SetColor(const D3DXVECTOR3 &amp;color)</div><div class="ttdef"><b>Definition:</b> STGBullet.h:40</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_a9f7570d924e9efc8438e4a7ff561b4b5"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#a9f7570d924e9efc8438e4a7ff561b4b5">STG::CBullet::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:50</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_abc198dba0114999ea14130cab9ede414"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#abc198dba0114999ea14130cab9ede414">STG::CBullet::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:29</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_acc7f2298bfc6b5f6c2d2209cb8e1d61e"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#acc7f2298bfc6b5f6c2d2209cb8e1d61e">STG::CBullet::Shoot</a></div><div class="ttdeci">virtual bool Shoot(const D3DXVECTOR3 &amp;pos, const float &amp;rot, const float &amp;moveSpeed)</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:90</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_acdc51ffae36aff81241ed4329baf859b"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#acdc51ffae36aff81241ed4329baf859b">STG::CBullet::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> STGBullet.cpp:37</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_html_adcc1e7fec911d53383a6436c44cd613e"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet.html#adcc1e7fec911d53383a6436c44cd613e">STG::CBullet::SetCollDisappear</a></div><div class="ttdeci">void SetCollDisappear()</div><div class="ttdef"><b>Definition:</b> STGBullet.h:44</div></div>
+<div class="ttc" id="anamespace_s_t_g_html"><div class="ttname"><a href="namespace_s_t_g.html">STG</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

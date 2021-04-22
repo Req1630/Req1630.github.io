@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/Alien/EditAlien/Alien_D/EditAlien_D.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1bdeeabc02c3c6e2721e886e81d33611.html">Character</a></li><li class="navelem"><a class="el" href="dir_2e01101a93361756afb0059fe9ed4443.html">Alien</a></li><li class="navelem"><a class="el" href="dir_87f867b1428fce11f15d78378b890a95.html">EditAlien</a></li><li class="navelem"><a class="el" href="dir_a8658fd97f1e74818840e52598cd246d.html">Alien_D</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EditAlien_D.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_edit_alien___d_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef EDIT_ALIEN_D_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define EDIT_ALIEN_D_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\EditAlien.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_laser_beam.html">CLaserBeam</a>;   <span class="comment">// レーザービームクラス.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*****************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*   エディタ用宇宙人Dクラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_edit_alien_d.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_edit_alien_d.html">CEditAlienD</a> : <span class="keyword">public</span> <a class="code" href="class_c_edit_alien.html">CEditAlien</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME = <span class="stringliteral">&quot;ultemate_s&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_NAME = <span class="stringliteral">&quot;AttackRange&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> D3DXVECTOR4 ATTACK_RANGE_COLOR          = { 0.8f, 0.0f, 0.0f, 0.0f };   <span class="comment">// 赤色.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> D3DXVECTOR4 ATTACK_RANGE_DANGER_COLOR   = { 0.8f, 0.8f, 0.0f, 1.0f };   <span class="comment">// 黄色.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> D3DXVECTOR3 HEAD_ADJ_POSITION           = { 3.5f, 15.0f, 3.5f };        <span class="comment">// 頭の調整座標.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> D3DXVECTOR3 ATTACK_POSITION             = { 10.0f, 0.0f, 3.0f };            <span class="comment">// 攻撃対象の仮座標.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> ATTACK_TIME              = 1.0f;                                 <span class="comment">// 攻撃時間.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> ATTACL_SPRITE_ROT_X      = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DXToRadian(90)); <span class="comment">// 攻撃スプライトの回転値.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> ATTACK_FRAME            = 0.7;                                  <span class="comment">// 攻撃フレーム.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_c_edit_alien_d.html#a89bdc49618f34c09ab5c5c2291d08079">CEditAlienD</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_edit_alien_d.html#a23675649a1986de96b4e9a5530f2623c">~CEditAlienD</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_edit_alien_d.html#ab1575a163dbdd93efe4bce5f87e45758">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_edit_alien_d.html#a06abde27d281643510a2510890c0c21c">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_edit_alien_d.html#a2746c946074a5853bb4e62b8c49ea155">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 当たり判定関数.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_edit_alien_d.html#a05c97a32d9324634ae5f8ad86cac9e6d">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 攻撃の再生.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_edit_alien_d.html#a462312c675e8b65fa77cf66c032ae352">PlayAttack</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// パラメーターの設定.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_edit_alien_d.html#a94f180b11b9085f704f558957c605ce5">SetParamter</a>( <span class="keyword">const</span> <a class="code" href="struct_s_alien_param.html">SAlienParam</a>&amp; param ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// スポーン.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Spawning() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// 移動.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Move() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// 拐う.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Abduct() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// 怯み.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Fright() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 死亡.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Death() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 逃げる.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Escape() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 攻撃関数.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> Attack();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> ColliderSetting();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::shared_ptr&lt;CSprite&gt;    m_pAttackRangeSprite;   <span class="comment">// 攻撃範囲のスプライト.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::unique_ptr&lt;CLaserBeam&gt; m_pLaserBeam;           <span class="comment">// レーザービームクラス.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    std::vector&lt;D3DXVECTOR3&gt;    m_ControlPositions;     <span class="comment">// ベジェ曲線で使用する操作座標.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> m_AttackCount;    <span class="comment">// 攻撃カウント.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span> m_IsAttackStart;   <span class="comment">// 攻撃開始したか.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef EDIT_ALIEN_D_H.</span></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html"><div class="ttname"><a href="class_c_edit_alien_d.html">CEditAlienD</a></div><div class="ttdef"><b>Definition:</b> EditAlien_D.h:17</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a05c97a32d9324634ae5f8ad86cac9e6d"><div class="ttname"><a href="class_c_edit_alien_d.html#a05c97a32d9324634ae5f8ad86cac9e6d">CEditAlienD::Collision</a></div><div class="ttdeci">virtual void Collision(CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:69</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a06abde27d281643510a2510890c0c21c"><div class="ttname"><a href="class_c_edit_alien_d.html#a06abde27d281643510a2510890c0c21c">CEditAlienD::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:37</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a23675649a1986de96b4e9a5530f2623c"><div class="ttname"><a href="class_c_edit_alien_d.html#a23675649a1986de96b4e9a5530f2623c">CEditAlienD::~CEditAlienD</a></div><div class="ttdeci">virtual ~CEditAlienD()</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:20</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a2746c946074a5853bb4e62b8c49ea155"><div class="ttname"><a href="class_c_edit_alien_d.html#a2746c946074a5853bb4e62b8c49ea155">CEditAlienD::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:47</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a462312c675e8b65fa77cf66c032ae352"><div class="ttname"><a href="class_c_edit_alien_d.html#a462312c675e8b65fa77cf66c032ae352">CEditAlienD::PlayAttack</a></div><div class="ttdeci">virtual void PlayAttack() override</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:73</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a89bdc49618f34c09ab5c5c2291d08079"><div class="ttname"><a href="class_c_edit_alien_d.html#a89bdc49618f34c09ab5c5c2291d08079">CEditAlienD::CEditAlienD</a></div><div class="ttdeci">CEditAlienD()</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:8</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_a94f180b11b9085f704f558957c605ce5"><div class="ttname"><a href="class_c_edit_alien_d.html#a94f180b11b9085f704f558957c605ce5">CEditAlienD::SetParamter</a></div><div class="ttdeci">virtual void SetParamter(const SAlienParam &amp;param) override</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:85</div></div>
+<div class="ttc" id="aclass_c_edit_alien_d_html_ab1575a163dbdd93efe4bce5f87e45758"><div class="ttname"><a href="class_c_edit_alien_d.html#ab1575a163dbdd93efe4bce5f87e45758">CEditAlienD::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> EditAlien_D.cpp:24</div></div>
+<div class="ttc" id="aclass_c_edit_alien_html"><div class="ttname"><a href="class_c_edit_alien.html">CEditAlien</a></div><div class="ttdef"><b>Definition:</b> EditAlien.h:15</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html"><div class="ttname"><a href="class_c_laser_beam.html">CLaserBeam</a></div><div class="ttdef"><b>Definition:</b> LaserBeam.h:19</div></div>
+<div class="ttc" id="astruct_s_alien_param_html"><div class="ttname"><a href="struct_s_alien_param.html">SAlienParam</a></div><div class="ttdef"><b>Definition:</b> AlienParam.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

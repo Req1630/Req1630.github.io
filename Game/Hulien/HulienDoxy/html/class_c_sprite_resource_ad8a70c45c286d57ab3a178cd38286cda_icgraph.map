@@ -1,0 +1,8 @@
+<map id="CSpriteResource::GetInstance" name="CSpriteResource::GetInstance">
+<area shape="rect" id="node1" title=" " alt="" coords="484,81,683,108"/>
+<area shape="rect" id="node2" href="$class_c_sprite_resource.html#a3e813ba3318f4a45a8967d158e89bebc" title=" " alt="" coords="253,56,436,83"/>
+<area shape="rect" id="node5" href="$class_c_sprite_resource.html#a57baaa7f14aa8d03b21f95401e981c04" title=" " alt="" coords="267,107,423,133"/>
+<area shape="rect" id="node3" href="$class_c_clear_widget.html#aa8c79de230b15a01ca8af88ae6c17bc8" title=" " alt="" coords="42,5,169,32"/>
+<area shape="rect" id="node4" href="$class_c_game_over_widget.html#a9814264bc421a51ba83fe59236216af1" title=" " alt="" coords="26,56,185,83"/>
+<area shape="rect" id="node6" href="$class_c_load_manager.html#ae35d4808bfc59db84fd8a3d3997bff2f" title=" " alt="" coords="5,107,205,133"/>
+</map>

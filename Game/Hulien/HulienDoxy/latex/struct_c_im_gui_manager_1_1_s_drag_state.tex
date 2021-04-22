@@ -1,0 +1,136 @@
+\hypertarget{struct_c_im_gui_manager_1_1_s_drag_state}{}\doxysection{CIm\+Gui\+Manager\+::SDrag\+State 構造体}
+\label{struct_c_im_gui_manager_1_1_s_drag_state}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+
+
+{\ttfamily \#include $<$Im\+Gui\+Manager.\+h$>$}
+
+
+
+CIm\+Gui\+Manager\+::SDrag\+State 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{struct_c_im_gui_manager_1_1_s_drag_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_1_1_s_min_max}{SMin\+Max}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6c}{EDrag\+State}} \{ \newline
+\mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca6e47a0deb0a284930b2e3fe74a2174cb}{EDrag\+State\+\_\+\+None}}
+, \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6cab8189b41f77301fcb24a6d497cd2ac7e}{EDrag\+State\+\_\+\+Label}}
+, \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca07ac34d07574c9e767b6a31a804f28ba}{EDrag\+State\+\_\+\+Default\+Param}}
+, \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca10039dcb7daa89bcc852c3c49dade9ab}{EDrag\+State\+\_\+\+Min}}
+, \newline
+\mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca82f5c645ad21c32235b567e4f51a057e}{EDrag\+State\+\_\+\+Max}}
+, \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca562cc7e13f8c7d735653500274824abf}{EDrag\+State\+\_\+\+Description}}
+, \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6cab772bbe64a28151d8e9867e35938aa96}{EDrag\+State\+\_\+\+Speed}}
+, \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca1d82d3590d24517f6f0a95adb46286e8}{EDrag\+State\+\_\+\+Begin}} = EDrag\+State\+\_\+\+Label
+, \newline
+\mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca13c4b7576febcd2e0b8c5cb7937e2832}{EDrag\+State\+\_\+\+End}} = EDrag\+State\+\_\+\+Max
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_a56f439b04e14fc2f66ab2ee6d8cd745a}{Label}}
+\item 
+std\+::string \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_ac37c1324a544fd1307d1e8274308bcfc}{Description}}
+\item 
+\mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_1_1_s_min_max}{SMin\+Max}} \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_a5ac9acd43dcb334ffdfb99b76dd7d947}{Min\+Max}}
+\item 
+float \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_a3058cc8446f25a73ae6d34b0ef150a96}{Speed}}
+\item 
+float \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adbc34a850a525e7321da4b4b9526342b}{Default\+Param}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6c}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6c}} 
+\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState@{EDragState}}
+\index{EDragState@{EDragState}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+\doxysubsubsection{\texorpdfstring{EDragState}{EDragState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6c}{CIm\+Gui\+Manager\+::\+SDrag\+State\+::\+EDrag\+State}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_None@{EDragState\_None}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_None@{EDragState\_None}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca6e47a0deb0a284930b2e3fe74a2174cb}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca6e47a0deb0a284930b2e3fe74a2174cb}} 
+EDrag\+State\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_Label@{EDragState\_Label}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_Label@{EDragState\_Label}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6cab8189b41f77301fcb24a6d497cd2ac7e}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6cab8189b41f77301fcb24a6d497cd2ac7e}} 
+EDrag\+State\+\_\+\+Label&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_DefaultParam@{EDragState\_DefaultParam}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_DefaultParam@{EDragState\_DefaultParam}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca07ac34d07574c9e767b6a31a804f28ba}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca07ac34d07574c9e767b6a31a804f28ba}} 
+EDrag\+State\+\_\+\+Default\+Param&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_Min@{EDragState\_Min}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_Min@{EDragState\_Min}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca10039dcb7daa89bcc852c3c49dade9ab}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca10039dcb7daa89bcc852c3c49dade9ab}} 
+EDrag\+State\+\_\+\+Min&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_Max@{EDragState\_Max}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_Max@{EDragState\_Max}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca82f5c645ad21c32235b567e4f51a057e}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca82f5c645ad21c32235b567e4f51a057e}} 
+EDrag\+State\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_Description@{EDragState\_Description}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_Description@{EDragState\_Description}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca562cc7e13f8c7d735653500274824abf}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca562cc7e13f8c7d735653500274824abf}} 
+EDrag\+State\+\_\+\+Description&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_Speed@{EDragState\_Speed}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_Speed@{EDragState\_Speed}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6cab772bbe64a28151d8e9867e35938aa96}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6cab772bbe64a28151d8e9867e35938aa96}} 
+EDrag\+State\+\_\+\+Speed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_Begin@{EDragState\_Begin}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_Begin@{EDragState\_Begin}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca1d82d3590d24517f6f0a95adb46286e8}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca1d82d3590d24517f6f0a95adb46286e8}} 
+EDrag\+State\+\_\+\+Begin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDragState\_End@{EDragState\_End}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!EDragState\_End@{EDragState\_End}}}\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca13c4b7576febcd2e0b8c5cb7937e2832}\label{struct_c_im_gui_manager_1_1_s_drag_state_adcc7aeab41b0af0725af3236f29aee6ca13c4b7576febcd2e0b8c5cb7937e2832}} 
+EDrag\+State\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_adbc34a850a525e7321da4b4b9526342b}\label{struct_c_im_gui_manager_1_1_s_drag_state_adbc34a850a525e7321da4b4b9526342b}} 
+\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!DefaultParam@{DefaultParam}}
+\index{DefaultParam@{DefaultParam}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+\doxysubsubsection{\texorpdfstring{DefaultParam}{DefaultParam}}
+{\footnotesize\ttfamily float CIm\+Gui\+Manager\+::\+SDrag\+State\+::\+Default\+Param}
+
+\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_ac37c1324a544fd1307d1e8274308bcfc}\label{struct_c_im_gui_manager_1_1_s_drag_state_ac37c1324a544fd1307d1e8274308bcfc}} 
+\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!Description@{Description}}
+\index{Description@{Description}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+\doxysubsubsection{\texorpdfstring{Description}{Description}}
+{\footnotesize\ttfamily std\+::string CIm\+Gui\+Manager\+::\+SDrag\+State\+::\+Description}
+
+\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_a56f439b04e14fc2f66ab2ee6d8cd745a}\label{struct_c_im_gui_manager_1_1_s_drag_state_a56f439b04e14fc2f66ab2ee6d8cd745a}} 
+\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!Label@{Label}}
+\index{Label@{Label}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+\doxysubsubsection{\texorpdfstring{Label}{Label}}
+{\footnotesize\ttfamily std\+::string CIm\+Gui\+Manager\+::\+SDrag\+State\+::\+Label}
+
+\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_a5ac9acd43dcb334ffdfb99b76dd7d947}\label{struct_c_im_gui_manager_1_1_s_drag_state_a5ac9acd43dcb334ffdfb99b76dd7d947}} 
+\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!MinMax@{MinMax}}
+\index{MinMax@{MinMax}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+\doxysubsubsection{\texorpdfstring{MinMax}{MinMax}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state_1_1_s_min_max}{SMin\+Max}} CIm\+Gui\+Manager\+::\+SDrag\+State\+::\+Min\+Max}
+
+\mbox{\Hypertarget{struct_c_im_gui_manager_1_1_s_drag_state_a3058cc8446f25a73ae6d34b0ef150a96}\label{struct_c_im_gui_manager_1_1_s_drag_state_a3058cc8446f25a73ae6d34b0ef150a96}} 
+\index{CImGuiManager::SDragState@{CImGuiManager::SDragState}!Speed@{Speed}}
+\index{Speed@{Speed}!CImGuiManager::SDragState@{CImGuiManager::SDragState}}
+\doxysubsubsection{\texorpdfstring{Speed}{Speed}}
+{\footnotesize\ttfamily float CIm\+Gui\+Manager\+::\+SDrag\+State\+::\+Speed}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Im\+Gui\+Manager/\mbox{\hyperlink{_im_gui_manager_8h}{Im\+Gui\+Manager.\+h}}\end{DoxyCompactItemize}

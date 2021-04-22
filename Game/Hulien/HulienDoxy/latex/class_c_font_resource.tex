@@ -1,0 +1,96 @@
+\hypertarget{class_c_font_resource}{}\doxysection{CFont\+Resource クラス}
+\label{class_c_font_resource}\index{CFontResource@{CFontResource}}
+
+
+{\ttfamily \#include $<$Font\+Resource.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_font_resource_a358295ea25b48b6c408d036a60c389d8}{CFont\+Resource}} ()
+\item 
+\mbox{\hyperlink{class_c_font_resource_a3a602156e70de940a509380a20666508}{$\sim$\+CFont\+Resource}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_font_resource}{CFont\+Resource}} $\ast$ \mbox{\hyperlink{class_c_font_resource_a4c5cf037a682198f0b2be2a46bdac2e3}{Get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{class_c_font_resource_a019524bcbde8b7b0fd873be599140d04}{Load}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+static ID3\+D11\+Shader\+Resource\+View $\ast$ \mbox{\hyperlink{class_c_font_resource_ae8486b9af74bfd07950651e7d5ffa75e}{Get\+Texture2D}} (const std\+::string key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_font_resource_a358295ea25b48b6c408d036a60c389d8}\label{class_c_font_resource_a358295ea25b48b6c408d036a60c389d8}} 
+\index{CFontResource@{CFontResource}!CFontResource@{CFontResource}}
+\index{CFontResource@{CFontResource}!CFontResource@{CFontResource}}
+\doxysubsubsection{\texorpdfstring{CFontResource()}{CFontResource()}}
+{\footnotesize\ttfamily CFont\+Resource\+::\+CFont\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_font_resource_a3a602156e70de940a509380a20666508}\label{class_c_font_resource_a3a602156e70de940a509380a20666508}} 
+\index{CFontResource@{CFontResource}!````~CFontResource@{$\sim$CFontResource}}
+\index{````~CFontResource@{$\sim$CFontResource}!CFontResource@{CFontResource}}
+\doxysubsubsection{\texorpdfstring{$\sim$CFontResource()}{~CFontResource()}}
+{\footnotesize\ttfamily CFont\+Resource\+::$\sim$\+CFont\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_font_resource_a4c5cf037a682198f0b2be2a46bdac2e3}\label{class_c_font_resource_a4c5cf037a682198f0b2be2a46bdac2e3}} 
+\index{CFontResource@{CFontResource}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CFontResource@{CFontResource}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_font_resource}{CFont\+Resource}} $\ast$ CFont\+Resource\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_font_resource_a4c5cf037a682198f0b2be2a46bdac2e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_font_resource_ae8486b9af74bfd07950651e7d5ffa75e}\label{class_c_font_resource_ae8486b9af74bfd07950651e7d5ffa75e}} 
+\index{CFontResource@{CFontResource}!GetTexture2D@{GetTexture2D}}
+\index{GetTexture2D@{GetTexture2D}!CFontResource@{CFontResource}}
+\doxysubsubsection{\texorpdfstring{GetTexture2D()}{GetTexture2D()}}
+{\footnotesize\ttfamily ID3\+D11\+Shader\+Resource\+View $\ast$ CFont\+Resource\+::\+Get\+Texture2D (\begin{DoxyParamCaption}\item[{const std\+::string}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_font_resource_ae8486b9af74bfd07950651e7d5ffa75e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_font_resource_a019524bcbde8b7b0fd873be599140d04}\label{class_c_font_resource_a019524bcbde8b7b0fd873be599140d04}} 
+\index{CFontResource@{CFontResource}!Load@{Load}}
+\index{Load@{Load}!CFontResource@{CFontResource}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void CFont\+Resource\+::\+Load (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_font_resource_a019524bcbde8b7b0fd873be599140d04_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_font_resource_a019524bcbde8b7b0fd873be599140d04_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Font\+Resource/\mbox{\hyperlink{_font_resource_8h}{Font\+Resource.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Font\+Resource/\mbox{\hyperlink{_font_resource_8cpp}{Font\+Resource.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{_blend_sprite_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Sprite/\+Blend\+Sprite/\+Blend\+Sprite.h ファイル}
+\label{_blend_sprite_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Sprite/BlendSprite/BlendSprite.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Sprite/BlendSprite/BlendSprite.h}}
+{\ttfamily \#include \char`\"{}..\textbackslash{}..\textbackslash{}\+Common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}..\textbackslash{}\+Shader\textbackslash{}\+Sprite\+Shader\textbackslash{}\+Sprite\+Shader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Sprite\+State.\+h\char`\"{}}\newline
+Blend\+Sprite.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_blend_sprite_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_blend_sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_blend_sprite}{CBlend\+Sprite}}
+\item 
+struct \mbox{\hyperlink{struct_c_blend_sprite_1_1_s_p_s_shader_name}{CBlend\+Sprite\+::\+SPSShader\+Name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_blend_sprite_8h_af9fa2049de1e100457339102e8987666}{EBLEND\+\_\+\+MODE}} \{ \mbox{\hyperlink{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21}{EBLEND\+\_\+\+MODE\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b}{EBLEND\+\_\+\+MODE\+\_\+\+Normal}}
+, \mbox{\hyperlink{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22}{EBLEND\+\_\+\+MODE\+\_\+\+Hard\+Light}}
+, \mbox{\hyperlink{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32}{EBLEND\+\_\+\+MODE\+\_\+\+Max}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{_blend_sprite_8h_af9fa2049de1e100457339102e8987666}\label{_blend_sprite_8h_af9fa2049de1e100457339102e8987666}} 
+\index{BlendSprite.h@{BlendSprite.h}!EBLEND\_MODE@{EBLEND\_MODE}}
+\index{EBLEND\_MODE@{EBLEND\_MODE}!BlendSprite.h@{BlendSprite.h}}
+\doxysubsubsection{\texorpdfstring{EBLEND\_MODE}{EBLEND\_MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_blend_sprite_8h_af9fa2049de1e100457339102e8987666}{EBLEND\+\_\+\+MODE}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBLEND\_MODE\_None@{EBLEND\_MODE\_None}!BlendSprite.h@{BlendSprite.h}}\index{BlendSprite.h@{BlendSprite.h}!EBLEND\_MODE\_None@{EBLEND\_MODE\_None}}}\mbox{\Hypertarget{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21}\label{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21}} 
+EBLEND\+\_\+\+MODE\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBLEND\_MODE\_Normal@{EBLEND\_MODE\_Normal}!BlendSprite.h@{BlendSprite.h}}\index{BlendSprite.h@{BlendSprite.h}!EBLEND\_MODE\_Normal@{EBLEND\_MODE\_Normal}}}\mbox{\Hypertarget{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b}\label{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b}} 
+EBLEND\+\_\+\+MODE\+\_\+\+Normal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBLEND\_MODE\_HardLight@{EBLEND\_MODE\_HardLight}!BlendSprite.h@{BlendSprite.h}}\index{BlendSprite.h@{BlendSprite.h}!EBLEND\_MODE\_HardLight@{EBLEND\_MODE\_HardLight}}}\mbox{\Hypertarget{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22}\label{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22}} 
+EBLEND\+\_\+\+MODE\+\_\+\+Hard\+Light&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBLEND\_MODE\_Max@{EBLEND\_MODE\_Max}!BlendSprite.h@{BlendSprite.h}}\index{BlendSprite.h@{BlendSprite.h}!EBLEND\_MODE\_Max@{EBLEND\_MODE\_Max}}}\mbox{\Hypertarget{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32}\label{_blend_sprite_8h_af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32}} 
+EBLEND\+\_\+\+MODE\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}

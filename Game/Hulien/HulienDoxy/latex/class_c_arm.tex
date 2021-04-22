@@ -1,0 +1,220 @@
+\hypertarget{class_c_arm}{}\doxysection{CArm クラス}
+\label{class_c_arm}\index{CArm@{CArm}}
+
+
+{\ttfamily \#include $<$Arm.\+h$>$}
+
+
+
+CArm の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_arm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CArm 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_arm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_arm_acb2dbbfe8169f201bf280b56f663264d}{CArm}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_arm_a19fd995cfafabde5355d8ad377c399ff}{$\sim$\+CArm}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_arm_a62ebbfb225d34d6e82bf76d3867afe77}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_arm_a53136619a05288586ddadb7298f1576b}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_arm_a1b82a48882aa4ccdb240f0d51d8d7eda}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_arm_a0f3242ef02b27a507800a3be7da27c7c}{Set\+RotationY}} (const float \&rotY)
+\item 
+bool \mbox{\hyperlink{class_c_arm_a7dc5b4dc403cbd988b165ab185a03304}{Is\+Grab}} ()
+\item 
+bool \mbox{\hyperlink{class_c_arm_a3e45ae43a5e218bd9d3c91580374a37b}{Is\+Clean\+Up}} ()
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_arm_a81317c2a6eb065212d33ac1875ef4015}{Get\+Grab\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_ae740e758579fec98cc5e46ca0f3865a9}{Set\+Appearance\+Preparation}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_af2776aeb38ae53225650e6e0a381665d}{Set\+Clean\+Up\+Preparation}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_a1b269557cb4c1cc4bd83eaf675edf58b}{Set\+Appearance}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_a4f321ed9fa31cdf0b895abb2b918d0d6}{Set\+Clean\+Up}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_a9b97a458a31be7897693754d3677fe70}{Stop\+Animation}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_ab1913486b27668360ebe726b42e76c79}{Resume\+Animation}} ()
+\item 
+void \mbox{\hyperlink{class_c_arm_a03d30556b3e5a4691ef9b235add51415}{Set\+Clean\+Up\+Scale}} (const D3\+DXVECTOR3 \&scale)
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr float \mbox{\hyperlink{class_c_arm_a6403796dc0f6852a19eca5efa4d515d9}{GRAB\+\_\+\+DISTANCE}} = 5.\+0f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_arm_a3007b997866d91ad611d35da3ca8810f}{GRAB\+\_\+\+HEIGHT}} = 5.\+0f
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_arm_acb2dbbfe8169f201bf280b56f663264d}\label{class_c_arm_acb2dbbfe8169f201bf280b56f663264d}} 
+\index{CArm@{CArm}!CArm@{CArm}}
+\index{CArm@{CArm}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{CArm()}{CArm()}}
+{\footnotesize\ttfamily CArm\+::\+CArm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_a19fd995cfafabde5355d8ad377c399ff}\label{class_c_arm_a19fd995cfafabde5355d8ad377c399ff}} 
+\index{CArm@{CArm}!````~CArm@{$\sim$CArm}}
+\index{````~CArm@{$\sim$CArm}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{$\sim$CArm()}{~CArm()}}
+{\footnotesize\ttfamily CArm\+::$\sim$\+CArm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_arm_a81317c2a6eb065212d33ac1875ef4015}\label{class_c_arm_a81317c2a6eb065212d33ac1875ef4015}} 
+\index{CArm@{CArm}!GetGrabPosition@{GetGrabPosition}}
+\index{GetGrabPosition@{GetGrabPosition}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{GetGrabPosition()}{GetGrabPosition()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CArm\+::\+Get\+Grab\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_a62ebbfb225d34d6e82bf76d3867afe77}\label{class_c_arm_a62ebbfb225d34d6e82bf76d3867afe77}} 
+\index{CArm@{CArm}!Init@{Init}}
+\index{Init@{Init}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CArm\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_arm_a62ebbfb225d34d6e82bf76d3867afe77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_arm_a3e45ae43a5e218bd9d3c91580374a37b}\label{class_c_arm_a3e45ae43a5e218bd9d3c91580374a37b}} 
+\index{CArm@{CArm}!IsCleanUp@{IsCleanUp}}
+\index{IsCleanUp@{IsCleanUp}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{IsCleanUp()}{IsCleanUp()}}
+{\footnotesize\ttfamily bool CArm\+::\+Is\+Clean\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_arm_a7dc5b4dc403cbd988b165ab185a03304}\label{class_c_arm_a7dc5b4dc403cbd988b165ab185a03304}} 
+\index{CArm@{CArm}!IsGrab@{IsGrab}}
+\index{IsGrab@{IsGrab}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{IsGrab()}{IsGrab()}}
+{\footnotesize\ttfamily bool CArm\+::\+Is\+Grab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_arm_a1b82a48882aa4ccdb240f0d51d8d7eda}\label{class_c_arm_a1b82a48882aa4ccdb240f0d51d8d7eda}} 
+\index{CArm@{CArm}!Render@{Render}}
+\index{Render@{Render}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CArm\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_arm_ab1913486b27668360ebe726b42e76c79}\label{class_c_arm_ab1913486b27668360ebe726b42e76c79}} 
+\index{CArm@{CArm}!ResumeAnimation@{ResumeAnimation}}
+\index{ResumeAnimation@{ResumeAnimation}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{ResumeAnimation()}{ResumeAnimation()}}
+{\footnotesize\ttfamily void CArm\+::\+Resume\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_a1b269557cb4c1cc4bd83eaf675edf58b}\label{class_c_arm_a1b269557cb4c1cc4bd83eaf675edf58b}} 
+\index{CArm@{CArm}!SetAppearance@{SetAppearance}}
+\index{SetAppearance@{SetAppearance}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{SetAppearance()}{SetAppearance()}}
+{\footnotesize\ttfamily void CArm\+::\+Set\+Appearance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_ae740e758579fec98cc5e46ca0f3865a9}\label{class_c_arm_ae740e758579fec98cc5e46ca0f3865a9}} 
+\index{CArm@{CArm}!SetAppearancePreparation@{SetAppearancePreparation}}
+\index{SetAppearancePreparation@{SetAppearancePreparation}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{SetAppearancePreparation()}{SetAppearancePreparation()}}
+{\footnotesize\ttfamily void CArm\+::\+Set\+Appearance\+Preparation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_arm_ae740e758579fec98cc5e46ca0f3865a9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_arm_a4f321ed9fa31cdf0b895abb2b918d0d6}\label{class_c_arm_a4f321ed9fa31cdf0b895abb2b918d0d6}} 
+\index{CArm@{CArm}!SetCleanUp@{SetCleanUp}}
+\index{SetCleanUp@{SetCleanUp}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{SetCleanUp()}{SetCleanUp()}}
+{\footnotesize\ttfamily void CArm\+::\+Set\+Clean\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_af2776aeb38ae53225650e6e0a381665d}\label{class_c_arm_af2776aeb38ae53225650e6e0a381665d}} 
+\index{CArm@{CArm}!SetCleanUpPreparation@{SetCleanUpPreparation}}
+\index{SetCleanUpPreparation@{SetCleanUpPreparation}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{SetCleanUpPreparation()}{SetCleanUpPreparation()}}
+{\footnotesize\ttfamily void CArm\+::\+Set\+Clean\+Up\+Preparation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_a03d30556b3e5a4691ef9b235add51415}\label{class_c_arm_a03d30556b3e5a4691ef9b235add51415}} 
+\index{CArm@{CArm}!SetCleanUpScale@{SetCleanUpScale}}
+\index{SetCleanUpScale@{SetCleanUpScale}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{SetCleanUpScale()}{SetCleanUpScale()}}
+{\footnotesize\ttfamily void CArm\+::\+Set\+Clean\+Up\+Scale (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_arm_a0f3242ef02b27a507800a3be7da27c7c}\label{class_c_arm_a0f3242ef02b27a507800a3be7da27c7c}} 
+\index{CArm@{CArm}!SetRotationY@{SetRotationY}}
+\index{SetRotationY@{SetRotationY}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{SetRotationY()}{SetRotationY()}}
+{\footnotesize\ttfamily void CArm\+::\+Set\+RotationY (\begin{DoxyParamCaption}\item[{const float \&}]{rotY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_arm_a9b97a458a31be7897693754d3677fe70}\label{class_c_arm_a9b97a458a31be7897693754d3677fe70}} 
+\index{CArm@{CArm}!StopAnimation@{StopAnimation}}
+\index{StopAnimation@{StopAnimation}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{StopAnimation()}{StopAnimation()}}
+{\footnotesize\ttfamily void CArm\+::\+Stop\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_arm_a53136619a05288586ddadb7298f1576b}\label{class_c_arm_a53136619a05288586ddadb7298f1576b}} 
+\index{CArm@{CArm}!Update@{Update}}
+\index{Update@{Update}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CArm\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_arm_a6403796dc0f6852a19eca5efa4d515d9}\label{class_c_arm_a6403796dc0f6852a19eca5efa4d515d9}} 
+\index{CArm@{CArm}!GRAB\_DISTANCE@{GRAB\_DISTANCE}}
+\index{GRAB\_DISTANCE@{GRAB\_DISTANCE}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{GRAB\_DISTANCE}{GRAB\_DISTANCE}}
+{\footnotesize\ttfamily constexpr float CArm\+::\+GRAB\+\_\+\+DISTANCE = 5.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+\mbox{\Hypertarget{class_c_arm_a3007b997866d91ad611d35da3ca8810f}\label{class_c_arm_a3007b997866d91ad611d35da3ca8810f}} 
+\index{CArm@{CArm}!GRAB\_HEIGHT@{GRAB\_HEIGHT}}
+\index{GRAB\_HEIGHT@{GRAB\_HEIGHT}!CArm@{CArm}}
+\doxysubsubsection{\texorpdfstring{GRAB\_HEIGHT}{GRAB\_HEIGHT}}
+{\footnotesize\ttfamily constexpr float CArm\+::\+GRAB\+\_\+\+HEIGHT = 5.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Arm/\mbox{\hyperlink{_arm_8h}{Arm.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Arm/\mbox{\hyperlink{_arm_8cpp}{Arm.\+cpp}}\end{DoxyCompactItemize}

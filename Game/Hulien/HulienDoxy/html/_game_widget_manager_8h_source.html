@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget/GameWidgetManager/GameWidgetManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_c815d2af617786c0f5a537c28156456c.html">GameWidget</a></li><li class="navelem"><a class="el" href="dir_90586bc2deebc01e730df5e40f277931.html">GameWidgetManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GameWidgetManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_widget_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GAMEWIDGETMANAGER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GAMEWIDGETMANAGER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\..\..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_game_actor_manager.html">CGameActorManager</a>;    <span class="comment">// ゲームオブジェクト管理クラス.</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_limit_time.html">CLimitTime</a>;               <span class="comment">//制限時間クラス.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mini_map.html">CMiniMap</a>;                 <span class="comment">//ミニマップクラス.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_ultemate_sing.html">CUltemateSing</a>;            <span class="comment">//アルティメット出現サインクラス.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/******************************************</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*   ゲームUI管理クラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_game_widget_manager.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_game_widget_manager.html">CGameWidgetManager</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_c_game_widget_manager.html#a25de81f564d395d6eb72d9606c1e7d52">CGameWidgetManager</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_game_widget_manager.html#a770c9ea44daf70cc2e33e8944e94a455">~CGameWidgetManager</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 初期化関数,</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_widget_manager.html#a7f1035b105566a4bd0b7ed4a465b34c2">Init</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_game_widget_manager.html#a801088289ae849313cb418c81f20fe7c">Update</a>(<a class="code" href="class_c_game_actor_manager.html">CGameActorManager</a>* pActorManager);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_game_widget_manager.html#ae15d03008db57003d814ffd95e75aef7">Render</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// ゲームが終了したか.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_game_widget_manager.html#a1bc04807c60fc109c8176a6d64bdbc31">IsGameFinish</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    std::unique_ptr&lt;CLimitTime&gt; m_pLimitTime;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::unique_ptr&lt;CMiniMap&gt;   m_pMiniMap;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// スポーンUFOクラスに持って行った.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">//  std::unique_ptr&lt;CUltemateSing&gt; m_pUltemateSing;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef GAMEWIDGETMANAGER_H.</span></div>
+<div class="ttc" id="aclass_c_game_actor_manager_html"><div class="ttname"><a href="class_c_game_actor_manager.html">CGameActorManager</a></div><div class="ttdef"><b>Definition:</b> GameActorManager.h:30</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html"><div class="ttname"><a href="class_c_game_widget_manager.html">CGameWidgetManager</a></div><div class="ttdef"><b>Definition:</b> GameWidgetManager.h:15</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html_a1bc04807c60fc109c8176a6d64bdbc31"><div class="ttname"><a href="class_c_game_widget_manager.html#a1bc04807c60fc109c8176a6d64bdbc31">CGameWidgetManager::IsGameFinish</a></div><div class="ttdeci">bool IsGameFinish()</div><div class="ttdef"><b>Definition:</b> GameWidgetManager.cpp:52</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html_a25de81f564d395d6eb72d9606c1e7d52"><div class="ttname"><a href="class_c_game_widget_manager.html#a25de81f564d395d6eb72d9606c1e7d52">CGameWidgetManager::CGameWidgetManager</a></div><div class="ttdeci">CGameWidgetManager()</div><div class="ttdef"><b>Definition:</b> GameWidgetManager.cpp:9</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html_a770c9ea44daf70cc2e33e8944e94a455"><div class="ttname"><a href="class_c_game_widget_manager.html#a770c9ea44daf70cc2e33e8944e94a455">CGameWidgetManager::~CGameWidgetManager</a></div><div class="ttdeci">virtual ~CGameWidgetManager()</div><div class="ttdef"><b>Definition:</b> GameWidgetManager.cpp:19</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html_a7f1035b105566a4bd0b7ed4a465b34c2"><div class="ttname"><a href="class_c_game_widget_manager.html#a7f1035b105566a4bd0b7ed4a465b34c2">CGameWidgetManager::Init</a></div><div class="ttdeci">bool Init()</div><div class="ttdef"><b>Definition:</b> GameWidgetManager.cpp:24</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html_a801088289ae849313cb418c81f20fe7c"><div class="ttname"><a href="class_c_game_widget_manager.html#a801088289ae849313cb418c81f20fe7c">CGameWidgetManager::Update</a></div><div class="ttdeci">void Update(CGameActorManager *pActorManager)</div><div class="ttdef"><b>Definition:</b> GameWidgetManager.cpp:34</div></div>
+<div class="ttc" id="aclass_c_game_widget_manager_html_ae15d03008db57003d814ffd95e75aef7"><div class="ttname"><a href="class_c_game_widget_manager.html#ae15d03008db57003d814ffd95e75aef7">CGameWidgetManager::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> GameWidgetManager.cpp:44</div></div>
+<div class="ttc" id="aclass_c_limit_time_html"><div class="ttname"><a href="class_c_limit_time.html">CLimitTime</a></div><div class="ttdef"><b>Definition:</b> LimitTime.h:11</div></div>
+<div class="ttc" id="aclass_c_mini_map_html"><div class="ttname"><a href="class_c_mini_map.html">CMiniMap</a></div><div class="ttdef"><b>Definition:</b> MiniMap.h:13</div></div>
+<div class="ttc" id="aclass_c_ultemate_sing_html"><div class="ttname"><a href="class_c_ultemate_sing.html">CUltemateSing</a></div><div class="ttdef"><b>Definition:</b> UltemateSign.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

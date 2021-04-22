@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/STG/STGActor.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_276a54fb21f513fac7132c893a2a5fc2.html">STG</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">STGActor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_t_g_actor_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STG_ACTOR_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STG_ACTOR_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\GameObject.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_collision_manager.html">CCollisionManager</a>;    <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span>CBullet;  <span class="comment">// 弾クラス.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">    /******************************************</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">    *   Actor基底クラス.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html">   21</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_actor.html">CActor</a> : <span class="keyword">public</span> <a class="code" href="class_c_game_object.html">CGameObject</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_actor.html#a22436a9e69474d47f31ac81fa192ba4b">CActor</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#adca86a138fd9af275352336848ebad27">~CActor</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// メッシュの描画.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a31512ed993e2900b0e8a85bae10001bb">MeshRender</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// 当たり判定.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a0c69af60d637b416b1212b6b589ad74e">   30</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a0c69af60d637b416b1212b6b589ad74e">Collision</a>( <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a>* pActor ) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">// ライフ計算関数.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a8210ff366bf2b786a82b7078f048ebbb">   32</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a8210ff366bf2b786a82b7078f048ebbb">LifeCalculation</a>( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;)&gt;&amp; ){}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// 当たり判定の取得.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#af107a77a4e2a7ff06977d10ea19b9f63">   35</a></span>&#160;        <a class="code" href="class_c_collision_manager.html">CCollisionManager</a>* <a class="code" href="class_s_t_g_1_1_c_actor.html#af107a77a4e2a7ff06977d10ea19b9f63">GetColl</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a630a0aded2fb4202677473b5ffcc15bc">m_pCollManager</a>.get(); }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// 目的の座標の設定.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#af90190bb1fbd4d5bf70c84a098ce519f">   38</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#af90190bb1fbd4d5bf70c84a098ce519f">SetTargetPos</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; pos ){ <a class="code" href="class_s_t_g_1_1_c_actor.html#a707c0ba62926de14121a9a4a99efef2e">m_TargetPositon</a> = pos; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">// 動作するかどうか設定.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a5a7354d10c591abb92a994c832680805">   41</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a5a7354d10c591abb92a994c832680805">SetActive</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; isActive ){ <a class="code" href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">m_IsActive</a> = isActive; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// 動作しているか取得.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#af917eff96b6e99bd45fdc0255d03076e">   43</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#af917eff96b6e99bd45fdc0255d03076e">GetActive</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">m_IsActive</a>; }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">// 弾の取得.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a53a602092039333528f5b63894fa6666">   46</a></span>&#160;        <span class="keyword">virtual</span> std::vector&lt;std::shared_ptr&lt;CBullet&gt;&gt; <a class="code" href="class_s_t_g_1_1_c_actor.html#a53a602092039333528f5b63894fa6666">GetBullets</a>(){ <span class="keywordflow">return</span> std::vector&lt;std::shared_ptr&lt;CBullet&gt;&gt;(); }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#ad230846d873d68eb594f77e8390e90c8">   49</a></span>&#160;        std::shared_ptr&lt;CDX9StaticMesh&gt;     <a class="code" href="class_s_t_g_1_1_c_actor.html#ad230846d873d68eb594f77e8390e90c8">m_pStaticMesh</a>;  <span class="comment">// スタティックメッシュ.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a630a0aded2fb4202677473b5ffcc15bc">   50</a></span>&#160;        std::shared_ptr&lt;CCollisionManager&gt;  <a class="code" href="class_s_t_g_1_1_c_actor.html#a630a0aded2fb4202677473b5ffcc15bc">m_pCollManager</a>; <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a145c3d155199eceb2f708d5b8142089b">   51</a></span>&#160;        D3DXVECTOR3 <a class="code" href="class_s_t_g_1_1_c_actor.html#a145c3d155199eceb2f708d5b8142089b">m_MoveVector</a>;       <span class="comment">// 移動用ベクトル.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a707c0ba62926de14121a9a4a99efef2e">   52</a></span>&#160;        D3DXVECTOR3 <a class="code" href="class_s_t_g_1_1_c_actor.html#a707c0ba62926de14121a9a4a99efef2e">m_TargetPositon</a>;    <span class="comment">// 目的の座標.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">   53</a></span>&#160;        <span class="keywordtype">bool</span>        <a class="code" href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">m_IsActive</a>;         <span class="comment">// 動作しているかどうか.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef STG_ACTOR_H.</span></div>
+<div class="ttc" id="aclass_c_collision_manager_html"><div class="ttname"><a href="class_c_collision_manager.html">CCollisionManager</a></div><div class="ttdef"><b>Definition:</b> CollsionManager.h:20</div></div>
+<div class="ttc" id="aclass_c_game_object_html"><div class="ttname"><a href="class_c_game_object.html">CGameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:17</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div><div class="ttdef"><b>Definition:</b> STGActor.h:22</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a0c69af60d637b416b1212b6b589ad74e"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a0c69af60d637b416b1212b6b589ad74e">STG::CActor::Collision</a></div><div class="ttdeci">virtual void Collision(STG::CActor *pActor)=0</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a145c3d155199eceb2f708d5b8142089b"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a145c3d155199eceb2f708d5b8142089b">STG::CActor::m_MoveVector</a></div><div class="ttdeci">D3DXVECTOR3 m_MoveVector</div><div class="ttdef"><b>Definition:</b> STGActor.h:51</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a22436a9e69474d47f31ac81fa192ba4b"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a22436a9e69474d47f31ac81fa192ba4b">STG::CActor::CActor</a></div><div class="ttdeci">CActor()</div><div class="ttdef"><b>Definition:</b> STGActor.cpp:4</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a232d4f587e8f4704ae432579c67357fb"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">STG::CActor::m_IsActive</a></div><div class="ttdeci">bool m_IsActive</div><div class="ttdef"><b>Definition:</b> STGActor.h:53</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a31512ed993e2900b0e8a85bae10001bb"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a31512ed993e2900b0e8a85bae10001bb">STG::CActor::MeshRender</a></div><div class="ttdeci">virtual void MeshRender()</div><div class="ttdef"><b>Definition:</b> STGActor.cpp:18</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a53a602092039333528f5b63894fa6666"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a53a602092039333528f5b63894fa6666">STG::CActor::GetBullets</a></div><div class="ttdeci">virtual std::vector&lt; std::shared_ptr&lt; CBullet &gt; &gt; GetBullets()</div><div class="ttdef"><b>Definition:</b> STGActor.h:46</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a5a7354d10c591abb92a994c832680805"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a5a7354d10c591abb92a994c832680805">STG::CActor::SetActive</a></div><div class="ttdeci">void SetActive(const float &amp;isActive)</div><div class="ttdef"><b>Definition:</b> STGActor.h:41</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a630a0aded2fb4202677473b5ffcc15bc"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a630a0aded2fb4202677473b5ffcc15bc">STG::CActor::m_pCollManager</a></div><div class="ttdeci">std::shared_ptr&lt; CCollisionManager &gt; m_pCollManager</div><div class="ttdef"><b>Definition:</b> STGActor.h:50</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a707c0ba62926de14121a9a4a99efef2e"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a707c0ba62926de14121a9a4a99efef2e">STG::CActor::m_TargetPositon</a></div><div class="ttdeci">D3DXVECTOR3 m_TargetPositon</div><div class="ttdef"><b>Definition:</b> STGActor.h:52</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a8210ff366bf2b786a82b7078f048ebbb"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a8210ff366bf2b786a82b7078f048ebbb">STG::CActor::LifeCalculation</a></div><div class="ttdeci">virtual void LifeCalculation(const std::function&lt; void(float &amp;)&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> STGActor.h:32</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_ad230846d873d68eb594f77e8390e90c8"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#ad230846d873d68eb594f77e8390e90c8">STG::CActor::m_pStaticMesh</a></div><div class="ttdeci">std::shared_ptr&lt; CDX9StaticMesh &gt; m_pStaticMesh</div><div class="ttdef"><b>Definition:</b> STGActor.h:49</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_adca86a138fd9af275352336848ebad27"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#adca86a138fd9af275352336848ebad27">STG::CActor::~CActor</a></div><div class="ttdeci">virtual ~CActor()</div><div class="ttdef"><b>Definition:</b> STGActor.cpp:13</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_af107a77a4e2a7ff06977d10ea19b9f63"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#af107a77a4e2a7ff06977d10ea19b9f63">STG::CActor::GetColl</a></div><div class="ttdeci">CCollisionManager * GetColl()</div><div class="ttdef"><b>Definition:</b> STGActor.h:35</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_af90190bb1fbd4d5bf70c84a098ce519f"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#af90190bb1fbd4d5bf70c84a098ce519f">STG::CActor::SetTargetPos</a></div><div class="ttdeci">void SetTargetPos(const D3DXVECTOR3 &amp;pos)</div><div class="ttdef"><b>Definition:</b> STGActor.h:38</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_af917eff96b6e99bd45fdc0255d03076e"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#af917eff96b6e99bd45fdc0255d03076e">STG::CActor::GetActive</a></div><div class="ttdeci">bool GetActive() const</div><div class="ttdef"><b>Definition:</b> STGActor.h:43</div></div>
+<div class="ttc" id="anamespace_s_t_g_html"><div class="ttname"><a href="namespace_s_t_g.html">STG</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

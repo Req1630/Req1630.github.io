@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/SoundManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_a7e3b021d6c65d18f140bdc84e03e579.html">XAudio2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SoundManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sound_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef C_SOUNDMANAGER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define C_SOUNDMANAGER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_audio2_play_b_g_m_8h.html">XAudio2Play\XAudio2PlayBGM.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_audio2_play_s_e_8h.html">XAudio2Play\XAudio2PlaySE.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_audio2_wave_load_8h.html">XAudio2WaveLoad/XAudio2WaveLoad.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ogg_load_8h.html">OggLoad/OggLoad.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;condition_variable&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_sound_manager.html">CSoundManager</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Soundデータが入っているディレクトリパス.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* FILE_PATH = <span class="stringliteral">&quot;Data\\Sound&quot;</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// バイナリデータが入ってるパス.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SETING_FAILE_PATH = <span class="stringliteral">&quot;Data\\Config\\Volume.bin&quot;</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_sound_manager_1_1_sound_volume.html">   27</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_sound_manager_1_1_sound_volume.html">SoundVolume</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_c_sound_manager_1_1_sound_volume.html#aa29b19a3a1d4f7603c7e1bbc74ede8b8">   29</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#aa29b19a3a1d4f7603c7e1bbc74ede8b8">MasterVolume</a> = 1.0f;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_sound_manager_1_1_sound_volume.html#ab4526a5e3da660766670d3ed01d2861c">   30</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#ab4526a5e3da660766670d3ed01d2861c">BGMVolume</a> = 1.0f;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_sound_manager_1_1_sound_volume.html#aa1ba9e2cabc1c2ecd0e8f1f58dcf9f1c">   31</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#aa1ba9e2cabc1c2ecd0e8f1f58dcf9f1c">SEVolume</a> = 1.0f;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_c_sound_manager.html#ae8358c75282bcceb23bd23ea9328e407">CSoundManager</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_sound_manager.html#a75bc0ad3cc339baeb29372632c02f5f2">~CSoundManager</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// インスタンスの取得.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_sound_manager.html">CSoundManager</a>* <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// サウンドデータ作成.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a9666c70442921299d8f3046787ae47fe">CreateSoundData</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 音量を読み込む.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#a299c6a7021e4f697eb3b5c4bb559aaab">LoadVolume</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 音量を保存する.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#a532b8f7580f1994f20a32f45c8ef5a72">SaveVolume</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// ゲーム全体のBGMの最大音量を取得.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html#a9b2c31e2ee974b0fd7814c01eeeac2a7">   48</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_c_sound_manager.html#a9b2c31e2ee974b0fd7814c01eeeac2a7">GetGameBGMVolume</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;<a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>.<a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#ab4526a5e3da660766670d3ed01d2861c">BGMVolume</a> * <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;<a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>.<a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#aa29b19a3a1d4f7603c7e1bbc74ede8b8">MasterVolume</a>; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 最大マスター音量取得</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html#aabf9aece952f7f0ba0cc1ebefcc43b4d">   50</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_c_sound_manager.html#aabf9aece952f7f0ba0cc1ebefcc43b4d">GetMasterVolume</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;<a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>.<a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#aa29b19a3a1d4f7603c7e1bbc74ede8b8">MasterVolume</a>; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 最大BGM音量取得</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html#a865cc0164ead125d4340123e9abd2dd7">   52</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_c_sound_manager.html#a865cc0164ead125d4340123e9abd2dd7">GetBGMVolume</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;<a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>.<a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#ab4526a5e3da660766670d3ed01d2861c">BGMVolume</a>; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// ゲーム全体のSEの最大音量を取得.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html#a248b4b7e1d0c1967435b893a9bea7e83">   54</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_c_sound_manager.html#a248b4b7e1d0c1967435b893a9bea7e83">GetGameSEVolume</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;<a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>.<a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#aa1ba9e2cabc1c2ecd0e8f1f58dcf9f1c">SEVolume</a> * <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;<a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>.<a class="code" href="struct_c_sound_manager_1_1_sound_volume.html#aa29b19a3a1d4f7603c7e1bbc74ede8b8">MasterVolume</a>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// BGMの再生位置を変更する.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// BGMソースの名前,時間,分,秒, オーバーに対応済み.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#aa42b1432bc313686dedc405306dbb9c9">BGMPointSeek</a>(<span class="keyword">const</span> std::string&amp; Name, <span class="keywordtype">int</span> Hour, <span class="keywordtype">int</span> Minutes, <span class="keywordtype">double</span> Second);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// BGMソースの現在フレーム(秒)をdouble値で返す関数.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="class_c_sound_manager.html#ad2941f1a5050a506603cf155dadd0279">GetBGMFrame</a>(<span class="keyword">const</span> std::string&amp; Name);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 指定BGMのスレッドが動いているかどうかを返す関数.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#a9d7e2fb21d7282a61bfc859dd3a241bf">GetMoveUpThread</a>(<span class="keyword">const</span> std::string&amp; Name);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// BGM再再生関数</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#adc9c41e0e667689a944e3dfaba05f120">AgainPlayBGM</a>(<span class="keyword">const</span> std::string Name);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//========================================================================================</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//  BGM</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//====</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// スレッドを作ってBGMを再生する関数(外部呼出).</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a6e6693de88423866b3f5d3c42c249c6d">ThreadPlayBGM</a>(<span class="keyword">const</span> std::string&amp; Name, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; LoopFlag = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// BGM停止関数.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#ae6f2e0b45b00bbc766e2f5b7bae3c9c6">StopBGM</a>(<span class="keyword">const</span> std::string Name);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// BGMフェードアウト関数.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a3ccddbbcaf85123b606ffec66a67be63">FadeOutBGM</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">bool</span> StopFadeIn = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// BGMフェードイン関数.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a017eb1bf9f19eb00ca082b53f4303401">FadeInBGM</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">bool</span> StopFadeOut = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// BGMの音量取得関数.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_c_sound_manager.html#a865cc0164ead125d4340123e9abd2dd7">GetBGMVolume</a>(<span class="keyword">const</span> std::string Name);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// BGMの音量セット関数.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#acdd98d40cc1221b754aad5fa544d4e75">SetBGMVolume</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">float</span> Volume);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// BGMを止めて、スレッドを放棄する関数.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#aa788dd79b3775927bc0ca39a1b1486d7">StopBGMThread</a>(<span class="keyword">const</span> std::string BGMName);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// 指定した名前のBGMスレッドが再生中かどうかを返す : 再生中ならtrue.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#af47617fad64ae9bb92ca5b0cf1c255db">GetIsPlayBGM</a>(<span class="keyword">const</span> std::string BGMName);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// BGMのピッチ設定.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#abc843686a26591bd6bdaa026b661e6b7">SetBGMPitch</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">float</span> Value);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//========================================================================================</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//  SE</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//====</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// SE再生関数.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a">PlaySE</a>(<span class="keyword">const</span> std::string&amp; Name);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// 多重再生しないSE再生関数.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a589970cca5e4693633972a052b874679">NoMultipleSEPlay</a>(<span class="keyword">const</span> std::string&amp; Name);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// SE停止関数.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a31b8ad3facb95b12dc4fe1c1d906d479">StopSE</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">size_t</span> ArrayNum);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// 同じ音源の全てのSEソース停止関数.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a6c6461fcd5d67d79cca2d09a5c6b63e3">StopAllSE</a>(<span class="keyword">const</span> std::string Name);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// SEのVoiceソース内最大音量を設定.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a0b740aa968c9b433c9f56e0b621f158f">SetSEVolume</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">float</span> Volume);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 指定した名前のSEが再生中かどうかを返す : 再生中ならtrue.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#ac429226051c40f55e1ebb32a2983d2d0">GetIsPlaySE</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">size_t</span> ArrayNum);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// 全体SE音量とは別のソース毎の音量をセット.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#af387f105b620d7dadd4428331303bd0e">SetAnotherSEVolume</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Volume);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// ソース内で設定されている音量を適用するかどうか.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#ae379945a16f43eefc28f827d03553e91">SetUseAnotherSEVolumeFlag</a>(<span class="keyword">const</span> std::string Name, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; bFlag);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// 解放処理関数.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#abccaea208bd166835bbea5c2f2116fce">Release</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">//========================================================================================</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// オプション画面用全ソースのサウンド調整.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">// マスター音量セット.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a77003980933a13ba0d6af77327fa7375">SetMasterVolume</a>(<span class="keywordtype">float</span>&amp; MasterVolume);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// BGM,SEの音量を変更するためのスレッドを立ち上げる.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a030fff9b548f376a902de1c44e481614">CreateChangeSoundVolumeThread</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// BGM,SEの音量を変更するためのスレッドを解放する.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#a227ed1037326d485f7f342540ca1c25e">ReleaseChangeSoundVolumeThread</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// 個別でSEの音量を変更できるようにする.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#a62d35acc75b28d6307f395a34905406d">SetSelectChangeSEVolumeFlag</a>(std::string&amp; sName, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; bFlag);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">//===========================================================</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// オプション用関数.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sound_manager.html#aefe1b2266278c63787a4759fc3219d70">StateChangeVolumeThread</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; bFlag);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// オプション用スレッド動作済みかどうかのフラグ取得関数.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html#a36cdc1700abaa04dac73bc216872f153">  122</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_sound_manager.html#a36cdc1700abaa04dac73bc216872f153">GetCreateOptionThread</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">GetInstance</a>()-&gt;m_isCreateThread; }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">  124</a></span>&#160;    <a class="code" href="struct_c_sound_manager_1_1_sound_volume.html">SoundVolume</a> <a class="code" href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">m_stSound</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// BGM再生関数.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> PlayBGM(<span class="keyword">const</span> std::string Name, <span class="keywordtype">bool</span>&amp; isEnd);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// BGMの音量を変更できるようにする.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> SetChangeBGMVolumeThread();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// SEの音量を変更できるようにする.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> SetChangeSEVolumeThread();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    std::thread m_SeekSound;    <span class="comment">// 音源シーク用スレッド.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// Wavデータクラスの箱.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    std::unordered_map &lt;std::string, std::shared_ptr&lt;clsXAudio2WaveLoad&gt;&gt; pWaveData;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">// Oggデータクラスの箱</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    std::unordered_map &lt;std::string, std::shared_ptr&lt;COggLoad&gt;&gt; m_pOggWavData;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// BGM用PlaySoundクラスの箱.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    std::unordered_map &lt;std::string, std::shared_ptr&lt;CXAudio2PlayBGM&gt;&gt; pBgmSource;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// BGMストリーミング再生用スレッド.</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    std::unordered_map &lt;std::string, std::thread&gt; pBGMThread;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">// スレッド内で再生しているBGMを停止するためのフラグ.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    std::unordered_map &lt;std::string, bool&gt; m_bisEndThread;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// スレッドリリース用関数.</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    std::unordered_map &lt;std::string, bool&gt; m_bisThreadRelease;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// 各スレッドID保持.</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    std::unordered_map &lt;std::string, std::thread::id&gt; InThreadID;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// BGMの名前リスト.</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// 解放時に必要.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::vector&lt;std::string&gt;    m_vsBGMNameList;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// SEの名前リスト.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// 解放時に必要.</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    std::vector&lt;std::string&gt;    m_vsSENameList;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// SE用PlaySoundクラスの箱.</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::unordered_map &lt;std::string, std::shared_ptr&lt;CXAudio2PlaySE&gt;&gt; pSeSource;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">// 終了用フラグ.</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">bool</span>    m_bEndGame;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// BGM,SEの作成が終わった後かどうか.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">bool</span>    m_bEndCreate;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//=================================================</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">// 以下オプション画面用.</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// 以下二つはスレッドで回さないとストリーミングの入れ込みを待ってからの変更になるため</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">// スレッドに回す.</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    std::thread m_BGMVolume;    <span class="comment">// オプション画面で、BGMの音量を同時に変更するためのスレッド.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    std::thread m_SEVolume;     <span class="comment">// オプション画面で、SEの音量を同時に変更するためのスレッド.</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">bool</span>    m_bMoveBGMThread;   <span class="comment">// オプション画面で、BGMを設定と同時に変更するためのスレッド用変数.</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">bool</span>    m_bMoveSEThread;    <span class="comment">// オプション画面で、Seを設定と同時に変更するためのスレッド用変数.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">bool</span>    m_isCreateThread;   <span class="comment">// 上の2つのスレッドが立ち上がっていうかどうか.</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">//------------------------------------------</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">// スレッドロック用.</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span>    m_bResumeBGMThread; <span class="comment">// 条件変数.</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">bool</span>    m_bResumeSEThread;  <span class="comment">// 条件変数.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    std::mutex m_BGMmtx;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    std::condition_variable m_BGMCv;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::mutex m_SEmtx;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::condition_variable m_SECv;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// コピー・ムーブコンストラクタ, 代入演算子の削除.</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="class_c_sound_manager.html#ae8358c75282bcceb23bd23ea9328e407">CSoundManager</a>(<span class="keyword">const</span> <a class="code" href="class_c_sound_manager.html">CSoundManager</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="class_c_sound_manager.html">CSoundManager</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="class_c_sound_manager.html">CSoundManager</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="class_c_sound_manager.html#ae8358c75282bcceb23bd23ea9328e407">CSoundManager</a>(<a class="code" href="class_c_sound_manager.html">CSoundManager</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="class_c_sound_manager.html">CSoundManager</a>&amp; operator = (<a class="code" href="class_c_sound_manager.html">CSoundManager</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;};</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #ifndef C_SOUNDMANAGER_H.</span></div>
+<div class="ttc" id="a_ogg_load_8h_html"><div class="ttname"><a href="_ogg_load_8h.html">OggLoad.h</a></div></div>
+<div class="ttc" id="a_x_audio2_play_b_g_m_8h_html"><div class="ttname"><a href="_x_audio2_play_b_g_m_8h.html">XAudio2PlayBGM.h</a></div></div>
+<div class="ttc" id="a_x_audio2_play_s_e_8h_html"><div class="ttname"><a href="_x_audio2_play_s_e_8h.html">XAudio2PlaySE.h</a></div></div>
+<div class="ttc" id="a_x_audio2_wave_load_8h_html"><div class="ttname"><a href="_x_audio2_wave_load_8h.html">XAudio2WaveLoad.h</a></div></div>
+<div class="ttc" id="aclass_c_sound_manager_html"><div class="ttname"><a href="class_c_sound_manager.html">CSoundManager</a></div><div class="ttdef"><b>Definition:</b> SoundManager.h:20</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a017eb1bf9f19eb00ca082b53f4303401"><div class="ttname"><a href="class_c_sound_manager.html#a017eb1bf9f19eb00ca082b53f4303401">CSoundManager::FadeInBGM</a></div><div class="ttdeci">static void FadeInBGM(const std::string Name, const bool StopFadeOut=true)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:256</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a030fff9b548f376a902de1c44e481614"><div class="ttname"><a href="class_c_sound_manager.html#a030fff9b548f376a902de1c44e481614">CSoundManager::CreateChangeSoundVolumeThread</a></div><div class="ttdeci">static void CreateChangeSoundVolumeThread()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:455</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a0b740aa968c9b433c9f56e0b621f158f"><div class="ttname"><a href="class_c_sound_manager.html#a0b740aa968c9b433c9f56e0b621f158f">CSoundManager::SetSEVolume</a></div><div class="ttdeci">static void SetSEVolume(const std::string Name, const float Volume)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:396</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a19134e728f19e7a4950200fa741a6805"><div class="ttname"><a href="class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805">CSoundManager::GetInstance</a></div><div class="ttdeci">static CSoundManager * GetInstance()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:37</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a227ed1037326d485f7f342540ca1c25e"><div class="ttname"><a href="class_c_sound_manager.html#a227ed1037326d485f7f342540ca1c25e">CSoundManager::ReleaseChangeSoundVolumeThread</a></div><div class="ttdeci">static bool ReleaseChangeSoundVolumeThread()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:517</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a248b4b7e1d0c1967435b893a9bea7e83"><div class="ttname"><a href="class_c_sound_manager.html#a248b4b7e1d0c1967435b893a9bea7e83">CSoundManager::GetGameSEVolume</a></div><div class="ttdeci">static float GetGameSEVolume()</div><div class="ttdef"><b>Definition:</b> SoundManager.h:54</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a299c6a7021e4f697eb3b5c4bb559aaab"><div class="ttname"><a href="class_c_sound_manager.html#a299c6a7021e4f697eb3b5c4bb559aaab">CSoundManager::LoadVolume</a></div><div class="ttdeci">static bool LoadVolume()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:105</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a31b8ad3facb95b12dc4fe1c1d906d479"><div class="ttname"><a href="class_c_sound_manager.html#a31b8ad3facb95b12dc4fe1c1d906d479">CSoundManager::StopSE</a></div><div class="ttdeci">static void StopSE(const std::string Name, const size_t ArrayNum)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:382</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a36cdc1700abaa04dac73bc216872f153"><div class="ttname"><a href="class_c_sound_manager.html#a36cdc1700abaa04dac73bc216872f153">CSoundManager::GetCreateOptionThread</a></div><div class="ttdeci">static const bool GetCreateOptionThread()</div><div class="ttdef"><b>Definition:</b> SoundManager.h:122</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a3ccddbbcaf85123b606ffec66a67be63"><div class="ttname"><a href="class_c_sound_manager.html#a3ccddbbcaf85123b606ffec66a67be63">CSoundManager::FadeOutBGM</a></div><div class="ttdeci">static void FadeOutBGM(const std::string Name, const bool StopFadeIn=true)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:237</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a532b8f7580f1994f20a32f45c8ef5a72"><div class="ttname"><a href="class_c_sound_manager.html#a532b8f7580f1994f20a32f45c8ef5a72">CSoundManager::SaveVolume</a></div><div class="ttdeci">static bool SaveVolume()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:117</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a589970cca5e4693633972a052b874679"><div class="ttname"><a href="class_c_sound_manager.html#a589970cca5e4693633972a052b874679">CSoundManager::NoMultipleSEPlay</a></div><div class="ttdeci">static void NoMultipleSEPlay(const std::string &amp;Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:370</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a62d35acc75b28d6307f395a34905406d"><div class="ttname"><a href="class_c_sound_manager.html#a62d35acc75b28d6307f395a34905406d">CSoundManager::SetSelectChangeSEVolumeFlag</a></div><div class="ttdeci">static void SetSelectChangeSEVolumeFlag(std::string &amp;sName, const bool &amp;bFlag)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:548</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a65a80fc3000c3c2012e229507af84f05"><div class="ttname"><a href="class_c_sound_manager.html#a65a80fc3000c3c2012e229507af84f05">CSoundManager::m_stSound</a></div><div class="ttdeci">SoundVolume m_stSound</div><div class="ttdef"><b>Definition:</b> SoundManager.h:124</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a6c6461fcd5d67d79cca2d09a5c6b63e3"><div class="ttname"><a href="class_c_sound_manager.html#a6c6461fcd5d67d79cca2d09a5c6b63e3">CSoundManager::StopAllSE</a></div><div class="ttdeci">static void StopAllSE(const std::string Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:389</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a6e6693de88423866b3f5d3c42c249c6d"><div class="ttname"><a href="class_c_sound_manager.html#a6e6693de88423866b3f5d3c42c249c6d">CSoundManager::ThreadPlayBGM</a></div><div class="ttdeci">static void ThreadPlayBGM(const std::string &amp;Name, const bool &amp;LoopFlag=true)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:170</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a75bc0ad3cc339baeb29372632c02f5f2"><div class="ttname"><a href="class_c_sound_manager.html#a75bc0ad3cc339baeb29372632c02f5f2">CSoundManager::~CSoundManager</a></div><div class="ttdeci">virtual ~CSoundManager()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:33</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a77003980933a13ba0d6af77327fa7375"><div class="ttname"><a href="class_c_sound_manager.html#a77003980933a13ba0d6af77327fa7375">CSoundManager::SetMasterVolume</a></div><div class="ttdeci">static void SetMasterVolume(float &amp;MasterVolume)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:448</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a865cc0164ead125d4340123e9abd2dd7"><div class="ttname"><a href="class_c_sound_manager.html#a865cc0164ead125d4340123e9abd2dd7">CSoundManager::GetBGMVolume</a></div><div class="ttdeci">static float GetBGMVolume()</div><div class="ttdef"><b>Definition:</b> SoundManager.h:52</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a9666c70442921299d8f3046787ae47fe"><div class="ttname"><a href="class_c_sound_manager.html#a9666c70442921299d8f3046787ae47fe">CSoundManager::CreateSoundData</a></div><div class="ttdeci">static void CreateSoundData()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:47</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a9b2c31e2ee974b0fd7814c01eeeac2a7"><div class="ttname"><a href="class_c_sound_manager.html#a9b2c31e2ee974b0fd7814c01eeeac2a7">CSoundManager::GetGameBGMVolume</a></div><div class="ttdeci">static float GetGameBGMVolume()</div><div class="ttdef"><b>Definition:</b> SoundManager.h:48</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_a9d7e2fb21d7282a61bfc859dd3a241bf"><div class="ttname"><a href="class_c_sound_manager.html#a9d7e2fb21d7282a61bfc859dd3a241bf">CSoundManager::GetMoveUpThread</a></div><div class="ttdeci">static bool GetMoveUpThread(const std::string &amp;Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:142</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_aa42b1432bc313686dedc405306dbb9c9"><div class="ttname"><a href="class_c_sound_manager.html#aa42b1432bc313686dedc405306dbb9c9">CSoundManager::BGMPointSeek</a></div><div class="ttdeci">static void BGMPointSeek(const std::string &amp;Name, int Hour, int Minutes, double Second)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:131</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_aa788dd79b3775927bc0ca39a1b1486d7"><div class="ttname"><a href="class_c_sound_manager.html#aa788dd79b3775927bc0ca39a1b1486d7">CSoundManager::StopBGMThread</a></div><div class="ttdeci">static bool StopBGMThread(const std::string BGMName)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:295</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_aabf9aece952f7f0ba0cc1ebefcc43b4d"><div class="ttname"><a href="class_c_sound_manager.html#aabf9aece952f7f0ba0cc1ebefcc43b4d">CSoundManager::GetMasterVolume</a></div><div class="ttdeci">static float GetMasterVolume()</div><div class="ttdef"><b>Definition:</b> SoundManager.h:50</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_abc843686a26591bd6bdaa026b661e6b7"><div class="ttname"><a href="class_c_sound_manager.html#abc843686a26591bd6bdaa026b661e6b7">CSoundManager::SetBGMPitch</a></div><div class="ttdeci">static void SetBGMPitch(const std::string Name, const float Value)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:345</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_abccaea208bd166835bbea5c2f2116fce"><div class="ttname"><a href="class_c_sound_manager.html#abccaea208bd166835bbea5c2f2116fce">CSoundManager::Release</a></div><div class="ttdeci">static void Release()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:424</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_ac429226051c40f55e1ebb32a2983d2d0"><div class="ttname"><a href="class_c_sound_manager.html#ac429226051c40f55e1ebb32a2983d2d0">CSoundManager::GetIsPlaySE</a></div><div class="ttdeci">static bool GetIsPlaySE(const std::string Name, const size_t ArrayNum)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:403</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_acdd98d40cc1221b754aad5fa544d4e75"><div class="ttname"><a href="class_c_sound_manager.html#acdd98d40cc1221b754aad5fa544d4e75">CSoundManager::SetBGMVolume</a></div><div class="ttdeci">static void SetBGMVolume(const std::string Name, const float Volume)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:287</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_ad2941f1a5050a506603cf155dadd0279"><div class="ttname"><a href="class_c_sound_manager.html#ad2941f1a5050a506603cf155dadd0279">CSoundManager::GetBGMFrame</a></div><div class="ttdeci">static double GetBGMFrame(const std::string &amp;Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:136</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_adc9c41e0e667689a944e3dfaba05f120"><div class="ttname"><a href="class_c_sound_manager.html#adc9c41e0e667689a944e3dfaba05f120">CSoundManager::AgainPlayBGM</a></div><div class="ttdeci">static void AgainPlayBGM(const std::string Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:155</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_ae379945a16f43eefc28f827d03553e91"><div class="ttname"><a href="class_c_sound_manager.html#ae379945a16f43eefc28f827d03553e91">CSoundManager::SetUseAnotherSEVolumeFlag</a></div><div class="ttdeci">static void SetUseAnotherSEVolumeFlag(const std::string Name, const bool &amp;bFlag)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:417</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_ae6f2e0b45b00bbc766e2f5b7bae3c9c6"><div class="ttname"><a href="class_c_sound_manager.html#ae6f2e0b45b00bbc766e2f5b7bae3c9c6">CSoundManager::StopBGM</a></div><div class="ttdeci">static void StopBGM(const std::string Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:222</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_ae8358c75282bcceb23bd23ea9328e407"><div class="ttname"><a href="class_c_sound_manager.html#ae8358c75282bcceb23bd23ea9328e407">CSoundManager::CSoundManager</a></div><div class="ttdeci">CSoundManager()</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:11</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_aefe1b2266278c63787a4759fc3219d70"><div class="ttname"><a href="class_c_sound_manager.html#aefe1b2266278c63787a4759fc3219d70">CSoundManager::StateChangeVolumeThread</a></div><div class="ttdeci">static void StateChangeVolumeThread(const bool &amp;bFlag)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:212</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_af387f105b620d7dadd4428331303bd0e"><div class="ttname"><a href="class_c_sound_manager.html#af387f105b620d7dadd4428331303bd0e">CSoundManager::SetAnotherSEVolume</a></div><div class="ttdeci">static void SetAnotherSEVolume(const std::string Name, const float &amp;Volume)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:410</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_af47617fad64ae9bb92ca5b0cf1c255db"><div class="ttname"><a href="class_c_sound_manager.html#af47617fad64ae9bb92ca5b0cf1c255db">CSoundManager::GetIsPlayBGM</a></div><div class="ttdeci">static bool GetIsPlayBGM(const std::string BGMName)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:329</div></div>
+<div class="ttc" id="aclass_c_sound_manager_html_afad95ce9fcef4a2822300710ccdc113a"><div class="ttname"><a href="class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a">CSoundManager::PlaySE</a></div><div class="ttdeci">static void PlaySE(const std::string &amp;Name)</div><div class="ttdef"><b>Definition:</b> SoundManager.cpp:357</div></div>
+<div class="ttc" id="astruct_c_sound_manager_1_1_sound_volume_html"><div class="ttname"><a href="struct_c_sound_manager_1_1_sound_volume.html">CSoundManager::SoundVolume</a></div><div class="ttdef"><b>Definition:</b> SoundManager.h:28</div></div>
+<div class="ttc" id="astruct_c_sound_manager_1_1_sound_volume_html_aa1ba9e2cabc1c2ecd0e8f1f58dcf9f1c"><div class="ttname"><a href="struct_c_sound_manager_1_1_sound_volume.html#aa1ba9e2cabc1c2ecd0e8f1f58dcf9f1c">CSoundManager::SoundVolume::SEVolume</a></div><div class="ttdeci">float SEVolume</div><div class="ttdef"><b>Definition:</b> SoundManager.h:31</div></div>
+<div class="ttc" id="astruct_c_sound_manager_1_1_sound_volume_html_aa29b19a3a1d4f7603c7e1bbc74ede8b8"><div class="ttname"><a href="struct_c_sound_manager_1_1_sound_volume.html#aa29b19a3a1d4f7603c7e1bbc74ede8b8">CSoundManager::SoundVolume::MasterVolume</a></div><div class="ttdeci">float MasterVolume</div><div class="ttdef"><b>Definition:</b> SoundManager.h:29</div></div>
+<div class="ttc" id="astruct_c_sound_manager_1_1_sound_volume_html_ab4526a5e3da660766670d3ed01d2861c"><div class="ttname"><a href="struct_c_sound_manager_1_1_sound_volume.html#ab4526a5e3da660766670d3ed01d2861c">CSoundManager::SoundVolume::BGMVolume</a></div><div class="ttdeci">float BGMVolume</div><div class="ttdef"><b>Definition:</b> SoundManager.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

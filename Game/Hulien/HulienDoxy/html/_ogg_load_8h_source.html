@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/OggLoad/OggLoad.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_a7e3b021d6c65d18f140bdc84e03e579.html">XAudio2</a></li><li class="navelem"><a class="el" href="dir_314d06783b4a00d57e00b73a1f83f107.html">OggLoad</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">OggLoad.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_ogg_load_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OGGLOAD_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OGGLOAD_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\XAudio2.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vorbis\vorbisfile.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespace_ogg_operator_n_s.html">    8</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ogg_operator_n_s.html">OggOperatorNS</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_ogg_operator_n_s.html#aae848a4a3622be1c01c949dd19d5c10c">   10</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="namespace_ogg_operator_n_s.html#aae848a4a3622be1c01c949dd19d5c10c">requestSize</a> = 4096;  <span class="comment">// 読み込み単位</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// 一度にメモリに読み込むファイルサイズ 1M</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="namespace_ogg_operator_n_s.html#a11c436452d49163e16ff95f13ca3c0f6">   12</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="namespace_ogg_operator_n_s.html#a11c436452d49163e16ff95f13ca3c0f6">pcmSize</a> = 1024 * 1000;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_ogg_load.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_ogg_load.html">COggLoad</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    OggVorbis_File m_OggVF;         <span class="comment">// OggVorbis構造体.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    FILE *m_pFile;                  <span class="comment">// ファイルを入れる変数.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> m_isReady;                 <span class="comment">// ファイルがオープン済みならtrue.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    std::string m_sFileName;        <span class="comment">// ファイル名.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_ChannelNumber;   <span class="comment">// WAVEFORMATEXに渡すチャンネル.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_SamplingRate;    <span class="comment">// WAVEFORMATEXに渡すサンプリングレート.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> m_BitRate;         <span class="comment">// WAVEFORMATEXに渡すビットレート.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//----------------------------------</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// SEオンリー用.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//----</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// SEファイルのサイズ</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    DWORD seFileSize;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// SEファイルの読み込み用バッファー</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    BYTE* seWaveBuffer;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    WAVEFORMATEX* m_WaveFormat;     <span class="comment">// WAVEFORMATEX構造体.      </span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    DWORD m_Size;                   <span class="comment">// Wavファイルのサイズを入れる変数. </span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// セグメントデータ取得</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> GetSegment(<span class="keywordtype">char</span>* buffer, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> size, <span class="keywordtype">int</span>* writeSize, <span class="keywordtype">bool</span>* isEnd);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">bool</span> CreateWaveFormatEx();                  <span class="comment">// Wavフォーマットデータ作成.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> SetFileName(std::string sName);        <span class="comment">// ファイルネームセット.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> SetChannelNumber(<span class="keywordtype">int</span> value) { m_ChannelNumber = value; }   <span class="comment">// WAVEFORMATEXに渡すチャンネルセット関数.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> SetSamplingRate(<span class="keywordtype">int</span> value) { m_SamplingRate = value; }     <span class="comment">// WAVEFORMATEXに渡すサンプリングレートセット関数.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> SetBitRate(<span class="keywordtype">int</span> value) { m_BitRate = value; }               <span class="comment">// WAVEFORMATEXに渡すビットレートセット関数.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_ogg_load.html#a27afd752089bf409adf0eaeb06b9fd76">COggLoad</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_ogg_load.html#a6d9b76f8cfc54168e6137d908e28d95f">~COggLoad</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// oggデータ作成.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#abfa641b3952b47c7a6f3cfba514bb874">CreateOggData</a>(std::string sFileName,<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isSE = <span class="keyword">false</span>, <span class="keywordtype">bool</span> isBuffered = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// ファイルがオープン済みかどうかを取得.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_ogg_load.html#adfb883a43cbe893157741be401151ef7">   53</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_ogg_load.html#adfb883a43cbe893157741be401151ef7">GetReady</a>() { <span class="keywordflow">return</span> m_isReady; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// ファイルの名前を取得.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_ogg_load.html#a7d853742ccbb0fbba166ea6665d9ce86">   55</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_ogg_load.html#a7d853742ccbb0fbba166ea6665d9ce86">GetFileName</a>() { <span class="keywordflow">return</span> m_sFileName.c_str(); }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;     </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// ファイルを開く</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#ab25c3a6f165a9651e12e9e85dfd63275">Open</a>(std::string sFileName,<span class="keywordtype">bool</span> isBuffered = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// ファイルを閉じる</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#a01277d1490bc1608eed9e5c4c4122fc2">Close</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// ファイルを読み込む</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#ada93e26b09c836426ad4aac0ed1365a3">Read</a>(BYTE* buffer, DWORD size, DWORD* readSize);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// ファイルに書き込む</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#a29c443632c44fbae21cebba23f4ccff4">Write</a>(UINT writeSize, BYTE* data, UINT wroteSize);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// チャンクデータを読み込み(細切れにでーたを読みこみ)</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#a0054aaf78182db4b7fc6a2342c265f35">ReadChunk</a>(BYTE** buffer, <span class="keywordtype">int</span> bufferCount, <span class="keyword">const</span> <span class="keywordtype">int</span> len, <span class="keywordtype">int</span>* readSize);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// サイズを取得</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    DWORD <a class="code" href="class_c_ogg_load.html#a1d053ff03d4fd6d505a01a4a793b2259">GetSize</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// ファイルの位置をリセット</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#a2ede1e0ee0d94fbc9cb7a945c43d29ca">ResetFile</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// ファイルの位置を指定して進める.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    HRESULT <a class="code" href="class_c_ogg_load.html#a121bdb3d9f4527d1eec2718592feb4cc">SeekFile</a>(<span class="keywordtype">double</span>&amp; Second);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// ファイルの現在位置(秒)を返す.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_c_ogg_load.html#a483e1285142eeab1a2f7bde3fc254683">GetFileFrame</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_ogg_load.html#ab9a347b27010560fb2b7502a355a1527">   76</a></span>&#160;    WAVEFORMATEX* <a class="code" href="class_c_ogg_load.html#ab9a347b27010560fb2b7502a355a1527">GetFormat</a>() { <span class="keywordflow">return</span> m_WaveFormat; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//------------------------------------</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// SEオンリー.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//----</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_c_ogg_load.html#a58cd180071c286748e291836b15d8fda">   80</a></span>&#160;    BYTE* <a class="code" href="class_c_ogg_load.html#a58cd180071c286748e291836b15d8fda">GetSEWaveBuffer</a>() { <span class="keywordflow">return</span> seWaveBuffer; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_c_ogg_load.html#af5df906827a7faff4f1362fff6a4c164">   81</a></span>&#160;    DWORD <a class="code" href="class_c_ogg_load.html#af5df906827a7faff4f1362fff6a4c164">GetSEFileSize</a>() { <span class="keywordflow">return</span> seFileSize; }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #ifndef OGGLOAD_H.</span></div>
+<div class="ttc" id="aclass_c_ogg_load_html"><div class="ttname"><a href="class_c_ogg_load.html">COggLoad</a></div><div class="ttdef"><b>Definition:</b> OggLoad.h:15</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a0054aaf78182db4b7fc6a2342c265f35"><div class="ttname"><a href="class_c_ogg_load.html#a0054aaf78182db4b7fc6a2342c265f35">COggLoad::ReadChunk</a></div><div class="ttdeci">HRESULT ReadChunk(BYTE **buffer, int bufferCount, const int len, int *readSize)</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:255</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a01277d1490bc1608eed9e5c4c4122fc2"><div class="ttname"><a href="class_c_ogg_load.html#a01277d1490bc1608eed9e5c4c4122fc2">COggLoad::Close</a></div><div class="ttdeci">HRESULT Close()</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:273</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a121bdb3d9f4527d1eec2718592feb4cc"><div class="ttname"><a href="class_c_ogg_load.html#a121bdb3d9f4527d1eec2718592feb4cc">COggLoad::SeekFile</a></div><div class="ttdeci">HRESULT SeekFile(double &amp;Second)</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:126</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a1d053ff03d4fd6d505a01a4a793b2259"><div class="ttname"><a href="class_c_ogg_load.html#a1d053ff03d4fd6d505a01a4a793b2259">COggLoad::GetSize</a></div><div class="ttdeci">DWORD GetSize()</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:108</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a27afd752089bf409adf0eaeb06b9fd76"><div class="ttname"><a href="class_c_ogg_load.html#a27afd752089bf409adf0eaeb06b9fd76">COggLoad::COggLoad</a></div><div class="ttdeci">COggLoad()</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:9</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a29c443632c44fbae21cebba23f4ccff4"><div class="ttname"><a href="class_c_ogg_load.html#a29c443632c44fbae21cebba23f4ccff4">COggLoad::Write</a></div><div class="ttdeci">HRESULT Write(UINT writeSize, BYTE *data, UINT wroteSize)</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:294</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a2ede1e0ee0d94fbc9cb7a945c43d29ca"><div class="ttname"><a href="class_c_ogg_load.html#a2ede1e0ee0d94fbc9cb7a945c43d29ca">COggLoad::ResetFile</a></div><div class="ttdeci">HRESULT ResetFile()</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:117</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a483e1285142eeab1a2f7bde3fc254683"><div class="ttname"><a href="class_c_ogg_load.html#a483e1285142eeab1a2f7bde3fc254683">COggLoad::GetFileFrame</a></div><div class="ttdeci">double GetFileFrame()</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:141</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a58cd180071c286748e291836b15d8fda"><div class="ttname"><a href="class_c_ogg_load.html#a58cd180071c286748e291836b15d8fda">COggLoad::GetSEWaveBuffer</a></div><div class="ttdeci">BYTE * GetSEWaveBuffer()</div><div class="ttdef"><b>Definition:</b> OggLoad.h:80</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a6d9b76f8cfc54168e6137d908e28d95f"><div class="ttname"><a href="class_c_ogg_load.html#a6d9b76f8cfc54168e6137d908e28d95f">COggLoad::~COggLoad</a></div><div class="ttdeci">virtual ~COggLoad()</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:18</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_a7d853742ccbb0fbba166ea6665d9ce86"><div class="ttname"><a href="class_c_ogg_load.html#a7d853742ccbb0fbba166ea6665d9ce86">COggLoad::GetFileName</a></div><div class="ttdeci">const char * GetFileName()</div><div class="ttdef"><b>Definition:</b> OggLoad.h:55</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_ab25c3a6f165a9651e12e9e85dfd63275"><div class="ttname"><a href="class_c_ogg_load.html#ab25c3a6f165a9651e12e9e85dfd63275">COggLoad::Open</a></div><div class="ttdeci">HRESULT Open(std::string sFileName, bool isBuffered=false)</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:55</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_ab9a347b27010560fb2b7502a355a1527"><div class="ttname"><a href="class_c_ogg_load.html#ab9a347b27010560fb2b7502a355a1527">COggLoad::GetFormat</a></div><div class="ttdeci">WAVEFORMATEX * GetFormat()</div><div class="ttdef"><b>Definition:</b> OggLoad.h:76</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_abfa641b3952b47c7a6f3cfba514bb874"><div class="ttname"><a href="class_c_ogg_load.html#abfa641b3952b47c7a6f3cfba514bb874">COggLoad::CreateOggData</a></div><div class="ttdeci">HRESULT CreateOggData(std::string sFileName, const bool &amp;isSE=false, bool isBuffered=false)</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:25</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_ada93e26b09c836426ad4aac0ed1365a3"><div class="ttname"><a href="class_c_ogg_load.html#ada93e26b09c836426ad4aac0ed1365a3">COggLoad::Read</a></div><div class="ttdeci">HRESULT Read(BYTE *buffer, DWORD size, DWORD *readSize)</div><div class="ttdef"><b>Definition:</b> OggLoad.cpp:148</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_adfb883a43cbe893157741be401151ef7"><div class="ttname"><a href="class_c_ogg_load.html#adfb883a43cbe893157741be401151ef7">COggLoad::GetReady</a></div><div class="ttdeci">bool GetReady()</div><div class="ttdef"><b>Definition:</b> OggLoad.h:53</div></div>
+<div class="ttc" id="aclass_c_ogg_load_html_af5df906827a7faff4f1362fff6a4c164"><div class="ttname"><a href="class_c_ogg_load.html#af5df906827a7faff4f1362fff6a4c164">COggLoad::GetSEFileSize</a></div><div class="ttdeci">DWORD GetSEFileSize()</div><div class="ttdef"><b>Definition:</b> OggLoad.h:81</div></div>
+<div class="ttc" id="anamespace_ogg_operator_n_s_html"><div class="ttname"><a href="namespace_ogg_operator_n_s.html">OggOperatorNS</a></div><div class="ttdef"><b>Definition:</b> OggLoad.h:9</div></div>
+<div class="ttc" id="anamespace_ogg_operator_n_s_html_a11c436452d49163e16ff95f13ca3c0f6"><div class="ttname"><a href="namespace_ogg_operator_n_s.html#a11c436452d49163e16ff95f13ca3c0f6">OggOperatorNS::pcmSize</a></div><div class="ttdeci">const int pcmSize</div><div class="ttdef"><b>Definition:</b> OggLoad.h:12</div></div>
+<div class="ttc" id="anamespace_ogg_operator_n_s_html_aae848a4a3622be1c01c949dd19d5c10c"><div class="ttname"><a href="namespace_ogg_operator_n_s.html#aae848a4a3622be1c01c949dd19d5c10c">OggOperatorNS::requestSize</a></div><div class="ttdeci">const unsigned int requestSize</div><div class="ttdef"><b>Definition:</b> OggLoad.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

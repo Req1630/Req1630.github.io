@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Sprite/BlendSprite/BlendSprite.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_5c15922cfdfce904fe14889b7730f5cf.html">Sprite</a></li><li class="navelem"><a class="el" href="dir_3d1a14c7962c1c90875955229e5085c5.html">BlendSprite</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BlendSprite.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_blend_sprite_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BLEND_SPRITE_UI_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BLEND_SPRITE_UI_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\Common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\..\Shader\SpriteShader\SpriteShader.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;..\SpriteState.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666">    8</a></span>&#160;<span class="keyword">enum</span> enBLEND_MODE</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21">   10</a></span>&#160;    <a class="code" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21">EBLEND_MODE_None</a> = -1,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b">   12</a></span>&#160;    <a class="code" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b">EBLEND_MODE_Normal</a>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22">   13</a></span>&#160;    <a class="code" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22">EBLEND_MODE_HardLight</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32">   15</a></span>&#160;    <a class="code" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32">EBLEND_MODE_Max</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666">EBLEND_MODE</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_blend_sprite.html">CBlendSprite</a> : <span class="keyword">public</span> <a class="code" href="class_c_common.html">CCommon</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SHADER_NAME = <span class="stringliteral">&quot;Data\\Shader\\BlendSprite.hlsl&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// コンスタントバッファのアプリ側の定義.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//※シェーダー内のコンスタントバッファと一致している必要あり.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">struct </span>C_BUFFER</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">ALIGN16</a> D3DXMATRIX  mW;             <span class="comment">// ワールド行列.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">ALIGN16</a> D3DXMATRIX  mWVP;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">ALIGN16</a> D3DXVECTOR4 vColor;         <span class="comment">// カラー(RGBAの型に合わせる).</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">ALIGN16</a> D3DXVECTOR2 vUV;            <span class="comment">// UV座標.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">ALIGN16</a> D3DXVECTOR2 vViewPort;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 頂点の構造体.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">struct </span>VERTEX</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        D3DXVECTOR3 Pos;    <span class="comment">// 頂点座標.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        D3DXVECTOR2 Tex;    <span class="comment">// テクスチャ座標.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html">   40</a></span>&#160;    <span class="keyword">struct </span>stPSShaderName</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html#a35039f8d9fd9b446c27e4fe5865961f9">   42</a></span>&#160;        <a class="code" href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666">EBLEND_MODE</a> <a class="code" href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html#a35039f8d9fd9b446c27e4fe5865961f9">enBlendMode</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html#a0736b91ce8cef0623080b75db221dba1">   43</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html#a0736b91ce8cef0623080b75db221dba1">entryName</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html">SPSShaderName</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_c_blend_sprite.html#a04c6cec1e65a27f60c466b7477ebda07">CBlendSprite</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_c_blend_sprite.html#a04c6cec1e65a27f60c466b7477ebda07">CBlendSprite</a>(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        ID3D11Device* pDevice11,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        ID3D11DeviceContext* pContext11,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_s_sprite_state.html">SSpriteState</a>&amp; pSs);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_blend_sprite.html#a8805366267a987105969c0b8fb83fe1a">~CBlendSprite</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// 初期化.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    HRESULT <a class="code" href="class_c_blend_sprite.html#a8ff6e8c5f70d84ecf8471e2464041dd2">Init</a>(</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ID3D11Device* pDevice11,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        ID3D11DeviceContext* pContext11,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_s_sprite_state.html">SSpriteState</a>&amp; pSs);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 初期化.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    HRESULT <a class="code" href="class_c_blend_sprite.html#a8ff6e8c5f70d84ecf8471e2464041dd2">Init</a>(</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        ID3D11Device* pDevice11,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        ID3D11DeviceContext* pContext11 );</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// 解放.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#ad7cf996dd07f6122eb3b38641cb8c6d3">Release</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// レンダリング.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 3D空間に配置.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#a19f0ab91de0690db0a06a659b09bfde2">Render</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isBillboard = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// UIとして配置.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#a12dbba2dbad08a8bcb1759bb2d34baef">RenderUI</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// アニメーション番号の設定.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#a93c2977f4ae94c89522847fb50730c5a">SetAnimNumber</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animNumber);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// フレームタイムの設定(何フレームでアニメーションするか).</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#a115b4a01fbc8a2ffb31c47a818420398">   78</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#a115b4a01fbc8a2ffb31c47a818420398">SetFrameTime</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; frameTime) { m_pSpriteData-&gt;FrameTime = frameTime; }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// アニメーションを再生する.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#aff3939d07f0a98fa2339c4449f860266">   80</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#aff3939d07f0a98fa2339c4449f860266">PlayAnimation</a>() { m_pSpriteData-&gt;IsAnimation = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// 表示画像サイズの取得.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#a024b1751d0b1bac1b7e63b10061407e4">   82</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_blend_sprite.html#a024b1751d0b1bac1b7e63b10061407e4">GetSpriteSize</a>() { <span class="keywordflow">return</span> { m_pSpriteData-&gt;SState.Disp.w, m_pSpriteData-&gt;SState.Disp.h }; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// 描画座標の取得.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#a57929c93f0065fd3f7d5d8ba463393c8">   84</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_blend_sprite.html#a57929c93f0065fd3f7d5d8ba463393c8">GetRenderPos</a>() { <span class="keywordflow">return</span> m_pSpriteData-&gt;SState.vPos; }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// スプライト情報の設定.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#aef51d549becd9d45ed0dc1a015698707">   86</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#aef51d549becd9d45ed0dc1a015698707">SetSpriteData</a>( <span class="keyword">const</span> std::shared_ptr&lt;SSpriteData&gt;&amp; pSpriteData )</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        m_pSpriteData = pSpriteData;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="class_c_common.html#aae821a41c6dbdaa1c56a66465206ed4d">m_vPos</a> = m_pSpriteData-&gt;SState.vPos;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// スプライト情報の取得.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#ab7a8bdbc0b30f2efd9c41608984f6644">   92</a></span>&#160;    std::shared_ptr&lt;SSpriteData&gt; <a class="code" href="class_c_blend_sprite.html#ab7a8bdbc0b30f2efd9c41608984f6644">GetSpriteData</a>(){ <span class="keywordflow">return</span> m_pSpriteData; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// 規定色のテクスチャ情報のセット.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_blend_sprite.html#acfc85996efcb290c593fb34b820c4cfc">   95</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_blend_sprite.html#acfc85996efcb290c593fb34b820c4cfc">SetDestTexture</a>( ID3D11ShaderResourceView* pDestTexture ){ m_pDestTexture = pDestTexture; }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// シェーダーの作成.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    HRESULT InitShader();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// モデル作成.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    HRESULT InitModel();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// テクスチャ作成.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    HRESULT CreateTexture( <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, ID3D11ShaderResourceView** pTexture );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// サンプラの作成.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    HRESULT InitSample();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    D3DXMATRIX CreateWorldMatrix();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// UV座標に変換.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    D3DXVECTOR2 ConvertIntoUV();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// アニメーションの更新.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> AnimUpdate();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 頂点情報の作成.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> CreateVERTEX(</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; w, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; h,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; u, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; v);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// テクスチャの比率を取得.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> myGcd(<span class="keywordtype">int</span> t, <span class="keywordtype">int</span> t2)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (t2 == 0) <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">return</span> myGcd(t2, t % t2);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    std::shared_ptr&lt;SSpriteData&gt;    m_pSpriteData;  <span class="comment">// スプライト情報.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    ID3D11InputLayout*              m_pVertexLayout;    <span class="comment">// 頂点レイアウト.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    ID3D11VertexShader*             m_pVertexShader;    <span class="comment">// 頂点シェーダー 3D描画用に使用.</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    ID3D11VertexShader*             m_pVertexShaderUI;  <span class="comment">// 頂点シェーダー UD描画用に使用.</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::vector&lt;ID3D11PixelShader*&gt; m_pPixelShaderList; <span class="comment">// ピクセルシェーダー.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    ID3D11SamplerState*             m_pSampleLinear;    <span class="comment">// サンプラ:テクスチャに各種フィルタをかける.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    ID3D11Buffer*                   m_pConstantBuffer;  <span class="comment">// コンスタントバッファ.</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    ID3D11ShaderResourceView*       m_pDestTexture;     <span class="comment">// 規定色のSRV.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="struct_c_sprite_shader_1_1_v_e_r_t_e_x.html">CSpriteShader::VERTEX</a>           m_VerticesUI[4];    <span class="comment">// 頂点作成用.</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef BLEND_SPRITE_UI_H.</span></div>
+<div class="ttc" id="a_blend_sprite_8h_html_af9fa2049de1e100457339102e8987666"><div class="ttname"><a href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666">EBLEND_MODE</a></div><div class="ttdeci">EBLEND_MODE</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:9</div></div>
+<div class="ttc" id="a_blend_sprite_8h_html_af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32"><div class="ttname"><a href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a2cd2b015ba00eb62d6ac6fbd431dec32">EBLEND_MODE_Max</a></div><div class="ttdeci">@ EBLEND_MODE_Max</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:15</div></div>
+<div class="ttc" id="a_blend_sprite_8h_html_af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b"><div class="ttname"><a href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a3c451b9f9be5faaea3a715d1ca3aeb9b">EBLEND_MODE_Normal</a></div><div class="ttdeci">@ EBLEND_MODE_Normal</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:12</div></div>
+<div class="ttc" id="a_blend_sprite_8h_html_af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22"><div class="ttname"><a href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a4e215dc5c0fb311a1e2594fd400a1b22">EBLEND_MODE_HardLight</a></div><div class="ttdeci">@ EBLEND_MODE_HardLight</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:13</div></div>
+<div class="ttc" id="a_blend_sprite_8h_html_af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21"><div class="ttname"><a href="_blend_sprite_8h.html#af9fa2049de1e100457339102e8987666a66c7decf230eed5fc871d03fb4c85e21">EBLEND_MODE_None</a></div><div class="ttdeci">@ EBLEND_MODE_None</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:10</div></div>
+<div class="ttc" id="a_global_8h_html_af95298b7181f9b9484f4b76e794c8d25"><div class="ttname"><a href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">ALIGN16</a></div><div class="ttdeci">#define ALIGN16</div><div class="ttdef"><b>Definition:</b> Global.h:55</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html"><div class="ttname"><a href="class_c_blend_sprite.html">CBlendSprite</a></div><div class="ttdef"><b>Definition:</b> BlendSprite.h:19</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a024b1751d0b1bac1b7e63b10061407e4"><div class="ttname"><a href="class_c_blend_sprite.html#a024b1751d0b1bac1b7e63b10061407e4">CBlendSprite::GetSpriteSize</a></div><div class="ttdeci">D3DXVECTOR2 GetSpriteSize()</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:82</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a04c6cec1e65a27f60c466b7477ebda07"><div class="ttname"><a href="class_c_blend_sprite.html#a04c6cec1e65a27f60c466b7477ebda07">CBlendSprite::CBlendSprite</a></div><div class="ttdeci">CBlendSprite()</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:14</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a115b4a01fbc8a2ffb31c47a818420398"><div class="ttname"><a href="class_c_blend_sprite.html#a115b4a01fbc8a2ffb31c47a818420398">CBlendSprite::SetFrameTime</a></div><div class="ttdeci">void SetFrameTime(const int &amp;frameTime)</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:78</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a12dbba2dbad08a8bcb1759bb2d34baef"><div class="ttname"><a href="class_c_blend_sprite.html#a12dbba2dbad08a8bcb1759bb2d34baef">CBlendSprite::RenderUI</a></div><div class="ttdeci">void RenderUI()</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:416</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a19f0ab91de0690db0a06a659b09bfde2"><div class="ttname"><a href="class_c_blend_sprite.html#a19f0ab91de0690db0a06a659b09bfde2">CBlendSprite::Render</a></div><div class="ttdeci">void Render(const bool &amp;isBillboard=false)</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:332</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a57929c93f0065fd3f7d5d8ba463393c8"><div class="ttname"><a href="class_c_blend_sprite.html#a57929c93f0065fd3f7d5d8ba463393c8">CBlendSprite::GetRenderPos</a></div><div class="ttdeci">D3DXVECTOR3 GetRenderPos()</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:84</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a8805366267a987105969c0b8fb83fe1a"><div class="ttname"><a href="class_c_blend_sprite.html#a8805366267a987105969c0b8fb83fe1a">CBlendSprite::~CBlendSprite</a></div><div class="ttdeci">virtual ~CBlendSprite()</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:39</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a8ff6e8c5f70d84ecf8471e2464041dd2"><div class="ttname"><a href="class_c_blend_sprite.html#a8ff6e8c5f70d84ecf8471e2464041dd2">CBlendSprite::Init</a></div><div class="ttdeci">HRESULT Init(ID3D11Device *pDevice11, ID3D11DeviceContext *pContext11, const char *fileName, const SSpriteState &amp;pSs)</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:45</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_a93c2977f4ae94c89522847fb50730c5a"><div class="ttname"><a href="class_c_blend_sprite.html#a93c2977f4ae94c89522847fb50730c5a">CBlendSprite::SetAnimNumber</a></div><div class="ttdeci">void SetAnimNumber(const int &amp;animNumber)</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:503</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_ab7a8bdbc0b30f2efd9c41608984f6644"><div class="ttname"><a href="class_c_blend_sprite.html#ab7a8bdbc0b30f2efd9c41608984f6644">CBlendSprite::GetSpriteData</a></div><div class="ttdeci">std::shared_ptr&lt; SSpriteData &gt; GetSpriteData()</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:92</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_acfc85996efcb290c593fb34b820c4cfc"><div class="ttname"><a href="class_c_blend_sprite.html#acfc85996efcb290c593fb34b820c4cfc">CBlendSprite::SetDestTexture</a></div><div class="ttdeci">void SetDestTexture(ID3D11ShaderResourceView *pDestTexture)</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:95</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_ad7cf996dd07f6122eb3b38641cb8c6d3"><div class="ttname"><a href="class_c_blend_sprite.html#ad7cf996dd07f6122eb3b38641cb8c6d3">CBlendSprite::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition:</b> BlendSprite.cpp:75</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_aef51d549becd9d45ed0dc1a015698707"><div class="ttname"><a href="class_c_blend_sprite.html#aef51d549becd9d45ed0dc1a015698707">CBlendSprite::SetSpriteData</a></div><div class="ttdeci">void SetSpriteData(const std::shared_ptr&lt; SSpriteData &gt; &amp;pSpriteData)</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:86</div></div>
+<div class="ttc" id="aclass_c_blend_sprite_html_aff3939d07f0a98fa2339c4449f860266"><div class="ttname"><a href="class_c_blend_sprite.html#aff3939d07f0a98fa2339c4449f860266">CBlendSprite::PlayAnimation</a></div><div class="ttdeci">void PlayAnimation()</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:80</div></div>
+<div class="ttc" id="aclass_c_common_html"><div class="ttname"><a href="class_c_common.html">CCommon</a></div><div class="ttdef"><b>Definition:</b> Common.h:8</div></div>
+<div class="ttc" id="aclass_c_common_html_aae821a41c6dbdaa1c56a66465206ed4d"><div class="ttname"><a href="class_c_common.html#aae821a41c6dbdaa1c56a66465206ed4d">CCommon::m_vPos</a></div><div class="ttdeci">D3DXVECTOR3 m_vPos</div><div class="ttdef"><b>Definition:</b> Common.h:42</div></div>
+<div class="ttc" id="astruct_c_blend_sprite_1_1_s_p_s_shader_name_html"><div class="ttname"><a href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html">CBlendSprite::SPSShaderName</a></div><div class="ttdef"><b>Definition:</b> BlendSprite.h:41</div></div>
+<div class="ttc" id="astruct_c_blend_sprite_1_1_s_p_s_shader_name_html_a0736b91ce8cef0623080b75db221dba1"><div class="ttname"><a href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html#a0736b91ce8cef0623080b75db221dba1">CBlendSprite::SPSShaderName::entryName</a></div><div class="ttdeci">const char * entryName</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:43</div></div>
+<div class="ttc" id="astruct_c_blend_sprite_1_1_s_p_s_shader_name_html_a35039f8d9fd9b446c27e4fe5865961f9"><div class="ttname"><a href="struct_c_blend_sprite_1_1_s_p_s_shader_name.html#a35039f8d9fd9b446c27e4fe5865961f9">CBlendSprite::SPSShaderName::enBlendMode</a></div><div class="ttdeci">EBLEND_MODE enBlendMode</div><div class="ttdef"><b>Definition:</b> BlendSprite.h:42</div></div>
+<div class="ttc" id="astruct_c_sprite_shader_1_1_v_e_r_t_e_x_html"><div class="ttname"><a href="struct_c_sprite_shader_1_1_v_e_r_t_e_x.html">CSpriteShader::VERTEX</a></div><div class="ttdef"><b>Definition:</b> SpriteShader.h:23</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html"><div class="ttname"><a href="struct_s_sprite_state.html">SSpriteState</a></div><div class="ttdef"><b>Definition:</b> SpriteState.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

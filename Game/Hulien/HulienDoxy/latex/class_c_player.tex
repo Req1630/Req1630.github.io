@@ -1,0 +1,246 @@
+\hypertarget{class_c_player}{}\doxysection{CPlayer クラス}
+\label{class_c_player}\index{CPlayer@{CPlayer}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+CPlayer の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CPlayer 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_player_a931a59adf2ada5376122e30b33ae2c4c}{CPlayer}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_player_ad02df04887bccfe3b82298895da24af6}{$\sim$\+CPlayer}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_a4582a8020f6734842edea64909bd4b40}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_adde42d001de461b2192bbb39d7e69aa1}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_a24cceab09336374cb0db45c753985e90}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_afb9f23b4c32fe74b9fefc05767bdc51f}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_a4e84d2e83cec95fa94fe2b0bd08f6d12}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_ad6511559416f260d6ac4063984c7564b}{Sprite\+Render}} () override
+\item 
+bool \mbox{\hyperlink{class_c_player_aa88045dd907e989acefddac62db0687d}{Is\+Special\+Ability}} ()
+\item 
+bool \mbox{\hyperlink{class_c_player_a2a474d0e7521313bdd411e481fc274cf}{Is\+Dead}} ()
+\item 
+float \mbox{\hyperlink{class_c_player_a05c9696a60fe2c53889ebbea89b21f4b}{Get\+Camera\+RadianX}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_player_ae58c494b48bdf1f1ff93a6e44d8476bb}{Set\+Vector}} (const D3\+DXVECTOR3 \&vec) override
+\item 
+virtual void \mbox{\hyperlink{class_c_player_a83fcaa076fceaecdced51b98d94533ed}{Resume\+Animation}} () override
+\item 
+bool \mbox{\hyperlink{class_c_player_ab19f818e7c2af4ae08bb97060f4a0c41}{Camera\+Shake}} ()
+\item 
+void \mbox{\hyperlink{class_c_player_a5d1a4c04fd339230276a83120fb21eba}{Set\+Parameter}} (const \mbox{\hyperlink{structplayer_1_1_s_player_param}{player\+::\+SPlayer\+Param}} \&param, const bool \&is\+Edit=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_player_a931a59adf2ada5376122e30b33ae2c4c}\label{class_c_player_a931a59adf2ada5376122e30b33ae2c4c}} 
+\index{CPlayer@{CPlayer}!CPlayer@{CPlayer}}
+\index{CPlayer@{CPlayer}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{CPlayer()}{CPlayer()}}
+{\footnotesize\ttfamily CPlayer\+::\+CPlayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_player_ad02df04887bccfe3b82298895da24af6}\label{class_c_player_ad02df04887bccfe3b82298895da24af6}} 
+\index{CPlayer@{CPlayer}!````~CPlayer@{$\sim$CPlayer}}
+\index{````~CPlayer@{$\sim$CPlayer}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPlayer()}{~CPlayer()}}
+{\footnotesize\ttfamily CPlayer\+::$\sim$\+CPlayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_player_ab19f818e7c2af4ae08bb97060f4a0c41}\label{class_c_player_ab19f818e7c2af4ae08bb97060f4a0c41}} 
+\index{CPlayer@{CPlayer}!CameraShake@{CameraShake}}
+\index{CameraShake@{CameraShake}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{CameraShake()}{CameraShake()}}
+{\footnotesize\ttfamily bool CPlayer\+::\+Camera\+Shake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_player_afb9f23b4c32fe74b9fefc05767bdc51f}\label{class_c_player_afb9f23b4c32fe74b9fefc05767bdc51f}} 
+\index{CPlayer@{CPlayer}!Collision@{Collision}}
+\index{Collision@{Collision}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+\mbox{\Hypertarget{class_c_player_a24cceab09336374cb0db45c753985e90}\label{class_c_player_a24cceab09336374cb0db45c753985e90}} 
+\index{CPlayer@{CPlayer}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}{CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_player_a05c9696a60fe2c53889ebbea89b21f4b}\label{class_c_player_a05c9696a60fe2c53889ebbea89b21f4b}} 
+\index{CPlayer@{CPlayer}!GetCameraRadianX@{GetCameraRadianX}}
+\index{GetCameraRadianX@{GetCameraRadianX}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{GetCameraRadianX()}{GetCameraRadianX()}}
+{\footnotesize\ttfamily float CPlayer\+::\+Get\+Camera\+RadianX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}\label{class_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}} 
+\index{CPlayer@{CPlayer}!Init@{Init}}
+\index{Init@{Init}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CPlayer\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_player_a2a474d0e7521313bdd411e481fc274cf}\label{class_c_player_a2a474d0e7521313bdd411e481fc274cf}} 
+\index{CPlayer@{CPlayer}!IsDead@{IsDead}}
+\index{IsDead@{IsDead}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{IsDead()}{IsDead()}}
+{\footnotesize\ttfamily bool CPlayer\+::\+Is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_player_aa88045dd907e989acefddac62db0687d}\label{class_c_player_aa88045dd907e989acefddac62db0687d}} 
+\index{CPlayer@{CPlayer}!IsSpecialAbility@{IsSpecialAbility}}
+\index{IsSpecialAbility@{IsSpecialAbility}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{IsSpecialAbility()}{IsSpecialAbility()}}
+{\footnotesize\ttfamily bool CPlayer\+::\+Is\+Special\+Ability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_c_player_aa88045dd907e989acefddac62db0687d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_player_adde42d001de461b2192bbb39d7e69aa1}\label{class_c_player_adde42d001de461b2192bbb39d7e69aa1}} 
+\index{CPlayer@{CPlayer}!Render@{Render}}
+\index{Render@{Render}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_player_a83fcaa076fceaecdced51b98d94533ed}\label{class_c_player_a83fcaa076fceaecdced51b98d94533ed}} 
+\index{CPlayer@{CPlayer}!ResumeAnimation@{ResumeAnimation}}
+\index{ResumeAnimation@{ResumeAnimation}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{ResumeAnimation()}{ResumeAnimation()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Resume\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_character_aa1ed50f7ba225fd42456316d9813d90f}{CCharacter}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_player_a5d1a4c04fd339230276a83120fb21eba}\label{class_c_player_a5d1a4c04fd339230276a83120fb21eba}} 
+\index{CPlayer@{CPlayer}!SetParameter@{SetParameter}}
+\index{SetParameter@{SetParameter}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{SetParameter()}{SetParameter()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Set\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structplayer_1_1_s_player_param}{player\+::\+SPlayer\+Param}} \&}]{param,  }\item[{const bool \&}]{is\+Edit = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_player_a4e84d2e83cec95fa94fe2b0bd08f6d12}\label{class_c_player_a4e84d2e83cec95fa94fe2b0bd08f6d12}} 
+\index{CPlayer@{CPlayer}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_player_a4e84d2e83cec95fa94fe2b0bd08f6d12_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_player_ae58c494b48bdf1f1ff93a6e44d8476bb}\label{class_c_player_ae58c494b48bdf1f1ff93a6e44d8476bb}} 
+\index{CPlayer@{CPlayer}!SetVector@{SetVector}}
+\index{SetVector@{SetVector}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{SetVector()}{SetVector()}}
+{\footnotesize\ttfamily virtual void CPlayer\+::\+Set\+Vector (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ad3b806087fc892991fbfa6d3a6a7481b}{CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_player_ad6511559416f260d6ac4063984c7564b}\label{class_c_player_ad6511559416f260d6ac4063984c7564b}} 
+\index{CPlayer@{CPlayer}!SpriteRender@{SpriteRender}}
+\index{SpriteRender@{SpriteRender}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{SpriteRender()}{SpriteRender()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_character_a267ad6ac87787684bc6065d8b0dc3ff2}{CCharacter}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_player_ad6511559416f260d6ac4063984c7564b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_player_a4582a8020f6734842edea64909bd4b40}\label{class_c_player_a4582a8020f6734842edea64909bd4b40}} 
+\index{CPlayer@{CPlayer}!Update@{Update}}
+\index{Update@{Update}!CPlayer@{CPlayer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_player_a4582a8020f6734842edea64909bd4b40_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Player/\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Player/\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

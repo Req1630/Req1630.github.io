@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Item/ItemBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1b47204da93e096d6b7fa248830ac630.html">Item</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ItemBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_item_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ITEM_BASE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ITEM_BASE_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Actor.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_effect_manager.html">CEffectManager</a>;   <span class="comment">// エフェクトクラス.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*   アイテム基底クラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_item_base.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_item_base.html">CItemBase</a> : <span class="keyword">public</span> <a class="code" href="class_c_actor.html">CActor</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_item_base.html#addf0d39350a93a91a2f3ca52b5a06608">   19</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#addf0d39350a93a91a2f3ca52b5a06608">INIT_MODEL_ALPHA</a>             = 1.0f;     <span class="comment">// 初期モデル透過値.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a5fc1fa648718b93f627bc42ad20dc7eb">   20</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a5fc1fa648718b93f627bc42ad20dc7eb">MODEL_ALPHA_MAX</a>              = 1.0f;     <span class="comment">// モデルのアルファの最大値.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a6d1d040b7be8c8f15de75bcfd89fec70">   21</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a6d1d040b7be8c8f15de75bcfd89fec70">DEFAULT_ACCELERATION_VALUE</a>   = -0.05f;   <span class="comment">// デフォルト加速値.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a0a99a57637df51fe3d740d31fd27e03c">   22</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a0a99a57637df51fe3d740d31fd27e03c">DEFAULT_GRAVITY</a>              = 0.001f;   <span class="comment">// デフォルト重力.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_c_item_base.html#adbfa383262be0f5afdbe7a7e07e9cf6d">   23</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#adbfa383262be0f5afdbe7a7e07e9cf6d">SCALE_MAX</a>                    = 1.0f;     <span class="comment">// モデルの最小値.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a922dacf6d283ddaa9067dfd8ad0a5524">   24</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a922dacf6d283ddaa9067dfd8ad0a5524">SCALE_MIN</a>                    = 0.0f;     <span class="comment">// モデルの最大値.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a4e1dc4d04e5716e607924af5ec506c25">   25</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a4e1dc4d04e5716e607924af5ec506c25">POSITION_HEIGHT_MIN</a>          = 1.0f;     <span class="comment">// 座標の最小高さ.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_item_base.html#abca180dcbffe8934e57bb01d5bf1c233">   26</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#abca180dcbffe8934e57bb01d5bf1c233">EFFECT_SCALE_MAX</a>             = 1.5f;     <span class="comment">// エフェクトの最大サイズ.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// パラメータ.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html">   30</a></span>&#160;    <span class="keyword">struct </span>stParameter</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a675c4312ab3d964ba872f44c4827deb0">   32</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a675c4312ab3d964ba872f44c4827deb0">InitAccelerationValue</a>;  <span class="comment">// 初期加速値.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a4b2cc95569b589015d27657bd00ebeb3">   33</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a4b2cc95569b589015d27657bd00ebeb3">InitGravity</a>;            <span class="comment">// 初期重力.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a8cee6b1a1fdb579de2afb2bc82d98701">   35</a></span>&#160;        <span class="keywordtype">int</span>     <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a8cee6b1a1fdb579de2afb2bc82d98701">BoundCountMax</a>;          <span class="comment">// バウンド最大数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a0697805e7e704b9afa66967ab0478426">   36</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a0697805e7e704b9afa66967ab0478426">FinalRenderHeight</a>;      <span class="comment">// 最終的な描画の高さ.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#ae70140f29479e3befc8c115bf9936a54">   37</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#ae70140f29479e3befc8c115bf9936a54">FinalMoveSpeed</a>;         <span class="comment">// 最終的な移動速度.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a1c88fc1b12605b87eb94fbd76aa355c4">   38</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a1c88fc1b12605b87eb94fbd76aa355c4">ModelScaleMax</a>;          <span class="comment">// モデルサイズ最大.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a57f424763b50b215057071b4bcf6e2a4">   39</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a57f424763b50b215057071b4bcf6e2a4">ModelScaleAddValue</a>;     <span class="comment">// モデルサイズ加算値.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#ac08d95613267a2807cc933e8d6aa1961">   40</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#ac08d95613267a2807cc933e8d6aa1961">RotationSpeed</a>;          <span class="comment">// 回転速度.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a7957bba4d5dee828a1a6266b3e28ca64">   41</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a7957bba4d5dee828a1a6266b3e28ca64">ActiveTime</a>;             <span class="comment">// アクティブ時間.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a3838bc8bb2471acca59095046ecb7d11">   42</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a3838bc8bb2471acca59095046ecb7d11">DisappearTime</a>;          <span class="comment">// 消える時間.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a4d8779481333c7eac0c81ac1327243a6">   43</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a4d8779481333c7eac0c81ac1327243a6">FlashingAddValue</a>;       <span class="comment">// 点滅加算値.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#a925001eec8e3a0c90fe94842846cbfcb">   44</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#a925001eec8e3a0c90fe94842846cbfcb">ModelAlphaMax</a>;          <span class="comment">// モデル透過値最大.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#ac37cc86bab70e9002a3263244d81d23e">   45</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_item_base_1_1_s_parameter.html#ac37cc86bab70e9002a3263244d81d23e">HitEffectTime</a>;          <span class="comment">// ヒット時のエフェクト時間.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_c_item_base_1_1_s_parameter.html#ae0a657037f4387c572ee90cf80d64064">   46</a></span>&#160;        <a class="code" href="struct_c_item_base_1_1_s_parameter.html#ae0a657037f4387c572ee90cf80d64064">stParameter</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            : InitAccelerationValue ( 0.0f )</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            , InitGravity           ( 0.0f )</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            , BoundCountMax         ( 0 )</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            , FinalRenderHeight     ( 0.0f )</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            , FinalMoveSpeed        ( 0.0f )</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            , ModelScaleMax         ( 0.0f )</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            , ModelScaleAddValue    ( 0.0f )</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            , RotationSpeed         ( 0.0f )</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            , ActiveTime            ( 0.0f )</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            , DisappearTime         ( 0.0f )</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            , FlashingAddValue      ( 0.0f )</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            , ModelAlphaMax         ( 0.0f )</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            , HitEffectTime         ( 0.0f )</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="keyword">typedef</span> SParameter;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// 現在の状態.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a57005efc6080b071f225b894177312fb">   65</a></span>&#160;    <span class="keyword">enum class</span> enNowState : unsigned char</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_c_item_base.html#a3f75a791511f10808bb983b90b22f176">Drop</a>,           <span class="comment">// 出現.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_c_item_base.html#a2377c5ad825e527f1030adff7a0f4a87">Active</a>,         <span class="comment">// アクティブ.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_c_item_base.html#a9733fd8efbd1347275ef5552d6e24899">HitDisappear</a>,   <span class="comment">// 当たった際に消える.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_c_item_base.html#a166aae829a1cfc331a6c30a05315979b">TimeDisappear</a>,  <span class="comment">// 時間が経った時に消える.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        Delete,         <span class="comment">// 消えた.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_item_base.html#a57005efc6080b071f225b894177312fb">ENowState</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 使用するエフェクト番号.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a35d126fefa8a65cc10f929f7c2d1bbba">   79</a></span>&#160;    <span class="keyword">enum class</span> enEffectNumber : char</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a> = -1,</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        DropAndActive,  <span class="comment">// ドロップ アクティブ時.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        Hit,            <span class="comment">// 当たった時.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,    <span class="comment">// 最大.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_item_base.html#a35d126fefa8a65cc10f929f7c2d1bbba">EEffectNumber</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_c_item_base.html#a210490a136b9fa44f64b32a232e28610">CItemBase</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_c_item_base.html#a210490a136b9fa44f64b32a232e28610">CItemBase</a>( <span class="keyword">const</span> SParameter* pParam );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_item_base.html#a8977f24aa873f8cff39160a1e19c9262">~CItemBase</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a3004be29e0ea1f21672acd5375f4c0ad">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a9f7f50fd8c9f42f8beb33fe43cb33ccd">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// エフェクトの描画.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#aede174da0d6542991784e337db4e8c9e">EffectRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// 当たり判定関数.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a4d5f47448403bdfc77279a7f04644861">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// 出現処理.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a3f75a791511f10808bb983b90b22f176">Drop</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vPos );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// 消えたかどうか.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_c_item_base.html#ae5d412d6c7b370130f4b0a438668356b">  106</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_item_base.html#ae5d412d6c7b370130f4b0a438668356b">IsDelete</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_item_base.html#ab38bb02094d5e483ce79de918fc3300b">m_NowState</a> == <a class="code" href="class_c_item_base.html#a57005efc6080b071f225b894177312fbaf2a6c498fb90ee345d997f888fce3b18">ENowState::Delete</a>; }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// 当たって消えたか.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_c_item_base.html#ad310146d2816316f82a86367157faed9">  108</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_item_base.html#ad310146d2816316f82a86367157faed9">IsHitDisappear</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_item_base.html#ab38bb02094d5e483ce79de918fc3300b">m_NowState</a> == <a class="code" href="class_c_item_base.html#a57005efc6080b071f225b894177312fba1e56438a69e3cfe0d4cec696d2f9741a">ENowState::HitDisappear</a>; }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// 当たった際の効果を与える.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_c_item_base.html#ad77090c519f1c50bd9d30eff87802d5f">  112</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#ad77090c519f1c50bd9d30eff87802d5f">GiveEffect</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor ) = 0;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// 出現.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a3f75a791511f10808bb983b90b22f176">Drop</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// アクティブ.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a2377c5ad825e527f1030adff7a0f4a87">Active</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// 当たった際に消える処理.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a9733fd8efbd1347275ef5552d6e24899">HitDisappear</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// 時間が経った特に消える.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a166aae829a1cfc331a6c30a05315979b">TimeDisappear</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// 回転関数.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_item_base.html#a29ad01275a7dd93078e2901776562d0a">Rotate</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// エフェクトの設定.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_c_item_base.html#ae4b04ccd0357905f43b7cf98dcb9acdc">  126</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_item_base.html#ae4b04ccd0357905f43b7cf98dcb9acdc">EffectSetting</a>() = 0;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// モデルの取得.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_item_base.html#adb11e35eae88ce9a83cfcb1cd36af2ed">GetModel</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* modelName );</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_item_base.html#a503642fd6c38c9fe34871b15b0635b91">ColliderSetting</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// ドロップ　アクティブ時の描画.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> DropAndActiveRender();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// ドロップ　アクティブ時のエフェクトの描画.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> DropAndActiveEffectRender();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// ヒット時のエフェクトの描画.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> HitEffectRender();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a359403c395dd8eb620d2d30689a40a06">  141</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_c_item_base_1_1_s_parameter.html">SParameter</a>* <a class="code" href="class_c_item_base.html#a359403c395dd8eb620d2d30689a40a06">pPRAMETER</a>;    <span class="comment">// パラメータ(外部からポインタで取得する).</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a4d9e80ba2804b729e91fcf1b49883b6d">  142</a></span>&#160;    std::shared_ptr&lt;CDX9StaticMesh&gt; <a class="code" href="class_c_item_base.html#a4d9e80ba2804b729e91fcf1b49883b6d">m_pStaticMesh</a>;  <span class="comment">// スタティックメッシュ.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a2a52abee9687592c71f9bd5b38fc3b9a">  143</a></span>&#160;    std::vector&lt;std::shared_ptr&lt;CEffectManager&gt;&gt; <a class="code" href="class_c_item_base.html#a2a52abee9687592c71f9bd5b38fc3b9a">m_pEffects</a>; <span class="comment">// エフェクト.</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="class_c_item_base.html#ab38bb02094d5e483ce79de918fc3300b">  144</a></span>&#160;    <a class="code" href="class_c_item_base.html#a57005efc6080b071f225b894177312fb">ENowState</a> <a class="code" href="class_c_item_base.html#ab38bb02094d5e483ce79de918fc3300b">m_NowState</a>;       <span class="comment">// 現在の状態.</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a395107fbcfcec3be76d1e8028df794c3">  145</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a395107fbcfcec3be76d1e8028df794c3">m_Scale</a>;              <span class="comment">// サイズ.</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="class_c_item_base.html#acb2c20f4b75a8f27a4bbee6d88959fd2">  146</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#acb2c20f4b75a8f27a4bbee6d88959fd2">m_ModelAlpha</a>;         <span class="comment">// モデルのアルファ値.</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a4d70335435f1ad6daa1159920b6a1e84">  147</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a4d70335435f1ad6daa1159920b6a1e84">m_AccelerationValue</a>;  <span class="comment">// 加速値.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a5128f832ff291a9d3e4965923162c98f">  148</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a5128f832ff291a9d3e4965923162c98f">m_Gravity</a>;            <span class="comment">// 重力.</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a70f608f55ea6b6a8b1481fe2afc84898">  149</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_item_base.html#a70f608f55ea6b6a8b1481fe2afc84898">m_BoundCount</a>;           <span class="comment">// バウンド数.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="class_c_item_base.html#aaa5e42a9fe90d23d156a23eb3ccc57f5">  150</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_c_item_base.html#aaa5e42a9fe90d23d156a23eb3ccc57f5">m_ActiveCount</a>;          <span class="comment">// アクティブカウント.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a5ddcbeca1a6b79227df5c1d9d8c812f5">  151</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a5ddcbeca1a6b79227df5c1d9d8c812f5">m_FlashingCount</a>;      <span class="comment">// 点滅カウント.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a44e407a43776bb249878b16e49f98818">  152</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a44e407a43776bb249878b16e49f98818">m_DisappearCount</a>;     <span class="comment">// 消える時間.</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a8f468d33306d8435915507e0eb9b5d53">  153</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a8f468d33306d8435915507e0eb9b5d53">m_FlashingAccValue</a>;   <span class="comment">// 点滅加速値.</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="class_c_item_base.html#a727b5e1ae1b0892293cb80349c0c6fac">  154</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_item_base.html#a727b5e1ae1b0892293cb80349c0c6fac">m_HitEffectCount</a>;     <span class="comment">// ヒット時のエフェクトカウント.</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;};</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef ITEM_BASE_H.</span></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">ERS_STATE::Max</a></div><div class="ttdeci">@ Max</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html"><div class="ttname"><a href="class_c_effect_manager.html">CEffectManager</a></div><div class="ttdef"><b>Definition:</b> EffectManager.h:14</div></div>
+<div class="ttc" id="aclass_c_item_base_html"><div class="ttname"><a href="class_c_item_base.html">CItemBase</a></div><div class="ttdef"><b>Definition:</b> ItemBase.h:17</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a0a99a57637df51fe3d740d31fd27e03c"><div class="ttname"><a href="class_c_item_base.html#a0a99a57637df51fe3d740d31fd27e03c">CItemBase::DEFAULT_GRAVITY</a></div><div class="ttdeci">static constexpr float DEFAULT_GRAVITY</div><div class="ttdef"><b>Definition:</b> ItemBase.h:22</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a166aae829a1cfc331a6c30a05315979b"><div class="ttname"><a href="class_c_item_base.html#a166aae829a1cfc331a6c30a05315979b">CItemBase::TimeDisappear</a></div><div class="ttdeci">void TimeDisappear()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:184</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a210490a136b9fa44f64b32a232e28610"><div class="ttname"><a href="class_c_item_base.html#a210490a136b9fa44f64b32a232e28610">CItemBase::CItemBase</a></div><div class="ttdeci">CItemBase()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:10</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a2377c5ad825e527f1030adff7a0f4a87"><div class="ttname"><a href="class_c_item_base.html#a2377c5ad825e527f1030adff7a0f4a87">CItemBase::Active</a></div><div class="ttdeci">void Active()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:162</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a29ad01275a7dd93078e2901776562d0a"><div class="ttname"><a href="class_c_item_base.html#a29ad01275a7dd93078e2901776562d0a">CItemBase::Rotate</a></div><div class="ttdeci">void Rotate()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:200</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a2a52abee9687592c71f9bd5b38fc3b9a"><div class="ttname"><a href="class_c_item_base.html#a2a52abee9687592c71f9bd5b38fc3b9a">CItemBase::m_pEffects</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; CEffectManager &gt; &gt; m_pEffects</div><div class="ttdef"><b>Definition:</b> ItemBase.h:143</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a3004be29e0ea1f21672acd5375f4c0ad"><div class="ttname"><a href="class_c_item_base.html#a3004be29e0ea1f21672acd5375f4c0ad">CItemBase::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:55</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a359403c395dd8eb620d2d30689a40a06"><div class="ttname"><a href="class_c_item_base.html#a359403c395dd8eb620d2d30689a40a06">CItemBase::pPRAMETER</a></div><div class="ttdeci">const SParameter * pPRAMETER</div><div class="ttdef"><b>Definition:</b> ItemBase.h:141</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a35d126fefa8a65cc10f929f7c2d1bbba"><div class="ttname"><a href="class_c_item_base.html#a35d126fefa8a65cc10f929f7c2d1bbba">CItemBase::EEffectNumber</a></div><div class="ttdeci">EEffectNumber</div><div class="ttdef"><b>Definition:</b> ItemBase.h:80</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a395107fbcfcec3be76d1e8028df794c3"><div class="ttname"><a href="class_c_item_base.html#a395107fbcfcec3be76d1e8028df794c3">CItemBase::m_Scale</a></div><div class="ttdeci">float m_Scale</div><div class="ttdef"><b>Definition:</b> ItemBase.h:145</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a3f75a791511f10808bb983b90b22f176"><div class="ttname"><a href="class_c_item_base.html#a3f75a791511f10808bb983b90b22f176">CItemBase::Drop</a></div><div class="ttdeci">void Drop()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:137</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a44e407a43776bb249878b16e49f98818"><div class="ttname"><a href="class_c_item_base.html#a44e407a43776bb249878b16e49f98818">CItemBase::m_DisappearCount</a></div><div class="ttdeci">float m_DisappearCount</div><div class="ttdef"><b>Definition:</b> ItemBase.h:152</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a4d5f47448403bdfc77279a7f04644861"><div class="ttname"><a href="class_c_item_base.html#a4d5f47448403bdfc77279a7f04644861">CItemBase::Collision</a></div><div class="ttdeci">virtual void Collision(CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:97</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a4d70335435f1ad6daa1159920b6a1e84"><div class="ttname"><a href="class_c_item_base.html#a4d70335435f1ad6daa1159920b6a1e84">CItemBase::m_AccelerationValue</a></div><div class="ttdeci">float m_AccelerationValue</div><div class="ttdef"><b>Definition:</b> ItemBase.h:147</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a4d9e80ba2804b729e91fcf1b49883b6d"><div class="ttname"><a href="class_c_item_base.html#a4d9e80ba2804b729e91fcf1b49883b6d">CItemBase::m_pStaticMesh</a></div><div class="ttdeci">std::shared_ptr&lt; CDX9StaticMesh &gt; m_pStaticMesh</div><div class="ttdef"><b>Definition:</b> ItemBase.h:142</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a4e1dc4d04e5716e607924af5ec506c25"><div class="ttname"><a href="class_c_item_base.html#a4e1dc4d04e5716e607924af5ec506c25">CItemBase::POSITION_HEIGHT_MIN</a></div><div class="ttdeci">static constexpr float POSITION_HEIGHT_MIN</div><div class="ttdef"><b>Definition:</b> ItemBase.h:25</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a503642fd6c38c9fe34871b15b0635b91"><div class="ttname"><a href="class_c_item_base.html#a503642fd6c38c9fe34871b15b0635b91">CItemBase::ColliderSetting</a></div><div class="ttdeci">virtual bool ColliderSetting()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:222</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a5128f832ff291a9d3e4965923162c98f"><div class="ttname"><a href="class_c_item_base.html#a5128f832ff291a9d3e4965923162c98f">CItemBase::m_Gravity</a></div><div class="ttdeci">float m_Gravity</div><div class="ttdef"><b>Definition:</b> ItemBase.h:148</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a57005efc6080b071f225b894177312fb"><div class="ttname"><a href="class_c_item_base.html#a57005efc6080b071f225b894177312fb">CItemBase::ENowState</a></div><div class="ttdeci">ENowState</div><div class="ttdef"><b>Definition:</b> ItemBase.h:66</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a57005efc6080b071f225b894177312fba1e56438a69e3cfe0d4cec696d2f9741a"><div class="ttname"><a href="class_c_item_base.html#a57005efc6080b071f225b894177312fba1e56438a69e3cfe0d4cec696d2f9741a">CItemBase::ENowState::HitDisappear</a></div><div class="ttdeci">@ HitDisappear</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a57005efc6080b071f225b894177312fbaf2a6c498fb90ee345d997f888fce3b18"><div class="ttname"><a href="class_c_item_base.html#a57005efc6080b071f225b894177312fbaf2a6c498fb90ee345d997f888fce3b18">CItemBase::ENowState::Delete</a></div><div class="ttdeci">@ Delete</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a5ddcbeca1a6b79227df5c1d9d8c812f5"><div class="ttname"><a href="class_c_item_base.html#a5ddcbeca1a6b79227df5c1d9d8c812f5">CItemBase::m_FlashingCount</a></div><div class="ttdeci">float m_FlashingCount</div><div class="ttdef"><b>Definition:</b> ItemBase.h:151</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a5fc1fa648718b93f627bc42ad20dc7eb"><div class="ttname"><a href="class_c_item_base.html#a5fc1fa648718b93f627bc42ad20dc7eb">CItemBase::MODEL_ALPHA_MAX</a></div><div class="ttdeci">static constexpr float MODEL_ALPHA_MAX</div><div class="ttdef"><b>Definition:</b> ItemBase.h:20</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a6d1d040b7be8c8f15de75bcfd89fec70"><div class="ttname"><a href="class_c_item_base.html#a6d1d040b7be8c8f15de75bcfd89fec70">CItemBase::DEFAULT_ACCELERATION_VALUE</a></div><div class="ttdeci">static constexpr float DEFAULT_ACCELERATION_VALUE</div><div class="ttdef"><b>Definition:</b> ItemBase.h:21</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a70f608f55ea6b6a8b1481fe2afc84898"><div class="ttname"><a href="class_c_item_base.html#a70f608f55ea6b6a8b1481fe2afc84898">CItemBase::m_BoundCount</a></div><div class="ttdeci">int m_BoundCount</div><div class="ttdef"><b>Definition:</b> ItemBase.h:149</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a727b5e1ae1b0892293cb80349c0c6fac"><div class="ttname"><a href="class_c_item_base.html#a727b5e1ae1b0892293cb80349c0c6fac">CItemBase::m_HitEffectCount</a></div><div class="ttdeci">float m_HitEffectCount</div><div class="ttdef"><b>Definition:</b> ItemBase.h:154</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a8977f24aa873f8cff39160a1e19c9262"><div class="ttname"><a href="class_c_item_base.html#a8977f24aa873f8cff39160a1e19c9262">CItemBase::~CItemBase</a></div><div class="ttdeci">virtual ~CItemBase()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:50</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a8f468d33306d8435915507e0eb9b5d53"><div class="ttname"><a href="class_c_item_base.html#a8f468d33306d8435915507e0eb9b5d53">CItemBase::m_FlashingAccValue</a></div><div class="ttdeci">float m_FlashingAccValue</div><div class="ttdef"><b>Definition:</b> ItemBase.h:153</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a922dacf6d283ddaa9067dfd8ad0a5524"><div class="ttname"><a href="class_c_item_base.html#a922dacf6d283ddaa9067dfd8ad0a5524">CItemBase::SCALE_MIN</a></div><div class="ttdeci">static constexpr float SCALE_MIN</div><div class="ttdef"><b>Definition:</b> ItemBase.h:24</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a9733fd8efbd1347275ef5552d6e24899"><div class="ttname"><a href="class_c_item_base.html#a9733fd8efbd1347275ef5552d6e24899">CItemBase::HitDisappear</a></div><div class="ttdeci">void HitDisappear()</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:176</div></div>
+<div class="ttc" id="aclass_c_item_base_html_a9f7f50fd8c9f42f8beb33fe43cb33ccd"><div class="ttname"><a href="class_c_item_base.html#a9f7f50fd8c9f42f8beb33fe43cb33ccd">CItemBase::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:79</div></div>
+<div class="ttc" id="aclass_c_item_base_html_aaa5e42a9fe90d23d156a23eb3ccc57f5"><div class="ttname"><a href="class_c_item_base.html#aaa5e42a9fe90d23d156a23eb3ccc57f5">CItemBase::m_ActiveCount</a></div><div class="ttdeci">int m_ActiveCount</div><div class="ttdef"><b>Definition:</b> ItemBase.h:150</div></div>
+<div class="ttc" id="aclass_c_item_base_html_ab38bb02094d5e483ce79de918fc3300b"><div class="ttname"><a href="class_c_item_base.html#ab38bb02094d5e483ce79de918fc3300b">CItemBase::m_NowState</a></div><div class="ttdeci">ENowState m_NowState</div><div class="ttdef"><b>Definition:</b> ItemBase.h:144</div></div>
+<div class="ttc" id="aclass_c_item_base_html_abca180dcbffe8934e57bb01d5bf1c233"><div class="ttname"><a href="class_c_item_base.html#abca180dcbffe8934e57bb01d5bf1c233">CItemBase::EFFECT_SCALE_MAX</a></div><div class="ttdeci">static constexpr float EFFECT_SCALE_MAX</div><div class="ttdef"><b>Definition:</b> ItemBase.h:26</div></div>
+<div class="ttc" id="aclass_c_item_base_html_acb2c20f4b75a8f27a4bbee6d88959fd2"><div class="ttname"><a href="class_c_item_base.html#acb2c20f4b75a8f27a4bbee6d88959fd2">CItemBase::m_ModelAlpha</a></div><div class="ttdeci">float m_ModelAlpha</div><div class="ttdef"><b>Definition:</b> ItemBase.h:146</div></div>
+<div class="ttc" id="aclass_c_item_base_html_ad310146d2816316f82a86367157faed9"><div class="ttname"><a href="class_c_item_base.html#ad310146d2816316f82a86367157faed9">CItemBase::IsHitDisappear</a></div><div class="ttdeci">bool IsHitDisappear()</div><div class="ttdef"><b>Definition:</b> ItemBase.h:108</div></div>
+<div class="ttc" id="aclass_c_item_base_html_ad77090c519f1c50bd9d30eff87802d5f"><div class="ttname"><a href="class_c_item_base.html#ad77090c519f1c50bd9d30eff87802d5f">CItemBase::GiveEffect</a></div><div class="ttdeci">virtual void GiveEffect(CActor *pActor)=0</div></div>
+<div class="ttc" id="aclass_c_item_base_html_adb11e35eae88ce9a83cfcb1cd36af2ed"><div class="ttname"><a href="class_c_item_base.html#adb11e35eae88ce9a83cfcb1cd36af2ed">CItemBase::GetModel</a></div><div class="ttdeci">bool GetModel(const char *modelName)</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:209</div></div>
+<div class="ttc" id="aclass_c_item_base_html_adbfa383262be0f5afdbe7a7e07e9cf6d"><div class="ttname"><a href="class_c_item_base.html#adbfa383262be0f5afdbe7a7e07e9cf6d">CItemBase::SCALE_MAX</a></div><div class="ttdeci">static constexpr float SCALE_MAX</div><div class="ttdef"><b>Definition:</b> ItemBase.h:23</div></div>
+<div class="ttc" id="aclass_c_item_base_html_addf0d39350a93a91a2f3ca52b5a06608"><div class="ttname"><a href="class_c_item_base.html#addf0d39350a93a91a2f3ca52b5a06608">CItemBase::INIT_MODEL_ALPHA</a></div><div class="ttdeci">static constexpr float INIT_MODEL_ALPHA</div><div class="ttdef"><b>Definition:</b> ItemBase.h:19</div></div>
+<div class="ttc" id="aclass_c_item_base_html_ae4b04ccd0357905f43b7cf98dcb9acdc"><div class="ttname"><a href="class_c_item_base.html#ae4b04ccd0357905f43b7cf98dcb9acdc">CItemBase::EffectSetting</a></div><div class="ttdeci">virtual bool EffectSetting()=0</div></div>
+<div class="ttc" id="aclass_c_item_base_html_ae5d412d6c7b370130f4b0a438668356b"><div class="ttname"><a href="class_c_item_base.html#ae5d412d6c7b370130f4b0a438668356b">CItemBase::IsDelete</a></div><div class="ttdeci">bool IsDelete()</div><div class="ttdef"><b>Definition:</b> ItemBase.h:106</div></div>
+<div class="ttc" id="aclass_c_item_base_html_aede174da0d6542991784e337db4e8c9e"><div class="ttname"><a href="class_c_item_base.html#aede174da0d6542991784e337db4e8c9e">CItemBase::EffectRender</a></div><div class="ttdeci">virtual void EffectRender() override</div><div class="ttdef"><b>Definition:</b> ItemBase.cpp:88</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html">CItemBase::SParameter</a></div><div class="ttdef"><b>Definition:</b> ItemBase.h:31</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a0697805e7e704b9afa66967ab0478426"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a0697805e7e704b9afa66967ab0478426">CItemBase::SParameter::FinalRenderHeight</a></div><div class="ttdeci">float FinalRenderHeight</div><div class="ttdef"><b>Definition:</b> ItemBase.h:36</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a1c88fc1b12605b87eb94fbd76aa355c4"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a1c88fc1b12605b87eb94fbd76aa355c4">CItemBase::SParameter::ModelScaleMax</a></div><div class="ttdeci">float ModelScaleMax</div><div class="ttdef"><b>Definition:</b> ItemBase.h:38</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a3838bc8bb2471acca59095046ecb7d11"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a3838bc8bb2471acca59095046ecb7d11">CItemBase::SParameter::DisappearTime</a></div><div class="ttdeci">float DisappearTime</div><div class="ttdef"><b>Definition:</b> ItemBase.h:42</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a4b2cc95569b589015d27657bd00ebeb3"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a4b2cc95569b589015d27657bd00ebeb3">CItemBase::SParameter::InitGravity</a></div><div class="ttdeci">float InitGravity</div><div class="ttdef"><b>Definition:</b> ItemBase.h:33</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a4d8779481333c7eac0c81ac1327243a6"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a4d8779481333c7eac0c81ac1327243a6">CItemBase::SParameter::FlashingAddValue</a></div><div class="ttdeci">float FlashingAddValue</div><div class="ttdef"><b>Definition:</b> ItemBase.h:43</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a57f424763b50b215057071b4bcf6e2a4"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a57f424763b50b215057071b4bcf6e2a4">CItemBase::SParameter::ModelScaleAddValue</a></div><div class="ttdeci">float ModelScaleAddValue</div><div class="ttdef"><b>Definition:</b> ItemBase.h:39</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a675c4312ab3d964ba872f44c4827deb0"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a675c4312ab3d964ba872f44c4827deb0">CItemBase::SParameter::InitAccelerationValue</a></div><div class="ttdeci">float InitAccelerationValue</div><div class="ttdef"><b>Definition:</b> ItemBase.h:32</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a7957bba4d5dee828a1a6266b3e28ca64"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a7957bba4d5dee828a1a6266b3e28ca64">CItemBase::SParameter::ActiveTime</a></div><div class="ttdeci">float ActiveTime</div><div class="ttdef"><b>Definition:</b> ItemBase.h:41</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a8cee6b1a1fdb579de2afb2bc82d98701"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a8cee6b1a1fdb579de2afb2bc82d98701">CItemBase::SParameter::BoundCountMax</a></div><div class="ttdeci">int BoundCountMax</div><div class="ttdef"><b>Definition:</b> ItemBase.h:35</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_a925001eec8e3a0c90fe94842846cbfcb"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#a925001eec8e3a0c90fe94842846cbfcb">CItemBase::SParameter::ModelAlphaMax</a></div><div class="ttdeci">float ModelAlphaMax</div><div class="ttdef"><b>Definition:</b> ItemBase.h:44</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_ac08d95613267a2807cc933e8d6aa1961"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#ac08d95613267a2807cc933e8d6aa1961">CItemBase::SParameter::RotationSpeed</a></div><div class="ttdeci">float RotationSpeed</div><div class="ttdef"><b>Definition:</b> ItemBase.h:40</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_ac37cc86bab70e9002a3263244d81d23e"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#ac37cc86bab70e9002a3263244d81d23e">CItemBase::SParameter::HitEffectTime</a></div><div class="ttdeci">float HitEffectTime</div><div class="ttdef"><b>Definition:</b> ItemBase.h:45</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_ae0a657037f4387c572ee90cf80d64064"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#ae0a657037f4387c572ee90cf80d64064">CItemBase::SParameter::stParameter</a></div><div class="ttdeci">stParameter()</div><div class="ttdef"><b>Definition:</b> ItemBase.h:46</div></div>
+<div class="ttc" id="astruct_c_item_base_1_1_s_parameter_html_ae70140f29479e3befc8c115bf9936a54"><div class="ttname"><a href="struct_c_item_base_1_1_s_parameter.html#ae70140f29479e3befc8c115bf9936a54">CItemBase::SParameter::FinalMoveSpeed</a></div><div class="ttdeci">float FinalMoveSpeed</div><div class="ttdef"><b>Definition:</b> ItemBase.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

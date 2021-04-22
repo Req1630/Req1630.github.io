@@ -1,0 +1,130 @@
+\hypertarget{class_c_blur}{}\doxysection{CBlur クラス}
+\label{class_c_blur}\index{CBlur@{CBlur}}
+
+
+{\ttfamily \#include $<$Blur.\+h$>$}
+
+
+
+CBlur の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_blur__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CBlur 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_blur__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_blur_abf14e9c4e9df7882e0c2fcb6e5079562}{CBlur}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_blur_a21321a12c901736707b075a4840bd9c0}{$\sim$\+CBlur}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_blur_a1c417601630ddc09ca0fa5ce7800e6c2}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+void \mbox{\hyperlink{class_c_blur_ae14363a46d21a64b63b05c0882d8c702}{Release}} ()
+\item 
+void \mbox{\hyperlink{class_c_blur_a2b3b9ca10fad5c6fe63df6c69d2296db}{Sampling}} (ID3\+D11\+Shader\+Resource\+View $\ast$tex)
+\item 
+void \mbox{\hyperlink{class_c_blur_a5876a91778565f62fe56729350a3fb37}{Clear\+Buffer}} ()
+\item 
+ID3\+D11\+Shader\+Resource\+View $\ast$ \mbox{\hyperlink{class_c_blur_a09092ffcef20fd22da10990d81e0c4ce}{Get\+Blur\+Tex}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_blur_abf14e9c4e9df7882e0c2fcb6e5079562}\label{class_c_blur_abf14e9c4e9df7882e0c2fcb6e5079562}} 
+\index{CBlur@{CBlur}!CBlur@{CBlur}}
+\index{CBlur@{CBlur}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{CBlur()}{CBlur()}}
+{\footnotesize\ttfamily CBlur\+::\+CBlur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_blur_a21321a12c901736707b075a4840bd9c0}\label{class_c_blur_a21321a12c901736707b075a4840bd9c0}} 
+\index{CBlur@{CBlur}!````~CBlur@{$\sim$CBlur}}
+\index{````~CBlur@{$\sim$CBlur}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBlur()}{~CBlur()}}
+{\footnotesize\ttfamily CBlur\+::$\sim$\+CBlur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_c_blur_a21321a12c901736707b075a4840bd9c0_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_blur_a5876a91778565f62fe56729350a3fb37}\label{class_c_blur_a5876a91778565f62fe56729350a3fb37}} 
+\index{CBlur@{CBlur}!ClearBuffer@{ClearBuffer}}
+\index{ClearBuffer@{ClearBuffer}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{ClearBuffer()}{ClearBuffer()}}
+{\footnotesize\ttfamily void CBlur\+::\+Clear\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_blur_a09092ffcef20fd22da10990d81e0c4ce}\label{class_c_blur_a09092ffcef20fd22da10990d81e0c4ce}} 
+\index{CBlur@{CBlur}!GetBlurTex@{GetBlurTex}}
+\index{GetBlurTex@{GetBlurTex}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{GetBlurTex()}{GetBlurTex()}}
+{\footnotesize\ttfamily ID3\+D11\+Shader\+Resource\+View$\ast$ CBlur\+::\+Get\+Blur\+Tex (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_blur_a1c417601630ddc09ca0fa5ce7800e6c2}\label{class_c_blur_a1c417601630ddc09ca0fa5ce7800e6c2}} 
+\index{CBlur@{CBlur}!Init@{Init}}
+\index{Init@{Init}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CBlur\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_blur_a1c417601630ddc09ca0fa5ce7800e6c2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blur_ae14363a46d21a64b63b05c0882d8c702}\label{class_c_blur_ae14363a46d21a64b63b05c0882d8c702}} 
+\index{CBlur@{CBlur}!Release@{Release}}
+\index{Release@{Release}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void CBlur\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=275pt]{class_c_blur_ae14363a46d21a64b63b05c0882d8c702_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_blur_a2b3b9ca10fad5c6fe63df6c69d2296db}\label{class_c_blur_a2b3b9ca10fad5c6fe63df6c69d2296db}} 
+\index{CBlur@{CBlur}!Sampling@{Sampling}}
+\index{Sampling@{Sampling}!CBlur@{CBlur}}
+\doxysubsubsection{\texorpdfstring{Sampling()}{Sampling()}}
+{\footnotesize\ttfamily void CBlur\+::\+Sampling (\begin{DoxyParamCaption}\item[{ID3\+D11\+Shader\+Resource\+View $\ast$}]{tex }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_blur_a2b3b9ca10fad5c6fe63df6c69d2296db_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Blur/\mbox{\hyperlink{_blur_8h}{Blur.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Blur/\mbox{\hyperlink{_blur_8cpp}{Blur.\+cpp}}\end{DoxyCompactItemize}

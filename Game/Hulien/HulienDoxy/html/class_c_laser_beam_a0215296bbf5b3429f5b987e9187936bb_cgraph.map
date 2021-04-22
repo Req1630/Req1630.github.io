@@ -1,0 +1,5 @@
+<map id="CLaserBeam::Collision" name="CLaserBeam::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="213,5,375,32"/>
+<area shape="rect" id="node3" href="$class_c_actor.html#a2157d9ebb794373d092ebfa6892cbb0e" title=" " alt="" coords="208,56,380,83"/>
+</map>

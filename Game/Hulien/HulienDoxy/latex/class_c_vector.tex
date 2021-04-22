@@ -1,0 +1,104 @@
+\hypertarget{class_c_vector}{}\doxysection{CVector クラス}
+\label{class_c_vector}\index{CVector@{CVector}}
+
+
+{\ttfamily \#include $<$My\+Vector.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_vector_a0f8bc94615cdb6e7c2016ac33c397197}{CVector}} ()
+\item 
+\mbox{\hyperlink{class_c_vector_a29b5b40a40c27f7fbdd873fc0d5e47fa}{$\sim$\+CVector}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \mbox{\hyperlink{class_c_vector_aaef24697febce669f915c35fb09091a8}{To\+Radian}} (const T \&t)
+\item 
+{\footnotesize template$<$class T $>$ }\\static T \mbox{\hyperlink{class_c_vector_a4c79069a78191ebf5e40eb031495884e}{To\+Degree}} (const T \&t)
+\item 
+{\footnotesize template$<$class T , class VOver1 , class V1 , class VOver2 , class V2 $>$ }\\static void \mbox{\hyperlink{class_c_vector_a1138e6c41b79d7150062db0c718afc42}{Overflow\+Degree}} (T \&t, const VOver1 \&v\+Over1, const V1 \&v\+Adj1, const VOver2 \&v\+Over2, const V2 \&v\+Adj2)
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const double \mbox{\hyperlink{class_c_vector_a8859943e776fa4ebc7170490fb9dec0f}{PI}} = 3.\+14159265358979323846
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_vector_a0f8bc94615cdb6e7c2016ac33c397197}\label{class_c_vector_a0f8bc94615cdb6e7c2016ac33c397197}} 
+\index{CVector@{CVector}!CVector@{CVector}}
+\index{CVector@{CVector}!CVector@{CVector}}
+\doxysubsubsection{\texorpdfstring{CVector()}{CVector()}}
+{\footnotesize\ttfamily CVector\+::\+CVector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_vector_a29b5b40a40c27f7fbdd873fc0d5e47fa}\label{class_c_vector_a29b5b40a40c27f7fbdd873fc0d5e47fa}} 
+\index{CVector@{CVector}!````~CVector@{$\sim$CVector}}
+\index{````~CVector@{$\sim$CVector}!CVector@{CVector}}
+\doxysubsubsection{\texorpdfstring{$\sim$CVector()}{~CVector()}}
+{\footnotesize\ttfamily CVector\+::$\sim$\+CVector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_vector_a1138e6c41b79d7150062db0c718afc42}\label{class_c_vector_a1138e6c41b79d7150062db0c718afc42}} 
+\index{CVector@{CVector}!OverflowDegree@{OverflowDegree}}
+\index{OverflowDegree@{OverflowDegree}!CVector@{CVector}}
+\doxysubsubsection{\texorpdfstring{OverflowDegree()}{OverflowDegree()}}
+{\footnotesize\ttfamily template$<$class T , class VOver1 , class V1 , class VOver2 , class V2 $>$ \\
+static void CVector\+::\+Overflow\+Degree (\begin{DoxyParamCaption}\item[{T \&}]{t,  }\item[{const VOver1 \&}]{v\+Over1,  }\item[{const V1 \&}]{v\+Adj1,  }\item[{const VOver2 \&}]{v\+Over2,  }\item[{const V2 \&}]{v\+Adj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_c_vector_a1138e6c41b79d7150062db0c718afc42_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_vector_a1138e6c41b79d7150062db0c718afc42_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_vector_a4c79069a78191ebf5e40eb031495884e}\label{class_c_vector_a4c79069a78191ebf5e40eb031495884e}} 
+\index{CVector@{CVector}!ToDegree@{ToDegree}}
+\index{ToDegree@{ToDegree}!CVector@{CVector}}
+\doxysubsubsection{\texorpdfstring{ToDegree()}{ToDegree()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static T CVector\+::\+To\+Degree (\begin{DoxyParamCaption}\item[{const T \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_vector_aaef24697febce669f915c35fb09091a8}\label{class_c_vector_aaef24697febce669f915c35fb09091a8}} 
+\index{CVector@{CVector}!ToRadian@{ToRadian}}
+\index{ToRadian@{ToRadian}!CVector@{CVector}}
+\doxysubsubsection{\texorpdfstring{ToRadian()}{ToRadian()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+static T CVector\+::\+To\+Radian (\begin{DoxyParamCaption}\item[{const T \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_vector_aaef24697febce669f915c35fb09091a8_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_vector_a8859943e776fa4ebc7170490fb9dec0f}\label{class_c_vector_a8859943e776fa4ebc7170490fb9dec0f}} 
+\index{CVector@{CVector}!PI@{PI}}
+\index{PI@{PI}!CVector@{CVector}}
+\doxysubsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily const double CVector\+::\+PI = 3.\+14159265358979323846\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+My\+Vector/\mbox{\hyperlink{_my_vector_8h}{My\+Vector.\+h}}\end{DoxyCompactItemize}

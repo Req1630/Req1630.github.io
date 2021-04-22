@@ -1,0 +1,250 @@
+\hypertarget{class_c_continue_widget}{}\doxysection{CContinue\+Widget クラス}
+\label{class_c_continue_widget}\index{CContinueWidget@{CContinueWidget}}
+
+
+{\ttfamily \#include $<$Continue\+Widget.\+h$>$}
+
+
+
+CContinue\+Widget の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_c_continue_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CContinue\+Widget 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_c_continue_widget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22c}{ESelect\+State}} \{ \mbox{\hyperlink{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22ca93cba07454f06a4a960172bbd6e2a435}{Yes}}
+, \mbox{\hyperlink{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22cabafd7322c6e97d25b6299b5d6fe8920b}{No}}
+ \}
+\item 
+enum class \mbox{\hyperlink{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34c}{en\+Draw\+Turn}} \{ \mbox{\hyperlink{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34ca1298798308dfb56829d42c252adbd973}{Back\+Ground}}
+, \mbox{\hyperlink{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34ca9dffbf69ffba8bc38bc4e01abf4b1675}{Text}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_continue_widget_abf4ae350c9f624daa4bc1f799403677e}{CContinue\+Widget}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_continue_widget_ab2aa245aea39c7e19f51e34ae6e57314}{$\sim$\+CContinue\+Widget}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_continue_widget_adcc5f3d5136fb78c94e535f5793c4edf}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_continue_widget_af2ca55df96cc7081dbfe67fca97d0fa0}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_continue_widget_a2b436e346dfe181b7becc9beb2427eed}{Render}} () override
+\item 
+\mbox{\hyperlink{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22c}{ESelect\+State}} \mbox{\hyperlink{class_c_continue_widget_a914f47dc550dffee3116030bd8834b46}{Get\+Select\+State}} () const
+\item 
+bool \mbox{\hyperlink{class_c_continue_widget_a058402c875a7d74360852d3134efceb7}{Get\+Is\+Drawing}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \mbox{\hyperlink{class_c_continue_widget_ae63029c22574cd3dc7fcdf46c7e3deb5}{SPRITE\+\_\+\+BACK}} = \char`\"{}Fade\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{class_c_continue_widget_a09e8f5465921e49fca11c0ace5ac4871}{SPRITE\+\_\+\+CONTINUE}} = \char`\"{}continue\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{class_c_continue_widget_afcaa02f03ad295b673274b2a4fe9aa5a}{SPRITE\+\_\+\+YES}} = \char`\"{}yes\char`\"{}
+\item 
+const char $\ast$ \mbox{\hyperlink{class_c_continue_widget_a4a0f359295097412043107509b7e4218}{SPRITE\+\_\+\+NO}} = \char`\"{}no\char`\"{}
+\item 
+const int \mbox{\hyperlink{class_c_continue_widget_acdd90522f77687c8297b49945182cbc4}{BACKGROUND}} = 0
+\item 
+const int \mbox{\hyperlink{class_c_continue_widget_a109252de2c9556c447ae570ab0465e53}{YES}} = 1
+\item 
+const int \mbox{\hyperlink{class_c_continue_widget_aaa7a8051bca1c63b549573ea3668c7a8}{NO}} = 2
+\item 
+const float \mbox{\hyperlink{class_c_continue_widget_aadede8c1e901836ba438a1baa23b52f7}{BACKGROUND\+\_\+\+ALPHA}} = 0.\+7f
+\item 
+const float \mbox{\hyperlink{class_c_continue_widget_a11d0f2404074fe00c8d1663ea5eb263f}{BACKGROUND\+\_\+\+ALPHA\+\_\+\+SPEED}} = 0.\+005f
+\item 
+const float \mbox{\hyperlink{class_c_continue_widget_aaaae6ba3fefa970d63df0c9eb6bc99f0}{TEXT\+\_\+\+ALPHA\+\_\+\+SPEED}} = 0.\+005f
+\item 
+enum \mbox{\hyperlink{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34c}{CContinue\+Widget\+::en\+Draw\+Turn}} \mbox{\hyperlink{class_c_continue_widget_ac65f195b0bf3638b2cede9648059ce94}{EDraw\+Turn}}
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34c}\label{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34c}} 
+\index{CContinueWidget@{CContinueWidget}!enDrawTurn@{enDrawTurn}}
+\index{enDrawTurn@{enDrawTurn}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{enDrawTurn}{enDrawTurn}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34c}{CContinue\+Widget\+::en\+Draw\+Turn}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BackGround@{BackGround}!CContinueWidget@{CContinueWidget}}\index{CContinueWidget@{CContinueWidget}!BackGround@{BackGround}}}\mbox{\Hypertarget{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34ca1298798308dfb56829d42c252adbd973}\label{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34ca1298798308dfb56829d42c252adbd973}} 
+Back\+Ground&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Text@{Text}!CContinueWidget@{CContinueWidget}}\index{CContinueWidget@{CContinueWidget}!Text@{Text}}}\mbox{\Hypertarget{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34ca9dffbf69ffba8bc38bc4e01abf4b1675}\label{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34ca9dffbf69ffba8bc38bc4e01abf4b1675}} 
+Text&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22c}\label{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22c}} 
+\index{CContinueWidget@{CContinueWidget}!ESelectState@{ESelectState}}
+\index{ESelectState@{ESelectState}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{ESelectState}{ESelectState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22c}{CContinue\+Widget\+::\+ESelect\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Yes@{Yes}!CContinueWidget@{CContinueWidget}}\index{CContinueWidget@{CContinueWidget}!Yes@{Yes}}}\mbox{\Hypertarget{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22ca93cba07454f06a4a960172bbd6e2a435}\label{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22ca93cba07454f06a4a960172bbd6e2a435}} 
+Yes&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{No@{No}!CContinueWidget@{CContinueWidget}}\index{CContinueWidget@{CContinueWidget}!No@{No}}}\mbox{\Hypertarget{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22cabafd7322c6e97d25b6299b5d6fe8920b}\label{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22cabafd7322c6e97d25b6299b5d6fe8920b}} 
+No&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_continue_widget_abf4ae350c9f624daa4bc1f799403677e}\label{class_c_continue_widget_abf4ae350c9f624daa4bc1f799403677e}} 
+\index{CContinueWidget@{CContinueWidget}!CContinueWidget@{CContinueWidget}}
+\index{CContinueWidget@{CContinueWidget}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{CContinueWidget()}{CContinueWidget()}}
+{\footnotesize\ttfamily CContinue\+Widget\+::\+CContinue\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_continue_widget_ab2aa245aea39c7e19f51e34ae6e57314}\label{class_c_continue_widget_ab2aa245aea39c7e19f51e34ae6e57314}} 
+\index{CContinueWidget@{CContinueWidget}!````~CContinueWidget@{$\sim$CContinueWidget}}
+\index{````~CContinueWidget@{$\sim$CContinueWidget}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{$\sim$CContinueWidget()}{~CContinueWidget()}}
+{\footnotesize\ttfamily CContinue\+Widget\+::$\sim$\+CContinue\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_continue_widget_a058402c875a7d74360852d3134efceb7}\label{class_c_continue_widget_a058402c875a7d74360852d3134efceb7}} 
+\index{CContinueWidget@{CContinueWidget}!GetIsDrawing@{GetIsDrawing}}
+\index{GetIsDrawing@{GetIsDrawing}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{GetIsDrawing()}{GetIsDrawing()}}
+{\footnotesize\ttfamily bool CContinue\+Widget\+::\+Get\+Is\+Drawing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_continue_widget_a914f47dc550dffee3116030bd8834b46}\label{class_c_continue_widget_a914f47dc550dffee3116030bd8834b46}} 
+\index{CContinueWidget@{CContinueWidget}!GetSelectState@{GetSelectState}}
+\index{GetSelectState@{GetSelectState}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{GetSelectState()}{GetSelectState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_continue_widget_ab45ce6137ab91236db79b4f22896a22c}{ESelect\+State}} CContinue\+Widget\+::\+Get\+Select\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_continue_widget_adcc5f3d5136fb78c94e535f5793c4edf}\label{class_c_continue_widget_adcc5f3d5136fb78c94e535f5793c4edf}} 
+\index{CContinueWidget@{CContinueWidget}!Init@{Init}}
+\index{Init@{Init}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CContinue\+Widget\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_continue_widget_a2b436e346dfe181b7becc9beb2427eed}\label{class_c_continue_widget_a2b436e346dfe181b7becc9beb2427eed}} 
+\index{CContinueWidget@{CContinueWidget}!Render@{Render}}
+\index{Render@{Render}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CContinue\+Widget\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_continue_widget_af2ca55df96cc7081dbfe67fca97d0fa0}\label{class_c_continue_widget_af2ca55df96cc7081dbfe67fca97d0fa0}} 
+\index{CContinueWidget@{CContinueWidget}!Update@{Update}}
+\index{Update@{Update}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CContinue\+Widget\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_continue_widget_acdd90522f77687c8297b49945182cbc4}\label{class_c_continue_widget_acdd90522f77687c8297b49945182cbc4}} 
+\index{CContinueWidget@{CContinueWidget}!BACKGROUND@{BACKGROUND}}
+\index{BACKGROUND@{BACKGROUND}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{BACKGROUND}{BACKGROUND}}
+{\footnotesize\ttfamily const int CContinue\+Widget\+::\+BACKGROUND = 0}
+
+\mbox{\Hypertarget{class_c_continue_widget_aadede8c1e901836ba438a1baa23b52f7}\label{class_c_continue_widget_aadede8c1e901836ba438a1baa23b52f7}} 
+\index{CContinueWidget@{CContinueWidget}!BACKGROUND\_ALPHA@{BACKGROUND\_ALPHA}}
+\index{BACKGROUND\_ALPHA@{BACKGROUND\_ALPHA}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{BACKGROUND\_ALPHA}{BACKGROUND\_ALPHA}}
+{\footnotesize\ttfamily const float CContinue\+Widget\+::\+BACKGROUND\+\_\+\+ALPHA = 0.\+7f}
+
+\mbox{\Hypertarget{class_c_continue_widget_a11d0f2404074fe00c8d1663ea5eb263f}\label{class_c_continue_widget_a11d0f2404074fe00c8d1663ea5eb263f}} 
+\index{CContinueWidget@{CContinueWidget}!BACKGROUND\_ALPHA\_SPEED@{BACKGROUND\_ALPHA\_SPEED}}
+\index{BACKGROUND\_ALPHA\_SPEED@{BACKGROUND\_ALPHA\_SPEED}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{BACKGROUND\_ALPHA\_SPEED}{BACKGROUND\_ALPHA\_SPEED}}
+{\footnotesize\ttfamily const float CContinue\+Widget\+::\+BACKGROUND\+\_\+\+ALPHA\+\_\+\+SPEED = 0.\+005f}
+
+\mbox{\Hypertarget{class_c_continue_widget_ac65f195b0bf3638b2cede9648059ce94}\label{class_c_continue_widget_ac65f195b0bf3638b2cede9648059ce94}} 
+\index{CContinueWidget@{CContinueWidget}!EDrawTurn@{EDrawTurn}}
+\index{EDrawTurn@{EDrawTurn}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{EDrawTurn}{EDrawTurn}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_continue_widget_a72ac6888a065e0c16c1e1faff087c34c}{CContinue\+Widget\+::en\+Draw\+Turn}} CContinue\+Widget\+::\+EDraw\+Turn}
+
+\mbox{\Hypertarget{class_c_continue_widget_aaa7a8051bca1c63b549573ea3668c7a8}\label{class_c_continue_widget_aaa7a8051bca1c63b549573ea3668c7a8}} 
+\index{CContinueWidget@{CContinueWidget}!NO@{NO}}
+\index{NO@{NO}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{NO}{NO}}
+{\footnotesize\ttfamily const int CContinue\+Widget\+::\+NO = 2}
+
+\mbox{\Hypertarget{class_c_continue_widget_ae63029c22574cd3dc7fcdf46c7e3deb5}\label{class_c_continue_widget_ae63029c22574cd3dc7fcdf46c7e3deb5}} 
+\index{CContinueWidget@{CContinueWidget}!SPRITE\_BACK@{SPRITE\_BACK}}
+\index{SPRITE\_BACK@{SPRITE\_BACK}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{SPRITE\_BACK}{SPRITE\_BACK}}
+{\footnotesize\ttfamily const char$\ast$ CContinue\+Widget\+::\+SPRITE\+\_\+\+BACK = \char`\"{}Fade\char`\"{}}
+
+\mbox{\Hypertarget{class_c_continue_widget_a09e8f5465921e49fca11c0ace5ac4871}\label{class_c_continue_widget_a09e8f5465921e49fca11c0ace5ac4871}} 
+\index{CContinueWidget@{CContinueWidget}!SPRITE\_CONTINUE@{SPRITE\_CONTINUE}}
+\index{SPRITE\_CONTINUE@{SPRITE\_CONTINUE}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{SPRITE\_CONTINUE}{SPRITE\_CONTINUE}}
+{\footnotesize\ttfamily const char$\ast$ CContinue\+Widget\+::\+SPRITE\+\_\+\+CONTINUE = \char`\"{}continue\char`\"{}}
+
+\mbox{\Hypertarget{class_c_continue_widget_a4a0f359295097412043107509b7e4218}\label{class_c_continue_widget_a4a0f359295097412043107509b7e4218}} 
+\index{CContinueWidget@{CContinueWidget}!SPRITE\_NO@{SPRITE\_NO}}
+\index{SPRITE\_NO@{SPRITE\_NO}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{SPRITE\_NO}{SPRITE\_NO}}
+{\footnotesize\ttfamily const char$\ast$ CContinue\+Widget\+::\+SPRITE\+\_\+\+NO = \char`\"{}no\char`\"{}}
+
+\mbox{\Hypertarget{class_c_continue_widget_afcaa02f03ad295b673274b2a4fe9aa5a}\label{class_c_continue_widget_afcaa02f03ad295b673274b2a4fe9aa5a}} 
+\index{CContinueWidget@{CContinueWidget}!SPRITE\_YES@{SPRITE\_YES}}
+\index{SPRITE\_YES@{SPRITE\_YES}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{SPRITE\_YES}{SPRITE\_YES}}
+{\footnotesize\ttfamily const char$\ast$ CContinue\+Widget\+::\+SPRITE\+\_\+\+YES = \char`\"{}yes\char`\"{}}
+
+\mbox{\Hypertarget{class_c_continue_widget_aaaae6ba3fefa970d63df0c9eb6bc99f0}\label{class_c_continue_widget_aaaae6ba3fefa970d63df0c9eb6bc99f0}} 
+\index{CContinueWidget@{CContinueWidget}!TEXT\_ALPHA\_SPEED@{TEXT\_ALPHA\_SPEED}}
+\index{TEXT\_ALPHA\_SPEED@{TEXT\_ALPHA\_SPEED}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{TEXT\_ALPHA\_SPEED}{TEXT\_ALPHA\_SPEED}}
+{\footnotesize\ttfamily const float CContinue\+Widget\+::\+TEXT\+\_\+\+ALPHA\+\_\+\+SPEED = 0.\+005f}
+
+\mbox{\Hypertarget{class_c_continue_widget_a109252de2c9556c447ae570ab0465e53}\label{class_c_continue_widget_a109252de2c9556c447ae570ab0465e53}} 
+\index{CContinueWidget@{CContinueWidget}!YES@{YES}}
+\index{YES@{YES}!CContinueWidget@{CContinueWidget}}
+\doxysubsubsection{\texorpdfstring{YES}{YES}}
+{\footnotesize\ttfamily const int CContinue\+Widget\+::\+YES = 1}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Scene\+Widget/\+Continue\+Widget/\mbox{\hyperlink{_continue_widget_8h}{Continue\+Widget.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Scene\+Widget/\+Continue\+Widget/\mbox{\hyperlink{_continue_widget_8cpp}{Continue\+Widget.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="CXAudio2PlayBGM::SetBGMVolume" name="CXAudio2PlayBGM::SetBGMVolume">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,241,57"/>
+<area shape="rect" id="node2" href="$class_c_sound_manager.html#a865cc0164ead125d4340123e9abd2dd7" title=" " alt="" coords="289,5,511,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="559,31,755,57"/>
+</map>

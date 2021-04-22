@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/InvisibleWall/BoxStruct.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_5e470cbe5e26a9a138cfb7c45acea02c.html">InvisibleWall</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">BoxStruct.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_box_struct_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef BOX_STRUCT_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define BOX_STRUCT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// ボックスの構造体.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="struct_s_box_wall.html">   12</a></span>&#160;<span class="keyword">struct </span>stBoxWall</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_s_box_wall.html#a4d1bf902ab5a6ae576712fe192e7d196">   14</a></span>&#160;    D3DXVECTOR3 <a class="code" href="struct_s_box_wall.html#a4d1bf902ab5a6ae576712fe192e7d196">Length</a>;         <span class="comment">// ボックスの長さx,y,zの絶対値.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_s_box_wall.html#a6cc1c179b543351c3a32d401d5563a55">   15</a></span>&#160;    D3DXVECTOR2 <a class="code" href="struct_s_box_wall.html#a6cc1c179b543351c3a32d401d5563a55">MaxPosition</a>;    <span class="comment">// 最大座標 : yをz座標として使用.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_s_box_wall.html#ad07ac4094722f4836173f647e6298d6e">   16</a></span>&#160;    D3DXVECTOR2 <a class="code" href="struct_s_box_wall.html#ad07ac4094722f4836173f647e6298d6e">MinPosition</a>;    <span class="comment">// 最小座標 : yをz座標として使用.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_s_box_wall.html#a96cbe76ba59ff8e0cf254f78233ff46a">   17</a></span>&#160;    <a class="code" href="struct_s_box_wall.html#a96cbe76ba59ff8e0cf254f78233ff46a">stBoxWall</a>()</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        : Length        ( 0.0f, 0.0f, 0.0f )</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        , MaxPosition   ( 0.0f, 0.0f )</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        , MinPosition   ( 0.0f, 0.0f )</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_actor_8h.html#a4204272216cbaa94c06053ada0c4ca11">SBoxWall</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef BOX_STRUCT_H.</span></div>
+<div class="ttc" id="a_actor_8h_html_a4204272216cbaa94c06053ada0c4ca11"><div class="ttname"><a href="_actor_8h.html#a4204272216cbaa94c06053ada0c4ca11">SBoxWall</a></div><div class="ttdeci">struct stBoxWall typedef SBoxWall</div><div class="ttdef"><b>Definition:</b> Actor.h:13</div></div>
+<div class="ttc" id="astruct_s_box_wall_html_a4d1bf902ab5a6ae576712fe192e7d196"><div class="ttname"><a href="struct_s_box_wall.html#a4d1bf902ab5a6ae576712fe192e7d196">SBoxWall::Length</a></div><div class="ttdeci">D3DXVECTOR3 Length</div><div class="ttdef"><b>Definition:</b> BoxStruct.h:14</div></div>
+<div class="ttc" id="astruct_s_box_wall_html_a6cc1c179b543351c3a32d401d5563a55"><div class="ttname"><a href="struct_s_box_wall.html#a6cc1c179b543351c3a32d401d5563a55">SBoxWall::MaxPosition</a></div><div class="ttdeci">D3DXVECTOR2 MaxPosition</div><div class="ttdef"><b>Definition:</b> BoxStruct.h:15</div></div>
+<div class="ttc" id="astruct_s_box_wall_html_a96cbe76ba59ff8e0cf254f78233ff46a"><div class="ttname"><a href="struct_s_box_wall.html#a96cbe76ba59ff8e0cf254f78233ff46a">SBoxWall::stBoxWall</a></div><div class="ttdeci">stBoxWall()</div><div class="ttdef"><b>Definition:</b> BoxStruct.h:17</div></div>
+<div class="ttc" id="astruct_s_box_wall_html_ad07ac4094722f4836173f647e6298d6e"><div class="ttname"><a href="struct_s_box_wall.html#ad07ac4094722f4836173f647e6298d6e">SBoxWall::MinPosition</a></div><div class="ttdeci">D3DXVECTOR2 MinPosition</div><div class="ttdef"><b>Definition:</b> BoxStruct.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

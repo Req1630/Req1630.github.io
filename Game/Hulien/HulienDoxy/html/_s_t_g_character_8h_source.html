@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/STG/Character/STGCharacter.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_276a54fb21f513fac7132c893a2a5fc2.html">STG</a></li><li class="navelem"><a class="el" href="dir_6fcb8498315d752def033d8c0091df91.html">Character</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">STGCharacter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_t_g_character_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STG_CHARACTER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STG_CHARACTER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\STGActor.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    /*******************************************</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    *   STG用のキャラクター基底クラス.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_character.html">   17</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_character.html">CCharacter</a> : <span class="keyword">public</span> <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_character.html#a94574d74f605d70d70acb96e01233adf">CCharacter</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_s_t_g_1_1_c_character.html#a8f8fb8991776a6b6a49c796e79968c91">~CCharacter</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">// 弾の取得.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_character.html#a892560326012bc3a04bf553ad2792de3">   24</a></span>&#160;        <span class="keyword">virtual</span> std::vector&lt;std::shared_ptr&lt;CBullet&gt;&gt; <a class="code" href="class_s_t_g_1_1_c_character.html#a892560326012bc3a04bf553ad2792de3">GetBullets</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_s_t_g_1_1_c_character.html#a7a15f753f4d15e05067a7cf3c899a724">m_pBullets</a>; }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// 移動関数.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_character.html#a30dbc9bc31f3ee38e498148c481858ef">   28</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_character.html#a30dbc9bc31f3ee38e498148c481858ef">Move</a>() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// 弾の初期化.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_character.html#a32b23b10569c614e923596597feb6110">BulletInit</a>( </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            std::vector&lt;std::shared_ptr&lt;CBullet&gt;&gt;&amp; bullets, </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; bulletCount,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">char</span>* modelName );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">// 弾の更新.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_character.html#a80d760c343359b00ccc8a128be1c86e8">BulletUpdate</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// 弾の描画.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_character.html#ae71fb228e42466e36f323cce8ec32389">BulletRender</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; color = { 0.0f, 0.0f, 0.0f } );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// 弾を撃つ.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_character.html#a06efba9492a3124211be7107b78b5f41">BulletShot</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rot, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; moveSpeed );</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_character.html#a7a15f753f4d15e05067a7cf3c899a724">   42</a></span>&#160;        std::vector&lt;std::shared_ptr&lt;CBullet&gt;&gt; <a class="code" href="class_s_t_g_1_1_c_character.html#a7a15f753f4d15e05067a7cf3c899a724">m_pBullets</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_character.html#a1f3b933b5ccb83ab89d0a6b2ee6e496f">   43</a></span>&#160;        <span class="keywordtype">int</span>         <a class="code" href="class_s_t_g_1_1_c_character.html#a1f3b933b5ccb83ab89d0a6b2ee6e496f">m_ShotCount</a>;    <span class="comment">// 弾の撃った数.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_character.html#ad4a0056c7422f0ee211c55bb86d12370">   44</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="class_s_t_g_1_1_c_character.html#ad4a0056c7422f0ee211c55bb86d12370">m_LifePoint</a>;    <span class="comment">// 体力.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef STG_CHARACTER_H.</span></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div><div class="ttdef"><b>Definition:</b> STGActor.h:22</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html">STG::CCharacter</a></div><div class="ttdef"><b>Definition:</b> STGCharacter.h:18</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a06efba9492a3124211be7107b78b5f41"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a06efba9492a3124211be7107b78b5f41">STG::CCharacter::BulletShot</a></div><div class="ttdeci">virtual bool BulletShot(const float &amp;rot, const float &amp;moveSpeed)</div><div class="ttdef"><b>Definition:</b> STGCharacter.cpp:45</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a1f3b933b5ccb83ab89d0a6b2ee6e496f"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a1f3b933b5ccb83ab89d0a6b2ee6e496f">STG::CCharacter::m_ShotCount</a></div><div class="ttdeci">int m_ShotCount</div><div class="ttdef"><b>Definition:</b> STGCharacter.h:43</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a30dbc9bc31f3ee38e498148c481858ef"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a30dbc9bc31f3ee38e498148c481858ef">STG::CCharacter::Move</a></div><div class="ttdeci">virtual void Move()=0</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a32b23b10569c614e923596597feb6110"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a32b23b10569c614e923596597feb6110">STG::CCharacter::BulletInit</a></div><div class="ttdeci">virtual bool BulletInit(std::vector&lt; std::shared_ptr&lt; CBullet &gt;&gt; &amp;bullets, const int &amp;bulletCount, const char *modelName)</div><div class="ttdef"><b>Definition:</b> STGCharacter.cpp:16</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a7a15f753f4d15e05067a7cf3c899a724"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a7a15f753f4d15e05067a7cf3c899a724">STG::CCharacter::m_pBullets</a></div><div class="ttdeci">std::vector&lt; std::shared_ptr&lt; CBullet &gt; &gt; m_pBullets</div><div class="ttdef"><b>Definition:</b> STGCharacter.h:42</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a80d760c343359b00ccc8a128be1c86e8"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a80d760c343359b00ccc8a128be1c86e8">STG::CCharacter::BulletUpdate</a></div><div class="ttdeci">virtual void BulletUpdate()</div><div class="ttdef"><b>Definition:</b> STGCharacter.cpp:30</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a892560326012bc3a04bf553ad2792de3"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a892560326012bc3a04bf553ad2792de3">STG::CCharacter::GetBullets</a></div><div class="ttdeci">virtual std::vector&lt; std::shared_ptr&lt; CBullet &gt; &gt; GetBullets()</div><div class="ttdef"><b>Definition:</b> STGCharacter.h:24</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a8f8fb8991776a6b6a49c796e79968c91"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a8f8fb8991776a6b6a49c796e79968c91">STG::CCharacter::~CCharacter</a></div><div class="ttdeci">virtual ~CCharacter()</div><div class="ttdef"><b>Definition:</b> STGCharacter.cpp:11</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_a94574d74f605d70d70acb96e01233adf"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#a94574d74f605d70d70acb96e01233adf">STG::CCharacter::CCharacter</a></div><div class="ttdeci">CCharacter()</div><div class="ttdef"><b>Definition:</b> STGCharacter.cpp:4</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_ad4a0056c7422f0ee211c55bb86d12370"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#ad4a0056c7422f0ee211c55bb86d12370">STG::CCharacter::m_LifePoint</a></div><div class="ttdeci">float m_LifePoint</div><div class="ttdef"><b>Definition:</b> STGCharacter.h:44</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html_ae71fb228e42466e36f323cce8ec32389"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html#ae71fb228e42466e36f323cce8ec32389">STG::CCharacter::BulletRender</a></div><div class="ttdeci">virtual void BulletRender(const D3DXVECTOR3 &amp;color={ 0.0f, 0.0f, 0.0f })</div><div class="ttdef"><b>Definition:</b> STGCharacter.cpp:36</div></div>
+<div class="ttc" id="anamespace_s_t_g_html"><div class="ttname"><a href="namespace_s_t_g.html">STG</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

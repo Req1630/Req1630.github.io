@@ -1,0 +1,7 @@
+<map id="CAlienB::SetTargetPos" name="CAlienB::SetTargetPos">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,161,57"/>
+<area shape="rect" id="node2" href="$class_c_alien.html#adfc13a7afa0726e893795888824899cc" title=" " alt="" coords="209,31,356,57"/>
+<area shape="rect" id="node3" href="$class_c_alien.html#ad8ef815fde8263511051c8139f35671c" title=" " alt="" coords="404,31,535,57"/>
+<area shape="rect" id="node4" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="583,5,775,32"/>
+<area shape="rect" id="node5" href="$class_c_game_object.html#aa11137b89bb1cde166bbb55620d6b89f" title=" " alt="" coords="589,56,769,83"/>
+</map>

@@ -1,0 +1,241 @@
+\hypertarget{class_c_im_gui_manager}{}\doxysection{CIm\+Gui\+Manager クラス}
+\label{class_c_im_gui_manager}\index{CImGuiManager@{CImGuiManager}}
+
+
+{\ttfamily \#include $<$Im\+Gui\+Manager.\+h$>$}
+
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_drag_state}{SDrag\+State}}
+\item 
+struct \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_success}{SSuccess}}
+\item 
+struct \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_im_gui_manager_a4535a79e859e6696daa0854164c3af1c}{CIm\+Gui\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_c_im_gui_manager_a540869fbb818b3448917a17546a4e151}{$\sim$\+CIm\+Gui\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static HRESULT \mbox{\hyperlink{class_c_im_gui_manager_aa5b4b45e7610247ad50d496d953798eb}{Init}} (HWND h\+Wnd, ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+static HRESULT \mbox{\hyperlink{class_c_im_gui_manager_a1b2f4134aeb4bf4e7afe9bfd5c50c9d0}{Release}} ()
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_ac94e4ef740a18a2799d4fc8aa0d33d25}{Seting\+New\+Frame}} ()
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_a59bac369b7b8b028e877c33d7028483d}{Render}} ()
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_ac29e632b2768c04360cbc080e550ad9e}{Drag\+Double}} (const char $\ast$label, double $\ast$v, const double \&speed=0.\+001)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_ad4d60b5a550a428ae673d63c0fcbfcf7}{Drag\+Float}} (const char $\ast$label, float $\ast$v, const float \&speed=0.\+001f)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_aefbb07e1003ec26a0622771a376cf5f5}{Drag\+Int}} (const char $\ast$label, int $\ast$v, const float \&speed=1.\+0f)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_a3706745145dfd8657808b1ab0b9c2c10}{Drag\+Double}} (double $\ast$v, const \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}$<$ double $>$ \&state, const int \&no=0)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_ab19a8a51c16a69b913b2620fc2873b81}{Drag\+Float}} (float $\ast$v, const \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}$<$ float $>$ \&state, const int \&no=0)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_a5552f2d228d242e02f6c0c225cc5ea20}{Drag\+Int}} (int $\ast$v, const \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}$<$ int $>$ \&state, const int \&no=0)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_a82f7f669887194599e86e11f794db631}{Description\+Print}} (const char $\ast$description, const int \&no=0)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_abbd423de4aa21b115c5a4afcd6c831d0}{Default\+Reset\+Button}} (double $\ast$v, const double \&param, const int \&no=0)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_a41aaf581d5df0192fe9fffd7805ef76e}{Default\+Reset\+Button}} (float $\ast$v, const float \&param, const int \&no=0)
+\item 
+static void \mbox{\hyperlink{class_c_im_gui_manager_af28274bf27ee72abc08dae143a86bc78}{Default\+Reset\+Button}} (int $\ast$v, const int \&param, const int \&no=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_im_gui_manager_a4535a79e859e6696daa0854164c3af1c}\label{class_c_im_gui_manager_a4535a79e859e6696daa0854164c3af1c}} 
+\index{CImGuiManager@{CImGuiManager}!CImGuiManager@{CImGuiManager}}
+\index{CImGuiManager@{CImGuiManager}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{CImGuiManager()}{CImGuiManager()}}
+{\footnotesize\ttfamily CIm\+Gui\+Manager\+::\+CIm\+Gui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_im_gui_manager_a540869fbb818b3448917a17546a4e151}\label{class_c_im_gui_manager_a540869fbb818b3448917a17546a4e151}} 
+\index{CImGuiManager@{CImGuiManager}!````~CImGuiManager@{$\sim$CImGuiManager}}
+\index{````~CImGuiManager@{$\sim$CImGuiManager}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CImGuiManager()}{~CImGuiManager()}}
+{\footnotesize\ttfamily CIm\+Gui\+Manager\+::$\sim$\+CIm\+Gui\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_im_gui_manager_abbd423de4aa21b115c5a4afcd6c831d0}\label{class_c_im_gui_manager_abbd423de4aa21b115c5a4afcd6c831d0}} 
+\index{CImGuiManager@{CImGuiManager}!DefaultResetButton@{DefaultResetButton}}
+\index{DefaultResetButton@{DefaultResetButton}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DefaultResetButton()}{DefaultResetButton()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Default\+Reset\+Button (\begin{DoxyParamCaption}\item[{double $\ast$}]{v,  }\item[{const double \&}]{param,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_abbd423de4aa21b115c5a4afcd6c831d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_a41aaf581d5df0192fe9fffd7805ef76e}\label{class_c_im_gui_manager_a41aaf581d5df0192fe9fffd7805ef76e}} 
+\index{CImGuiManager@{CImGuiManager}!DefaultResetButton@{DefaultResetButton}}
+\index{DefaultResetButton@{DefaultResetButton}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DefaultResetButton()}{DefaultResetButton()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Default\+Reset\+Button (\begin{DoxyParamCaption}\item[{float $\ast$}]{v,  }\item[{const float \&}]{param,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_im_gui_manager_af28274bf27ee72abc08dae143a86bc78}\label{class_c_im_gui_manager_af28274bf27ee72abc08dae143a86bc78}} 
+\index{CImGuiManager@{CImGuiManager}!DefaultResetButton@{DefaultResetButton}}
+\index{DefaultResetButton@{DefaultResetButton}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DefaultResetButton()}{DefaultResetButton()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Default\+Reset\+Button (\begin{DoxyParamCaption}\item[{int $\ast$}]{v,  }\item[{const int \&}]{param,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_im_gui_manager_a82f7f669887194599e86e11f794db631}\label{class_c_im_gui_manager_a82f7f669887194599e86e11f794db631}} 
+\index{CImGuiManager@{CImGuiManager}!DescriptionPrint@{DescriptionPrint}}
+\index{DescriptionPrint@{DescriptionPrint}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DescriptionPrint()}{DescriptionPrint()}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Description\+Print (\begin{DoxyParamCaption}\item[{const char $\ast$}]{description,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_a82f7f669887194599e86e11f794db631_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_ac29e632b2768c04360cbc080e550ad9e}\label{class_c_im_gui_manager_ac29e632b2768c04360cbc080e550ad9e}} 
+\index{CImGuiManager@{CImGuiManager}!DragDouble@{DragDouble}}
+\index{DragDouble@{DragDouble}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DragDouble()}{DragDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Drag\+Double (\begin{DoxyParamCaption}\item[{const char $\ast$}]{label,  }\item[{double $\ast$}]{v,  }\item[{const double \&}]{speed = {\ttfamily 0.001} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_im_gui_manager_a3706745145dfd8657808b1ab0b9c2c10}\label{class_c_im_gui_manager_a3706745145dfd8657808b1ab0b9c2c10}} 
+\index{CImGuiManager@{CImGuiManager}!DragDouble@{DragDouble}}
+\index{DragDouble@{DragDouble}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DragDouble()}{DragDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Drag\+Double (\begin{DoxyParamCaption}\item[{double $\ast$}]{v,  }\item[{const \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}$<$ double $>$ \&}]{state,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_a3706745145dfd8657808b1ab0b9c2c10_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_ad4d60b5a550a428ae673d63c0fcbfcf7}\label{class_c_im_gui_manager_ad4d60b5a550a428ae673d63c0fcbfcf7}} 
+\index{CImGuiManager@{CImGuiManager}!DragFloat@{DragFloat}}
+\index{DragFloat@{DragFloat}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DragFloat()}{DragFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Drag\+Float (\begin{DoxyParamCaption}\item[{const char $\ast$}]{label,  }\item[{float $\ast$}]{v,  }\item[{const float \&}]{speed = {\ttfamily 0.001f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_ad4d60b5a550a428ae673d63c0fcbfcf7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_ab19a8a51c16a69b913b2620fc2873b81}\label{class_c_im_gui_manager_ab19a8a51c16a69b913b2620fc2873b81}} 
+\index{CImGuiManager@{CImGuiManager}!DragFloat@{DragFloat}}
+\index{DragFloat@{DragFloat}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DragFloat()}{DragFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Drag\+Float (\begin{DoxyParamCaption}\item[{float $\ast$}]{v,  }\item[{const \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}$<$ float $>$ \&}]{state,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_ab19a8a51c16a69b913b2620fc2873b81_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_aefbb07e1003ec26a0622771a376cf5f5}\label{class_c_im_gui_manager_aefbb07e1003ec26a0622771a376cf5f5}} 
+\index{CImGuiManager@{CImGuiManager}!DragInt@{DragInt}}
+\index{DragInt@{DragInt}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DragInt()}{DragInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Drag\+Int (\begin{DoxyParamCaption}\item[{const char $\ast$}]{label,  }\item[{int $\ast$}]{v,  }\item[{const float \&}]{speed = {\ttfamily 1.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_im_gui_manager_a5552f2d228d242e02f6c0c225cc5ea20}\label{class_c_im_gui_manager_a5552f2d228d242e02f6c0c225cc5ea20}} 
+\index{CImGuiManager@{CImGuiManager}!DragInt@{DragInt}}
+\index{DragInt@{DragInt}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{DragInt()}{DragInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Drag\+Int (\begin{DoxyParamCaption}\item[{int $\ast$}]{v,  }\item[{const \mbox{\hyperlink{struct_c_im_gui_manager_1_1_s_temp_drag_state}{STemp\+Drag\+State}}$<$ int $>$ \&}]{state,  }\item[{const int \&}]{no = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_a5552f2d228d242e02f6c0c225cc5ea20_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_aa5b4b45e7610247ad50d496d953798eb}\label{class_c_im_gui_manager_aa5b4b45e7610247ad50d496d953798eb}} 
+\index{CImGuiManager@{CImGuiManager}!Init@{Init}}
+\index{Init@{Init}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CIm\+Gui\+Manager\+::\+Init (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_c_im_gui_manager_aa5b4b45e7610247ad50d496d953798eb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_a1b2f4134aeb4bf4e7afe9bfd5c50c9d0}\label{class_c_im_gui_manager_a1b2f4134aeb4bf4e7afe9bfd5c50c9d0}} 
+\index{CImGuiManager@{CImGuiManager}!Release@{Release}}
+\index{Release@{Release}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT CIm\+Gui\+Manager\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_c_im_gui_manager_a1b2f4134aeb4bf4e7afe9bfd5c50c9d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_a59bac369b7b8b028e877c33d7028483d}\label{class_c_im_gui_manager_a59bac369b7b8b028e877c33d7028483d}} 
+\index{CImGuiManager@{CImGuiManager}!Render@{Render}}
+\index{Render@{Render}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_a59bac369b7b8b028e877c33d7028483d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_im_gui_manager_ac94e4ef740a18a2799d4fc8aa0d33d25}\label{class_c_im_gui_manager_ac94e4ef740a18a2799d4fc8aa0d33d25}} 
+\index{CImGuiManager@{CImGuiManager}!SetingNewFrame@{SetingNewFrame}}
+\index{SetingNewFrame@{SetingNewFrame}!CImGuiManager@{CImGuiManager}}
+\doxysubsubsection{\texorpdfstring{SetingNewFrame()}{SetingNewFrame()}}
+{\footnotesize\ttfamily void CIm\+Gui\+Manager\+::\+Seting\+New\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_im_gui_manager_ac94e4ef740a18a2799d4fc8aa0d33d25_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Im\+Gui\+Manager/\mbox{\hyperlink{_im_gui_manager_8h}{Im\+Gui\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Im\+Gui\+Manager/\mbox{\hyperlink{_im_gui_manager_8cpp}{Im\+Gui\+Manager.\+cpp}}\end{DoxyCompactItemize}

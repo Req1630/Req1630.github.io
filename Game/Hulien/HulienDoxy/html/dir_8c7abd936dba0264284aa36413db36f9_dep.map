@@ -1,0 +1,12 @@
+<map id="C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/XAudio2Play" name="C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/XAudio2Play">
+<area shape="rect" id="node1" href="dir_314d06783b4a00d57e00b73a1f83f107.html" title="OggLoad" alt="" coords="27,148,101,196"/>
+<area shape="rect" id="node2" href="dir_601a362d78299e56558db80bcba90894.html" title="XAudio2WaveLoad" alt="" coords="126,148,255,196"/>
+<area shape="rect" id="node3" href="dir_a4d6b0fabd3e250f16781d555fd95100.html" title="XAudio2Master" alt="" coords="280,148,389,196"/>
+<area shape="rect" id="node4" href="dir_d57b0832d9a3a506fc01175fa98a7994.html" title="XAudio2CallBack" alt="" coords="414,148,535,196"/>
+<area shape="rect" id="node5" href="dir_8c7abd936dba0264284aa36413db36f9.html" title="XAudio2Play" alt="" coords="215,52,310,100"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000178_000175.html" title="2" alt="" coords="118,145,126,160"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000178_000179.html" title="1" alt="" coords="222,131,230,146"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000178_000177.html" title="4" alt="" coords="309,121,317,136"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000178_000176.html" title="2" alt="" coords="406,126,414,140"/>
+<area shape="rect" id="clust1" href="dir_a7e3b021d6c65d18f140bdc84e03e579.html" title="XAudio2" alt="" coords="16,16,547,207"/>
+</map>

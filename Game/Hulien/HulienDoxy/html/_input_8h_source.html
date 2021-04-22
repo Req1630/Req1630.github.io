@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/Input/Input.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_7d5b4f1abc12bc2c7c0aeba93783c400.html">Utility</a></li><li class="navelem"><a class="el" href="dir_660e961baf323eabbb9d70bd4a0d9a31.html">Input</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Input.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INPUT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INPUT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// 警告についてのコード分析を無効にする.4005:再定義.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma warning(disable:4005)</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_key_input_8h.html">KeyInput/KeyInput.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_input_8h.html">XInput/XInput.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_input_struct_8h.html">InputStruct.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//「D3DX〜」の定義使用時に必要.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;D3DX10.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;d3dx10.lib&quot;</span> )</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// 入力軸の無効範囲.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span>   INPUT_AXIS_DEAD_ZONE = 0.4f;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// 入力軸のn乗値.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// コントローラーから受け取った値をn乗すると.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// 値が滑らかになる.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// https://hexadrive.jp/lab/tips/976/.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span>     INPUT_AXIS_POW_VALUE = 3;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_input.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_input.html">CInput</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// キーバインドのペア構造体.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_key_bind_pair.html">   30</a></span>&#160;    <span class="keyword">struct </span>stKeyBindPair</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_key_bind_pair.html#a2d0698c7696e8e0375180e427227fe8a">   32</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_input_1_1_s_key_bind_pair.html#a2d0698c7696e8e0375180e427227fe8a">Key</a>;    <span class="comment">// キー番号.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_key_bind_pair.html#ad3c733df4619b628ea6a5ffb031d722a">   33</a></span>&#160;        <span class="keyword">const</span> WORD          <a class="code" href="struct_c_input_1_1_s_key_bind_pair.html#ad3c733df4619b628ea6a5ffb031d722a">Button</a>; <span class="comment">// Xinputのボタン番号.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_key_bind_pair.html#a3977a75ccb7a3a20716f904ba26c9e03">   35</a></span>&#160;        <a class="code" href="struct_c_input_1_1_s_key_bind_pair.html#a3977a75ccb7a3a20716f904ba26c9e03">stKeyBindPair</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            : stKeyBindPair ( 0, 0 )</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {}</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_key_bind_pair.html#abafd938c20ded95c427f13cf2bf9ea25">   38</a></span>&#160;        <a class="code" href="struct_c_input_1_1_s_key_bind_pair.html#abafd938c20ded95c427f13cf2bf9ea25">stKeyBindPair</a>(</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>&amp;    k,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keyword">const</span> WORD&amp;             b )</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            : Key       ( k )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            , Button    ( b )</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    } <span class="keyword">typedef</span> SKeyBindPair;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 軸バインド.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html">   48</a></span>&#160;    <span class="keyword">struct </span>stAxisBind</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#a4b14bc4ba1914f3092a63816e7e92e0b">   50</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_input_1_1_s_axis_bind.html#a4b14bc4ba1914f3092a63816e7e92e0b">MinusKey</a>;   <span class="comment">// マイナス方向で受け取るキー番号.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#ad8199b1ee43945dff55b3db3e6354535">   51</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_input_1_1_s_axis_bind.html#ad8199b1ee43945dff55b3db3e6354535">PlusKey</a>;    <span class="comment">// プラス方向で受け取るキー番号.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#a9cea948543ca6ed83f01f410a53dbdc7">   53</a></span>&#160;        <span class="keyword">const</span> std::function&lt;SHORT()&gt; <a class="code" href="struct_c_input_1_1_s_axis_bind.html#a9cea948543ca6ed83f01f410a53dbdc7">GetValue</a>;<span class="comment">// コントローラの軸値の取得関数.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#ac2199eb38154adfcbde9cf52f0287e83">   55</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="struct_c_input_1_1_s_axis_bind.html#ac2199eb38154adfcbde9cf52f0287e83">MinValue</a>;   <span class="comment">// キーで受け取る際の最小値.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#a8094f21f6bc29ac0d8b698bcb06c7daf">   56</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="struct_c_input_1_1_s_axis_bind.html#a8094f21f6bc29ac0d8b698bcb06c7daf">MaxValue</a>;   <span class="comment">// キーで受け取る際の最大値.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#a7a080c15bf14444ddd31d4b65f6c5591">   58</a></span>&#160;        <a class="code" href="struct_c_input_1_1_s_axis_bind.html#a7a080c15bf14444ddd31d4b65f6c5591">stAxisBind</a>() : stAxisBind   ( 0, 0, [](){ <span class="keywordflow">return</span> 0; }, 0.0f, 0.0f ){}</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_s_axis_bind.html#a6be95babb79d1ba780af24652cafbe94">   59</a></span>&#160;        <a class="code" href="struct_c_input_1_1_s_axis_bind.html#a6be95babb79d1ba780af24652cafbe94">stAxisBind</a>(</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>&amp; mk,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>&amp; pk,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keyword">const</span> std::function&lt;SHORT()&gt;&amp; func,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; minValue,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; maxValue )</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            : MinusKey  ( mk )</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            , PlusKey   ( pk )</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            , GetValue  ( func )</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            , MinValue  ( minValue )</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            , MaxValue  ( maxValue )</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    } <span class="keyword">typedef</span> SAxisBind;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_vector2.html">   73</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_input_1_1_vector2.html">Vector2</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_vector2.html#a9f7ba070be69e08180a0264384b52ccf">   75</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_input_1_1_vector2.html#a9f7ba070be69e08180a0264384b52ccf">x</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_vector2.html#aed4596c22bffebb371bfd126876b53cb">   76</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_input_1_1_vector2.html#aed4596c22bffebb371bfd126876b53cb">y</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_vector2.html#a37dc59d3086bfda322aeb0a651e9c9ab">   77</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_input_1_1_vector2.html#a37dc59d3086bfda322aeb0a651e9c9ab">length</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="struct_c_input_1_1_vector2.html#ad3890afab1c43755a3d7963a89213167">   79</a></span>&#160;        <a class="code" href="struct_c_input_1_1_vector2.html#ad3890afab1c43755a3d7963a89213167">Vector2</a>() : <a class="code" href="struct_c_input_1_1_vector2.html#a9f7ba070be69e08180a0264384b52ccf">x</a> (0), <a class="code" href="struct_c_input_1_1_vector2.html#aed4596c22bffebb371bfd126876b53cb">y</a> (0), <a class="code" href="struct_c_input_1_1_vector2.html#a37dc59d3086bfda322aeb0a651e9c9ab">length</a> (0){}</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_c_input.html#aff3c546eecb1d947c92c81ea7d76329d">CInput</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_c_input.html#a282370813c9dfe52799b1a1ec49e497e">~CInput</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// バインドの初期化.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#ad8ec1ef782274373c374060721f4cd56">InitBind</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// バインドの初期化 : 外部から設定用.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#ad8ec1ef782274373c374060721f4cd56">InitBind</a>(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        std::function&lt;<span class="keywordtype">void</span>(std::unordered_map&lt;EKeyBind, SKeyBindPair&gt;&amp;)&gt;    keyFunc,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        std::function&lt;<span class="keywordtype">void</span>(std::unordered_map&lt;EAxisBind, SAxisBind&gt;&amp;)&gt;      axisFunc );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// キーバインドの初期化.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#ab89a3d05539ed3769a7d515c7c6c739f">InitKeyBind</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// 軸バインドの初期化.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#aed378e373b0fd06b539ff31846cba88a">InitAxisBind</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// キーバインドの初期化 : 外部から設定用.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// 以下使用例.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">        CInput::InitKeyBind( []( std::unordered_map&lt;EKeyBind, CInput::SKeyBindPair&gt;&amp; list )</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">        {</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">            list =</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">            {</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">                キーバインド列挙体,     設定するキー、ゲームパッドのボタンの設定.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">                { EKeyBind::Decision,   CInput::SKeyBindPair( VK_RETURN,    XINPUT_GAMEPAD_B )  },</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">                { EKeyBind::Cancel,     CInput::SKeyBindPair( VK_BACK,      XINPUT_GAMEPAD_A )  },</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">            };</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">        };</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#ab89a3d05539ed3769a7d515c7c6c739f">InitKeyBind</a>( std::function&lt;<span class="keywordtype">void</span>(std::unordered_map&lt;EKeyBind, SKeyBindPair&gt;&amp;)&gt; func );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// 軸バインドの初期化 : 外部から設定用.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 以下使用例.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">        CInput::InitAxisBind( []( std::unordered_map&lt;EAxisBind, SAxisBind&gt;&amp; list )</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">        {</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">            list =</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">            {</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">                軸バインドの列挙体      設定するキー、受け取る軸の関数、受け取る最小値、最大値.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">                { EAxisBind::L_Forward, SAxisBind( &#39;S&#39;, &#39;W&#39;, [](){ return CXInput::LThumbY_Axis(); }, -1.0f, 1.0f ) },</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">                { EAxisBind::L_Right,   SAxisBind( &#39;A&#39;, &#39;D&#39;, [](){ return CXInput::LThumbX_Axis(); }, -1.0f, 1.0f ) },</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">            };</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">        };</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#aed378e373b0fd06b539ff31846cba88a">InitAxisBind</a>( std::function&lt;<span class="keywordtype">void</span>(std::unordered_map&lt;EAxisBind, SAxisBind&gt;&amp;)&gt; func );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// 入力状態の更新.</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_input.html#a2d34adba35130a5a3b3f87b5708b4197">StateUpdate</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// 押されているとき.</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_input.html#a1442fa8a9617d09e84d2ad98cd8df969">IsPress</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a>&amp; key );</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// 押された瞬間.</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_input.html#a6a05cb0f29e7cae3fe68d46dbe3b7c4f">IsMomentPress</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a>&amp; key );</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// 長押ししているとき.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_input.html#a129dbc11e6034e740e2a6003d4bfce08">IsHold</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a>&amp; key );</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// 離した瞬間.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_input.html#a590a96eb8cbe3263e3b06f29007112f8">IsRelease</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a>&amp; key );</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// 押していない.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_input.html#a5ce001fa12ecb7364b482720ddbe9ed0">NotPress</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a>&amp; key );</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// 軸値の取得(vector2).</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keyword">static</span> Vector2 <a class="code" href="class_c_input.html#a8e16abc84eb96f878b1e08e02f6e87c6">GetAxisVector</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a>&amp; key_x, <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a>&amp; key_y );</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#ifdef  __D3DX9MATH_H__ </span><span class="comment">//「D3DX〜」系が呼ばれいれば以下の関数が使用できる.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">// 軸値の取得(D3DXVECTOR2).</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">static</span> D3DXVECTOR2 GetAxisDxVector( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a>&amp; key_x, <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a>&amp; key_y );</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifdef __D3DX9MATH_H__</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// 軸値の取得.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_c_input.html#a6c8e8a35a9fcba9bae4246abe42edea3">GetAxisValue</a>( <span class="keyword">const</span> <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a>&amp; key );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// インスタンスの取得.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_input.html">CInput</a>* GetInstance();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    std::unordered_map&lt;EKeyBind, SKeyBindPair&gt;  m_KeyBindList;  <span class="comment">// KeyBindPairのリスト.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    std::unordered_map&lt;EAxisBind, SAxisBind&gt;    m_AxisBindList; <span class="comment">// AxisBindのリスト.</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="comment">// コピー・ムーブコンストラクタ, 代入演算子の削除.</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="class_c_input.html#aff3c546eecb1d947c92c81ea7d76329d">CInput</a>( <span class="keyword">const</span> <a class="code" href="class_c_input.html">CInput</a> &amp; )                = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_c_input.html#aff3c546eecb1d947c92c81ea7d76329d">CInput</a>( <a class="code" href="class_c_input.html">CInput</a> &amp;&amp; )                     = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="class_c_input.html">CInput</a>&amp; operator = ( <span class="keyword">const</span> <a class="code" href="class_c_input.html">CInput</a> &amp; )   = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="class_c_input.html">CInput</a>&amp; operator = ( <a class="code" href="class_c_input.html">CInput</a> &amp;&amp; )        = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;};</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef INPUT_H.</span></div>
+<div class="ttc" id="a_input_struct_8h_html"><div class="ttname"><a href="_input_struct_8h.html">InputStruct.h</a></div></div>
+<div class="ttc" id="a_input_struct_8h_html_a2a598686170e1cf651b5cb969600b96e"><div class="ttname"><a href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a></div><div class="ttdeci">EAxisBind</div><div class="ttdef"><b>Definition:</b> InputStruct.h:33</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a></div><div class="ttdeci">EKeyBind</div><div class="ttdef"><b>Definition:</b> InputStruct.h:7</div></div>
+<div class="ttc" id="a_key_input_8h_html"><div class="ttname"><a href="_key_input_8h.html">KeyInput.h</a></div></div>
+<div class="ttc" id="a_x_input_8h_html"><div class="ttname"><a href="_x_input_8h.html">XInput.h</a></div><div class="ttdoc">This is Use Xinput Controller file.</div></div>
+<div class="ttc" id="aclass_c_input_html"><div class="ttname"><a href="class_c_input.html">CInput</a></div><div class="ttdef"><b>Definition:</b> Input.h:27</div></div>
+<div class="ttc" id="aclass_c_input_html_a129dbc11e6034e740e2a6003d4bfce08"><div class="ttname"><a href="class_c_input.html#a129dbc11e6034e740e2a6003d4bfce08">CInput::IsHold</a></div><div class="ttdeci">static bool IsHold(const EKeyBind &amp;key)</div><div class="ttdef"><b>Definition:</b> Input.cpp:104</div></div>
+<div class="ttc" id="aclass_c_input_html_a1442fa8a9617d09e84d2ad98cd8df969"><div class="ttname"><a href="class_c_input.html#a1442fa8a9617d09e84d2ad98cd8df969">CInput::IsPress</a></div><div class="ttdeci">static bool IsPress(const EKeyBind &amp;key)</div><div class="ttdef"><b>Definition:</b> Input.cpp:88</div></div>
+<div class="ttc" id="aclass_c_input_html_a282370813c9dfe52799b1a1ec49e497e"><div class="ttname"><a href="class_c_input.html#a282370813c9dfe52799b1a1ec49e497e">CInput::~CInput</a></div><div class="ttdeci">~CInput()</div><div class="ttdef"><b>Definition:</b> Input.cpp:9</div></div>
+<div class="ttc" id="aclass_c_input_html_a2d34adba35130a5a3b3f87b5708b4197"><div class="ttname"><a href="class_c_input.html#a2d34adba35130a5a3b3f87b5708b4197">CInput::StateUpdate</a></div><div class="ttdeci">static void StateUpdate()</div><div class="ttdef"><b>Definition:</b> Input.cpp:81</div></div>
+<div class="ttc" id="aclass_c_input_html_a590a96eb8cbe3263e3b06f29007112f8"><div class="ttname"><a href="class_c_input.html#a590a96eb8cbe3263e3b06f29007112f8">CInput::IsRelease</a></div><div class="ttdeci">static bool IsRelease(const EKeyBind &amp;key)</div><div class="ttdef"><b>Definition:</b> Input.cpp:112</div></div>
+<div class="ttc" id="aclass_c_input_html_a5ce001fa12ecb7364b482720ddbe9ed0"><div class="ttname"><a href="class_c_input.html#a5ce001fa12ecb7364b482720ddbe9ed0">CInput::NotPress</a></div><div class="ttdeci">static bool NotPress(const EKeyBind &amp;key)</div><div class="ttdef"><b>Definition:</b> Input.cpp:120</div></div>
+<div class="ttc" id="aclass_c_input_html_a6a05cb0f29e7cae3fe68d46dbe3b7c4f"><div class="ttname"><a href="class_c_input.html#a6a05cb0f29e7cae3fe68d46dbe3b7c4f">CInput::IsMomentPress</a></div><div class="ttdeci">static bool IsMomentPress(const EKeyBind &amp;key)</div><div class="ttdef"><b>Definition:</b> Input.cpp:96</div></div>
+<div class="ttc" id="aclass_c_input_html_a6c8e8a35a9fcba9bae4246abe42edea3"><div class="ttname"><a href="class_c_input.html#a6c8e8a35a9fcba9bae4246abe42edea3">CInput::GetAxisValue</a></div><div class="ttdeci">static float GetAxisValue(const EAxisBind &amp;key)</div><div class="ttdef"><b>Definition:</b> Input.cpp:163</div></div>
+<div class="ttc" id="aclass_c_input_html_a8e16abc84eb96f878b1e08e02f6e87c6"><div class="ttname"><a href="class_c_input.html#a8e16abc84eb96f878b1e08e02f6e87c6">CInput::GetAxisVector</a></div><div class="ttdeci">static Vector2 GetAxisVector(const EAxisBind &amp;key_x, const EAxisBind &amp;key_y)</div><div class="ttdef"><b>Definition:</b> Input.cpp:131</div></div>
+<div class="ttc" id="aclass_c_input_html_ab89a3d05539ed3769a7d515c7c6c739f"><div class="ttname"><a href="class_c_input.html#ab89a3d05539ed3769a7d515c7c6c739f">CInput::InitKeyBind</a></div><div class="ttdeci">static void InitKeyBind()</div><div class="ttdef"><b>Definition:</b> Input.cpp:30</div></div>
+<div class="ttc" id="aclass_c_input_html_ad8ec1ef782274373c374060721f4cd56"><div class="ttname"><a href="class_c_input.html#ad8ec1ef782274373c374060721f4cd56">CInput::InitBind</a></div><div class="ttdeci">static void InitBind()</div><div class="ttdef"><b>Definition:</b> Input.cpp:14</div></div>
+<div class="ttc" id="aclass_c_input_html_aed378e373b0fd06b539ff31846cba88a"><div class="ttname"><a href="class_c_input.html#aed378e373b0fd06b539ff31846cba88a">CInput::InitAxisBind</a></div><div class="ttdeci">static void InitAxisBind()</div><div class="ttdef"><b>Definition:</b> Input.cpp:56</div></div>
+<div class="ttc" id="aclass_c_input_html_aff3c546eecb1d947c92c81ea7d76329d"><div class="ttname"><a href="class_c_input.html#aff3c546eecb1d947c92c81ea7d76329d">CInput::CInput</a></div><div class="ttdeci">CInput()</div><div class="ttdef"><b>Definition:</b> Input.cpp:3</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_a4b14bc4ba1914f3092a63816e7e92e0b"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#a4b14bc4ba1914f3092a63816e7e92e0b">CInput::SAxisBind::MinusKey</a></div><div class="ttdeci">const unsigned char MinusKey</div><div class="ttdef"><b>Definition:</b> Input.h:50</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_a6be95babb79d1ba780af24652cafbe94"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#a6be95babb79d1ba780af24652cafbe94">CInput::SAxisBind::stAxisBind</a></div><div class="ttdeci">stAxisBind(const unsigned char &amp;mk, const unsigned char &amp;pk, const std::function&lt; SHORT()&gt; &amp;func, const float &amp;minValue, const float &amp;maxValue)</div><div class="ttdef"><b>Definition:</b> Input.h:59</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_a7a080c15bf14444ddd31d4b65f6c5591"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#a7a080c15bf14444ddd31d4b65f6c5591">CInput::SAxisBind::stAxisBind</a></div><div class="ttdeci">stAxisBind()</div><div class="ttdef"><b>Definition:</b> Input.h:58</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_a8094f21f6bc29ac0d8b698bcb06c7daf"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#a8094f21f6bc29ac0d8b698bcb06c7daf">CInput::SAxisBind::MaxValue</a></div><div class="ttdeci">const float MaxValue</div><div class="ttdef"><b>Definition:</b> Input.h:56</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_a9cea948543ca6ed83f01f410a53dbdc7"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#a9cea948543ca6ed83f01f410a53dbdc7">CInput::SAxisBind::GetValue</a></div><div class="ttdeci">const std::function&lt; SHORT()&gt; GetValue</div><div class="ttdef"><b>Definition:</b> Input.h:53</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_ac2199eb38154adfcbde9cf52f0287e83"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#ac2199eb38154adfcbde9cf52f0287e83">CInput::SAxisBind::MinValue</a></div><div class="ttdeci">const float MinValue</div><div class="ttdef"><b>Definition:</b> Input.h:55</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_axis_bind_html_ad8199b1ee43945dff55b3db3e6354535"><div class="ttname"><a href="struct_c_input_1_1_s_axis_bind.html#ad8199b1ee43945dff55b3db3e6354535">CInput::SAxisBind::PlusKey</a></div><div class="ttdeci">const unsigned char PlusKey</div><div class="ttdef"><b>Definition:</b> Input.h:51</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_key_bind_pair_html_a2d0698c7696e8e0375180e427227fe8a"><div class="ttname"><a href="struct_c_input_1_1_s_key_bind_pair.html#a2d0698c7696e8e0375180e427227fe8a">CInput::SKeyBindPair::Key</a></div><div class="ttdeci">const unsigned char Key</div><div class="ttdef"><b>Definition:</b> Input.h:32</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_key_bind_pair_html_a3977a75ccb7a3a20716f904ba26c9e03"><div class="ttname"><a href="struct_c_input_1_1_s_key_bind_pair.html#a3977a75ccb7a3a20716f904ba26c9e03">CInput::SKeyBindPair::stKeyBindPair</a></div><div class="ttdeci">stKeyBindPair()</div><div class="ttdef"><b>Definition:</b> Input.h:35</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_key_bind_pair_html_abafd938c20ded95c427f13cf2bf9ea25"><div class="ttname"><a href="struct_c_input_1_1_s_key_bind_pair.html#abafd938c20ded95c427f13cf2bf9ea25">CInput::SKeyBindPair::stKeyBindPair</a></div><div class="ttdeci">stKeyBindPair(const unsigned char &amp;k, const WORD &amp;b)</div><div class="ttdef"><b>Definition:</b> Input.h:38</div></div>
+<div class="ttc" id="astruct_c_input_1_1_s_key_bind_pair_html_ad3c733df4619b628ea6a5ffb031d722a"><div class="ttname"><a href="struct_c_input_1_1_s_key_bind_pair.html#ad3c733df4619b628ea6a5ffb031d722a">CInput::SKeyBindPair::Button</a></div><div class="ttdeci">const WORD Button</div><div class="ttdef"><b>Definition:</b> Input.h:33</div></div>
+<div class="ttc" id="astruct_c_input_1_1_vector2_html"><div class="ttname"><a href="struct_c_input_1_1_vector2.html">CInput::Vector2</a></div><div class="ttdef"><b>Definition:</b> Input.h:74</div></div>
+<div class="ttc" id="astruct_c_input_1_1_vector2_html_a37dc59d3086bfda322aeb0a651e9c9ab"><div class="ttname"><a href="struct_c_input_1_1_vector2.html#a37dc59d3086bfda322aeb0a651e9c9ab">CInput::Vector2::length</a></div><div class="ttdeci">float length</div><div class="ttdef"><b>Definition:</b> Input.h:77</div></div>
+<div class="ttc" id="astruct_c_input_1_1_vector2_html_a9f7ba070be69e08180a0264384b52ccf"><div class="ttname"><a href="struct_c_input_1_1_vector2.html#a9f7ba070be69e08180a0264384b52ccf">CInput::Vector2::x</a></div><div class="ttdeci">float x</div><div class="ttdef"><b>Definition:</b> Input.h:75</div></div>
+<div class="ttc" id="astruct_c_input_1_1_vector2_html_ad3890afab1c43755a3d7963a89213167"><div class="ttname"><a href="struct_c_input_1_1_vector2.html#ad3890afab1c43755a3d7963a89213167">CInput::Vector2::Vector2</a></div><div class="ttdeci">Vector2()</div><div class="ttdef"><b>Definition:</b> Input.h:79</div></div>
+<div class="ttc" id="astruct_c_input_1_1_vector2_html_aed4596c22bffebb371bfd126876b53cb"><div class="ttname"><a href="struct_c_input_1_1_vector2.html#aed4596c22bffebb371bfd126876b53cb">CInput::Vector2::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> Input.h:76</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

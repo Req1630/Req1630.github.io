@@ -1,0 +1,318 @@
+\hypertarget{class_c_actor}{}\doxysection{CActor クラス}
+\label{class_c_actor}\index{CActor@{CActor}}
+
+
+{\ttfamily \#include $<$Actor.\+h$>$}
+
+
+
+CActor の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CActor 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_actor_a22436a9e69474d47f31ac81fa192ba4b}{CActor}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_actor_adca86a138fd9af275352336848ebad27}{$\sim$\+CActor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}{Effect\+Render}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor)=0
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a29421b3908b94cc34745430bb7662866}{Life\+Calculation}} (const std\+::function$<$ void(float \&, bool \&)$>$ \&)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a6242dc54a323ee9e651d98842d059dad}{Set\+SPEffect\+Time}} (const std\+::function$<$ void(float \&, float \&)$>$ \&)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a900797b3a5c7cf6049b841c860032328}{Set\+Attack\+Effect\+Time}} (const std\+::function$<$ void(float \&, float \&)$>$ \&)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_ad25664050ec3eacb9cd67c51b918d703}{Set\+Move\+Speed\+Effect\+Time}} (const std\+::function$<$ void(float \&, float \&)$>$ \&)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a2157d9ebb794373d092ebfa6892cbb0e}{Set\+Paralysis\+Time}} (const std\+::function$<$ void(float \&)$>$ \&)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_ad3b806087fc892991fbfa6d3a6a7481b}{Set\+Vector}} (const D3\+DXVECTOR3 \&vec)
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_ae7697e329ccac87a1f4aa7940b4c158d}{Stop\+Animation}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_actor_a788304eb4f7cb0170630b74dbef108f3}{Resume\+Animation}} ()
+\item 
+void \mbox{\hyperlink{class_c_actor_a6c8e8a67b229845e27f90ab4e21bd758}{Set\+Box\+Wall}} (\mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}} $\ast$box)
+\item 
+\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$ \mbox{\hyperlink{class_c_actor_a114e2a11ec99c15ea17d5a20ab6a089b}{Get\+Coll\+Manager}} ()
+\item 
+bool \mbox{\hyperlink{class_c_actor_a6a29f813106184e1ab32e915018c6690}{Is\+Possible\+To\+Hit}} ()
+\item 
+bool \mbox{\hyperlink{class_c_actor_a927e61ab03964140ff456f6955fca74c}{Is\+Play\+Camera\+Shake}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_actor_a8f13e3f445df91bf165008a332657b1b}{Is\+Crashed\+Wall}} ()
+\item 
+bool \mbox{\hyperlink{class_c_actor_aa1e53267f2dee4ebf9ad4dc508fc3411}{Is\+Crashed\+WallX}} ()
+\item 
+bool \mbox{\hyperlink{class_c_actor_adbb1bf6eff992a063f1a926896991e2e}{Is\+Crashed\+WallZ}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $>$ \mbox{\hyperlink{class_c_actor_afc43e8ccd0d1b0e83b12eb1589109264}{m\+\_\+p\+Coll\+Manager}}
+\item 
+\mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}} $\ast$ \mbox{\hyperlink{class_c_actor_a4004a424bf1c9bd5ab9fc64572c9a69a}{m\+\_\+p\+Box\+Wall}}
+\item 
+bool \mbox{\hyperlink{class_c_actor_a43d6bdb6d04d54e12c45306020a5d3e1}{m\+\_\+\+Is\+Possible\+To\+Hit}}
+\item 
+bool \mbox{\hyperlink{class_c_actor_a5b809919e776463bc915c5166282493b}{m\+\_\+\+Is\+Play\+Camera\+Shake}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_actor_a22436a9e69474d47f31ac81fa192ba4b}\label{class_c_actor_a22436a9e69474d47f31ac81fa192ba4b}} 
+\index{CActor@{CActor}!CActor@{CActor}}
+\index{CActor@{CActor}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{CActor()}{CActor()}}
+{\footnotesize\ttfamily CActor\+::\+CActor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_actor_adca86a138fd9af275352336848ebad27}\label{class_c_actor_adca86a138fd9af275352336848ebad27}} 
+\index{CActor@{CActor}!````~CActor@{$\sim$CActor}}
+\index{````~CActor@{$\sim$CActor}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{$\sim$CActor()}{~CActor()}}
+{\footnotesize\ttfamily CActor\+::$\sim$\+CActor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_actor_a8625400f65db4910b23c6d820fea0e35}\label{class_c_actor_a8625400f65db4910b23c6d820fea0e35}} 
+\index{CActor@{CActor}!Collision@{Collision}}
+\index{Collision@{Collision}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_laser_beam_a0215296bbf5b3429f5b987e9187936bb}{CLaser\+Beam}}, \mbox{\hyperlink{class_c_s_p_effect_time_item_a3f3b567a12771a547f1df956ac172460}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a81b7ab428d8bcf1a4d7d33b46eef3dd3}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a6220636a1df5343bb4a86c0daba721b4}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a9e54f33a20df50628c3aa12f112c286d}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_item_base_a4d5f47448403bdfc77279a7f04644861}{CItem\+Base}}, \mbox{\hyperlink{class_c_edit_item_a9f484219212602be75a182f1b8198e1b}{CEdit\+Item}}, \mbox{\hyperlink{class_c_explosion_ad53d23d10886a88ac7f69b00598d2219}{CExplosion}}, \mbox{\hyperlink{class_c_event_player_a51600eeed23f4d3b2b2a253c4ef07c4e}{CEvent\+Player}}, \mbox{\hyperlink{class_c_event_girl_a147340cc1dbb0142520efe4b5d2e5213}{CEvent\+Girl}}, \mbox{\hyperlink{class_c_event_alien_a_a58ef5cd84475981815ad0e638c26e46d}{CEvent\+AlienA}}, \mbox{\hyperlink{class_c_player_afb9f23b4c32fe74b9fefc05767bdc51f}{CPlayer}}, \mbox{\hyperlink{class_c_girl_ae5349011c477ea48a6daeb475c58acb6}{CGirl}}, \mbox{\hyperlink{class_c_edit_alien_d_a05c97a32d9324634ae5f8ad86cac9e6d}{CEdit\+AlienD}}, \mbox{\hyperlink{class_c_edit_alien_c_ae32818a3a5ac736c6c639754a3b51b51}{CEdit\+AlienC}}, \mbox{\hyperlink{class_c_edit_alien_b_afbd113c268021c83f0398895116a0a7a}{CEdit\+AlienB}}, \mbox{\hyperlink{class_c_edit_alien_a_ab17fa22975111443ccaf198835bb20c0}{CEdit\+AlienA}}, \mbox{\hyperlink{class_c_alien_d_a807af82a93562ae26ff07297b9c4d888}{CAlienD}}, \mbox{\hyperlink{class_c_alien_c_a55f96185e31feca5fbac9e512f04852a}{CAlienC}}, \mbox{\hyperlink{class_c_alien_b_aefc4bbcf0e2f6714c064044c5bb7975c}{CAlienB}}, \mbox{\hyperlink{class_c_alien_a_a9aa225c985523b7d278d7b70fbdc6c42}{CAlienA}}, \mbox{\hyperlink{class_c_barrier_a0fd5a03fc321c4bf4afa39b4ea73c3bc}{CBarrier}} (計22項目)で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_c_actor_a8625400f65db4910b23c6d820fea0e35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}\label{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}} 
+\index{CActor@{CActor}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_laser_beam_ab7a49bdb78d158567d6e9095916aa1d4}{CLaser\+Beam}}, \mbox{\hyperlink{class_c_s_p_effect_time_item_a315fd4de26cb35d5cca0a818d10f0e3f}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a15b64c44e622371dd78bb5e6f2861c19}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_ab06210b2542bcf953d707f6c0beea09a}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a96b6267c70bf8cc15b2743a33b676632}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_item_base_aede174da0d6542991784e337db4e8c9e}{CItem\+Base}}, \mbox{\hyperlink{class_c_edit_item_aebbefbfc7ac0c773308380c637c8748e}{CEdit\+Item}}, \mbox{\hyperlink{class_c_explosion_a515294161f340cb222084e8be4bc30d2}{CExplosion}}, \mbox{\hyperlink{class_c_player_a24cceab09336374cb0db45c753985e90}{CPlayer}}, \mbox{\hyperlink{class_c_alien_d_aa851cf25506891ee7a37ad00258e7b1a}{CAlienD}}, \mbox{\hyperlink{class_c_alien_b_a2eae7fb9010d42abf5f6dc46ae4e340c}{CAlienB}}, \mbox{\hyperlink{class_c_alien_a977670eeb239bd77c63c6a389e78f231}{CAlien}}, \mbox{\hyperlink{class_c_barrier_a7a7415d026d6df6fe4c0d51500588c06}{CBarrier}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_actor_a114e2a11ec99c15ea17d5a20ab6a089b}\label{class_c_actor_a114e2a11ec99c15ea17d5a20ab6a089b}} 
+\index{CActor@{CActor}!GetCollManager@{GetCollManager}}
+\index{GetCollManager@{GetCollManager}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{GetCollManager()}{GetCollManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}}$\ast$ CActor\+::\+Get\+Coll\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_actor_a114e2a11ec99c15ea17d5a20ab6a089b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_actor_a8f13e3f445df91bf165008a332657b1b}\label{class_c_actor_a8f13e3f445df91bf165008a332657b1b}} 
+\index{CActor@{CActor}!IsCrashedWall@{IsCrashedWall}}
+\index{IsCrashedWall@{IsCrashedWall}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsCrashedWall()}{IsCrashedWall()}}
+{\footnotesize\ttfamily bool CActor\+::\+Is\+Crashed\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_actor_aa1e53267f2dee4ebf9ad4dc508fc3411}\label{class_c_actor_aa1e53267f2dee4ebf9ad4dc508fc3411}} 
+\index{CActor@{CActor}!IsCrashedWallX@{IsCrashedWallX}}
+\index{IsCrashedWallX@{IsCrashedWallX}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsCrashedWallX()}{IsCrashedWallX()}}
+{\footnotesize\ttfamily bool CActor\+::\+Is\+Crashed\+WallX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_actor_adbb1bf6eff992a063f1a926896991e2e}\label{class_c_actor_adbb1bf6eff992a063f1a926896991e2e}} 
+\index{CActor@{CActor}!IsCrashedWallZ@{IsCrashedWallZ}}
+\index{IsCrashedWallZ@{IsCrashedWallZ}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsCrashedWallZ()}{IsCrashedWallZ()}}
+{\footnotesize\ttfamily bool CActor\+::\+Is\+Crashed\+WallZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_actor_a927e61ab03964140ff456f6955fca74c}\label{class_c_actor_a927e61ab03964140ff456f6955fca74c}} 
+\index{CActor@{CActor}!IsPlayCameraShake@{IsPlayCameraShake}}
+\index{IsPlayCameraShake@{IsPlayCameraShake}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsPlayCameraShake()}{IsPlayCameraShake()}}
+{\footnotesize\ttfamily bool CActor\+::\+Is\+Play\+Camera\+Shake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_actor_a927e61ab03964140ff456f6955fca74c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_actor_a6a29f813106184e1ab32e915018c6690}\label{class_c_actor_a6a29f813106184e1ab32e915018c6690}} 
+\index{CActor@{CActor}!IsPossibleToHit@{IsPossibleToHit}}
+\index{IsPossibleToHit@{IsPossibleToHit}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{IsPossibleToHit()}{IsPossibleToHit()}}
+{\footnotesize\ttfamily bool CActor\+::\+Is\+Possible\+To\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_actor_a29421b3908b94cc34745430bb7662866}\label{class_c_actor_a29421b3908b94cc34745430bb7662866}} 
+\index{CActor@{CActor}!LifeCalculation@{LifeCalculation}}
+\index{LifeCalculation@{LifeCalculation}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{LifeCalculation()}{LifeCalculation()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Life\+Calculation (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(float \&, bool \&)$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_alien_abd25ee3c188d8bdda4f1b16c6a5c67ba}{CAlien}}で再実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_c_actor_a29421b3908b94cc34745430bb7662866_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_actor_a788304eb4f7cb0170630b74dbef108f3}\label{class_c_actor_a788304eb4f7cb0170630b74dbef108f3}} 
+\index{CActor@{CActor}!ResumeAnimation@{ResumeAnimation}}
+\index{ResumeAnimation@{ResumeAnimation}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{ResumeAnimation()}{ResumeAnimation()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Resume\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_player_a83fcaa076fceaecdced51b98d94533ed}{CPlayer}}, \mbox{\hyperlink{class_c_character_aa1ed50f7ba225fd42456316d9813d90f}{CCharacter}}, \mbox{\hyperlink{class_c_alien_ab6ef6f8287500a5eea8ad0279e6ce512}{CAlien}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_actor_a900797b3a5c7cf6049b841c860032328}\label{class_c_actor_a900797b3a5c7cf6049b841c860032328}} 
+\index{CActor@{CActor}!SetAttackEffectTime@{SetAttackEffectTime}}
+\index{SetAttackEffectTime@{SetAttackEffectTime}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetAttackEffectTime()}{SetAttackEffectTime()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Set\+Attack\+Effect\+Time (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(float \&, float \&)$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_actor_a6c8e8a67b229845e27f90ab4e21bd758}\label{class_c_actor_a6c8e8a67b229845e27f90ab4e21bd758}} 
+\index{CActor@{CActor}!SetBoxWall@{SetBoxWall}}
+\index{SetBoxWall@{SetBoxWall}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetBoxWall()}{SetBoxWall()}}
+{\footnotesize\ttfamily void CActor\+::\+Set\+Box\+Wall (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}} $\ast$}]{box }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_actor_ad25664050ec3eacb9cd67c51b918d703}\label{class_c_actor_ad25664050ec3eacb9cd67c51b918d703}} 
+\index{CActor@{CActor}!SetMoveSpeedEffectTime@{SetMoveSpeedEffectTime}}
+\index{SetMoveSpeedEffectTime@{SetMoveSpeedEffectTime}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetMoveSpeedEffectTime()}{SetMoveSpeedEffectTime()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Set\+Move\+Speed\+Effect\+Time (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(float \&, float \&)$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_actor_a2157d9ebb794373d092ebfa6892cbb0e}\label{class_c_actor_a2157d9ebb794373d092ebfa6892cbb0e}} 
+\index{CActor@{CActor}!SetParalysisTime@{SetParalysisTime}}
+\index{SetParalysisTime@{SetParalysisTime}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetParalysisTime()}{SetParalysisTime()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Set\+Paralysis\+Time (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(float \&)$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_actor_a2157d9ebb794373d092ebfa6892cbb0e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_actor_a6242dc54a323ee9e651d98842d059dad}\label{class_c_actor_a6242dc54a323ee9e651d98842d059dad}} 
+\index{CActor@{CActor}!SetSPEffectTime@{SetSPEffectTime}}
+\index{SetSPEffectTime@{SetSPEffectTime}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetSPEffectTime()}{SetSPEffectTime()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Set\+SPEffect\+Time (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(float \&, float \&)$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}\label{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}} 
+\index{CActor@{CActor}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_s_p_effect_time_item_a5195f4985fc54d61110ec7590c592aae}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a754cc7cab69f79700db5f00180e2f135}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a5c2a6f29e45fb38fa01aec7343a471e2}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a11116205a836c36d955444505e516473}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_edit_item_a0a4fc1242e37550a5bd2b90e5b444e7f}{CEdit\+Item}}, \mbox{\hyperlink{class_c_explosion_aff3589b04282e52a0e236ed67b7e0de5}{CExplosion}}, \mbox{\hyperlink{class_c_barrier_ae57dba15369c48116679a3831661b91e}{CBarrier}}, \mbox{\hyperlink{class_c_laser_beam_aad63781b5a27b674b7f1dbb5f7f48859}{CLaser\+Beam}}, \mbox{\hyperlink{class_c_event_player_adb8b6d0d2ab4c23a25c48d06d697f19a}{CEvent\+Player}}, \mbox{\hyperlink{class_c_event_girl_aa12cba5ad5747b282a2ebc1e9784e806}{CEvent\+Girl}}, \mbox{\hyperlink{class_c_event_alien_ac67066554c3c3e7f1ff978e8869dc9d3}{CEvent\+Alien}}, \mbox{\hyperlink{class_c_player_a4e84d2e83cec95fa94fe2b0bd08f6d12}{CPlayer}}, \mbox{\hyperlink{class_c_alien_b_a8d4f303adcaa4f12ca112e245e265d72}{CAlienB}}, \mbox{\hyperlink{class_c_alien_adfc13a7afa0726e893795888824899cc}{CAlien}}で再実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{class_c_actor_a9e4ade532df05c70266d698e0a56ba57_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_actor_ad3b806087fc892991fbfa6d3a6a7481b}\label{class_c_actor_ad3b806087fc892991fbfa6d3a6a7481b}} 
+\index{CActor@{CActor}!SetVector@{SetVector}}
+\index{SetVector@{SetVector}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{SetVector()}{SetVector()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Set\+Vector (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_player_ae58c494b48bdf1f1ff93a6e44d8476bb}{CPlayer}}, \mbox{\hyperlink{class_c_alien_a81308bc8c143a3bae2f99980782f8518}{CAlien}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_actor_ae7697e329ccac87a1f4aa7940b4c158d}\label{class_c_actor_ae7697e329ccac87a1f4aa7940b4c158d}} 
+\index{CActor@{CActor}!StopAnimation@{StopAnimation}}
+\index{StopAnimation@{StopAnimation}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{StopAnimation()}{StopAnimation()}}
+{\footnotesize\ttfamily virtual void CActor\+::\+Stop\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_character_a1aa522374e1b582a403fbab51f4f2a90}{CCharacter}}, \mbox{\hyperlink{class_c_alien_a1866baeaa100349f810c91d2338f7b8c}{CAlien}}, \mbox{\hyperlink{class_c_event_alien_a_a57390b67bb3a6e09e43c80f069c45330}{CEvent\+AlienA}}で再実装されています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_actor_a5b809919e776463bc915c5166282493b}\label{class_c_actor_a5b809919e776463bc915c5166282493b}} 
+\index{CActor@{CActor}!m\_IsPlayCameraShake@{m\_IsPlayCameraShake}}
+\index{m\_IsPlayCameraShake@{m\_IsPlayCameraShake}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{m\_IsPlayCameraShake}{m\_IsPlayCameraShake}}
+{\footnotesize\ttfamily bool CActor\+::m\+\_\+\+Is\+Play\+Camera\+Shake\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_actor_a43d6bdb6d04d54e12c45306020a5d3e1}\label{class_c_actor_a43d6bdb6d04d54e12c45306020a5d3e1}} 
+\index{CActor@{CActor}!m\_IsPossibleToHit@{m\_IsPossibleToHit}}
+\index{m\_IsPossibleToHit@{m\_IsPossibleToHit}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{m\_IsPossibleToHit}{m\_IsPossibleToHit}}
+{\footnotesize\ttfamily bool CActor\+::m\+\_\+\+Is\+Possible\+To\+Hit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_actor_a4004a424bf1c9bd5ab9fc64572c9a69a}\label{class_c_actor_a4004a424bf1c9bd5ab9fc64572c9a69a}} 
+\index{CActor@{CActor}!m\_pBoxWall@{m\_pBoxWall}}
+\index{m\_pBoxWall@{m\_pBoxWall}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{m\_pBoxWall}{m\_pBoxWall}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}}$\ast$ CActor\+::m\+\_\+p\+Box\+Wall\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_actor_afc43e8ccd0d1b0e83b12eb1589109264}\label{class_c_actor_afc43e8ccd0d1b0e83b12eb1589109264}} 
+\index{CActor@{CActor}!m\_pCollManager@{m\_pCollManager}}
+\index{m\_pCollManager@{m\_pCollManager}!CActor@{CActor}}
+\doxysubsubsection{\texorpdfstring{m\_pCollManager}{m\_pCollManager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}}$>$ CActor\+::m\+\_\+p\+Coll\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\mbox{\hyperlink{_actor_8h}{Actor.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\mbox{\hyperlink{_actor_8cpp}{Actor.\+cpp}}\end{DoxyCompactItemize}

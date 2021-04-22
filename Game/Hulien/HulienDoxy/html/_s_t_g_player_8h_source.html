@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/STG/Character/Player/STGPlayer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_276a54fb21f513fac7132c893a2a5fc2.html">STG</a></li><li class="navelem"><a class="el" href="dir_6fcb8498315d752def033d8c0091df91.html">Character</a></li><li class="navelem"><a class="el" href="dir_d0f068d6dfa031baea0734dc02dc8071.html">Player</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">STGPlayer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_t_g_player_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STG_PLAYER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STG_PLAYER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\STGCharacter.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    /********************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    *   プレイヤークラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_player.html">   16</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_player.html">CPlayer</a> : <span class="keyword">public</span> <a class="code" href="class_s_t_g_1_1_c_character.html">STG::CCharacter</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME              = <span class="stringliteral">&quot;ufo&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* BULLET_MODEL_NAME       = <span class="stringliteral">&quot;SpawnPoint&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* SHOT_SE_NAME            = <span class="stringliteral">&quot;STGshot&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* HIT_SE_NAME             = <span class="stringliteral">&quot;STGHit&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> STANDARD_MODEL_COLOR    = 1.0f;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> LIFE_POINT_MAX          = 5.0f;                     <span class="comment">// ライフの最大数.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MOVE_SPEED              = 0.4f;                     <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> BULLET_MOVE_SPEED       = 0.8f;                     <span class="comment">// 弾の速度.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span>   BULLET_COUNT_MAX        = 30;                       <span class="comment">// 弾の最大数.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span>   SHOT_INTERVAL_FRAME     = 15;                       <span class="comment">// 弾を撃つ間隔フレーム.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">const</span> D3DXVECTOR3 BULLET_COLOR      = { 0.4f, 1.2f, 0.4f };     <span class="comment">// 弾の色.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">const</span> D3DXVECTOR3 INIT_POSITION     = { 0.0f, 0.0f, 70.0f };    <span class="comment">// 初期座標.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MODEL_SCALE_MAX         = 0.2f;                     <span class="comment">// モデルの最大サイズ.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MODEL_SCALE_MIN         = 0.0f;                     <span class="comment">// モデルの最小サイズ.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> COLLISION_SCALE         = 3.0f;     <span class="comment">// 当たり判定の大きさ.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> SPAWN_END_POS_Z         = 40.0f;    <span class="comment">// スポーンの終了座標.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> SPAWN_SPEED_SUB         = 0.005f;   <span class="comment">// スポーンの移動速度の減算値.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> INIT_MOVE_COUNT         = (MOVE_SPEED / SPAWN_SPEED_SUB)*2.0f;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> INIT_MOVE_ROT_ADD       = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DX_PI) / (INIT_MOVE_COUNT*0.5f);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> OUT_POSITION_X          = 100.0f;   <span class="comment">// 画面外の座標 : X.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> OUT_POSITION_Z          = 55.0f;    <span class="comment">// 画面外の座標 : Z.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> DEAD_SPEED              = 0.02f;    <span class="comment">// 死亡速度.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> INVINCIBLE_BLINKING_VALUE_MIN   = 0.7f;     <span class="comment">// 点滅の最小値</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span>   INVINCIBLE_BLINKING_SPEED       = 6;        <span class="comment">// 点滅の速度.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span>   INVINCIBLE_TIME                 = 2*<a class="code" href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">FPS</a>;    <span class="comment">// 無敵時間.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_player.html#a931a59adf2ada5376122e30b33ae2c4c">CPlayer</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_s_t_g_1_1_c_player.html#ad02df04887bccfe3b82298895da24af6">~CPlayer</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_player.html#af427666ac35a0b3d90fcc4ffa42c8fd3">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_player.html#a4582a8020f6734842edea64909bd4b40">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_player.html#adde42d001de461b2192bbb39d7e69aa1">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// 当たり判定.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_player.html#a1b0e6cdb21839d7ea2d53a94bbffea99">Collision</a>( <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// 操作関数.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_player.html#a5c3f90436cf01f779c89a0c7c3cf090e">Controller</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// スポーン移動.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordtype">void</span> SpawnMove();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// 移動関数.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> Move() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// 死亡後処理.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> DeadUpdate();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// 弾を撃つ操作関数.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">void</span> ShotController();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// ライフ計算関数.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> LifeCalculation( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// 画面外に行った時の処理.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">void</span> OutDispMove();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">// 当たり判定の作成.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">bool</span> CollisionInit();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        D3DXVECTOR3 m_Direction;            <span class="comment">// 方向.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">int</span>         m_InvincibleTimeCount;  <span class="comment">// 無敵時間.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordtype">float</span>       m_SpawnMoveSpeed;       <span class="comment">// スポーン時の移動速度.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">float</span>       m_InitMoveCount;        <span class="comment">// 初期移動カウント.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">bool</span>        m_IsDead;               <span class="comment">// 死亡したか.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">bool</span>        m_IsInitMoveEnd;        <span class="comment">// 初期移動が終了したか.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    };</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef STG_PLAYER_H.</span></div>
+<div class="ttc" id="a_global_8h_html_ac5090a6568797128b0a5545228bb8b75"><div class="ttname"><a href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">FPS</a></div><div class="ttdeci">const int FPS</div><div class="ttdef"><b>Definition:</b> Global.h:30</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div><div class="ttdef"><b>Definition:</b> STGActor.h:22</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html">STG::CCharacter</a></div><div class="ttdef"><b>Definition:</b> STGCharacter.h:18</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html">STG::CPlayer</a></div><div class="ttdef"><b>Definition:</b> STGPlayer.h:17</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_a1b0e6cdb21839d7ea2d53a94bbffea99"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#a1b0e6cdb21839d7ea2d53a94bbffea99">STG::CPlayer::Collision</a></div><div class="ttdeci">virtual void Collision(STG::CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:67</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_a4582a8020f6734842edea64909bd4b40"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#a4582a8020f6734842edea64909bd4b40">STG::CPlayer::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:38</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_a5c3f90436cf01f779c89a0c7c3cf090e"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#a5c3f90436cf01f779c89a0c7c3cf090e">STG::CPlayer::Controller</a></div><div class="ttdeci">void Controller()</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:147</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_a931a59adf2ada5376122e30b33ae2c4c"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#a931a59adf2ada5376122e30b33ae2c4c">STG::CPlayer::CPlayer</a></div><div class="ttdeci">CPlayer()</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:9</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_ad02df04887bccfe3b82298895da24af6"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#ad02df04887bccfe3b82298895da24af6">STG::CPlayer::~CPlayer</a></div><div class="ttdeci">virtual ~CPlayer()</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:23</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_adde42d001de461b2192bbb39d7e69aa1"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#adde42d001de461b2192bbb39d7e69aa1">STG::CPlayer::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:50</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_player_html_af427666ac35a0b3d90fcc4ffa42c8fd3"><div class="ttname"><a href="class_s_t_g_1_1_c_player.html#af427666ac35a0b3d90fcc4ffa42c8fd3">STG::CPlayer::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> STGPlayer.cpp:28</div></div>
+<div class="ttc" id="anamespace_s_t_g_html"><div class="ttname"><a href="namespace_s_t_g.html">STG</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

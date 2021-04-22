@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/Character.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1bdeeabc02c3c6e2721e886e81d33611.html">Character</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Character.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_character_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef CHARACTER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define CHARACTER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Actor.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_animation_param_info_8h.html">AnimationParamInfo.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/********************************************</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*   キャラクタ基底クラス.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_character.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_character.html">CCharacter</a> : <span class="keyword">public</span> <a class="code" href="class_c_actor.html">CActor</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> FOOT_COLLISION_SIZE      = 0.5f; <span class="comment">// 足の当たり判定のサイズ.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> GROUND_COLLISION_SIZE    = 1.0f; <span class="comment">// 地面の当たり判定のサイズ.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_character.html#a62e1803ad918c196c9f660dbcd989b3d">   20</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> <a class="code" href="class_c_character.html#a62e1803ad918c196c9f660dbcd989b3d">DEFAULT_ANIM_SPEED</a>      = 0.01;                     <span class="comment">// デフォルトアニメーション速度.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_character.html#a3d59c093a8badf818a5c4694ac0e1fc2">   21</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> <a class="code" href="class_c_character.html#a3d59c093a8badf818a5c4694ac0e1fc2">DEFAULT_ANIM_HALF_SPEED</a> = <a class="code" href="class_c_character.html#a62e1803ad918c196c9f660dbcd989b3d">DEFAULT_ANIM_SPEED</a>*0.5;   <span class="comment">// デフォルトアニメーション速度の半分の速度.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_c_character.html#ac1ecf460028f528c8419ff2e1653c817">   22</a></span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">double</span> <a class="code" href="class_c_character.html#ac1ecf460028f528c8419ff2e1653c817">STOP_ANIM_SPEED</a>         = 0.0;                      <span class="comment">// 停止アニメーション速度.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 足の番号.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4">   25</a></span>&#160;    <span class="keyword">enum</span> enFootNumber : <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92">   27</a></span>&#160;        <a class="code" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92">EFootNumber_None</a> = -1,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf">   29</a></span>&#160;        <a class="code" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf">EFootNumber_Right</a>,  <span class="comment">// 右足.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b">   30</a></span>&#160;        <a class="code" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b">EFootNumber_Left</a>,   <span class="comment">// 左足.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9">   32</a></span>&#160;        <a class="code" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9">EFootNumber_Max</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4">EFootNumber</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// キャラクターパラメータ.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_c_character_1_1_s_parameter.html">   37</a></span>&#160;    <span class="keyword">struct </span>stParameter</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="struct_c_character_1_1_s_parameter.html#a8afe8985cc069f5cd14e7aae6e8da406">   39</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_character_1_1_s_parameter.html#a8afe8985cc069f5cd14e7aae6e8da406">LifeMax</a>;        <span class="comment">// 体力.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_c_character_1_1_s_parameter.html#ac6b7e8debe37e74391702452d534fe07">   40</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_character_1_1_s_parameter.html#ac6b7e8debe37e74391702452d534fe07">AttackPower</a>;    <span class="comment">// 攻撃力.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="struct_c_character_1_1_s_parameter.html#a916ca7f3b85c6781d099e3963809a48e">   41</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_character_1_1_s_parameter.html#a916ca7f3b85c6781d099e3963809a48e">MoveSpeed</a>;      <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_c_character_1_1_s_parameter.html#a7891c889f65fca536b506be30d43cd6a">   42</a></span>&#160;        <span class="keywordtype">int</span>     <a class="code" href="struct_c_character_1_1_s_parameter.html#a7891c889f65fca536b506be30d43cd6a">InvincibleTime</a>; <span class="comment">// 無敵時間.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_c_character_1_1_s_parameter.html#a9f090b2cb11e3ecba0f3d72cb29e5f0c">   43</a></span>&#160;        <a class="code" href="struct_c_character_1_1_s_parameter.html#a9f090b2cb11e3ecba0f3d72cb29e5f0c">stParameter</a>()</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            : LifeMax           ( 1.0f )</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            , AttackPower       ( 0.5f )</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            , MoveSpeed         ( 0.5f )</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            , InvincibleTime    ( 0 )</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    } <span class="keyword">typedef</span> SParameter;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_c_character.html#a94574d74f605d70d70acb96e01233adf">CCharacter</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_character.html#a8f8fb8991776a6b6a49c796e79968c91">~CCharacter</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// 移動関数.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_c_character.html#a6d62c33daf1af24222f91d35f897b11a">   56</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a6d62c33daf1af24222f91d35f897b11a">Move</a>() = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// スプライトの描画.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_c_character.html#a267ad6ac87787684bc6065d8b0dc3ff2">   58</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a267ad6ac87787684bc6065d8b0dc3ff2">SpriteRender</a>(){};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// アニメーションを止める.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_character.html#a1aa522374e1b582a403fbab51f4f2a90">   61</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a1aa522374e1b582a403fbab51f4f2a90">StopAnimation</a>()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="class_c_character.html#acc5984d75f9e32d396fa9e886350900d">m_OldAnimSpeed</a> = <a class="code" href="class_c_character.html#aab0dd105eeb80b038c3b2ab4092e030c">m_AnimSpeed</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_c_character.html#aab0dd105eeb80b038c3b2ab4092e030c">m_AnimSpeed</a> = <a class="code" href="class_c_character.html#ac1ecf460028f528c8419ff2e1653c817">STOP_ANIM_SPEED</a>; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// アニメーションを再開する.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_c_character.html#aa1ed50f7ba225fd42456316d9813d90f">   67</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#aa1ed50f7ba225fd42456316d9813d90f">ResumeAnimation</a>()<span class="keyword"> override </span>{ <a class="code" href="class_c_character.html#aab0dd105eeb80b038c3b2ab4092e030c">m_AnimSpeed</a> = <a class="code" href="class_c_character.html#acc5984d75f9e32d396fa9e886350900d">m_OldAnimSpeed</a>; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// メッシュの表示.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a9bfd48a8880d012a0c17f6aff88fef81">MeshRender</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// 無敵時間かどうか.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#a28e5ef01e14b38c14b49a8bc68cd09bc">IsInvincibleTime</a>( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; invincibleTime );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// モデルの取得.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#acd0b3103ff6d118340a824e3258d46b8">GetModel</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* modelName );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_c_character.html#abdbc6385d746c0364b12293d5da81b70">   77</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#abdbc6385d746c0364b12293d5da81b70">ColliderSetting</a>(){};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// パラメータの設定.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> inParam&gt;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_c_character.html#a1d5f11cb4b469258a8622168bb01c6f5">   80</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#a1d5f11cb4b469258a8622168bb01c6f5">ParameterSetting</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, inParam&amp; param )</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">// 既にパラメータが設定済みなら終了.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="class_c_character.html#a3a51c1d65f7fea3af54872a3d14d12f2">m_HasFinishedParamSetting</a> == <span class="keyword">true</span> ) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// 読み込みが正常に行えてなければ終了.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span>( <a class="code" href="class_c_file_manager.html#a5791a16903642e5e5ef658a0f171bc52">CFileManager::BinaryReading</a>( fileName, param ) == <span class="keyword">false</span> ) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_c_character.html#a3a51c1d65f7fea3af54872a3d14d12f2">m_HasFinishedParamSetting</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// 目的の座標へ回転.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#a54508afb9aa422b4a3765245e52511ac">TargetRotation</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; targetVec, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; rotSpeed, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; ToleranceRadian );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// アニメーション設定.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a0ca58686329d1caf5b67460d32ffac25">SetAnimation</a>( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animNo, LPD3DXANIMATIONCONTROLLER pAc = <span class="keyword">nullptr</span> );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// アニメーションをブレンドして設定.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#a5aa82299129161e6db10943df30bec8f">SetAnimationBlend</a>( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animNo );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// アニメーションフレームの設定.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="class_c_character.html#a1a46fffa2ba8c712ea46bcb1acc14cb0">   99</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#a1a46fffa2ba8c712ea46bcb1acc14cb0">SetAnimFrameList</a>() = 0;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// 足音.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_character.html#aacda61080a566126a05cf71f8fc53566">FootStep</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* rightfoot, <span class="keyword">const</span> <span class="keywordtype">char</span>* leftfoot);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// 足音用当たり判定の設定.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_character.html#ac7be4546b3b18c7bfe3dacb8cd24614c">FootStepCollisionSetting</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_character.html#acecf7013e7389b7b53fa479e667f0347">  107</a></span>&#160;    std::shared_ptr&lt;CDX9SkinMesh&gt;   <a class="code" href="class_c_character.html#acecf7013e7389b7b53fa479e667f0347">m_pSkinMesh</a>;        <span class="comment">// スキンメッシュ.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_c_character.html#a1c2e4fef035865575b0ceb77387dd460">  108</a></span>&#160;    <a class="code" href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a>            <a class="code" href="class_c_character.html#a1c2e4fef035865575b0ceb77387dd460">m_AnimFrameList</a>;    <span class="comment">// アニメーションフレームのリスト.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_c_character.html#a86212daacaf52be6024b4655a8aa8031">  109</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_c_character.html#a86212daacaf52be6024b4655a8aa8031">m_NowAnimNo</a>;    <span class="comment">// 現在のアニメーション番号.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="class_c_character.html#aae5570ac44de7f54756ddebbc9dd9d7b">  110</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_c_character.html#aae5570ac44de7f54756ddebbc9dd9d7b">m_OldAnimNo</a>;    <span class="comment">// 過去のアニメーション番号.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="class_c_character.html#aab0dd105eeb80b038c3b2ab4092e030c">  111</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="class_c_character.html#aab0dd105eeb80b038c3b2ab4092e030c">m_AnimSpeed</a>;    <span class="comment">// アニメーション速度.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="class_c_character.html#acc5984d75f9e32d396fa9e886350900d">  112</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="class_c_character.html#acc5984d75f9e32d396fa9e886350900d">m_OldAnimSpeed</a>; <span class="comment">// アニメーション速度.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_c_character.html#afa6109019e55d57e4a4e670c7558be6b">  114</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_character.html#afa6109019e55d57e4a4e670c7558be6b">m_MoveVector</a>;               <span class="comment">// 移動ベクトル.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="class_c_character.html#a6560e2fa7f43b5d2e13021ad8bf11772">  115</a></span>&#160;    <span class="keywordtype">int</span>         <a class="code" href="class_c_character.html#a6560e2fa7f43b5d2e13021ad8bf11772">m_InvincibleCount</a>;          <span class="comment">// 無敵カウント.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_c_character.html#a3a51c1d65f7fea3af54872a3d14d12f2">  116</a></span>&#160;    <span class="keywordtype">bool</span>        <a class="code" href="class_c_character.html#a3a51c1d65f7fea3af54872a3d14d12f2">m_HasFinishedParamSetting</a>;  <span class="comment">// パラメーターの設定が終わったか.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;std::shared_ptr&lt;CCollisionManager&gt;&gt; m_pFootCollision;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::shared_ptr&lt;CCollisionManager&gt;              m_pGroundCollision;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    D3DXVECTOR3 m_vGroundPosition;  <span class="comment">// 地面の位置.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    D3DXVECTOR3 m_vFootPosition[2]; <span class="comment">// 足の位置.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef CHARACTER_H.</span></div>
+<div class="ttc" id="a_animation_param_info_8h_html"><div class="ttname"><a href="_animation_param_info_8h.html">AnimationParamInfo.h</a></div><div class="ttdoc">アニメーションの情報を持たせる構造体.</div></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_character_html"><div class="ttname"><a href="class_c_character.html">CCharacter</a></div><div class="ttdef"><b>Definition:</b> Character.h:16</div></div>
+<div class="ttc" id="aclass_c_character_html_a0304f51b45af604a256a23a0647d2db4"><div class="ttname"><a href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4">CCharacter::EFootNumber</a></div><div class="ttdeci">EFootNumber</div><div class="ttdef"><b>Definition:</b> Character.h:26</div></div>
+<div class="ttc" id="aclass_c_character_html_a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf"><div class="ttname"><a href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a509b47dad7c51c393d74d88e453814cf">CCharacter::EFootNumber_Right</a></div><div class="ttdeci">@ EFootNumber_Right</div><div class="ttdef"><b>Definition:</b> Character.h:29</div></div>
+<div class="ttc" id="aclass_c_character_html_a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92"><div class="ttname"><a href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a5ced7b1ab319dffa97a32effe94cea92">CCharacter::EFootNumber_None</a></div><div class="ttdeci">@ EFootNumber_None</div><div class="ttdef"><b>Definition:</b> Character.h:27</div></div>
+<div class="ttc" id="aclass_c_character_html_a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b"><div class="ttname"><a href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4a962ea0b700979449d03c7c2518fd957b">CCharacter::EFootNumber_Left</a></div><div class="ttdeci">@ EFootNumber_Left</div><div class="ttdef"><b>Definition:</b> Character.h:30</div></div>
+<div class="ttc" id="aclass_c_character_html_a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9"><div class="ttname"><a href="class_c_character.html#a0304f51b45af604a256a23a0647d2db4ac72af931efe4353c7fefc5134aaf7ad9">CCharacter::EFootNumber_Max</a></div><div class="ttdeci">@ EFootNumber_Max</div><div class="ttdef"><b>Definition:</b> Character.h:32</div></div>
+<div class="ttc" id="aclass_c_character_html_a0ca58686329d1caf5b67460d32ffac25"><div class="ttname"><a href="class_c_character.html#a0ca58686329d1caf5b67460d32ffac25">CCharacter::SetAnimation</a></div><div class="ttdeci">void SetAnimation(const int &amp;animNo, LPD3DXANIMATIONCONTROLLER pAc=nullptr)</div><div class="ttdef"><b>Definition:</b> Character.cpp:88</div></div>
+<div class="ttc" id="aclass_c_character_html_a1a46fffa2ba8c712ea46bcb1acc14cb0"><div class="ttname"><a href="class_c_character.html#a1a46fffa2ba8c712ea46bcb1acc14cb0">CCharacter::SetAnimFrameList</a></div><div class="ttdeci">virtual bool SetAnimFrameList()=0</div></div>
+<div class="ttc" id="aclass_c_character_html_a1aa522374e1b582a403fbab51f4f2a90"><div class="ttname"><a href="class_c_character.html#a1aa522374e1b582a403fbab51f4f2a90">CCharacter::StopAnimation</a></div><div class="ttdeci">virtual void StopAnimation() override</div><div class="ttdef"><b>Definition:</b> Character.h:61</div></div>
+<div class="ttc" id="aclass_c_character_html_a1c2e4fef035865575b0ceb77387dd460"><div class="ttname"><a href="class_c_character.html#a1c2e4fef035865575b0ceb77387dd460">CCharacter::m_AnimFrameList</a></div><div class="ttdeci">anim::AAnimFrameList m_AnimFrameList</div><div class="ttdef"><b>Definition:</b> Character.h:108</div></div>
+<div class="ttc" id="aclass_c_character_html_a1d5f11cb4b469258a8622168bb01c6f5"><div class="ttname"><a href="class_c_character.html#a1d5f11cb4b469258a8622168bb01c6f5">CCharacter::ParameterSetting</a></div><div class="ttdeci">bool ParameterSetting(const char *fileName, inParam &amp;param)</div><div class="ttdef"><b>Definition:</b> Character.h:80</div></div>
+<div class="ttc" id="aclass_c_character_html_a267ad6ac87787684bc6065d8b0dc3ff2"><div class="ttname"><a href="class_c_character.html#a267ad6ac87787684bc6065d8b0dc3ff2">CCharacter::SpriteRender</a></div><div class="ttdeci">virtual void SpriteRender()</div><div class="ttdef"><b>Definition:</b> Character.h:58</div></div>
+<div class="ttc" id="aclass_c_character_html_a28e5ef01e14b38c14b49a8bc68cd09bc"><div class="ttname"><a href="class_c_character.html#a28e5ef01e14b38c14b49a8bc68cd09bc">CCharacter::IsInvincibleTime</a></div><div class="ttdeci">bool IsInvincibleTime(const int &amp;invincibleTime)</div><div class="ttdef"><b>Definition:</b> Character.cpp:43</div></div>
+<div class="ttc" id="aclass_c_character_html_a3a51c1d65f7fea3af54872a3d14d12f2"><div class="ttname"><a href="class_c_character.html#a3a51c1d65f7fea3af54872a3d14d12f2">CCharacter::m_HasFinishedParamSetting</a></div><div class="ttdeci">bool m_HasFinishedParamSetting</div><div class="ttdef"><b>Definition:</b> Character.h:116</div></div>
+<div class="ttc" id="aclass_c_character_html_a3d59c093a8badf818a5c4694ac0e1fc2"><div class="ttname"><a href="class_c_character.html#a3d59c093a8badf818a5c4694ac0e1fc2">CCharacter::DEFAULT_ANIM_HALF_SPEED</a></div><div class="ttdeci">static constexpr double DEFAULT_ANIM_HALF_SPEED</div><div class="ttdef"><b>Definition:</b> Character.h:21</div></div>
+<div class="ttc" id="aclass_c_character_html_a54508afb9aa422b4a3765245e52511ac"><div class="ttname"><a href="class_c_character.html#a54508afb9aa422b4a3765245e52511ac">CCharacter::TargetRotation</a></div><div class="ttdeci">bool TargetRotation(const D3DXVECTOR3 &amp;targetVec, const float &amp;rotSpeed, const float &amp;ToleranceRadian)</div><div class="ttdef"><b>Definition:</b> Character.cpp:61</div></div>
+<div class="ttc" id="aclass_c_character_html_a5aa82299129161e6db10943df30bec8f"><div class="ttname"><a href="class_c_character.html#a5aa82299129161e6db10943df30bec8f">CCharacter::SetAnimationBlend</a></div><div class="ttdeci">void SetAnimationBlend(const int &amp;animNo)</div><div class="ttdef"><b>Definition:</b> Character.cpp:99</div></div>
+<div class="ttc" id="aclass_c_character_html_a62e1803ad918c196c9f660dbcd989b3d"><div class="ttname"><a href="class_c_character.html#a62e1803ad918c196c9f660dbcd989b3d">CCharacter::DEFAULT_ANIM_SPEED</a></div><div class="ttdeci">static constexpr double DEFAULT_ANIM_SPEED</div><div class="ttdef"><b>Definition:</b> Character.h:20</div></div>
+<div class="ttc" id="aclass_c_character_html_a6560e2fa7f43b5d2e13021ad8bf11772"><div class="ttname"><a href="class_c_character.html#a6560e2fa7f43b5d2e13021ad8bf11772">CCharacter::m_InvincibleCount</a></div><div class="ttdeci">int m_InvincibleCount</div><div class="ttdef"><b>Definition:</b> Character.h:115</div></div>
+<div class="ttc" id="aclass_c_character_html_a6d62c33daf1af24222f91d35f897b11a"><div class="ttname"><a href="class_c_character.html#a6d62c33daf1af24222f91d35f897b11a">CCharacter::Move</a></div><div class="ttdeci">virtual void Move()=0</div></div>
+<div class="ttc" id="aclass_c_character_html_a86212daacaf52be6024b4655a8aa8031"><div class="ttname"><a href="class_c_character.html#a86212daacaf52be6024b4655a8aa8031">CCharacter::m_NowAnimNo</a></div><div class="ttdeci">int m_NowAnimNo</div><div class="ttdef"><b>Definition:</b> Character.h:109</div></div>
+<div class="ttc" id="aclass_c_character_html_a8f8fb8991776a6b6a49c796e79968c91"><div class="ttname"><a href="class_c_character.html#a8f8fb8991776a6b6a49c796e79968c91">CCharacter::~CCharacter</a></div><div class="ttdeci">virtual ~CCharacter()</div><div class="ttdef"><b>Definition:</b> Character.cpp:26</div></div>
+<div class="ttc" id="aclass_c_character_html_a94574d74f605d70d70acb96e01233adf"><div class="ttname"><a href="class_c_character.html#a94574d74f605d70d70acb96e01233adf">CCharacter::CCharacter</a></div><div class="ttdeci">CCharacter()</div><div class="ttdef"><b>Definition:</b> Character.cpp:9</div></div>
+<div class="ttc" id="aclass_c_character_html_a9bfd48a8880d012a0c17f6aff88fef81"><div class="ttname"><a href="class_c_character.html#a9bfd48a8880d012a0c17f6aff88fef81">CCharacter::MeshRender</a></div><div class="ttdeci">void MeshRender()</div><div class="ttdef"><b>Definition:</b> Character.cpp:31</div></div>
+<div class="ttc" id="aclass_c_character_html_aa1ed50f7ba225fd42456316d9813d90f"><div class="ttname"><a href="class_c_character.html#aa1ed50f7ba225fd42456316d9813d90f">CCharacter::ResumeAnimation</a></div><div class="ttdeci">virtual void ResumeAnimation() override</div><div class="ttdef"><b>Definition:</b> Character.h:67</div></div>
+<div class="ttc" id="aclass_c_character_html_aab0dd105eeb80b038c3b2ab4092e030c"><div class="ttname"><a href="class_c_character.html#aab0dd105eeb80b038c3b2ab4092e030c">CCharacter::m_AnimSpeed</a></div><div class="ttdeci">double m_AnimSpeed</div><div class="ttdef"><b>Definition:</b> Character.h:111</div></div>
+<div class="ttc" id="aclass_c_character_html_aacda61080a566126a05cf71f8fc53566"><div class="ttname"><a href="class_c_character.html#aacda61080a566126a05cf71f8fc53566">CCharacter::FootStep</a></div><div class="ttdeci">void FootStep(const char *rightfoot, const char *leftfoot)</div><div class="ttdef"><b>Definition:</b> Character.cpp:110</div></div>
+<div class="ttc" id="aclass_c_character_html_aae5570ac44de7f54756ddebbc9dd9d7b"><div class="ttname"><a href="class_c_character.html#aae5570ac44de7f54756ddebbc9dd9d7b">CCharacter::m_OldAnimNo</a></div><div class="ttdeci">int m_OldAnimNo</div><div class="ttdef"><b>Definition:</b> Character.h:110</div></div>
+<div class="ttc" id="aclass_c_character_html_abdbc6385d746c0364b12293d5da81b70"><div class="ttname"><a href="class_c_character.html#abdbc6385d746c0364b12293d5da81b70">CCharacter::ColliderSetting</a></div><div class="ttdeci">bool ColliderSetting()</div><div class="ttdef"><b>Definition:</b> Character.h:77</div></div>
+<div class="ttc" id="aclass_c_character_html_ac1ecf460028f528c8419ff2e1653c817"><div class="ttname"><a href="class_c_character.html#ac1ecf460028f528c8419ff2e1653c817">CCharacter::STOP_ANIM_SPEED</a></div><div class="ttdeci">static constexpr double STOP_ANIM_SPEED</div><div class="ttdef"><b>Definition:</b> Character.h:22</div></div>
+<div class="ttc" id="aclass_c_character_html_ac7be4546b3b18c7bfe3dacb8cd24614c"><div class="ttname"><a href="class_c_character.html#ac7be4546b3b18c7bfe3dacb8cd24614c">CCharacter::FootStepCollisionSetting</a></div><div class="ttdeci">bool FootStepCollisionSetting()</div><div class="ttdef"><b>Definition:</b> Character.cpp:128</div></div>
+<div class="ttc" id="aclass_c_character_html_acc5984d75f9e32d396fa9e886350900d"><div class="ttname"><a href="class_c_character.html#acc5984d75f9e32d396fa9e886350900d">CCharacter::m_OldAnimSpeed</a></div><div class="ttdeci">double m_OldAnimSpeed</div><div class="ttdef"><b>Definition:</b> Character.h:112</div></div>
+<div class="ttc" id="aclass_c_character_html_acd0b3103ff6d118340a824e3258d46b8"><div class="ttname"><a href="class_c_character.html#acd0b3103ff6d118340a824e3258d46b8">CCharacter::GetModel</a></div><div class="ttdeci">bool GetModel(const char *modelName)</div><div class="ttdef"><b>Definition:</b> Character.cpp:49</div></div>
+<div class="ttc" id="aclass_c_character_html_acecf7013e7389b7b53fa479e667f0347"><div class="ttname"><a href="class_c_character.html#acecf7013e7389b7b53fa479e667f0347">CCharacter::m_pSkinMesh</a></div><div class="ttdeci">std::shared_ptr&lt; CDX9SkinMesh &gt; m_pSkinMesh</div><div class="ttdef"><b>Definition:</b> Character.h:107</div></div>
+<div class="ttc" id="aclass_c_character_html_afa6109019e55d57e4a4e670c7558be6b"><div class="ttname"><a href="class_c_character.html#afa6109019e55d57e4a4e670c7558be6b">CCharacter::m_MoveVector</a></div><div class="ttdeci">D3DXVECTOR3 m_MoveVector</div><div class="ttdef"><b>Definition:</b> Character.h:114</div></div>
+<div class="ttc" id="aclass_c_file_manager_html_a5791a16903642e5e5ef658a0f171bc52"><div class="ttname"><a href="class_c_file_manager.html#a5791a16903642e5e5ef658a0f171bc52">CFileManager::BinaryReading</a></div><div class="ttdeci">static bool BinaryReading(const char *fileName, inDATA &amp;inData, const int &amp;seekPoint=0)</div><div class="ttdef"><b>Definition:</b> FileManager.h:41</div></div>
+<div class="ttc" id="anamespaceanim_html_a68d2d2cd7731372f3f57e24df472067f"><div class="ttname"><a href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a></div><div class="ttdeci">std::vector&lt; SAnimFrame &gt; AAnimFrameList</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:35</div></div>
+<div class="ttc" id="astruct_c_character_1_1_s_parameter_html_a7891c889f65fca536b506be30d43cd6a"><div class="ttname"><a href="struct_c_character_1_1_s_parameter.html#a7891c889f65fca536b506be30d43cd6a">CCharacter::SParameter::InvincibleTime</a></div><div class="ttdeci">int InvincibleTime</div><div class="ttdef"><b>Definition:</b> Character.h:42</div></div>
+<div class="ttc" id="astruct_c_character_1_1_s_parameter_html_a8afe8985cc069f5cd14e7aae6e8da406"><div class="ttname"><a href="struct_c_character_1_1_s_parameter.html#a8afe8985cc069f5cd14e7aae6e8da406">CCharacter::SParameter::LifeMax</a></div><div class="ttdeci">float LifeMax</div><div class="ttdef"><b>Definition:</b> Character.h:39</div></div>
+<div class="ttc" id="astruct_c_character_1_1_s_parameter_html_a916ca7f3b85c6781d099e3963809a48e"><div class="ttname"><a href="struct_c_character_1_1_s_parameter.html#a916ca7f3b85c6781d099e3963809a48e">CCharacter::SParameter::MoveSpeed</a></div><div class="ttdeci">float MoveSpeed</div><div class="ttdef"><b>Definition:</b> Character.h:41</div></div>
+<div class="ttc" id="astruct_c_character_1_1_s_parameter_html_a9f090b2cb11e3ecba0f3d72cb29e5f0c"><div class="ttname"><a href="struct_c_character_1_1_s_parameter.html#a9f090b2cb11e3ecba0f3d72cb29e5f0c">CCharacter::SParameter::stParameter</a></div><div class="ttdeci">stParameter()</div><div class="ttdef"><b>Definition:</b> Character.h:43</div></div>
+<div class="ttc" id="astruct_c_character_1_1_s_parameter_html_ac6b7e8debe37e74391702452d534fe07"><div class="ttname"><a href="struct_c_character_1_1_s_parameter.html#ac6b7e8debe37e74391702452d534fe07">CCharacter::SParameter::AttackPower</a></div><div class="ttdeci">float AttackPower</div><div class="ttdef"><b>Definition:</b> Character.h:40</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

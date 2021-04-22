@@ -1,0 +1,165 @@
+\hypertarget{class_c_translucent_shader}{}\doxysection{CTranslucent\+Shader クラス}
+\label{class_c_translucent_shader}\index{CTranslucentShader@{CTranslucentShader}}
+
+
+{\ttfamily \#include $<$Translucent\+Shader.\+h$>$}
+
+
+
+CTranslucent\+Shader の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_c_translucent_shader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CTranslucent\+Shader 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_c_translucent_shader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_translucent_shader_a873e10414453f0774d2881bae947800c}{CTranslucent\+Shader}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_translucent_shader_a25940270b6bbb61d38f10716ed18f4cc}{$\sim$\+CTranslucent\+Shader}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_translucent_shader}{CTranslucent\+Shader}} $\ast$ \mbox{\hyperlink{class_c_translucent_shader_ad97580615f8d24304476523c3f573663}{Get\+Instance}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_translucent_shader_a66561a997a5ef6914087ee17c9de9a90}{Init}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_translucent_shader_a168d1319f7825f3d9ea49e0ef6b85b95}{Release\+Shader}} ()
+\item 
+static void \mbox{\hyperlink{class_c_translucent_shader_a4ff92da4c1d69bb1aa2b96c342eabb3e}{Set\+Constant\+Buffer\+Data}} (const D3\+DXMATRIX \&m\+WVP, const bool is\+Skin=false)
+\item 
+static void \mbox{\hyperlink{class_c_translucent_shader_a3f2ca937d94af06360323c0e8655d8c6}{Shader\+Set}} (ID3\+D11\+Buffer $\ast$p\+Vertex\+Buffer, ID3\+D11\+Buffer $\ast$p\+Index\+Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_translucent_shader_a873e10414453f0774d2881bae947800c}\label{class_c_translucent_shader_a873e10414453f0774d2881bae947800c}} 
+\index{CTranslucentShader@{CTranslucentShader}!CTranslucentShader@{CTranslucentShader}}
+\index{CTranslucentShader@{CTranslucentShader}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{CTranslucentShader()}{CTranslucentShader()}}
+{\footnotesize\ttfamily CTranslucent\+Shader\+::\+CTranslucent\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_translucent_shader_a25940270b6bbb61d38f10716ed18f4cc}\label{class_c_translucent_shader_a25940270b6bbb61d38f10716ed18f4cc}} 
+\index{CTranslucentShader@{CTranslucentShader}!````~CTranslucentShader@{$\sim$CTranslucentShader}}
+\index{````~CTranslucentShader@{$\sim$CTranslucentShader}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CTranslucentShader()}{~CTranslucentShader()}}
+{\footnotesize\ttfamily CTranslucent\+Shader\+::$\sim$\+CTranslucent\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_c_translucent_shader_a25940270b6bbb61d38f10716ed18f4cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_translucent_shader_ad97580615f8d24304476523c3f573663}\label{class_c_translucent_shader_ad97580615f8d24304476523c3f573663}} 
+\index{CTranslucentShader@{CTranslucentShader}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_translucent_shader}{CTranslucent\+Shader}} $\ast$ CTranslucent\+Shader\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_translucent_shader_ad97580615f8d24304476523c3f573663_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_translucent_shader_a66561a997a5ef6914087ee17c9de9a90}\label{class_c_translucent_shader_a66561a997a5ef6914087ee17c9de9a90}} 
+\index{CTranslucentShader@{CTranslucentShader}!Init@{Init}}
+\index{Init@{Init}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CTranslucent\+Shader\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_translucent_shader_a66561a997a5ef6914087ee17c9de9a90_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_c_translucent_shader_a66561a997a5ef6914087ee17c9de9a90_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_translucent_shader_a168d1319f7825f3d9ea49e0ef6b85b95}\label{class_c_translucent_shader_a168d1319f7825f3d9ea49e0ef6b85b95}} 
+\index{CTranslucentShader@{CTranslucentShader}!ReleaseShader@{ReleaseShader}}
+\index{ReleaseShader@{ReleaseShader}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{ReleaseShader()}{ReleaseShader()}}
+{\footnotesize\ttfamily HRESULT CTranslucent\+Shader\+::\+Release\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_c_translucent_shader_a168d1319f7825f3d9ea49e0ef6b85b95_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_c_translucent_shader_a168d1319f7825f3d9ea49e0ef6b85b95_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_translucent_shader_a4ff92da4c1d69bb1aa2b96c342eabb3e}\label{class_c_translucent_shader_a4ff92da4c1d69bb1aa2b96c342eabb3e}} 
+\index{CTranslucentShader@{CTranslucentShader}!SetConstantBufferData@{SetConstantBufferData}}
+\index{SetConstantBufferData@{SetConstantBufferData}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{SetConstantBufferData()}{SetConstantBufferData()}}
+{\footnotesize\ttfamily void CTranslucent\+Shader\+::\+Set\+Constant\+Buffer\+Data (\begin{DoxyParamCaption}\item[{const D3\+DXMATRIX \&}]{m\+WVP,  }\item[{const bool}]{is\+Skin = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_c_translucent_shader_a4ff92da4c1d69bb1aa2b96c342eabb3e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_translucent_shader_a3f2ca937d94af06360323c0e8655d8c6}\label{class_c_translucent_shader_a3f2ca937d94af06360323c0e8655d8c6}} 
+\index{CTranslucentShader@{CTranslucentShader}!ShaderSet@{ShaderSet}}
+\index{ShaderSet@{ShaderSet}!CTranslucentShader@{CTranslucentShader}}
+\doxysubsubsection{\texorpdfstring{ShaderSet()}{ShaderSet()}}
+{\footnotesize\ttfamily void CTranslucent\+Shader\+::\+Shader\+Set (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$}]{p\+Vertex\+Buffer,  }\item[{ID3\+D11\+Buffer $\ast$}]{p\+Index\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_c_translucent_shader_a3f2ca937d94af06360323c0e8655d8c6_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Translucent\+Shader/\mbox{\hyperlink{_translucent_shader_8h}{Translucent\+Shader.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Translucent\+Shader/\mbox{\hyperlink{_translucent_shader_8cpp}{Translucent\+Shader.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/SceneManager/SceneManager.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_26b02589e53dd6a6cf02171ae1971281.html">Scene</a></li><li class="navelem"><a class="el" href="dir_467e106a91e42ebda4f2ffef691a05ec.html">SceneManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#enum-members">列挙型</a>  </div>
+  <div class="headertitle">
+<div class="title">SceneManager.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>シーン管理クラス.  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_scene_base_8h_source.html">..\SceneBase\SceneBase.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_fade_8h_source.html">..\..\GameObject\Widget\Fade\Fade.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+SceneManager.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_scene_manager_8h__incl.png" border="0" usemap="#a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scene_manager_2_scene_manager_8h" alt=""/></div>
+<map name="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scene_manager_2_scene_manager_8h" id="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scene_manager_2_scene_manager_8h">
+<area shape="rect" title="シーン管理クラス." alt="" coords="202,5,432,76"/>
+<area shape="rect" href="_scene_base_8h.html" title="シーン基底クラス." alt="" coords="91,452,274,479"/>
+<area shape="rect" href="_fade_8h.html" title=" " alt="" coords="319,124,483,165"/>
+<area shape="rect" title=" " alt="" coords="116,676,203,703"/>
+<area shape="rect" title=" " alt="" coords="931,676,986,703"/>
+<area shape="rect" title=" " alt="" coords="31,527,86,553"/>
+<area shape="rect" title=" " alt="" coords="22,676,92,703"/>
+<area shape="rect" href="_global_8h.html" title=" " alt="" coords="555,527,650,553"/>
+<area shape="rect" title=" " alt="" coords="373,601,442,628"/>
+<area shape="rect" href="_d3_d_x11_8h.html" title="DirectX11 Deviceを持っているクラス." alt="" coords="998,601,1076,628"/>
+<area shape="rect" title=" " alt="" coords="466,601,538,628"/>
+<area shape="rect" title=" " alt="" coords="563,601,642,628"/>
+<area shape="rect" title=" " alt="" coords="666,601,738,628"/>
+<area shape="rect" href="_d3_d_x9_8h.html" title="DirectX9 Deviceを持っているクラス." alt="" coords="763,601,831,628"/>
+<area shape="rect" href="_my_log_8h.html" title=" " alt="" coords="197,601,349,628"/>
+<area shape="rect" title=" " alt="" coords="856,601,922,628"/>
+<area shape="rect" title=" " alt="" coords="1010,676,1066,703"/>
+<area shape="rect" title=" " alt="" coords="244,676,302,703"/>
+<area shape="rect" href="_widget_8h.html" title=" " alt="" coords="382,213,468,240"/>
+<area shape="rect" href="_game_object_8h.html" title="ゲーム内のオブジェクト基底クラス." alt="" coords="378,288,496,315"/>
+<area shape="rect" href="_shadow_map_8h.html" title=" " alt="" coords="499,363,706,404"/>
+<area shape="rect" href="_object_list_8h.html" title="ゲーム内で出てくるオブジェクトのタグリスト." alt="" coords="331,370,423,397"/>
+<area shape="rect" href="_shader_base_8h.html" title=" " alt="" coords="544,452,660,479"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_scene_manager_8h__dep__incl.png" border="0" usemap="#a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scene_manager_2_scene_manager_8hdep" alt=""/></div>
+<map name="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scene_manager_2_scene_manager_8hdep" id="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scene_manager_2_scene_manager_8hdep">
+<area shape="rect" title="シーン管理クラス." alt="" coords="241,5,471,76"/>
+<area shape="rect" href="_scene_manager_8cpp.html" title=" " alt="" coords="5,243,235,313"/>
+<area shape="rect" href="_config_8cpp.html" title=" " alt="" coords="157,124,344,195"/>
+<area shape="rect" href="_editor_8cpp.html" title=" " alt="" coords="368,124,555,195"/>
+<area shape="rect" href="_scene_list_8h.html" title=" " alt="" coords="579,124,765,195"/>
+<area shape="rect" href="_main_8cpp.html" title=" " alt="" coords="259,250,445,306"/>
+<area shape="rect" href="_game_8cpp.html" title=" " alt="" coords="469,243,656,313"/>
+<area shape="rect" href="_game_clear_8cpp.html" title=" " alt="" coords="680,243,867,313"/>
+<area shape="rect" href="_game_over_8cpp.html" title=" " alt="" coords="891,243,1077,313"/>
+<area shape="rect" href="_title_8cpp.html" title=" " alt="" coords="1101,243,1288,313"/>
+</map>
+</div>
+</div>
+<p><a href="_scene_manager_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_manager.html">CSceneManager</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a7908051915a7d09cc76a65419eec0f4b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">EScene</a> { <br />
+&#160;&#160;<a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba6adf97f83acf6453d4a6a4b1070f3754">None</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b">Title</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651">GameMain</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb">GameClear</a>
+, <br />
+&#160;&#160;<a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3">GameOver</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e">Config</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35">Edit</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba6a061313d22e51e0f25b7cd4dc065233">Max</a>
+, <br />
+&#160;&#160;<a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b">ResultCheck</a>
+, <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37">Start</a> = Title
+<br />
+ }</td></tr>
+<tr class="separator:a7908051915a7d09cc76a65419eec0f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>シーン管理クラス. </p>
+<dl class="section author"><dt>著者</dt><dd>福田玲也. </dd></dl>
+</div><h2 class="groupheader">列挙型詳解</h2>
+<a id="a7908051915a7d09cc76a65419eec0f4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7908051915a7d09cc76a65419eec0f4b">&#9670;&nbsp;</a></span>EScene</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">EScene</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b"></a>Title&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651"></a>GameMain&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb"></a>GameClear&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3"></a>GameOver&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e"></a>Config&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35"></a>Edit&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba6a061313d22e51e0f25b7cd4dc065233"></a>Max&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b"></a>ResultCheck&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37"></a>Start&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

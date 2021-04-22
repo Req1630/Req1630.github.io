@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/Fade/Fade.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_d2383d5f715946278660643a6682513f.html">Fade</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Fade.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_fade_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FADE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FADE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Widget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/************************************</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">*   フェードクラス.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">* (継承を解除し、各関数をstaticにして外部でも呼び出せるようにする).</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_fade.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_fade.html">CFade</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ALPHA_MAX = 1.0f;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// フェードの状態.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_fade.html#ae1ee13f5ea9bc83b0801986aa4fed47f">   16</a></span>&#160;    <span class="keyword">enum class</span> enFadeState</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        In,         <span class="comment">//フェードイン.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        Out,        <span class="comment">//フェードアウト.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Finish,     <span class="comment">//フェード終了.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_fade.html#ae1ee13f5ea9bc83b0801986aa4fed47f">EFadeState</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_c_fade.html#a7dca81774ff93698aa096a44f0a22a99">CFade</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_fade.html#a37728b6acdf41dd73af771f54b5b1a86">~CFade</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// インスタンスの生成.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_fade.html#a16098384b1c429b884c50c86e0120807">   28</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_c_fade.html">CFade</a>* <a class="code" href="class_c_fade.html#a16098384b1c429b884c50c86e0120807">GetInstance</a>()</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">static</span> std::unique_ptr&lt;CFade&gt; pInstance = std::make_unique&lt;CFade&gt;();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> pInstance.get();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_fade.html#a9c639d76028877676eb70bdff89bfc6d">Init</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">//描画関数.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_fade.html#a3b0125893f20cf70a2e6f4f9915ce8c1">Render</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// フェード中か.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_fade.html#a4cefa9318db410b5f56af7a754f02346">   39</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_fade.html#a4cefa9318db410b5f56af7a754f02346">GetIsFade</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_fade.html#a16098384b1c429b884c50c86e0120807">GetInstance</a>()-&gt;m_IsFade; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// フェード状態取得関数.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_fade.html#add53fcb7efcc2e4580576f4b266be171">   41</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="class_c_fade.html#ae1ee13f5ea9bc83b0801986aa4fed47f">EFadeState</a> <a class="code" href="class_c_fade.html#add53fcb7efcc2e4580576f4b266be171">GetFadeState</a>() { <span class="keywordflow">return</span> <a class="code" href="class_c_fade.html#a16098384b1c429b884c50c86e0120807">GetInstance</a>()-&gt;m_FadeState; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// フェードイン設定関数.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_fade.html#ae08b9f59a68f664111476a6f58e93d07">SetFadeIn</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// フェードアウト設定関数.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_fade.html#a3af1504e0b8a9f84ed671bd7b1ea6470">SetFadeOut</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// フェード速度の設定.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_fade.html#a4ba664455d37d6056fa7a4241b9aa914">   48</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_c_fade.html#a4ba664455d37d6056fa7a4241b9aa914">SetFadeSpeed</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; speed ){ <a class="code" href="class_c_fade.html#a16098384b1c429b884c50c86e0120807">GetInstance</a>()-&gt;m_AlphaSpeed = speed; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> Update();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span> SpriteSetting();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::shared_ptr&lt;CSprite&gt; m_pSprite;         <span class="comment">//スプライトクラス.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="class_c_fade.html#ae1ee13f5ea9bc83b0801986aa4fed47f">EFadeState</a> m_FadeState;                     <span class="comment">//フェードの状態.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">float</span> m_Alpha;                              <span class="comment">//透過値.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> m_AlphaSpeed;                         <span class="comment">//透過速度.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> m_IsFade;                              <span class="comment">//フェード中か.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//コピー・ムーブコンストラクタ、代入演算子の削除.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="class_c_fade.html#a7dca81774ff93698aa096a44f0a22a99">CFade</a>(<span class="keyword">const</span> <a class="code" href="class_c_fade.html">CFade</a> &amp;)                = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_c_fade.html#a7dca81774ff93698aa096a44f0a22a99">CFade</a>(<a class="code" href="class_c_fade.html">CFade</a> &amp;&amp;)                     = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_c_fade.html">CFade</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="class_c_fade.html">CFade</a> &amp;)   = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_c_fade.html">CFade</a>&amp; operator =(<a class="code" href="class_c_fade.html">CFade</a> &amp;&amp;)         = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef FADE_H.</span></div>
+<div class="ttc" id="aclass_c_fade_html"><div class="ttname"><a href="class_c_fade.html">CFade</a></div><div class="ttdef"><b>Definition:</b> Fade.h:11</div></div>
+<div class="ttc" id="aclass_c_fade_html_a16098384b1c429b884c50c86e0120807"><div class="ttname"><a href="class_c_fade.html#a16098384b1c429b884c50c86e0120807">CFade::GetInstance</a></div><div class="ttdeci">static CFade * GetInstance()</div><div class="ttdef"><b>Definition:</b> Fade.h:28</div></div>
+<div class="ttc" id="aclass_c_fade_html_a37728b6acdf41dd73af771f54b5b1a86"><div class="ttname"><a href="class_c_fade.html#a37728b6acdf41dd73af771f54b5b1a86">CFade::~CFade</a></div><div class="ttdeci">virtual ~CFade()</div><div class="ttdef"><b>Definition:</b> Fade.cpp:15</div></div>
+<div class="ttc" id="aclass_c_fade_html_a3af1504e0b8a9f84ed671bd7b1ea6470"><div class="ttname"><a href="class_c_fade.html#a3af1504e0b8a9f84ed671bd7b1ea6470">CFade::SetFadeOut</a></div><div class="ttdeci">static void SetFadeOut()</div><div class="ttdef"><b>Definition:</b> Fade.cpp:88</div></div>
+<div class="ttc" id="aclass_c_fade_html_a3b0125893f20cf70a2e6f4f9915ce8c1"><div class="ttname"><a href="class_c_fade.html#a3b0125893f20cf70a2e6f4f9915ce8c1">CFade::Render</a></div><div class="ttdeci">static void Render()</div><div class="ttdef"><b>Definition:</b> Fade.cpp:62</div></div>
+<div class="ttc" id="aclass_c_fade_html_a4ba664455d37d6056fa7a4241b9aa914"><div class="ttname"><a href="class_c_fade.html#a4ba664455d37d6056fa7a4241b9aa914">CFade::SetFadeSpeed</a></div><div class="ttdeci">static void SetFadeSpeed(const float &amp;speed)</div><div class="ttdef"><b>Definition:</b> Fade.h:48</div></div>
+<div class="ttc" id="aclass_c_fade_html_a4cefa9318db410b5f56af7a754f02346"><div class="ttname"><a href="class_c_fade.html#a4cefa9318db410b5f56af7a754f02346">CFade::GetIsFade</a></div><div class="ttdeci">static bool GetIsFade()</div><div class="ttdef"><b>Definition:</b> Fade.h:39</div></div>
+<div class="ttc" id="aclass_c_fade_html_a7dca81774ff93698aa096a44f0a22a99"><div class="ttname"><a href="class_c_fade.html#a7dca81774ff93698aa096a44f0a22a99">CFade::CFade</a></div><div class="ttdeci">CFade()</div><div class="ttdef"><b>Definition:</b> Fade.cpp:8</div></div>
+<div class="ttc" id="aclass_c_fade_html_a9c639d76028877676eb70bdff89bfc6d"><div class="ttname"><a href="class_c_fade.html#a9c639d76028877676eb70bdff89bfc6d">CFade::Init</a></div><div class="ttdeci">static bool Init()</div><div class="ttdef"><b>Definition:</b> Fade.cpp:20</div></div>
+<div class="ttc" id="aclass_c_fade_html_add53fcb7efcc2e4580576f4b266be171"><div class="ttname"><a href="class_c_fade.html#add53fcb7efcc2e4580576f4b266be171">CFade::GetFadeState</a></div><div class="ttdeci">static EFadeState GetFadeState()</div><div class="ttdef"><b>Definition:</b> Fade.h:41</div></div>
+<div class="ttc" id="aclass_c_fade_html_ae08b9f59a68f664111476a6f58e93d07"><div class="ttname"><a href="class_c_fade.html#ae08b9f59a68f664111476a6f58e93d07">CFade::SetFadeIn</a></div><div class="ttdeci">static void SetFadeIn()</div><div class="ttdef"><b>Definition:</b> Fade.cpp:78</div></div>
+<div class="ttc" id="aclass_c_fade_html_ae1ee13f5ea9bc83b0801986aa4fed47f"><div class="ttname"><a href="class_c_fade.html#ae1ee13f5ea9bc83b0801986aa4fed47f">CFade::EFadeState</a></div><div class="ttdeci">EFadeState</div><div class="ttdef"><b>Definition:</b> Fade.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

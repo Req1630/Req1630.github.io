@@ -1,0 +1,166 @@
+\hypertarget{class_c_debug_text}{}\doxysection{CDebug\+Text クラス}
+\label{class_c_debug_text}\index{CDebugText@{CDebugText}}
+
+
+{\ttfamily \#include $<$Debug\+Text.\+h$>$}
+
+
+
+CDebug\+Text の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_c_debug_text__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CDebug\+Text 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{class_c_debug_text__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_debug_text_a4395e6cf0dc41f20a1f3b5ab6299b34a}{CDebug\+Text}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_debug_text_a029a9f753bbd43dc8b97afef77b67628}{$\sim$\+CDebug\+Text}} ()
+\item 
+void \mbox{\hyperlink{class_c_debug_text_ab8a3c4263fe5e3a24aab57ab6188e63b}{Render}} (const std\+::string \&stext)
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_debug_text}{CDebug\+Text}} $\ast$ \mbox{\hyperlink{class_c_debug_text_ab02b936f013c786612179dfc11bcd11b}{Get\+Instance}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_debug_text_afccda2c34be996e8f222f27d497e5b06}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, float Scale, D3\+DXVECTOR4 v\+Color)
+\item 
+static void \mbox{\hyperlink{class_c_debug_text_a089da118fce5116f97b55962a290cc45}{Set\+Position}} (const D3\+DXVECTOR3 \&v\+Pos)
+\item 
+{\footnotesize template$<$class... T1$>$ }\\static void \mbox{\hyperlink{class_c_debug_text_a715a040ca226a427f556890e7fa56b1e}{Render}} (const T1 \&... t1)
+\item 
+static float \mbox{\hyperlink{class_c_debug_text_a867c63b7162c3953db3e9c4df1fa8ea2}{Get\+Scale}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_debug_text_a4395e6cf0dc41f20a1f3b5ab6299b34a}\label{class_c_debug_text_a4395e6cf0dc41f20a1f3b5ab6299b34a}} 
+\index{CDebugText@{CDebugText}!CDebugText@{CDebugText}}
+\index{CDebugText@{CDebugText}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{CDebugText()}{CDebugText()}}
+{\footnotesize\ttfamily CDebug\+Text\+::\+CDebug\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_debug_text_a029a9f753bbd43dc8b97afef77b67628}\label{class_c_debug_text_a029a9f753bbd43dc8b97afef77b67628}} 
+\index{CDebugText@{CDebugText}!````~CDebugText@{$\sim$CDebugText}}
+\index{````~CDebugText@{$\sim$CDebugText}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{$\sim$CDebugText()}{~CDebugText()}}
+{\footnotesize\ttfamily CDebug\+Text\+::$\sim$\+CDebug\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_debug_text_ab02b936f013c786612179dfc11bcd11b}\label{class_c_debug_text_ab02b936f013c786612179dfc11bcd11b}} 
+\index{CDebugText@{CDebugText}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_debug_text}{CDebug\+Text}} $\ast$ CDebug\+Text\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_debug_text_ab02b936f013c786612179dfc11bcd11b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_debug_text_a867c63b7162c3953db3e9c4df1fa8ea2}\label{class_c_debug_text_a867c63b7162c3953db3e9c4df1fa8ea2}} 
+\index{CDebugText@{CDebugText}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily static float CDebug\+Text\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_debug_text_a867c63b7162c3953db3e9c4df1fa8ea2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_debug_text_afccda2c34be996e8f222f27d497e5b06}\label{class_c_debug_text_afccda2c34be996e8f222f27d497e5b06}} 
+\index{CDebugText@{CDebugText}!Init@{Init}}
+\index{Init@{Init}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CDebug\+Text\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{float}]{Scale,  }\item[{D3\+DXVECTOR4}]{v\+Color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_c_debug_text_afccda2c34be996e8f222f27d497e5b06_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_debug_text_ab8a3c4263fe5e3a24aab57ab6188e63b}\label{class_c_debug_text_ab8a3c4263fe5e3a24aab57ab6188e63b}} 
+\index{CDebugText@{CDebugText}!Render@{Render}}
+\index{Render@{Render}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CDebug\+Text\+::\+Render (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stext }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_debug_text_ab8a3c4263fe5e3a24aab57ab6188e63b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_debug_text_a715a040ca226a427f556890e7fa56b1e}\label{class_c_debug_text_a715a040ca226a427f556890e7fa56b1e}} 
+\index{CDebugText@{CDebugText}!Render@{Render}}
+\index{Render@{Render}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class... T1$>$ \\
+static void CDebug\+Text\+::\+Render (\begin{DoxyParamCaption}\item[{const T1 \&...}]{t1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_debug_text_a715a040ca226a427f556890e7fa56b1e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{class_c_debug_text_a715a040ca226a427f556890e7fa56b1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_debug_text_a089da118fce5116f97b55962a290cc45}\label{class_c_debug_text_a089da118fce5116f97b55962a290cc45}} 
+\index{CDebugText@{CDebugText}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CDebugText@{CDebugText}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily static void CDebug\+Text\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_debug_text_a089da118fce5116f97b55962a290cc45_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Debug\+Text/\mbox{\hyperlink{_debug_text_8h}{Debug\+Text.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Debug\+Text/\mbox{\hyperlink{_debug_text_8cpp}{Debug\+Text.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,91 @@
+\hypertarget{_event_manager_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene\+Event/\+Event\+Manager/\+Event\+Manager.h ファイル}
+\label{_event_manager_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/SceneEvent/EventManager/EventManager.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/SceneEvent/EventManager/EventManager.h}}
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Event\+Base\textbackslash{}\+Event\+Base.\+h\char`\"{}}\newline
+Event\+Manager.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_event_manager_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_event_manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_event_manager}{CEvent\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744}{en\+Event\+No}} \{ \newline
+\mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a492785297322c6add81eb6abe8744bdf}{Game\+Start}}
+, \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a52b4113d941d3ef49056dd31224c2efb}{Game\+Clear}}
+, \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a8f347bc7cebca9fa6d97e70c6bc29eb3}{Game\+Over}}
+, \newline
+\mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a6a061313d22e51e0f25b7cd4dc065233}{Max}}
+, \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a11947055e5dea7f4fb2d2bdb07a6780b}{Result\+Check}}
+, \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744aa6122a65eaa676f700ae68d393054a37}{Start}} = Game\+Start
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744}{en\+Event\+No}} \mbox{\hyperlink{_event_manager_8h_a5c9a31d5ca4b488bce568723a4788aae}{EEvent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744}} 
+\index{EventManager.h@{EventManager.h}!enEventNo@{enEventNo}}
+\index{enEventNo@{enEventNo}!EventManager.h@{EventManager.h}}
+\doxysubsubsection{\texorpdfstring{enEventNo}{enEventNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744}{en\+Event\+No}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!None@{None}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a6adf97f83acf6453d4a6a4b1070f3754}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameStart@{GameStart}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!GameStart@{GameStart}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a492785297322c6add81eb6abe8744bdf}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a492785297322c6add81eb6abe8744bdf}} 
+Game\+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameClear@{GameClear}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!GameClear@{GameClear}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a52b4113d941d3ef49056dd31224c2efb}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a52b4113d941d3ef49056dd31224c2efb}} 
+Game\+Clear&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameOver@{GameOver}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!GameOver@{GameOver}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a8f347bc7cebca9fa6d97e70c6bc29eb3}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a8f347bc7cebca9fa6d97e70c6bc29eb3}} 
+Game\+Over&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!Max@{Max}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a6a061313d22e51e0f25b7cd4dc065233}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ResultCheck@{ResultCheck}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!ResultCheck@{ResultCheck}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a11947055e5dea7f4fb2d2bdb07a6780b}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744a11947055e5dea7f4fb2d2bdb07a6780b}} 
+Result\+Check&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!EventManager.h@{EventManager.h}}\index{EventManager.h@{EventManager.h}!Start@{Start}}}\mbox{\Hypertarget{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744aa6122a65eaa676f700ae68d393054a37}\label{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744aa6122a65eaa676f700ae68d393054a37}} 
+Start&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{変数詳解}
+\mbox{\Hypertarget{_event_manager_8h_a5c9a31d5ca4b488bce568723a4788aae}\label{_event_manager_8h_a5c9a31d5ca4b488bce568723a4788aae}} 
+\index{EventManager.h@{EventManager.h}!EEvent@{EEvent}}
+\index{EEvent@{EEvent}!EventManager.h@{EventManager.h}}
+\doxysubsubsection{\texorpdfstring{EEvent}{EEvent}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_event_manager_8h_ab4da9c95bde0677fdffd6b2bbcb87744}{en\+Event\+No}} EEvent}
+

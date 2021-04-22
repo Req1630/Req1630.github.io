@@ -1,0 +1,657 @@
+\hypertarget{class_c_item_base}{}\doxysection{CItem\+Base クラス}
+\label{class_c_item_base}\index{CItemBase@{CItemBase}}
+
+
+{\ttfamily \#include $<$Item\+Base.\+h$>$}
+
+
+
+CItem\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CItem\+Base 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_c_item_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_item_base_a210490a136b9fa44f64b32a232e28610}{CItem\+Base}} ()
+\item 
+\mbox{\hyperlink{class_c_item_base_aaa9a9ae49dcdbdbc7fe7d11dd17247ee}{CItem\+Base}} (const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}} $\ast$p\+Param)
+\item 
+virtual \mbox{\hyperlink{class_c_item_base_a8977f24aa873f8cff39160a1e19c9262}{$\sim$\+CItem\+Base}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_item_base_aede174da0d6542991784e337db4e8c9e}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_item_base_a4d5f47448403bdfc77279a7f04644861}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_item_base_a6832c8281b3b4ab87b8084c741276e13}{Drop}} (const D3\+DXVECTOR3 \&v\+Pos)
+\item 
+bool \mbox{\hyperlink{class_c_item_base_ae5d412d6c7b370130f4b0a438668356b}{Is\+Delete}} ()
+\item 
+bool \mbox{\hyperlink{class_c_item_base_ad310146d2816316f82a86367157faed9}{Is\+Hit\+Disappear}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fb}{ENow\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fba6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fba3e679cff5b3a6f6f8f32aead541a0a12}{Drop}}
+, \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fba4d3d769b812b6faa6b76e1a8abaece2d}{Active}}
+, \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fba1e56438a69e3cfe0d4cec696d2f9741a}{Hit\+Disappear}}
+, \newline
+\mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fba4b428ea0a0920885efec2e2bac1e179c}{Time\+Disappear}}
+, \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fbaf2a6c498fb90ee345d997f888fce3b18}{Delete}}
+, \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fba6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\item 
+enum class \mbox{\hyperlink{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbba}{EEffect\+Number}} \+: char \{ \mbox{\hyperlink{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa6adf97f83acf6453d4a6a4b1070f3754}{None}} = -\/1
+, \mbox{\hyperlink{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa7ee623fe09ceaf9962cbc1eed34469b9}{Drop\+And\+Active}}
+, \mbox{\hyperlink{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaaebfe5e1791db03c4cd6ab95801e0977d}{Hit}}
+, \mbox{\hyperlink{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_c_item_base_ad77090c519f1c50bd9d30eff87802d5f}{Give\+Effect}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor)=0
+\item 
+void \mbox{\hyperlink{class_c_item_base_a3f75a791511f10808bb983b90b22f176}{Drop}} ()
+\item 
+void \mbox{\hyperlink{class_c_item_base_a2377c5ad825e527f1030adff7a0f4a87}{Active}} ()
+\item 
+void \mbox{\hyperlink{class_c_item_base_a9733fd8efbd1347275ef5552d6e24899}{Hit\+Disappear}} ()
+\item 
+void \mbox{\hyperlink{class_c_item_base_a166aae829a1cfc331a6c30a05315979b}{Time\+Disappear}} ()
+\item 
+void \mbox{\hyperlink{class_c_item_base_a29ad01275a7dd93078e2901776562d0a}{Rotate}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_item_base_ae4b04ccd0357905f43b7cf98dcb9acdc}{Effect\+Setting}} ()=0
+\item 
+bool \mbox{\hyperlink{class_c_item_base_adb11e35eae88ce9a83cfcb1cd36af2ed}{Get\+Model}} (const char $\ast$model\+Name)
+\item 
+virtual bool \mbox{\hyperlink{class_c_item_base_a503642fd6c38c9fe34871b15b0635b91}{Collider\+Setting}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}} $\ast$ \mbox{\hyperlink{class_c_item_base_a359403c395dd8eb620d2d30689a40a06}{p\+PRAMETER}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}} $>$ \mbox{\hyperlink{class_c_item_base_a4d9e80ba2804b729e91fcf1b49883b6d}{m\+\_\+p\+Static\+Mesh}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_effect_manager}{CEffect\+Manager}} $>$ $>$ \mbox{\hyperlink{class_c_item_base_a2a52abee9687592c71f9bd5b38fc3b9a}{m\+\_\+p\+Effects}}
+\item 
+\mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fb}{ENow\+State}} \mbox{\hyperlink{class_c_item_base_ab38bb02094d5e483ce79de918fc3300b}{m\+\_\+\+Now\+State}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a395107fbcfcec3be76d1e8028df794c3}{m\+\_\+\+Scale}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_acb2c20f4b75a8f27a4bbee6d88959fd2}{m\+\_\+\+Model\+Alpha}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a4d70335435f1ad6daa1159920b6a1e84}{m\+\_\+\+Acceleration\+Value}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a5128f832ff291a9d3e4965923162c98f}{m\+\_\+\+Gravity}}
+\item 
+int \mbox{\hyperlink{class_c_item_base_a70f608f55ea6b6a8b1481fe2afc84898}{m\+\_\+\+Bound\+Count}}
+\item 
+int \mbox{\hyperlink{class_c_item_base_aaa5e42a9fe90d23d156a23eb3ccc57f5}{m\+\_\+\+Active\+Count}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a5ddcbeca1a6b79227df5c1d9d8c812f5}{m\+\_\+\+Flashing\+Count}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a44e407a43776bb249878b16e49f98818}{m\+\_\+\+Disappear\+Count}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a8f468d33306d8435915507e0eb9b5d53}{m\+\_\+\+Flashing\+Acc\+Value}}
+\item 
+float \mbox{\hyperlink{class_c_item_base_a727b5e1ae1b0892293cb80349c0c6fac}{m\+\_\+\+Hit\+Effect\+Count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_addf0d39350a93a91a2f3ca52b5a06608}{INIT\+\_\+\+MODEL\+\_\+\+ALPHA}} = 1.\+0f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_a5fc1fa648718b93f627bc42ad20dc7eb}{MODEL\+\_\+\+ALPHA\+\_\+\+MAX}} = 1.\+0f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_a6d1d040b7be8c8f15de75bcfd89fec70}{DEFAULT\+\_\+\+ACCELERATION\+\_\+\+VALUE}} = -\/0.\+05f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_a0a99a57637df51fe3d740d31fd27e03c}{DEFAULT\+\_\+\+GRAVITY}} = 0.\+001f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_adbfa383262be0f5afdbe7a7e07e9cf6d}{SCALE\+\_\+\+MAX}} = 1.\+0f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_a922dacf6d283ddaa9067dfd8ad0a5524}{SCALE\+\_\+\+MIN}} = 0.\+0f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_a4e1dc4d04e5716e607924af5ec506c25}{POSITION\+\_\+\+HEIGHT\+\_\+\+MIN}} = 1.\+0f
+\item 
+static constexpr float \mbox{\hyperlink{class_c_item_base_abca180dcbffe8934e57bb01d5bf1c233}{EFFECT\+\_\+\+SCALE\+\_\+\+MAX}} = 1.\+5f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbba}\label{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbba}} 
+\index{CItemBase@{CItemBase}!EEffectNumber@{EEffectNumber}}
+\index{EEffectNumber@{EEffectNumber}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{EEffectNumber}{EEffectNumber}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbba}{CItem\+Base\+::\+EEffect\+Number}} \+: char\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!None@{None}}}\mbox{\Hypertarget{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa6adf97f83acf6453d4a6a4b1070f3754}\label{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DropAndActive@{DropAndActive}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!DropAndActive@{DropAndActive}}}\mbox{\Hypertarget{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa7ee623fe09ceaf9962cbc1eed34469b9}\label{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa7ee623fe09ceaf9962cbc1eed34469b9}} 
+Drop\+And\+Active&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Hit@{Hit}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!Hit@{Hit}}}\mbox{\Hypertarget{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaaebfe5e1791db03c4cd6ab95801e0977d}\label{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaaebfe5e1791db03c4cd6ab95801e0977d}} 
+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!Max@{Max}}}\mbox{\Hypertarget{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa6a061313d22e51e0f25b7cd4dc065233}\label{class_c_item_base_a35d126fefa8a65cc10f929f7c2d1bbbaa6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fb}\label{class_c_item_base_a57005efc6080b071f225b894177312fb}} 
+\index{CItemBase@{CItemBase}!ENowState@{ENowState}}
+\index{ENowState@{ENowState}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{ENowState}{ENowState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fb}{CItem\+Base\+::\+ENow\+State}} \+: unsigned char\hspace{0.3cm}{\ttfamily [strong]}, {\ttfamily [protected]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!None@{None}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fba6adf97f83acf6453d4a6a4b1070f3754}\label{class_c_item_base_a57005efc6080b071f225b894177312fba6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Drop@{Drop}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!Drop@{Drop}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fba3e679cff5b3a6f6f8f32aead541a0a12}\label{class_c_item_base_a57005efc6080b071f225b894177312fba3e679cff5b3a6f6f8f32aead541a0a12}} 
+Drop&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Active@{Active}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!Active@{Active}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fba4d3d769b812b6faa6b76e1a8abaece2d}\label{class_c_item_base_a57005efc6080b071f225b894177312fba4d3d769b812b6faa6b76e1a8abaece2d}} 
+Active&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HitDisappear@{HitDisappear}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!HitDisappear@{HitDisappear}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fba1e56438a69e3cfe0d4cec696d2f9741a}\label{class_c_item_base_a57005efc6080b071f225b894177312fba1e56438a69e3cfe0d4cec696d2f9741a}} 
+Hit\+Disappear&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TimeDisappear@{TimeDisappear}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!TimeDisappear@{TimeDisappear}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fba4b428ea0a0920885efec2e2bac1e179c}\label{class_c_item_base_a57005efc6080b071f225b894177312fba4b428ea0a0920885efec2e2bac1e179c}} 
+Time\+Disappear&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Delete@{Delete}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!Delete@{Delete}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fbaf2a6c498fb90ee345d997f888fce3b18}\label{class_c_item_base_a57005efc6080b071f225b894177312fbaf2a6c498fb90ee345d997f888fce3b18}} 
+Delete&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!CItemBase@{CItemBase}}\index{CItemBase@{CItemBase}!Max@{Max}}}\mbox{\Hypertarget{class_c_item_base_a57005efc6080b071f225b894177312fba6a061313d22e51e0f25b7cd4dc065233}\label{class_c_item_base_a57005efc6080b071f225b894177312fba6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_item_base_a210490a136b9fa44f64b32a232e28610}\label{class_c_item_base_a210490a136b9fa44f64b32a232e28610}} 
+\index{CItemBase@{CItemBase}!CItemBase@{CItemBase}}
+\index{CItemBase@{CItemBase}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{CItemBase()}{CItemBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CItem\+Base\+::\+CItem\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_item_base_aaa9a9ae49dcdbdbc7fe7d11dd17247ee}\label{class_c_item_base_aaa9a9ae49dcdbdbc7fe7d11dd17247ee}} 
+\index{CItemBase@{CItemBase}!CItemBase@{CItemBase}}
+\index{CItemBase@{CItemBase}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{CItemBase()}{CItemBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CItem\+Base\+::\+CItem\+Base (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}} $\ast$}]{p\+Param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_item_base_a8977f24aa873f8cff39160a1e19c9262}\label{class_c_item_base_a8977f24aa873f8cff39160a1e19c9262}} 
+\index{CItemBase@{CItemBase}!````~CItemBase@{$\sim$CItemBase}}
+\index{````~CItemBase@{$\sim$CItemBase}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$CItemBase()}{~CItemBase()}}
+{\footnotesize\ttfamily CItem\+Base\+::$\sim$\+CItem\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_item_base_a2377c5ad825e527f1030adff7a0f4a87}\label{class_c_item_base_a2377c5ad825e527f1030adff7a0f4a87}} 
+\index{CItemBase@{CItemBase}!Active@{Active}}
+\index{Active@{Active}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Active()}{Active()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_c_item_base_a2377c5ad825e527f1030adff7a0f4a87_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a2377c5ad825e527f1030adff7a0f4a87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a503642fd6c38c9fe34871b15b0635b91}\label{class_c_item_base_a503642fd6c38c9fe34871b15b0635b91}} 
+\index{CItemBase@{CItemBase}!ColliderSetting@{ColliderSetting}}
+\index{ColliderSetting@{ColliderSetting}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{ColliderSetting()}{ColliderSetting()}}
+{\footnotesize\ttfamily bool CItem\+Base\+::\+Collider\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a503642fd6c38c9fe34871b15b0635b91_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a4d5f47448403bdfc77279a7f04644861}\label{class_c_item_base_a4d5f47448403bdfc77279a7f04644861}} 
+\index{CItemBase@{CItemBase}!Collision@{Collision}}
+\index{Collision@{Collision}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_c_s_p_effect_time_item_a3f3b567a12771a547f1df956ac172460}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a81b7ab428d8bcf1a4d7d33b46eef3dd3}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a6220636a1df5343bb4a86c0daba721b4}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a9e54f33a20df50628c3aa12f112c286d}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_edit_item_a9f484219212602be75a182f1b8198e1b}{CEdit\+Item}}で再実装されています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a4d5f47448403bdfc77279a7f04644861_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a4d5f47448403bdfc77279a7f04644861_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a3f75a791511f10808bb983b90b22f176}\label{class_c_item_base_a3f75a791511f10808bb983b90b22f176}} 
+\index{CItemBase@{CItemBase}!Drop@{Drop}}
+\index{Drop@{Drop}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Drop()}{Drop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Drop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a3f75a791511f10808bb983b90b22f176_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a6832c8281b3b4ab87b8084c741276e13}\label{class_c_item_base_a6832c8281b3b4ab87b8084c741276e13}} 
+\index{CItemBase@{CItemBase}!Drop@{Drop}}
+\index{Drop@{Drop}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Drop()}{Drop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Drop (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_edit_item_a3173bd5f52de2b0f4d61ddc1fba89b34}{CEdit\+Item}}で再実装されています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a6832c8281b3b4ab87b8084c741276e13_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_aede174da0d6542991784e337db4e8c9e}\label{class_c_item_base_aede174da0d6542991784e337db4e8c9e}} 
+\index{CItemBase@{CItemBase}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}{CActor}}を再実装しています。
+
+
+
+\mbox{\hyperlink{class_c_s_p_effect_time_item_a315fd4de26cb35d5cca0a818d10f0e3f}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a15b64c44e622371dd78bb5e6f2861c19}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_ab06210b2542bcf953d707f6c0beea09a}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a96b6267c70bf8cc15b2743a33b676632}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_edit_item_aebbefbfc7ac0c773308380c637c8748e}{CEdit\+Item}}で再実装されています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_aede174da0d6542991784e337db4e8c9e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_aede174da0d6542991784e337db4e8c9e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_ae4b04ccd0357905f43b7cf98dcb9acdc}\label{class_c_item_base_ae4b04ccd0357905f43b7cf98dcb9acdc}} 
+\index{CItemBase@{CItemBase}!EffectSetting@{EffectSetting}}
+\index{EffectSetting@{EffectSetting}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{EffectSetting()}{EffectSetting()}}
+{\footnotesize\ttfamily virtual bool CItem\+Base\+::\+Effect\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_c_item_base_adb11e35eae88ce9a83cfcb1cd36af2ed}\label{class_c_item_base_adb11e35eae88ce9a83cfcb1cd36af2ed}} 
+\index{CItemBase@{CItemBase}!GetModel@{GetModel}}
+\index{GetModel@{GetModel}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{GetModel()}{GetModel()}}
+{\footnotesize\ttfamily bool CItem\+Base\+::\+Get\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_adb11e35eae88ce9a83cfcb1cd36af2ed_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_adb11e35eae88ce9a83cfcb1cd36af2ed_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_ad77090c519f1c50bd9d30eff87802d5f}\label{class_c_item_base_ad77090c519f1c50bd9d30eff87802d5f}} 
+\index{CItemBase@{CItemBase}!GiveEffect@{GiveEffect}}
+\index{GiveEffect@{GiveEffect}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{GiveEffect()}{GiveEffect()}}
+{\footnotesize\ttfamily virtual void CItem\+Base\+::\+Give\+Effect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_ad77090c519f1c50bd9d30eff87802d5f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a9733fd8efbd1347275ef5552d6e24899}\label{class_c_item_base_a9733fd8efbd1347275ef5552d6e24899}} 
+\index{CItemBase@{CItemBase}!HitDisappear@{HitDisappear}}
+\index{HitDisappear@{HitDisappear}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{HitDisappear()}{HitDisappear()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Hit\+Disappear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a9733fd8efbd1347275ef5552d6e24899_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_ae5d412d6c7b370130f4b0a438668356b}\label{class_c_item_base_ae5d412d6c7b370130f4b0a438668356b}} 
+\index{CItemBase@{CItemBase}!IsDelete@{IsDelete}}
+\index{IsDelete@{IsDelete}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{IsDelete()}{IsDelete()}}
+{\footnotesize\ttfamily bool CItem\+Base\+::\+Is\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_item_base_ad310146d2816316f82a86367157faed9}\label{class_c_item_base_ad310146d2816316f82a86367157faed9}} 
+\index{CItemBase@{CItemBase}!IsHitDisappear@{IsHitDisappear}}
+\index{IsHitDisappear@{IsHitDisappear}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{IsHitDisappear()}{IsHitDisappear()}}
+{\footnotesize\ttfamily bool CItem\+Base\+::\+Is\+Hit\+Disappear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd}\label{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd}} 
+\index{CItemBase@{CItemBase}!Render@{Render}}
+\index{Render@{Render}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_c_s_p_effect_time_item_ac0328a500427c4a7b463dbbfebe12048}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_ab18d614bdc44bd817c32764da181f42f}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a008cbb2f714072e2f3a306039c8e5310}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a4f3dee657e19ea7820607be75c47efdf}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_edit_item_aac4d076b3a7078eeaacf86fcf370afac}{CEdit\+Item}}で再実装されています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a29ad01275a7dd93078e2901776562d0a}\label{class_c_item_base_a29ad01275a7dd93078e2901776562d0a}} 
+\index{CItemBase@{CItemBase}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Rotate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a29ad01275a7dd93078e2901776562d0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a166aae829a1cfc331a6c30a05315979b}\label{class_c_item_base_a166aae829a1cfc331a6c30a05315979b}} 
+\index{CItemBase@{CItemBase}!TimeDisappear@{TimeDisappear}}
+\index{TimeDisappear@{TimeDisappear}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{TimeDisappear()}{TimeDisappear()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Time\+Disappear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a166aae829a1cfc331a6c30a05315979b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a166aae829a1cfc331a6c30a05315979b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad}\label{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad}} 
+\index{CItemBase@{CItemBase}!Update@{Update}}
+\index{Update@{Update}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CItem\+Base\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_c_s_p_effect_time_item_a2b402c600cf698ffbf57aae40592005e}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a2d92f43308a0f865e9d79104f7bd9feb}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a913e3d669a40be0b49e1b3712b1143c2}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_adf1793ced3d3771a577db7eed14e63c1}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_edit_item_acd266f028b7ad41e563e6afb7f5ec608}{CEdit\+Item}}で再実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_item_base_a6d1d040b7be8c8f15de75bcfd89fec70}\label{class_c_item_base_a6d1d040b7be8c8f15de75bcfd89fec70}} 
+\index{CItemBase@{CItemBase}!DEFAULT\_ACCELERATION\_VALUE@{DEFAULT\_ACCELERATION\_VALUE}}
+\index{DEFAULT\_ACCELERATION\_VALUE@{DEFAULT\_ACCELERATION\_VALUE}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ACCELERATION\_VALUE}{DEFAULT\_ACCELERATION\_VALUE}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+DEFAULT\+\_\+\+ACCELERATION\+\_\+\+VALUE = -\/0.\+05f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a0a99a57637df51fe3d740d31fd27e03c}\label{class_c_item_base_a0a99a57637df51fe3d740d31fd27e03c}} 
+\index{CItemBase@{CItemBase}!DEFAULT\_GRAVITY@{DEFAULT\_GRAVITY}}
+\index{DEFAULT\_GRAVITY@{DEFAULT\_GRAVITY}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_GRAVITY}{DEFAULT\_GRAVITY}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+DEFAULT\+\_\+\+GRAVITY = 0.\+001f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_abca180dcbffe8934e57bb01d5bf1c233}\label{class_c_item_base_abca180dcbffe8934e57bb01d5bf1c233}} 
+\index{CItemBase@{CItemBase}!EFFECT\_SCALE\_MAX@{EFFECT\_SCALE\_MAX}}
+\index{EFFECT\_SCALE\_MAX@{EFFECT\_SCALE\_MAX}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{EFFECT\_SCALE\_MAX}{EFFECT\_SCALE\_MAX}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+EFFECT\+\_\+\+SCALE\+\_\+\+MAX = 1.\+5f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_addf0d39350a93a91a2f3ca52b5a06608}\label{class_c_item_base_addf0d39350a93a91a2f3ca52b5a06608}} 
+\index{CItemBase@{CItemBase}!INIT\_MODEL\_ALPHA@{INIT\_MODEL\_ALPHA}}
+\index{INIT\_MODEL\_ALPHA@{INIT\_MODEL\_ALPHA}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{INIT\_MODEL\_ALPHA}{INIT\_MODEL\_ALPHA}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+INIT\+\_\+\+MODEL\+\_\+\+ALPHA = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a4d70335435f1ad6daa1159920b6a1e84}\label{class_c_item_base_a4d70335435f1ad6daa1159920b6a1e84}} 
+\index{CItemBase@{CItemBase}!m\_AccelerationValue@{m\_AccelerationValue}}
+\index{m\_AccelerationValue@{m\_AccelerationValue}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_AccelerationValue}{m\_AccelerationValue}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Acceleration\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_aaa5e42a9fe90d23d156a23eb3ccc57f5}\label{class_c_item_base_aaa5e42a9fe90d23d156a23eb3ccc57f5}} 
+\index{CItemBase@{CItemBase}!m\_ActiveCount@{m\_ActiveCount}}
+\index{m\_ActiveCount@{m\_ActiveCount}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_ActiveCount}{m\_ActiveCount}}
+{\footnotesize\ttfamily int CItem\+Base\+::m\+\_\+\+Active\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a70f608f55ea6b6a8b1481fe2afc84898}\label{class_c_item_base_a70f608f55ea6b6a8b1481fe2afc84898}} 
+\index{CItemBase@{CItemBase}!m\_BoundCount@{m\_BoundCount}}
+\index{m\_BoundCount@{m\_BoundCount}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_BoundCount}{m\_BoundCount}}
+{\footnotesize\ttfamily int CItem\+Base\+::m\+\_\+\+Bound\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a44e407a43776bb249878b16e49f98818}\label{class_c_item_base_a44e407a43776bb249878b16e49f98818}} 
+\index{CItemBase@{CItemBase}!m\_DisappearCount@{m\_DisappearCount}}
+\index{m\_DisappearCount@{m\_DisappearCount}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_DisappearCount}{m\_DisappearCount}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Disappear\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a8f468d33306d8435915507e0eb9b5d53}\label{class_c_item_base_a8f468d33306d8435915507e0eb9b5d53}} 
+\index{CItemBase@{CItemBase}!m\_FlashingAccValue@{m\_FlashingAccValue}}
+\index{m\_FlashingAccValue@{m\_FlashingAccValue}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_FlashingAccValue}{m\_FlashingAccValue}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Flashing\+Acc\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a5ddcbeca1a6b79227df5c1d9d8c812f5}\label{class_c_item_base_a5ddcbeca1a6b79227df5c1d9d8c812f5}} 
+\index{CItemBase@{CItemBase}!m\_FlashingCount@{m\_FlashingCount}}
+\index{m\_FlashingCount@{m\_FlashingCount}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_FlashingCount}{m\_FlashingCount}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Flashing\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a5128f832ff291a9d3e4965923162c98f}\label{class_c_item_base_a5128f832ff291a9d3e4965923162c98f}} 
+\index{CItemBase@{CItemBase}!m\_Gravity@{m\_Gravity}}
+\index{m\_Gravity@{m\_Gravity}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_Gravity}{m\_Gravity}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Gravity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a727b5e1ae1b0892293cb80349c0c6fac}\label{class_c_item_base_a727b5e1ae1b0892293cb80349c0c6fac}} 
+\index{CItemBase@{CItemBase}!m\_HitEffectCount@{m\_HitEffectCount}}
+\index{m\_HitEffectCount@{m\_HitEffectCount}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_HitEffectCount}{m\_HitEffectCount}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Hit\+Effect\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_acb2c20f4b75a8f27a4bbee6d88959fd2}\label{class_c_item_base_acb2c20f4b75a8f27a4bbee6d88959fd2}} 
+\index{CItemBase@{CItemBase}!m\_ModelAlpha@{m\_ModelAlpha}}
+\index{m\_ModelAlpha@{m\_ModelAlpha}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_ModelAlpha}{m\_ModelAlpha}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Model\+Alpha\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_ab38bb02094d5e483ce79de918fc3300b}\label{class_c_item_base_ab38bb02094d5e483ce79de918fc3300b}} 
+\index{CItemBase@{CItemBase}!m\_NowState@{m\_NowState}}
+\index{m\_NowState@{m\_NowState}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_NowState}{m\_NowState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_item_base_a57005efc6080b071f225b894177312fb}{ENow\+State}} CItem\+Base\+::m\+\_\+\+Now\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a2a52abee9687592c71f9bd5b38fc3b9a}\label{class_c_item_base_a2a52abee9687592c71f9bd5b38fc3b9a}} 
+\index{CItemBase@{CItemBase}!m\_pEffects@{m\_pEffects}}
+\index{m\_pEffects@{m\_pEffects}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_pEffects}{m\_pEffects}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_effect_manager}{CEffect\+Manager}}$>$ $>$ CItem\+Base\+::m\+\_\+p\+Effects\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a4d9e80ba2804b729e91fcf1b49883b6d}\label{class_c_item_base_a4d9e80ba2804b729e91fcf1b49883b6d}} 
+\index{CItemBase@{CItemBase}!m\_pStaticMesh@{m\_pStaticMesh}}
+\index{m\_pStaticMesh@{m\_pStaticMesh}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_pStaticMesh}{m\_pStaticMesh}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}}$>$ CItem\+Base\+::m\+\_\+p\+Static\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a395107fbcfcec3be76d1e8028df794c3}\label{class_c_item_base_a395107fbcfcec3be76d1e8028df794c3}} 
+\index{CItemBase@{CItemBase}!m\_Scale@{m\_Scale}}
+\index{m\_Scale@{m\_Scale}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{m\_Scale}{m\_Scale}}
+{\footnotesize\ttfamily float CItem\+Base\+::m\+\_\+\+Scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a5fc1fa648718b93f627bc42ad20dc7eb}\label{class_c_item_base_a5fc1fa648718b93f627bc42ad20dc7eb}} 
+\index{CItemBase@{CItemBase}!MODEL\_ALPHA\_MAX@{MODEL\_ALPHA\_MAX}}
+\index{MODEL\_ALPHA\_MAX@{MODEL\_ALPHA\_MAX}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{MODEL\_ALPHA\_MAX}{MODEL\_ALPHA\_MAX}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+MODEL\+\_\+\+ALPHA\+\_\+\+MAX = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a4e1dc4d04e5716e607924af5ec506c25}\label{class_c_item_base_a4e1dc4d04e5716e607924af5ec506c25}} 
+\index{CItemBase@{CItemBase}!POSITION\_HEIGHT\_MIN@{POSITION\_HEIGHT\_MIN}}
+\index{POSITION\_HEIGHT\_MIN@{POSITION\_HEIGHT\_MIN}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{POSITION\_HEIGHT\_MIN}{POSITION\_HEIGHT\_MIN}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+POSITION\+\_\+\+HEIGHT\+\_\+\+MIN = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a359403c395dd8eb620d2d30689a40a06}\label{class_c_item_base_a359403c395dd8eb620d2d30689a40a06}} 
+\index{CItemBase@{CItemBase}!pPRAMETER@{pPRAMETER}}
+\index{pPRAMETER@{pPRAMETER}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{pPRAMETER}{pPRAMETER}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}}$\ast$ CItem\+Base\+::p\+PRAMETER\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_adbfa383262be0f5afdbe7a7e07e9cf6d}\label{class_c_item_base_adbfa383262be0f5afdbe7a7e07e9cf6d}} 
+\index{CItemBase@{CItemBase}!SCALE\_MAX@{SCALE\_MAX}}
+\index{SCALE\_MAX@{SCALE\_MAX}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{SCALE\_MAX}{SCALE\_MAX}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+SCALE\+\_\+\+MAX = 1.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_item_base_a922dacf6d283ddaa9067dfd8ad0a5524}\label{class_c_item_base_a922dacf6d283ddaa9067dfd8ad0a5524}} 
+\index{CItemBase@{CItemBase}!SCALE\_MIN@{SCALE\_MIN}}
+\index{SCALE\_MIN@{SCALE\_MIN}!CItemBase@{CItemBase}}
+\doxysubsubsection{\texorpdfstring{SCALE\_MIN}{SCALE\_MIN}}
+{\footnotesize\ttfamily constexpr float CItem\+Base\+::\+SCALE\+\_\+\+MIN = 0.\+0f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [constexpr]}, {\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Item/\mbox{\hyperlink{_item_base_8h}{Item\+Base.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Item/\mbox{\hyperlink{_item_base_8cpp}{Item\+Base.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,231 @@
+\hypertarget{class_s_t_g_1_1_c_actor}{}\doxysection{STG\+::CActor クラス}
+\label{class_s_t_g_1_1_c_actor}\index{STG::CActor@{STG::CActor}}
+
+
+{\ttfamily \#include $<$STGActor.\+h$>$}
+
+
+
+STG\+::CActor の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_actor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+STG\+::CActor 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_s_t_g_1_1_c_actor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_actor_a22436a9e69474d47f31ac81fa192ba4b}{CActor}} ()
+\item 
+virtual \mbox{\hyperlink{class_s_t_g_1_1_c_actor_adca86a138fd9af275352336848ebad27}{$\sim$\+CActor}} ()
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a31512ed993e2900b0e8a85bae10001bb}{Mesh\+Render}} ()
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}{Collision}} (\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$p\+Actor)=0
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a8210ff366bf2b786a82b7078f048ebbb}{Life\+Calculation}} (const std\+::function$<$ void(float \&)$>$ \&)
+\item 
+\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$ \mbox{\hyperlink{class_s_t_g_1_1_c_actor_af107a77a4e2a7ff06977d10ea19b9f63}{Get\+Coll}} ()
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_actor_af90190bb1fbd4d5bf70c84a098ce519f}{Set\+Target\+Pos}} (const D3\+DXVECTOR3 \&pos)
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a5a7354d10c591abb92a994c832680805}{Set\+Active}} (const float \&is\+Active)
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_actor_af917eff96b6e99bd45fdc0255d03076e}{Get\+Active}} () const
+\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}} $>$ $>$ \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a53a602092039333528f5b63894fa6666}{Get\+Bullets}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}} $>$ \mbox{\hyperlink{class_s_t_g_1_1_c_actor_ad230846d873d68eb594f77e8390e90c8}{m\+\_\+p\+Static\+Mesh}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $>$ \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a630a0aded2fb4202677473b5ffcc15bc}{m\+\_\+p\+Coll\+Manager}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a145c3d155199eceb2f708d5b8142089b}{m\+\_\+\+Move\+Vector}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a707c0ba62926de14121a9a4a99efef2e}{m\+\_\+\+Target\+Positon}}
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_actor_a232d4f587e8f4704ae432579c67357fb}{m\+\_\+\+Is\+Active}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a22436a9e69474d47f31ac81fa192ba4b}\label{class_s_t_g_1_1_c_actor_a22436a9e69474d47f31ac81fa192ba4b}} 
+\index{STG::CActor@{STG::CActor}!CActor@{CActor}}
+\index{CActor@{CActor}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{CActor()}{CActor()}}
+{\footnotesize\ttfamily CActor\+::\+CActor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_adca86a138fd9af275352336848ebad27}\label{class_s_t_g_1_1_c_actor_adca86a138fd9af275352336848ebad27}} 
+\index{STG::CActor@{STG::CActor}!````~CActor@{$\sim$CActor}}
+\index{````~CActor@{$\sim$CActor}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{$\sim$CActor()}{~CActor()}}
+{\footnotesize\ttfamily CActor\+::$\sim$\+CActor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}\label{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}} 
+\index{STG::CActor@{STG::CActor}!Collision@{Collision}}
+\index{Collision@{Collision}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily virtual void STG\+::\+CActor\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_player_a1b0e6cdb21839d7ea2d53a94bbffea99}{STG\+::\+CPlayer}}, \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a5351292a4556943a36c929b3d1085cfd}{STG\+::\+CEnemy}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a5e2e230fbcf751edbd3c30893dbfc36b}{STG\+::\+CBullet}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a3c3fc3658eaa219be08153f3d69154a7}{STG\+::\+CBullet\+Manager}}で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_af917eff96b6e99bd45fdc0255d03076e}\label{class_s_t_g_1_1_c_actor_af917eff96b6e99bd45fdc0255d03076e}} 
+\index{STG::CActor@{STG::CActor}!GetActive@{GetActive}}
+\index{GetActive@{GetActive}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{GetActive()}{GetActive()}}
+{\footnotesize\ttfamily bool STG\+::\+CActor\+::\+Get\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_actor_af917eff96b6e99bd45fdc0255d03076e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a53a602092039333528f5b63894fa6666}\label{class_s_t_g_1_1_c_actor_a53a602092039333528f5b63894fa6666}} 
+\index{STG::CActor@{STG::CActor}!GetBullets@{GetBullets}}
+\index{GetBullets@{GetBullets}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{GetBullets()}{GetBullets()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}}$>$ $>$ STG\+::\+CActor\+::\+Get\+Bullets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_character_a892560326012bc3a04bf553ad2792de3}{STG\+::\+CCharacter}}で再実装されています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_af107a77a4e2a7ff06977d10ea19b9f63}\label{class_s_t_g_1_1_c_actor_af107a77a4e2a7ff06977d10ea19b9f63}} 
+\index{STG::CActor@{STG::CActor}!GetColl@{GetColl}}
+\index{GetColl@{GetColl}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{GetColl()}{GetColl()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}}$\ast$ STG\+::\+CActor\+::\+Get\+Coll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_s_t_g_1_1_c_actor_af107a77a4e2a7ff06977d10ea19b9f63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a8210ff366bf2b786a82b7078f048ebbb}\label{class_s_t_g_1_1_c_actor_a8210ff366bf2b786a82b7078f048ebbb}} 
+\index{STG::CActor@{STG::CActor}!LifeCalculation@{LifeCalculation}}
+\index{LifeCalculation@{LifeCalculation}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{LifeCalculation()}{LifeCalculation()}}
+{\footnotesize\ttfamily virtual void STG\+::\+CActor\+::\+Life\+Calculation (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(float \&)$>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_actor_a8210ff366bf2b786a82b7078f048ebbb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a31512ed993e2900b0e8a85bae10001bb}\label{class_s_t_g_1_1_c_actor_a31512ed993e2900b0e8a85bae10001bb}} 
+\index{STG::CActor@{STG::CActor}!MeshRender@{MeshRender}}
+\index{MeshRender@{MeshRender}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{MeshRender()}{MeshRender()}}
+{\footnotesize\ttfamily void CActor\+::\+Mesh\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_actor_a31512ed993e2900b0e8a85bae10001bb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a5a7354d10c591abb92a994c832680805}\label{class_s_t_g_1_1_c_actor_a5a7354d10c591abb92a994c832680805}} 
+\index{STG::CActor@{STG::CActor}!SetActive@{SetActive}}
+\index{SetActive@{SetActive}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{SetActive()}{SetActive()}}
+{\footnotesize\ttfamily void STG\+::\+CActor\+::\+Set\+Active (\begin{DoxyParamCaption}\item[{const float \&}]{is\+Active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_actor_a5a7354d10c591abb92a994c832680805_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_af90190bb1fbd4d5bf70c84a098ce519f}\label{class_s_t_g_1_1_c_actor_af90190bb1fbd4d5bf70c84a098ce519f}} 
+\index{STG::CActor@{STG::CActor}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void STG\+::\+CActor\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_actor_af90190bb1fbd4d5bf70c84a098ce519f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a232d4f587e8f4704ae432579c67357fb}\label{class_s_t_g_1_1_c_actor_a232d4f587e8f4704ae432579c67357fb}} 
+\index{STG::CActor@{STG::CActor}!m\_IsActive@{m\_IsActive}}
+\index{m\_IsActive@{m\_IsActive}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{m\_IsActive}{m\_IsActive}}
+{\footnotesize\ttfamily bool STG\+::\+CActor\+::m\+\_\+\+Is\+Active\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a145c3d155199eceb2f708d5b8142089b}\label{class_s_t_g_1_1_c_actor_a145c3d155199eceb2f708d5b8142089b}} 
+\index{STG::CActor@{STG::CActor}!m\_MoveVector@{m\_MoveVector}}
+\index{m\_MoveVector@{m\_MoveVector}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{m\_MoveVector}{m\_MoveVector}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 STG\+::\+CActor\+::m\+\_\+\+Move\+Vector\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a630a0aded2fb4202677473b5ffcc15bc}\label{class_s_t_g_1_1_c_actor_a630a0aded2fb4202677473b5ffcc15bc}} 
+\index{STG::CActor@{STG::CActor}!m\_pCollManager@{m\_pCollManager}}
+\index{m\_pCollManager@{m\_pCollManager}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{m\_pCollManager}{m\_pCollManager}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}}$>$ STG\+::\+CActor\+::m\+\_\+p\+Coll\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_ad230846d873d68eb594f77e8390e90c8}\label{class_s_t_g_1_1_c_actor_ad230846d873d68eb594f77e8390e90c8}} 
+\index{STG::CActor@{STG::CActor}!m\_pStaticMesh@{m\_pStaticMesh}}
+\index{m\_pStaticMesh@{m\_pStaticMesh}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{m\_pStaticMesh}{m\_pStaticMesh}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}}$>$ STG\+::\+CActor\+::m\+\_\+p\+Static\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_actor_a707c0ba62926de14121a9a4a99efef2e}\label{class_s_t_g_1_1_c_actor_a707c0ba62926de14121a9a4a99efef2e}} 
+\index{STG::CActor@{STG::CActor}!m\_TargetPositon@{m\_TargetPositon}}
+\index{m\_TargetPositon@{m\_TargetPositon}!STG::CActor@{STG::CActor}}
+\doxysubsubsection{\texorpdfstring{m\_TargetPositon}{m\_TargetPositon}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 STG\+::\+CActor\+::m\+\_\+\+Target\+Positon\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\mbox{\hyperlink{_s_t_g_actor_8h}{STGActor.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\mbox{\hyperlink{_s_t_g_actor_8cpp}{STGActor.\+cpp}}\end{DoxyCompactItemize}

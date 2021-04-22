@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Collider/Colliders/Capsule/CapsuleCollision.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_4791eaf9ff3d97ee7ff22b1c289030db.html">Collider</a></li><li class="navelem"><a class="el" href="dir_284bc412922346988271b5f6c23425d9.html">Colliders</a></li><li class="navelem"><a class="el" href="dir_3e46d8b8a60b4c2091f827e986f95f77.html">Capsule</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CapsuleCollision.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_capsule_collision_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef CAPSULE_COLLISION_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define CAPSULE_COLLISION_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\..\ColliderBase\ColliderBase.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;..\..\..\Utility\MyVector\MyVector.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_capsule_model.html">CCapsuleModel</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/**************************************************</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*   カプセル当たり判定用クラス.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_capsule_collision.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_capsule_collision.html">CCapsuleCollision</a> : <span class="keyword">public</span> <a class="code" href="class_c_collider_base.html">CColliderBase</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_c_capsule_collision.html#a326619f7077d786a7c293853a66b9959">CCapsuleCollision</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_capsule_collision.html#a813182034ae5d399901ccac42c3ea0e8">~CCapsuleCollision</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// モデルの半径の作成.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    HRESULT <a class="code" href="class_c_capsule_collision.html#a7b4d33ae4ebaf942d94841a703a4ef6e">InitModelCapsule</a>( LPD3DXMESH pMesh );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    HRESULT <a class="code" href="class_c_capsule_collision.html#a7b4d33ae4ebaf942d94841a703a4ef6e">InitModelCapsule</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; height, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; radius );</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// 当たり判定の表示.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_capsule_collision.html#a5dbe6be88f59876b9499c769c6664b19">DebugRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 色を変えるかどうか.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_capsule_collision.html#a9c4c60670aa5e3fbac593c4a3e6d2964">SetChangeColor</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; changed );</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 半径の取得.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_capsule_collision.html#a777917645dfe64ac1bc7c0d7c53fb27b">   33</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_capsule_collision.html#a777917645dfe64ac1bc7c0d7c53fb27b">GetRadius</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Radius; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// セグメント取得関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="struct_segment.html">Segment</a> <a class="code" href="class_c_capsule_collision.html#a4fa7a74375b83ee181166cf6560f75a3">GetSegment</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// 調整用の球体半径の設定.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_capsule_collision.html#a970f93b84d9e5e728e4bbf4f8af0eec6">   39</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_capsule_collision.html#a970f93b84d9e5e728e4bbf4f8af0eec6">SetAdjRadius</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; radius ){ m_AdjRadius = radius; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 調整用の球体半径の設定.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_capsule_collision.html#af72c5e01b114e4139a87393260aa1eb6">   41</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_capsule_collision.html#af72c5e01b114e4139a87393260aa1eb6">SetAdjHeight</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; height ){ m_AdjHeight = height; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// 2線分の最短距離.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// s1 : S1(線分1).</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// s2 : S2(線分2).</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// p1 : S1側の垂線の足（戻り値）.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// p2 : S2側の垂線の足（戻り値）.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// t1 : S1側のベクトル係数（戻り値）.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// t2 : S2側のベクトル係数（戻り値）.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// 戻り値: 最短距離.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_capsule_collision.html#ae4e9f14efb848aa1301d941093a64d31">calcSegmentSegmentDist</a>( </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_segment.html">Segment</a> &amp;s1, <span class="keyword">const</span> <a class="code" href="struct_segment.html">Segment</a> &amp;s2, </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="struct_float3.html">Point</a> &amp;p1, <a class="code" href="struct_float3.html">Point</a> &amp;p2, </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">float</span> &amp;t1, <span class="keywordtype">float</span> &amp;t2 );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// 点と直線の最短距離.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// p : 点.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// l : 直線.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// h : 点からおろした垂直の足(返り値).</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// t : ベクトル係数(戻り値).</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 戻り値 : 最短距離.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">float</span> calcPointLineDist( <span class="keyword">const</span> <a class="code" href="struct_float3.html">Point</a>&amp; p, <span class="keyword">const</span> <a class="code" href="struct_line.html">Line</a>&amp; l, <a class="code" href="struct_float3.html">Point</a>&amp; h, <span class="keywordtype">float</span>&amp; t );</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// ∠p1p2p3は鋭角？.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> isSharpAngle( <span class="keyword">const</span> <a class="code" href="struct_float3.html">Point</a>&amp; p1, <span class="keyword">const</span> <a class="code" href="struct_float3.html">Point</a>&amp; p2, <span class="keyword">const</span> <a class="code" href="struct_float3.html">Point</a>&amp; p3 );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// 点と線分の最短距離.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// p : 点.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// seg : 線分.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// h : 最短距離となる端点(戻り値).</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// t : 端点位置( t &lt; 0 : 始点の外, 0 &lt;= t &lt;= 1 : 線分内, t &gt; 1 : 線分の外 ).</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">float</span> calcPointSegmentDist( <span class="keyword">const</span> <a class="code" href="struct_float3.html">Point</a>&amp; p, <span class="keyword">const</span> <a class="code" href="struct_segment.html">Segment</a>&amp; seg, <a class="code" href="struct_float3.html">Point</a>&amp; h, <span class="keywordtype">float</span>&amp; t ); </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// 2直線の最短距離.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// l1 : L1.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// l2 : L2.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// p1 : L1側の垂直の足(戻り値).</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// p2 : L2側の垂直の足(戻り値).</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// t1 : L1側のベクトル係数(戻り値).</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// t2 : L2側のベクトル係数(戻り値).</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// 戻り値 : 最短距離.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">float</span> calcLineLineDist( </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_line.html">Line</a>&amp; l1, <span class="keyword">const</span> <a class="code" href="struct_line.html">Line</a>&amp; l2, </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="struct_float3.html">Point</a>&amp; p1, <a class="code" href="struct_float3.html">Point</a>&amp; p2, </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">float</span>&amp; t1, <span class="keywordtype">float</span>&amp; t2 );</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// 0〜1の間にクランプ.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> clamp01( <span class="keywordtype">float</span> &amp;v ) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">if</span> ( v &lt; 0.0f )</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            v = 0.0f;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( v &gt; 1.0f )</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            v = 1.0f;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="struct_segment.html">Segment</a> m_Segment;  <span class="comment">// セグメント.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">float</span> m_Radius;     <span class="comment">// カプセルの半径.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">float</span> m_AdjRadius;  <span class="comment">// 調整用のカプセルの半径.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">float</span> m_Height;     <span class="comment">// カプセルの高さ.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">float</span> m_AdjHeight;  <span class="comment">// 調整用のカプセルの高さ.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::unique_ptr&lt;CCapsuleModel&gt; m_pDebugCapsule; <span class="comment">// デバッグ用の球体.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> m_IsRender; <span class="comment">// 描画するかどうか.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifdef _DEBUG.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef CAPSULE_COLLISION_H.</span></div>
+<div class="ttc" id="aclass_c_capsule_collision_html"><div class="ttname"><a href="class_c_capsule_collision.html">CCapsuleCollision</a></div><div class="ttdef"><b>Definition:</b> CapsuleCollision.h:18</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a326619f7077d786a7c293853a66b9959"><div class="ttname"><a href="class_c_capsule_collision.html#a326619f7077d786a7c293853a66b9959">CCapsuleCollision::CCapsuleCollision</a></div><div class="ttdeci">CCapsuleCollision()</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:9</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a4fa7a74375b83ee181166cf6560f75a3"><div class="ttname"><a href="class_c_capsule_collision.html#a4fa7a74375b83ee181166cf6560f75a3">CCapsuleCollision::GetSegment</a></div><div class="ttdeci">Segment GetSegment()</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:253</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a5dbe6be88f59876b9499c769c6664b19"><div class="ttname"><a href="class_c_capsule_collision.html#a5dbe6be88f59876b9499c769c6664b19">CCapsuleCollision::DebugRender</a></div><div class="ttdeci">virtual void DebugRender() override</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:76</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a777917645dfe64ac1bc7c0d7c53fb27b"><div class="ttname"><a href="class_c_capsule_collision.html#a777917645dfe64ac1bc7c0d7c53fb27b">CCapsuleCollision::GetRadius</a></div><div class="ttdeci">float GetRadius() const</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.h:33</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a7b4d33ae4ebaf942d94841a703a4ef6e"><div class="ttname"><a href="class_c_capsule_collision.html#a7b4d33ae4ebaf942d94841a703a4ef6e">CCapsuleCollision::InitModelCapsule</a></div><div class="ttdeci">HRESULT InitModelCapsule(LPD3DXMESH pMesh)</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:31</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a813182034ae5d399901ccac42c3ea0e8"><div class="ttname"><a href="class_c_capsule_collision.html#a813182034ae5d399901ccac42c3ea0e8">CCapsuleCollision::~CCapsuleCollision</a></div><div class="ttdeci">virtual ~CCapsuleCollision()</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:24</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a970f93b84d9e5e728e4bbf4f8af0eec6"><div class="ttname"><a href="class_c_capsule_collision.html#a970f93b84d9e5e728e4bbf4f8af0eec6">CCapsuleCollision::SetAdjRadius</a></div><div class="ttdeci">void SetAdjRadius(const float &amp;radius)</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.h:39</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_a9c4c60670aa5e3fbac593c4a3e6d2964"><div class="ttname"><a href="class_c_capsule_collision.html#a9c4c60670aa5e3fbac593c4a3e6d2964">CCapsuleCollision::SetChangeColor</a></div><div class="ttdeci">void SetChangeColor(const bool &amp;changed)</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:90</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_ae4e9f14efb848aa1301d941093a64d31"><div class="ttname"><a href="class_c_capsule_collision.html#ae4e9f14efb848aa1301d941093a64d31">CCapsuleCollision::calcSegmentSegmentDist</a></div><div class="ttdeci">float calcSegmentSegmentDist(const Segment &amp;s1, const Segment &amp;s2, Point &amp;p1, Point &amp;p2, float &amp;t1, float &amp;t2)</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.cpp:175</div></div>
+<div class="ttc" id="aclass_c_capsule_collision_html_af72c5e01b114e4139a87393260aa1eb6"><div class="ttname"><a href="class_c_capsule_collision.html#af72c5e01b114e4139a87393260aa1eb6">CCapsuleCollision::SetAdjHeight</a></div><div class="ttdeci">void SetAdjHeight(const float &amp;height)</div><div class="ttdef"><b>Definition:</b> CapsuleCollision.h:41</div></div>
+<div class="ttc" id="aclass_c_capsule_model_html"><div class="ttname"><a href="class_c_capsule_model.html">CCapsuleModel</a></div><div class="ttdef"><b>Definition:</b> CapsuleModel.h:17</div></div>
+<div class="ttc" id="aclass_c_collider_base_html"><div class="ttname"><a href="class_c_collider_base.html">CColliderBase</a></div><div class="ttdef"><b>Definition:</b> ColliderBase.h:15</div></div>
+<div class="ttc" id="astruct_float3_html"><div class="ttname"><a href="struct_float3.html">Float3</a></div><div class="ttdef"><b>Definition:</b> MyVector.h:44</div></div>
+<div class="ttc" id="astruct_line_html"><div class="ttname"><a href="struct_line.html">Line</a></div><div class="ttdef"><b>Definition:</b> MyVector.h:170</div></div>
+<div class="ttc" id="astruct_segment_html"><div class="ttname"><a href="struct_segment.html">Segment</a></div><div class="ttdef"><b>Definition:</b> MyVector.h:186</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

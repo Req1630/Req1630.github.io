@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/Slider/Slider.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_4d587e757e5f6f7cf0d27ce13445c808.html">Slider</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Slider.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_slider_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SLIDER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SLIDER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Widget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_c_slinder.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_slinder.html">CSlinder</a> : <span class="keyword">public</span> <a class="code" href="class_c_widget.html">CWidget</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_BACK_BAR_NAME    = <span class="stringliteral">&quot;backSlider&quot;</span>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_BAR_NAME         = <span class="stringliteral">&quot;slider&quot;</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_SELECT_ICON_NAME = <span class="stringliteral">&quot;selectSliderIcon&quot;</span>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_ICON_NAME        = <span class="stringliteral">&quot;SliderIcon&quot;</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> DEFALUT_VALUE_MAX = 1.0f;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> DEFALUT_VALUE_MIN = 0.0f;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> VALUE_MAX;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> VALUE_MIN;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">enum</span> enSpriteNo</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        ESpriteNo_None = -1,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        ESpriteNo_BackBar,      <span class="comment">// 後ろのバー.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        ESpriteNo_Bar,          <span class="comment">// バー.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ESpriteNo_SelectIcon,   <span class="comment">// アイコン.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        ESpriteNo_Icon,         <span class="comment">// アイコン.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ESpriteNo_Max,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    } <span class="keyword">typedef</span> ESpriteNo;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_c_slinder.html#a863b97462b95c83ebd459310bcc13b52">CSlinder</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_c_slinder.html#a863b97462b95c83ebd459310bcc13b52">CSlinder</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; valueMax, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; valueMin );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_slinder.html#a29384cb1cbf23f914440bf240a5beff0">~CSlinder</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_slinder.html#a2c1843843659590f6563545c47678ac2">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_slinder.html#ab5286115676fba18d40426f326fe9d0e">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_slinder.html#ab84603bd3815be0dc53be27a2ceb20db">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 値を増やす.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_slinder.html#a814e475e56f74e3ef2c257edf6c61e51">AddValue</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; value );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 値を減らす.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_slinder.html#a46752c710faead32a19128a077029214">SubValue</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; value );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 値の設定.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_slinder.html#afc8b3c9d30a137d6341cefd228dce37b">SetValue</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; value );</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// 値の取得.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_slinder.html#a0d45507acc3d7e56b615eb9d051339e1">   49</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="class_c_slinder.html#a0d45507acc3d7e56b615eb9d051339e1">GetValue</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Value; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 座標設定関数.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_slinder.html#ae19f79e90479728fd6b91ead1ba727e0">SetPosition</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vPos ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// アイコンの座標の取得.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_slinder.html#a09ecf1da0c03fdf80958433235f984fa">   54</a></span>&#160;    <span class="keyword">inline</span> D3DXVECTOR3 <a class="code" href="class_c_slinder.html#a09ecf1da0c03fdf80958433235f984fa">GetIconPosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IconPosition; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// アイコンの座標の設定.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> SetIconPosition();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pSprites; <span class="comment">// スプライトクラス.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">float</span>       m_Value;                <span class="comment">// 値.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    D3DXVECTOR3 m_IconPosition;         <span class="comment">// アイコンの座標.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">float</span>       m_BackBarImageWidthSize;<span class="comment">// バーの画像サイズ幅.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    D3DXVECTOR3 m_BarImageWidthSize;    <span class="comment">// バーの画像サイズ幅.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">bool</span>        m_IsActive;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef SLIDER_H.</span></div>
+<div class="ttc" id="aclass_c_slinder_html"><div class="ttname"><a href="class_c_slinder.html">CSlinder</a></div><div class="ttdef"><b>Definition:</b> Slider.h:8</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a09ecf1da0c03fdf80958433235f984fa"><div class="ttname"><a href="class_c_slinder.html#a09ecf1da0c03fdf80958433235f984fa">CSlinder::GetIconPosition</a></div><div class="ttdeci">D3DXVECTOR3 GetIconPosition() const</div><div class="ttdef"><b>Definition:</b> Slider.h:54</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a0d45507acc3d7e56b615eb9d051339e1"><div class="ttname"><a href="class_c_slinder.html#a0d45507acc3d7e56b615eb9d051339e1">CSlinder::GetValue</a></div><div class="ttdeci">float GetValue() const</div><div class="ttdef"><b>Definition:</b> Slider.h:49</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a29384cb1cbf23f914440bf240a5beff0"><div class="ttname"><a href="class_c_slinder.html#a29384cb1cbf23f914440bf240a5beff0">CSlinder::~CSlinder</a></div><div class="ttdeci">virtual ~CSlinder()</div><div class="ttdef"><b>Definition:</b> Slider.cpp:24</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a2c1843843659590f6563545c47678ac2"><div class="ttname"><a href="class_c_slinder.html#a2c1843843659590f6563545c47678ac2">CSlinder::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> Slider.cpp:29</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a46752c710faead32a19128a077029214"><div class="ttname"><a href="class_c_slinder.html#a46752c710faead32a19128a077029214">CSlinder::SubValue</a></div><div class="ttdeci">void SubValue(const float &amp;value)</div><div class="ttdef"><b>Definition:</b> Slider.cpp:80</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a814e475e56f74e3ef2c257edf6c61e51"><div class="ttname"><a href="class_c_slinder.html#a814e475e56f74e3ef2c257edf6c61e51">CSlinder::AddValue</a></div><div class="ttdeci">void AddValue(const float &amp;value)</div><div class="ttdef"><b>Definition:</b> Slider.cpp:73</div></div>
+<div class="ttc" id="aclass_c_slinder_html_a863b97462b95c83ebd459310bcc13b52"><div class="ttname"><a href="class_c_slinder.html#a863b97462b95c83ebd459310bcc13b52">CSlinder::CSlinder</a></div><div class="ttdeci">CSlinder()</div><div class="ttdef"><b>Definition:</b> Slider.cpp:7</div></div>
+<div class="ttc" id="aclass_c_slinder_html_ab5286115676fba18d40426f326fe9d0e"><div class="ttname"><a href="class_c_slinder.html#ab5286115676fba18d40426f326fe9d0e">CSlinder::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> Slider.cpp:42</div></div>
+<div class="ttc" id="aclass_c_slinder_html_ab84603bd3815be0dc53be27a2ceb20db"><div class="ttname"><a href="class_c_slinder.html#ab84603bd3815be0dc53be27a2ceb20db">CSlinder::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> Slider.cpp:49</div></div>
+<div class="ttc" id="aclass_c_slinder_html_ae19f79e90479728fd6b91ead1ba727e0"><div class="ttname"><a href="class_c_slinder.html#ae19f79e90479728fd6b91ead1ba727e0">CSlinder::SetPosition</a></div><div class="ttdeci">virtual void SetPosition(const D3DXVECTOR3 &amp;vPos) override</div><div class="ttdef"><b>Definition:</b> Slider.cpp:94</div></div>
+<div class="ttc" id="aclass_c_slinder_html_afc8b3c9d30a137d6341cefd228dce37b"><div class="ttname"><a href="class_c_slinder.html#afc8b3c9d30a137d6341cefd228dce37b">CSlinder::SetValue</a></div><div class="ttdeci">void SetValue(const float &amp;value)</div><div class="ttdef"><b>Definition:</b> Slider.cpp:87</div></div>
+<div class="ttc" id="aclass_c_widget_html"><div class="ttname"><a href="class_c_widget.html">CWidget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

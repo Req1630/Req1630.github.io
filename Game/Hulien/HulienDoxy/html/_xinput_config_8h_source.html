@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/Input/XInput/XinputConfig.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_7d5b4f1abc12bc2c7c0aeba93783c400.html">Utility</a></li><li class="navelem"><a class="el" href="dir_660e961baf323eabbb9d70bd4a0d9a31.html">Input</a></li><li class="navelem"><a class="el" href="dir_4381a5799b2ee59904a329596527385e.html">XInput</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">XinputConfig.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_xinput_config_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef XINPUT_CONFIG_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define XINPUT_CONFIG_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_x_input_8h.html">Xinput.h</a>&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;xinput.lib&quot;</span> )</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*********************************:</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*   Xinput設定クラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*       (継承させて使用).</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_x_input_config.html">CXInputConfig</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a44813f2f10261638dd9898a496ae3bd7">   20</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_c_x_input_config.html#a44813f2f10261638dd9898a496ae3bd7">FILE_PATH</a> = <span class="stringliteral">&quot;Data\\Config\\controller.txt&quot;</span>;   <span class="comment">// コントローラーのファイルパス.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// ボタンリスト.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4">   24</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4">enBUTTON_LIST</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a402c977bb1c901dfb9ab74a423db48fe">   26</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a402c977bb1c901dfb9ab74a423db48fe">None</a>,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4ac56ff686c886bee7b70f4b933e407cc2">   28</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4ac56ff686c886bee7b70f4b933e407cc2">A</a> = 0,</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a72209e1df0473b4d074155cf0ea5b9bb">   29</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a72209e1df0473b4d074155cf0ea5b9bb">B</a>,</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4ac7b6eb881b8e6afb31fad778239c016a">   30</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4ac7b6eb881b8e6afb31fad778239c016a">X</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a566e22bb28de1597c236898d2ebceb51">   31</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a566e22bb28de1597c236898d2ebceb51">Y</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a4b7ab252ed78a013320a60f2288e458d">   32</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a4b7ab252ed78a013320a60f2288e458d">Left</a>,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a8f9b596b8d289519c224eb7877e8fedf">   33</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a8f9b596b8d289519c224eb7877e8fedf">Right</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4aa57202656a808e3ff41c6c79220f33b5">   35</a></span>&#160;        <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4aa57202656a808e3ff41c6c79220f33b5">Max</a>,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_c_x_input_config.html#af31de41660a6310f53e9fc42561f1715">CXInputConfig</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_x_input_config.html#a951d5ceaec10f289f6e421ae7d404ce2">~CXInputConfig</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// ボタンの設定.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_x_input_config.html#a7cfb554b455b61cdfba63b3d21b34017">SetButton</a>( <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4">enBUTTON_LIST</a> before, <a class="code" href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4">enBUTTON_LIST</a> after );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// ファイルの読み込み.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::vector&lt;std::string&gt; <a class="code" href="class_c_x_input_config.html#ac8b296a6ea8619a550de580e6e524678">FileReading</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#aaa7ec84c7966436dbd69f74b4edc8b13">   49</a></span>&#160;    std::unordered_map&lt;enBUTTON_LIST, DWORD&gt; <a class="code" href="class_c_x_input_config.html#aaa7ec84c7966436dbd69f74b4edc8b13">m_Button</a>;  <span class="comment">// 決定されたボタン.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_x_input_config.html#af59fb3182f3d80e922457393ffe0fee5">   50</a></span>&#160;    std::vector&lt;DWORD&gt;  <a class="code" href="class_c_x_input_config.html#af59fb3182f3d80e922457393ffe0fee5">m_ButtonList</a>;   <span class="comment">// ボタンのリスト.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef XINPUT_CONFIG_H.</span></div>
+<div class="ttc" id="a_x_input_8h_html"><div class="ttname"><a href="_x_input_8h.html">XInput.h</a></div><div class="ttdoc">This is Use Xinput Controller file.</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html"><div class="ttname"><a href="class_c_x_input_config.html">CXInputConfig</a></div><div class="ttdef"><b>Definition:</b> XinputConfig.h:18</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a44813f2f10261638dd9898a496ae3bd7"><div class="ttname"><a href="class_c_x_input_config.html#a44813f2f10261638dd9898a496ae3bd7">CXInputConfig::FILE_PATH</a></div><div class="ttdeci">static const char * FILE_PATH</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:20</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a7cfb554b455b61cdfba63b3d21b34017"><div class="ttname"><a href="class_c_x_input_config.html#a7cfb554b455b61cdfba63b3d21b34017">CXInputConfig::SetButton</a></div><div class="ttdeci">void SetButton(enBUTTON_LIST before, enBUTTON_LIST after)</div><div class="ttdef"><b>Definition:</b> XinputConfig.cpp:29</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a951d5ceaec10f289f6e421ae7d404ce2"><div class="ttname"><a href="class_c_x_input_config.html#a951d5ceaec10f289f6e421ae7d404ce2">CXInputConfig::~CXInputConfig</a></div><div class="ttdeci">virtual ~CXInputConfig()</div><div class="ttdef"><b>Definition:</b> XinputConfig.cpp:20</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4">CXInputConfig::enBUTTON_LIST</a></div><div class="ttdeci">enBUTTON_LIST</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:25</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4a402c977bb1c901dfb9ab74a423db48fe"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a402c977bb1c901dfb9ab74a423db48fe">CXInputConfig::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:26</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4a4b7ab252ed78a013320a60f2288e458d"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a4b7ab252ed78a013320a60f2288e458d">CXInputConfig::Left</a></div><div class="ttdeci">@ Left</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:32</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4a566e22bb28de1597c236898d2ebceb51"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a566e22bb28de1597c236898d2ebceb51">CXInputConfig::Y</a></div><div class="ttdeci">@ Y</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:31</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4a72209e1df0473b4d074155cf0ea5b9bb"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a72209e1df0473b4d074155cf0ea5b9bb">CXInputConfig::B</a></div><div class="ttdeci">@ B</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:29</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4a8f9b596b8d289519c224eb7877e8fedf"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4a8f9b596b8d289519c224eb7877e8fedf">CXInputConfig::Right</a></div><div class="ttdeci">@ Right</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:33</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4aa57202656a808e3ff41c6c79220f33b5"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4aa57202656a808e3ff41c6c79220f33b5">CXInputConfig::Max</a></div><div class="ttdeci">@ Max</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:35</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4ac56ff686c886bee7b70f4b933e407cc2"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4ac56ff686c886bee7b70f4b933e407cc2">CXInputConfig::A</a></div><div class="ttdeci">@ A</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:28</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_a9801e3e86394295d669158f06964a7e4ac7b6eb881b8e6afb31fad778239c016a"><div class="ttname"><a href="class_c_x_input_config.html#a9801e3e86394295d669158f06964a7e4ac7b6eb881b8e6afb31fad778239c016a">CXInputConfig::X</a></div><div class="ttdeci">@ X</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:30</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_aaa7ec84c7966436dbd69f74b4edc8b13"><div class="ttname"><a href="class_c_x_input_config.html#aaa7ec84c7966436dbd69f74b4edc8b13">CXInputConfig::m_Button</a></div><div class="ttdeci">std::unordered_map&lt; enBUTTON_LIST, DWORD &gt; m_Button</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:49</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_ac8b296a6ea8619a550de580e6e524678"><div class="ttname"><a href="class_c_x_input_config.html#ac8b296a6ea8619a550de580e6e524678">CXInputConfig::FileReading</a></div><div class="ttdeci">std::vector&lt; std::string &gt; FileReading()</div><div class="ttdef"><b>Definition:</b> XinputConfig.cpp:41</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_af31de41660a6310f53e9fc42561f1715"><div class="ttname"><a href="class_c_x_input_config.html#af31de41660a6310f53e9fc42561f1715">CXInputConfig::CXInputConfig</a></div><div class="ttdeci">CXInputConfig()</div><div class="ttdef"><b>Definition:</b> XinputConfig.cpp:4</div></div>
+<div class="ttc" id="aclass_c_x_input_config_html_af59fb3182f3d80e922457393ffe0fee5"><div class="ttname"><a href="class_c_x_input_config.html#af59fb3182f3d80e922457393ffe0fee5">CXInputConfig::m_ButtonList</a></div><div class="ttdeci">std::vector&lt; DWORD &gt; m_ButtonList</div><div class="ttdef"><b>Definition:</b> XinputConfig.h:50</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

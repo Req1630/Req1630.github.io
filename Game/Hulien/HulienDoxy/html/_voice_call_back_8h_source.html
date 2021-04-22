@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/XAudio2CallBack/VoiceCallBack.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_a7e3b021d6c65d18f140bdc84e03e579.html">XAudio2</a></li><li class="navelem"><a class="el" href="dir_d57b0832d9a3a506fc01175fa98a7994.html">XAudio2CallBack</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VoiceCallBack.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_voice_call_back_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VOICE_CALLBACK</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VOICE_CALLBACK</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\XAudio2.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_voice_callback.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_voice_callback.html">VoiceCallback</a> : <span class="keyword">public</span> IXAudio2VoiceCallback</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a49f5125a0a64279a99307e3ff79dbb19">   11</a></span>&#160;    HANDLE <a class="code" href="class_voice_callback.html#a49f5125a0a64279a99307e3ff79dbb19">event</a>; <span class="comment">// イベント</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// コンストラクタ</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_voice_callback.html#acebe518391f41f33c361651f9764e86d">   13</a></span>&#160;    <a class="code" href="class_voice_callback.html#acebe518391f41f33c361651f9764e86d">VoiceCallback</a>() : <a class="code" href="class_voice_callback.html#a49f5125a0a64279a99307e3ff79dbb19">event</a>(CreateEvent(NULL, FALSE, FALSE, NULL)) {}</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// デストラクタ</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a6b225be70f78f9f4e847ffd2fcf8b635">   15</a></span>&#160;    <a class="code" href="class_voice_callback.html#a6b225be70f78f9f4e847ffd2fcf8b635">~VoiceCallback</a>() { CloseHandle(<a class="code" href="class_voice_callback.html#a49f5125a0a64279a99307e3ff79dbb19">event</a>); }</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// 以下コールバック</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// ボイスが連続オーディオストリームの再生を終了したときに呼び出される</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a777f6bb698d8300fa8e7ee54002c43ae">   21</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#a777f6bb698d8300fa8e7ee54002c43ae">OnStreamEnd</a>() { printf(<span class="stringliteral">&quot;%s\n&quot;</span>, __func__); }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// ボイスの終了のプロセッシングパスの直後に呼び出される</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a8a7d9e62ff67dcba6cb497faaab68d84">   23</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#a8a7d9e62ff67dcba6cb497faaab68d84">OnVoiceProcessingPassEnd</a>() {}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// ボイス開始のプロセッシングパスの直前に呼び出される</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_voice_callback.html#aa68a01a72828ac2ac4cf5651488b4791">   25</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#aa68a01a72828ac2ac4cf5651488b4791">OnVoiceProcessingPassStart</a>(UINT32 SamplesRequired) {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// ボイスがバッファーの処理を終了したときに呼び出される</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a050e02f3b26aaffc0fd095144d342034">   27</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#a050e02f3b26aaffc0fd095144d342034">OnBufferEnd</a>(<span class="keywordtype">void</span> * pBufferContext) { SetEvent(<a class="code" href="class_voice_callback.html#a49f5125a0a64279a99307e3ff79dbb19">event</a>); }</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// ボイスが新しいオーディオバッファーの処理を開始しようとするときに呼び出される</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a47705d113830820549ce02a72c544c9f">   29</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#a47705d113830820549ce02a72c544c9f">OnBufferStart</a>(<span class="keywordtype">void</span> * pBufferContext) {}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// ボイスがループの最後に到達したときに呼び出される</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_voice_callback.html#a83386e40fdd09b66228e2f38892a5876">   31</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#a83386e40fdd09b66228e2f38892a5876">OnLoopEnd</a>(<span class="keywordtype">void</span> * pBufferContext) { printf(<span class="stringliteral">&quot;%s\n&quot;</span>, __func__); }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// ボイスの処理中に重大なエラーが発生したときに呼び出される</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_voice_callback.html#adc6d4ede786c38f4a1eafd5c2d701c4b">   33</a></span>&#160;    <span class="keywordtype">void</span> STDMETHODCALLTYPE <a class="code" href="class_voice_callback.html#adc6d4ede786c38f4a1eafd5c2d701c4b">OnVoiceError</a>(<span class="keywordtype">void</span> * pBufferContext, HRESULT Error) { printf(<span class="stringliteral">&quot;%s\n&quot;</span>, __func__); }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #ifndef VOICE_CALLBACK</span></div>
+<div class="ttc" id="aclass_voice_callback_html"><div class="ttname"><a href="class_voice_callback.html">VoiceCallback</a></div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:9</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a050e02f3b26aaffc0fd095144d342034"><div class="ttname"><a href="class_voice_callback.html#a050e02f3b26aaffc0fd095144d342034">VoiceCallback::OnBufferEnd</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnBufferEnd(void *pBufferContext)</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:27</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a47705d113830820549ce02a72c544c9f"><div class="ttname"><a href="class_voice_callback.html#a47705d113830820549ce02a72c544c9f">VoiceCallback::OnBufferStart</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnBufferStart(void *pBufferContext)</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:29</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a49f5125a0a64279a99307e3ff79dbb19"><div class="ttname"><a href="class_voice_callback.html#a49f5125a0a64279a99307e3ff79dbb19">VoiceCallback::event</a></div><div class="ttdeci">HANDLE event</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:11</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a6b225be70f78f9f4e847ffd2fcf8b635"><div class="ttname"><a href="class_voice_callback.html#a6b225be70f78f9f4e847ffd2fcf8b635">VoiceCallback::~VoiceCallback</a></div><div class="ttdeci">~VoiceCallback()</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:15</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a777f6bb698d8300fa8e7ee54002c43ae"><div class="ttname"><a href="class_voice_callback.html#a777f6bb698d8300fa8e7ee54002c43ae">VoiceCallback::OnStreamEnd</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnStreamEnd()</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:21</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a83386e40fdd09b66228e2f38892a5876"><div class="ttname"><a href="class_voice_callback.html#a83386e40fdd09b66228e2f38892a5876">VoiceCallback::OnLoopEnd</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnLoopEnd(void *pBufferContext)</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:31</div></div>
+<div class="ttc" id="aclass_voice_callback_html_a8a7d9e62ff67dcba6cb497faaab68d84"><div class="ttname"><a href="class_voice_callback.html#a8a7d9e62ff67dcba6cb497faaab68d84">VoiceCallback::OnVoiceProcessingPassEnd</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnVoiceProcessingPassEnd()</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:23</div></div>
+<div class="ttc" id="aclass_voice_callback_html_aa68a01a72828ac2ac4cf5651488b4791"><div class="ttname"><a href="class_voice_callback.html#aa68a01a72828ac2ac4cf5651488b4791">VoiceCallback::OnVoiceProcessingPassStart</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnVoiceProcessingPassStart(UINT32 SamplesRequired)</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:25</div></div>
+<div class="ttc" id="aclass_voice_callback_html_acebe518391f41f33c361651f9764e86d"><div class="ttname"><a href="class_voice_callback.html#acebe518391f41f33c361651f9764e86d">VoiceCallback::VoiceCallback</a></div><div class="ttdeci">VoiceCallback()</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:13</div></div>
+<div class="ttc" id="aclass_voice_callback_html_adc6d4ede786c38f4a1eafd5c2d701c4b"><div class="ttname"><a href="class_voice_callback.html#adc6d4ede786c38f4a1eafd5c2d701c4b">VoiceCallback::OnVoiceError</a></div><div class="ttdeci">void STDMETHODCALLTYPE OnVoiceError(void *pBufferContext, HRESULT Error)</div><div class="ttdef"><b>Definition:</b> VoiceCallBack.h:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

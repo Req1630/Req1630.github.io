@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Light/LightBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_b66a5aa7f39391f9ebedfcdb35ae68fa.html">Light</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LightBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_light_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef LIGHT_BASE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define LIGHT_BASE_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Global.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/***********************************</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*   ライト基底クラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_light_base.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_light_base.html">CLightBase</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> FLOAT_WND_W              = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a>);    <span class="comment">// (float)画面幅.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> FLOAT_WND_H              = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(<a class="code" href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a>);    <span class="comment">// (float)画面幅.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> INITIAL_VIEWING_ANGLE    = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(3.141519/4.0); <span class="comment">// 初期視野角.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> SCREEN_ASPECT_RATIO      = FLOAT_WND_W/FLOAT_WND_H;          <span class="comment">// 画面アスペクト比.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> INITIAL_MIN_CLIPPING_DISTANCE = 0.1f;            <span class="comment">// 初期最小描画距離.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> INITIAL_MAX_CLIPPING_DISTANCE = 1000.f;          <span class="comment">// 初期最大描画距離.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> D3DXVECTOR3 VIEW_UP_VECTOR  = { 0.0f, 1.0f, 0.0f }; <span class="comment">// 上方向ベクトル.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span> MAX_CASCADE = 4;   <span class="comment">// 最大カスケード数.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// バウンディングボックス(カスケードシャドウに使用).</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">struct </span>stBBox</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        D3DXVECTOR3 mini;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        D3DXVECTOR3 maxi;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        stBBox( D3DXVECTOR3 min, D3DXVECTOR3 max )</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            : mini ( min )</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            , maxi ( max )</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    } <span class="keyword">typedef</span> SBBox;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_c_light_base.html#ad113bc5132e02de5144051796d24baa8">CLightBase</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_light_base.html#abccbc7e9c50ec1d262df26529289d2fd">~CLightBase</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// カスケード分のシャドウ行列を取得する.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    D3DXMATRIX* <a class="code" href="class_c_light_base.html#ae9509d472ed2b011fd02f69a01f381a0">GetShadowVP</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// カスケード分割座標を取得.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a325b1e0a850b614a93c36b7972e8cda1">   47</a></span>&#160;    <span class="keywordtype">float</span>* <a class="code" href="class_c_light_base.html#a325b1e0a850b614a93c36b7972e8cda1">GetSpritPos</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_light_base.html#ad2e65bd90ffccdf8cd19980c71cd617e">m_SplitPos</a>; }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 座標の設定.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a95ab55e10b604e6abc6e5d4a94ca9686">   50</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_light_base.html#a95ab55e10b604e6abc6e5d4a94ca9686">SetPosition</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; pos ){ <a class="code" href="class_c_light_base.html#abeedf3faaee7adfa99ecae68d97a840a">m_vPosition</a> = pos; }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 座標の取得.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a72f2698987dc7ea237b571f2d929d38d">   52</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_light_base.html#a72f2698987dc7ea237b571f2d929d38d">GetPosition</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_light_base.html#abeedf3faaee7adfa99ecae68d97a840a">m_vPosition</a>; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// 視点座標の設定.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a001d9e2981058ac9b3895acbf1d3ec27">   55</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_light_base.html#a001d9e2981058ac9b3895acbf1d3ec27">SetLookPosition</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; lookPos ){ <a class="code" href="class_c_light_base.html#aea4213993516d39d9983b2ad7159d7fd">m_vLookPosition</a> = lookPos; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// 方向の設定.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_c_light_base.html#af8425a69141b6926f5c868f898f9271e">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_light_base.html#af8425a69141b6926f5c868f898f9271e">SetDirection</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; dir ){ <a class="code" href="class_c_light_base.html#a9e1e0d21cefc6f25339e45dbf5615103">m_vDirection</a> = dir; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 方向の取得.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_c_light_base.html#acfd5b7d4e27b55518c1c57cbb94735df">   60</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_light_base.html#acfd5b7d4e27b55518c1c57cbb94735df">GetDirection</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_light_base.html#a9e1e0d21cefc6f25339e45dbf5615103">m_vDirection</a>; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 回転行列の設定.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_c_light_base.html#ab476fe0821d5d39534a47368a9da01cd">   63</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_light_base.html#ab476fe0821d5d39534a47368a9da01cd">SetRorarionMatrix</a>( <span class="keyword">const</span> D3DXMATRIX&amp; rot ){ <a class="code" href="class_c_light_base.html#ace4d1b654d336f32ae786c2450b2fe9c">m_mRotation</a> = rot; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// 回転行列の取得.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_light_base.html#afe560e25005b8be574dc4d76abd4ba46">   65</a></span>&#160;    D3DXMATRIX <a class="code" href="class_c_light_base.html#afe560e25005b8be574dc4d76abd4ba46">GetRorarionMatrix</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_light_base.html#ace4d1b654d336f32ae786c2450b2fe9c">m_mRotation</a>; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// 強さの設定.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_c_light_base.html#ae8d4ec2345e86fa84cf408f765b42de0">   68</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_light_base.html#ae8d4ec2345e86fa84cf408f765b42de0">SetIntensity</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; intensity ){ <a class="code" href="class_c_light_base.html#ab904828254f0e55729a334582e373472">m_fIntensity</a> = intensity; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// 強さの取得.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_c_light_base.html#af48c3cab977959e4e0cb7a449684effc">   70</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_light_base.html#af48c3cab977959e4e0cb7a449684effc">GetIntensity</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_light_base.html#ab904828254f0e55729a334582e373472">m_fIntensity</a>; }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// 平行分割処理.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> ComputeSplitPositions(</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> splitCount, <span class="keyword">const</span> <span class="keywordtype">float</span> lamda, </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> nearClip, <span class="keyword">const</span> <span class="keywordtype">float</span> farClip, </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordtype">float</span>* positions );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 分割した視錘台の8角をもとめて，ライトのビュー射影空間でAABBを求める.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    SBBox CalculateFrustum( <span class="keywordtype">float</span> nearClip, <span class="keywordtype">float</span> farClip, D3DXMATRIX&amp; viewProj );</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// クロップ行列を求める.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    D3DXMATRIX CreateCropMatrix( SBBox&amp; box );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a7133d526874a56721cf91a3c047c2f32">   84</a></span>&#160;    D3DXMATRIX  <a class="code" href="class_c_light_base.html#a7133d526874a56721cf91a3c047c2f32">m_ShadowMatrix</a>[MAX_CASCADE];    <span class="comment">// シャドウ用行列(カスケード分用意).</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_c_light_base.html#ad2e65bd90ffccdf8cd19980c71cd617e">   85</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="class_c_light_base.html#ad2e65bd90ffccdf8cd19980c71cd617e">m_SplitPos</a>[MAX_CASCADE];        <span class="comment">// カスケードの区切り座標.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_c_light_base.html#aae29cc8158d3512538540738bcabe4a9">   86</a></span>&#160;    D3DXMATRIX  <a class="code" href="class_c_light_base.html#aae29cc8158d3512538540738bcabe4a9">m_ProjMatrix</a>;       <span class="comment">// プロジェクション.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a0815a643889f5f654c2bacd62b41fa49">   87</a></span>&#160;    D3DXMATRIX  <a class="code" href="class_c_light_base.html#a0815a643889f5f654c2bacd62b41fa49">m_ViewMatrix</a>;       <span class="comment">// ビュー.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_c_light_base.html#abeedf3faaee7adfa99ecae68d97a840a">   88</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_light_base.html#abeedf3faaee7adfa99ecae68d97a840a">m_vPosition</a>;        <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_light_base.html#aea4213993516d39d9983b2ad7159d7fd">   89</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_light_base.html#aea4213993516d39d9983b2ad7159d7fd">m_vLookPosition</a>;    <span class="comment">// 新t年座標.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a9e1e0d21cefc6f25339e45dbf5615103">   90</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_light_base.html#a9e1e0d21cefc6f25339e45dbf5615103">m_vDirection</a>;       <span class="comment">// 方向.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_c_light_base.html#ace4d1b654d336f32ae786c2450b2fe9c">   91</a></span>&#160;    D3DXMATRIX  <a class="code" href="class_c_light_base.html#ace4d1b654d336f32ae786c2450b2fe9c">m_mRotation</a>;        <span class="comment">// 回転行列.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_c_light_base.html#ab904828254f0e55729a334582e373472">   92</a></span>&#160;    <span class="keywordtype">float</span>       <a class="code" href="class_c_light_base.html#ab904828254f0e55729a334582e373472">m_fIntensity</a>;       <span class="comment">// 強度(明るさ).</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a7bab290eac664b379b7bcdeeb7e4ebdd">   94</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_light_base.html#a7bab290eac664b379b7bcdeeb7e4ebdd">m_ViewingAngle</a>;           <span class="comment">// 視野角.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a9550c204f7d287b3dc657bf8c2da86b1">   95</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_light_base.html#a9550c204f7d287b3dc657bf8c2da86b1">m_MaxClippingDistance</a>;    <span class="comment">// 最大クリッピング距離.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_c_light_base.html#a7cc5c1155ecd0e386f7bd553682b6f4c">   96</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_light_base.html#a7cc5c1155ecd0e386f7bd553682b6f4c">m_MinClippingDistance</a>;    <span class="comment">// 最小クリッピング距離.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef LIGHT_BASE_H.</span></div>
+<div class="ttc" id="a_global_8h_html_a6a02f87f580d8b9e0e5b3bbc964efb1c"><div class="ttname"><a href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a></div><div class="ttdeci">const int WND_W</div><div class="ttdef"><b>Definition:</b> Global.h:28</div></div>
+<div class="ttc" id="a_global_8h_html_a6ba6a18a896a6e1a88f7ec592f5efc20"><div class="ttname"><a href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a></div><div class="ttdeci">const int WND_H</div><div class="ttdef"><b>Definition:</b> Global.h:29</div></div>
+<div class="ttc" id="aclass_c_light_base_html"><div class="ttname"><a href="class_c_light_base.html">CLightBase</a></div><div class="ttdef"><b>Definition:</b> LightBase.h:15</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a001d9e2981058ac9b3895acbf1d3ec27"><div class="ttname"><a href="class_c_light_base.html#a001d9e2981058ac9b3895acbf1d3ec27">CLightBase::SetLookPosition</a></div><div class="ttdeci">void SetLookPosition(const D3DXVECTOR3 &amp;lookPos)</div><div class="ttdef"><b>Definition:</b> LightBase.h:55</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a0815a643889f5f654c2bacd62b41fa49"><div class="ttname"><a href="class_c_light_base.html#a0815a643889f5f654c2bacd62b41fa49">CLightBase::m_ViewMatrix</a></div><div class="ttdeci">D3DXMATRIX m_ViewMatrix</div><div class="ttdef"><b>Definition:</b> LightBase.h:87</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a325b1e0a850b614a93c36b7972e8cda1"><div class="ttname"><a href="class_c_light_base.html#a325b1e0a850b614a93c36b7972e8cda1">CLightBase::GetSpritPos</a></div><div class="ttdeci">float * GetSpritPos()</div><div class="ttdef"><b>Definition:</b> LightBase.h:47</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a7133d526874a56721cf91a3c047c2f32"><div class="ttname"><a href="class_c_light_base.html#a7133d526874a56721cf91a3c047c2f32">CLightBase::m_ShadowMatrix</a></div><div class="ttdeci">D3DXMATRIX m_ShadowMatrix[MAX_CASCADE]</div><div class="ttdef"><b>Definition:</b> LightBase.h:84</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a72f2698987dc7ea237b571f2d929d38d"><div class="ttname"><a href="class_c_light_base.html#a72f2698987dc7ea237b571f2d929d38d">CLightBase::GetPosition</a></div><div class="ttdeci">D3DXVECTOR3 GetPosition() const</div><div class="ttdef"><b>Definition:</b> LightBase.h:52</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a7bab290eac664b379b7bcdeeb7e4ebdd"><div class="ttname"><a href="class_c_light_base.html#a7bab290eac664b379b7bcdeeb7e4ebdd">CLightBase::m_ViewingAngle</a></div><div class="ttdeci">float m_ViewingAngle</div><div class="ttdef"><b>Definition:</b> LightBase.h:94</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a7cc5c1155ecd0e386f7bd553682b6f4c"><div class="ttname"><a href="class_c_light_base.html#a7cc5c1155ecd0e386f7bd553682b6f4c">CLightBase::m_MinClippingDistance</a></div><div class="ttdeci">float m_MinClippingDistance</div><div class="ttdef"><b>Definition:</b> LightBase.h:96</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a9550c204f7d287b3dc657bf8c2da86b1"><div class="ttname"><a href="class_c_light_base.html#a9550c204f7d287b3dc657bf8c2da86b1">CLightBase::m_MaxClippingDistance</a></div><div class="ttdeci">float m_MaxClippingDistance</div><div class="ttdef"><b>Definition:</b> LightBase.h:95</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a95ab55e10b604e6abc6e5d4a94ca9686"><div class="ttname"><a href="class_c_light_base.html#a95ab55e10b604e6abc6e5d4a94ca9686">CLightBase::SetPosition</a></div><div class="ttdeci">void SetPosition(const D3DXVECTOR3 &amp;pos)</div><div class="ttdef"><b>Definition:</b> LightBase.h:50</div></div>
+<div class="ttc" id="aclass_c_light_base_html_a9e1e0d21cefc6f25339e45dbf5615103"><div class="ttname"><a href="class_c_light_base.html#a9e1e0d21cefc6f25339e45dbf5615103">CLightBase::m_vDirection</a></div><div class="ttdeci">D3DXVECTOR3 m_vDirection</div><div class="ttdef"><b>Definition:</b> LightBase.h:90</div></div>
+<div class="ttc" id="aclass_c_light_base_html_aae29cc8158d3512538540738bcabe4a9"><div class="ttname"><a href="class_c_light_base.html#aae29cc8158d3512538540738bcabe4a9">CLightBase::m_ProjMatrix</a></div><div class="ttdeci">D3DXMATRIX m_ProjMatrix</div><div class="ttdef"><b>Definition:</b> LightBase.h:86</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ab476fe0821d5d39534a47368a9da01cd"><div class="ttname"><a href="class_c_light_base.html#ab476fe0821d5d39534a47368a9da01cd">CLightBase::SetRorarionMatrix</a></div><div class="ttdeci">void SetRorarionMatrix(const D3DXMATRIX &amp;rot)</div><div class="ttdef"><b>Definition:</b> LightBase.h:63</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ab904828254f0e55729a334582e373472"><div class="ttname"><a href="class_c_light_base.html#ab904828254f0e55729a334582e373472">CLightBase::m_fIntensity</a></div><div class="ttdeci">float m_fIntensity</div><div class="ttdef"><b>Definition:</b> LightBase.h:92</div></div>
+<div class="ttc" id="aclass_c_light_base_html_abccbc7e9c50ec1d262df26529289d2fd"><div class="ttname"><a href="class_c_light_base.html#abccbc7e9c50ec1d262df26529289d2fd">CLightBase::~CLightBase</a></div><div class="ttdeci">virtual ~CLightBase()</div><div class="ttdef"><b>Definition:</b> LightBase.cpp:28</div></div>
+<div class="ttc" id="aclass_c_light_base_html_abeedf3faaee7adfa99ecae68d97a840a"><div class="ttname"><a href="class_c_light_base.html#abeedf3faaee7adfa99ecae68d97a840a">CLightBase::m_vPosition</a></div><div class="ttdeci">D3DXVECTOR3 m_vPosition</div><div class="ttdef"><b>Definition:</b> LightBase.h:88</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ace4d1b654d336f32ae786c2450b2fe9c"><div class="ttname"><a href="class_c_light_base.html#ace4d1b654d336f32ae786c2450b2fe9c">CLightBase::m_mRotation</a></div><div class="ttdeci">D3DXMATRIX m_mRotation</div><div class="ttdef"><b>Definition:</b> LightBase.h:91</div></div>
+<div class="ttc" id="aclass_c_light_base_html_acfd5b7d4e27b55518c1c57cbb94735df"><div class="ttname"><a href="class_c_light_base.html#acfd5b7d4e27b55518c1c57cbb94735df">CLightBase::GetDirection</a></div><div class="ttdeci">D3DXVECTOR3 GetDirection() const</div><div class="ttdef"><b>Definition:</b> LightBase.h:60</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ad113bc5132e02de5144051796d24baa8"><div class="ttname"><a href="class_c_light_base.html#ad113bc5132e02de5144051796d24baa8">CLightBase::CLightBase</a></div><div class="ttdeci">CLightBase()</div><div class="ttdef"><b>Definition:</b> LightBase.cpp:12</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ad2e65bd90ffccdf8cd19980c71cd617e"><div class="ttname"><a href="class_c_light_base.html#ad2e65bd90ffccdf8cd19980c71cd617e">CLightBase::m_SplitPos</a></div><div class="ttdeci">float m_SplitPos[MAX_CASCADE]</div><div class="ttdef"><b>Definition:</b> LightBase.h:85</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ae8d4ec2345e86fa84cf408f765b42de0"><div class="ttname"><a href="class_c_light_base.html#ae8d4ec2345e86fa84cf408f765b42de0">CLightBase::SetIntensity</a></div><div class="ttdeci">void SetIntensity(const float &amp;intensity)</div><div class="ttdef"><b>Definition:</b> LightBase.h:68</div></div>
+<div class="ttc" id="aclass_c_light_base_html_ae9509d472ed2b011fd02f69a01f381a0"><div class="ttname"><a href="class_c_light_base.html#ae9509d472ed2b011fd02f69a01f381a0">CLightBase::GetShadowVP</a></div><div class="ttdeci">D3DXMATRIX * GetShadowVP()</div><div class="ttdef"><b>Definition:</b> LightBase.cpp:33</div></div>
+<div class="ttc" id="aclass_c_light_base_html_aea4213993516d39d9983b2ad7159d7fd"><div class="ttname"><a href="class_c_light_base.html#aea4213993516d39d9983b2ad7159d7fd">CLightBase::m_vLookPosition</a></div><div class="ttdeci">D3DXVECTOR3 m_vLookPosition</div><div class="ttdef"><b>Definition:</b> LightBase.h:89</div></div>
+<div class="ttc" id="aclass_c_light_base_html_af48c3cab977959e4e0cb7a449684effc"><div class="ttname"><a href="class_c_light_base.html#af48c3cab977959e4e0cb7a449684effc">CLightBase::GetIntensity</a></div><div class="ttdeci">float GetIntensity() const</div><div class="ttdef"><b>Definition:</b> LightBase.h:70</div></div>
+<div class="ttc" id="aclass_c_light_base_html_af8425a69141b6926f5c868f898f9271e"><div class="ttname"><a href="class_c_light_base.html#af8425a69141b6926f5c868f898f9271e">CLightBase::SetDirection</a></div><div class="ttdeci">void SetDirection(const D3DXVECTOR3 &amp;dir)</div><div class="ttdef"><b>Definition:</b> LightBase.h:58</div></div>
+<div class="ttc" id="aclass_c_light_base_html_afe560e25005b8be574dc4d76abd4ba46"><div class="ttname"><a href="class_c_light_base.html#afe560e25005b8be574dc4d76abd4ba46">CLightBase::GetRorarionMatrix</a></div><div class="ttdeci">D3DXMATRIX GetRorarionMatrix() const</div><div class="ttdef"><b>Definition:</b> LightBase.h:65</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

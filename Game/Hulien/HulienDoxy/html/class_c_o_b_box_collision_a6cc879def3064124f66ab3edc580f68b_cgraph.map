@@ -1,0 +1,4 @@
+<map id="COBBoxCollision::InitModelBox" name="COBBoxCollision::InitModelBox">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,211,32"/>
+<area shape="rect" id="node2" href="$class_c_collider_base.html#a4c7fec97335574b0f033fd6603077652" title=" " alt="" coords="259,5,469,32"/>
+</map>

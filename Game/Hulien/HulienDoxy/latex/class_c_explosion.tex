@@ -1,0 +1,187 @@
+\hypertarget{class_c_explosion}{}\doxysection{CExplosion クラス}
+\label{class_c_explosion}\index{CExplosion@{CExplosion}}
+
+
+{\ttfamily \#include $<$Explosion.\+h$>$}
+
+
+
+CExplosion の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_explosion__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CExplosion 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_explosion__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_explosion_1_1_s_explosion_param}{SExplosion\+Param}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_explosion_a2bb02cda4825db8bbcbc7a298c2fc4eb}{CExplosion}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_explosion_ae85173fd81078b992442e774a29b12a1}{$\sim$\+CExplosion}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_explosion_a7467fd3c1d141ab8e59be39282a2940d}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_explosion_afb7a9b3c201572126b62ead993283829}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_explosion_ac0bd29e0716876cba8c6d24e0bcfa9ff}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_explosion_a515294161f340cb222084e8be4bc30d2}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_explosion_ad53d23d10886a88ac7f69b00598d2219}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_explosion_aff3589b04282e52a0e236ed67b7e0de5}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_explosion_ad2c7445695f04427009cff7de8470639}{Set\+Position}} (const D3\+DXVECTOR3 \&v\+Pos) override
+\item 
+bool \mbox{\hyperlink{class_c_explosion_a8c25e5c245fe408ca6e42f297da822da}{Is\+Play}} ()
+\item 
+bool \mbox{\hyperlink{class_c_explosion_a0182e5905c9414f132ba936883441d7c}{Is\+Stop}} ()
+\item 
+void \mbox{\hyperlink{class_c_explosion_a946010c57012ca52ecd0eed163de3921}{Set\+Explosion\+Param}} (const \mbox{\hyperlink{struct_c_explosion_1_1_s_explosion_param}{SExplosion\+Param}} \&param)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_explosion_a2bb02cda4825db8bbcbc7a298c2fc4eb}\label{class_c_explosion_a2bb02cda4825db8bbcbc7a298c2fc4eb}} 
+\index{CExplosion@{CExplosion}!CExplosion@{CExplosion}}
+\index{CExplosion@{CExplosion}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{CExplosion()}{CExplosion()}}
+{\footnotesize\ttfamily CExplosion\+::\+CExplosion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_explosion_ae85173fd81078b992442e774a29b12a1}\label{class_c_explosion_ae85173fd81078b992442e774a29b12a1}} 
+\index{CExplosion@{CExplosion}!````~CExplosion@{$\sim$CExplosion}}
+\index{````~CExplosion@{$\sim$CExplosion}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{$\sim$CExplosion()}{~CExplosion()}}
+{\footnotesize\ttfamily CExplosion\+::$\sim$\+CExplosion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_explosion_ad53d23d10886a88ac7f69b00598d2219}\label{class_c_explosion_ad53d23d10886a88ac7f69b00598d2219}} 
+\index{CExplosion@{CExplosion}!Collision@{Collision}}
+\index{Collision@{Collision}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_explosion_ad53d23d10886a88ac7f69b00598d2219_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_explosion_a515294161f340cb222084e8be4bc30d2}\label{class_c_explosion_a515294161f340cb222084e8be4bc30d2}} 
+\index{CExplosion@{CExplosion}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}{CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_explosion_a7467fd3c1d141ab8e59be39282a2940d}\label{class_c_explosion_a7467fd3c1d141ab8e59be39282a2940d}} 
+\index{CExplosion@{CExplosion}!Init@{Init}}
+\index{Init@{Init}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CExplosion\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_explosion_a8c25e5c245fe408ca6e42f297da822da}\label{class_c_explosion_a8c25e5c245fe408ca6e42f297da822da}} 
+\index{CExplosion@{CExplosion}!IsPlay@{IsPlay}}
+\index{IsPlay@{IsPlay}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{IsPlay()}{IsPlay()}}
+{\footnotesize\ttfamily bool CExplosion\+::\+Is\+Play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_explosion_a0182e5905c9414f132ba936883441d7c}\label{class_c_explosion_a0182e5905c9414f132ba936883441d7c}} 
+\index{CExplosion@{CExplosion}!IsStop@{IsStop}}
+\index{IsStop@{IsStop}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{IsStop()}{IsStop()}}
+{\footnotesize\ttfamily bool CExplosion\+::\+Is\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_explosion_ac0bd29e0716876cba8c6d24e0bcfa9ff}\label{class_c_explosion_ac0bd29e0716876cba8c6d24e0bcfa9ff}} 
+\index{CExplosion@{CExplosion}!Render@{Render}}
+\index{Render@{Render}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_explosion_a946010c57012ca52ecd0eed163de3921}\label{class_c_explosion_a946010c57012ca52ecd0eed163de3921}} 
+\index{CExplosion@{CExplosion}!SetExplosionParam@{SetExplosionParam}}
+\index{SetExplosionParam@{SetExplosionParam}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{SetExplosionParam()}{SetExplosionParam()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Set\+Explosion\+Param (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_c_explosion_1_1_s_explosion_param}{SExplosion\+Param}} \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_explosion_ad2c7445695f04427009cff7de8470639}\label{class_c_explosion_ad2c7445695f04427009cff7de8470639}} 
+\index{CExplosion@{CExplosion}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}{CGame\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_explosion_aff3589b04282e52a0e236ed67b7e0de5}\label{class_c_explosion_aff3589b04282e52a0e236ed67b7e0de5}} 
+\index{CExplosion@{CExplosion}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_explosion_aff3589b04282e52a0e236ed67b7e0de5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_explosion_afb7a9b3c201572126b62ead993283829}\label{class_c_explosion_afb7a9b3c201572126b62ead993283829}} 
+\index{CExplosion@{CExplosion}!Update@{Update}}
+\index{Update@{Update}!CExplosion@{CExplosion}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CExplosion\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Explosion/\mbox{\hyperlink{_explosion_8h}{Explosion.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Explosion/\mbox{\hyperlink{_explosion_8cpp}{Explosion.\+cpp}}\end{DoxyCompactItemize}

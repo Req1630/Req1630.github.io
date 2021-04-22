@@ -1,0 +1,378 @@
+\hypertarget{namespaceplayer}{}\doxysection{player 名前空間}
+\label{namespaceplayer}\index{player@{player}}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structplayer_1_1_s_player_param}{SPlayer\+Param}}
+\item 
+struct \mbox{\hyperlink{structplayer_1_1_s_attack_data}{SAttack\+Data}}
+\item 
+struct \mbox{\hyperlink{structplayer_1_1_s_attack_adj_param}{SAttack\+Adj\+Param}}
+\item 
+struct \mbox{\hyperlink{structplayer_1_1_s_animation_adj_frame_list}{SAnimation\+Adj\+Frame\+List}}
+\item 
+struct \mbox{\hyperlink{structplayer_1_1_s_anim_dragging_adj_param}{SAnim\+Dragging\+Adj\+Param}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6a}{EAnim\+No}} \+: char \{ \newline
+\mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa82b952ce86d931765d85904790c198f0}{EAnim\+No\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aabc543f67bfe294bac9ea286196967d06}{EAnim\+No\+\_\+\+Wait}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aacfa7cf5f82e9c1f796256a147341b78a}{EAnim\+No\+\_\+\+Walk}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa313d0461fcbe5f919789d0f36ca28eaf}{EAnim\+No\+\_\+\+Attack1}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aab96073b69ff0271adc72d4a295b2a719}{EAnim\+No\+\_\+\+Attack2}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aae9995a4bad6b396709f9fd8999ea6258}{EAnim\+No\+\_\+\+Attack3}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa6ec303c67ed81b92350e69d6c2f76102}{EAnim\+No\+\_\+\+Avoid}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aab4766fa515588f70e217c11d2b0d858e}{EAnim\+No\+\_\+\+SP}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa81f484a674c54152ffc9575153ceacb2}{EAnim\+No\+\_\+\+Damage}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aad9647695f07e3a2f43fdb0342ff24908}{EAnim\+No\+\_\+\+Dead}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa062d89fcd7da2483a79569bcced1ed70}{EAnim\+No\+\_\+\+Max}}
+, \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa2b29c7649ae4189d8c26882dfa5f8128}{EAnim\+No\+\_\+\+Begin}} = EAnim\+No\+\_\+\+Wait
+, \newline
+\mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6aaf644f2ecbb9f93a14c43449debfd453b}{EAnim\+No\+\_\+\+End}} = EAnim\+No\+\_\+\+Max
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20}{EDragging\+Adj\+List}} \+: char \{ \newline
+\mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20a1e9eefa1341f43ea2742a2e6dd86bc6d}{EDragging\+Adj\+List\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20a5e0681ab155f22fe84e2b5dcf8dc2a59}{EDragging\+Adj\+List\+\_\+\+Attack1}}
+, \mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20a3608fe03204ce86a4c8b07a0df0d8dbe}{EDragging\+Adj\+List\+\_\+\+Attack2}}
+, \mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20a7fd7e2f1779e570979af8f38f03b4716}{EDragging\+Adj\+List\+\_\+\+Attack3}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20a4643f872cc5277392f60d3e9bbb4f9c5}{EDragging\+Adj\+List\+\_\+\+Dead}}
+, \mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20a7ada4bb350f4985c3224a682d97d1af5}{EDragging\+Adj\+List\+\_\+\+Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562}{EAttack\+No}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562a06b65aa45886dc38005f635f30531629}{EAttack\+No\+\_\+\+None}}
+, \mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562a40594f037ea312ee91af80e166a75680}{EAttack\+No\+\_\+\+One}}
+, \mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562af3e201d90b27ec372757ced9a624a381}{EAttack\+No\+\_\+\+Two}}
+, \mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562a35ac4d9604cb41ce550086c22be39324}{EAttack\+No\+\_\+\+Three}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562ad20389cf2590de377f449dc5f76bbf43}{EAttack\+No\+\_\+\+Max}} = EAttack\+No\+\_\+\+Three
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234}{EEffect\+Timer\+No}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234a3c8c9cffd725ff47d7c3ce3e926bea06}{EEffect\+Timer\+No\+\_\+\+None}}
+, \mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234a26b48aeb3ce8b4ba325fa931c5dedc34}{EEffect\+Timer\+No\+\_\+\+SPRecovery}} = 0
+, \mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234aedc9d58072f3e9c8670694d6c29ff844}{EEffect\+Timer\+No\+\_\+\+Attack}}
+, \mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234a0fea093c324f7297e106199b4017157a}{EEffect\+Timer\+No\+\_\+\+Move\+Speed\+Up}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234ab0f671c7da3b84828989d3693e633fe4}{EEffect\+Timer\+No\+\_\+\+Paralysis}}
+, \mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234aabc32b5fec6a8b802af402663f0c4f64}{EEffect\+Timer\+No\+\_\+\+Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5}{EEffect\+No}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5ab70b8e2a3ea56aa474443a0a544fc218}{EEffect\+No\+\_\+\+Attack\+One}}
+, \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5ab8872ebc032cab76756f83c21aff5802}{EEffect\+No\+\_\+\+Attack\+Two}}
+, \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a2de6f987d0d4ee8d4cf9500d5b9515ae}{EEffect\+No\+\_\+\+Attack\+Three}}
+, \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5aec6de6cbe8f6a75cbb1aa7912ad300d5}{EEffect\+No\+\_\+\+SP}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a941dbcc92107ff3805b82fb030669d22}{EEffect\+No\+\_\+\+Avoidance}}
+, \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a762ba26dfa6d2d639b6259f73b3bab8e}{EEffect\+No\+\_\+\+Paralysis}}
+, \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a6cc0f48650412327264ccbb76966ce9d}{EEffect\+No\+\_\+\+Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04ac}{ESPCamera\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acae74a3471ca16535d7715f43aefcfb58a}{ESPCamera\+State\+\_\+\+None}}
+, \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca08e54a281f05d98e0d10e959b8a3bf24}{ESPCamera\+State\+\_\+\+Target\+Rotation}}
+, \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acae27d2f4e68448f972dfb73457de3c3b7}{ESPCamera\+State\+\_\+\+Player\+Back}}
+, \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca350e95f9ecb90cb5eb06d3b8dd4a5d49}{ESPCamera\+State\+\_\+\+Camera\+Shake}}
+, \newline
+\mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acace18522d5f539e00268e01d636011178}{ESPCamera\+State\+\_\+\+Camera\+Return}}
+, \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca6623625e02062f2b6b0c5577fa6c746b}{ESPCamera\+State\+\_\+\+Max}}
+, \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca57f41584782eeeaaa2c410e88001ec74}{ESPCamera\+State\+\_\+\+Start}} = ESPCamera\+State\+\_\+\+Target\+Rotation
+, \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca3d0683bd023ac2bd74c03519cba87904}{ESPCamera\+State\+\_\+\+End}} = ESPCamera\+State\+\_\+\+Camera\+Return
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7}{EStatus\+Flag}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af820e051ced8e7a81c2cc2066a2b758c}{EStatus\+Flag\+\_\+\+None}}
+, \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a0b9cdb1b3f0208bba6fe9e19ead2d6b7}{EStatus\+Flag\+\_\+\+During\+Avoid}} = 1 $<$$<$ 0
+, \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7abf6443f3b751d6602ea0a753b59eedaf}{EStatus\+Flag\+\_\+\+End\+SPCamera\+Move}} = 1 $<$$<$ 1
+, \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af6c77c44f644eaf07be7d53a892f17d5}{EStatus\+Flag\+\_\+\+Attack\+Range}} = 1 $<$$<$ 2
+, \newline
+\mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af9e7799cca649f69308f06de338d636f}{EStatus\+Flag\+\_\+\+Usable\+SP}} = 1 $<$$<$ 3
+, \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a86123165687395c8a9607f8e2fb03c7c}{EStatus\+Flag\+\_\+\+Knock\+Back}} = 1 $<$$<$ 4
+, \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a5bf9f34d564a0705df198ba0de222d3d}{EStatus\+Flag\+\_\+\+Dead}} = 1 $<$$<$ 5
+, \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7ad6d3d26bd70a68252ff7564d8511cc4b}{EStatus\+Flag\+\_\+\+Attack\+SE}} = 1 $<$$<$ 6
+, \newline
+\mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a56db4644d54f1025d1a4e6ed64ef11d9}{EStatus\+Flag\+\_\+\+Max}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6a}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6a}} 
+\index{player@{player}!EAnimNo@{EAnimNo}}
+\index{EAnimNo@{EAnimNo}!player@{player}}
+\doxysubsubsection{\texorpdfstring{EAnimNo}{EAnimNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_aa222927d94eceaaf4527810c474ead6a}{player\+::\+EAnim\+No}} \+: char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_None@{EAnimNo\_None}!player@{player}}\index{player@{player}!EAnimNo\_None@{EAnimNo\_None}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa82b952ce86d931765d85904790c198f0}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa82b952ce86d931765d85904790c198f0}} 
+EAnim\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Wait@{EAnimNo\_Wait}!player@{player}}\index{player@{player}!EAnimNo\_Wait@{EAnimNo\_Wait}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aabc543f67bfe294bac9ea286196967d06}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aabc543f67bfe294bac9ea286196967d06}} 
+EAnim\+No\+\_\+\+Wait&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Walk@{EAnimNo\_Walk}!player@{player}}\index{player@{player}!EAnimNo\_Walk@{EAnimNo\_Walk}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aacfa7cf5f82e9c1f796256a147341b78a}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aacfa7cf5f82e9c1f796256a147341b78a}} 
+EAnim\+No\+\_\+\+Walk&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Attack1@{EAnimNo\_Attack1}!player@{player}}\index{player@{player}!EAnimNo\_Attack1@{EAnimNo\_Attack1}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa313d0461fcbe5f919789d0f36ca28eaf}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa313d0461fcbe5f919789d0f36ca28eaf}} 
+EAnim\+No\+\_\+\+Attack1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Attack2@{EAnimNo\_Attack2}!player@{player}}\index{player@{player}!EAnimNo\_Attack2@{EAnimNo\_Attack2}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aab96073b69ff0271adc72d4a295b2a719}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aab96073b69ff0271adc72d4a295b2a719}} 
+EAnim\+No\+\_\+\+Attack2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Attack3@{EAnimNo\_Attack3}!player@{player}}\index{player@{player}!EAnimNo\_Attack3@{EAnimNo\_Attack3}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aae9995a4bad6b396709f9fd8999ea6258}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aae9995a4bad6b396709f9fd8999ea6258}} 
+EAnim\+No\+\_\+\+Attack3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Avoid@{EAnimNo\_Avoid}!player@{player}}\index{player@{player}!EAnimNo\_Avoid@{EAnimNo\_Avoid}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa6ec303c67ed81b92350e69d6c2f76102}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa6ec303c67ed81b92350e69d6c2f76102}} 
+EAnim\+No\+\_\+\+Avoid&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_SP@{EAnimNo\_SP}!player@{player}}\index{player@{player}!EAnimNo\_SP@{EAnimNo\_SP}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aab4766fa515588f70e217c11d2b0d858e}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aab4766fa515588f70e217c11d2b0d858e}} 
+EAnim\+No\+\_\+\+SP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Damage@{EAnimNo\_Damage}!player@{player}}\index{player@{player}!EAnimNo\_Damage@{EAnimNo\_Damage}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa81f484a674c54152ffc9575153ceacb2}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa81f484a674c54152ffc9575153ceacb2}} 
+EAnim\+No\+\_\+\+Damage&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Dead@{EAnimNo\_Dead}!player@{player}}\index{player@{player}!EAnimNo\_Dead@{EAnimNo\_Dead}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aad9647695f07e3a2f43fdb0342ff24908}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aad9647695f07e3a2f43fdb0342ff24908}} 
+EAnim\+No\+\_\+\+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Max@{EAnimNo\_Max}!player@{player}}\index{player@{player}!EAnimNo\_Max@{EAnimNo\_Max}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa062d89fcd7da2483a79569bcced1ed70}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa062d89fcd7da2483a79569bcced1ed70}} 
+EAnim\+No\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Begin@{EAnimNo\_Begin}!player@{player}}\index{player@{player}!EAnimNo\_Begin@{EAnimNo\_Begin}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa2b29c7649ae4189d8c26882dfa5f8128}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aa2b29c7649ae4189d8c26882dfa5f8128}} 
+EAnim\+No\+\_\+\+Begin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_End@{EAnimNo\_End}!player@{player}}\index{player@{player}!EAnimNo\_End@{EAnimNo\_End}}}\mbox{\Hypertarget{namespaceplayer_aa222927d94eceaaf4527810c474ead6aaf644f2ecbb9f93a14c43449debfd453b}\label{namespaceplayer_aa222927d94eceaaf4527810c474ead6aaf644f2ecbb9f93a14c43449debfd453b}} 
+EAnim\+No\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceplayer_ace711117b730e6a41c292682e5e75562}\label{namespaceplayer_ace711117b730e6a41c292682e5e75562}} 
+\index{player@{player}!EAttackNo@{EAttackNo}}
+\index{EAttackNo@{EAttackNo}!player@{player}}
+\doxysubsubsection{\texorpdfstring{EAttackNo}{EAttackNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_ace711117b730e6a41c292682e5e75562}{player\+::\+EAttack\+No}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAttackNo\_None@{EAttackNo\_None}!player@{player}}\index{player@{player}!EAttackNo\_None@{EAttackNo\_None}}}\mbox{\Hypertarget{namespaceplayer_ace711117b730e6a41c292682e5e75562a06b65aa45886dc38005f635f30531629}\label{namespaceplayer_ace711117b730e6a41c292682e5e75562a06b65aa45886dc38005f635f30531629}} 
+EAttack\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAttackNo\_One@{EAttackNo\_One}!player@{player}}\index{player@{player}!EAttackNo\_One@{EAttackNo\_One}}}\mbox{\Hypertarget{namespaceplayer_ace711117b730e6a41c292682e5e75562a40594f037ea312ee91af80e166a75680}\label{namespaceplayer_ace711117b730e6a41c292682e5e75562a40594f037ea312ee91af80e166a75680}} 
+EAttack\+No\+\_\+\+One&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAttackNo\_Two@{EAttackNo\_Two}!player@{player}}\index{player@{player}!EAttackNo\_Two@{EAttackNo\_Two}}}\mbox{\Hypertarget{namespaceplayer_ace711117b730e6a41c292682e5e75562af3e201d90b27ec372757ced9a624a381}\label{namespaceplayer_ace711117b730e6a41c292682e5e75562af3e201d90b27ec372757ced9a624a381}} 
+EAttack\+No\+\_\+\+Two&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAttackNo\_Three@{EAttackNo\_Three}!player@{player}}\index{player@{player}!EAttackNo\_Three@{EAttackNo\_Three}}}\mbox{\Hypertarget{namespaceplayer_ace711117b730e6a41c292682e5e75562a35ac4d9604cb41ce550086c22be39324}\label{namespaceplayer_ace711117b730e6a41c292682e5e75562a35ac4d9604cb41ce550086c22be39324}} 
+EAttack\+No\+\_\+\+Three&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAttackNo\_Max@{EAttackNo\_Max}!player@{player}}\index{player@{player}!EAttackNo\_Max@{EAttackNo\_Max}}}\mbox{\Hypertarget{namespaceplayer_ace711117b730e6a41c292682e5e75562ad20389cf2590de377f449dc5f76bbf43}\label{namespaceplayer_ace711117b730e6a41c292682e5e75562ad20389cf2590de377f449dc5f76bbf43}} 
+EAttack\+No\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20}} 
+\index{player@{player}!EDraggingAdjList@{EDraggingAdjList}}
+\index{EDraggingAdjList@{EDraggingAdjList}!player@{player}}
+\doxysubsubsection{\texorpdfstring{EDraggingAdjList}{EDraggingAdjList}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_affac50702572bcd2308e72fdd5391f20}{player\+::\+EDragging\+Adj\+List}} \+: char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDraggingAdjList\_None@{EDraggingAdjList\_None}!player@{player}}\index{player@{player}!EDraggingAdjList\_None@{EDraggingAdjList\_None}}}\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20a1e9eefa1341f43ea2742a2e6dd86bc6d}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20a1e9eefa1341f43ea2742a2e6dd86bc6d}} 
+EDragging\+Adj\+List\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDraggingAdjList\_Attack1@{EDraggingAdjList\_Attack1}!player@{player}}\index{player@{player}!EDraggingAdjList\_Attack1@{EDraggingAdjList\_Attack1}}}\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20a5e0681ab155f22fe84e2b5dcf8dc2a59}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20a5e0681ab155f22fe84e2b5dcf8dc2a59}} 
+EDragging\+Adj\+List\+\_\+\+Attack1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDraggingAdjList\_Attack2@{EDraggingAdjList\_Attack2}!player@{player}}\index{player@{player}!EDraggingAdjList\_Attack2@{EDraggingAdjList\_Attack2}}}\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20a3608fe03204ce86a4c8b07a0df0d8dbe}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20a3608fe03204ce86a4c8b07a0df0d8dbe}} 
+EDragging\+Adj\+List\+\_\+\+Attack2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDraggingAdjList\_Attack3@{EDraggingAdjList\_Attack3}!player@{player}}\index{player@{player}!EDraggingAdjList\_Attack3@{EDraggingAdjList\_Attack3}}}\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20a7fd7e2f1779e570979af8f38f03b4716}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20a7fd7e2f1779e570979af8f38f03b4716}} 
+EDragging\+Adj\+List\+\_\+\+Attack3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDraggingAdjList\_Dead@{EDraggingAdjList\_Dead}!player@{player}}\index{player@{player}!EDraggingAdjList\_Dead@{EDraggingAdjList\_Dead}}}\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20a4643f872cc5277392f60d3e9bbb4f9c5}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20a4643f872cc5277392f60d3e9bbb4f9c5}} 
+EDragging\+Adj\+List\+\_\+\+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EDraggingAdjList\_Max@{EDraggingAdjList\_Max}!player@{player}}\index{player@{player}!EDraggingAdjList\_Max@{EDraggingAdjList\_Max}}}\mbox{\Hypertarget{namespaceplayer_affac50702572bcd2308e72fdd5391f20a7ada4bb350f4985c3224a682d97d1af5}\label{namespaceplayer_affac50702572bcd2308e72fdd5391f20a7ada4bb350f4985c3224a682d97d1af5}} 
+EDragging\+Adj\+List\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5}} 
+\index{player@{player}!EEffectNo@{EEffectNo}}
+\index{EEffectNo@{EEffectNo}!player@{player}}
+\doxysubsubsection{\texorpdfstring{EEffectNo}{EEffectNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5}{player\+::\+EEffect\+No}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_AttackOne@{EEffectNo\_AttackOne}!player@{player}}\index{player@{player}!EEffectNo\_AttackOne@{EEffectNo\_AttackOne}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5ab70b8e2a3ea56aa474443a0a544fc218}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5ab70b8e2a3ea56aa474443a0a544fc218}} 
+EEffect\+No\+\_\+\+Attack\+One&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_AttackTwo@{EEffectNo\_AttackTwo}!player@{player}}\index{player@{player}!EEffectNo\_AttackTwo@{EEffectNo\_AttackTwo}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5ab8872ebc032cab76756f83c21aff5802}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5ab8872ebc032cab76756f83c21aff5802}} 
+EEffect\+No\+\_\+\+Attack\+Two&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_AttackThree@{EEffectNo\_AttackThree}!player@{player}}\index{player@{player}!EEffectNo\_AttackThree@{EEffectNo\_AttackThree}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a2de6f987d0d4ee8d4cf9500d5b9515ae}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a2de6f987d0d4ee8d4cf9500d5b9515ae}} 
+EEffect\+No\+\_\+\+Attack\+Three&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_SP@{EEffectNo\_SP}!player@{player}}\index{player@{player}!EEffectNo\_SP@{EEffectNo\_SP}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5aec6de6cbe8f6a75cbb1aa7912ad300d5}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5aec6de6cbe8f6a75cbb1aa7912ad300d5}} 
+EEffect\+No\+\_\+\+SP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Avoidance@{EEffectNo\_Avoidance}!player@{player}}\index{player@{player}!EEffectNo\_Avoidance@{EEffectNo\_Avoidance}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a941dbcc92107ff3805b82fb030669d22}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a941dbcc92107ff3805b82fb030669d22}} 
+EEffect\+No\+\_\+\+Avoidance&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Paralysis@{EEffectNo\_Paralysis}!player@{player}}\index{player@{player}!EEffectNo\_Paralysis@{EEffectNo\_Paralysis}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a762ba26dfa6d2d639b6259f73b3bab8e}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a762ba26dfa6d2d639b6259f73b3bab8e}} 
+EEffect\+No\+\_\+\+Paralysis&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Max@{EEffectNo\_Max}!player@{player}}\index{player@{player}!EEffectNo\_Max@{EEffectNo\_Max}}}\mbox{\Hypertarget{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a6cc0f48650412327264ccbb76966ce9d}\label{namespaceplayer_aec9a211bd6422c14c58ebbc32630cbf5a6cc0f48650412327264ccbb76966ce9d}} 
+EEffect\+No\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234}\label{namespaceplayer_a727a155b35e557747b30406557ff7234}} 
+\index{player@{player}!EEffectTimerNo@{EEffectTimerNo}}
+\index{EEffectTimerNo@{EEffectTimerNo}!player@{player}}
+\doxysubsubsection{\texorpdfstring{EEffectTimerNo}{EEffectTimerNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_a727a155b35e557747b30406557ff7234}{player\+::\+EEffect\+Timer\+No}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectTimerNo\_None@{EEffectTimerNo\_None}!player@{player}}\index{player@{player}!EEffectTimerNo\_None@{EEffectTimerNo\_None}}}\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234a3c8c9cffd725ff47d7c3ce3e926bea06}\label{namespaceplayer_a727a155b35e557747b30406557ff7234a3c8c9cffd725ff47d7c3ce3e926bea06}} 
+EEffect\+Timer\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectTimerNo\_SPRecovery@{EEffectTimerNo\_SPRecovery}!player@{player}}\index{player@{player}!EEffectTimerNo\_SPRecovery@{EEffectTimerNo\_SPRecovery}}}\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234a26b48aeb3ce8b4ba325fa931c5dedc34}\label{namespaceplayer_a727a155b35e557747b30406557ff7234a26b48aeb3ce8b4ba325fa931c5dedc34}} 
+EEffect\+Timer\+No\+\_\+\+SPRecovery&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectTimerNo\_Attack@{EEffectTimerNo\_Attack}!player@{player}}\index{player@{player}!EEffectTimerNo\_Attack@{EEffectTimerNo\_Attack}}}\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234aedc9d58072f3e9c8670694d6c29ff844}\label{namespaceplayer_a727a155b35e557747b30406557ff7234aedc9d58072f3e9c8670694d6c29ff844}} 
+EEffect\+Timer\+No\+\_\+\+Attack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectTimerNo\_MoveSpeedUp@{EEffectTimerNo\_MoveSpeedUp}!player@{player}}\index{player@{player}!EEffectTimerNo\_MoveSpeedUp@{EEffectTimerNo\_MoveSpeedUp}}}\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234a0fea093c324f7297e106199b4017157a}\label{namespaceplayer_a727a155b35e557747b30406557ff7234a0fea093c324f7297e106199b4017157a}} 
+EEffect\+Timer\+No\+\_\+\+Move\+Speed\+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectTimerNo\_Paralysis@{EEffectTimerNo\_Paralysis}!player@{player}}\index{player@{player}!EEffectTimerNo\_Paralysis@{EEffectTimerNo\_Paralysis}}}\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234ab0f671c7da3b84828989d3693e633fe4}\label{namespaceplayer_a727a155b35e557747b30406557ff7234ab0f671c7da3b84828989d3693e633fe4}} 
+EEffect\+Timer\+No\+\_\+\+Paralysis&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectTimerNo\_Max@{EEffectTimerNo\_Max}!player@{player}}\index{player@{player}!EEffectTimerNo\_Max@{EEffectTimerNo\_Max}}}\mbox{\Hypertarget{namespaceplayer_a727a155b35e557747b30406557ff7234aabc32b5fec6a8b802af402663f0c4f64}\label{namespaceplayer_a727a155b35e557747b30406557ff7234aabc32b5fec6a8b802af402663f0c4f64}} 
+EEffect\+Timer\+No\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04ac}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04ac}} 
+\index{player@{player}!ESPCameraState@{ESPCameraState}}
+\index{ESPCameraState@{ESPCameraState}!player@{player}}
+\doxysubsubsection{\texorpdfstring{ESPCameraState}{ESPCameraState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04ac}{player\+::\+ESPCamera\+State}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_None@{ESPCameraState\_None}!player@{player}}\index{player@{player}!ESPCameraState\_None@{ESPCameraState\_None}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acae74a3471ca16535d7715f43aefcfb58a}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acae74a3471ca16535d7715f43aefcfb58a}} 
+ESPCamera\+State\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_TargetRotation@{ESPCameraState\_TargetRotation}!player@{player}}\index{player@{player}!ESPCameraState\_TargetRotation@{ESPCameraState\_TargetRotation}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca08e54a281f05d98e0d10e959b8a3bf24}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca08e54a281f05d98e0d10e959b8a3bf24}} 
+ESPCamera\+State\+\_\+\+Target\+Rotation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_PlayerBack@{ESPCameraState\_PlayerBack}!player@{player}}\index{player@{player}!ESPCameraState\_PlayerBack@{ESPCameraState\_PlayerBack}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acae27d2f4e68448f972dfb73457de3c3b7}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acae27d2f4e68448f972dfb73457de3c3b7}} 
+ESPCamera\+State\+\_\+\+Player\+Back&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_CameraShake@{ESPCameraState\_CameraShake}!player@{player}}\index{player@{player}!ESPCameraState\_CameraShake@{ESPCameraState\_CameraShake}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca350e95f9ecb90cb5eb06d3b8dd4a5d49}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca350e95f9ecb90cb5eb06d3b8dd4a5d49}} 
+ESPCamera\+State\+\_\+\+Camera\+Shake&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_CameraReturn@{ESPCameraState\_CameraReturn}!player@{player}}\index{player@{player}!ESPCameraState\_CameraReturn@{ESPCameraState\_CameraReturn}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acace18522d5f539e00268e01d636011178}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04acace18522d5f539e00268e01d636011178}} 
+ESPCamera\+State\+\_\+\+Camera\+Return&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_Max@{ESPCameraState\_Max}!player@{player}}\index{player@{player}!ESPCameraState\_Max@{ESPCameraState\_Max}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca6623625e02062f2b6b0c5577fa6c746b}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca6623625e02062f2b6b0c5577fa6c746b}} 
+ESPCamera\+State\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_Start@{ESPCameraState\_Start}!player@{player}}\index{player@{player}!ESPCameraState\_Start@{ESPCameraState\_Start}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca57f41584782eeeaaa2c410e88001ec74}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca57f41584782eeeaaa2c410e88001ec74}} 
+ESPCamera\+State\+\_\+\+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ESPCameraState\_End@{ESPCameraState\_End}!player@{player}}\index{player@{player}!ESPCameraState\_End@{ESPCameraState\_End}}}\mbox{\Hypertarget{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca3d0683bd023ac2bd74c03519cba87904}\label{namespaceplayer_a1bdb193ad08f576a9bc919344b3a04aca3d0683bd023ac2bd74c03519cba87904}} 
+ESPCamera\+State\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7}} 
+\index{player@{player}!EStatusFlag@{EStatusFlag}}
+\index{EStatusFlag@{EStatusFlag}!player@{player}}
+\doxysubsubsection{\texorpdfstring{EStatusFlag}{EStatusFlag}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7}{player\+::\+EStatus\+Flag}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_None@{EStatusFlag\_None}!player@{player}}\index{player@{player}!EStatusFlag\_None@{EStatusFlag\_None}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af820e051ced8e7a81c2cc2066a2b758c}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af820e051ced8e7a81c2cc2066a2b758c}} 
+EStatus\+Flag\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_DuringAvoid@{EStatusFlag\_DuringAvoid}!player@{player}}\index{player@{player}!EStatusFlag\_DuringAvoid@{EStatusFlag\_DuringAvoid}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a0b9cdb1b3f0208bba6fe9e19ead2d6b7}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a0b9cdb1b3f0208bba6fe9e19ead2d6b7}} 
+EStatus\+Flag\+\_\+\+During\+Avoid&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_EndSPCameraMove@{EStatusFlag\_EndSPCameraMove}!player@{player}}\index{player@{player}!EStatusFlag\_EndSPCameraMove@{EStatusFlag\_EndSPCameraMove}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7abf6443f3b751d6602ea0a753b59eedaf}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7abf6443f3b751d6602ea0a753b59eedaf}} 
+EStatus\+Flag\+\_\+\+End\+SPCamera\+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_AttackRange@{EStatusFlag\_AttackRange}!player@{player}}\index{player@{player}!EStatusFlag\_AttackRange@{EStatusFlag\_AttackRange}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af6c77c44f644eaf07be7d53a892f17d5}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af6c77c44f644eaf07be7d53a892f17d5}} 
+EStatus\+Flag\+\_\+\+Attack\+Range&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_UsableSP@{EStatusFlag\_UsableSP}!player@{player}}\index{player@{player}!EStatusFlag\_UsableSP@{EStatusFlag\_UsableSP}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af9e7799cca649f69308f06de338d636f}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7af9e7799cca649f69308f06de338d636f}} 
+EStatus\+Flag\+\_\+\+Usable\+SP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_KnockBack@{EStatusFlag\_KnockBack}!player@{player}}\index{player@{player}!EStatusFlag\_KnockBack@{EStatusFlag\_KnockBack}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a86123165687395c8a9607f8e2fb03c7c}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a86123165687395c8a9607f8e2fb03c7c}} 
+EStatus\+Flag\+\_\+\+Knock\+Back&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_Dead@{EStatusFlag\_Dead}!player@{player}}\index{player@{player}!EStatusFlag\_Dead@{EStatusFlag\_Dead}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a5bf9f34d564a0705df198ba0de222d3d}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a5bf9f34d564a0705df198ba0de222d3d}} 
+EStatus\+Flag\+\_\+\+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_AttackSE@{EStatusFlag\_AttackSE}!player@{player}}\index{player@{player}!EStatusFlag\_AttackSE@{EStatusFlag\_AttackSE}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7ad6d3d26bd70a68252ff7564d8511cc4b}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7ad6d3d26bd70a68252ff7564d8511cc4b}} 
+EStatus\+Flag\+\_\+\+Attack\+SE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EStatusFlag\_Max@{EStatusFlag\_Max}!player@{player}}\index{player@{player}!EStatusFlag\_Max@{EStatusFlag\_Max}}}\mbox{\Hypertarget{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a56db4644d54f1025d1a4e6ed64ef11d9}\label{namespaceplayer_a6da9a1070831dc29d182724dac1d60e7a56db4644d54f1025d1a4e6ed64ef11d9}} 
+EStatus\+Flag\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}

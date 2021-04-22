@@ -1,0 +1,12 @@
+<map id="CMoveSpeedUpItem::Render" name="CMoveSpeedUpItem::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,123,193,149"/>
+<area shape="rect" id="node2" href="$class_c_item_base.html#a9f7f50fd8c9f42f8beb33fe43cb33ccd" title=" " alt="" coords="241,123,376,149"/>
+<area shape="rect" id="node3" href="$class_c_game_object.html#af0892117053801153554374c1b87babd" title=" " alt="" coords="424,123,611,149"/>
+<area shape="rect" id="node4" href="$class_c_camera_manager.html#ac60999cfe7c66600c721367dc3d87c45" title=" " alt="" coords="661,5,875,32"/>
+<area shape="rect" id="node5" href="$class_c_scene_tex_renderer.html#a654751fbf5f69dc92062d281f66add3b" title=" " alt="" coords="693,57,843,98"/>
+<area shape="rect" id="node7" href="$class_c_camera_manager.html#a52bbaea5e90b571603d650f46db105de" title=" " alt="" coords="659,123,877,149"/>
+<area shape="rect" id="node8" href="$class_c_direct_x11.html#a1bf4c2badb0f65828a69e03e24acb6fc" title=" " alt="" coords="679,173,857,200"/>
+<area shape="rect" id="node10" href="$class_c_direct_x11.html#aee9c5921e04f5492df11b1f2249ad5d7" title=" " alt="" coords="680,224,856,251"/>
+<area shape="rect" id="node6" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="933,57,1082,98"/>
+<area shape="rect" id="node9" href="$class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="925,199,1089,225"/>
+</map>

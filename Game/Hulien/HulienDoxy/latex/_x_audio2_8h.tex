@@ -1,0 +1,50 @@
+\hypertarget{_x_audio2_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\+XAudio2.h ファイル}
+\label{_x_audio2_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/XAudio2.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/XAudio2.h}}
+{\ttfamily \#include $<$xaudio2.\+h$>$}\newline
+{\ttfamily \#include $<$xaudio2fx.\+h$>$}\newline
+XAudio2.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{_x_audio2_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_x_audio2_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{マクロ定義}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_x_audio2_8h_a9bbcd82e77c41df827c09759def05c9a}{SAFE\+\_\+\+DELETE}}(p)~\{ if (p) \{ delete (p);     (p)=nullptr; \} \}
+\item 
+\#define \mbox{\hyperlink{_x_audio2_8h_a506b3685b3eb05aac751f9e14cbed93b}{SAFE\+\_\+\+DELETE\+\_\+\+ARRAY}}(p)~\{ if(p) \{ delete\mbox{[}$\,$\mbox{]} (p); (p)=nullptr; \} \}
+\item 
+\#define \mbox{\hyperlink{_x_audio2_8h_a6038f7bdb274c2e159988a57dedbf93d}{SAFE\+\_\+\+RELEASE}}(p)~\{ if(p) \{ (p)-\/$>$Release(); (p)=nullptr; \} \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{マクロ定義詳解}
+\mbox{\Hypertarget{_x_audio2_8h_a9bbcd82e77c41df827c09759def05c9a}\label{_x_audio2_8h_a9bbcd82e77c41df827c09759def05c9a}} 
+\index{XAudio2.h@{XAudio2.h}!SAFE\_DELETE@{SAFE\_DELETE}}
+\index{SAFE\_DELETE@{SAFE\_DELETE}!XAudio2.h@{XAudio2.h}}
+\doxysubsubsection{\texorpdfstring{SAFE\_DELETE}{SAFE\_DELETE}}
+{\footnotesize\ttfamily \#define SAFE\+\_\+\+DELETE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\{ if (p) \{ delete (p);     (p)=nullptr; \} \}}
+
+\mbox{\Hypertarget{_x_audio2_8h_a506b3685b3eb05aac751f9e14cbed93b}\label{_x_audio2_8h_a506b3685b3eb05aac751f9e14cbed93b}} 
+\index{XAudio2.h@{XAudio2.h}!SAFE\_DELETE\_ARRAY@{SAFE\_DELETE\_ARRAY}}
+\index{SAFE\_DELETE\_ARRAY@{SAFE\_DELETE\_ARRAY}!XAudio2.h@{XAudio2.h}}
+\doxysubsubsection{\texorpdfstring{SAFE\_DELETE\_ARRAY}{SAFE\_DELETE\_ARRAY}}
+{\footnotesize\ttfamily \#define SAFE\+\_\+\+DELETE\+\_\+\+ARRAY(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\{ if(p) \{ delete\mbox{[}$\,$\mbox{]} (p); (p)=nullptr; \} \}}
+
+\mbox{\Hypertarget{_x_audio2_8h_a6038f7bdb274c2e159988a57dedbf93d}\label{_x_audio2_8h_a6038f7bdb274c2e159988a57dedbf93d}} 
+\index{XAudio2.h@{XAudio2.h}!SAFE\_RELEASE@{SAFE\_RELEASE}}
+\index{SAFE\_RELEASE@{SAFE\_RELEASE}!XAudio2.h@{XAudio2.h}}
+\doxysubsubsection{\texorpdfstring{SAFE\_RELEASE}{SAFE\_RELEASE}}
+{\footnotesize\ttfamily \#define SAFE\+\_\+\+RELEASE(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\{ if(p) \{ (p)-\/$>$Release(); (p)=nullptr; \} \}}
+

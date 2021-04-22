@@ -1,0 +1,6 @@
+<map id="CColliderBase" name="CColliderBase">
+<area shape="rect" id="node1" title=" " alt="" coords="166,5,270,32"/>
+<area shape="rect" id="node2" href="$class_c_capsule_collision.html" title=" " alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$class_c_o_b_box_collision.html" title=" " alt="" coords="157,80,279,107"/>
+<area shape="rect" id="node4" href="$class_c_sphere_collision.html" title=" " alt="" coords="304,80,425,107"/>
+</map>

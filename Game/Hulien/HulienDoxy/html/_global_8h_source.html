@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Global.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Global.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_global_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//警告についてのｺｰﾄﾞ分析を無効にする.4005:再定義.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#pragma warning(disable:4005)</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;crtdbg.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_d3_d_x11_8h.html">D3DX11.h</a>&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;D3D11.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;D3DX10.h&gt;</span> <span class="comment">//「D3DX〜」の定義使用時に必要.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;D3D10.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="_d3_d_x9_8h.html">d3dx9.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_my_log_8h.html">Utility/MyLog/MyLog.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// ライブラリ読み込み.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;winmm.lib&quot;</span> )</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;d3dx11.lib&quot;</span> )</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;d3d11.lib&quot;</span> )</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;d3dx10.lib&quot;</span> )    <span class="comment">//「D3DX〜」の定義使用時に必要.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;d3d9.lib&quot;</span> )</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#pragma comment( lib, &quot;d3dx9.lib&quot;</span> )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//=================================================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//  定数.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//=================================================</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">   28</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a> = 1280; <span class="comment">// ウィンドウの幅.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">   29</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a> = 720;  <span class="comment">// ウィンドウの高さ.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">   30</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">FPS</a> = 60;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// 初期化用 0値.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="_global_8h.html#a17ea9a1a2620d169f72371688662d357">   33</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span>           <a class="code" href="_global_8h.html#a17ea9a1a2620d169f72371688662d357">FOR_INIT_ZERO_INT</a>       = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_global_8h.html#a7dad2dfe77a5bb1f6bef37e844f103f3">   34</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span>         <a class="code" href="_global_8h.html#a7dad2dfe77a5bb1f6bef37e844f103f3">FOR_INIT_ZERO_FLOAT</a>     = 0.0f;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="_global_8h.html#a34e09b0aec373307376c4acaa61bec7c">   35</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">double</span>        <a class="code" href="_global_8h.html#a34e09b0aec373307376c4acaa61bec7c">FOR_INIT_ZERO_DOUBLE</a>    = 0.0;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="_global_8h.html#abd190dcad080b8ff453a293859784058">   36</a></span>&#160;<span class="keyword">const</span> D3DXVECTOR3   <a class="code" href="_global_8h.html#abd190dcad080b8ff453a293859784058">FOR_INIT_ZERO_VEC3</a>      = { 0.0f, 0.0f, 0.0f };</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_camera.html">CCamera</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_d_x9_skin_mesh.html">CDX9SkinMesh</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_d_x9_static_mesh.html">CDX9StaticMesh</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_sprite.html">CSprite</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_light_base.html">CLightBase</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_frame_rate.html">CFrameRate</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//===========================================================</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">//  マクロ.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//===========================================================</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// 解放.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">   49</a></span>&#160;<span class="preprocessor">#define SAFE_RELEASE(p)         if(p!=nullptr){(p)-&gt;Release();(p)=nullptr;}</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// 破棄.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="_global_8h.html#a9bbcd82e77c41df827c09759def05c9a">   51</a></span>&#160;<span class="preprocessor">#define SAFE_DELETE(p)          if(p!=nullptr){delete (p);(p)=nullptr;}</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_global_8h.html#a506b3685b3eb05aac751f9e14cbed93b">   52</a></span>&#160;<span class="preprocessor">#define SAFE_DELETE_ARRAY(p)    if(p!=nullptr){delete[] (p);(p) = nullptr;}</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// _declspec()  :DLLから(関数,クラス,クラスのメンバ関数を)エクスポートする.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// align()      :(強制的に)16byte で使用する.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="_global_8h.html#af95298b7181f9b9484f4b76e794c8d25">   55</a></span>&#160;<span class="preprocessor">#define ALIGN16 _declspec(align(16))</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#include &lt;codecvt&gt;</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T = std::<span class="keywordtype">string</span>&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="_global_8h.html#aa283894c924650d8db619a0f93f97b25">   61</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_global_8h.html#aa283894c924650d8db619a0f93f97b25">ERROR_MESSAGE</a> ( <span class="keyword">const</span> std::string&amp; error )</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span>( error.empty() ){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        _ASSERT_EXPR( <span class="keyword">false</span>, L<span class="stringliteral">&quot;Not Error Message&quot;</span> );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// w_charへの変換.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> size_needed = MultiByteToWideChar( CP_UTF8, 0, &amp;error[0], (<span class="keywordtype">int</span>)error.size(), NULL, 0 );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::wstring wstrTo( size_needed, 0 );</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    MultiByteToWideChar( CP_UTF8, 0, &amp;error[0], (<span class="keywordtype">int</span>)error.size(), &amp;wstrTo[0], size_needed );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_c_log.html#acff1fd25b324a62fca5dcb050073eea5">CLog::Print</a>( error );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    _ASSERT_EXPR( <span class="keyword">false</span>, wstrTo.c_str() );</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    MessageBox( <span class="keyword">nullptr</span>, error.c_str(), <span class="stringliteral">&quot;Warning&quot;</span>, MB_OK );</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
+<div class="ttc" id="a_d3_d_x11_8h_html"><div class="ttname"><a href="_d3_d_x11_8h.html">D3DX11.h</a></div><div class="ttdoc">DirectX11 Deviceを持っているクラス.</div></div>
+<div class="ttc" id="a_d3_d_x9_8h_html"><div class="ttname"><a href="_d3_d_x9_8h.html">D3DX9.h</a></div><div class="ttdoc">DirectX9 Deviceを持っているクラス.</div></div>
+<div class="ttc" id="a_global_8h_html_a17ea9a1a2620d169f72371688662d357"><div class="ttname"><a href="_global_8h.html#a17ea9a1a2620d169f72371688662d357">FOR_INIT_ZERO_INT</a></div><div class="ttdeci">const int FOR_INIT_ZERO_INT</div><div class="ttdef"><b>Definition:</b> Global.h:33</div></div>
+<div class="ttc" id="a_global_8h_html_a34e09b0aec373307376c4acaa61bec7c"><div class="ttname"><a href="_global_8h.html#a34e09b0aec373307376c4acaa61bec7c">FOR_INIT_ZERO_DOUBLE</a></div><div class="ttdeci">const double FOR_INIT_ZERO_DOUBLE</div><div class="ttdef"><b>Definition:</b> Global.h:35</div></div>
+<div class="ttc" id="a_global_8h_html_a6a02f87f580d8b9e0e5b3bbc964efb1c"><div class="ttname"><a href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a></div><div class="ttdeci">const int WND_W</div><div class="ttdef"><b>Definition:</b> Global.h:28</div></div>
+<div class="ttc" id="a_global_8h_html_a6ba6a18a896a6e1a88f7ec592f5efc20"><div class="ttname"><a href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a></div><div class="ttdeci">const int WND_H</div><div class="ttdef"><b>Definition:</b> Global.h:29</div></div>
+<div class="ttc" id="a_global_8h_html_a7dad2dfe77a5bb1f6bef37e844f103f3"><div class="ttname"><a href="_global_8h.html#a7dad2dfe77a5bb1f6bef37e844f103f3">FOR_INIT_ZERO_FLOAT</a></div><div class="ttdeci">const float FOR_INIT_ZERO_FLOAT</div><div class="ttdef"><b>Definition:</b> Global.h:34</div></div>
+<div class="ttc" id="a_global_8h_html_aa283894c924650d8db619a0f93f97b25"><div class="ttname"><a href="_global_8h.html#aa283894c924650d8db619a0f93f97b25">ERROR_MESSAGE</a></div><div class="ttdeci">void ERROR_MESSAGE(const std::string &amp;error)</div><div class="ttdef"><b>Definition:</b> Global.h:61</div></div>
+<div class="ttc" id="a_global_8h_html_abd190dcad080b8ff453a293859784058"><div class="ttname"><a href="_global_8h.html#abd190dcad080b8ff453a293859784058">FOR_INIT_ZERO_VEC3</a></div><div class="ttdeci">const D3DXVECTOR3 FOR_INIT_ZERO_VEC3</div><div class="ttdef"><b>Definition:</b> Global.h:36</div></div>
+<div class="ttc" id="a_global_8h_html_ac5090a6568797128b0a5545228bb8b75"><div class="ttname"><a href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">FPS</a></div><div class="ttdeci">const int FPS</div><div class="ttdef"><b>Definition:</b> Global.h:30</div></div>
+<div class="ttc" id="a_my_log_8h_html"><div class="ttname"><a href="_my_log_8h.html">MyLog.h</a></div></div>
+<div class="ttc" id="aclass_c_camera_html"><div class="ttname"><a href="class_c_camera.html">CCamera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:10</div></div>
+<div class="ttc" id="aclass_c_d_x9_skin_mesh_html"><div class="ttname"><a href="class_c_d_x9_skin_mesh.html">CDX9SkinMesh</a></div><div class="ttdef"><b>Definition:</b> Dx9SkinMesh.h:19</div></div>
+<div class="ttc" id="aclass_c_d_x9_static_mesh_html"><div class="ttname"><a href="class_c_d_x9_static_mesh.html">CDX9StaticMesh</a></div><div class="ttdef"><b>Definition:</b> Dx9StaticMesh.h:9</div></div>
+<div class="ttc" id="aclass_c_frame_rate_html"><div class="ttname"><a href="class_c_frame_rate.html">CFrameRate</a></div><div class="ttdef"><b>Definition:</b> FrameRate.h:15</div></div>
+<div class="ttc" id="aclass_c_light_base_html"><div class="ttname"><a href="class_c_light_base.html">CLightBase</a></div><div class="ttdef"><b>Definition:</b> LightBase.h:15</div></div>
+<div class="ttc" id="aclass_c_log_html_acff1fd25b324a62fca5dcb050073eea5"><div class="ttname"><a href="class_c_log.html#acff1fd25b324a62fca5dcb050073eea5">CLog::Print</a></div><div class="ttdeci">static HRESULT Print(const std::string &amp;message)</div><div class="ttdef"><b>Definition:</b> MyLog.cpp:90</div></div>
+<div class="ttc" id="aclass_c_sprite_html"><div class="ttname"><a href="class_c_sprite.html">CSprite</a></div><div class="ttdef"><b>Definition:</b> CSprite.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

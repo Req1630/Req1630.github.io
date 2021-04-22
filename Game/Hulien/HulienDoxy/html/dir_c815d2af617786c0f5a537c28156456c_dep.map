@@ -1,0 +1,39 @@
+<map id="C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget" name="C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget">
+<area shape="rect" id="node2" href="dir_de75b8b0a54ec62b68d83c00686fcff3.html" title="CharacterWidget" alt="" coords="307,63,426,111"/>
+<area shape="rect" id="node8" href="dir_344fffd2d0b331d1f9d9351e360d27b1.html" title="Resource" alt="" coords="383,255,460,303"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000122_000139.html" title="3" alt="" coords="476,260,484,274"/>
+<area shape="rect" id="node9" href="dir_40fab4784450d0fd56d432a856d9854f.html" title="Actor" alt="" coords="581,159,653,207"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000122_000055.html" title="2" alt="" coords="564,148,572,163"/>
+<area shape="rect" id="node10" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html" title="Common" alt="" coords="283,351,357,399"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000122_000016.html" title="3" alt="" coords="267,331,275,345"/>
+<area shape="rect" id="node11" href="dir_a7e3b021d6c65d18f140bdc84e03e579.html" title="XAudio2" alt="" coords="581,351,653,399"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000122_000174.html" title="1" alt="" coords="646,332,654,347"/>
+<area shape="rect" id="node3" href="dir_90586bc2deebc01e730df5e40f277931.html" title="GameWidgetManager" alt="" coords="38,63,186,111"/>
+<area shape="rect" id="node4" href="dir_071ab43ce7236e0f2e33218b81598415.html" title="LimitTime" alt="" coords="155,159,234,207"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000126_000127.html" title="1" alt="" coords="165,132,173,147"/>
+<area shape="rect" id="node5" href="dir_7b1abe7ead1c7ac2bdb493431de1ae5b.html" title="MiniMap" alt="" coords="259,159,331,207"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000126_000128.html" title="1" alt="" coords="242,140,250,154"/>
+<area shape="rect" id="node6" href="dir_88925c3f0b2f80fb7028061f116a5f50.html" title="UltemateSign" alt="" coords="355,159,455,207"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000126_000129.html" title="1" alt="" coords="337,142,345,157"/>
+<area shape="rect" id="edge14-headlabel" href="dir_000127_000139.html" title="1" alt="" coords="362,252,370,267"/>
+<area shape="rect" id="edge15-headlabel" href="dir_000127_000016.html" title="1" alt="" coords="298,323,306,338"/>
+<area shape="rect" id="edge23-headlabel" href="dir_000128_000139.html" title="1" alt="" coords="368,230,376,245"/>
+<area shape="rect" id="edge24-headlabel" href="dir_000128_000055.html" title="1" alt="" coords="580,133,588,148"/>
+<area shape="rect" id="edge25-headlabel" href="dir_000128_000016.html" title="2" alt="" coords="319,324,327,339"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000129_000139.html" title="1" alt="" coords="419,228,427,243"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000129_000055.html" title="1" alt="" coords="559,167,567,182"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000129_000016.html" title="1" alt="" coords="340,330,348,344"/>
+<area shape="rect" id="node7" href="dir_8194c87194ee613d16ed9fdd1ea086fd.html" title="Warning" alt="" coords="211,63,283,111"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000130_000139.html" title="1" alt="" coords="464,239,472,254"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000130_000016.html" title="1" alt="" coords="263,347,271,362"/>
+<area shape="rect" id="edge22-headlabel" href="dir_000139_000016.html" title="6" alt="" coords="352,336,360,351"/>
+<area shape="rect" id="edge21-headlabel" href="dir_000139_000174.html" title="1" alt="" coords="564,333,572,348"/>
+<area shape="rect" id="edge20-headlabel" href="dir_000055_000122.html" title="4" alt="" coords="437,111,445,126"/>
+<area shape="rect" id="edge16-headlabel" href="dir_000055_000130.html" title="2" alt="" coords="293,113,301,127"/>
+<area shape="rect" id="edge17-headlabel" href="dir_000055_000139.html" title="18" alt="" coords="473,264,487,279"/>
+<area shape="rect" id="edge18-headlabel" href="dir_000055_000016.html" title="58" alt="" coords="370,352,385,367"/>
+<area shape="rect" id="edge19-headlabel" href="dir_000055_000174.html" title="17" alt="" coords="618,325,633,340"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000016_000139.html" title="2" alt="" coords="381,302,389,317"/>
+<area shape="rect" id="clust2" href="dir_c815d2af617786c0f5a537c28156456c.html" alt="" coords="27,52,560,217"/>
+<area shape="rect" id="clust1" href="dir_2fa40860709c421cc587a8d528cac278.html" title="SceneWidget" alt="" coords="16,16,571,228"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="CAlienA::Collision" name="CAlienA::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,132,159"/>
+<area shape="rect" id="node2" href="$class_c_alien.html#a6c785d2dd027ffe20c03650962686d86" title=" " alt="" coords="180,107,335,133"/>
+<area shape="rect" id="node8" href="$class_c_alien.html#a1946d8f4f02e7e0fb1a88d43b29e6d48" title=" " alt="" coords="189,157,326,184"/>
+<area shape="rect" id="node3" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="397,56,560,83"/>
+<area shape="rect" id="node4" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="383,107,575,133"/>
+<area shape="rect" id="node5" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="393,5,564,32"/>
+<area shape="rect" id="node7" href="$class_c_character.html#a0ca58686329d1caf5b67460d32ffac25" title=" " alt="" coords="392,157,565,184"/>
+<area shape="rect" id="node6" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="623,5,819,32"/>
+<area shape="rect" id="node9" href="$class_c_game_object.html#ac96a6cda895f9d0f520e6b43b82d2d77" title=" " alt="" coords="389,208,568,235"/>
+<area shape="rect" id="node10" href="$class_c_game_object.html#ae521d08312342c055e9543c7d145682a" title=" " alt="" coords="384,259,573,285"/>
+<area shape="rect" id="node11" href="$class_c_game_object.html#a6897eb0511df6b293459e9b984658db1" title=" " alt="" coords="396,309,561,336"/>
+</map>

@@ -1,0 +1,113 @@
+\hypertarget{class_c_sprite_shader}{}\doxysection{CSprite\+Shader クラス}
+\label{class_c_sprite_shader}\index{CSpriteShader@{CSpriteShader}}
+
+
+{\ttfamily \#include $<$Sprite\+Shader.\+h$>$}
+
+
+
+CSprite\+Shader の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_c_sprite_shader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CSprite\+Shader 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_c_sprite_shader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_sprite_shader_1_1_c___b_u_f_f_e_r}{C\+\_\+\+BUFFER}}
+\item 
+struct \mbox{\hyperlink{struct_c_sprite_shader_1_1_v_e_r_t_e_x}{VERTEX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_sprite_shader_afa3d979830181a174629c0ab9cb78b81}{CSprite\+Shader}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_sprite_shader_aa023064b8132bb0fc63b3755ad7b1867}{$\sim$\+CSprite\+Shader}} ()
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_sprite_shader_ab59765c606516a97b63fd2a4265ffd70}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11) override
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_sprite_shader_a6b7e0ae3cdae610acc199829cfda9ced}{Release}} () override
+\item 
+void \mbox{\hyperlink{class_c_sprite_shader_a236c6fa614f730db28ea1b8cafd8f04b}{Set\+Constant\+Buffer\+Data}} (const D3\+DXMATRIX \&m\+WVP, const D3\+DXVECTOR4 \&color, const D3\+DXVECTOR2 \&tex\+Pos)
+\item 
+void \mbox{\hyperlink{class_c_sprite_shader_acf874dbada0c0cb734839eebc7d40aae}{Shader\+Set}} (ID3\+D11\+Buffer $\ast$p\+Vertex\+Buffer)
+\item 
+void \mbox{\hyperlink{class_c_sprite_shader_a7165ee00086083051299efd61dd33e74}{Shader\+UISet}} (ID3\+D11\+Buffer $\ast$p\+Vertex\+Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_sprite_shader_afa3d979830181a174629c0ab9cb78b81}\label{class_c_sprite_shader_afa3d979830181a174629c0ab9cb78b81}} 
+\index{CSpriteShader@{CSpriteShader}!CSpriteShader@{CSpriteShader}}
+\index{CSpriteShader@{CSpriteShader}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{CSpriteShader()}{CSpriteShader()}}
+{\footnotesize\ttfamily ﻿ CSprite\+Shader\+::\+CSprite\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_shader_aa023064b8132bb0fc63b3755ad7b1867}\label{class_c_sprite_shader_aa023064b8132bb0fc63b3755ad7b1867}} 
+\index{CSpriteShader@{CSpriteShader}!````~CSpriteShader@{$\sim$CSpriteShader}}
+\index{````~CSpriteShader@{$\sim$CSpriteShader}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSpriteShader()}{~CSpriteShader()}}
+{\footnotesize\ttfamily CSprite\+Shader\+::$\sim$\+CSprite\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_sprite_shader_ab59765c606516a97b63fd2a4265ffd70}\label{class_c_sprite_shader_ab59765c606516a97b63fd2a4265ffd70}} 
+\index{CSpriteShader@{CSpriteShader}!Init@{Init}}
+\index{Init@{Init}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CSprite\+Shader\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_sprite_shader_a6b7e0ae3cdae610acc199829cfda9ced}\label{class_c_sprite_shader_a6b7e0ae3cdae610acc199829cfda9ced}} 
+\index{CSpriteShader@{CSpriteShader}!Release@{Release}}
+\index{Release@{Release}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT CSprite\+Shader\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_sprite_shader_a236c6fa614f730db28ea1b8cafd8f04b}\label{class_c_sprite_shader_a236c6fa614f730db28ea1b8cafd8f04b}} 
+\index{CSpriteShader@{CSpriteShader}!SetConstantBufferData@{SetConstantBufferData}}
+\index{SetConstantBufferData@{SetConstantBufferData}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{SetConstantBufferData()}{SetConstantBufferData()}}
+{\footnotesize\ttfamily void CSprite\+Shader\+::\+Set\+Constant\+Buffer\+Data (\begin{DoxyParamCaption}\item[{const D3\+DXMATRIX \&}]{m\+WVP,  }\item[{const D3\+DXVECTOR4 \&}]{color,  }\item[{const D3\+DXVECTOR2 \&}]{tex\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_shader_acf874dbada0c0cb734839eebc7d40aae}\label{class_c_sprite_shader_acf874dbada0c0cb734839eebc7d40aae}} 
+\index{CSpriteShader@{CSpriteShader}!ShaderSet@{ShaderSet}}
+\index{ShaderSet@{ShaderSet}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{ShaderSet()}{ShaderSet()}}
+{\footnotesize\ttfamily void CSprite\+Shader\+::\+Shader\+Set (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$}]{p\+Vertex\+Buffer }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_shader_a7165ee00086083051299efd61dd33e74}\label{class_c_sprite_shader_a7165ee00086083051299efd61dd33e74}} 
+\index{CSpriteShader@{CSpriteShader}!ShaderUISet@{ShaderUISet}}
+\index{ShaderUISet@{ShaderUISet}!CSpriteShader@{CSpriteShader}}
+\doxysubsubsection{\texorpdfstring{ShaderUISet()}{ShaderUISet()}}
+{\footnotesize\ttfamily void CSprite\+Shader\+::\+Shader\+UISet (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$}]{p\+Vertex\+Buffer }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Sprite\+Shader/\mbox{\hyperlink{_sprite_shader_8h}{Sprite\+Shader.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Sprite\+Shader/\mbox{\hyperlink{_sprite_shader_8cpp}{Sprite\+Shader.\+cpp}}\end{DoxyCompactItemize}

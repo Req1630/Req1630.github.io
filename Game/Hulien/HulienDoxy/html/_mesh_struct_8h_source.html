@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Mesh/MeshStruct.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_6321ff2aa4cdb8a37403b4f6bc06e513.html">Mesh</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MeshStruct.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mesh_struct_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MESH_STRUCT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MESH_STRUCT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\Fog\Fog.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//======================================</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//  構造体.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//======================================</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// メッシュ単位で渡す情報.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html">   11</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html">CBUFFER_PER_MESH</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html#af6cbdca3f8b3ae50188b53fc1a02bf60">   13</a></span>&#160;    D3DXMATRIX  <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html#af6cbdca3f8b3ae50188b53fc1a02bf60">mW</a>;     <span class="comment">// ワールド行列.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html#aa9eaf6a719992c05674fbb91ce499932">   14</a></span>&#160;    D3DXMATRIX  <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html#aa9eaf6a719992c05674fbb91ce499932">mWVP</a>;   <span class="comment">// ワールド,ビュー,プロジェクションの合成変換行列.  </span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// マテリアル単位で渡す情報.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html">   17</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html">CBUFFER_PER_MATERIAL</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#a453b9de06701476e2306e13d35fc22d1">   19</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#a453b9de06701476e2306e13d35fc22d1">vAmbient</a>;   <span class="comment">// アンビエント色(環境色).</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#ab435af68cf545f160ebff3b58c678cec">   20</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#ab435af68cf545f160ebff3b58c678cec">vDiffuse</a>;   <span class="comment">// ディヒューズ色(拡散反射色).</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#ac3fc7fefcf66c9879faf2014c23eb08c">   21</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#ac3fc7fefcf66c9879faf2014c23eb08c">vSpecular</a>;  <span class="comment">// スペキュラ色(鏡面反射色).</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// フレーム単位で渡す情報.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html">CBUFFER_PER_FRAME</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af1329480df0e1bdf7ac826bb40448b38">   26</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af1329480df0e1bdf7ac826bb40448b38">vCamPos</a>;    <span class="comment">//ｶﾒﾗ位置(視点位置).</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a10dc951b275e2c915ce66799a9de546d">   27</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a10dc951b275e2c915ce66799a9de546d">vLightPos</a>;  <span class="comment">//ﾗｲﾄ位置.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a99af14807e9a89ad79184b0fd9b5a4ec">   28</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a99af14807e9a89ad79184b0fd9b5a4ec">vLightDir</a>;  <span class="comment">//ﾗｲﾄ方向.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#ab03caecf11de03f212a44151e5dbd5f5">   29</a></span>&#160;    D3DXMATRIX  <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#ab03caecf11de03f212a44151e5dbd5f5">mLightRot</a>;  <span class="comment">//ﾗｲﾄ回転行列.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a4b581d8ca78be38c208b5728d1da2de6">   30</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a4b581d8ca78be38c208b5728d1da2de6">fIntensity</a>; <span class="comment">//ﾗｲﾄ強度(明るさ). ※xのみ使用する.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af64797bb65fc4b1c0ddfc21796e78a13">   31</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af64797bb65fc4b1c0ddfc21796e78a13">vColor</a>;     <span class="comment">//色.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a54a9d5f9a193b2e09c31ad7f35ea571f">   32</a></span>&#160;    D3DXMATRIX  <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a54a9d5f9a193b2e09c31ad7f35ea571f">mLightWVP</a>[4];</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a273275513fd6837f36efe4f087b2ccbe">   33</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a273275513fd6837f36efe4f087b2ccbe">SpritPos</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a89f7c07de0f1527ec50d8cd996d8ebf3">   34</a></span>&#160;    D3DXVECTOR4 <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a89f7c07de0f1527ec50d8cd996d8ebf3">IsShadow</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af828046b161548129283b66d39d2d1a2">   35</a></span>&#160;    <a class="code" href="struct_s_fog.html">SFog</a> <a class="code" href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af828046b161548129283b66d39d2d1a2">Fog</a>;               <span class="comment">// フォグのテクスチャ座標.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef MESH_STRUCT_H.</span></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html">CBUFFER_PER_FRAME</a></div><div class="ttdef"><b>Definition:</b> MeshStruct.h:25</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_a10dc951b275e2c915ce66799a9de546d"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a10dc951b275e2c915ce66799a9de546d">CBUFFER_PER_FRAME::vLightPos</a></div><div class="ttdeci">D3DXVECTOR4 vLightPos</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:27</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_a273275513fd6837f36efe4f087b2ccbe"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a273275513fd6837f36efe4f087b2ccbe">CBUFFER_PER_FRAME::SpritPos</a></div><div class="ttdeci">D3DXVECTOR4 SpritPos</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:33</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_a4b581d8ca78be38c208b5728d1da2de6"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a4b581d8ca78be38c208b5728d1da2de6">CBUFFER_PER_FRAME::fIntensity</a></div><div class="ttdeci">D3DXVECTOR4 fIntensity</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:30</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_a54a9d5f9a193b2e09c31ad7f35ea571f"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a54a9d5f9a193b2e09c31ad7f35ea571f">CBUFFER_PER_FRAME::mLightWVP</a></div><div class="ttdeci">D3DXMATRIX mLightWVP[4]</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:32</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_a89f7c07de0f1527ec50d8cd996d8ebf3"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a89f7c07de0f1527ec50d8cd996d8ebf3">CBUFFER_PER_FRAME::IsShadow</a></div><div class="ttdeci">D3DXVECTOR4 IsShadow</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:34</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_a99af14807e9a89ad79184b0fd9b5a4ec"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#a99af14807e9a89ad79184b0fd9b5a4ec">CBUFFER_PER_FRAME::vLightDir</a></div><div class="ttdeci">D3DXVECTOR4 vLightDir</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:28</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_ab03caecf11de03f212a44151e5dbd5f5"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#ab03caecf11de03f212a44151e5dbd5f5">CBUFFER_PER_FRAME::mLightRot</a></div><div class="ttdeci">D3DXMATRIX mLightRot</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:29</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_af1329480df0e1bdf7ac826bb40448b38"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af1329480df0e1bdf7ac826bb40448b38">CBUFFER_PER_FRAME::vCamPos</a></div><div class="ttdeci">D3DXVECTOR4 vCamPos</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:26</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_af64797bb65fc4b1c0ddfc21796e78a13"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af64797bb65fc4b1c0ddfc21796e78a13">CBUFFER_PER_FRAME::vColor</a></div><div class="ttdeci">D3DXVECTOR4 vColor</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:31</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e_html_af828046b161548129283b66d39d2d1a2"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___f_r_a_m_e.html#af828046b161548129283b66d39d2d1a2">CBUFFER_PER_FRAME::Fog</a></div><div class="ttdeci">SFog Fog</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:35</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l_html"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html">CBUFFER_PER_MATERIAL</a></div><div class="ttdef"><b>Definition:</b> MeshStruct.h:18</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l_html_a453b9de06701476e2306e13d35fc22d1"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#a453b9de06701476e2306e13d35fc22d1">CBUFFER_PER_MATERIAL::vAmbient</a></div><div class="ttdeci">D3DXVECTOR4 vAmbient</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:19</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l_html_ab435af68cf545f160ebff3b58c678cec"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#ab435af68cf545f160ebff3b58c678cec">CBUFFER_PER_MATERIAL::vDiffuse</a></div><div class="ttdeci">D3DXVECTOR4 vDiffuse</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:20</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l_html_ac3fc7fefcf66c9879faf2014c23eb08c"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_a_t_e_r_i_a_l.html#ac3fc7fefcf66c9879faf2014c23eb08c">CBUFFER_PER_MATERIAL::vSpecular</a></div><div class="ttdeci">D3DXVECTOR4 vSpecular</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:21</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_e_s_h_html"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html">CBUFFER_PER_MESH</a></div><div class="ttdef"><b>Definition:</b> MeshStruct.h:12</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_e_s_h_html_aa9eaf6a719992c05674fbb91ce499932"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html#aa9eaf6a719992c05674fbb91ce499932">CBUFFER_PER_MESH::mWVP</a></div><div class="ttdeci">D3DXMATRIX mWVP</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:14</div></div>
+<div class="ttc" id="astruct_c_b_u_f_f_e_r___p_e_r___m_e_s_h_html_af6cbdca3f8b3ae50188b53fc1a02bf60"><div class="ttname"><a href="struct_c_b_u_f_f_e_r___p_e_r___m_e_s_h.html#af6cbdca3f8b3ae50188b53fc1a02bf60">CBUFFER_PER_MESH::mW</a></div><div class="ttdeci">D3DXMATRIX mW</div><div class="ttdef"><b>Definition:</b> MeshStruct.h:13</div></div>
+<div class="ttc" id="astruct_s_fog_html"><div class="ttname"><a href="struct_s_fog.html">SFog</a></div><div class="ttdef"><b>Definition:</b> Fog.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

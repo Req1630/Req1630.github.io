@@ -1,0 +1,6 @@
+<map id="CEditAlien::Death" name="CEditAlien::Death">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,131,57"/>
+<area shape="rect" id="node2" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="180,5,351,32"/>
+<area shape="rect" id="node4" href="$class_c_character.html#a0ca58686329d1caf5b67460d32ffac25" title=" " alt="" coords="179,56,352,83"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="400,5,596,32"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="CGraphicConfigWidget::Update" name="CGraphicConfigWidget::Update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,159,115"/>
+<area shape="rect" id="node2" href="$class_c_input.html#a6a05cb0f29e7cae3fe68d46dbe3b7c4f" title=" " alt="" coords="213,56,371,83"/>
+<area shape="rect" id="node6" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="207,107,377,133"/>
+<area shape="rect" id="node3" href="$class_c_key_input.html#a8ef8a4223b33b03a9bfa7b89717c9a00" title=" " alt="" coords="433,5,614,32"/>
+<area shape="rect" id="node5" href="$class_c_x_input.html#af325b18bf39addfde11f511da4b090ef" title=" " alt="" coords="441,56,606,83"/>
+<area shape="rect" id="node4" href="$class_c_key_input.html#a19ad5f5de9ee2e016d1b64a3160eed70" title=" " alt="" coords="669,5,812,32"/>
+<area shape="rect" id="node7" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="425,107,621,133"/>
+</map>

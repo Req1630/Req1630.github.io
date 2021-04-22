@@ -1,0 +1,126 @@
+\hypertarget{class_c_tutorial}{}\doxysection{CTutorial クラス}
+\label{class_c_tutorial}\index{CTutorial@{CTutorial}}
+
+
+{\ttfamily \#include $<$Tutorial.\+h$>$}
+
+
+
+CTutorial の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_tutorial__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CTutorial 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_tutorial__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_tutorial_a6440b2acb984b528ec9384ebb8051a97}{CTutorial}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_tutorial_a4e3cf775e100e40b1ca10d0c4f334592}{$\sim$\+CTutorial}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_tutorial_a6eab069d98487dbdaa0d910bd458513a}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_tutorial_acc6a296161a71973e98adca014fb32aa}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_tutorial_a5d716d4c2063f753c8c0d71708091008}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_tutorial_a19e460ab4bd39e3ec9adbda66ede8e98}{Setup\+Tutorial}} ()
+\item 
+bool \mbox{\hyperlink{class_c_tutorial_a4f82b2d7c6ecce59a668423fa2feda9b}{Is\+Tutorial\+End}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_tutorial_a6440b2acb984b528ec9384ebb8051a97}\label{class_c_tutorial_a6440b2acb984b528ec9384ebb8051a97}} 
+\index{CTutorial@{CTutorial}!CTutorial@{CTutorial}}
+\index{CTutorial@{CTutorial}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{CTutorial()}{CTutorial()}}
+{\footnotesize\ttfamily CTutorial\+::\+CTutorial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_tutorial_a4e3cf775e100e40b1ca10d0c4f334592}\label{class_c_tutorial_a4e3cf775e100e40b1ca10d0c4f334592}} 
+\index{CTutorial@{CTutorial}!````~CTutorial@{$\sim$CTutorial}}
+\index{````~CTutorial@{$\sim$CTutorial}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{$\sim$CTutorial()}{~CTutorial()}}
+{\footnotesize\ttfamily CTutorial\+::$\sim$\+CTutorial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_tutorial_a6eab069d98487dbdaa0d910bd458513a}\label{class_c_tutorial_a6eab069d98487dbdaa0d910bd458513a}} 
+\index{CTutorial@{CTutorial}!Init@{Init}}
+\index{Init@{Init}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CTutorial\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_tutorial_a6eab069d98487dbdaa0d910bd458513a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_tutorial_a4f82b2d7c6ecce59a668423fa2feda9b}\label{class_c_tutorial_a4f82b2d7c6ecce59a668423fa2feda9b}} 
+\index{CTutorial@{CTutorial}!IsTutorialEnd@{IsTutorialEnd}}
+\index{IsTutorialEnd@{IsTutorialEnd}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{IsTutorialEnd()}{IsTutorialEnd()}}
+{\footnotesize\ttfamily bool CTutorial\+::\+Is\+Tutorial\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_tutorial_a5d716d4c2063f753c8c0d71708091008}\label{class_c_tutorial_a5d716d4c2063f753c8c0d71708091008}} 
+\index{CTutorial@{CTutorial}!Render@{Render}}
+\index{Render@{Render}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CTutorial\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_tutorial_a19e460ab4bd39e3ec9adbda66ede8e98}\label{class_c_tutorial_a19e460ab4bd39e3ec9adbda66ede8e98}} 
+\index{CTutorial@{CTutorial}!SetupTutorial@{SetupTutorial}}
+\index{SetupTutorial@{SetupTutorial}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{SetupTutorial()}{SetupTutorial()}}
+{\footnotesize\ttfamily void CTutorial\+::\+Setup\+Tutorial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_tutorial_acc6a296161a71973e98adca014fb32aa}\label{class_c_tutorial_acc6a296161a71973e98adca014fb32aa}} 
+\index{CTutorial@{CTutorial}!Update@{Update}}
+\index{Update@{Update}!CTutorial@{CTutorial}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CTutorial\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_tutorial_acc6a296161a71973e98adca014fb32aa_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Tutorial/\mbox{\hyperlink{_tutorial_8h}{Tutorial.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Tutorial/\mbox{\hyperlink{_tutorial_8cpp}{Tutorial.\+cpp}}\end{DoxyCompactItemize}

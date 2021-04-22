@@ -1,0 +1,6 @@
+<map id="CBarrier::Collision" name="CBarrier::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,132,83"/>
+<area shape="rect" id="node2" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="195,5,357,32"/>
+<area shape="rect" id="node3" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="180,56,372,83"/>
+<area shape="rect" id="node4" href="$class_c_actor.html#a9e4ade532df05c70266d698e0a56ba57" title=" " alt="" coords="201,107,351,133"/>
+</map>

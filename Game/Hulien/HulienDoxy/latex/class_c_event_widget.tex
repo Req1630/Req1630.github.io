@@ -1,0 +1,146 @@
+\hypertarget{class_c_event_widget}{}\doxysection{CEvent\+Widget クラス}
+\label{class_c_event_widget}\index{CEventWidget@{CEventWidget}}
+
+
+{\ttfamily \#include $<$Event\+Widget.\+h$>$}
+
+
+
+CEvent\+Widget の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{class_c_event_widget__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEvent\+Widget 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_event_widget__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_widget_a9cb0437536182503ff6915afd9e016df}{CEvent\+Widget}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_widget_a756a6c2140531990cb4ee45e8131a014}{$\sim$\+CEvent\+Widget}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_event_widget_a30cf518213fa44b03118051dd09fb0b5}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_widget_a1d8985f6c24448cda6973ce52d1492b5}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_widget_ac82372f6f565e0e00615040ed2edda83}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_event_widget_a590844ff098a8c41c5c423cf1d508417}{Set\+Skip}} (const bool \&skip)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_widget_a9cb0437536182503ff6915afd9e016df}\label{class_c_event_widget_a9cb0437536182503ff6915afd9e016df}} 
+\index{CEventWidget@{CEventWidget}!CEventWidget@{CEventWidget}}
+\index{CEventWidget@{CEventWidget}!CEventWidget@{CEventWidget}}
+\doxysubsubsection{\texorpdfstring{CEventWidget()}{CEventWidget()}}
+{\footnotesize\ttfamily CEvent\+Widget\+::\+CEvent\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_widget_a756a6c2140531990cb4ee45e8131a014}\label{class_c_event_widget_a756a6c2140531990cb4ee45e8131a014}} 
+\index{CEventWidget@{CEventWidget}!````~CEventWidget@{$\sim$CEventWidget}}
+\index{````~CEventWidget@{$\sim$CEventWidget}!CEventWidget@{CEventWidget}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventWidget()}{~CEventWidget()}}
+{\footnotesize\ttfamily CEvent\+Widget\+::$\sim$\+CEvent\+Widget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_widget_a30cf518213fa44b03118051dd09fb0b5}\label{class_c_event_widget_a30cf518213fa44b03118051dd09fb0b5}} 
+\index{CEventWidget@{CEventWidget}!Init@{Init}}
+\index{Init@{Init}!CEventWidget@{CEventWidget}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CEvent\+Widget\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_widget_a0e0848ae1f60799f9c499be01d69412b}{CGame\+Start\+Event\+Widget}}で再実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_c_event_widget_a30cf518213fa44b03118051dd09fb0b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_widget_ac82372f6f565e0e00615040ed2edda83}\label{class_c_event_widget_ac82372f6f565e0e00615040ed2edda83}} 
+\index{CEventWidget@{CEventWidget}!Render@{Render}}
+\index{Render@{Render}!CEventWidget@{CEventWidget}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEvent\+Widget\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_widget_a5cd6524c4f6202d4a1f108373b88b31f}{CGame\+Start\+Event\+Widget}}で再実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_widget_ac82372f6f565e0e00615040ed2edda83_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_widget_a590844ff098a8c41c5c423cf1d508417}\label{class_c_event_widget_a590844ff098a8c41c5c423cf1d508417}} 
+\index{CEventWidget@{CEventWidget}!SetSkip@{SetSkip}}
+\index{SetSkip@{SetSkip}!CEventWidget@{CEventWidget}}
+\doxysubsubsection{\texorpdfstring{SetSkip()}{SetSkip()}}
+{\footnotesize\ttfamily void CEvent\+Widget\+::\+Set\+Skip (\begin{DoxyParamCaption}\item[{const bool \&}]{skip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_widget_a1d8985f6c24448cda6973ce52d1492b5}\label{class_c_event_widget_a1d8985f6c24448cda6973ce52d1492b5}} 
+\index{CEventWidget@{CEventWidget}!Update@{Update}}
+\index{Update@{Update}!CEventWidget@{CEventWidget}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CEvent\+Widget\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_widget_ac40686ad72774e7471bb3c99e22c0cfc}{CGame\+Start\+Event\+Widget}}で再実装されています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_widget_a1d8985f6c24448cda6973ce52d1492b5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_widget_a1d8985f6c24448cda6973ce52d1492b5_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Event\+Widget/\mbox{\hyperlink{_event_widget_8h}{Event\+Widget.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Event\+Widget/\mbox{\hyperlink{_event_widget_8cpp}{Event\+Widget.\+cpp}}\end{DoxyCompactItemize}

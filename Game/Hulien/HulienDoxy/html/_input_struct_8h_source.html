@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/Input/InputStruct.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_7d5b4f1abc12bc2c7c0aeba93783c400.html">Utility</a></li><li class="navelem"><a class="el" href="dir_660e961baf323eabbb9d70bd4a0d9a31.html">Input</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">InputStruct.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_input_struct_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INPUT_STRUCT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INPUT_STRUCT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// キーバインド.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// ゲーム毎に変更して使用する.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">    6</a></span>&#160;<span class="keyword">enum class</span> enKeyBind : unsigned char</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a5d30f54fc5f12894fd1afbf4d41c5969">Decision</a>,       <span class="comment">// 決定.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177aea4788705e6873b424c65e91c2846b19">Cancel</a>,         <span class="comment">// キャンセル.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a72ef2b9b6965d078e3c7f95487a82d1c">Skip</a>,           <span class="comment">// スキップ.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177adcfafcb4323b102c7e204555d313ba0a">Attack</a>,         <span class="comment">// 攻撃.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096">SpecialAbility</a>, <span class="comment">// 特殊能力.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177aba913c28b8c4b7753a9b5326b86994a5">Avoidance</a>,      <span class="comment">// 回避.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177ab0ee7baf56e0d75af1bdd18e256dffe0">STGAttack</a>,      <span class="comment">// シューティング時の攻撃.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea258f49887ef8d14ac268c92b02503aaa">Up</a>,         <span class="comment">// 上.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea08a38277b0309070706f6652eeae9a53">Down</a>,       <span class="comment">// 下.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea92b09c7c48c520c3c55e497875da437c">Right</a>,      <span class="comment">// 右.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea945d5e233cf7d6240f6b783b36a374ff">Left</a>,       <span class="comment">// 左.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a5c4060063a9a98be4e31d7b43209982d">UpAxis</a>,     <span class="comment">// 上軸.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a39d3d6df34ac631237e493d8c369ed31">RightAxis</a>,  <span class="comment">// 右軸.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37">Start</a>,      <span class="comment">// Xbox : Start,    DS3 : Start.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a0557fa923dcee4d0f86b1409f5c2167f">Back</a>,       <span class="comment">// Xbox : Back,     DS3 : Select.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">   32</a></span>&#160;<span class="keyword">enum class</span> enAxisBind : unsigned char</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ea4aa5bd17119f7cb6827d67208639a4a7">L_Forward</a>,  <span class="comment">// 左スティックの前後.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ea919c0efd010166df25ce26ea7b07bf23">L_Right</a>,    <span class="comment">// 左スティックの左右.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ea233b95147ddfee107c5bddb964b75882">R_Forward</a>,  <span class="comment">// 右スティックの前後.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ead07c2b8f400c6799000224ccbe4c824c">R_Right</a>,    <span class="comment">// 右スティックの左右.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// 入力状態.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126">   44</a></span>&#160;<span class="keyword">enum</span> enInputState : <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f">   46</a></span>&#160;    <a class="code" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f">EInputState_NotPress</a>    = 1 &lt;&lt; 0,   <span class="comment">// 押していない.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd">   47</a></span>&#160;    <a class="code" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd">EInputState_MomentPress</a> = 1 &lt;&lt; 1,   <span class="comment">// 押した瞬間.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8">   48</a></span>&#160;    <a class="code" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8">EInputState_Hold</a>        = 1 &lt;&lt; 2,   <span class="comment">// 長押し.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883">   49</a></span>&#160;    <a class="code" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883">EInputState_Release</a>     = 1 &lt;&lt; 3,   <span class="comment">// 離した瞬間.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126">EInputState</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef INPUT_STRUCT_H.</span></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a0557fa923dcee4d0f86b1409f5c2167f"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a0557fa923dcee4d0f86b1409f5c2167f">ERS_STATE::Back</a></div><div class="ttdeci">@ Back</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a2a598686170e1cf651b5cb969600b96e"><div class="ttname"><a href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96e">EAxisBind</a></div><div class="ttdeci">EAxisBind</div><div class="ttdef"><b>Definition:</b> InputStruct.h:33</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a2a598686170e1cf651b5cb969600b96ea233b95147ddfee107c5bddb964b75882"><div class="ttname"><a href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ea233b95147ddfee107c5bddb964b75882">EAxisBind::R_Forward</a></div><div class="ttdeci">@ R_Forward</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a2a598686170e1cf651b5cb969600b96ea4aa5bd17119f7cb6827d67208639a4a7"><div class="ttname"><a href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ea4aa5bd17119f7cb6827d67208639a4a7">EAxisBind::L_Forward</a></div><div class="ttdeci">@ L_Forward</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a2a598686170e1cf651b5cb969600b96ea919c0efd010166df25ce26ea7b07bf23"><div class="ttname"><a href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ea919c0efd010166df25ce26ea7b07bf23">EAxisBind::L_Right</a></div><div class="ttdeci">@ L_Right</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a2a598686170e1cf651b5cb969600b96ead07c2b8f400c6799000224ccbe4c824c"><div class="ttname"><a href="_input_struct_8h.html#a2a598686170e1cf651b5cb969600b96ead07c2b8f400c6799000224ccbe4c824c">EAxisBind::R_Right</a></div><div class="ttdeci">@ R_Right</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a8b5d9206562e69dff1bd6dad9fee7126"><div class="ttname"><a href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126">EInputState</a></div><div class="ttdeci">EInputState</div><div class="ttdef"><b>Definition:</b> InputStruct.h:45</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8"><div class="ttname"><a href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8">EInputState_Hold</a></div><div class="ttdeci">@ EInputState_Hold</div><div class="ttdef"><b>Definition:</b> InputStruct.h:48</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883"><div class="ttname"><a href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883">EInputState_Release</a></div><div class="ttdeci">@ EInputState_Release</div><div class="ttdef"><b>Definition:</b> InputStruct.h:49</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd"><div class="ttname"><a href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd">EInputState_MomentPress</a></div><div class="ttdeci">@ EInputState_MomentPress</div><div class="ttdef"><b>Definition:</b> InputStruct.h:47</div></div>
+<div class="ttc" id="a_input_struct_8h_html_a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f"><div class="ttname"><a href="_input_struct_8h.html#a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f">EInputState_NotPress</a></div><div class="ttdeci">@ EInputState_NotPress</div><div class="ttdef"><b>Definition:</b> InputStruct.h:46</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177">EKeyBind</a></div><div class="ttdeci">EKeyBind</div><div class="ttdef"><b>Definition:</b> InputStruct.h:7</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177a39d3d6df34ac631237e493d8c369ed31"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a39d3d6df34ac631237e493d8c369ed31">EKeyBind::RightAxis</a></div><div class="ttdeci">@ RightAxis</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177a5c4060063a9a98be4e31d7b43209982d"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a5c4060063a9a98be4e31d7b43209982d">EKeyBind::UpAxis</a></div><div class="ttdeci">@ UpAxis</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177a5d30f54fc5f12894fd1afbf4d41c5969"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a5d30f54fc5f12894fd1afbf4d41c5969">EKeyBind::Decision</a></div><div class="ttdeci">@ Decision</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177a72ef2b9b6965d078e3c7f95487a82d1c"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177a72ef2b9b6965d078e3c7f95487a82d1c">EKeyBind::Skip</a></div><div class="ttdeci">@ Skip</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177ab0ee7baf56e0d75af1bdd18e256dffe0"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177ab0ee7baf56e0d75af1bdd18e256dffe0">EKeyBind::STGAttack</a></div><div class="ttdeci">@ STGAttack</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177aba913c28b8c4b7753a9b5326b86994a5"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177aba913c28b8c4b7753a9b5326b86994a5">EKeyBind::Avoidance</a></div><div class="ttdeci">@ Avoidance</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096">EKeyBind::SpecialAbility</a></div><div class="ttdeci">@ SpecialAbility</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177adcfafcb4323b102c7e204555d313ba0a"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177adcfafcb4323b102c7e204555d313ba0a">EKeyBind::Attack</a></div><div class="ttdeci">@ Attack</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177aea4788705e6873b424c65e91c2846b19"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177aea4788705e6873b424c65e91c2846b19">EKeyBind::Cancel</a></div><div class="ttdeci">@ Cancel</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37">EScene::Start</a></div><div class="ttdeci">@ Start</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea08a38277b0309070706f6652eeae9a53"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea08a38277b0309070706f6652eeae9a53">ELocalPosition::Down</a></div><div class="ttdeci">@ Down</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea258f49887ef8d14ac268c92b02503aaa"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea258f49887ef8d14ac268c92b02503aaa">ELocalPosition::Up</a></div><div class="ttdeci">@ Up</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea92b09c7c48c520c3c55e497875da437c"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea92b09c7c48c520c3c55e497875da437c">ELocalPosition::Right</a></div><div class="ttdeci">@ Right</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea945d5e233cf7d6240f6b783b36a374ff"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea945d5e233cf7d6240f6b783b36a374ff">ELocalPosition::Left</a></div><div class="ttdeci">@ Left</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

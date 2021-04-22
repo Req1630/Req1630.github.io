@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Sprite/SpriteState.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_5c15922cfdfce904fe14889b7730f5cf.html">Sprite</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SpriteState.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sprite_state_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SPRITE_STATE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SPRITE_STATE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// 幅高さ構造体(float型).</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_w_h_d_i_z_e___f_l_o_a_t.html">    7</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_w_h_d_i_z_e___f_l_o_a_t.html">WHDIZE_FLOAT</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_w_h_d_i_z_e___f_l_o_a_t.html#a4f8e4d03c66cfd26dd9807256f62664d">    9</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_w_h_d_i_z_e___f_l_o_a_t.html#a4f8e4d03c66cfd26dd9807256f62664d">w</a>;    <span class="comment">// 幅.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_w_h_d_i_z_e___f_l_o_a_t.html#aad838c9cfd0bac99f268f85dad04ee37">   10</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_w_h_d_i_z_e___f_l_o_a_t.html#aad838c9cfd0bac99f268f85dad04ee37">h</a>;    <span class="comment">// 高さ.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbe">   13</a></span>&#160;<span class="keyword">enum class</span> enLocalPosition : unsigned char</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea105736deb2f54f03c011e5f053e08d00">LeftUp</a> = 0, <span class="comment">// 左上.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea945d5e233cf7d6240f6b783b36a374ff">Left</a>,       <span class="comment">// 左.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbeac0301e45191901ce8040ef1c1695f832">LeftDown</a>,   <span class="comment">// 左下.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea08a38277b0309070706f6652eeae9a53">Down</a>,       <span class="comment">// 下.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbeac7ff24224bc4b699e06c58a663ac618c">RightDown</a>,  <span class="comment">// 右下.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea92b09c7c48c520c3c55e497875da437c">Right</a>,      <span class="comment">// 右.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea41f885e8adf5274339a2cad184e99912">RightUp</a>,    <span class="comment">// 右上.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea258f49887ef8d14ac268c92b02503aaa">Up</a>,         <span class="comment">// 上.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea4f1f6016fc9f3f2353c0cc7c67b292bd">Center</a>,     <span class="comment">// 中央.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbe">ELocalPosition</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// スプライト構造体.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html">   31</a></span>&#160;<span class="keyword">struct </span>stSpriteState</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ae79b6d37a94faac81508bd5f97cb8b8e">   33</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="struct_s_sprite_state.html#ae79b6d37a94faac81508bd5f97cb8b8e">LocalPosNum</a>;<span class="comment">// ローカル座標の</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#aa717d95760f1a48896ce53b7c451705f">   34</a></span>&#160;    <a class="code" href="struct_w_h_d_i_z_e___f_l_o_a_t.html">WHDIZE_FLOAT</a>    <a class="code" href="struct_s_sprite_state.html#aa717d95760f1a48896ce53b7c451705f">Disp</a>;       <span class="comment">// 表示幅,高さ.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#aff3bcc9311385bd922bbe045e468359b">   35</a></span>&#160;    <a class="code" href="struct_w_h_d_i_z_e___f_l_o_a_t.html">WHDIZE_FLOAT</a>    <a class="code" href="struct_s_sprite_state.html#aff3bcc9311385bd922bbe045e468359b">Base</a>;       <span class="comment">// 元画像の幅,高さ.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#a3e6b7222c5e92c2f477ef75bdf69ee07">   36</a></span>&#160;    <a class="code" href="struct_w_h_d_i_z_e___f_l_o_a_t.html">WHDIZE_FLOAT</a>    <a class="code" href="struct_s_sprite_state.html#a3e6b7222c5e92c2f477ef75bdf69ee07">Stride</a>;     <span class="comment">// 1コマ当たりの幅,高さ.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#acf952e27515cea51b82fcc352480d1f3">   37</a></span>&#160;    D3DXVECTOR3     <a class="code" href="struct_s_sprite_state.html#acf952e27515cea51b82fcc352480d1f3">vPos</a>;       <span class="comment">// 座標.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#a23b7f76e23de52a9a97abd36752aa980">   38</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="struct_s_sprite_state.html#a23b7f76e23de52a9a97abd36752aa980">AnimNum</a>;    <span class="comment">// アニメーション数.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56">   40</a></span>&#160;    <span class="keyword">enum</span> enSPRITE_STATE : <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0">   42</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0">None</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a61cdb68c1e5806469517b538d11218b0">   44</a></span>&#160;        enLocalPosNum = 0,</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a">   45</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a">enDisp_w</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60">   46</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60">enDisp_h</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e">   47</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e">enBase_w</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d">   48</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d">enBase_h</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6">   49</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6">enStride_w</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25">   50</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25">enStride_h</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224">   51</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224">envPos_x</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1">   52</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1">envPos_y</a>,</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156">   53</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156">envPos_z</a>,</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47">   54</a></span>&#160;        <a class="code" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47">enAnimNum</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a0e1b98fd4f2baff97e8ed46706269c17">   56</a></span>&#160;        MAX = enAnimNum,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    } <span class="keyword">typedef</span> ESPRITE_STATE;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="struct_s_sprite_state.html">SSpriteState</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">// スプライト情報.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html">   61</a></span>&#160;<span class="keyword">struct </span>stSpriteData</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#afe03be011415b9f99f7477d519d63994">   63</a></span>&#160;    ID3D11InputLayout*  <a class="code" href="struct_s_sprite_data.html#afe03be011415b9f99f7477d519d63994">pVertexLayout</a>;      <span class="comment">// 頂点レイアウト.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#aa5f0dc3ff397f597fdbd1568b7de6827">   64</a></span>&#160;    ID3D11Buffer*       <a class="code" href="struct_s_sprite_data.html#aa5f0dc3ff397f597fdbd1568b7de6827">pVertexBuffer</a>;      <span class="comment">// 頂点バッファ.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#acc4dc8eb95d77281ee0c21f2ed3cccb1">   65</a></span>&#160;    ID3D11Buffer*       <a class="code" href="struct_s_sprite_data.html#acc4dc8eb95d77281ee0c21f2ed3cccb1">pVertexBufferUI</a>;    <span class="comment">// 頂点バッファ.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#ae53417efda470752075007993dc09730">   67</a></span>&#160;    ID3D11ShaderResourceView*   <a class="code" href="struct_s_sprite_data.html#ae53417efda470752075007993dc09730">pTexture</a>;   <span class="comment">// テクスチャ.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a5296d90f5279abd0d6ef25ca9051eca8">   69</a></span>&#160;    <a class="code" href="struct_s_sprite_state.html">SSpriteState</a>    <a class="code" href="struct_s_sprite_data.html#a5296d90f5279abd0d6ef25ca9051eca8">SState</a>;             <span class="comment">// スプライト情報.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a1f746a0d5d5190e022a1a8b5cd99fb81">   70</a></span>&#160;    POINT           <a class="code" href="struct_s_sprite_data.html#a1f746a0d5d5190e022a1a8b5cd99fb81">PatternNo</a>;          <span class="comment">// パターン番号.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#af67f9fef7e59307a2ef46786574606fb">   71</a></span>&#160;    POINT           <a class="code" href="struct_s_sprite_data.html#af67f9fef7e59307a2ef46786574606fb">PatternMax</a>;         <span class="comment">// パターン最大数.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a94a705b6c3ac7b8758300d55d04b5a13">   72</a></span>&#160;    D3DXVECTOR2     <a class="code" href="struct_s_sprite_data.html#a94a705b6c3ac7b8758300d55d04b5a13">UV</a>;                 <span class="comment">// テクスチャUV座標.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a126782cf27fcdef9d2fcbfbe7044d3c3">   73</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="struct_s_sprite_data.html#a126782cf27fcdef9d2fcbfbe7044d3c3">AnimNumber</a>;         <span class="comment">// アニメーションナンバー.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#af4c887eee73ec519453fcb6034164f30">   74</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="struct_s_sprite_data.html#af4c887eee73ec519453fcb6034164f30">FrameCount</a>;         <span class="comment">// フレームカウント.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#aa63b60d88fadda3b5ad9f54d51850451">   75</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="struct_s_sprite_data.html#aa63b60d88fadda3b5ad9f54d51850451">FrameCountSpeed</a>;    <span class="comment">// フレームカウント速度.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a3a70d4dd00889a605eefff635d9ffcc4">   76</a></span>&#160;    <span class="keywordtype">int</span>             <a class="code" href="struct_s_sprite_data.html#a3a70d4dd00889a605eefff635d9ffcc4">FrameTime</a>;          <span class="comment">// フレームタイム.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#ac556b81e822818fc76093995b018149d">   77</a></span>&#160;    <span class="keywordtype">bool</span>            <a class="code" href="struct_s_sprite_data.html#ac556b81e822818fc76093995b018149d">IsAnimation</a>;        <span class="comment">// アニメーションするか.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#af9658793a905d0fea23ce948021af034">   78</a></span>&#160;    <span class="keywordtype">bool</span>            <a class="code" href="struct_s_sprite_data.html#af9658793a905d0fea23ce948021af034">IsUVScroll</a>;         <span class="comment">// UVスクロールをするか.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a720a12032529ac9f5e07780fba15bc70">   79</a></span>&#160;    enLocalPosition <a class="code" href="struct_s_sprite_data.html#a720a12032529ac9f5e07780fba15bc70">enLocalPosition</a>;    <span class="comment">// ローカル座標の種類.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#af5537de6ea65610bb558962104eab159">   81</a></span>&#160;    <a class="code" href="struct_s_sprite_data.html#af5537de6ea65610bb558962104eab159">stSpriteData</a>()</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        : pVertexLayout     ( nullptr )</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        , pVertexBuffer     ( nullptr )</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        , pVertexBufferUI   ( nullptr )</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        , pTexture          ( nullptr )</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        , SState            ()</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        , PatternNo         { 1, 1 }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        , PatternMax        { 1, 1 }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        , UV                ( 0.0f, 0.0f )</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        , AnimNumber        ( 0 )</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        , FrameCount        ( 0 )</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        , FrameCountSpeed   ( 1 )</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        , FrameTime         ( 20 )</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        , IsAnimation       ( false )</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        , IsUVScroll        ( false )</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        , enLocalPosition   ( <a class="code" href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbe">ELocalPosition</a>::<a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a> )</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {}</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a91fa356292fdc03a1b7ef8144a75a373">   98</a></span>&#160;    <a class="code" href="struct_s_sprite_data.html#a91fa356292fdc03a1b7ef8144a75a373">~stSpriteData</a>()</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pTexture );</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pVertexBufferUI );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pVertexBuffer );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pVertexLayout );</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="struct_s_sprite_data.html#a477c1218d0f45c51e8400ebca6748eff">  105</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="struct_s_sprite_data.html#a477c1218d0f45c51e8400ebca6748eff">Release</a>()</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pTexture );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pVertexBufferUI );</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pVertexBuffer );</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a>( pVertexLayout );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="struct_s_sprite_data.html">SSpriteData</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef SPRITE_STATE_H.</span></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">ERS_STATE::Max</a></div><div class="ttdeci">@ Max</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="a_global_8h_html_a6038f7bdb274c2e159988a57dedbf93d"><div class="ttname"><a href="_global_8h.html#a6038f7bdb274c2e159988a57dedbf93d">SAFE_RELEASE</a></div><div class="ttdeci">#define SAFE_RELEASE(p)</div><div class="ttdef"><b>Definition:</b> Global.h:49</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbe"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbe">ELocalPosition</a></div><div class="ttdeci">ELocalPosition</div><div class="ttdef"><b>Definition:</b> SpriteState.h:14</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea08a38277b0309070706f6652eeae9a53"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea08a38277b0309070706f6652eeae9a53">ELocalPosition::Down</a></div><div class="ttdeci">@ Down</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea105736deb2f54f03c011e5f053e08d00"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea105736deb2f54f03c011e5f053e08d00">ELocalPosition::LeftUp</a></div><div class="ttdeci">@ LeftUp</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea258f49887ef8d14ac268c92b02503aaa"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea258f49887ef8d14ac268c92b02503aaa">ELocalPosition::Up</a></div><div class="ttdeci">@ Up</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea41f885e8adf5274339a2cad184e99912"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea41f885e8adf5274339a2cad184e99912">ELocalPosition::RightUp</a></div><div class="ttdeci">@ RightUp</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea4f1f6016fc9f3f2353c0cc7c67b292bd"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea4f1f6016fc9f3f2353c0cc7c67b292bd">ELocalPosition::Center</a></div><div class="ttdeci">@ Center</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea92b09c7c48c520c3c55e497875da437c"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea92b09c7c48c520c3c55e497875da437c">ELocalPosition::Right</a></div><div class="ttdeci">@ Right</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbea945d5e233cf7d6240f6b783b36a374ff"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbea945d5e233cf7d6240f6b783b36a374ff">ELocalPosition::Left</a></div><div class="ttdeci">@ Left</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbeac0301e45191901ce8040ef1c1695f832"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbeac0301e45191901ce8040ef1c1695f832">ELocalPosition::LeftDown</a></div><div class="ttdeci">@ LeftDown</div></div>
+<div class="ttc" id="a_sprite_state_8h_html_abe29046a7b5d103c42831b09c1a0bcbeac7ff24224bc4b699e06c58a663ac618c"><div class="ttname"><a href="_sprite_state_8h.html#abe29046a7b5d103c42831b09c1a0bcbeac7ff24224bc4b699e06c58a663ac618c">ELocalPosition::RightDown</a></div><div class="ttdeci">@ RightDown</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html"><div class="ttname"><a href="struct_s_sprite_data.html">SSpriteData</a></div><div class="ttdef"><b>Definition:</b> SpriteState.h:62</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a126782cf27fcdef9d2fcbfbe7044d3c3"><div class="ttname"><a href="struct_s_sprite_data.html#a126782cf27fcdef9d2fcbfbe7044d3c3">SSpriteData::AnimNumber</a></div><div class="ttdeci">int AnimNumber</div><div class="ttdef"><b>Definition:</b> SpriteState.h:73</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a1f746a0d5d5190e022a1a8b5cd99fb81"><div class="ttname"><a href="struct_s_sprite_data.html#a1f746a0d5d5190e022a1a8b5cd99fb81">SSpriteData::PatternNo</a></div><div class="ttdeci">POINT PatternNo</div><div class="ttdef"><b>Definition:</b> SpriteState.h:70</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a3a70d4dd00889a605eefff635d9ffcc4"><div class="ttname"><a href="struct_s_sprite_data.html#a3a70d4dd00889a605eefff635d9ffcc4">SSpriteData::FrameTime</a></div><div class="ttdeci">int FrameTime</div><div class="ttdef"><b>Definition:</b> SpriteState.h:76</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a477c1218d0f45c51e8400ebca6748eff"><div class="ttname"><a href="struct_s_sprite_data.html#a477c1218d0f45c51e8400ebca6748eff">SSpriteData::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition:</b> SpriteState.h:105</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a5296d90f5279abd0d6ef25ca9051eca8"><div class="ttname"><a href="struct_s_sprite_data.html#a5296d90f5279abd0d6ef25ca9051eca8">SSpriteData::SState</a></div><div class="ttdeci">SSpriteState SState</div><div class="ttdef"><b>Definition:</b> SpriteState.h:69</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a720a12032529ac9f5e07780fba15bc70"><div class="ttname"><a href="struct_s_sprite_data.html#a720a12032529ac9f5e07780fba15bc70">SSpriteData::enLocalPosition</a></div><div class="ttdeci">enLocalPosition enLocalPosition</div><div class="ttdef"><b>Definition:</b> SpriteState.h:79</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a91fa356292fdc03a1b7ef8144a75a373"><div class="ttname"><a href="struct_s_sprite_data.html#a91fa356292fdc03a1b7ef8144a75a373">SSpriteData::~stSpriteData</a></div><div class="ttdeci">~stSpriteData()</div><div class="ttdef"><b>Definition:</b> SpriteState.h:98</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_a94a705b6c3ac7b8758300d55d04b5a13"><div class="ttname"><a href="struct_s_sprite_data.html#a94a705b6c3ac7b8758300d55d04b5a13">SSpriteData::UV</a></div><div class="ttdeci">D3DXVECTOR2 UV</div><div class="ttdef"><b>Definition:</b> SpriteState.h:72</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_aa5f0dc3ff397f597fdbd1568b7de6827"><div class="ttname"><a href="struct_s_sprite_data.html#aa5f0dc3ff397f597fdbd1568b7de6827">SSpriteData::pVertexBuffer</a></div><div class="ttdeci">ID3D11Buffer * pVertexBuffer</div><div class="ttdef"><b>Definition:</b> SpriteState.h:64</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_aa63b60d88fadda3b5ad9f54d51850451"><div class="ttname"><a href="struct_s_sprite_data.html#aa63b60d88fadda3b5ad9f54d51850451">SSpriteData::FrameCountSpeed</a></div><div class="ttdeci">int FrameCountSpeed</div><div class="ttdef"><b>Definition:</b> SpriteState.h:75</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_ac556b81e822818fc76093995b018149d"><div class="ttname"><a href="struct_s_sprite_data.html#ac556b81e822818fc76093995b018149d">SSpriteData::IsAnimation</a></div><div class="ttdeci">bool IsAnimation</div><div class="ttdef"><b>Definition:</b> SpriteState.h:77</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_acc4dc8eb95d77281ee0c21f2ed3cccb1"><div class="ttname"><a href="struct_s_sprite_data.html#acc4dc8eb95d77281ee0c21f2ed3cccb1">SSpriteData::pVertexBufferUI</a></div><div class="ttdeci">ID3D11Buffer * pVertexBufferUI</div><div class="ttdef"><b>Definition:</b> SpriteState.h:65</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_ae53417efda470752075007993dc09730"><div class="ttname"><a href="struct_s_sprite_data.html#ae53417efda470752075007993dc09730">SSpriteData::pTexture</a></div><div class="ttdeci">ID3D11ShaderResourceView * pTexture</div><div class="ttdef"><b>Definition:</b> SpriteState.h:67</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_af4c887eee73ec519453fcb6034164f30"><div class="ttname"><a href="struct_s_sprite_data.html#af4c887eee73ec519453fcb6034164f30">SSpriteData::FrameCount</a></div><div class="ttdeci">int FrameCount</div><div class="ttdef"><b>Definition:</b> SpriteState.h:74</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_af5537de6ea65610bb558962104eab159"><div class="ttname"><a href="struct_s_sprite_data.html#af5537de6ea65610bb558962104eab159">SSpriteData::stSpriteData</a></div><div class="ttdeci">stSpriteData()</div><div class="ttdef"><b>Definition:</b> SpriteState.h:81</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_af67f9fef7e59307a2ef46786574606fb"><div class="ttname"><a href="struct_s_sprite_data.html#af67f9fef7e59307a2ef46786574606fb">SSpriteData::PatternMax</a></div><div class="ttdeci">POINT PatternMax</div><div class="ttdef"><b>Definition:</b> SpriteState.h:71</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_af9658793a905d0fea23ce948021af034"><div class="ttname"><a href="struct_s_sprite_data.html#af9658793a905d0fea23ce948021af034">SSpriteData::IsUVScroll</a></div><div class="ttdeci">bool IsUVScroll</div><div class="ttdef"><b>Definition:</b> SpriteState.h:78</div></div>
+<div class="ttc" id="astruct_s_sprite_data_html_afe03be011415b9f99f7477d519d63994"><div class="ttname"><a href="struct_s_sprite_data.html#afe03be011415b9f99f7477d519d63994">SSpriteData::pVertexLayout</a></div><div class="ttdeci">ID3D11InputLayout * pVertexLayout</div><div class="ttdef"><b>Definition:</b> SpriteState.h:63</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html"><div class="ttname"><a href="struct_s_sprite_state.html">SSpriteState</a></div><div class="ttdef"><b>Definition:</b> SpriteState.h:32</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_a23b7f76e23de52a9a97abd36752aa980"><div class="ttname"><a href="struct_s_sprite_state.html#a23b7f76e23de52a9a97abd36752aa980">SSpriteState::AnimNum</a></div><div class="ttdeci">int AnimNum</div><div class="ttdef"><b>Definition:</b> SpriteState.h:38</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_a3e6b7222c5e92c2f477ef75bdf69ee07"><div class="ttname"><a href="struct_s_sprite_state.html#a3e6b7222c5e92c2f477ef75bdf69ee07">SSpriteState::Stride</a></div><div class="ttdeci">WHDIZE_FLOAT Stride</div><div class="ttdef"><b>Definition:</b> SpriteState.h:36</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_aa717d95760f1a48896ce53b7c451705f"><div class="ttname"><a href="struct_s_sprite_state.html#aa717d95760f1a48896ce53b7c451705f">SSpriteState::Disp</a></div><div class="ttdeci">WHDIZE_FLOAT Disp</div><div class="ttdef"><b>Definition:</b> SpriteState.h:34</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47">SSpriteState::enAnimNum</a></div><div class="ttdeci">@ enAnimNum</div><div class="ttdef"><b>Definition:</b> SpriteState.h:54</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a">SSpriteState::enDisp_w</a></div><div class="ttdeci">@ enDisp_w</div><div class="ttdef"><b>Definition:</b> SpriteState.h:45</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d">SSpriteState::enBase_h</a></div><div class="ttdeci">@ enBase_h</div><div class="ttdef"><b>Definition:</b> SpriteState.h:48</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e">SSpriteState::enBase_w</a></div><div class="ttdeci">@ enBase_w</div><div class="ttdef"><b>Definition:</b> SpriteState.h:47</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224">SSpriteState::envPos_x</a></div><div class="ttdeci">@ envPos_x</div><div class="ttdef"><b>Definition:</b> SpriteState.h:51</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6">SSpriteState::enStride_w</a></div><div class="ttdeci">@ enStride_w</div><div class="ttdef"><b>Definition:</b> SpriteState.h:49</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156">SSpriteState::envPos_z</a></div><div class="ttdeci">@ envPos_z</div><div class="ttdef"><b>Definition:</b> SpriteState.h:53</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1">SSpriteState::envPos_y</a></div><div class="ttdeci">@ envPos_y</div><div class="ttdef"><b>Definition:</b> SpriteState.h:52</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0">SSpriteState::None</a></div><div class="ttdeci">@ None</div><div class="ttdef"><b>Definition:</b> SpriteState.h:42</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60">SSpriteState::enDisp_h</a></div><div class="ttdeci">@ enDisp_h</div><div class="ttdef"><b>Definition:</b> SpriteState.h:46</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25"><div class="ttname"><a href="struct_s_sprite_state.html#ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25">SSpriteState::enStride_h</a></div><div class="ttdeci">@ enStride_h</div><div class="ttdef"><b>Definition:</b> SpriteState.h:50</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_acf952e27515cea51b82fcc352480d1f3"><div class="ttname"><a href="struct_s_sprite_state.html#acf952e27515cea51b82fcc352480d1f3">SSpriteState::vPos</a></div><div class="ttdeci">D3DXVECTOR3 vPos</div><div class="ttdef"><b>Definition:</b> SpriteState.h:37</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_ae79b6d37a94faac81508bd5f97cb8b8e"><div class="ttname"><a href="struct_s_sprite_state.html#ae79b6d37a94faac81508bd5f97cb8b8e">SSpriteState::LocalPosNum</a></div><div class="ttdeci">int LocalPosNum</div><div class="ttdef"><b>Definition:</b> SpriteState.h:33</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html_aff3bcc9311385bd922bbe045e468359b"><div class="ttname"><a href="struct_s_sprite_state.html#aff3bcc9311385bd922bbe045e468359b">SSpriteState::Base</a></div><div class="ttdeci">WHDIZE_FLOAT Base</div><div class="ttdef"><b>Definition:</b> SpriteState.h:35</div></div>
+<div class="ttc" id="astruct_w_h_d_i_z_e___f_l_o_a_t_html"><div class="ttname"><a href="struct_w_h_d_i_z_e___f_l_o_a_t.html">WHDIZE_FLOAT</a></div><div class="ttdef"><b>Definition:</b> SpriteState.h:8</div></div>
+<div class="ttc" id="astruct_w_h_d_i_z_e___f_l_o_a_t_html_a4f8e4d03c66cfd26dd9807256f62664d"><div class="ttname"><a href="struct_w_h_d_i_z_e___f_l_o_a_t.html#a4f8e4d03c66cfd26dd9807256f62664d">WHDIZE_FLOAT::w</a></div><div class="ttdeci">float w</div><div class="ttdef"><b>Definition:</b> SpriteState.h:9</div></div>
+<div class="ttc" id="astruct_w_h_d_i_z_e___f_l_o_a_t_html_aad838c9cfd0bac99f268f85dad04ee37"><div class="ttname"><a href="struct_w_h_d_i_z_e___f_l_o_a_t.html#aad838c9cfd0bac99f268f85dad04ee37">WHDIZE_FLOAT::h</a></div><div class="ttdeci">float h</div><div class="ttdef"><b>Definition:</b> SpriteState.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

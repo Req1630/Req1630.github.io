@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/AnimationParamInfo.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1bdeeabc02c3c6e2721e886e81d33611.html">Character</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">AnimationParamInfo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_animation_param_info_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ANIMATION_PARAM_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ANIMATION_PARAM_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceanim.html">   11</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceanim.html">anim</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// アニメーションフレーム構造体.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html">   15</a></span>&#160;<span class="keyword">struct </span>stAnimFrame</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html#a3f6783ff2f26305798d0d21d65269cfd">   17</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structanim_1_1_s_anim_frame.html#a3f6783ff2f26305798d0d21d65269cfd">NowFrame</a>;    <span class="comment">// 経過フレーム.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html#a00d1576a8a07d23af2b0ecc79dee4ded">   18</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structanim_1_1_s_anim_frame.html#a00d1576a8a07d23af2b0ecc79dee4ded">EndFrame</a>;    <span class="comment">// 終了フレーム.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html#a60296eb3e38fcd271520c89dbd5636c3">   20</a></span>&#160;    <a class="code" href="structanim_1_1_s_anim_frame.html#a60296eb3e38fcd271520c89dbd5636c3">stAnimFrame</a>() : NowFrame ( 0.0 ), EndFrame ( 0.0 )</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html#af003b7a309d98cd25a643db6010c9e18">   22</a></span>&#160;    <a class="code" href="structanim_1_1_s_anim_frame.html#af003b7a309d98cd25a643db6010c9e18">stAnimFrame</a>( <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; nowFrame, <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; endFrame ) </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        : NowFrame  ( nowFrame )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        , EndFrame  ( endFrame )</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// フレームの更新.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html#a9bd3b0d1d94223d2cdb2155745212fa1">   28</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="structanim_1_1_s_anim_frame.html#a9bd3b0d1d94223d2cdb2155745212fa1">UpdateFrame</a>( <span class="keyword">const</span> <span class="keywordtype">double</span>&amp; animSpeed ){ NowFrame += animSpeed; }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 経過フレームが終了フレームを超えているか.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structanim_1_1_s_anim_frame.html#a7908b48b49fda14b629ef598154b6160">   30</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structanim_1_1_s_anim_frame.html#a7908b48b49fda14b629ef598154b6160">IsNowFrameOver</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> NowFrame &gt;= EndFrame; }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="keyword">typedef</span> SAnimFrame;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// アニメーションのフレーム情報のリスト.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">   35</a></span>&#160;<span class="keyword">typedef</span> std::vector&lt;SAnimFrame&gt; <a class="code" href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">AAnimFrameList</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">AAnimFrameList</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">A = arrary</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef ANIMATION_PARAM_H.</span></div>
+<div class="ttc" id="anamespaceanim_html"><div class="ttname"><a href="namespaceanim.html">anim</a></div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:12</div></div>
+<div class="ttc" id="anamespaceanim_html_a68d2d2cd7731372f3f57e24df472067f"><div class="ttname"><a href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a></div><div class="ttdeci">std::vector&lt; SAnimFrame &gt; AAnimFrameList</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:35</div></div>
+<div class="ttc" id="astructanim_1_1_s_anim_frame_html_a00d1576a8a07d23af2b0ecc79dee4ded"><div class="ttname"><a href="structanim_1_1_s_anim_frame.html#a00d1576a8a07d23af2b0ecc79dee4ded">anim::SAnimFrame::EndFrame</a></div><div class="ttdeci">double EndFrame</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:18</div></div>
+<div class="ttc" id="astructanim_1_1_s_anim_frame_html_a3f6783ff2f26305798d0d21d65269cfd"><div class="ttname"><a href="structanim_1_1_s_anim_frame.html#a3f6783ff2f26305798d0d21d65269cfd">anim::SAnimFrame::NowFrame</a></div><div class="ttdeci">double NowFrame</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:17</div></div>
+<div class="ttc" id="astructanim_1_1_s_anim_frame_html_a60296eb3e38fcd271520c89dbd5636c3"><div class="ttname"><a href="structanim_1_1_s_anim_frame.html#a60296eb3e38fcd271520c89dbd5636c3">anim::SAnimFrame::stAnimFrame</a></div><div class="ttdeci">stAnimFrame()</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:20</div></div>
+<div class="ttc" id="astructanim_1_1_s_anim_frame_html_a7908b48b49fda14b629ef598154b6160"><div class="ttname"><a href="structanim_1_1_s_anim_frame.html#a7908b48b49fda14b629ef598154b6160">anim::SAnimFrame::IsNowFrameOver</a></div><div class="ttdeci">bool IsNowFrameOver() const</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:30</div></div>
+<div class="ttc" id="astructanim_1_1_s_anim_frame_html_a9bd3b0d1d94223d2cdb2155745212fa1"><div class="ttname"><a href="structanim_1_1_s_anim_frame.html#a9bd3b0d1d94223d2cdb2155745212fa1">anim::SAnimFrame::UpdateFrame</a></div><div class="ttdeci">void UpdateFrame(const double &amp;animSpeed)</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:28</div></div>
+<div class="ttc" id="astructanim_1_1_s_anim_frame_html_af003b7a309d98cd25a643db6010c9e18"><div class="ttname"><a href="structanim_1_1_s_anim_frame.html#af003b7a309d98cd25a643db6010c9e18">anim::SAnimFrame::stAnimFrame</a></div><div class="ttdeci">stAnimFrame(const double &amp;nowFrame, const double &amp;endFrame)</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

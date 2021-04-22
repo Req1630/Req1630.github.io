@@ -1,0 +1,226 @@
+\hypertarget{class_c_laser_beam}{}\doxysection{CLaser\+Beam クラス}
+\label{class_c_laser_beam}\index{CLaserBeam@{CLaserBeam}}
+
+
+{\ttfamily \#include $<$Laser\+Beam.\+h$>$}
+
+
+
+CLaser\+Beam の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_laser_beam__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CLaser\+Beam 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_laser_beam__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_laser_beam_aa2ab9e90aed9543505e55306dfd477d3}{CLaser\+Beam}} ()
+\item 
+\mbox{\hyperlink{class_c_laser_beam_aa29de47f48cd42fa411af08900157912}{CLaser\+Beam}} (const float \&coll\+Rad)
+\item 
+virtual \mbox{\hyperlink{class_c_laser_beam_a16ac14553e2c5cc7f7e6545a5eb5707e}{$\sim$\+CLaser\+Beam}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_laser_beam_ac8f6769e2b9491c0075f74de38a06a1f}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_laser_beam_aa146b988f75ab43edd086a7f074b800d}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_laser_beam_a84d7a05f9c34c9bad9ad68c24397f109}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_laser_beam_ab7a49bdb78d158567d6e9095916aa1d4}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_laser_beam_a0215296bbf5b3429f5b987e9187936bb}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_laser_beam_aad63781b5a27b674b7f1dbb5f7f48859}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor) override
+\item 
+void \mbox{\hyperlink{class_c_laser_beam_aed4e8b6359142fda6107b2ad34cbd437}{Set\+Target\+Pos}} (const D3\+DXVECTOR3 \&pos)
+\item 
+void \mbox{\hyperlink{class_c_laser_beam_ac5ffbd6e8678aa3860fcdfcc626d71ba}{Shot}} (const D3\+DXVECTOR3 \&pos)
+\item 
+void \mbox{\hyperlink{class_c_laser_beam_a3ba249b866eadc0b477121a913c8c0bd}{Reset\+Param}} ()
+\item 
+void \mbox{\hyperlink{class_c_laser_beam_ab3d479d5a6e0c383ba4135fbdacce896}{Set\+Control\+Point\+List}} (const std\+::vector$<$ D3\+DXVECTOR3 $>$ \&point\+List)
+\item 
+void \mbox{\hyperlink{class_c_laser_beam_aa06bdd6daeb76cc3a979d90568ab8b47}{Set\+Move\+Spped}} (const float \&move\+Speed)
+\item 
+void \mbox{\hyperlink{class_c_laser_beam_ace892c89640bc0652d0b45788cc2c054}{Set\+Paralysis\+Time}} (const float \&time)
+\item 
+bool \mbox{\hyperlink{class_c_laser_beam_adb503d01c7fe245faf5b8e45cb2eb132}{Is\+In\+Attack}} () const
+\item 
+bool \mbox{\hyperlink{class_c_laser_beam_a064f26722bd88ad3f875a508ab33831c}{Is\+End\+Attack}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_laser_beam_aa2ab9e90aed9543505e55306dfd477d3}\label{class_c_laser_beam_aa2ab9e90aed9543505e55306dfd477d3}} 
+\index{CLaserBeam@{CLaserBeam}!CLaserBeam@{CLaserBeam}}
+\index{CLaserBeam@{CLaserBeam}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{CLaserBeam()}{CLaserBeam()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CLaser\+Beam\+::\+CLaser\+Beam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_laser_beam_aa29de47f48cd42fa411af08900157912}\label{class_c_laser_beam_aa29de47f48cd42fa411af08900157912}} 
+\index{CLaserBeam@{CLaserBeam}!CLaserBeam@{CLaserBeam}}
+\index{CLaserBeam@{CLaserBeam}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{CLaserBeam()}{CLaserBeam()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CLaser\+Beam\+::\+CLaser\+Beam (\begin{DoxyParamCaption}\item[{const float \&}]{coll\+Rad }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_laser_beam_a16ac14553e2c5cc7f7e6545a5eb5707e}\label{class_c_laser_beam_a16ac14553e2c5cc7f7e6545a5eb5707e}} 
+\index{CLaserBeam@{CLaserBeam}!````~CLaserBeam@{$\sim$CLaserBeam}}
+\index{````~CLaserBeam@{$\sim$CLaserBeam}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{$\sim$CLaserBeam()}{~CLaserBeam()}}
+{\footnotesize\ttfamily CLaser\+Beam\+::$\sim$\+CLaser\+Beam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_laser_beam_a0215296bbf5b3429f5b987e9187936bb}\label{class_c_laser_beam_a0215296bbf5b3429f5b987e9187936bb}} 
+\index{CLaserBeam@{CLaserBeam}!Collision@{Collision}}
+\index{Collision@{Collision}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_laser_beam_a0215296bbf5b3429f5b987e9187936bb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_laser_beam_ab7a49bdb78d158567d6e9095916aa1d4}\label{class_c_laser_beam_ab7a49bdb78d158567d6e9095916aa1d4}} 
+\index{CLaserBeam@{CLaserBeam}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}{CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_laser_beam_ac8f6769e2b9491c0075f74de38a06a1f}\label{class_c_laser_beam_ac8f6769e2b9491c0075f74de38a06a1f}} 
+\index{CLaserBeam@{CLaserBeam}!Init@{Init}}
+\index{Init@{Init}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CLaser\+Beam\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_laser_beam_a064f26722bd88ad3f875a508ab33831c}\label{class_c_laser_beam_a064f26722bd88ad3f875a508ab33831c}} 
+\index{CLaserBeam@{CLaserBeam}!IsEndAttack@{IsEndAttack}}
+\index{IsEndAttack@{IsEndAttack}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{IsEndAttack()}{IsEndAttack()}}
+{\footnotesize\ttfamily bool CLaser\+Beam\+::\+Is\+End\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_laser_beam_adb503d01c7fe245faf5b8e45cb2eb132}\label{class_c_laser_beam_adb503d01c7fe245faf5b8e45cb2eb132}} 
+\index{CLaserBeam@{CLaserBeam}!IsInAttack@{IsInAttack}}
+\index{IsInAttack@{IsInAttack}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{IsInAttack()}{IsInAttack()}}
+{\footnotesize\ttfamily bool CLaser\+Beam\+::\+Is\+In\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_laser_beam_a84d7a05f9c34c9bad9ad68c24397f109}\label{class_c_laser_beam_a84d7a05f9c34c9bad9ad68c24397f109}} 
+\index{CLaserBeam@{CLaserBeam}!Render@{Render}}
+\index{Render@{Render}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_laser_beam_a84d7a05f9c34c9bad9ad68c24397f109_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_laser_beam_a3ba249b866eadc0b477121a913c8c0bd}\label{class_c_laser_beam_a3ba249b866eadc0b477121a913c8c0bd}} 
+\index{CLaserBeam@{CLaserBeam}!ResetParam@{ResetParam}}
+\index{ResetParam@{ResetParam}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{ResetParam()}{ResetParam()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Reset\+Param (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_laser_beam_ab3d479d5a6e0c383ba4135fbdacce896}\label{class_c_laser_beam_ab3d479d5a6e0c383ba4135fbdacce896}} 
+\index{CLaserBeam@{CLaserBeam}!SetControlPointList@{SetControlPointList}}
+\index{SetControlPointList@{SetControlPointList}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{SetControlPointList()}{SetControlPointList()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Set\+Control\+Point\+List (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ D3\+DXVECTOR3 $>$ \&}]{point\+List }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_laser_beam_aa06bdd6daeb76cc3a979d90568ab8b47}\label{class_c_laser_beam_aa06bdd6daeb76cc3a979d90568ab8b47}} 
+\index{CLaserBeam@{CLaserBeam}!SetMoveSpped@{SetMoveSpped}}
+\index{SetMoveSpped@{SetMoveSpped}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{SetMoveSpped()}{SetMoveSpped()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Set\+Move\+Spped (\begin{DoxyParamCaption}\item[{const float \&}]{move\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_laser_beam_ace892c89640bc0652d0b45788cc2c054}\label{class_c_laser_beam_ace892c89640bc0652d0b45788cc2c054}} 
+\index{CLaserBeam@{CLaserBeam}!SetParalysisTime@{SetParalysisTime}}
+\index{SetParalysisTime@{SetParalysisTime}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{SetParalysisTime()}{SetParalysisTime()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Set\+Paralysis\+Time (\begin{DoxyParamCaption}\item[{const float \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_laser_beam_aad63781b5a27b674b7f1dbb5f7f48859}\label{class_c_laser_beam_aad63781b5a27b674b7f1dbb5f7f48859}} 
+\index{CLaserBeam@{CLaserBeam}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_laser_beam_aad63781b5a27b674b7f1dbb5f7f48859_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_laser_beam_aed4e8b6359142fda6107b2ad34cbd437}\label{class_c_laser_beam_aed4e8b6359142fda6107b2ad34cbd437}} 
+\index{CLaserBeam@{CLaserBeam}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_laser_beam_ac5ffbd6e8678aa3860fcdfcc626d71ba}\label{class_c_laser_beam_ac5ffbd6e8678aa3860fcdfcc626d71ba}} 
+\index{CLaserBeam@{CLaserBeam}!Shot@{Shot}}
+\index{Shot@{Shot}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{Shot()}{Shot()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Shot (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_laser_beam_aa146b988f75ab43edd086a7f074b800d}\label{class_c_laser_beam_aa146b988f75ab43edd086a7f074b800d}} 
+\index{CLaserBeam@{CLaserBeam}!Update@{Update}}
+\index{Update@{Update}!CLaserBeam@{CLaserBeam}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CLaser\+Beam\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Laser\+Beam/\mbox{\hyperlink{_laser_beam_8h}{Laser\+Beam.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Laser\+Beam/\mbox{\hyperlink{_laser_beam_8cpp}{Laser\+Beam.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Actor.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Actor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_actor_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="_actor_8h.html#a4204272216cbaa94c06053ada0c4ca11">    1</a></span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ACTOR_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ACTOR_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\GameObject.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_collision_manager.html">CCollisionManager</a>;            <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">struct </span>stBoxWall typedef <a class="code" href="struct_s_box_wall.html">SBoxWall</a>;  <span class="comment">// 見えない壁の構造体.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/**************************************</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*   動作可能なオブジェクトの基底クラス.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_actor.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_actor.html">CActor</a> : <span class="keyword">public</span> <a class="code" href="class_c_game_object.html">CGameObject</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_c_actor.html#a22436a9e69474d47f31ac81fa192ba4b">CActor</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_actor.html#adca86a138fd9af275352336848ebad27">~CActor</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// エフェクトの描画.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_c_actor.html#ac4c7d2514100b7b7f8c819c1d0fa5bb8">   25</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#ac4c7d2514100b7b7f8c819c1d0fa5bb8">EffectRender</a>(){}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// 当たり判定関数.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_actor.html#a8625400f65db4910b23c6d820fea0e35">   27</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a8625400f65db4910b23c6d820fea0e35">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor ) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// ライフ計算関数.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_actor.html#a29421b3908b94cc34745430bb7662866">   30</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a29421b3908b94cc34745430bb7662866">LifeCalculation</a>( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">bool</span>&amp;)&gt;&amp; ){}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 特殊能力回復時間、効力時間設定関数.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_actor.html#a6242dc54a323ee9e651d98842d059dad">   32</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a6242dc54a323ee9e651d98842d059dad">SetSPEffectTime</a>( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">float</span>&amp;)&gt;&amp; ){}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// 攻撃力、効力時間設定関数.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_c_actor.html#a900797b3a5c7cf6049b841c860032328">   34</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a900797b3a5c7cf6049b841c860032328">SetAttackEffectTime</a>( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">float</span>&amp;)&gt;&amp; ){}</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 移動速度、効力時間設定関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_c_actor.html#ad25664050ec3eacb9cd67c51b918d703">   36</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#ad25664050ec3eacb9cd67c51b918d703">SetMoveSpeedEffectTime</a>( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">float</span>&amp;)&gt;&amp; ){}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 麻痺の設定.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_actor.html#a2157d9ebb794373d092ebfa6892cbb0e">   38</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a2157d9ebb794373d092ebfa6892cbb0e">SetParalysisTime</a>( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;)&gt;&amp; ){}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 相手座標の設定関数.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_actor.html#a9e4ade532df05c70266d698e0a56ba57">   40</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a9e4ade532df05c70266d698e0a56ba57">SetTargetPos</a>( <a class="code" href="class_c_actor.html">CActor</a>&amp; actor ){}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// ベクトルの取得.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_actor.html#ad3b806087fc892991fbfa6d3a6a7481b">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#ad3b806087fc892991fbfa6d3a6a7481b">SetVector</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vec ){}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// アニメーションを止める.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_actor.html#ae7697e329ccac87a1f4aa7940b4c158d">   44</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#ae7697e329ccac87a1f4aa7940b4c158d">StopAnimation</a>(){}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// アニメーションを再開する.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_actor.html#a788304eb4f7cb0170630b74dbef108f3">   46</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a788304eb4f7cb0170630b74dbef108f3">ResumeAnimation</a>(){}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// 見えない壁の設定.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_actor.html#a6c8e8a67b229845e27f90ab4e21bd758">   49</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_actor.html#a6c8e8a67b229845e27f90ab4e21bd758">SetBoxWall</a>( <a class="code" href="struct_s_box_wall.html">SBoxWall</a>* box ){ <a class="code" href="class_c_actor.html#a4004a424bf1c9bd5ab9fc64572c9a69a">m_pBoxWall</a> = box; }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// 当たり判定取得関数.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b">   52</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="class_c_collision_manager.html">CCollisionManager</a>* <a class="code" href="class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b">GetCollManager</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_actor.html#afc43e8ccd0d1b0e83b12eb1589109264">m_pCollManager</a>.get(); }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 当たり判定を行えるかどうか.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_actor.html#a6a29f813106184e1ab32e915018c6690">   54</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_actor.html#a6a29f813106184e1ab32e915018c6690">IsPossibleToHit</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_actor.html#a43d6bdb6d04d54e12c45306020a5d3e1">m_IsPossibleToHit</a>; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// ヒットストップの時間の設定.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//  inline void SetHitStopTime( const int&amp; time ){ m_HitStopTime = time; }</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// カメラを揺らすかどうか.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_c_actor.html#a927e61ab03964140ff456f6955fca74c">   59</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_actor.html#a927e61ab03964140ff456f6955fca74c">IsPlayCameraShake</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_actor.html#a5b809919e776463bc915c5166282493b">m_IsPlayCameraShake</a>; }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 壁に衝突したか.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_actor.html#a8f13e3f445df91bf165008a332657b1b">IsCrashedWall</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// 壁に衝突したか : X.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_actor.html#aa1e53267f2dee4ebf9ad4dc508fc3411">IsCrashedWallX</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 壁に衝突したか : Z.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_actor.html#adbb1bf6eff992a063f1a926896991e2e">IsCrashedWallZ</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_c_actor.html#afc43e8ccd0d1b0e83b12eb1589109264">   70</a></span>&#160;    std::shared_ptr&lt;CCollisionManager&gt;  <a class="code" href="class_c_actor.html#afc43e8ccd0d1b0e83b12eb1589109264">m_pCollManager</a>;     <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_c_actor.html#a4004a424bf1c9bd5ab9fc64572c9a69a">   71</a></span>&#160;    <a class="code" href="struct_s_box_wall.html">SBoxWall</a>*                           <a class="code" href="class_c_actor.html#a4004a424bf1c9bd5ab9fc64572c9a69a">m_pBoxWall</a>;         <span class="comment">// 見えない壁 : 外部からポインタで取得.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//  int                                 m_HitStopCount;     // ヒットストップのカウント.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//  int                                 m_HitStopTime;      // ヒットストップの時間.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//  bool                                m_IsHitStop;        // ヒットストップしているか.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_c_actor.html#a43d6bdb6d04d54e12c45306020a5d3e1">   75</a></span>&#160;    <span class="keywordtype">bool</span>                                <a class="code" href="class_c_actor.html#a43d6bdb6d04d54e12c45306020a5d3e1">m_IsPossibleToHit</a>;  <span class="comment">// 当たり判定が行えるかどうか.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_c_actor.html#a5b809919e776463bc915c5166282493b">   76</a></span>&#160;    <span class="keywordtype">bool</span>                                <a class="code" href="class_c_actor.html#a5b809919e776463bc915c5166282493b">m_IsPlayCameraShake</a>;<span class="comment">// カメラを揺らすかどうか.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef ACTOR_H.</span></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_actor_html_a114e2a11ec99c15ea17d5a20ab6a089b"><div class="ttname"><a href="class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b">CActor::GetCollManager</a></div><div class="ttdeci">CCollisionManager * GetCollManager()</div><div class="ttdef"><b>Definition:</b> Actor.h:52</div></div>
+<div class="ttc" id="aclass_c_actor_html_a2157d9ebb794373d092ebfa6892cbb0e"><div class="ttname"><a href="class_c_actor.html#a2157d9ebb794373d092ebfa6892cbb0e">CActor::SetParalysisTime</a></div><div class="ttdeci">virtual void SetParalysisTime(const std::function&lt; void(float &amp;)&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> Actor.h:38</div></div>
+<div class="ttc" id="aclass_c_actor_html_a22436a9e69474d47f31ac81fa192ba4b"><div class="ttname"><a href="class_c_actor.html#a22436a9e69474d47f31ac81fa192ba4b">CActor::CActor</a></div><div class="ttdeci">CActor()</div><div class="ttdef"><b>Definition:</b> Actor.cpp:5</div></div>
+<div class="ttc" id="aclass_c_actor_html_a29421b3908b94cc34745430bb7662866"><div class="ttname"><a href="class_c_actor.html#a29421b3908b94cc34745430bb7662866">CActor::LifeCalculation</a></div><div class="ttdeci">virtual void LifeCalculation(const std::function&lt; void(float &amp;, bool &amp;)&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> Actor.h:30</div></div>
+<div class="ttc" id="aclass_c_actor_html_a4004a424bf1c9bd5ab9fc64572c9a69a"><div class="ttname"><a href="class_c_actor.html#a4004a424bf1c9bd5ab9fc64572c9a69a">CActor::m_pBoxWall</a></div><div class="ttdeci">SBoxWall * m_pBoxWall</div><div class="ttdef"><b>Definition:</b> Actor.h:71</div></div>
+<div class="ttc" id="aclass_c_actor_html_a43d6bdb6d04d54e12c45306020a5d3e1"><div class="ttname"><a href="class_c_actor.html#a43d6bdb6d04d54e12c45306020a5d3e1">CActor::m_IsPossibleToHit</a></div><div class="ttdeci">bool m_IsPossibleToHit</div><div class="ttdef"><b>Definition:</b> Actor.h:75</div></div>
+<div class="ttc" id="aclass_c_actor_html_a5b809919e776463bc915c5166282493b"><div class="ttname"><a href="class_c_actor.html#a5b809919e776463bc915c5166282493b">CActor::m_IsPlayCameraShake</a></div><div class="ttdeci">bool m_IsPlayCameraShake</div><div class="ttdef"><b>Definition:</b> Actor.h:76</div></div>
+<div class="ttc" id="aclass_c_actor_html_a6242dc54a323ee9e651d98842d059dad"><div class="ttname"><a href="class_c_actor.html#a6242dc54a323ee9e651d98842d059dad">CActor::SetSPEffectTime</a></div><div class="ttdeci">virtual void SetSPEffectTime(const std::function&lt; void(float &amp;, float &amp;)&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> Actor.h:32</div></div>
+<div class="ttc" id="aclass_c_actor_html_a6a29f813106184e1ab32e915018c6690"><div class="ttname"><a href="class_c_actor.html#a6a29f813106184e1ab32e915018c6690">CActor::IsPossibleToHit</a></div><div class="ttdeci">bool IsPossibleToHit()</div><div class="ttdef"><b>Definition:</b> Actor.h:54</div></div>
+<div class="ttc" id="aclass_c_actor_html_a6c8e8a67b229845e27f90ab4e21bd758"><div class="ttname"><a href="class_c_actor.html#a6c8e8a67b229845e27f90ab4e21bd758">CActor::SetBoxWall</a></div><div class="ttdeci">void SetBoxWall(SBoxWall *box)</div><div class="ttdef"><b>Definition:</b> Actor.h:49</div></div>
+<div class="ttc" id="aclass_c_actor_html_a788304eb4f7cb0170630b74dbef108f3"><div class="ttname"><a href="class_c_actor.html#a788304eb4f7cb0170630b74dbef108f3">CActor::ResumeAnimation</a></div><div class="ttdeci">virtual void ResumeAnimation()</div><div class="ttdef"><b>Definition:</b> Actor.h:46</div></div>
+<div class="ttc" id="aclass_c_actor_html_a8625400f65db4910b23c6d820fea0e35"><div class="ttname"><a href="class_c_actor.html#a8625400f65db4910b23c6d820fea0e35">CActor::Collision</a></div><div class="ttdeci">virtual void Collision(CActor *pActor)=0</div></div>
+<div class="ttc" id="aclass_c_actor_html_a8f13e3f445df91bf165008a332657b1b"><div class="ttname"><a href="class_c_actor.html#a8f13e3f445df91bf165008a332657b1b">CActor::IsCrashedWall</a></div><div class="ttdeci">bool IsCrashedWall()</div><div class="ttdef"><b>Definition:</b> Actor.cpp:21</div></div>
+<div class="ttc" id="aclass_c_actor_html_a900797b3a5c7cf6049b841c860032328"><div class="ttname"><a href="class_c_actor.html#a900797b3a5c7cf6049b841c860032328">CActor::SetAttackEffectTime</a></div><div class="ttdeci">virtual void SetAttackEffectTime(const std::function&lt; void(float &amp;, float &amp;)&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> Actor.h:34</div></div>
+<div class="ttc" id="aclass_c_actor_html_a927e61ab03964140ff456f6955fca74c"><div class="ttname"><a href="class_c_actor.html#a927e61ab03964140ff456f6955fca74c">CActor::IsPlayCameraShake</a></div><div class="ttdeci">bool IsPlayCameraShake()</div><div class="ttdef"><b>Definition:</b> Actor.h:59</div></div>
+<div class="ttc" id="aclass_c_actor_html_a9e4ade532df05c70266d698e0a56ba57"><div class="ttname"><a href="class_c_actor.html#a9e4ade532df05c70266d698e0a56ba57">CActor::SetTargetPos</a></div><div class="ttdeci">virtual void SetTargetPos(CActor &amp;actor)</div><div class="ttdef"><b>Definition:</b> Actor.h:40</div></div>
+<div class="ttc" id="aclass_c_actor_html_aa1e53267f2dee4ebf9ad4dc508fc3411"><div class="ttname"><a href="class_c_actor.html#aa1e53267f2dee4ebf9ad4dc508fc3411">CActor::IsCrashedWallX</a></div><div class="ttdeci">bool IsCrashedWallX()</div><div class="ttdef"><b>Definition:</b> Actor.cpp:31</div></div>
+<div class="ttc" id="aclass_c_actor_html_ac4c7d2514100b7b7f8c819c1d0fa5bb8"><div class="ttname"><a href="class_c_actor.html#ac4c7d2514100b7b7f8c819c1d0fa5bb8">CActor::EffectRender</a></div><div class="ttdeci">virtual void EffectRender()</div><div class="ttdef"><b>Definition:</b> Actor.h:25</div></div>
+<div class="ttc" id="aclass_c_actor_html_ad25664050ec3eacb9cd67c51b918d703"><div class="ttname"><a href="class_c_actor.html#ad25664050ec3eacb9cd67c51b918d703">CActor::SetMoveSpeedEffectTime</a></div><div class="ttdeci">virtual void SetMoveSpeedEffectTime(const std::function&lt; void(float &amp;, float &amp;)&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> Actor.h:36</div></div>
+<div class="ttc" id="aclass_c_actor_html_ad3b806087fc892991fbfa6d3a6a7481b"><div class="ttname"><a href="class_c_actor.html#ad3b806087fc892991fbfa6d3a6a7481b">CActor::SetVector</a></div><div class="ttdeci">virtual void SetVector(const D3DXVECTOR3 &amp;vec)</div><div class="ttdef"><b>Definition:</b> Actor.h:42</div></div>
+<div class="ttc" id="aclass_c_actor_html_adbb1bf6eff992a063f1a926896991e2e"><div class="ttname"><a href="class_c_actor.html#adbb1bf6eff992a063f1a926896991e2e">CActor::IsCrashedWallZ</a></div><div class="ttdeci">bool IsCrashedWallZ()</div><div class="ttdef"><b>Definition:</b> Actor.cpp:40</div></div>
+<div class="ttc" id="aclass_c_actor_html_adca86a138fd9af275352336848ebad27"><div class="ttname"><a href="class_c_actor.html#adca86a138fd9af275352336848ebad27">CActor::~CActor</a></div><div class="ttdeci">virtual ~CActor()</div><div class="ttdef"><b>Definition:</b> Actor.cpp:16</div></div>
+<div class="ttc" id="aclass_c_actor_html_ae7697e329ccac87a1f4aa7940b4c158d"><div class="ttname"><a href="class_c_actor.html#ae7697e329ccac87a1f4aa7940b4c158d">CActor::StopAnimation</a></div><div class="ttdeci">virtual void StopAnimation()</div><div class="ttdef"><b>Definition:</b> Actor.h:44</div></div>
+<div class="ttc" id="aclass_c_actor_html_afc43e8ccd0d1b0e83b12eb1589109264"><div class="ttname"><a href="class_c_actor.html#afc43e8ccd0d1b0e83b12eb1589109264">CActor::m_pCollManager</a></div><div class="ttdeci">std::shared_ptr&lt; CCollisionManager &gt; m_pCollManager</div><div class="ttdef"><b>Definition:</b> Actor.h:70</div></div>
+<div class="ttc" id="aclass_c_collision_manager_html"><div class="ttname"><a href="class_c_collision_manager.html">CCollisionManager</a></div><div class="ttdef"><b>Definition:</b> CollsionManager.h:20</div></div>
+<div class="ttc" id="aclass_c_game_object_html"><div class="ttname"><a href="class_c_game_object.html">CGameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:17</div></div>
+<div class="ttc" id="astruct_s_box_wall_html"><div class="ttname"><a href="struct_s_box_wall.html">SBoxWall</a></div><div class="ttdef"><b>Definition:</b> BoxStruct.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

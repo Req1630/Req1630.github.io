@@ -1,0 +1,5 @@
+<map id="CSpriteResource::GetSprite" name="CSpriteResource::GetSprite">
+<area shape="rect" id="node1" title=" " alt="" coords="212,31,395,57"/>
+<area shape="rect" id="node2" href="$class_c_clear_widget.html#aa8c79de230b15a01ca8af88ae6c17bc8" title=" " alt="" coords="21,5,148,32"/>
+<area shape="rect" id="node3" href="$class_c_game_over_widget.html#a9814264bc421a51ba83fe59236216af1" title=" " alt="" coords="5,56,164,83"/>
+</map>

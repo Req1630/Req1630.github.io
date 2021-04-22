@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/SceneEvent/EventBase/EventBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_d5eb6f61727a39f28d47f2a374b6924a.html">SceneEvent</a></li><li class="navelem"><a class="el" href="dir_60ed6017cc6bcf41a11a87e2f0dca869.html">EventBase</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EventBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_event_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EVENT_BASE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EVENT_BASE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stack&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/***********************************</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*   イベントシーン元クラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_event_base.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_event_base.html">CEventBase</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_event_base.html#af5e378bac40d683c22eabf3ff0bae703">   17</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>   <a class="code" href="class_c_event_base.html#af5e378bac40d683c22eabf3ff0bae703">SKIP_WAIT_COUNT</a> = 100;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_c_event_base.html#a06443cd7781027757ac957e9a9367b5e">CEventBase</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_event_base.html#ab6ed0a462e346ccacebcc43fbc68c315">~CEventBase</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// 読込関数.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_c_event_base.html#af4aec5cd69c4d68795ea72c14e08bbe3">   24</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_event_base.html#af4aec5cd69c4d68795ea72c14e08bbe3">Load</a>() = 0;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_event_base.html#aede9c083de1d11613e581fe50e1223a2">   26</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_base.html#aede9c083de1d11613e581fe50e1223a2">Update</a>() = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a7d509eed157f524b6d6dd26952e2ae6e">   28</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_base.html#a7d509eed157f524b6d6dd26952e2ae6e">Render</a>() = 0;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a4fd38db270601d6fb9d2914812234660">   30</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_base.html#a4fd38db270601d6fb9d2914812234660">SpriteRender</a>() = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// イベントの終了を取得.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a139188e6445981c546021a9df17f43ec">   32</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_event_base.html#a139188e6445981c546021a9df17f43ec">GetIsEventEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_event_base.html#a66c19dee3808026df3d6fd4ee9bfa222">m_IsEventEnd</a>; };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 目的地へのの移動.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_event_base.html#ad439ee96beb897a563aed14f4c0cc9be">MoveDestination</a>(D3DXVECTOR3&amp; vMyPosition, <span class="keyword">const</span> D3DXVECTOR3&amp; vDestination, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; speed);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_event_base.html#ad439ee96beb897a563aed14f4c0cc9be">MoveDestination</a>(<span class="keywordtype">float</span>&amp; MyPosition, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Destination, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; speed);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 次のシーンに進める.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_event_base.html#ade1e2949e4215f936a4b131e2dfa6f00">   40</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_base.html#ade1e2949e4215f936a4b131e2dfa6f00">NextStep</a>() = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// スキップ.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a5aa9b1d491c99cc26f0faec08b5770cb">   42</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_base.html#a5aa9b1d491c99cc26f0faec08b5770cb">Skip</a>() = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a66c19dee3808026df3d6fd4ee9bfa222">   45</a></span>&#160;    <span class="keywordtype">bool</span>    <a class="code" href="class_c_event_base.html#a66c19dee3808026df3d6fd4ee9bfa222">m_IsEventEnd</a>;       <span class="comment">// イベントが終了したか.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a7c00f0ef01c540d64f733a97e37a020b">   46</a></span>&#160;    <span class="keywordtype">bool</span>    <a class="code" href="class_c_event_base.html#a7c00f0ef01c540d64f733a97e37a020b">m_IsSkip</a>;           <span class="comment">// スキップしたか.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_c_event_base.html#ac199e7e8c0f96fdd6993b85fc010cf26">   47</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="class_c_event_base.html#ac199e7e8c0f96fdd6993b85fc010cf26">m_SkipWaitCount</a>;    <span class="comment">// スキップするまでの時間.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_event_base.html#a6071ed9feec06122a84001a3e7e30406">   48</a></span>&#160;    <span class="keywordtype">bool</span>    <a class="code" href="class_c_event_base.html#a6071ed9feec06122a84001a3e7e30406">m_IsSkipFadeOut</a>;    <span class="comment">// スキップ後フェードアウトをしたか.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef SCENE_EVENT_BASE_H.</span></div>
+<div class="ttc" id="aclass_c_event_base_html"><div class="ttname"><a href="class_c_event_base.html">CEventBase</a></div><div class="ttdef"><b>Definition:</b> EventBase.h:15</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a06443cd7781027757ac957e9a9367b5e"><div class="ttname"><a href="class_c_event_base.html#a06443cd7781027757ac957e9a9367b5e">CEventBase::CEventBase</a></div><div class="ttdeci">CEventBase()</div><div class="ttdef"><b>Definition:</b> EventBase.cpp:6</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a139188e6445981c546021a9df17f43ec"><div class="ttname"><a href="class_c_event_base.html#a139188e6445981c546021a9df17f43ec">CEventBase::GetIsEventEnd</a></div><div class="ttdeci">bool GetIsEventEnd() const</div><div class="ttdef"><b>Definition:</b> EventBase.h:32</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a4fd38db270601d6fb9d2914812234660"><div class="ttname"><a href="class_c_event_base.html#a4fd38db270601d6fb9d2914812234660">CEventBase::SpriteRender</a></div><div class="ttdeci">virtual void SpriteRender()=0</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a5aa9b1d491c99cc26f0faec08b5770cb"><div class="ttname"><a href="class_c_event_base.html#a5aa9b1d491c99cc26f0faec08b5770cb">CEventBase::Skip</a></div><div class="ttdeci">virtual void Skip()=0</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a6071ed9feec06122a84001a3e7e30406"><div class="ttname"><a href="class_c_event_base.html#a6071ed9feec06122a84001a3e7e30406">CEventBase::m_IsSkipFadeOut</a></div><div class="ttdeci">bool m_IsSkipFadeOut</div><div class="ttdef"><b>Definition:</b> EventBase.h:48</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a66c19dee3808026df3d6fd4ee9bfa222"><div class="ttname"><a href="class_c_event_base.html#a66c19dee3808026df3d6fd4ee9bfa222">CEventBase::m_IsEventEnd</a></div><div class="ttdeci">bool m_IsEventEnd</div><div class="ttdef"><b>Definition:</b> EventBase.h:45</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a7c00f0ef01c540d64f733a97e37a020b"><div class="ttname"><a href="class_c_event_base.html#a7c00f0ef01c540d64f733a97e37a020b">CEventBase::m_IsSkip</a></div><div class="ttdeci">bool m_IsSkip</div><div class="ttdef"><b>Definition:</b> EventBase.h:46</div></div>
+<div class="ttc" id="aclass_c_event_base_html_a7d509eed157f524b6d6dd26952e2ae6e"><div class="ttname"><a href="class_c_event_base.html#a7d509eed157f524b6d6dd26952e2ae6e">CEventBase::Render</a></div><div class="ttdeci">virtual void Render()=0</div></div>
+<div class="ttc" id="aclass_c_event_base_html_ab6ed0a462e346ccacebcc43fbc68c315"><div class="ttname"><a href="class_c_event_base.html#ab6ed0a462e346ccacebcc43fbc68c315">CEventBase::~CEventBase</a></div><div class="ttdeci">virtual ~CEventBase()</div><div class="ttdef"><b>Definition:</b> EventBase.cpp:14</div></div>
+<div class="ttc" id="aclass_c_event_base_html_ac199e7e8c0f96fdd6993b85fc010cf26"><div class="ttname"><a href="class_c_event_base.html#ac199e7e8c0f96fdd6993b85fc010cf26">CEventBase::m_SkipWaitCount</a></div><div class="ttdeci">int m_SkipWaitCount</div><div class="ttdef"><b>Definition:</b> EventBase.h:47</div></div>
+<div class="ttc" id="aclass_c_event_base_html_ad439ee96beb897a563aed14f4c0cc9be"><div class="ttname"><a href="class_c_event_base.html#ad439ee96beb897a563aed14f4c0cc9be">CEventBase::MoveDestination</a></div><div class="ttdeci">bool MoveDestination(D3DXVECTOR3 &amp;vMyPosition, const D3DXVECTOR3 &amp;vDestination, const float &amp;speed)</div><div class="ttdef"><b>Definition:</b> EventBase.cpp:19</div></div>
+<div class="ttc" id="aclass_c_event_base_html_ade1e2949e4215f936a4b131e2dfa6f00"><div class="ttname"><a href="class_c_event_base.html#ade1e2949e4215f936a4b131e2dfa6f00">CEventBase::NextStep</a></div><div class="ttdeci">virtual void NextStep()=0</div></div>
+<div class="ttc" id="aclass_c_event_base_html_aede9c083de1d11613e581fe50e1223a2"><div class="ttname"><a href="class_c_event_base.html#aede9c083de1d11613e581fe50e1223a2">CEventBase::Update</a></div><div class="ttdeci">virtual void Update()=0</div></div>
+<div class="ttc" id="aclass_c_event_base_html_af4aec5cd69c4d68795ea72c14e08bbe3"><div class="ttname"><a href="class_c_event_base.html#af4aec5cd69c4d68795ea72c14e08bbe3">CEventBase::Load</a></div><div class="ttdeci">virtual bool Load()=0</div></div>
+<div class="ttc" id="aclass_c_event_base_html_af5e378bac40d683c22eabf3ff0bae703"><div class="ttname"><a href="class_c_event_base.html#af5e378bac40d683c22eabf3ff0bae703">CEventBase::SKIP_WAIT_COUNT</a></div><div class="ttdeci">const int SKIP_WAIT_COUNT</div><div class="ttdef"><b>Definition:</b> EventBase.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

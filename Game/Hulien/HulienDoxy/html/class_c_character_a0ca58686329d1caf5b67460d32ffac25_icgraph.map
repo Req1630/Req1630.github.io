@@ -1,0 +1,31 @@
+<map id="CCharacter::SetAnimation" name="CCharacter::SetAnimation">
+<area shape="rect" id="node1" title=" " alt="" coords="667,411,840,437"/>
+<area shape="rect" id="node2" href="$class_c_alien.html#a6c785d2dd027ffe20c03650962686d86" title=" " alt="" coords="445,107,599,133"/>
+<area shape="rect" id="node7" href="$class_c_edit_alien.html#a3a7a2490a9fd641d8fee9cc4c7dfecb4" title=" " alt="" coords="459,157,585,184"/>
+<area shape="rect" id="node8" href="$class_c_alien.html#acf0cd7c9b3782f6d3a0ceac31b374370" title=" " alt="" coords="466,259,578,285"/>
+<area shape="rect" id="node18" href="$class_c_edit_alien.html#ad34814991ef2c53d332e3faad0292bc8" title=" " alt="" coords="455,411,589,437"/>
+<area shape="rect" id="node19" href="$class_c_edit_alien.html#a40ddb54482c9d9a935aaff61d9fac00a" title=" " alt="" coords="460,461,584,488"/>
+<area shape="rect" id="node20" href="$class_c_alien.html#a1946d8f4f02e7e0fb1a88d43b29e6d48" title=" " alt="" coords="453,56,591,83"/>
+<area shape="rect" id="node21" href="$class_c_alien.html#a5c7dc9392283b72bc60858a2f4a5f071" title=" " alt="" coords="455,309,589,336"/>
+<area shape="rect" id="node22" href="$class_c_alien.html#abd25ee3c188d8bdda4f1b16c6a5c67ba" title=" " alt="" coords="446,512,598,539"/>
+<area shape="rect" id="node23" href="$class_c_alien.html#afa501215cc5ab04525e6d04848f26211" title=" " alt="" coords="473,360,571,387"/>
+<area shape="rect" id="node24" href="$class_c_edit_alien_d.html#a462312c675e8b65fa77cf66c032ae352" title=" " alt="" coords="440,563,604,589"/>
+<area shape="rect" id="node25" href="$class_c_edit_alien.html#ad5c6b0d0bc4f726ed82a19accbc79b1a" title=" " alt="" coords="447,613,597,640"/>
+<area shape="rect" id="node26" href="$class_c_edit_alien.html#abcb818cd8be46ec4cc254628cb579c05" title=" " alt="" coords="447,664,597,691"/>
+<area shape="rect" id="node27" href="$class_c_edit_alien.html#afd5171228c8c6984ba79e581cd5b6a6c" title=" " alt="" coords="425,715,619,741"/>
+<area shape="rect" id="node28" href="$class_c_alien.html#a174ca2add92fa856cf797d0639319c38" title=" " alt="" coords="460,208,584,235"/>
+<area shape="rect" id="node29" href="$class_c_edit_alien.html#aa2a2b2eccd0155882343a525f6807b80" title=" " alt="" coords="449,765,595,792"/>
+<area shape="rect" id="node3" href="$class_c_alien_a.html#a9aa225c985523b7d278d7b70fbdc6c42" title=" " alt="" coords="223,5,349,32"/>
+<area shape="rect" id="node4" href="$class_c_alien_b.html#aefc4bbcf0e2f6714c064044c5bb7975c" title=" " alt="" coords="223,56,349,83"/>
+<area shape="rect" id="node5" href="$class_c_alien_c.html#a55f96185e31feca5fbac9e512f04852a" title=" " alt="" coords="223,107,349,133"/>
+<area shape="rect" id="node6" href="$class_c_alien_d.html#a807af82a93562ae26ff07297b9c4d888" title=" " alt="" coords="223,157,349,184"/>
+<area shape="rect" id="node9" href="$class_c_alien.html#a1b6be164c4d7aae894213bc5d5089861" title=" " alt="" coords="195,284,377,311"/>
+<area shape="rect" id="node10" href="$class_c_alien_a.html#affaf75d3957ad2e1528c1fe654dee22c" title=" " alt="" coords="17,107,135,133"/>
+<area shape="rect" id="node11" href="$class_c_alien_b.html#a435884680c7ec02ab9340986a9b96d8d" title=" " alt="" coords="17,157,135,184"/>
+<area shape="rect" id="node12" href="$class_c_alien_c.html#a5d342002c64f4ed64a40759fee37fae5" title=" " alt="" coords="17,208,135,235"/>
+<area shape="rect" id="node13" href="$class_c_alien_d.html#a79472e7cf873953715ad3b53f783e58c" title=" " alt="" coords="17,259,135,285"/>
+<area shape="rect" id="node14" href="$class_c_edit_alien_a.html#a15539142a93df16f387aaecd95fa5b1f" title=" " alt="" coords="5,309,147,336"/>
+<area shape="rect" id="node15" href="$class_c_edit_alien_b.html#ac161df08e1498674f61cd642e6dfce3e" title=" " alt="" coords="5,360,147,387"/>
+<area shape="rect" id="node16" href="$class_c_edit_alien_c.html#a5ee56b1c583ba78a99a443e1b03b679a" title=" " alt="" coords="5,411,147,437"/>
+<area shape="rect" id="node17" href="$class_c_edit_alien_d.html#a06abde27d281643510a2510890c0c21c" title=" " alt="" coords="5,461,147,488"/>
+</map>

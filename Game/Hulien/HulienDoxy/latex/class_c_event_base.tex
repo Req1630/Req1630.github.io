@@ -1,0 +1,184 @@
+\hypertarget{class_c_event_base}{}\doxysection{CEvent\+Base クラス}
+\label{class_c_event_base}\index{CEventBase@{CEventBase}}
+
+
+{\ttfamily \#include $<$Event\+Base.\+h$>$}
+
+
+
+CEvent\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_base__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_base_a06443cd7781027757ac957e9a9367b5e}{CEvent\+Base}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_base_ab6ed0a462e346ccacebcc43fbc68c315}{$\sim$\+CEvent\+Base}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_event_base_af4aec5cd69c4d68795ea72c14e08bbe3}{Load}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_event_base_aede9c083de1d11613e581fe50e1223a2}{Update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_event_base_a7d509eed157f524b6d6dd26952e2ae6e}{Render}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_event_base_a4fd38db270601d6fb9d2914812234660}{Sprite\+Render}} ()=0
+\item 
+bool \mbox{\hyperlink{class_c_event_base_a139188e6445981c546021a9df17f43ec}{Get\+Is\+Event\+End}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_c_event_base_ad439ee96beb897a563aed14f4c0cc9be}{Move\+Destination}} (D3\+DXVECTOR3 \&v\+My\+Position, const D3\+DXVECTOR3 \&v\+Destination, const float \&speed)
+\item 
+bool \mbox{\hyperlink{class_c_event_base_a4a339c1d6730e9d57c3fbc22174708d2}{Move\+Destination}} (float \&My\+Position, const float \&Destination, const float \&speed)
+\item 
+virtual void \mbox{\hyperlink{class_c_event_base_ade1e2949e4215f936a4b131e2dfa6f00}{Next\+Step}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_event_base_a5aa9b1d491c99cc26f0faec08b5770cb}{Skip}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_c_event_base_af5e378bac40d683c22eabf3ff0bae703}{SKIP\+\_\+\+WAIT\+\_\+\+COUNT}} = 100
+\item 
+bool \mbox{\hyperlink{class_c_event_base_a66c19dee3808026df3d6fd4ee9bfa222}{m\+\_\+\+Is\+Event\+End}}
+\item 
+bool \mbox{\hyperlink{class_c_event_base_a7c00f0ef01c540d64f733a97e37a020b}{m\+\_\+\+Is\+Skip}}
+\item 
+int \mbox{\hyperlink{class_c_event_base_ac199e7e8c0f96fdd6993b85fc010cf26}{m\+\_\+\+Skip\+Wait\+Count}}
+\item 
+bool \mbox{\hyperlink{class_c_event_base_a6071ed9feec06122a84001a3e7e30406}{m\+\_\+\+Is\+Skip\+Fade\+Out}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_base_a06443cd7781027757ac957e9a9367b5e}\label{class_c_event_base_a06443cd7781027757ac957e9a9367b5e}} 
+\index{CEventBase@{CEventBase}!CEventBase@{CEventBase}}
+\index{CEventBase@{CEventBase}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{CEventBase()}{CEventBase()}}
+{\footnotesize\ttfamily CEvent\+Base\+::\+CEvent\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_base_ab6ed0a462e346ccacebcc43fbc68c315}\label{class_c_event_base_ab6ed0a462e346ccacebcc43fbc68c315}} 
+\index{CEventBase@{CEventBase}!````~CEventBase@{$\sim$CEventBase}}
+\index{````~CEventBase@{$\sim$CEventBase}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventBase()}{~CEventBase()}}
+{\footnotesize\ttfamily CEvent\+Base\+::$\sim$\+CEvent\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_base_a139188e6445981c546021a9df17f43ec}\label{class_c_event_base_a139188e6445981c546021a9df17f43ec}} 
+\index{CEventBase@{CEventBase}!GetIsEventEnd@{GetIsEventEnd}}
+\index{GetIsEventEnd@{GetIsEventEnd}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{GetIsEventEnd()}{GetIsEventEnd()}}
+{\footnotesize\ttfamily bool CEvent\+Base\+::\+Get\+Is\+Event\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_base_af4aec5cd69c4d68795ea72c14e08bbe3}\label{class_c_event_base_af4aec5cd69c4d68795ea72c14e08bbe3}} 
+\index{CEventBase@{CEventBase}!Load@{Load}}
+\index{Load@{Load}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual bool CEvent\+Base\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_a4ea7ca47cd2a3fbe768a40408fbc807c}{CGame\+Start\+Event}}, \mbox{\hyperlink{class_c_game_over_event_a97f5e3a7bcec69ed6a3e5be735e2a648}{CGame\+Over\+Event}}, \mbox{\hyperlink{class_c_game_clear_event_a1dab676fd2def2f7fd4236632a851102}{CGame\+Clear\+Event}}で実装されています。
+
+\mbox{\Hypertarget{class_c_event_base_ad439ee96beb897a563aed14f4c0cc9be}\label{class_c_event_base_ad439ee96beb897a563aed14f4c0cc9be}} 
+\index{CEventBase@{CEventBase}!MoveDestination@{MoveDestination}}
+\index{MoveDestination@{MoveDestination}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{MoveDestination()}{MoveDestination()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool CEvent\+Base\+::\+Move\+Destination (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 \&}]{v\+My\+Position,  }\item[{const D3\+DXVECTOR3 \&}]{v\+Destination,  }\item[{const float \&}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_base_a4a339c1d6730e9d57c3fbc22174708d2}\label{class_c_event_base_a4a339c1d6730e9d57c3fbc22174708d2}} 
+\index{CEventBase@{CEventBase}!MoveDestination@{MoveDestination}}
+\index{MoveDestination@{MoveDestination}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{MoveDestination()}{MoveDestination()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool CEvent\+Base\+::\+Move\+Destination (\begin{DoxyParamCaption}\item[{float \&}]{My\+Position,  }\item[{const float \&}]{Destination,  }\item[{const float \&}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_base_ade1e2949e4215f936a4b131e2dfa6f00}\label{class_c_event_base_ade1e2949e4215f936a4b131e2dfa6f00}} 
+\index{CEventBase@{CEventBase}!NextStep@{NextStep}}
+\index{NextStep@{NextStep}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{NextStep()}{NextStep()}}
+{\footnotesize\ttfamily virtual void CEvent\+Base\+::\+Next\+Step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_c_event_base_a7d509eed157f524b6d6dd26952e2ae6e}\label{class_c_event_base_a7d509eed157f524b6d6dd26952e2ae6e}} 
+\index{CEventBase@{CEventBase}!Render@{Render}}
+\index{Render@{Render}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void CEvent\+Base\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_ade22eafa89f02ee431f2499e1c8283e9}{CGame\+Start\+Event}}, \mbox{\hyperlink{class_c_game_over_event_adfe2d98e7f540960cfcefdb98272d046}{CGame\+Over\+Event}}, \mbox{\hyperlink{class_c_game_clear_event_a09ec8c22f571eb5673c4462742b64e29}{CGame\+Clear\+Event}}で実装されています。
+
+\mbox{\Hypertarget{class_c_event_base_a5aa9b1d491c99cc26f0faec08b5770cb}\label{class_c_event_base_a5aa9b1d491c99cc26f0faec08b5770cb}} 
+\index{CEventBase@{CEventBase}!Skip@{Skip}}
+\index{Skip@{Skip}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{Skip()}{Skip()}}
+{\footnotesize\ttfamily virtual void CEvent\+Base\+::\+Skip (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_c_event_base_a4fd38db270601d6fb9d2914812234660}\label{class_c_event_base_a4fd38db270601d6fb9d2914812234660}} 
+\index{CEventBase@{CEventBase}!SpriteRender@{SpriteRender}}
+\index{SpriteRender@{SpriteRender}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{SpriteRender()}{SpriteRender()}}
+{\footnotesize\ttfamily virtual void CEvent\+Base\+::\+Sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_a893554b965e2ebafe0754616a021129a}{CGame\+Start\+Event}}, \mbox{\hyperlink{class_c_game_over_event_a4ed2558a1d14cf4b77417fd8c2c99020}{CGame\+Over\+Event}}, \mbox{\hyperlink{class_c_game_clear_event_a053277be43ed1ba0948031796b424871}{CGame\+Clear\+Event}}で実装されています。
+
+\mbox{\Hypertarget{class_c_event_base_aede9c083de1d11613e581fe50e1223a2}\label{class_c_event_base_aede9c083de1d11613e581fe50e1223a2}} 
+\index{CEventBase@{CEventBase}!Update@{Update}}
+\index{Update@{Update}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void CEvent\+Base\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_start_event_a44aa45592fbd79f89661b036b4a7d12e}{CGame\+Start\+Event}}, \mbox{\hyperlink{class_c_game_over_event_a012024d4d6f9c5e20947eeff499cf605}{CGame\+Over\+Event}}, \mbox{\hyperlink{class_c_game_clear_event_a4631a059503a2b7c71f6767f419b62c2}{CGame\+Clear\+Event}}で実装されています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_event_base_a66c19dee3808026df3d6fd4ee9bfa222}\label{class_c_event_base_a66c19dee3808026df3d6fd4ee9bfa222}} 
+\index{CEventBase@{CEventBase}!m\_IsEventEnd@{m\_IsEventEnd}}
+\index{m\_IsEventEnd@{m\_IsEventEnd}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{m\_IsEventEnd}{m\_IsEventEnd}}
+{\footnotesize\ttfamily bool CEvent\+Base\+::m\+\_\+\+Is\+Event\+End\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_base_a7c00f0ef01c540d64f733a97e37a020b}\label{class_c_event_base_a7c00f0ef01c540d64f733a97e37a020b}} 
+\index{CEventBase@{CEventBase}!m\_IsSkip@{m\_IsSkip}}
+\index{m\_IsSkip@{m\_IsSkip}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{m\_IsSkip}{m\_IsSkip}}
+{\footnotesize\ttfamily bool CEvent\+Base\+::m\+\_\+\+Is\+Skip\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_base_a6071ed9feec06122a84001a3e7e30406}\label{class_c_event_base_a6071ed9feec06122a84001a3e7e30406}} 
+\index{CEventBase@{CEventBase}!m\_IsSkipFadeOut@{m\_IsSkipFadeOut}}
+\index{m\_IsSkipFadeOut@{m\_IsSkipFadeOut}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{m\_IsSkipFadeOut}{m\_IsSkipFadeOut}}
+{\footnotesize\ttfamily bool CEvent\+Base\+::m\+\_\+\+Is\+Skip\+Fade\+Out\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_base_ac199e7e8c0f96fdd6993b85fc010cf26}\label{class_c_event_base_ac199e7e8c0f96fdd6993b85fc010cf26}} 
+\index{CEventBase@{CEventBase}!m\_SkipWaitCount@{m\_SkipWaitCount}}
+\index{m\_SkipWaitCount@{m\_SkipWaitCount}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{m\_SkipWaitCount}{m\_SkipWaitCount}}
+{\footnotesize\ttfamily int CEvent\+Base\+::m\+\_\+\+Skip\+Wait\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_base_af5e378bac40d683c22eabf3ff0bae703}\label{class_c_event_base_af5e378bac40d683c22eabf3ff0bae703}} 
+\index{CEventBase@{CEventBase}!SKIP\_WAIT\_COUNT@{SKIP\_WAIT\_COUNT}}
+\index{SKIP\_WAIT\_COUNT@{SKIP\_WAIT\_COUNT}!CEventBase@{CEventBase}}
+\doxysubsubsection{\texorpdfstring{SKIP\_WAIT\_COUNT}{SKIP\_WAIT\_COUNT}}
+{\footnotesize\ttfamily const int CEvent\+Base\+::\+SKIP\+\_\+\+WAIT\+\_\+\+COUNT = 100\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene\+Event/\+Event\+Base/\mbox{\hyperlink{_event_base_8h}{Event\+Base.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene\+Event/\+Event\+Base/\mbox{\hyperlink{_event_base_8cpp}{Event\+Base.\+cpp}}\end{DoxyCompactItemize}

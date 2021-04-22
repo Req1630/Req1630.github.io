@@ -1,0 +1,118 @@
+\hypertarget{class_c_game}{}\doxysection{CGame クラス}
+\label{class_c_game}\index{CGame@{CGame}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+CGame の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_c_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CGame 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_c_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_game_afcca9ca4c58ea7cbac61084e37ae7180}{CGame}} (\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$p\+Scene\+Manager)
+\item 
+virtual \mbox{\hyperlink{class_c_game_a4db10c09035dc16b32d6c1ef4cca2143}{$\sim$\+CGame}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_game_acc8934bf2f3c9c6466405dbd5cba56e3}{Load}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_game_a0ed61556ac846afaef2fc174d89757d6}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_game_a31537642830499ad33e27c3105179b57}{Render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_game_afcca9ca4c58ea7cbac61084e37ae7180}\label{class_c_game_afcca9ca4c58ea7cbac61084e37ae7180}} 
+\index{CGame@{CGame}!CGame@{CGame}}
+\index{CGame@{CGame}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{CGame()}{CGame()}}
+{\footnotesize\ttfamily CGame\+::\+CGame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$}]{p\+Scene\+Manager }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_a4db10c09035dc16b32d6c1ef4cca2143}\label{class_c_game_a4db10c09035dc16b32d6c1ef4cca2143}} 
+\index{CGame@{CGame}!````~CGame@{$\sim$CGame}}
+\index{````~CGame@{$\sim$CGame}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGame()}{~CGame()}}
+{\footnotesize\ttfamily CGame\+::$\sim$\+CGame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_game_acc8934bf2f3c9c6466405dbd5cba56e3}\label{class_c_game_acc8934bf2f3c9c6466405dbd5cba56e3}} 
+\index{CGame@{CGame}!Load@{Load}}
+\index{Load@{Load}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool CGame\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_scene_base_a2f939458091e8be68dd4a2a7797f5ee7}{CScene\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_acc8934bf2f3c9c6466405dbd5cba56e3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_a31537642830499ad33e27c3105179b57}\label{class_c_game_a31537642830499ad33e27c3105179b57}} 
+\index{CGame@{CGame}!Render@{Render}}
+\index{Render@{Render}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CGame\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_scene_base_a72cc6cb52a745200614dd2ea73891f03}{CScene\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_a31537642830499ad33e27c3105179b57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_a0ed61556ac846afaef2fc174d89757d6}\label{class_c_game_a0ed61556ac846afaef2fc174d89757d6}} 
+\index{CGame@{CGame}!Update@{Update}}
+\index{Update@{Update}!CGame@{CGame}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CGame\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_scene_base_a3bf927b04b1ea8ef265d84b04fbaa96c}{CScene\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_a0ed61556ac846afaef2fc174d89757d6_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene/\+Scenes/\+Game/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene/\+Scenes/\+Game/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

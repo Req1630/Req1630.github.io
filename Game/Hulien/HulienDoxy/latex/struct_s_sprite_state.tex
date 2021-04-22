@@ -1,0 +1,160 @@
+\hypertarget{struct_s_sprite_state}{}\doxysection{SSprite\+State 構造体}
+\label{struct_s_sprite_state}\index{SSpriteState@{SSpriteState}}
+
+
+{\ttfamily \#include $<$Sprite\+State.\+h$>$}
+
+
+
+SSprite\+State 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{struct_s_sprite_state__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56}{ESPRITE\+\_\+\+STATE}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0}{None}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a61cdb68c1e5806469517b538d11218b0}{en\+Local\+Pos\+Num}} = 0
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a}{en\+Disp\+\_\+w}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60}{en\+Disp\+\_\+h}}
+, \newline
+\mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e}{en\+Base\+\_\+w}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d}{en\+Base\+\_\+h}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6}{en\+Stride\+\_\+w}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25}{en\+Stride\+\_\+h}}
+, \newline
+\mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224}{env\+Pos\+\_\+x}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1}{env\+Pos\+\_\+y}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156}{env\+Pos\+\_\+z}}
+, \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47}{en\+Anim\+Num}}
+, \newline
+\mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a0e1b98fd4f2baff97e8ed46706269c17}{MAX}} = en\+Anim\+Num
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_s_sprite_state_ae79b6d37a94faac81508bd5f97cb8b8e}{Local\+Pos\+Num}}
+\item 
+\mbox{\hyperlink{struct_w_h_d_i_z_e___f_l_o_a_t}{WHDIZE\+\_\+\+FLOAT}} \mbox{\hyperlink{struct_s_sprite_state_aa717d95760f1a48896ce53b7c451705f}{Disp}}
+\item 
+\mbox{\hyperlink{struct_w_h_d_i_z_e___f_l_o_a_t}{WHDIZE\+\_\+\+FLOAT}} \mbox{\hyperlink{struct_s_sprite_state_aff3bcc9311385bd922bbe045e468359b}{Base}}
+\item 
+\mbox{\hyperlink{struct_w_h_d_i_z_e___f_l_o_a_t}{WHDIZE\+\_\+\+FLOAT}} \mbox{\hyperlink{struct_s_sprite_state_a3e6b7222c5e92c2f477ef75bdf69ee07}{Stride}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{struct_s_sprite_state_acf952e27515cea51b82fcc352480d1f3}{v\+Pos}}
+\item 
+int \mbox{\hyperlink{struct_s_sprite_state_a23b7f76e23de52a9a97abd36752aa980}{Anim\+Num}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56}} 
+\index{SSpriteState@{SSpriteState}!ESPRITE\_STATE@{ESPRITE\_STATE}}
+\index{ESPRITE\_STATE@{ESPRITE\_STATE}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{ESPRITE\_STATE}{ESPRITE\_STATE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56}{SSprite\+State\+::\+ESPRITE\+\_\+\+STATE}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!None@{None}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56aa16031d80b84dd62033d8fed08eb50c0}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enLocalPosNum@{enLocalPosNum}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enLocalPosNum@{enLocalPosNum}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a61cdb68c1e5806469517b538d11218b0}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a61cdb68c1e5806469517b538d11218b0}} 
+en\+Local\+Pos\+Num&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enDisp\_w@{enDisp\_w}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enDisp\_w@{enDisp\_w}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a0ad5ac8974d6919493788e9684f7f36a}} 
+en\+Disp\+\_\+w&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enDisp\_h@{enDisp\_h}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enDisp\_h@{enDisp\_h}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56aabc2952a169b8b07e0acf94a093a3d60}} 
+en\+Disp\+\_\+h&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enBase\_w@{enBase\_w}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enBase\_w@{enBase\_w}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a16c74d54034d5078db99d6cac50a617e}} 
+en\+Base\+\_\+w&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enBase\_h@{enBase\_h}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enBase\_h@{enBase\_h}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a16b91cfbb4b796d71eb3836b72b35a2d}} 
+en\+Base\+\_\+h&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enStride\_w@{enStride\_w}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enStride\_w@{enStride\_w}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a3837cf5982ee1c3a61585656095fa4d6}} 
+en\+Stride\+\_\+w&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enStride\_h@{enStride\_h}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enStride\_h@{enStride\_h}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56ae2a51e2bcdeaa0fe9906bac4d6b55c25}} 
+en\+Stride\+\_\+h&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{envPos\_x@{envPos\_x}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!envPos\_x@{envPos\_x}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a297150e57b9e9710ef7ea872d2626224}} 
+env\+Pos\+\_\+x&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{envPos\_y@{envPos\_y}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!envPos\_y@{envPos\_y}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a806b153ebeb9c87ba8108e8ebd47c6c1}} 
+env\+Pos\+\_\+y&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{envPos\_z@{envPos\_z}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!envPos\_z@{envPos\_z}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a4283e48ad11b07d8614bd2d449602156}} 
+env\+Pos\+\_\+z&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{enAnimNum@{enAnimNum}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!enAnimNum@{enAnimNum}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a079f6b37e111b2f05616121f6fac0a47}} 
+en\+Anim\+Num&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAX@{MAX}!SSpriteState@{SSpriteState}}\index{SSpriteState@{SSpriteState}!MAX@{MAX}}}\mbox{\Hypertarget{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a0e1b98fd4f2baff97e8ed46706269c17}\label{struct_s_sprite_state_ac3004505703f730f62b8141d6f96ec56a0e1b98fd4f2baff97e8ed46706269c17}} 
+MAX&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{struct_s_sprite_state_a23b7f76e23de52a9a97abd36752aa980}\label{struct_s_sprite_state_a23b7f76e23de52a9a97abd36752aa980}} 
+\index{SSpriteState@{SSpriteState}!AnimNum@{AnimNum}}
+\index{AnimNum@{AnimNum}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{AnimNum}{AnimNum}}
+{\footnotesize\ttfamily int SSprite\+State\+::\+Anim\+Num}
+
+\mbox{\Hypertarget{struct_s_sprite_state_aff3bcc9311385bd922bbe045e468359b}\label{struct_s_sprite_state_aff3bcc9311385bd922bbe045e468359b}} 
+\index{SSpriteState@{SSpriteState}!Base@{Base}}
+\index{Base@{Base}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{Base}{Base}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_w_h_d_i_z_e___f_l_o_a_t}{WHDIZE\+\_\+\+FLOAT}} SSprite\+State\+::\+Base}
+
+\mbox{\Hypertarget{struct_s_sprite_state_aa717d95760f1a48896ce53b7c451705f}\label{struct_s_sprite_state_aa717d95760f1a48896ce53b7c451705f}} 
+\index{SSpriteState@{SSpriteState}!Disp@{Disp}}
+\index{Disp@{Disp}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{Disp}{Disp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_w_h_d_i_z_e___f_l_o_a_t}{WHDIZE\+\_\+\+FLOAT}} SSprite\+State\+::\+Disp}
+
+\mbox{\Hypertarget{struct_s_sprite_state_ae79b6d37a94faac81508bd5f97cb8b8e}\label{struct_s_sprite_state_ae79b6d37a94faac81508bd5f97cb8b8e}} 
+\index{SSpriteState@{SSpriteState}!LocalPosNum@{LocalPosNum}}
+\index{LocalPosNum@{LocalPosNum}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{LocalPosNum}{LocalPosNum}}
+{\footnotesize\ttfamily int SSprite\+State\+::\+Local\+Pos\+Num}
+
+\mbox{\Hypertarget{struct_s_sprite_state_a3e6b7222c5e92c2f477ef75bdf69ee07}\label{struct_s_sprite_state_a3e6b7222c5e92c2f477ef75bdf69ee07}} 
+\index{SSpriteState@{SSpriteState}!Stride@{Stride}}
+\index{Stride@{Stride}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{Stride}{Stride}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_w_h_d_i_z_e___f_l_o_a_t}{WHDIZE\+\_\+\+FLOAT}} SSprite\+State\+::\+Stride}
+
+\mbox{\Hypertarget{struct_s_sprite_state_acf952e27515cea51b82fcc352480d1f3}\label{struct_s_sprite_state_acf952e27515cea51b82fcc352480d1f3}} 
+\index{SSpriteState@{SSpriteState}!vPos@{vPos}}
+\index{vPos@{vPos}!SSpriteState@{SSpriteState}}
+\doxysubsubsection{\texorpdfstring{vPos}{vPos}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 SSprite\+State\+::v\+Pos}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Sprite/\mbox{\hyperlink{_sprite_state_8h}{Sprite\+State.\+h}}\end{DoxyCompactItemize}

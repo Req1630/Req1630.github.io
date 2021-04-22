@@ -1,0 +1,317 @@
+\hypertarget{class_c_collision_manager}{}\doxysection{CCollision\+Manager クラス}
+\label{class_c_collision_manager}\index{CCollisionManager@{CCollisionManager}}
+
+
+{\ttfamily \#include $<$Collsion\+Manager.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_collision_manager_a3bcf15796b91c94027e32b6d7090f166}{CCollision\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_c_collision_manager_a307ae4399e444cc70d27a6268e2d3183}{$\sim$\+CCollision\+Manager}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_ab745441286cb42d1655a1fb74caa3af8}{Init}} (LPD3\+DXMESH p\+Mesh, D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_abda2d98615ce33d6979669e1224081b4}{Init\+Sphere}} (LPD3\+DXMESH p\+Mesh, D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale, const D3\+DXVECTOR3 \&adj\+Pos, const float \&adj\+Radius)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_a5b89ea2081f227ad393755cc68975306}{Init\+Sphere}} (D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale, const D3\+DXVECTOR3 \&adj\+Pos, const float \&radius)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_a73dbc56ae6e2ac34d9a18a1c59a55081}{Init\+Box}} (LPD3\+DXMESH p\+Mesh, D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale, const D3\+DXVECTOR3 \&adj\+Pos, const D3\+DXVECTOR3 \&adjlength)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_af90f0762858e8674ad72dc67a602efe5}{Init\+Box}} (D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale, const D3\+DXVECTOR3 \&adj\+Pos, const D3\+DXVECTOR3 \&length)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_a514743a2e9d437e371a2040865d02db9}{Init\+Capsule}} (LPD3\+DXMESH p\+Mesh, D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale, const D3\+DXVECTOR3 \&adj\+Pos, const float \&adj\+Radius, const float \&adj\+Height)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collision_manager_ac553aa2f466286ad30272be39fa35110}{Init\+Capsule}} (D3\+DXVECTOR3 $\ast$p\+Pos, D3\+DXVECTOR3 $\ast$p\+Rot, float $\ast$p\+Scale, const D3\+DXVECTOR3 \&adj\+Pos, const float \&radius, const float \&height)
+\item 
+void \mbox{\hyperlink{class_c_collision_manager_a41eead4cbeb1f68995370ed832558674}{Debug\+Render}} ()
+\item 
+bool \mbox{\hyperlink{class_c_collision_manager_acf6723fe1d2d6f43ae5aaffd4f8bb449}{Is\+Shere\+To\+Shere}} (\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$p\+Manager)
+\item 
+bool \mbox{\hyperlink{class_c_collision_manager_ae53b98ee71aff53614fb6eae0abb2dca}{Is\+OBBTo\+OBB}} (\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$p\+Manager)
+\item 
+bool \mbox{\hyperlink{class_c_collision_manager_a018ac64e047bb16d0b3bb6044d71ffda}{Is\+Capsule\+To\+Capsule}} (\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$p\+Manager)
+\item 
+\mbox{\hyperlink{class_c_sphere_collision}{CSphere\+Collision}} $\ast$ \mbox{\hyperlink{class_c_collision_manager_af29866abc27ca930b4ead85aad79b5be}{Get\+Sphere}} () const
+\item 
+\mbox{\hyperlink{class_c_o_b_box_collision}{COBBox\+Collision}} $\ast$ \mbox{\hyperlink{class_c_collision_manager_aa2010e4225d10daa335edb4aed4c975d}{Get\+OBB}} () const
+\item 
+\mbox{\hyperlink{class_c_capsule_collision}{CCapsule\+Collision}} $\ast$ \mbox{\hyperlink{class_c_collision_manager_a97e7f14b7759584e3c6c0b8df6b6342a}{Get\+Capsule}} () const
+\item 
+void \mbox{\hyperlink{class_c_collision_manager_a28b7bfba75f62fd7056622b5dd059f78}{Set\+Sphere\+Adj\+Position}} (const D3\+DXVECTOR3 \&pos)
+\item 
+void \mbox{\hyperlink{class_c_collision_manager_a0338eae64453fc1a20458bf2c15849ec}{Set\+Sphere\+Adj\+Radius}} (const float \&radius)
+\item 
+void \mbox{\hyperlink{class_c_collision_manager_a88b4147d9b4ffe245c8bf1a36546f799}{Set\+Box\+Adj\+Position}} (const D3\+DXVECTOR3 \&pos)
+\item 
+void \mbox{\hyperlink{class_c_collision_manager_a05b46a01eb4111a55ca7d269292632bf}{Set\+Box\+Adj\+Length}} (const D3\+DXVECTOR3 \&length)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_collision_manager_a3bcf15796b91c94027e32b6d7090f166}\label{class_c_collision_manager_a3bcf15796b91c94027e32b6d7090f166}} 
+\index{CCollisionManager@{CCollisionManager}!CCollisionManager@{CCollisionManager}}
+\index{CCollisionManager@{CCollisionManager}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{CCollisionManager()}{CCollisionManager()}}
+{\footnotesize\ttfamily CCollision\+Manager\+::\+CCollision\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_collision_manager_a307ae4399e444cc70d27a6268e2d3183}\label{class_c_collision_manager_a307ae4399e444cc70d27a6268e2d3183}} 
+\index{CCollisionManager@{CCollisionManager}!````~CCollisionManager@{$\sim$CCollisionManager}}
+\index{````~CCollisionManager@{$\sim$CCollisionManager}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCollisionManager()}{~CCollisionManager()}}
+{\footnotesize\ttfamily CCollision\+Manager\+::$\sim$\+CCollision\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_collision_manager_a41eead4cbeb1f68995370ed832558674}\label{class_c_collision_manager_a41eead4cbeb1f68995370ed832558674}} 
+\index{CCollisionManager@{CCollisionManager}!DebugRender@{DebugRender}}
+\index{DebugRender@{DebugRender}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{DebugRender()}{DebugRender()}}
+{\footnotesize\ttfamily void CCollision\+Manager\+::\+Debug\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_collision_manager_a97e7f14b7759584e3c6c0b8df6b6342a}\label{class_c_collision_manager_a97e7f14b7759584e3c6c0b8df6b6342a}} 
+\index{CCollisionManager@{CCollisionManager}!GetCapsule@{GetCapsule}}
+\index{GetCapsule@{GetCapsule}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{GetCapsule()}{GetCapsule()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_capsule_collision}{CCapsule\+Collision}}$\ast$ CCollision\+Manager\+::\+Get\+Capsule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_c_collision_manager_a97e7f14b7759584e3c6c0b8df6b6342a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_aa2010e4225d10daa335edb4aed4c975d}\label{class_c_collision_manager_aa2010e4225d10daa335edb4aed4c975d}} 
+\index{CCollisionManager@{CCollisionManager}!GetOBB@{GetOBB}}
+\index{GetOBB@{GetOBB}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{GetOBB()}{GetOBB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_o_b_box_collision}{COBBox\+Collision}}$\ast$ CCollision\+Manager\+::\+Get\+OBB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_c_collision_manager_aa2010e4225d10daa335edb4aed4c975d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_af29866abc27ca930b4ead85aad79b5be}\label{class_c_collision_manager_af29866abc27ca930b4ead85aad79b5be}} 
+\index{CCollisionManager@{CCollisionManager}!GetSphere@{GetSphere}}
+\index{GetSphere@{GetSphere}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{GetSphere()}{GetSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_sphere_collision}{CSphere\+Collision}}$\ast$ CCollision\+Manager\+::\+Get\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_c_collision_manager_af29866abc27ca930b4ead85aad79b5be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_ab745441286cb42d1655a1fb74caa3af8}\label{class_c_collision_manager_ab745441286cb42d1655a1fb74caa3af8}} 
+\index{CCollisionManager@{CCollisionManager}!Init@{Init}}
+\index{Init@{Init}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_ab745441286cb42d1655a1fb74caa3af8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_af90f0762858e8674ad72dc67a602efe5}\label{class_c_collision_manager_af90f0762858e8674ad72dc67a602efe5}} 
+\index{CCollisionManager@{CCollisionManager}!InitBox@{InitBox}}
+\index{InitBox@{InitBox}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{InitBox()}{InitBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init\+Box (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale,  }\item[{const D3\+DXVECTOR3 \&}]{adj\+Pos,  }\item[{const D3\+DXVECTOR3 \&}]{length }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_af90f0762858e8674ad72dc67a602efe5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a73dbc56ae6e2ac34d9a18a1c59a55081}\label{class_c_collision_manager_a73dbc56ae6e2ac34d9a18a1c59a55081}} 
+\index{CCollisionManager@{CCollisionManager}!InitBox@{InitBox}}
+\index{InitBox@{InitBox}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{InitBox()}{InitBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init\+Box (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale,  }\item[{const D3\+DXVECTOR3 \&}]{adj\+Pos,  }\item[{const D3\+DXVECTOR3 \&}]{adjlength }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a73dbc56ae6e2ac34d9a18a1c59a55081_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_ac553aa2f466286ad30272be39fa35110}\label{class_c_collision_manager_ac553aa2f466286ad30272be39fa35110}} 
+\index{CCollisionManager@{CCollisionManager}!InitCapsule@{InitCapsule}}
+\index{InitCapsule@{InitCapsule}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{InitCapsule()}{InitCapsule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init\+Capsule (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale,  }\item[{const D3\+DXVECTOR3 \&}]{adj\+Pos,  }\item[{const float \&}]{radius,  }\item[{const float \&}]{height }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_ac553aa2f466286ad30272be39fa35110_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a514743a2e9d437e371a2040865d02db9}\label{class_c_collision_manager_a514743a2e9d437e371a2040865d02db9}} 
+\index{CCollisionManager@{CCollisionManager}!InitCapsule@{InitCapsule}}
+\index{InitCapsule@{InitCapsule}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{InitCapsule()}{InitCapsule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init\+Capsule (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale,  }\item[{const D3\+DXVECTOR3 \&}]{adj\+Pos,  }\item[{const float \&}]{adj\+Radius,  }\item[{const float \&}]{adj\+Height }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a514743a2e9d437e371a2040865d02db9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a5b89ea2081f227ad393755cc68975306}\label{class_c_collision_manager_a5b89ea2081f227ad393755cc68975306}} 
+\index{CCollisionManager@{CCollisionManager}!InitSphere@{InitSphere}}
+\index{InitSphere@{InitSphere}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{InitSphere()}{InitSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init\+Sphere (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale,  }\item[{const D3\+DXVECTOR3 \&}]{adj\+Pos,  }\item[{const float \&}]{radius }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a5b89ea2081f227ad393755cc68975306_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_abda2d98615ce33d6979669e1224081b4}\label{class_c_collision_manager_abda2d98615ce33d6979669e1224081b4}} 
+\index{CCollisionManager@{CCollisionManager}!InitSphere@{InitSphere}}
+\index{InitSphere@{InitSphere}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{InitSphere()}{InitSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CCollision\+Manager\+::\+Init\+Sphere (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Pos,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Rot,  }\item[{float $\ast$}]{p\+Scale,  }\item[{const D3\+DXVECTOR3 \&}]{adj\+Pos,  }\item[{const float \&}]{adj\+Radius }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_abda2d98615ce33d6979669e1224081b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a018ac64e047bb16d0b3bb6044d71ffda}\label{class_c_collision_manager_a018ac64e047bb16d0b3bb6044d71ffda}} 
+\index{CCollisionManager@{CCollisionManager}!IsCapsuleToCapsule@{IsCapsuleToCapsule}}
+\index{IsCapsuleToCapsule@{IsCapsuleToCapsule}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{IsCapsuleToCapsule()}{IsCapsuleToCapsule()}}
+{\footnotesize\ttfamily bool CCollision\+Manager\+::\+Is\+Capsule\+To\+Capsule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$}]{p\+Manager }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a018ac64e047bb16d0b3bb6044d71ffda_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_ae53b98ee71aff53614fb6eae0abb2dca}\label{class_c_collision_manager_ae53b98ee71aff53614fb6eae0abb2dca}} 
+\index{CCollisionManager@{CCollisionManager}!IsOBBToOBB@{IsOBBToOBB}}
+\index{IsOBBToOBB@{IsOBBToOBB}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{IsOBBToOBB()}{IsOBBToOBB()}}
+{\footnotesize\ttfamily bool CCollision\+Manager\+::\+Is\+OBBTo\+OBB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$}]{p\+Manager }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_ae53b98ee71aff53614fb6eae0abb2dca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_acf6723fe1d2d6f43ae5aaffd4f8bb449}\label{class_c_collision_manager_acf6723fe1d2d6f43ae5aaffd4f8bb449}} 
+\index{CCollisionManager@{CCollisionManager}!IsShereToShere@{IsShereToShere}}
+\index{IsShereToShere@{IsShereToShere}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{IsShereToShere()}{IsShereToShere()}}
+{\footnotesize\ttfamily bool CCollision\+Manager\+::\+Is\+Shere\+To\+Shere (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_collision_manager}{CCollision\+Manager}} $\ast$}]{p\+Manager }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_acf6723fe1d2d6f43ae5aaffd4f8bb449_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a05b46a01eb4111a55ca7d269292632bf}\label{class_c_collision_manager_a05b46a01eb4111a55ca7d269292632bf}} 
+\index{CCollisionManager@{CCollisionManager}!SetBoxAdjLength@{SetBoxAdjLength}}
+\index{SetBoxAdjLength@{SetBoxAdjLength}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetBoxAdjLength()}{SetBoxAdjLength()}}
+{\footnotesize\ttfamily void CCollision\+Manager\+::\+Set\+Box\+Adj\+Length (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{length }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a05b46a01eb4111a55ca7d269292632bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a88b4147d9b4ffe245c8bf1a36546f799}\label{class_c_collision_manager_a88b4147d9b4ffe245c8bf1a36546f799}} 
+\index{CCollisionManager@{CCollisionManager}!SetBoxAdjPosition@{SetBoxAdjPosition}}
+\index{SetBoxAdjPosition@{SetBoxAdjPosition}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetBoxAdjPosition()}{SetBoxAdjPosition()}}
+{\footnotesize\ttfamily void CCollision\+Manager\+::\+Set\+Box\+Adj\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a88b4147d9b4ffe245c8bf1a36546f799_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a28b7bfba75f62fd7056622b5dd059f78}\label{class_c_collision_manager_a28b7bfba75f62fd7056622b5dd059f78}} 
+\index{CCollisionManager@{CCollisionManager}!SetSphereAdjPosition@{SetSphereAdjPosition}}
+\index{SetSphereAdjPosition@{SetSphereAdjPosition}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetSphereAdjPosition()}{SetSphereAdjPosition()}}
+{\footnotesize\ttfamily void CCollision\+Manager\+::\+Set\+Sphere\+Adj\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collision_manager_a28b7bfba75f62fd7056622b5dd059f78_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collision_manager_a0338eae64453fc1a20458bf2c15849ec}\label{class_c_collision_manager_a0338eae64453fc1a20458bf2c15849ec}} 
+\index{CCollisionManager@{CCollisionManager}!SetSphereAdjRadius@{SetSphereAdjRadius}}
+\index{SetSphereAdjRadius@{SetSphereAdjRadius}!CCollisionManager@{CCollisionManager}}
+\doxysubsubsection{\texorpdfstring{SetSphereAdjRadius()}{SetSphereAdjRadius()}}
+{\footnotesize\ttfamily void CCollision\+Manager\+::\+Set\+Sphere\+Adj\+Radius (\begin{DoxyParamCaption}\item[{const float \&}]{radius }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_c_collision_manager_a0338eae64453fc1a20458bf2c15849ec_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Collsion\+Manager/\mbox{\hyperlink{_collsion_manager_8h}{Collsion\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Collsion\+Manager/\mbox{\hyperlink{_collsion_manager_8cpp}{Collsion\+Manager.\+cpp}}\end{DoxyCompactItemize}

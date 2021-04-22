@@ -1,0 +1,10 @@
+<map id="CConfigWidget::Update" name="CConfigWidget::Update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,163,83"/>
+<area shape="rect" id="node2" href="$class_c_config_widget.html#a35f2817da9d71fa3d08dec4d40111928" title=" " alt="" coords="211,5,397,32"/>
+<area shape="rect" id="node3" href="$class_c_input.html#a6a05cb0f29e7cae3fe68d46dbe3b7c4f" title=" " alt="" coords="225,56,383,83"/>
+<area shape="rect" id="node7" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="219,107,389,133"/>
+<area shape="rect" id="node4" href="$class_c_key_input.html#a8ef8a4223b33b03a9bfa7b89717c9a00" title=" " alt="" coords="453,5,634,32"/>
+<area shape="rect" id="node6" href="$class_c_x_input.html#af325b18bf39addfde11f511da4b090ef" title=" " alt="" coords="461,56,626,83"/>
+<area shape="rect" id="node5" href="$class_c_key_input.html#a19ad5f5de9ee2e016d1b64a3160eed70" title=" " alt="" coords="689,5,832,32"/>
+<area shape="rect" id="node8" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="445,107,641,133"/>
+</map>

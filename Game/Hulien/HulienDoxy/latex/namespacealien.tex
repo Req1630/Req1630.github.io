@@ -1,0 +1,213 @@
+\hypertarget{namespacealien}{}\doxysection{alien 名前空間}
+\label{namespacealien}\index{alien@{alien}}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411}{EAlien\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e}{Spawn}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5}{Move}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e}{Abduct}}
+, \newline
+\mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63}{Knock\+Back}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e}{Fright}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f}{Death}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224}{Escape}}
+, \newline
+\mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188}{Rising\+Mother\+Ship}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243}{EMove\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a}{Rotation}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a6bc362dbf494c61ea117fe3c71ca48a5}{Move}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a}{Attack}}
+, \newline
+\mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652}{Wait}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326}{EAnim\+No}} \+: char \{ \newline
+\mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b}{EAnim\+No\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655}{EAnim\+No\+\_\+\+Move}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67}{EAnim\+No\+\_\+\+Arm}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17}{EAnim\+No\+\_\+\+Damage}}
+, \newline
+\mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a}{EAnim\+No\+\_\+\+Dead}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7}{EAnim\+No\+\_\+\+Max}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163}{EAnim\+No\+\_\+\+Attack}} = EAnim\+No\+\_\+\+Arm
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b}{EAnim\+No\+\_\+\+Begin}} = EAnim\+No\+\_\+\+Move
+, \newline
+\mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e}{EAnim\+No\+\_\+\+End}} = EAnim\+No\+\_\+\+Max
+ \}
+\item 
+enum \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7f}{EEffect\+No}} \+: char \{ \newline
+\mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d}{EEffect\+No\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8}{EEffect\+No\+\_\+\+Hit}}
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178}{EEffect\+No\+\_\+\+Spawn}}
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69}{EEffect\+No\+\_\+\+Dead}}
+, \newline
+\mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3}{EEffect\+No\+\_\+\+Attack}}
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c}{EEffect\+No\+\_\+\+Max}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411}\label{namespacealien_ad5109b293a3da5ccb362145055f35411}} 
+\index{alien@{alien}!EAlienState@{EAlienState}}
+\index{EAlienState@{EAlienState}!alien@{alien}}
+\doxysubsubsection{\texorpdfstring{EAlienState}{EAlienState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411}{alien\+::\+EAlien\+State}} \+: unsigned char\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!alien@{alien}}\index{alien@{alien}!None@{None}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a6adf97f83acf6453d4a6a4b1070f3754}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spawn@{Spawn}!alien@{alien}}\index{alien@{alien}!Spawn@{Spawn}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e}} 
+Spawn&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Move@{Move}!alien@{alien}}\index{alien@{alien}!Move@{Move}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5}} 
+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Abduct@{Abduct}!alien@{alien}}\index{alien@{alien}!Abduct@{Abduct}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e}} 
+Abduct&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{KnockBack@{KnockBack}!alien@{alien}}\index{alien@{alien}!KnockBack@{KnockBack}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63}} 
+Knock\+Back&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Fright@{Fright}!alien@{alien}}\index{alien@{alien}!Fright@{Fright}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e}\label{namespacealien_ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e}} 
+Fright&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Death@{Death}!alien@{alien}}\index{alien@{alien}!Death@{Death}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f}} 
+Death&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Escape@{Escape}!alien@{alien}}\index{alien@{alien}!Escape@{Escape}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224}} 
+Escape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RisingMotherShip@{RisingMotherShip}!alien@{alien}}\index{alien@{alien}!RisingMotherShip@{RisingMotherShip}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188}\label{namespacealien_ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188}} 
+Rising\+Mother\+Ship&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!alien@{alien}}\index{alien@{alien}!Max@{Max}}}\mbox{\Hypertarget{namespacealien_ad5109b293a3da5ccb362145055f35411a6a061313d22e51e0f25b7cd4dc065233}\label{namespacealien_ad5109b293a3da5ccb362145055f35411a6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326}} 
+\index{alien@{alien}!EAnimNo@{EAnimNo}}
+\index{EAnimNo@{EAnimNo}!alien@{alien}}
+\doxysubsubsection{\texorpdfstring{EAnimNo}{EAnimNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326}{alien\+::\+EAnim\+No}} \+: char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_None@{EAnimNo\_None}!alien@{alien}}\index{alien@{alien}!EAnimNo\_None@{EAnimNo\_None}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b}} 
+EAnim\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Move@{EAnimNo\_Move}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Move@{EAnimNo\_Move}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655}} 
+EAnim\+No\+\_\+\+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Arm@{EAnimNo\_Arm}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Arm@{EAnimNo\_Arm}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67}} 
+EAnim\+No\+\_\+\+Arm&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Damage@{EAnimNo\_Damage}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Damage@{EAnimNo\_Damage}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17}} 
+EAnim\+No\+\_\+\+Damage&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Dead@{EAnimNo\_Dead}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Dead@{EAnimNo\_Dead}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a}} 
+EAnim\+No\+\_\+\+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Max@{EAnimNo\_Max}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Max@{EAnimNo\_Max}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7}} 
+EAnim\+No\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Attack@{EAnimNo\_Attack}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Attack@{EAnimNo\_Attack}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163}} 
+EAnim\+No\+\_\+\+Attack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Begin@{EAnimNo\_Begin}!alien@{alien}}\index{alien@{alien}!EAnimNo\_Begin@{EAnimNo\_Begin}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b}} 
+EAnim\+No\+\_\+\+Begin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_End@{EAnimNo\_End}!alien@{alien}}\index{alien@{alien}!EAnimNo\_End@{EAnimNo\_End}}}\mbox{\Hypertarget{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e}\label{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e}} 
+EAnim\+No\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7f}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7f}} 
+\index{alien@{alien}!EEffectNo@{EEffectNo}}
+\index{EEffectNo@{EEffectNo}!alien@{alien}}
+\doxysubsubsection{\texorpdfstring{EEffectNo}{EEffectNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7f}{alien\+::\+EEffect\+No}} \+: char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_None@{EEffectNo\_None}!alien@{alien}}\index{alien@{alien}!EEffectNo\_None@{EEffectNo\_None}}}\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d}} 
+EEffect\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Hit@{EEffectNo\_Hit}!alien@{alien}}\index{alien@{alien}!EEffectNo\_Hit@{EEffectNo\_Hit}}}\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8}} 
+EEffect\+No\+\_\+\+Hit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Spawn@{EEffectNo\_Spawn}!alien@{alien}}\index{alien@{alien}!EEffectNo\_Spawn@{EEffectNo\_Spawn}}}\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178}} 
+EEffect\+No\+\_\+\+Spawn&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Dead@{EEffectNo\_Dead}!alien@{alien}}\index{alien@{alien}!EEffectNo\_Dead@{EEffectNo\_Dead}}}\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69}} 
+EEffect\+No\+\_\+\+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Attack@{EEffectNo\_Attack}!alien@{alien}}\index{alien@{alien}!EEffectNo\_Attack@{EEffectNo\_Attack}}}\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3}} 
+EEffect\+No\+\_\+\+Attack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEffectNo\_Max@{EEffectNo\_Max}!alien@{alien}}\index{alien@{alien}!EEffectNo\_Max@{EEffectNo\_Max}}}\mbox{\Hypertarget{namespacealien_af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c}\label{namespacealien_af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c}} 
+EEffect\+No\+\_\+\+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243}} 
+\index{alien@{alien}!EMoveState@{EMoveState}}
+\index{EMoveState@{EMoveState}!alien@{alien}}
+\doxysubsubsection{\texorpdfstring{EMoveState}{EMoveState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243}{alien\+::\+EMove\+State}} \+: unsigned char\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!alien@{alien}}\index{alien@{alien}!None@{None}}}\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243a6adf97f83acf6453d4a6a4b1070f3754}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rotation@{Rotation}!alien@{alien}}\index{alien@{alien}!Rotation@{Rotation}}}\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a}} 
+Rotation&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Move@{Move}!alien@{alien}}\index{alien@{alien}!Move@{Move}}}\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243a6bc362dbf494c61ea117fe3c71ca48a5}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243a6bc362dbf494c61ea117fe3c71ca48a5}} 
+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Attack@{Attack}!alien@{alien}}\index{alien@{alien}!Attack@{Attack}}}\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a}} 
+Attack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Wait@{Wait}!alien@{alien}}\index{alien@{alien}!Wait@{Wait}}}\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652}} 
+Wait&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!alien@{alien}}\index{alien@{alien}!Max@{Max}}}\mbox{\Hypertarget{namespacealien_aa01fe5773378e77edfda68177f2e9243a6a061313d22e51e0f25b7cd4dc065233}\label{namespacealien_aa01fe5773378e77edfda68177f2e9243a6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}

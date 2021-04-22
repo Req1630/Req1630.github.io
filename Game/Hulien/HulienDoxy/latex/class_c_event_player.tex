@@ -1,0 +1,242 @@
+\hypertarget{class_c_event_player}{}\doxysection{CEvent\+Player クラス}
+\label{class_c_event_player}\index{CEventPlayer@{CEventPlayer}}
+
+
+{\ttfamily \#include $<$Event\+Player.\+h$>$}
+
+
+
+CEvent\+Player の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_c_event_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEvent\+Player 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1}{EPlayer\+State}} \{ \mbox{\hyperlink{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a6adf97f83acf6453d4a6a4b1070f3754}{None}} = 0
+, \mbox{\hyperlink{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a6bc362dbf494c61ea117fe3c71ca48a5}{Move}}
+, \mbox{\hyperlink{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a0f68101772bd5397ef8eb1b632798652}{Wait}}
+, \mbox{\hyperlink{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1acef30a72e563e255a7148318592cd096}{Special\+Ability}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_player_a1d48bd04b053986280dfd7fc15ce1485}{CEvent\+Player}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_player_ae221a71493fac3af1fcf0f1543a596a8}{$\sim$\+CEvent\+Player}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_event_player_a0ff393d536b57532f03fd456fe89d087}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_player_ae0411cfba69d3b17f34b52fbce856549}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_player_a64dd2d3bb99e27ade32b631cededfe77}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_player_a51600eeed23f4d3b2b2a253c4ef07c4e}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_player_adb8b6d0d2ab4c23a25c48d06d697f19a}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor) override
+\item 
+void \mbox{\hyperlink{class_c_event_player_a295a6bcb15a82533a92c2b5579df3bb8}{Set\+Anim\+Speed}} ()
+\item 
+bool \mbox{\hyperlink{class_c_event_player_aae4eceba548899a3c5e75377455de4e0}{Is\+YButton\+Pressed}} ()
+\item 
+bool \mbox{\hyperlink{class_c_event_player_a5a18da6ed6bf4e6b94d0a83bfc48751b}{Is\+Special\+Ability}} ()
+\item 
+bool \mbox{\hyperlink{class_c_event_player_a9fead44e54cc13280f59c6777d9a96e6}{Is\+Alien\+Hit}} ()
+\item 
+void \mbox{\hyperlink{class_c_event_player_a6cf38c5f04f7223ab1654e2f9d1bbc7f}{Set\+Alien\+Hit}} ()
+\item 
+bool \mbox{\hyperlink{class_c_event_player_a2f4e854705ccca380f494f1d913810d6}{Is\+End\+Damage\+Anim}} ()
+\item 
+void \mbox{\hyperlink{class_c_event_player_ad30b19249f0120a7791bb7e8a22aefad}{Damage\+Anim\+Update}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1}\label{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1}} 
+\index{CEventPlayer@{CEventPlayer}!EPlayerState@{EPlayerState}}
+\index{EPlayerState@{EPlayerState}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{EPlayerState}{EPlayerState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1}{CEvent\+Player\+::\+EPlayer\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CEventPlayer@{CEventPlayer}}\index{CEventPlayer@{CEventPlayer}!None@{None}}}\mbox{\Hypertarget{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a6adf97f83acf6453d4a6a4b1070f3754}\label{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Move@{Move}!CEventPlayer@{CEventPlayer}}\index{CEventPlayer@{CEventPlayer}!Move@{Move}}}\mbox{\Hypertarget{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a6bc362dbf494c61ea117fe3c71ca48a5}\label{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a6bc362dbf494c61ea117fe3c71ca48a5}} 
+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Wait@{Wait}!CEventPlayer@{CEventPlayer}}\index{CEventPlayer@{CEventPlayer}!Wait@{Wait}}}\mbox{\Hypertarget{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a0f68101772bd5397ef8eb1b632798652}\label{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1a0f68101772bd5397ef8eb1b632798652}} 
+Wait&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpecialAbility@{SpecialAbility}!CEventPlayer@{CEventPlayer}}\index{CEventPlayer@{CEventPlayer}!SpecialAbility@{SpecialAbility}}}\mbox{\Hypertarget{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1acef30a72e563e255a7148318592cd096}\label{class_c_event_player_ae4c7fe7bf093f923dcbee3ee3d7e4bc1acef30a72e563e255a7148318592cd096}} 
+Special\+Ability&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_player_a1d48bd04b053986280dfd7fc15ce1485}\label{class_c_event_player_a1d48bd04b053986280dfd7fc15ce1485}} 
+\index{CEventPlayer@{CEventPlayer}!CEventPlayer@{CEventPlayer}}
+\index{CEventPlayer@{CEventPlayer}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{CEventPlayer()}{CEventPlayer()}}
+{\footnotesize\ttfamily CEvent\+Player\+::\+CEvent\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_player_ae221a71493fac3af1fcf0f1543a596a8}\label{class_c_event_player_ae221a71493fac3af1fcf0f1543a596a8}} 
+\index{CEventPlayer@{CEventPlayer}!````~CEventPlayer@{$\sim$CEventPlayer}}
+\index{````~CEventPlayer@{$\sim$CEventPlayer}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventPlayer()}{~CEventPlayer()}}
+{\footnotesize\ttfamily CEvent\+Player\+::$\sim$\+CEvent\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_player_a51600eeed23f4d3b2b2a253c4ef07c4e}\label{class_c_event_player_a51600eeed23f4d3b2b2a253c4ef07c4e}} 
+\index{CEventPlayer@{CEventPlayer}!Collision@{Collision}}
+\index{Collision@{Collision}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+\mbox{\Hypertarget{class_c_event_player_ad30b19249f0120a7791bb7e8a22aefad}\label{class_c_event_player_ad30b19249f0120a7791bb7e8a22aefad}} 
+\index{CEventPlayer@{CEventPlayer}!DamageAnimUpdate@{DamageAnimUpdate}}
+\index{DamageAnimUpdate@{DamageAnimUpdate}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{DamageAnimUpdate()}{DamageAnimUpdate()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Damage\+Anim\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_player_ad30b19249f0120a7791bb7e8a22aefad_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_player_a0ff393d536b57532f03fd456fe89d087}\label{class_c_event_player_a0ff393d536b57532f03fd456fe89d087}} 
+\index{CEventPlayer@{CEventPlayer}!Init@{Init}}
+\index{Init@{Init}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CEvent\+Player\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_player_a0ff393d536b57532f03fd456fe89d087_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_player_a9fead44e54cc13280f59c6777d9a96e6}\label{class_c_event_player_a9fead44e54cc13280f59c6777d9a96e6}} 
+\index{CEventPlayer@{CEventPlayer}!IsAlienHit@{IsAlienHit}}
+\index{IsAlienHit@{IsAlienHit}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{IsAlienHit()}{IsAlienHit()}}
+{\footnotesize\ttfamily bool CEvent\+Player\+::\+Is\+Alien\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_player_a2f4e854705ccca380f494f1d913810d6}\label{class_c_event_player_a2f4e854705ccca380f494f1d913810d6}} 
+\index{CEventPlayer@{CEventPlayer}!IsEndDamageAnim@{IsEndDamageAnim}}
+\index{IsEndDamageAnim@{IsEndDamageAnim}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{IsEndDamageAnim()}{IsEndDamageAnim()}}
+{\footnotesize\ttfamily bool CEvent\+Player\+::\+Is\+End\+Damage\+Anim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_player_a5a18da6ed6bf4e6b94d0a83bfc48751b}\label{class_c_event_player_a5a18da6ed6bf4e6b94d0a83bfc48751b}} 
+\index{CEventPlayer@{CEventPlayer}!IsSpecialAbility@{IsSpecialAbility}}
+\index{IsSpecialAbility@{IsSpecialAbility}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{IsSpecialAbility()}{IsSpecialAbility()}}
+{\footnotesize\ttfamily bool CEvent\+Player\+::\+Is\+Special\+Ability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_player_a5a18da6ed6bf4e6b94d0a83bfc48751b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_player_aae4eceba548899a3c5e75377455de4e0}\label{class_c_event_player_aae4eceba548899a3c5e75377455de4e0}} 
+\index{CEventPlayer@{CEventPlayer}!IsYButtonPressed@{IsYButtonPressed}}
+\index{IsYButtonPressed@{IsYButtonPressed}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{IsYButtonPressed()}{IsYButtonPressed()}}
+{\footnotesize\ttfamily bool CEvent\+Player\+::\+Is\+YButton\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_player_a64dd2d3bb99e27ade32b631cededfe77}\label{class_c_event_player_a64dd2d3bb99e27ade32b631cededfe77}} 
+\index{CEventPlayer@{CEventPlayer}!Render@{Render}}
+\index{Render@{Render}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_player_a64dd2d3bb99e27ade32b631cededfe77_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_player_a6cf38c5f04f7223ab1654e2f9d1bbc7f}\label{class_c_event_player_a6cf38c5f04f7223ab1654e2f9d1bbc7f}} 
+\index{CEventPlayer@{CEventPlayer}!SetAlienHit@{SetAlienHit}}
+\index{SetAlienHit@{SetAlienHit}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{SetAlienHit()}{SetAlienHit()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Set\+Alien\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_player_a295a6bcb15a82533a92c2b5579df3bb8}\label{class_c_event_player_a295a6bcb15a82533a92c2b5579df3bb8}} 
+\index{CEventPlayer@{CEventPlayer}!SetAnimSpeed@{SetAnimSpeed}}
+\index{SetAnimSpeed@{SetAnimSpeed}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{SetAnimSpeed()}{SetAnimSpeed()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Set\+Anim\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_player_adb8b6d0d2ab4c23a25c48d06d697f19a}\label{class_c_event_player_adb8b6d0d2ab4c23a25c48d06d697f19a}} 
+\index{CEventPlayer@{CEventPlayer}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_event_player_ae0411cfba69d3b17f34b52fbce856549}\label{class_c_event_player_ae0411cfba69d3b17f34b52fbce856549}} 
+\index{CEventPlayer@{CEventPlayer}!Update@{Update}}
+\index{Update@{Update}!CEventPlayer@{CEventPlayer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CEvent\+Player\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\+Event\+Player/\mbox{\hyperlink{_event_player_8h}{Event\+Player.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\+Event\+Player/\mbox{\hyperlink{_event_player_8cpp}{Event\+Player.\+cpp}}\end{DoxyCompactItemize}

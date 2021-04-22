@@ -1,0 +1,218 @@
+\hypertarget{class_c_event_girl}{}\doxysection{CEvent\+Girl クラス}
+\label{class_c_event_girl}\index{CEventGirl@{CEventGirl}}
+
+
+{\ttfamily \#include $<$Event\+Girl.\+h$>$}
+
+
+
+CEvent\+Girl の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_c_event_girl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEvent\+Girl 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_girl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4}{ENow\+State}} \{ \newline
+\mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a56f0605c9795b173abd2e34fab7fc164}{Protected}}
+, \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a3268caeffd536549f2d6374cb493ec0e}{Abduct}}
+, \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6bc362dbf494c61ea117fe3c71ca48a5}{Move}}
+, \newline
+\mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a0f68101772bd5397ef8eb1b632798652}{Wait}}
+, \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_girl_a43f5c06232ee676f677092d36fe6d671}{CEvent\+Girl}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_girl_a6b72be7a39793457b196306936f61742}{$\sim$\+CEvent\+Girl}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_event_girl_a7c99416eb11931d30458596e638ae531}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_girl_a57c1189526e25e041ecf8380b1a17187}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_girl_a7f70ac0a572b5aa6b63052f4ac142e69}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_girl_a147340cc1dbb0142520efe4b5d2e5213}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_event_girl_aa12cba5ad5747b282a2ebc1e9784e806}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor) override
+\item 
+bool \mbox{\hyperlink{class_c_event_girl_a26663d56a3b4e73f3afc7aa60a26dffc}{Get\+Is\+Danger}} () const
+\item 
+virtual void \mbox{\hyperlink{class_c_event_girl_af20e422836182a6069ed3708a933a90e}{Set\+Optional\+State}} (const \mbox{\hyperlink{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}{SOptional\+State}} \&state) override
+\item 
+void \mbox{\hyperlink{class_c_event_girl_a2ad0d7316d91fda267221567b6f84e87}{Set\+Now\+State}} (const \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4}{ENow\+State}} \&state)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4}} 
+\index{CEventGirl@{CEventGirl}!ENowState@{ENowState}}
+\index{ENowState@{ENowState}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{ENowState}{ENowState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4}{CEvent\+Girl\+::\+ENow\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CEventGirl@{CEventGirl}}\index{CEventGirl@{CEventGirl}!None@{None}}}\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6adf97f83acf6453d4a6a4b1070f3754}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Protected@{Protected}!CEventGirl@{CEventGirl}}\index{CEventGirl@{CEventGirl}!Protected@{Protected}}}\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a56f0605c9795b173abd2e34fab7fc164}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a56f0605c9795b173abd2e34fab7fc164}} 
+Protected&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Abduct@{Abduct}!CEventGirl@{CEventGirl}}\index{CEventGirl@{CEventGirl}!Abduct@{Abduct}}}\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a3268caeffd536549f2d6374cb493ec0e}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a3268caeffd536549f2d6374cb493ec0e}} 
+Abduct&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Move@{Move}!CEventGirl@{CEventGirl}}\index{CEventGirl@{CEventGirl}!Move@{Move}}}\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6bc362dbf494c61ea117fe3c71ca48a5}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6bc362dbf494c61ea117fe3c71ca48a5}} 
+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Wait@{Wait}!CEventGirl@{CEventGirl}}\index{CEventGirl@{CEventGirl}!Wait@{Wait}}}\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a0f68101772bd5397ef8eb1b632798652}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a0f68101772bd5397ef8eb1b632798652}} 
+Wait&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!CEventGirl@{CEventGirl}}\index{CEventGirl@{CEventGirl}!Max@{Max}}}\mbox{\Hypertarget{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6a061313d22e51e0f25b7cd4dc065233}\label{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4a6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_girl_a43f5c06232ee676f677092d36fe6d671}\label{class_c_event_girl_a43f5c06232ee676f677092d36fe6d671}} 
+\index{CEventGirl@{CEventGirl}!CEventGirl@{CEventGirl}}
+\index{CEventGirl@{CEventGirl}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{CEventGirl()}{CEventGirl()}}
+{\footnotesize\ttfamily CEvent\+Girl\+::\+CEvent\+Girl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_girl_a6b72be7a39793457b196306936f61742}\label{class_c_event_girl_a6b72be7a39793457b196306936f61742}} 
+\index{CEventGirl@{CEventGirl}!````~CEventGirl@{$\sim$CEventGirl}}
+\index{````~CEventGirl@{$\sim$CEventGirl}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventGirl()}{~CEventGirl()}}
+{\footnotesize\ttfamily CEvent\+Girl\+::$\sim$\+CEvent\+Girl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_girl_a147340cc1dbb0142520efe4b5d2e5213}\label{class_c_event_girl_a147340cc1dbb0142520efe4b5d2e5213}} 
+\index{CEventGirl@{CEventGirl}!Collision@{Collision}}
+\index{Collision@{Collision}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CEvent\+Girl\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+\mbox{\Hypertarget{class_c_event_girl_a26663d56a3b4e73f3afc7aa60a26dffc}\label{class_c_event_girl_a26663d56a3b4e73f3afc7aa60a26dffc}} 
+\index{CEventGirl@{CEventGirl}!GetIsDanger@{GetIsDanger}}
+\index{GetIsDanger@{GetIsDanger}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{GetIsDanger()}{GetIsDanger()}}
+{\footnotesize\ttfamily bool CEvent\+Girl\+::\+Get\+Is\+Danger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_girl_a7c99416eb11931d30458596e638ae531}\label{class_c_event_girl_a7c99416eb11931d30458596e638ae531}} 
+\index{CEventGirl@{CEventGirl}!Init@{Init}}
+\index{Init@{Init}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CEvent\+Girl\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_girl_a7c99416eb11931d30458596e638ae531_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_girl_a7f70ac0a572b5aa6b63052f4ac142e69}\label{class_c_event_girl_a7f70ac0a572b5aa6b63052f4ac142e69}} 
+\index{CEventGirl@{CEventGirl}!Render@{Render}}
+\index{Render@{Render}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEvent\+Girl\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_girl_a7f70ac0a572b5aa6b63052f4ac142e69_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_girl_a2ad0d7316d91fda267221567b6f84e87}\label{class_c_event_girl_a2ad0d7316d91fda267221567b6f84e87}} 
+\index{CEventGirl@{CEventGirl}!SetNowState@{SetNowState}}
+\index{SetNowState@{SetNowState}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{SetNowState()}{SetNowState()}}
+{\footnotesize\ttfamily void CEvent\+Girl\+::\+Set\+Now\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_event_girl_afdcbacd9109f0162bb6247368d0f5cc4}{ENow\+State}} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_girl_af20e422836182a6069ed3708a933a90e}\label{class_c_event_girl_af20e422836182a6069ed3708a933a90e}} 
+\index{CEventGirl@{CEventGirl}!SetOptionalState@{SetOptionalState}}
+\index{SetOptionalState@{SetOptionalState}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{SetOptionalState()}{SetOptionalState()}}
+{\footnotesize\ttfamily void CEvent\+Girl\+::\+Set\+Optional\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}{SOptional\+State}} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_event_character_ab9a0184a2edef78f2c9bcece5f2469d1}{CEvent\+Character}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_event_girl_aa12cba5ad5747b282a2ebc1e9784e806}\label{class_c_event_girl_aa12cba5ad5747b282a2ebc1e9784e806}} 
+\index{CEventGirl@{CEventGirl}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CEvent\+Girl\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_girl_aa12cba5ad5747b282a2ebc1e9784e806_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_girl_a57c1189526e25e041ecf8380b1a17187}\label{class_c_event_girl_a57c1189526e25e041ecf8380b1a17187}} 
+\index{CEventGirl@{CEventGirl}!Update@{Update}}
+\index{Update@{Update}!CEventGirl@{CEventGirl}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CEvent\+Girl\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\+Event\+Girl/\mbox{\hyperlink{_event_girl_8h}{Event\+Girl.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\+Event\+Girl/\mbox{\hyperlink{_event_girl_8cpp}{Event\+Girl.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,277 @@
+\hypertarget{class_c_game_object}{}\doxysection{CGame\+Object クラス}
+\label{class_c_game_object}\index{CGameObject@{CGameObject}}
+
+
+{\ttfamily \#include $<$Game\+Object.\+h$>$}
+
+
+
+CGame\+Object の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_c_game_object__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_game_object_a055661cb4f987643e335c1648ed0b2ea}{CGame\+Object}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_game_object_a2a248dc92f6c4eb96c484cc51f21010c}{$\sim$\+CGame\+Object}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{Init}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{Update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{Render}} ()=0
+\item 
+\mbox{\hyperlink{_object_list_8h_ae3918515e36084aa17b48b6b6d9da95c}{EObject\+Tag}} \mbox{\hyperlink{class_c_game_object_ae27e9fdbbfa03a20b111d95ece9ff345}{Get\+Object\+Tag}} () const
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_game_object_aa11137b89bb1cde166bbb55620d6b89f}{Get\+Position}} () const
+\item 
+virtual void \mbox{\hyperlink{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}{Set\+Position}} (const D3\+DXVECTOR3 \&v\+Pos)
+\item 
+float \mbox{\hyperlink{class_c_game_object_aa8c00285792e75730bdaacd588951ab4}{Get\+RotatinY}} () const
+\item 
+void \mbox{\hyperlink{class_c_game_object_a244d5b282a24e5b0c11430d7c0841ac2}{Set\+RotationX}} (const float \&rotX)
+\item 
+void \mbox{\hyperlink{class_c_game_object_ae521d08312342c055e9543c7d145682a}{Set\+RotationY}} (const float \&rotY)
+\item 
+void \mbox{\hyperlink{class_c_game_object_ac4019bf271843c6ae6dc542e8671f167}{Set\+RotationZ}} (const float \&rotZ)
+\item 
+void \mbox{\hyperlink{class_c_game_object_a6897eb0511df6b293459e9b984658db1}{Set\+Scale}} (const float \&size)
+\item 
+void \mbox{\hyperlink{class_c_game_object_a1d181a4d2b8df958b267fcd8ebe8e4e6}{Set\+Scale}} (const D3\+DXVECTOR3 \&v\+Scale)
+\item 
+bool \mbox{\hyperlink{class_c_game_object_af0892117053801153554374c1b87babd}{Is\+Display\+Out}} (const float \&adj\+Size=WND\+\_\+\+OUT\+\_\+\+ADJ\+\_\+\+SIZE)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_object_list_8h_ae3918515e36084aa17b48b6b6d9da95c}{EObject\+Tag}} \mbox{\hyperlink{class_c_game_object_a774fe22417d43d6560a52797dd61d20d}{m\+\_\+\+Object\+Tag}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_game_object_a67f2224f36e99bfa9a1bf17f4cb28a78}{m\+\_\+v\+Position}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_game_object_a1712afa4cd98a989014e6b685ff616a3}{m\+\_\+v\+Rotation}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_game_object_a7b04075e2da10eac9c131ec427bf9eef}{m\+\_\+v\+Scale}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_game_object_a055661cb4f987643e335c1648ed0b2ea}\label{class_c_game_object_a055661cb4f987643e335c1648ed0b2ea}} 
+\index{CGameObject@{CGameObject}!CGameObject@{CGameObject}}
+\index{CGameObject@{CGameObject}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{CGameObject()}{CGameObject()}}
+{\footnotesize\ttfamily CGame\+Object\+::\+CGame\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_object_a2a248dc92f6c4eb96c484cc51f21010c}\label{class_c_game_object_a2a248dc92f6c4eb96c484cc51f21010c}} 
+\index{CGameObject@{CGameObject}!````~CGameObject@{$\sim$CGameObject}}
+\index{````~CGameObject@{$\sim$CGameObject}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGameObject()}{~CGameObject()}}
+{\footnotesize\ttfamily CGame\+Object\+::$\sim$\+CGame\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_game_object_ae27e9fdbbfa03a20b111d95ece9ff345}\label{class_c_game_object_ae27e9fdbbfa03a20b111d95ece9ff345}} 
+\index{CGameObject@{CGameObject}!GetObjectTag@{GetObjectTag}}
+\index{GetObjectTag@{GetObjectTag}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{GetObjectTag()}{GetObjectTag()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_object_list_8h_ae3918515e36084aa17b48b6b6d9da95c}{EObject\+Tag}} CGame\+Object\+::\+Get\+Object\+Tag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_ae27e9fdbbfa03a20b111d95ece9ff345_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_aa11137b89bb1cde166bbb55620d6b89f}\label{class_c_game_object_aa11137b89bb1cde166bbb55620d6b89f}} 
+\index{CGameObject@{CGameObject}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CGame\+Object\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_aa11137b89bb1cde166bbb55620d6b89f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_aa8c00285792e75730bdaacd588951ab4}\label{class_c_game_object_aa8c00285792e75730bdaacd588951ab4}} 
+\index{CGameObject@{CGameObject}!GetRotatinY@{GetRotatinY}}
+\index{GetRotatinY@{GetRotatinY}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{GetRotatinY()}{GetRotatinY()}}
+{\footnotesize\ttfamily float CGame\+Object\+::\+Get\+RotatinY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}\label{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}} 
+\index{CGameObject@{CGameObject}!Init@{Init}}
+\index{Init@{Init}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual bool CGame\+Object\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_tutorial_a6eab069d98487dbdaa0d910bd458513a}{CTutorial}}, \mbox{\hyperlink{class_c_switch_a1c8a4a2eac14c7162e69c7dfde9abfd6}{CSwitch}}, \mbox{\hyperlink{class_c_slinder_a2c1843843659590f6563545c47678ac2}{CSlinder}}, \mbox{\hyperlink{class_c_title_widget_a76e68f65bfad5d04e839777ab5244c2a}{CTitle\+Widget}}, \mbox{\hyperlink{class_c_warning_af4ed6b5fced5f3136e6c0f0932147b92}{CWarning}}, \mbox{\hyperlink{class_c_ultemate_sing_a98a6f9042413541743b3e271613d3b02}{CUltemate\+Sing}}, \mbox{\hyperlink{class_c_mini_map_af6897d4d380328eb7c96742dda29b809}{CMini\+Map}}, \mbox{\hyperlink{class_c_limit_time_a7a736315a61f20c2aaa54362a0062cae}{CLimit\+Time}}, \mbox{\hyperlink{class_c_special_ability_gauge_a84d7b919abdfd2a23945d3b575f13c48}{CSpecial\+Ability\+Gauge}}, \mbox{\hyperlink{class_c_life_gauge_a5a2413c47494f4b5f14ff6f107ba6d9c}{CLife\+Gauge}}, \mbox{\hyperlink{class_c_back_gauge_ab492bef768a0721a0fe7170dbf90bb39}{CBack\+Gauge}}, \mbox{\hyperlink{class_c_game_over_widget_a9814264bc421a51ba83fe59236216af1}{CGame\+Over\+Widget}}, \mbox{\hyperlink{class_c_continue_widget_adcc5f3d5136fb78c94e535f5793c4edf}{CContinue\+Widget}}, \mbox{\hyperlink{class_c_volume_config_widget_a123e5fa4073e68ce298dc28e794ad034}{CVolume\+Config\+Widget}}, \mbox{\hyperlink{class_c_graphic_config_widget_a62554834edde9049b1814b2f9ddf4e11}{CGraphic\+Config\+Widget}}, \mbox{\hyperlink{class_c_controller_config_widget_a92808d85efba3f7e62550f6674379cce}{CController\+Config\+Widget}}, \mbox{\hyperlink{class_c_camera_config_widget_a67964b70f17f3ca484789f8121ea9d05}{CCamera\+Config\+Widget}}, \mbox{\hyperlink{class_c_clear_widget_aa8c79de230b15a01ca8af88ae6c17bc8}{CClear\+Widget}}, \mbox{\hyperlink{class_c_return_title_a02f343cee05d319e24784a5723ba8bb0}{CReturn\+Title}}, \mbox{\hyperlink{class_c_game_start_event_widget_a0e0848ae1f60799f9c499be01d69412b}{CGame\+Start\+Event\+Widget}}, \mbox{\hyperlink{class_c_event_widget_a30cf518213fa44b03118051dd09fb0b5}{CEvent\+Widget}}, \mbox{\hyperlink{class_c_cursor_a36b5b35de30420b2fb8af3ee20dce89c}{CCursor}}, \mbox{\hyperlink{class_c_config_cursor_a79dd091aceb3aecc2a49e553a55cb722}{CConfig\+Cursor}}, \mbox{\hyperlink{class_c_button_exp_a049c71630fe386f325a62f2d69f1efb3}{CButton\+Exp}}, \mbox{\hyperlink{class_c_u_f_o_light_af2882593775b1d6c8ed56c6b5a030cfc}{CUFOLight}}, \mbox{\hyperlink{class_s_t_g_1_1_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}{STG\+::\+CPlayer}}, \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_af6bb5346def286a2db0b7c415d8d5244}{STG\+::\+CEnemy}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_abc198dba0114999ea14130cab9ede414}{STG\+::\+CBullet}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_ac65ac78a9916dc1b7f0a614920658863}{STG\+::\+CBullet\+Manager}}, \mbox{\hyperlink{class_c_spawn_u_f_o_aaf7d7985b6b1da5035d48ed28f0eef16}{CSpawn\+UFO}}, \mbox{\hyperlink{class_c_sky_dome_ac584e23a6dceea80ff0702f6c6bf9f16}{CSky\+Dome}}, \mbox{\hyperlink{class_c_mother_ship_u_f_o_a71beb7e8878c30f97dedf949188af58a}{CMother\+Ship\+UFO}}, \mbox{\hyperlink{class_c_invisible_wall_a2f6e409b90a837a4b03b3d109bd9a927}{CInvisible\+Wall}}, \mbox{\hyperlink{class_c_ground_stage_a604d4de1aa58b24274167b7f20b8e803}{CGround\+Stage}}, \mbox{\hyperlink{class_c_arm_a62ebbfb225d34d6e82bf76d3867afe77}{CArm}}, \mbox{\hyperlink{class_c_laser_beam_ac8f6769e2b9491c0075f74de38a06a1f}{CLaser\+Beam}}, \mbox{\hyperlink{class_c_s_p_effect_time_item_a1e51f2c990311270f7d347050ed1b380}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_ac4e5641e475159e8cc529471b7d92a5e}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_acabead8a16eeff0c919a47c928de24a1}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_acb591b57dc985aef29dd5202432336bd}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_edit_item_acc7b5f175b699e701f1f0b24bf619395}{CEdit\+Item}}, \mbox{\hyperlink{class_c_explosion_a7467fd3c1d141ab8e59be39282a2940d}{CExplosion}}, \mbox{\hyperlink{class_c_event_player_a0ff393d536b57532f03fd456fe89d087}{CEvent\+Player}}, \mbox{\hyperlink{class_c_event_girl_a7c99416eb11931d30458596e638ae531}{CEvent\+Girl}}, \mbox{\hyperlink{class_c_event_alien_a_aa67ed65aed1837166b1150c64ecc2abc}{CEvent\+AlienA}}, \mbox{\hyperlink{class_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}{CPlayer}}, \mbox{\hyperlink{class_c_girl_a6229e7916d0ce55e9d0ff152fdffe3a2}{CGirl}}, \mbox{\hyperlink{class_c_edit_alien_d_ab1575a163dbdd93efe4bce5f87e45758}{CEdit\+AlienD}}, \mbox{\hyperlink{class_c_edit_alien_c_a896418e49f2a9dee3664cd3dc15a8d2d}{CEdit\+AlienC}}, \mbox{\hyperlink{class_c_edit_alien_b_a4babcee1d865a82e5d61617e7d758164}{CEdit\+AlienB}}, \mbox{\hyperlink{class_c_edit_alien_a_a1f32c6521171ba6b1ea846cf98e9fc5a}{CEdit\+AlienA}}, \mbox{\hyperlink{class_c_alien_d_a7a986f67b609a55ceac6b6f8846a5292}{CAlienD}}, \mbox{\hyperlink{class_c_alien_c_ab717a724963314d8ff48ff11b5028928}{CAlienC}}, \mbox{\hyperlink{class_c_alien_b_a54b395a23f5d08a6189fc7d2bd2fea8f}{CAlienB}}, \mbox{\hyperlink{class_c_alien_a_a40b6dd986d8e75fae319f1adf69d27a4}{CAlienA}}, \mbox{\hyperlink{class_c_barrier_abef5bba466dba31e24361863f54038a0}{CBarrier}} (計56項目)で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_af0892117053801153554374c1b87babd}\label{class_c_game_object_af0892117053801153554374c1b87babd}} 
+\index{CGameObject@{CGameObject}!IsDisplayOut@{IsDisplayOut}}
+\index{IsDisplayOut@{IsDisplayOut}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{IsDisplayOut()}{IsDisplayOut()}}
+{\footnotesize\ttfamily bool CGame\+Object\+::\+Is\+Display\+Out (\begin{DoxyParamCaption}\item[{const float \&}]{adj\+Size = {\ttfamily WND\+\_\+OUT\+\_\+ADJ\+\_\+SIZE} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_af0892117053801153554374c1b87babd_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_af0892117053801153554374c1b87babd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}\label{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}} 
+\index{CGameObject@{CGameObject}!Render@{Render}}
+\index{Render@{Render}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void CGame\+Object\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_tutorial_a5d716d4c2063f753c8c0d71708091008}{CTutorial}}, \mbox{\hyperlink{class_c_switch_a8184d7576c109366e9b5290ab97509c2}{CSwitch}}, \mbox{\hyperlink{class_c_slinder_ab84603bd3815be0dc53be27a2ceb20db}{CSlinder}}, \mbox{\hyperlink{class_c_title_widget_ae39c738092df39185add69bba16fff25}{CTitle\+Widget}}, \mbox{\hyperlink{class_c_warning_ae2f55dc4832caad2a62dda05412ac1bd}{CWarning}}, \mbox{\hyperlink{class_c_ultemate_sing_acd5c9f818e344be945d17436cded4103}{CUltemate\+Sing}}, \mbox{\hyperlink{class_c_mini_map_a5ffb395ba18d000cf88f2b437f2e850d}{CMini\+Map}}, \mbox{\hyperlink{class_c_limit_time_a8bdf1bba9403d2a26eebd61d788f7d8c}{CLimit\+Time}}, \mbox{\hyperlink{class_c_special_ability_gauge_a88fe77d40ff12eea0fca94809fe429f4}{CSpecial\+Ability\+Gauge}}, \mbox{\hyperlink{class_c_life_gauge_a65a5d9db81f5fddcbe1ff1657dc0ca91}{CLife\+Gauge}}, \mbox{\hyperlink{class_c_back_gauge_a1c01b438f722048f1e3b5359d1b7aa3d}{CBack\+Gauge}}, \mbox{\hyperlink{class_c_game_over_widget_a217f6e9b1ffb07087846f6fcd0f2a489}{CGame\+Over\+Widget}}, \mbox{\hyperlink{class_c_continue_widget_a2b436e346dfe181b7becc9beb2427eed}{CContinue\+Widget}}, \mbox{\hyperlink{class_c_volume_config_widget_a1bc3eebf623af4874a4791cdde7b13ba}{CVolume\+Config\+Widget}}, \mbox{\hyperlink{class_c_graphic_config_widget_a0d99a61ca5063769869d2889e5f9b82d}{CGraphic\+Config\+Widget}}, \mbox{\hyperlink{class_c_controller_config_widget_a32e8beeeb71807b4f6627b0d88871add}{CController\+Config\+Widget}}, \mbox{\hyperlink{class_c_camera_config_widget_a37d7cc5cada22a737800bd959c7ca0aa}{CCamera\+Config\+Widget}}, \mbox{\hyperlink{class_c_clear_widget_a36cfaae99f4b72882ccedc104702cce9}{CClear\+Widget}}, \mbox{\hyperlink{class_c_return_title_a93652b703ea98b0ec5f793e712daafcf}{CReturn\+Title}}, \mbox{\hyperlink{class_c_game_start_event_widget_a5cd6524c4f6202d4a1f108373b88b31f}{CGame\+Start\+Event\+Widget}}, \mbox{\hyperlink{class_c_event_widget_ac82372f6f565e0e00615040ed2edda83}{CEvent\+Widget}}, \mbox{\hyperlink{class_c_cursor_a5d1c0589dbbc7996eb00d5ba7f262001}{CCursor}}, \mbox{\hyperlink{class_c_config_cursor_a4844754ef34067a57a94af0d6ba5bf05}{CConfig\+Cursor}}, \mbox{\hyperlink{class_c_button_exp_abd6df14d48ee3c1998741a79726c45bb}{CButton\+Exp}}, \mbox{\hyperlink{class_c_u_f_o_light_a78bd4c96f4bf2e39e48c123681dfd5fd}{CUFOLight}}, \mbox{\hyperlink{class_s_t_g_1_1_c_player_adde42d001de461b2192bbb39d7e69aa1}{STG\+::\+CPlayer}}, \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a0401d9e86c8786242bed587e9e1755fd}{STG\+::\+CEnemy}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_a9f7570d924e9efc8438e4a7ff561b4b5}{STG\+::\+CBullet}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a11418fd63eb0c85936dee27ff4398e26}{STG\+::\+CBullet\+Manager}}, \mbox{\hyperlink{class_c_spawn_u_f_o_a8717e1580fc9a12e9bc39652bad0a349}{CSpawn\+UFO}}, \mbox{\hyperlink{class_c_sky_dome_a9a94faf17a91e615b202edb53ea089c8}{CSky\+Dome}}, \mbox{\hyperlink{class_c_mother_ship_u_f_o_ab63ece9c5cee9a624fca448fa5292cf6}{CMother\+Ship\+UFO}}, \mbox{\hyperlink{class_c_invisible_wall_a07be8a4feeb75be1ace64b926432e588}{CInvisible\+Wall}}, \mbox{\hyperlink{class_c_ground_stage_afbf3cddc33391ea24640a01b28da1959}{CGround\+Stage}}, \mbox{\hyperlink{class_c_arm_a1b82a48882aa4ccdb240f0d51d8d7eda}{CArm}}, \mbox{\hyperlink{class_c_laser_beam_a84d7a05f9c34c9bad9ad68c24397f109}{CLaser\+Beam}}, \mbox{\hyperlink{class_c_s_p_effect_time_item_ac0328a500427c4a7b463dbbfebe12048}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_ab18d614bdc44bd817c32764da181f42f}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a008cbb2f714072e2f3a306039c8e5310}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_a4f3dee657e19ea7820607be75c47efdf}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd}{CItem\+Base}}, \mbox{\hyperlink{class_c_edit_item_aac4d076b3a7078eeaacf86fcf370afac}{CEdit\+Item}}, \mbox{\hyperlink{class_c_explosion_ac0bd29e0716876cba8c6d24e0bcfa9ff}{CExplosion}}, \mbox{\hyperlink{class_c_event_player_a64dd2d3bb99e27ade32b631cededfe77}{CEvent\+Player}}, \mbox{\hyperlink{class_c_event_girl_a7f70ac0a572b5aa6b63052f4ac142e69}{CEvent\+Girl}}, \mbox{\hyperlink{class_c_event_alien_a_a420c40ce013aa1eaa1e6c0e25202a2c0}{CEvent\+AlienA}}, \mbox{\hyperlink{class_c_player_adde42d001de461b2192bbb39d7e69aa1}{CPlayer}}, \mbox{\hyperlink{class_c_girl_a97a6ea9adc70b741ad209ad37ddef2d4}{CGirl}}, \mbox{\hyperlink{class_c_edit_alien_d_a2746c946074a5853bb4e62b8c49ea155}{CEdit\+AlienD}}, \mbox{\hyperlink{class_c_edit_alien_c_a94fbf76c4eed79b7e9ac5453582b373e}{CEdit\+AlienC}}, \mbox{\hyperlink{class_c_edit_alien_b_a23be0817a955a0817c785c95a7749a61}{CEdit\+AlienB}}, \mbox{\hyperlink{class_c_edit_alien_a_a6add98f8a27c1ee9cfd62c6321ed26e9}{CEdit\+AlienA}}, \mbox{\hyperlink{class_c_alien_d_a79a3396759c12e8e6ab14e41b38db327}{CAlienD}}, \mbox{\hyperlink{class_c_alien_c_a5c413b4f821c10fd32b80941153aea4a}{CAlienC}}, \mbox{\hyperlink{class_c_alien_b_aaa5b9cb6bcce4e8c18792b00e4692827}{CAlienB}}, \mbox{\hyperlink{class_c_alien_a_ad11e6c40dd918c142c42af9f3947c1fb}{CAlienA}}, \mbox{\hyperlink{class_c_barrier_a0a0e6c3b692a7751ccb4b08bc62ee34a}{CBarrier}} (計57項目)で実装されています。
+
+\mbox{\Hypertarget{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}\label{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}} 
+\index{CGameObject@{CGameObject}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily virtual void CGame\+Object\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_switch_a25dfe7a64938814d3fba3ba2c81f32d5}{CSwitch}}, \mbox{\hyperlink{class_c_slinder_ae19f79e90479728fd6b91ead1ba727e0}{CSlinder}}, \mbox{\hyperlink{class_c_warning_a3f3d753b8c5df6614a07ffa4bff4350e}{CWarning}}, \mbox{\hyperlink{class_c_invisible_wall_ad3861b6b2ae4770b24f58ffded5a2910}{CInvisible\+Wall}}, \mbox{\hyperlink{class_c_explosion_ad2c7445695f04427009cff7de8470639}{CExplosion}}, \mbox{\hyperlink{class_c_alien_a404fce54d60e9495735c8798a3a32326}{CAlien}}, \mbox{\hyperlink{class_c_girl_a748564e9a7944e9a19c1d22057b25334}{CGirl}}で再実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_a244d5b282a24e5b0c11430d7c0841ac2}\label{class_c_game_object_a244d5b282a24e5b0c11430d7c0841ac2}} 
+\index{CGameObject@{CGameObject}!SetRotationX@{SetRotationX}}
+\index{SetRotationX@{SetRotationX}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{SetRotationX()}{SetRotationX()}}
+{\footnotesize\ttfamily void CGame\+Object\+::\+Set\+RotationX (\begin{DoxyParamCaption}\item[{const float \&}]{rotX }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_game_object_ae521d08312342c055e9543c7d145682a}\label{class_c_game_object_ae521d08312342c055e9543c7d145682a}} 
+\index{CGameObject@{CGameObject}!SetRotationY@{SetRotationY}}
+\index{SetRotationY@{SetRotationY}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{SetRotationY()}{SetRotationY()}}
+{\footnotesize\ttfamily void CGame\+Object\+::\+Set\+RotationY (\begin{DoxyParamCaption}\item[{const float \&}]{rotY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_ae521d08312342c055e9543c7d145682a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_ac4019bf271843c6ae6dc542e8671f167}\label{class_c_game_object_ac4019bf271843c6ae6dc542e8671f167}} 
+\index{CGameObject@{CGameObject}!SetRotationZ@{SetRotationZ}}
+\index{SetRotationZ@{SetRotationZ}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{SetRotationZ()}{SetRotationZ()}}
+{\footnotesize\ttfamily void CGame\+Object\+::\+Set\+RotationZ (\begin{DoxyParamCaption}\item[{const float \&}]{rotZ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_game_object_a1d181a4d2b8df958b267fcd8ebe8e4e6}\label{class_c_game_object_a1d181a4d2b8df958b267fcd8ebe8e4e6}} 
+\index{CGameObject@{CGameObject}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CGame\+Object\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_game_object_a6897eb0511df6b293459e9b984658db1}\label{class_c_game_object_a6897eb0511df6b293459e9b984658db1}} 
+\index{CGameObject@{CGameObject}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CGame\+Object\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const float \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_object_a6897eb0511df6b293459e9b984658db1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_object_a0cac96898083c118adc5c054af44b37b}\label{class_c_game_object_a0cac96898083c118adc5c054af44b37b}} 
+\index{CGameObject@{CGameObject}!Update@{Update}}
+\index{Update@{Update}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void CGame\+Object\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_tutorial_acc6a296161a71973e98adca014fb32aa}{CTutorial}}, \mbox{\hyperlink{class_c_switch_a02c413d64aff2371b3109d92267c5cbc}{CSwitch}}, \mbox{\hyperlink{class_c_slinder_ab5286115676fba18d40426f326fe9d0e}{CSlinder}}, \mbox{\hyperlink{class_c_title_widget_aae088c2928ee99e3daeca54c37fa8489}{CTitle\+Widget}}, \mbox{\hyperlink{class_c_warning_a167cff167c945012024040a83bdae4de}{CWarning}}, \mbox{\hyperlink{class_c_ultemate_sing_a5735deeac4967a740f521c52f61e8ae8}{CUltemate\+Sing}}, \mbox{\hyperlink{class_c_mini_map_af6fba41583c9920b89b88c9ef463e1a3}{CMini\+Map}}, \mbox{\hyperlink{class_c_limit_time_a1d2606f63706b92d030eaa5787778c82}{CLimit\+Time}}, \mbox{\hyperlink{class_c_special_ability_gauge_a7a68cc16fdd36b39eb0ae8fdcb2fe75c}{CSpecial\+Ability\+Gauge}}, \mbox{\hyperlink{class_c_life_gauge_a2940f887f07dc27f92f57cb61c4beb9b}{CLife\+Gauge}}, \mbox{\hyperlink{class_c_back_gauge_a3cd2b6fd34254ec15732755760fda8a7}{CBack\+Gauge}}, \mbox{\hyperlink{class_c_game_over_widget_aaa87a16487bbbbdf347ea464f9f3f2eb}{CGame\+Over\+Widget}}, \mbox{\hyperlink{class_c_continue_widget_af2ca55df96cc7081dbfe67fca97d0fa0}{CContinue\+Widget}}, \mbox{\hyperlink{class_c_volume_config_widget_aae82b0cf439387c45e7819b44386b8b5}{CVolume\+Config\+Widget}}, \mbox{\hyperlink{class_c_graphic_config_widget_a5b34aff9c85d840ee5a274e0b7980cc9}{CGraphic\+Config\+Widget}}, \mbox{\hyperlink{class_c_controller_config_widget_ac03665b6e78649738e9fbcf46d44b6ef}{CController\+Config\+Widget}}, \mbox{\hyperlink{class_c_camera_config_widget_a4e6666b6164f90e8e6dc70b292b46e6b}{CCamera\+Config\+Widget}}, \mbox{\hyperlink{class_c_clear_widget_a166a7bba2fe77cbd165f6ad43262acff}{CClear\+Widget}}, \mbox{\hyperlink{class_c_return_title_a8c05a837bc2fd8cec96e673fb2e3ad1c}{CReturn\+Title}}, \mbox{\hyperlink{class_c_game_start_event_widget_ac40686ad72774e7471bb3c99e22c0cfc}{CGame\+Start\+Event\+Widget}}, \mbox{\hyperlink{class_c_event_widget_a1d8985f6c24448cda6973ce52d1492b5}{CEvent\+Widget}}, \mbox{\hyperlink{class_c_cursor_aa0b738e4b95863027008d091eed8ec7a}{CCursor}}, \mbox{\hyperlink{class_c_config_cursor_a065eb717cae2f9f866fe3089c0713d8e}{CConfig\+Cursor}}, \mbox{\hyperlink{class_c_button_exp_ae8bda1163473a02bd925b0bc9fddd9df}{CButton\+Exp}}, \mbox{\hyperlink{class_c_u_f_o_light_a26de1df1894c2dc7b890374b44728bac}{CUFOLight}}, \mbox{\hyperlink{class_s_t_g_1_1_c_player_a4582a8020f6734842edea64909bd4b40}{STG\+::\+CPlayer}}, \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_aa869e2d42a1d1ac9c4aeb8e17b0913f2}{STG\+::\+CEnemy}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_acdc51ffae36aff81241ed4329baf859b}{STG\+::\+CBullet}}, \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_ab5246a88f70e399e522b9d9c2554f059}{STG\+::\+CBullet\+Manager}}, \mbox{\hyperlink{class_c_spawn_u_f_o_a8961b5a57d400970e42d9bcf3c0c06a7}{CSpawn\+UFO}}, \mbox{\hyperlink{class_c_sky_dome_a8e2a40bf9ea84dbbec587ab223f274da}{CSky\+Dome}}, \mbox{\hyperlink{class_c_mother_ship_u_f_o_a73d8176667ce58ce1302519a0fc595dd}{CMother\+Ship\+UFO}}, \mbox{\hyperlink{class_c_invisible_wall_aec6605dddf111c689fec9162f94ec4ad}{CInvisible\+Wall}}, \mbox{\hyperlink{class_c_ground_stage_ad9b1ab4fdac8ece6f8fa2c93e251d7f9}{CGround\+Stage}}, \mbox{\hyperlink{class_c_arm_a53136619a05288586ddadb7298f1576b}{CArm}}, \mbox{\hyperlink{class_c_laser_beam_aa146b988f75ab43edd086a7f074b800d}{CLaser\+Beam}}, \mbox{\hyperlink{class_c_s_p_effect_time_item_a2b402c600cf698ffbf57aae40592005e}{CSPEffect\+Time\+Item}}, \mbox{\hyperlink{class_c_move_speed_up_item_a2d92f43308a0f865e9d79104f7bd9feb}{CMove\+Speed\+Up\+Item}}, \mbox{\hyperlink{class_c_life_recovery_item_a913e3d669a40be0b49e1b3712b1143c2}{CLife\+Recovery\+Item}}, \mbox{\hyperlink{class_c_attack_up_item_adf1793ced3d3771a577db7eed14e63c1}{CAttack\+Up\+Item}}, \mbox{\hyperlink{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad}{CItem\+Base}}, \mbox{\hyperlink{class_c_edit_item_acd266f028b7ad41e563e6afb7f5ec608}{CEdit\+Item}}, \mbox{\hyperlink{class_c_explosion_afb7a9b3c201572126b62ead993283829}{CExplosion}}, \mbox{\hyperlink{class_c_event_player_ae0411cfba69d3b17f34b52fbce856549}{CEvent\+Player}}, \mbox{\hyperlink{class_c_event_girl_a57c1189526e25e041ecf8380b1a17187}{CEvent\+Girl}}, \mbox{\hyperlink{class_c_event_alien_a_a88d5b54b9965dafce164ff4ae708e4d1}{CEvent\+AlienA}}, \mbox{\hyperlink{class_c_player_a4582a8020f6734842edea64909bd4b40}{CPlayer}}, \mbox{\hyperlink{class_c_girl_adc60ac4ea780cb61fc79766765a815f4}{CGirl}}, \mbox{\hyperlink{class_c_edit_alien_d_a06abde27d281643510a2510890c0c21c}{CEdit\+AlienD}}, \mbox{\hyperlink{class_c_edit_alien_c_a5ee56b1c583ba78a99a443e1b03b679a}{CEdit\+AlienC}}, \mbox{\hyperlink{class_c_edit_alien_b_ac161df08e1498674f61cd642e6dfce3e}{CEdit\+AlienB}}, \mbox{\hyperlink{class_c_edit_alien_a_a15539142a93df16f387aaecd95fa5b1f}{CEdit\+AlienA}}, \mbox{\hyperlink{class_c_alien_d_a79472e7cf873953715ad3b53f783e58c}{CAlienD}}, \mbox{\hyperlink{class_c_alien_c_a5d342002c64f4ed64a40759fee37fae5}{CAlienC}}, \mbox{\hyperlink{class_c_alien_b_a435884680c7ec02ab9340986a9b96d8d}{CAlienB}}, \mbox{\hyperlink{class_c_alien_a_affaf75d3957ad2e1528c1fe654dee22c}{CAlienA}}, \mbox{\hyperlink{class_c_barrier_a39048d9597798b98649bb48462758f11}{CBarrier}} (計57項目)で実装されています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_c_game_object_a0cac96898083c118adc5c054af44b37b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_game_object_a774fe22417d43d6560a52797dd61d20d}\label{class_c_game_object_a774fe22417d43d6560a52797dd61d20d}} 
+\index{CGameObject@{CGameObject}!m\_ObjectTag@{m\_ObjectTag}}
+\index{m\_ObjectTag@{m\_ObjectTag}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_ObjectTag}{m\_ObjectTag}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_object_list_8h_ae3918515e36084aa17b48b6b6d9da95c}{EObject\+Tag}} CGame\+Object\+::m\+\_\+\+Object\+Tag\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_object_a67f2224f36e99bfa9a1bf17f4cb28a78}\label{class_c_game_object_a67f2224f36e99bfa9a1bf17f4cb28a78}} 
+\index{CGameObject@{CGameObject}!m\_vPosition@{m\_vPosition}}
+\index{m\_vPosition@{m\_vPosition}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_vPosition}{m\_vPosition}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CGame\+Object\+::m\+\_\+v\+Position\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_object_a1712afa4cd98a989014e6b685ff616a3}\label{class_c_game_object_a1712afa4cd98a989014e6b685ff616a3}} 
+\index{CGameObject@{CGameObject}!m\_vRotation@{m\_vRotation}}
+\index{m\_vRotation@{m\_vRotation}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_vRotation}{m\_vRotation}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CGame\+Object\+::m\+\_\+v\+Rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_game_object_a7b04075e2da10eac9c131ec427bf9eef}\label{class_c_game_object_a7b04075e2da10eac9c131ec427bf9eef}} 
+\index{CGameObject@{CGameObject}!m\_vScale@{m\_vScale}}
+\index{m\_vScale@{m\_vScale}!CGameObject@{CGameObject}}
+\doxysubsubsection{\texorpdfstring{m\_vScale}{m\_vScale}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CGame\+Object\+::m\+\_\+v\+Scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\mbox{\hyperlink{_game_object_8h}{Game\+Object.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\mbox{\hyperlink{_game_object_8cpp}{Game\+Object.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+<map id="CAlien::CurrentStateUpdate" name="CAlien::CurrentStateUpdate">
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,188,260"/>
+<area shape="rect" id="node2" href="$class_c_alien.html#a920aec3e04c2c67f0dd54d1dd0b348cc" title=" " alt="" coords="267,56,376,83"/>
+<area shape="rect" id="node7" href="$class_c_alien.html#a855e3d8c37118b00b0fbfb235f4d065d" title=" " alt="" coords="270,309,373,336"/>
+<area shape="rect" id="node10" href="$class_c_alien.html#acf0cd7c9b3782f6d3a0ceac31b374370" title=" " alt="" coords="265,107,377,133"/>
+<area shape="rect" id="node13" href="$class_c_alien.html#ae5b7b4fec8e68a4392b73347f24657e6" title=" " alt="" coords="271,360,372,387"/>
+<area shape="rect" id="node14" href="$class_c_alien.html#a5c7dc9392283b72bc60858a2f4a5f071" title=" " alt="" coords="254,208,389,235"/>
+<area shape="rect" id="node15" href="$class_c_alien.html#afa501215cc5ab04525e6d04848f26211" title=" " alt="" coords="272,157,371,184"/>
+<area shape="rect" id="node16" href="$class_c_alien.html#a8a0f487d940be245b39e90695474c226" title=" " alt="" coords="236,411,407,437"/>
+<area shape="rect" id="node17" href="$class_c_alien.html#a174ca2add92fa856cf797d0639319c38" title=" " alt="" coords="259,259,383,285"/>
+<area shape="rect" id="node3" href="$class_c_alien.html#a6ff2a919261c8d52bb7be26d3cfca1fd" title=" " alt="" coords="470,5,626,32"/>
+<area shape="rect" id="node4" href="$class_c_alien.html#a0fdf09faeaa962dbf4701ae0a37aae00" title=" " alt="" coords="472,107,624,133"/>
+<area shape="rect" id="node6" href="$class_c_alien.html#a261026372d8e5db30433bf6a96d8bb03" title=" " alt="" coords="480,56,616,83"/>
+<area shape="rect" id="node5" href="$class_c_character.html#a54508afb9aa422b4a3765245e52511ac" title=" " alt="" coords="698,107,877,133"/>
+<area shape="rect" id="node8" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="463,325,633,352"/>
+<area shape="rect" id="node9" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="689,296,885,323"/>
+<area shape="rect" id="node11" href="$class_c_character.html#a0ca58686329d1caf5b67460d32ffac25" title=" " alt="" coords="461,208,635,235"/>
+<area shape="rect" id="node12" href="$class_c_alien.html#ae2669fc5d60044e9ddd8c940e2510eef" title=" " alt="" coords="485,157,611,184"/>
+<area shape="rect" id="node18" href="$class_c_sound_manager.html#a589970cca5e4693633972a052b874679" title=" " alt="" coords="455,259,641,301"/>
+</map>

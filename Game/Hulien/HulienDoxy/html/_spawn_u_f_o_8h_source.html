@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/SpawnUFO/SpawnUFO.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_f7b65764c801ea908d92e1d835c00f92.html">SpawnUFO</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SpawnUFO.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_spawn_u_f_o_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SPAWN_UFO_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SPAWN_UFO_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\GameObject.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;..\Actor\Character\Alien\AlienList.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;..\Actor\Character\Alien\Alien.h&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_spawn_u_f_o_param_8h.html">SpawnUFOParam.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_actor.html">CActor</a>;               <span class="comment">// アクタークラス.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_u_f_o_light.html">CUFOLight</a>;            <span class="comment">// UFOライトクラス.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_collision_manager.html">CCollisionManager</a>;    <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_ultemate_sing.html">CUltemateSing</a>;        <span class="comment">// 宇宙人Dの警告UIクラス.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/**************************************</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">*   スポーンUFOクラス.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_spawn_u_f_o.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_spawn_u_f_o.html">CSpawnUFO</a> : <span class="keyword">public</span> <a class="code" href="class_c_game_object.html">CGameObject</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*   MODEL_NAME      = <span class="stringliteral">&quot;ufo_mini&quot;</span>;   <span class="comment">// モデル名.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  COLLISION_RADIUS    = 5.0f;         <span class="comment">// 当たり判定のサイズ.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  ADD_POS_POWER       = 0.1f;         <span class="comment">// 座標を上にあげる力.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  LIGHT_HEIGHT        = 1.65f;        <span class="comment">// ライトの高さ.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  LIGHT_WEDTH         = 1.4f;         <span class="comment">// ライトの幅.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span>    SPAWN_SUB_TIME      = 3*<a class="code" href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">FPS</a>;        <span class="comment">// 最初のスポーン時間調整用.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="class_c_spawn_u_f_o.html#a4a22589624426ba8abf63ea9c6bdb0d9">CSpawnUFO</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_spawn_u_f_o.html#a7e2d1b72338ff0bf2aed501098ba1eac">~CSpawnUFO</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_spawn_u_f_o.html#aaf7d7985b6b1da5035d48ed28f0eef16">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#a8961b5a57d400970e42d9bcf3c0c06a7">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#a8717e1580fc9a12e9bc39652bad0a349">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// スプライトの描画.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#a6863c1f3d5a6de72fbbed8d768af7f8d">SpriteRender</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 宇宙人をスポーンさせる.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#abd362171e82d0e1d9050a5a03577cabd">SpawnAlien</a>( std::vector&lt;std::shared_ptr&lt;CAlien&gt;&gt;&amp; );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// 宇宙人のパラメータリストを設定する.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#ad4dd231b31f0f920889abd939488364d">SetAlienParameterList</a>( std::vector&lt;SAlienParam&gt;* );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// スポーンパラメータの設定.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#a43b197f470660dc692cae10d9528c9d7">SetSpawnParameter</a>( <span class="keyword">const</span> <a class="code" href="struct_s_spawn_u_f_o_param.html">SSpawnUFOParam</a>&amp; param );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 連れ去るUFOの座標設定.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_c_spawn_u_f_o.html#ab6aaa518cece3251eb8a426577363ba1">   54</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#ab6aaa518cece3251eb8a426577363ba1">SetAbductUFOPosition</a>( D3DXVECTOR3* pPos ){ m_pAbductUFOPosition = pPos; }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// ライトを取り出す.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#aa1bbe5958c0e574e6af697151d41b30e">LightDischarge</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// ライトをしまう.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#ab6f59e843e9d89ee46d487db9e0d5d5f">LightCleanUP</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 光を完全に放出する.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#a8c5b70bd59e595a49888bdd22b06981e">DischargePreparation</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// 光を片づける.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#aae13b75c27e18f20f1b6cd794d1c0d13">CleanUPPreparation</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 描画フラグ設定関数.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_c_spawn_u_f_o.html#afcf9f3b0ec0b87206889e8f5d825d33f">   66</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#afcf9f3b0ec0b87206889e8f5d825d33f">SetDisp</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; disp) { m_IsDisp = disp; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// スケール値の設定.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_c_spawn_u_f_o.html#adabddc9f3373a40b734559eaa8305e69">   69</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_spawn_u_f_o.html#adabddc9f3373a40b734559eaa8305e69">SetScale</a>(<span class="keyword">const</span> D3DXVECTOR3&amp; scale) { <a class="code" href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">m_vScale</a> = scale; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 当たり判定(イベントで使用).</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_spawn_u_f_o.html#ae9918c23520a0a8ffc9e2eaede217e8d">Collision</a>(<a class="code" href="class_c_actor.html">CActor</a>* pActor);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 宇宙人の作成.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::shared_ptr&lt;CAlien&gt; AlienFactory();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// 宇宙人番号の取得.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> GetAlienNo();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// 宇宙人番号の作成.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> CreateAlienNo( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; min, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; max, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; outVal );</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// アイテムを取得する.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782">EItemList</a> ProbabilityGetItem( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isAlienD );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// モデルの取得.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> GetModel();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> CollisionSetting();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::shared_ptr&lt;CDX9StaticMesh&gt;     m_pStaticMesh;          <span class="comment">// メッシュ.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    std::shared_ptr&lt;CUFOLight&gt;          m_pUFOLight;            <span class="comment">// UFOライト.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::unique_ptr&lt;CUltemateSing&gt;      m_pUltemateSing;        <span class="comment">// 宇宙人Dの警告UI.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;std::shared_ptr&lt;CAlien&gt;&gt;m_AilenList;            <span class="comment">// 宇宙人リスト.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::shared_ptr&lt;CCollisionManager&gt;  m_pCollManager;         <span class="comment">// 当たり判定クラス.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="struct_s_spawn_u_f_o_param.html">SSpawnUFOParam</a>                      m_SpawnParameter;       <span class="comment">// スポーンパラメータ.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    D3DXVECTOR3                         m_SpawnPoint;           <span class="comment">// スポーンポイント.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    D3DXVECTOR3*                        m_pAbductUFOPosition;   <span class="comment">// 連れ去るUFOの座標.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::vector&lt;SAlienParam&gt;*           m_pAlienParamList;      <span class="comment">// 宇宙人パラメータリスト.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> m_FrameCount;   <span class="comment">// 経過フレームカウント.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> m_SpawnCount;   <span class="comment">// スポーンカウント.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">int</span> m_AlienIndex;   <span class="comment">// 宇宙人.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> m_AlienSpawnCount;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">bool</span> m_IsDisp;      <span class="comment">//描画フラグ.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::mt19937 m_RandomSeed;  <span class="comment">// ランダムシード.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef SPAWN_UFO_H.</span></div>
+<div class="ttc" id="a_global_8h_html_ac5090a6568797128b0a5545228bb8b75"><div class="ttname"><a href="_global_8h.html#ac5090a6568797128b0a5545228bb8b75">FPS</a></div><div class="ttdeci">const int FPS</div><div class="ttdef"><b>Definition:</b> Global.h:30</div></div>
+<div class="ttc" id="a_item_list_8h_html_ac7f7634f7374d0bc60cd4eae8851c782"><div class="ttname"><a href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782">EItemList</a></div><div class="ttdeci">EItemList</div><div class="ttdef"><b>Definition:</b> ItemList.h:14</div></div>
+<div class="ttc" id="a_spawn_u_f_o_param_8h_html"><div class="ttname"><a href="_spawn_u_f_o_param_8h.html">SpawnUFOParam.h</a></div><div class="ttdoc">スポーンUFOパラメータ情報.</div></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_collision_manager_html"><div class="ttname"><a href="class_c_collision_manager.html">CCollisionManager</a></div><div class="ttdef"><b>Definition:</b> CollsionManager.h:20</div></div>
+<div class="ttc" id="aclass_c_game_object_html"><div class="ttname"><a href="class_c_game_object.html">CGameObject</a></div><div class="ttdef"><b>Definition:</b> GameObject.h:17</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a7b04075e2da10eac9c131ec427bf9eef"><div class="ttname"><a href="class_c_game_object.html#a7b04075e2da10eac9c131ec427bf9eef">CGameObject::m_vScale</a></div><div class="ttdeci">D3DXVECTOR3 m_vScale</div><div class="ttdef"><b>Definition:</b> GameObject.h:57</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html"><div class="ttname"><a href="class_c_spawn_u_f_o.html">CSpawnUFO</a></div><div class="ttdef"><b>Definition:</b> SpawnUFO.h:27</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a43b197f470660dc692cae10d9528c9d7"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a43b197f470660dc692cae10d9528c9d7">CSpawnUFO::SetSpawnParameter</a></div><div class="ttdeci">void SetSpawnParameter(const SSpawnUFOParam &amp;param)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:142</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a4a22589624426ba8abf63ea9c6bdb0d9"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a4a22589624426ba8abf63ea9c6bdb0d9">CSpawnUFO::CSpawnUFO</a></div><div class="ttdeci">CSpawnUFO()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:13</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a6863c1f3d5a6de72fbbed8d768af7f8d"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a6863c1f3d5a6de72fbbed8d768af7f8d">CSpawnUFO::SpriteRender</a></div><div class="ttdeci">void SpriteRender()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:96</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a7e2d1b72338ff0bf2aed501098ba1eac"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a7e2d1b72338ff0bf2aed501098ba1eac">CSpawnUFO::~CSpawnUFO</a></div><div class="ttdeci">virtual ~CSpawnUFO()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:37</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a8717e1580fc9a12e9bc39652bad0a349"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a8717e1580fc9a12e9bc39652bad0a349">CSpawnUFO::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:76</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a8961b5a57d400970e42d9bcf3c0c06a7"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a8961b5a57d400970e42d9bcf3c0c06a7">CSpawnUFO::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:67</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_a8c5b70bd59e595a49888bdd22b06981e"><div class="ttname"><a href="class_c_spawn_u_f_o.html#a8c5b70bd59e595a49888bdd22b06981e">CSpawnUFO::DischargePreparation</a></div><div class="ttdeci">void DischargePreparation()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:163</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_aa1bbe5958c0e574e6af697151d41b30e"><div class="ttname"><a href="class_c_spawn_u_f_o.html#aa1bbe5958c0e574e6af697151d41b30e">CSpawnUFO::LightDischarge</a></div><div class="ttdeci">void LightDischarge()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:151</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_aae13b75c27e18f20f1b6cd794d1c0d13"><div class="ttname"><a href="class_c_spawn_u_f_o.html#aae13b75c27e18f20f1b6cd794d1c0d13">CSpawnUFO::CleanUPPreparation</a></div><div class="ttdeci">void CleanUPPreparation()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:169</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_aaf7d7985b6b1da5035d48ed28f0eef16"><div class="ttname"><a href="class_c_spawn_u_f_o.html#aaf7d7985b6b1da5035d48ed28f0eef16">CSpawnUFO::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:42</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_ab6aaa518cece3251eb8a426577363ba1"><div class="ttname"><a href="class_c_spawn_u_f_o.html#ab6aaa518cece3251eb8a426577363ba1">CSpawnUFO::SetAbductUFOPosition</a></div><div class="ttdeci">void SetAbductUFOPosition(D3DXVECTOR3 *pPos)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.h:54</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_ab6f59e843e9d89ee46d487db9e0d5d5f"><div class="ttname"><a href="class_c_spawn_u_f_o.html#ab6f59e843e9d89ee46d487db9e0d5d5f">CSpawnUFO::LightCleanUP</a></div><div class="ttdeci">void LightCleanUP()</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:157</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_abd362171e82d0e1d9050a5a03577cabd"><div class="ttname"><a href="class_c_spawn_u_f_o.html#abd362171e82d0e1d9050a5a03577cabd">CSpawnUFO::SpawnAlien</a></div><div class="ttdeci">void SpawnAlien(std::vector&lt; std::shared_ptr&lt; CAlien &gt;&gt; &amp;)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:102</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_ad4dd231b31f0f920889abd939488364d"><div class="ttname"><a href="class_c_spawn_u_f_o.html#ad4dd231b31f0f920889abd939488364d">CSpawnUFO::SetAlienParameterList</a></div><div class="ttdeci">void SetAlienParameterList(std::vector&lt; SAlienParam &gt; *)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:131</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_adabddc9f3373a40b734559eaa8305e69"><div class="ttname"><a href="class_c_spawn_u_f_o.html#adabddc9f3373a40b734559eaa8305e69">CSpawnUFO::SetScale</a></div><div class="ttdeci">void SetScale(const D3DXVECTOR3 &amp;scale)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.h:69</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_ae9918c23520a0a8ffc9e2eaede217e8d"><div class="ttname"><a href="class_c_spawn_u_f_o.html#ae9918c23520a0a8ffc9e2eaede217e8d">CSpawnUFO::Collision</a></div><div class="ttdeci">D3DXVECTOR3 Collision(CActor *pActor)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.cpp:52</div></div>
+<div class="ttc" id="aclass_c_spawn_u_f_o_html_afcf9f3b0ec0b87206889e8f5d825d33f"><div class="ttname"><a href="class_c_spawn_u_f_o.html#afcf9f3b0ec0b87206889e8f5d825d33f">CSpawnUFO::SetDisp</a></div><div class="ttdeci">void SetDisp(const bool &amp;disp)</div><div class="ttdef"><b>Definition:</b> SpawnUFO.h:66</div></div>
+<div class="ttc" id="aclass_c_u_f_o_light_html"><div class="ttname"><a href="class_c_u_f_o_light.html">CUFOLight</a></div><div class="ttdef"><b>Definition:</b> UFOLight.h:15</div></div>
+<div class="ttc" id="aclass_c_ultemate_sing_html"><div class="ttname"><a href="class_c_ultemate_sing.html">CUltemateSing</a></div><div class="ttdef"><b>Definition:</b> UltemateSign.h:12</div></div>
+<div class="ttc" id="astruct_s_spawn_u_f_o_param_html"><div class="ttname"><a href="struct_s_spawn_u_f_o_param.html">SSpawnUFOParam</a></div><div class="ttdef"><b>Definition:</b> SpawnUFOParam.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="CSceneTexRenderer::SetSaveScreen" name="CSceneTexRenderer::SetSaveScreen">
+<area shape="rect" id="node1" title=" " alt="" coords="524,23,673,65"/>
+<area shape="rect" id="node2" href="$class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,5,476,32"/>
+<area shape="rect" id="node4" href="$class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,56,441,83"/>
+<area shape="rect" id="node3" href="$class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,5,217,32"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="CCommon::InitPram" name="CCommon::InitPram">
+<area shape="rect" id="node1" title=" " alt="" coords="476,233,615,260"/>
+<area shape="rect" id="node2" href="$class_c_sky_dome_model.html#ac646233789a0a13854ce31a1171aaceb" title=" " alt="" coords="280,5,428,32"/>
+<area shape="rect" id="node3" href="$class_c_box_model.html#a928db4486157a0fb5cab4b67d71643a6" title=" " alt="" coords="297,56,411,83"/>
+<area shape="rect" id="node4" href="$class_c_capsule_model.html#a7ad94811c33dc04e68189888c1b6bd89" title=" " alt="" coords="285,107,423,133"/>
+<area shape="rect" id="node5" href="$class_c_sphere_model.html#a08b0e9320796c9b24e53f8f67ff9c38f" title=" " alt="" coords="288,157,420,184"/>
+<area shape="rect" id="node6" href="$class_c_d_x9_skin_mesh.html#a7a8b7ab6fa660f0048d9ac38e0d38411" title=" " alt="" coords="285,208,423,235"/>
+<area shape="rect" id="node8" href="$class_c_d_x9_static_mesh.html#ac45f9ddd4a53186febd7253bba213506" title=" " alt="" coords="281,259,427,285"/>
+<area shape="rect" id="node10" href="$class_c_font.html#a7cac194e5b1edbbb842f594a1bc01eca" title=" " alt="" coords="313,309,395,336"/>
+<area shape="rect" id="node11" href="$class_c_blend_sprite.html#a8ff6e8c5f70d84ecf8471e2464041dd2" title=" " alt="" coords="293,360,415,387"/>
+<area shape="rect" id="node13" href="$class_c_sprite.html#acc86d110750d89f7c29c8c54fe3ea447" title=" " alt="" coords="309,411,399,437"/>
+<area shape="rect" id="node15" href="$class_c_debug_text.html#afccda2c34be996e8f222f27d497e5b06" title=" " alt="" coords="295,461,413,488"/>
+<area shape="rect" id="node7" href="$class_c_d_x9_skin_mesh.html#a0c04c97adf2e731ad45456db83c05b92" title=" " alt="" coords="13,208,224,235"/>
+<area shape="rect" id="node9" href="$class_c_d_x9_static_mesh.html#af022cb18b5a2b4930dae37bf66d6bf38" title=" " alt="" coords="5,259,232,285"/>
+<area shape="rect" id="node12" href="$class_c_blend_sprite.html#a04354262fc4bf66d614178513cc39112" title=" " alt="" coords="27,360,210,387"/>
+<area shape="rect" id="node14" href="$class_c_sprite.html#a0b964b5be463b270f415f6fd084453e8" title=" " alt="" coords="61,411,177,437"/>
+</map>

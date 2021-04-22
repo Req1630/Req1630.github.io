@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/EventCharacter/EventPlayer/EventPlayer.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_3b40eb3617dd027f5a51cc61911a014f.html">EventCharacter</a></li><li class="navelem"><a class="el" href="dir_359d0e0a6a3ecb2f4c18df87321c9194.html">EventPlayer</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EventPlayer.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_event_player_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EVENT_PLAYER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EVENT_PLAYER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\EventCharacter.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\..\Character\Player\PlayerParam.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_effect_manager.html">CEffectManager</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/********************************</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">*   イベント用プレイヤークラス.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_event_player.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_event_player.html">CEventPlayer</a> : <span class="keyword">public</span> <a class="code" href="class_c_event_character.html">CEventCharacter</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// パラメータのファイルパス.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* PARAMETER_FILE_PATH = <span class="stringliteral">&quot;Data\\GameParam\\Player\\Player.bin&quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME = <span class="stringliteral">&quot;kaito_s&quot;</span>; <span class="comment">// モデル名.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_TEMP_NAME = <span class="stringliteral">&quot;kaito&quot;</span>;  <span class="comment">// 仮モデル名.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 足のボーン名.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* RIGHT_FOOT = <span class="stringliteral">&quot;kaito_rifa_2_R_asi_4&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LEFT_FOOT = <span class="stringliteral">&quot;kaito_rifa_2_L_asi_4&quot;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 声の音量.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> VOICE_VOLUME = 1.5f;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// アニメーションの調整フレーム.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Wait = 0.0; <span class="comment">// 待機.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Walk = 0.0; <span class="comment">// 走り.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Attack1 = 0.5;  <span class="comment">// 攻撃1.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Attack2 = 0.5;  <span class="comment">// 攻撃2.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Attack3 = 0.5;  <span class="comment">// 攻撃3.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Avoid = 0.4;    <span class="comment">// 回避.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_SP = 0.02;      <span class="comment">// 特殊能力.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Damage = 0.4;   <span class="comment">// ヒット時.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> ANIM_ADJ_FRAME_Dead = 0.01;    <span class="comment">// 死亡.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_event_player.html#ae4c7fe7bf093f923dcbee3ee3d7e4bc1">   39</a></span>&#160;    <span class="keyword">enum class</span> enPlayerState</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a> = 0,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        Move,           <span class="comment">//移動.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        Wait,           <span class="comment">//待機.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096">SpecialAbility</a>, <span class="comment">//特殊能力.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_event_player.html#ae4c7fe7bf093f923dcbee3ee3d7e4bc1">EPlayerState</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_c_event_player.html#a1d48bd04b053986280dfd7fc15ce1485">CEventPlayer</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_event_player.html#ae221a71493fac3af1fcf0f1543a596a8">~CEventPlayer</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_event_player.html#a0ff393d536b57532f03fd456fe89d087">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#ae0411cfba69d3b17f34b52fbce856549">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#a64dd2d3bb99e27ade32b631cededfe77">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 当たり判定関数.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#a51600eeed23f4d3b2b2a253c4ef07c4e">Collision</a>(<a class="code" href="class_c_actor.html">CActor</a>* pActor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// 相手座標の設定関数.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#adb8b6d0d2ab4c23a25c48d06d697f19a">SetTargetPos</a>(<a class="code" href="class_c_actor.html">CActor</a>&amp; actor) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// アニメーション速度の設定.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_c_event_player.html#a295a6bcb15a82533a92c2b5579df3bb8">   63</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#a295a6bcb15a82533a92c2b5579df3bb8">SetAnimSpeed</a>() { <a class="code" href="class_c_event_character.html#a374cca72c53328ad9d15c26c0b8c6e5c">m_AnimSpeed</a> = 0.01f; }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Yボタンが押されたか.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_c_event_player.html#aae4eceba548899a3c5e75377455de4e0">   66</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_event_player.html#aae4eceba548899a3c5e75377455de4e0">IsYButtonPressed</a>() { <span class="keywordflow">return</span> m_IsYButtonPressed; }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// 特殊能力.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_event_player.html#a5a18da6ed6bf4e6b94d0a83bfc48751b">IsSpecialAbility</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 衝突したか.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_c_event_player.html#a9fead44e54cc13280f59c6777d9a96e6">   71</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_event_player.html#a9fead44e54cc13280f59c6777d9a96e6">IsAlienHit</a>(){ <span class="keywordflow">return</span> m_IsAlienHit; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// 衝突.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_c_event_player.html#a6cf38c5f04f7223ab1654e2f9d1bbc7f">   73</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#a6cf38c5f04f7223ab1654e2f9d1bbc7f">SetAlienHit</a>(){ m_IsAlienHit = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// ダメージアニメーションが終了したか.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_c_event_player.html#a2f4e854705ccca380f494f1d913810d6">   75</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_event_player.html#a2f4e854705ccca380f494f1d913810d6">IsEndDamageAnim</a>(){ <span class="keywordflow">return</span> m_AnimFrameList[<a class="code" href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6aa81f484a674c54152ffc9575153ceacb2">player::EAnimNo_Damage</a>].IsNowFrameOver(); }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// ダメージアニメーションの更新.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_player.html#ad30b19249f0120a7791bb7e8a22aefad">DamageAnimUpdate</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// 特殊能力操作関数.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> SPController();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// ノックバック動作関数.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> KnockBack();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// 移動関数.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Move() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// エフェクト描画関数.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> EffectRender();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> ColliderSetting();</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// エフェクトの設定.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> EffectSetting();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// アニメーションフレームの設定.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> SetAnimFrameList();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// サウンドの設定.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> SoundSetting();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 音量の設定.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> VolumeSetting(<span class="keyword">const</span> <span class="keywordtype">char</span>* soung, <span class="keywordtype">float</span> volume);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a>                            m_AnimFrameList;    <span class="comment">// アニメーションフレームのリスト.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6a">player::EAnimNo</a>                                 m_NowAnimNo;        <span class="comment">// 今のアニメーション番号.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6a">player::EAnimNo</a>                                 m_OldAnimNo;        <span class="comment">// 前のアニメーション番号.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="class_c_event_player.html#ae4c7fe7bf093f923dcbee3ee3d7e4bc1">EPlayerState</a>                                    m_State;            <span class="comment">// 状態.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::vector&lt;std::shared_ptr&lt;CEffectManager&gt;&gt;    m_pEffects;         <span class="comment">// エフェクト.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">float</span>                                           m_SpecialAbility;   <span class="comment">// 特殊能力.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span>                                            m_IsYButtonPressed; <span class="comment">// Yボタンが押されたか.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span>                                            m_HasUsableSP;      <span class="comment">// 特殊能力を使えるか.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span>                                            m_IsAlienHit;       <span class="comment">// 宇宙人と当たったか.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">bool</span>                                            m_IsAttackSE;       <span class="comment">// 攻撃SEを鳴らすか.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #ifndef EVENT_PLAYER_H.</span></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="a_input_struct_8h_html_af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096"><div class="ttname"><a href="_input_struct_8h.html#af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096">EKeyBind::SpecialAbility</a></div><div class="ttdeci">@ SpecialAbility</div></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html"><div class="ttname"><a href="class_c_effect_manager.html">CEffectManager</a></div><div class="ttdef"><b>Definition:</b> EffectManager.h:14</div></div>
+<div class="ttc" id="aclass_c_event_character_html"><div class="ttname"><a href="class_c_event_character.html">CEventCharacter</a></div><div class="ttdef"><b>Definition:</b> EventCharacter.h:13</div></div>
+<div class="ttc" id="aclass_c_event_character_html_a374cca72c53328ad9d15c26c0b8c6e5c"><div class="ttname"><a href="class_c_event_character.html#a374cca72c53328ad9d15c26c0b8c6e5c">CEventCharacter::m_AnimSpeed</a></div><div class="ttdeci">double m_AnimSpeed</div><div class="ttdef"><b>Definition:</b> EventCharacter.h:120</div></div>
+<div class="ttc" id="aclass_c_event_player_html"><div class="ttname"><a href="class_c_event_player.html">CEventPlayer</a></div><div class="ttdef"><b>Definition:</b> EventPlayer.h:14</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a0ff393d536b57532f03fd456fe89d087"><div class="ttname"><a href="class_c_event_player.html#a0ff393d536b57532f03fd456fe89d087">CEventPlayer::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:32</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a1d48bd04b053986280dfd7fc15ce1485"><div class="ttname"><a href="class_c_event_player.html#a1d48bd04b053986280dfd7fc15ce1485">CEventPlayer::CEventPlayer</a></div><div class="ttdeci">CEventPlayer()</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:13</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a295a6bcb15a82533a92c2b5579df3bb8"><div class="ttname"><a href="class_c_event_player.html#a295a6bcb15a82533a92c2b5579df3bb8">CEventPlayer::SetAnimSpeed</a></div><div class="ttdeci">void SetAnimSpeed()</div><div class="ttdef"><b>Definition:</b> EventPlayer.h:63</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a2f4e854705ccca380f494f1d913810d6"><div class="ttname"><a href="class_c_event_player.html#a2f4e854705ccca380f494f1d913810d6">CEventPlayer::IsEndDamageAnim</a></div><div class="ttdeci">bool IsEndDamageAnim()</div><div class="ttdef"><b>Definition:</b> EventPlayer.h:75</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a51600eeed23f4d3b2b2a253c4ef07c4e"><div class="ttname"><a href="class_c_event_player.html#a51600eeed23f4d3b2b2a253c4ef07c4e">CEventPlayer::Collision</a></div><div class="ttdeci">virtual void Collision(CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:81</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a5a18da6ed6bf4e6b94d0a83bfc48751b"><div class="ttname"><a href="class_c_event_player.html#a5a18da6ed6bf4e6b94d0a83bfc48751b">CEventPlayer::IsSpecialAbility</a></div><div class="ttdeci">bool IsSpecialAbility()</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:91</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a64dd2d3bb99e27ade32b631cededfe77"><div class="ttname"><a href="class_c_event_player.html#a64dd2d3bb99e27ade32b631cededfe77">CEventPlayer::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:64</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a6cf38c5f04f7223ab1654e2f9d1bbc7f"><div class="ttname"><a href="class_c_event_player.html#a6cf38c5f04f7223ab1654e2f9d1bbc7f">CEventPlayer::SetAlienHit</a></div><div class="ttdeci">void SetAlienHit()</div><div class="ttdef"><b>Definition:</b> EventPlayer.h:73</div></div>
+<div class="ttc" id="aclass_c_event_player_html_a9fead44e54cc13280f59c6777d9a96e6"><div class="ttname"><a href="class_c_event_player.html#a9fead44e54cc13280f59c6777d9a96e6">CEventPlayer::IsAlienHit</a></div><div class="ttdeci">bool IsAlienHit()</div><div class="ttdef"><b>Definition:</b> EventPlayer.h:71</div></div>
+<div class="ttc" id="aclass_c_event_player_html_aae4eceba548899a3c5e75377455de4e0"><div class="ttname"><a href="class_c_event_player.html#aae4eceba548899a3c5e75377455de4e0">CEventPlayer::IsYButtonPressed</a></div><div class="ttdeci">bool IsYButtonPressed()</div><div class="ttdef"><b>Definition:</b> EventPlayer.h:66</div></div>
+<div class="ttc" id="aclass_c_event_player_html_ad30b19249f0120a7791bb7e8a22aefad"><div class="ttname"><a href="class_c_event_player.html#ad30b19249f0120a7791bb7e8a22aefad">CEventPlayer::DamageAnimUpdate</a></div><div class="ttdeci">void DamageAnimUpdate()</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:111</div></div>
+<div class="ttc" id="aclass_c_event_player_html_adb8b6d0d2ab4c23a25c48d06d697f19a"><div class="ttname"><a href="class_c_event_player.html#adb8b6d0d2ab4c23a25c48d06d697f19a">CEventPlayer::SetTargetPos</a></div><div class="ttdeci">virtual void SetTargetPos(CActor &amp;actor) override</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:86</div></div>
+<div class="ttc" id="aclass_c_event_player_html_ae0411cfba69d3b17f34b52fbce856549"><div class="ttname"><a href="class_c_event_player.html#ae0411cfba69d3b17f34b52fbce856549">CEventPlayer::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:56</div></div>
+<div class="ttc" id="aclass_c_event_player_html_ae221a71493fac3af1fcf0f1543a596a8"><div class="ttname"><a href="class_c_event_player.html#ae221a71493fac3af1fcf0f1543a596a8">CEventPlayer::~CEventPlayer</a></div><div class="ttdeci">virtual ~CEventPlayer()</div><div class="ttdef"><b>Definition:</b> EventPlayer.cpp:27</div></div>
+<div class="ttc" id="aclass_c_event_player_html_ae4c7fe7bf093f923dcbee3ee3d7e4bc1"><div class="ttname"><a href="class_c_event_player.html#ae4c7fe7bf093f923dcbee3ee3d7e4bc1">CEventPlayer::EPlayerState</a></div><div class="ttdeci">EPlayerState</div><div class="ttdef"><b>Definition:</b> EventPlayer.h:40</div></div>
+<div class="ttc" id="anamespaceanim_html_a68d2d2cd7731372f3f57e24df472067f"><div class="ttname"><a href="namespaceanim.html#a68d2d2cd7731372f3f57e24df472067f">anim::AAnimFrameList</a></div><div class="ttdeci">std::vector&lt; SAnimFrame &gt; AAnimFrameList</div><div class="ttdef"><b>Definition:</b> AnimationParamInfo.h:35</div></div>
+<div class="ttc" id="anamespaceplayer_html_aa222927d94eceaaf4527810c474ead6a"><div class="ttname"><a href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6a">player::EAnimNo</a></div><div class="ttdeci">EAnimNo</div><div class="ttdef"><b>Definition:</b> PlayerParam.h:70</div></div>
+<div class="ttc" id="anamespaceplayer_html_aa222927d94eceaaf4527810c474ead6aa81f484a674c54152ffc9575153ceacb2"><div class="ttname"><a href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6aa81f484a674c54152ffc9575153ceacb2">player::EAnimNo_Damage</a></div><div class="ttdeci">@ EAnimNo_Damage</div><div class="ttdef"><b>Definition:</b> PlayerParam.h:80</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

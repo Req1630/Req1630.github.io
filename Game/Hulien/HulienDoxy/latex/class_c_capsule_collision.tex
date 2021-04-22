@@ -1,0 +1,222 @@
+\hypertarget{class_c_capsule_collision}{}\doxysection{CCapsule\+Collision クラス}
+\label{class_c_capsule_collision}\index{CCapsuleCollision@{CCapsuleCollision}}
+
+
+{\ttfamily \#include $<$Capsule\+Collision.\+h$>$}
+
+
+
+CCapsule\+Collision の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_capsule_collision__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CCapsule\+Collision 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_c_capsule_collision__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_capsule_collision_a326619f7077d786a7c293853a66b9959}{CCapsule\+Collision}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_capsule_collision_a813182034ae5d399901ccac42c3ea0e8}{$\sim$\+CCapsule\+Collision}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_capsule_collision_a7b4d33ae4ebaf942d94841a703a4ef6e}{Init\+Model\+Capsule}} (LPD3\+DXMESH p\+Mesh)
+\item 
+HRESULT \mbox{\hyperlink{class_c_capsule_collision_a26893b5480c1aaca0f87963eafe07e03}{Init\+Model\+Capsule}} (const float \&height, const float \&radius)
+\item 
+virtual void \mbox{\hyperlink{class_c_capsule_collision_a5dbe6be88f59876b9499c769c6664b19}{Debug\+Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_capsule_collision_a9c4c60670aa5e3fbac593c4a3e6d2964}{Set\+Change\+Color}} (const bool \&changed)
+\item 
+float \mbox{\hyperlink{class_c_capsule_collision_a777917645dfe64ac1bc7c0d7c53fb27b}{Get\+Radius}} () const
+\item 
+\mbox{\hyperlink{struct_segment}{Segment}} \mbox{\hyperlink{class_c_capsule_collision_a4fa7a74375b83ee181166cf6560f75a3}{Get\+Segment}} ()
+\item 
+void \mbox{\hyperlink{class_c_capsule_collision_a970f93b84d9e5e728e4bbf4f8af0eec6}{Set\+Adj\+Radius}} (const float \&radius)
+\item 
+void \mbox{\hyperlink{class_c_capsule_collision_af72c5e01b114e4139a87393260aa1eb6}{Set\+Adj\+Height}} (const float \&height)
+\item 
+float \mbox{\hyperlink{class_c_capsule_collision_ae4e9f14efb848aa1301d941093a64d31}{calc\+Segment\+Segment\+Dist}} (const \mbox{\hyperlink{struct_segment}{Segment}} \&s1, const \mbox{\hyperlink{struct_segment}{Segment}} \&s2, \mbox{\hyperlink{_my_vector_8h_a10591f4e5204f47e65f65cc5e54e2c4b}{Point}} \&p1, \mbox{\hyperlink{_my_vector_8h_a10591f4e5204f47e65f65cc5e54e2c4b}{Point}} \&p2, float \&t1, float \&t2)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_capsule_collision_a326619f7077d786a7c293853a66b9959}\label{class_c_capsule_collision_a326619f7077d786a7c293853a66b9959}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!CCapsuleCollision@{CCapsuleCollision}}
+\index{CCapsuleCollision@{CCapsuleCollision}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{CCapsuleCollision()}{CCapsuleCollision()}}
+{\footnotesize\ttfamily CCapsule\+Collision\+::\+CCapsule\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_capsule_collision_a813182034ae5d399901ccac42c3ea0e8}\label{class_c_capsule_collision_a813182034ae5d399901ccac42c3ea0e8}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!````~CCapsuleCollision@{$\sim$CCapsuleCollision}}
+\index{````~CCapsuleCollision@{$\sim$CCapsuleCollision}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCapsuleCollision()}{~CCapsuleCollision()}}
+{\footnotesize\ttfamily CCapsule\+Collision\+::$\sim$\+CCapsule\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_capsule_collision_ae4e9f14efb848aa1301d941093a64d31}\label{class_c_capsule_collision_ae4e9f14efb848aa1301d941093a64d31}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!calcSegmentSegmentDist@{calcSegmentSegmentDist}}
+\index{calcSegmentSegmentDist@{calcSegmentSegmentDist}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{calcSegmentSegmentDist()}{calcSegmentSegmentDist()}}
+{\footnotesize\ttfamily float CCapsule\+Collision\+::calc\+Segment\+Segment\+Dist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_segment}{Segment}} \&}]{s1,  }\item[{const \mbox{\hyperlink{struct_segment}{Segment}} \&}]{s2,  }\item[{\mbox{\hyperlink{_my_vector_8h_a10591f4e5204f47e65f65cc5e54e2c4b}{Point}} \&}]{p1,  }\item[{\mbox{\hyperlink{_my_vector_8h_a10591f4e5204f47e65f65cc5e54e2c4b}{Point}} \&}]{p2,  }\item[{float \&}]{t1,  }\item[{float \&}]{t2 }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_capsule_collision_ae4e9f14efb848aa1301d941093a64d31_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_capsule_collision_ae4e9f14efb848aa1301d941093a64d31_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a5dbe6be88f59876b9499c769c6664b19}\label{class_c_capsule_collision_a5dbe6be88f59876b9499c769c6664b19}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!DebugRender@{DebugRender}}
+\index{DebugRender@{DebugRender}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{DebugRender()}{DebugRender()}}
+{\footnotesize\ttfamily void CCapsule\+Collision\+::\+Debug\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_collider_base_a5277b3ffd6abed9c34b61a6ed51d83db}{CCollider\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_capsule_collision_a5dbe6be88f59876b9499c769c6664b19_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a777917645dfe64ac1bc7c0d7c53fb27b}\label{class_c_capsule_collision_a777917645dfe64ac1bc7c0d7c53fb27b}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!GetRadius@{GetRadius}}
+\index{GetRadius@{GetRadius}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{GetRadius()}{GetRadius()}}
+{\footnotesize\ttfamily float CCapsule\+Collision\+::\+Get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_c_capsule_collision_a777917645dfe64ac1bc7c0d7c53fb27b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a4fa7a74375b83ee181166cf6560f75a3}\label{class_c_capsule_collision_a4fa7a74375b83ee181166cf6560f75a3}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!GetSegment@{GetSegment}}
+\index{GetSegment@{GetSegment}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{GetSegment()}{GetSegment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_segment}{Segment}} CCapsule\+Collision\+::\+Get\+Segment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_c_capsule_collision_a4fa7a74375b83ee181166cf6560f75a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a26893b5480c1aaca0f87963eafe07e03}\label{class_c_capsule_collision_a26893b5480c1aaca0f87963eafe07e03}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!InitModelCapsule@{InitModelCapsule}}
+\index{InitModelCapsule@{InitModelCapsule}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{InitModelCapsule()}{InitModelCapsule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT CCapsule\+Collision\+::\+Init\+Model\+Capsule (\begin{DoxyParamCaption}\item[{const float \&}]{height,  }\item[{const float \&}]{radius }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_capsule_collision_a26893b5480c1aaca0f87963eafe07e03_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a7b4d33ae4ebaf942d94841a703a4ef6e}\label{class_c_capsule_collision_a7b4d33ae4ebaf942d94841a703a4ef6e}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!InitModelCapsule@{InitModelCapsule}}
+\index{InitModelCapsule@{InitModelCapsule}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{InitModelCapsule()}{InitModelCapsule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CCapsule\+Collision\+::\+Init\+Model\+Capsule (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_capsule_collision_a7b4d33ae4ebaf942d94841a703a4ef6e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_c_capsule_collision_a7b4d33ae4ebaf942d94841a703a4ef6e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_af72c5e01b114e4139a87393260aa1eb6}\label{class_c_capsule_collision_af72c5e01b114e4139a87393260aa1eb6}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!SetAdjHeight@{SetAdjHeight}}
+\index{SetAdjHeight@{SetAdjHeight}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{SetAdjHeight()}{SetAdjHeight()}}
+{\footnotesize\ttfamily void CCapsule\+Collision\+::\+Set\+Adj\+Height (\begin{DoxyParamCaption}\item[{const float \&}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_c_capsule_collision_af72c5e01b114e4139a87393260aa1eb6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a970f93b84d9e5e728e4bbf4f8af0eec6}\label{class_c_capsule_collision_a970f93b84d9e5e728e4bbf4f8af0eec6}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!SetAdjRadius@{SetAdjRadius}}
+\index{SetAdjRadius@{SetAdjRadius}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{SetAdjRadius()}{SetAdjRadius()}}
+{\footnotesize\ttfamily void CCapsule\+Collision\+::\+Set\+Adj\+Radius (\begin{DoxyParamCaption}\item[{const float \&}]{radius }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_c_capsule_collision_a970f93b84d9e5e728e4bbf4f8af0eec6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_capsule_collision_a9c4c60670aa5e3fbac593c4a3e6d2964}\label{class_c_capsule_collision_a9c4c60670aa5e3fbac593c4a3e6d2964}} 
+\index{CCapsuleCollision@{CCapsuleCollision}!SetChangeColor@{SetChangeColor}}
+\index{SetChangeColor@{SetChangeColor}!CCapsuleCollision@{CCapsuleCollision}}
+\doxysubsubsection{\texorpdfstring{SetChangeColor()}{SetChangeColor()}}
+{\footnotesize\ttfamily void CCapsule\+Collision\+::\+Set\+Change\+Color (\begin{DoxyParamCaption}\item[{const bool \&}]{changed }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_c_capsule_collision_a9c4c60670aa5e3fbac593c4a3e6d2964_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Colliders/\+Capsule/\mbox{\hyperlink{_capsule_collision_8h}{Capsule\+Collision.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Colliders/\+Capsule/\mbox{\hyperlink{_capsule_collision_8cpp}{Capsule\+Collision.\+cpp}}\end{DoxyCompactItemize}

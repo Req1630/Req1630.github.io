@@ -1,0 +1,10 @@
+<map id="CEditItem::Collision" name="CEditItem::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,141,133"/>
+<area shape="rect" id="node2" href="$class_c_item_base.html#a4d5f47448403bdfc77279a7f04644861" title=" " alt="" coords="189,107,332,133"/>
+<area shape="rect" id="node3" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="395,5,557,32"/>
+<area shape="rect" id="node4" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="380,56,572,83"/>
+<area shape="rect" id="node5" href="$class_c_game_object.html#aa11137b89bb1cde166bbb55620d6b89f" title=" " alt="" coords="386,107,566,133"/>
+<area shape="rect" id="node6" href="$class_c_item_base.html#ad77090c519f1c50bd9d30eff87802d5f" title=" " alt="" coords="400,157,552,184"/>
+<area shape="rect" id="node7" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="391,208,561,235"/>
+<area shape="rect" id="node8" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="620,208,816,235"/>
+</map>

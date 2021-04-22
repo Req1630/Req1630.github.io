@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/Scenes/Editor/Editor.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_26b02589e53dd6a6cf02171ae1971281.html">Scene</a></li><li class="navelem"><a class="el" href="dir_cc68c70b817f35837718f58411e6202b.html">Scenes</a></li><li class="navelem"><a class="el" href="dir_649846d45e5e93f3458ad06abb82d44b.html">Editor</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Editor.cpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_editor_8h_source.html">Editor.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_manager_8h_source.html">..\..\SceneManager\SceneManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_controller_edit_8h_source.html">..\..\..\Editor\ControllerEdit\ControllerEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_spawn_edit_8h_source.html">..\..\..\Editor\SpawnEdit\SpawnEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_alien_param_edit_8h_source.html">..\..\..\Editor\AlienParamEdit\AlienParamEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_explosion_edit_8h_source.html">..\..\..\Editor\ExplosionEdit\ExplosionEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_item_edit_8h_source.html">..\..\..\Editor\ItemEdit\ItemEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_player_edit_8h_source.html">..\..\..\Editor\PlayerEdit\PlayerEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_girl_edit_8h_source.html">..\..\..\Editor\GirlEdit\GirlEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_mother_ship_u_f_o_edit_8h_source.html">..\..\..\Editor\MotherShipUFOEdit\MotherShipUFOEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_invisible_wall_edit_8h_source.html">..\..\..\Editor\InvisibleWallEdit\InvisibleWallEdit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_d3_d_x11_8h_source.html">..\..\..\Common\D3DX\D3DX11.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_shadow_map_8h_source.html">..\..\..\Common\Shader\ShadowMap\ShadowMap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_tex_renderer_8h_source.html">..\..\..\Common\SceneTexRenderer\SceneTexRenderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sky_dome_8h_source.html">..\..\..\GameObject\SkyDome\SkyDome.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ground_stage_8h_source.html">..\..\..\GameObject\GroundStage\GroundStage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_edit_camera_8h_source.html">..\..\..\Camera\EditCamera\EditCamera.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_camera_manager_8h_source.html">..\..\..\Camera\CameraManager\CameraManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_fog_8h_source.html">..\..\..\Common\Fog\Fog.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sound_manager_8h_source.html">..\..\..\XAudio2\SoundManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_effect_resource_8h_source.html">..\..\..\Resource\EffectResource\EffectResource.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Editor.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_editor_8cpp__incl.png" border="0" usemap="#a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_editor_2_editor_8cpp" alt=""/></div>
+<map name="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_editor_2_editor_8cpp" id="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_editor_2_editor_8cpp">
+<area shape="rect" title=" " alt="" coords="1173,5,1360,76"/>
+<area shape="rect" href="_editor_8h.html" title=" " alt="" coords="1223,414,1289,441"/>
+<area shape="rect" href="_d3_d_x11_8h.html" title="DirectX11 Deviceを持っているクラス." alt="" coords="1031,675,1110,701"/>
+<area shape="rect" href="_scene_manager_8h.html" title="シーン管理クラス." alt="" coords="109,407,243,448"/>
+<area shape="rect" href="_controller_edit_8h.html" title="コントローラーエディタクラス(今回は使用していない)." alt="" coords="1810,407,1961,448"/>
+<area shape="rect" href="_spawn_edit_8h.html" title="宇宙人のスポーン情報エディタクラス." alt="" coords="1994,124,2153,165"/>
+<area shape="rect" href="_alien_param_edit_8h.html" title="宇宙人パラメータエディタクラス." alt="" coords="1185,124,1348,165"/>
+<area shape="rect" href="_shadow_map_8h.html" title=" " alt="" coords="575,407,782,448"/>
+<area shape="rect" href="_explosion_edit_8h.html" title="爆発の当たり判定サイズの編集クラス." alt="" coords="2433,124,2586,165"/>
+<area shape="rect" href="_item_edit_8h.html" title="アイテムのパラメータエディタクラス." alt="" coords="2621,124,2765,165"/>
+<area shape="rect" href="_player_edit_8h.html" title="プレイヤーのパラメータエディタクラス." alt="" coords="1650,124,1806,165"/>
+<area shape="rect" href="_girl_edit_8h.html" title="女の子のパラメータエディタクラス." alt="" coords="1831,124,1969,165"/>
+<area shape="rect" href="_mother_ship_u_f_o_edit_8h.html" title="マザーシップのパラメータエディタクラス." alt="" coords="1423,124,1625,165"/>
+<area shape="rect" href="_invisible_wall_edit_8h.html" title="見えない壁のサイズエディタクラス." alt="" coords="2177,124,2357,165"/>
+<area shape="rect" href="_scene_tex_renderer_8h.html" title="ポストエフェクトなどを描画する." alt="" coords="145,317,343,359"/>
+<area shape="rect" href="_sky_dome_8h.html" title="背景クラス." alt="" coords="520,124,675,165"/>
+<area shape="rect" href="_ground_stage_8h.html" title="地面クラス." alt="" coords="699,124,893,165"/>
+<area shape="rect" href="_edit_camera_8h.html" title="エディタ画面用カメラクラス." alt="" coords="858,407,1033,448"/>
+<area shape="rect" href="_camera_manager_8h.html" title="カメラ管理クラス." alt="" coords="773,317,976,359"/>
+<area shape="rect" href="_fog_8h.html" title="フォグの情報を持っている." alt="" coords="368,317,504,359"/>
+<area shape="rect" href="_sound_manager_8h.html" title=" " alt="" coords="2781,593,2987,619"/>
+<area shape="rect" href="_effect_resource_8h.html" title="エフェクト(Effekseer)リソースクラス." alt="" coords="1619,496,1799,537"/>
+<area shape="rect" href="_scene_base_8h.html" title="シーン基底クラス." alt="" coords="1159,503,1353,530"/>
+<area shape="rect" title=" " alt="" coords="1996,749,2052,776"/>
+<area shape="rect" title=" " alt="" coords="1605,675,1659,701"/>
+<area shape="rect" title=" " alt="" coords="1356,675,1425,701"/>
+<area shape="rect" href="_global_8h.html" title=" " alt="" coords="1023,593,1118,619"/>
+<area shape="rect" href="_fade_8h.html" title=" " alt="" coords="94,496,258,537"/>
+<area shape="rect" href="_im_gui_manager_8h.html" title="ImGuiライブラリを管理するクラス." alt="" coords="1429,496,1595,537"/>
+<area shape="rect" href="_x_input_8h.html" title="This is Use Xinput Controller file." alt="" coords="1775,585,1886,627"/>
+<area shape="rect" title=" " alt="" coords="1670,593,1751,619"/>
+<area shape="rect" href="_edit_base_8h.html" title="エディット基底クラス." alt="" coords="2197,228,2296,255"/>
+<area shape="rect" href="_alien_param_8h.html" title="宇宙人の構造体などのヘッダー." alt="" coords="1088,221,1285,262"/>
+<area shape="rect" href="_edit_alien_8h.html" title="エディタ用宇宙人基底クラス." alt="" coords="1309,213,1480,269"/>
+<area shape="rect" href="_mother_ship_u_f_o_8h.html" title="マザーシップUFOクラス." alt="" coords="1504,221,1693,262"/>
+<area shape="rect" href="_spawn_u_f_o_8h.html" title="スポーンUFOクラス." alt="" coords="875,221,1064,262"/>
+<area shape="rect" href="_game_object_8h.html" title="ゲーム内のオブジェクト基底クラス." alt="" coords="579,325,698,351"/>
+<area shape="rect" href="_shader_base_8h.html" title=" " alt="" coords="621,503,737,530"/>
+<area shape="rect" href="_explosion_8h.html" title="爆発クラス." alt="" coords="2421,221,2576,262"/>
+<area shape="rect" href="_item_base_8h.html" title="アイテム基底クラス." alt="" coords="2752,221,2907,262"/>
+<area shape="rect" href="_each_item_effect_struct_8h.html" title="各アイテムの効果の情報." alt="" coords="2931,221,3120,262"/>
+<area shape="rect" href="_player_8h.html" title="プレイヤークラス." alt="" coords="1819,221,1994,262"/>
+<area shape="rect" href="_girl_8h.html" title="女の子クラス." alt="" coords="2019,221,2173,262"/>
+<area shape="rect" href="_box_struct_8h.html" title="ボックス情報の構造体." alt="" coords="1525,317,1693,359"/>
+<area shape="rect" href="_common_8h.html" title=" " alt="" coords="282,503,379,530"/>
+<area shape="rect" href="_sprite_shader_8h.html" title=" " alt="" coords="396,407,551,448"/>
+<area shape="rect" href="_camera_8h.html" title=" " alt="" coords="921,503,1012,530"/>
+<area shape="rect" title=" " alt="" coords="2803,675,2850,701"/>
+<area shape="rect" title=" " alt="" coords="2875,675,2949,701"/>
+<area shape="rect" title=" " alt="" coords="2973,675,3045,701"/>
+</map>
+</div>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

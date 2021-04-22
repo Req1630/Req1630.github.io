@@ -1,0 +1,8 @@
+<map id="CItemBase::Collision" name="CItemBase::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="249,115,392,141"/>
+<area shape="rect" id="node2" href="$class_c_edit_item.html#a9f484219212602be75a182f1b8198e1b" title=" " alt="" coords="35,5,171,32"/>
+<area shape="rect" id="node3" href="$class_c_attack_up_item.html#a9e54f33a20df50628c3aa12f112c286d" title=" " alt="" coords="20,56,187,83"/>
+<area shape="rect" id="node4" href="$class_c_life_recovery_item.html#a6220636a1df5343bb4a86c0daba721b4" title=" " alt="" coords="35,107,172,149"/>
+<area shape="rect" id="node5" href="$class_c_move_speed_up_item.html#a81b7ab428d8bcf1a4d7d33b46eef3dd3" title=" " alt="" coords="5,173,201,200"/>
+<area shape="rect" id="node6" href="$class_c_s_p_effect_time_item.html#a3f3b567a12771a547f1df956ac172460" title=" " alt="" coords="32,225,175,266"/>
+</map>

@@ -1,0 +1,117 @@
+\hypertarget{class_c_event_camera}{}\doxysection{CEvent\+Camera クラス}
+\label{class_c_event_camera}\index{CEventCamera@{CEventCamera}}
+
+
+{\ttfamily \#include $<$Evevt\+Camera.\+h$>$}
+
+
+
+CEvent\+Camera の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=161pt]{class_c_event_camera__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEvent\+Camera 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_c_event_camera__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_event_camera_1_1st_camera_state}{st\+Camera\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_camera_a848d387e5eae5c68136116e0054053e3}{CEvent\+Camera}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_camera_ac77a3ff16e08437973ca258e567de050}{$\sim$\+CEvent\+Camera}} ()
+\item 
+float \mbox{\hyperlink{class_c_event_camera_a3e6749d0140188ceee899ba6e49cdeac}{Get\+Viewing\+Angle}} () const
+\item 
+float \mbox{\hyperlink{class_c_event_camera_afa856c676a1975f41ba4beba2a4be171}{Reset\+Viewing\+Angle}} ()
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_event_camera_a9a3cfb6f9f7a21cd54ad95d45a418f78}{Move\+To\+Target\+Position}} (const D3\+DXVECTOR3 \&v\+Target\+Pos, const float \&speed)
+\item 
+void \mbox{\hyperlink{class_c_event_camera_a5dfe280273d2fbb75c8162478527e3db}{Rotation\+Look\+At\+Object}} (const D3\+DXVECTOR3 \&v\+Look\+Pos, const float \&Degree)
+\item 
+void \mbox{\hyperlink{class_c_event_camera_a6c9e9c8b33c54d84674976832b3d1a63}{Set\+State}} (const \mbox{\hyperlink{class_c_event_camera_a38face466fdd61a728e05fc83c7ef3af}{SCamera\+State}} \&param)
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_event_camera_1_1st_camera_state}{CEvent\+Camera\+::st\+Camera\+State}} \mbox{\hyperlink{class_c_event_camera_a38face466fdd61a728e05fc83c7ef3af}{SCamera\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_camera_a848d387e5eae5c68136116e0054053e3}\label{class_c_event_camera_a848d387e5eae5c68136116e0054053e3}} 
+\index{CEventCamera@{CEventCamera}!CEventCamera@{CEventCamera}}
+\index{CEventCamera@{CEventCamera}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{CEventCamera()}{CEventCamera()}}
+{\footnotesize\ttfamily CEvent\+Camera\+::\+CEvent\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_camera_ac77a3ff16e08437973ca258e567de050}\label{class_c_event_camera_ac77a3ff16e08437973ca258e567de050}} 
+\index{CEventCamera@{CEventCamera}!````~CEventCamera@{$\sim$CEventCamera}}
+\index{````~CEventCamera@{$\sim$CEventCamera}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventCamera()}{~CEventCamera()}}
+{\footnotesize\ttfamily CEvent\+Camera\+::$\sim$\+CEvent\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_camera_a3e6749d0140188ceee899ba6e49cdeac}\label{class_c_event_camera_a3e6749d0140188ceee899ba6e49cdeac}} 
+\index{CEventCamera@{CEventCamera}!GetViewingAngle@{GetViewingAngle}}
+\index{GetViewingAngle@{GetViewingAngle}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{GetViewingAngle()}{GetViewingAngle()}}
+{\footnotesize\ttfamily float CEvent\+Camera\+::\+Get\+Viewing\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_camera_a9a3cfb6f9f7a21cd54ad95d45a418f78}\label{class_c_event_camera_a9a3cfb6f9f7a21cd54ad95d45a418f78}} 
+\index{CEventCamera@{CEventCamera}!MoveToTargetPosition@{MoveToTargetPosition}}
+\index{MoveToTargetPosition@{MoveToTargetPosition}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{MoveToTargetPosition()}{MoveToTargetPosition()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CEvent\+Camera\+::\+Move\+To\+Target\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Target\+Pos,  }\item[{const float \&}]{speed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_camera_afa856c676a1975f41ba4beba2a4be171}\label{class_c_event_camera_afa856c676a1975f41ba4beba2a4be171}} 
+\index{CEventCamera@{CEventCamera}!ResetViewingAngle@{ResetViewingAngle}}
+\index{ResetViewingAngle@{ResetViewingAngle}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{ResetViewingAngle()}{ResetViewingAngle()}}
+{\footnotesize\ttfamily float CEvent\+Camera\+::\+Reset\+Viewing\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_camera_a5dfe280273d2fbb75c8162478527e3db}\label{class_c_event_camera_a5dfe280273d2fbb75c8162478527e3db}} 
+\index{CEventCamera@{CEventCamera}!RotationLookAtObject@{RotationLookAtObject}}
+\index{RotationLookAtObject@{RotationLookAtObject}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{RotationLookAtObject()}{RotationLookAtObject()}}
+{\footnotesize\ttfamily void CEvent\+Camera\+::\+Rotation\+Look\+At\+Object (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Look\+Pos,  }\item[{const float \&}]{Degree }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_camera_a6c9e9c8b33c54d84674976832b3d1a63}\label{class_c_event_camera_a6c9e9c8b33c54d84674976832b3d1a63}} 
+\index{CEventCamera@{CEventCamera}!SetState@{SetState}}
+\index{SetState@{SetState}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{SetState()}{SetState()}}
+{\footnotesize\ttfamily void CEvent\+Camera\+::\+Set\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_event_camera_a38face466fdd61a728e05fc83c7ef3af}{SCamera\+State}} \&}]{param }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_event_camera_a38face466fdd61a728e05fc83c7ef3af}\label{class_c_event_camera_a38face466fdd61a728e05fc83c7ef3af}} 
+\index{CEventCamera@{CEventCamera}!SCameraState@{SCameraState}}
+\index{SCameraState@{SCameraState}!CEventCamera@{CEventCamera}}
+\doxysubsubsection{\texorpdfstring{SCameraState}{SCameraState}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_c_event_camera_1_1st_camera_state}{CEvent\+Camera\+::st\+Camera\+State}} CEvent\+Camera\+::\+SCamera\+State}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Camera/\+Evevt\+Camera/\mbox{\hyperlink{_evevt_camera_8h}{Evevt\+Camera.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Camera/\+Evevt\+Camera/\mbox{\hyperlink{_evevt_camera_8cpp}{Evevt\+Camera.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{class_c_mini_map}{}\doxysection{CMini\+Map クラス}
+\label{class_c_mini_map}\index{CMiniMap@{CMiniMap}}
+
+
+{\ttfamily \#include $<$Mini\+Map.\+h$>$}
+
+
+
+CMini\+Map の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_c_mini_map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMini\+Map 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_c_mini_map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mini_map_a071bae3148ccfa15b2107dc3e006f488}{CMini\+Map}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_mini_map_a7729e1ddbb4fc4076cd7745fde5c9fa6}{$\sim$\+CMini\+Map}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_mini_map_af6897d4d380328eb7c96742dda29b809}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_mini_map_af6fba41583c9920b89b88c9ef463e1a3}{Update}} () override
+\item 
+void \mbox{\hyperlink{class_c_mini_map_a19cf627f8b99bbef103efa6896d158e4}{Set\+Obj\+Position}} (\mbox{\hyperlink{class_c_game_actor_manager}{CGame\+Actor\+Manager}} $\ast$p\+Obj)
+\item 
+virtual void \mbox{\hyperlink{class_c_mini_map_a5ffb395ba18d000cf88f2b437f2e850d}{Render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_mini_map_a071bae3148ccfa15b2107dc3e006f488}\label{class_c_mini_map_a071bae3148ccfa15b2107dc3e006f488}} 
+\index{CMiniMap@{CMiniMap}!CMiniMap@{CMiniMap}}
+\index{CMiniMap@{CMiniMap}!CMiniMap@{CMiniMap}}
+\doxysubsubsection{\texorpdfstring{CMiniMap()}{CMiniMap()}}
+{\footnotesize\ttfamily CMini\+Map\+::\+CMini\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mini_map_a7729e1ddbb4fc4076cd7745fde5c9fa6}\label{class_c_mini_map_a7729e1ddbb4fc4076cd7745fde5c9fa6}} 
+\index{CMiniMap@{CMiniMap}!````~CMiniMap@{$\sim$CMiniMap}}
+\index{````~CMiniMap@{$\sim$CMiniMap}!CMiniMap@{CMiniMap}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMiniMap()}{~CMiniMap()}}
+{\footnotesize\ttfamily CMini\+Map\+::$\sim$\+CMini\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_mini_map_af6897d4d380328eb7c96742dda29b809}\label{class_c_mini_map_af6897d4d380328eb7c96742dda29b809}} 
+\index{CMiniMap@{CMiniMap}!Init@{Init}}
+\index{Init@{Init}!CMiniMap@{CMiniMap}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CMini\+Map\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_mini_map_a5ffb395ba18d000cf88f2b437f2e850d}\label{class_c_mini_map_a5ffb395ba18d000cf88f2b437f2e850d}} 
+\index{CMiniMap@{CMiniMap}!Render@{Render}}
+\index{Render@{Render}!CMiniMap@{CMiniMap}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CMini\+Map\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_mini_map_a19cf627f8b99bbef103efa6896d158e4}\label{class_c_mini_map_a19cf627f8b99bbef103efa6896d158e4}} 
+\index{CMiniMap@{CMiniMap}!SetObjPosition@{SetObjPosition}}
+\index{SetObjPosition@{SetObjPosition}!CMiniMap@{CMiniMap}}
+\doxysubsubsection{\texorpdfstring{SetObjPosition()}{SetObjPosition()}}
+{\footnotesize\ttfamily void CMini\+Map\+::\+Set\+Obj\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_game_actor_manager}{CGame\+Actor\+Manager}} $\ast$}]{p\+Obj }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mini_map_a19cf627f8b99bbef103efa6896d158e4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mini_map_af6fba41583c9920b89b88c9ef463e1a3}\label{class_c_mini_map_af6fba41583c9920b89b88c9ef463e1a3}} 
+\index{CMiniMap@{CMiniMap}!Update@{Update}}
+\index{Update@{Update}!CMiniMap@{CMiniMap}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CMini\+Map\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Scene\+Widget/\+Game\+Widget/\+Mini\+Map/\mbox{\hyperlink{_mini_map_8h}{Mini\+Map.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Scene\+Widget/\+Game\+Widget/\+Mini\+Map/\mbox{\hyperlink{_mini_map_8cpp}{Mini\+Map.\+cpp}}\end{DoxyCompactItemize}

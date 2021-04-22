@@ -1,0 +1,162 @@
+\hypertarget{class_c_barrier}{}\doxysection{CBarrier クラス}
+\label{class_c_barrier}\index{CBarrier@{CBarrier}}
+
+
+{\ttfamily \#include $<$Barrier.\+h$>$}
+
+
+
+CBarrier の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_barrier__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CBarrier 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_barrier__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_barrier_a6d27d35a20051a5bd26bd9b6c5d85323}{CBarrier}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_barrier_a999f0e5f27a4e5d6c6bf20f35f898167}{$\sim$\+CBarrier}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_barrier_abef5bba466dba31e24361863f54038a0}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_barrier_a39048d9597798b98649bb48462758f11}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_barrier_a0a0e6c3b692a7751ccb4b08bc62ee34a}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_barrier_a7a7415d026d6df6fe4c0d51500588c06}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_barrier_a0fd5a03fc321c4bf4afa39b4ea73c3bc}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_barrier_ae57dba15369c48116679a3831661b91e}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&p\+Actor) override
+\item 
+bool \mbox{\hyperlink{class_c_barrier_a53d027aa61249a74c9584f9ef221f80c}{Is\+Active}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_barrier_a6d27d35a20051a5bd26bd9b6c5d85323}\label{class_c_barrier_a6d27d35a20051a5bd26bd9b6c5d85323}} 
+\index{CBarrier@{CBarrier}!CBarrier@{CBarrier}}
+\index{CBarrier@{CBarrier}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{CBarrier()}{CBarrier()}}
+{\footnotesize\ttfamily CBarrier\+::\+CBarrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_barrier_a999f0e5f27a4e5d6c6bf20f35f898167}\label{class_c_barrier_a999f0e5f27a4e5d6c6bf20f35f898167}} 
+\index{CBarrier@{CBarrier}!````~CBarrier@{$\sim$CBarrier}}
+\index{````~CBarrier@{$\sim$CBarrier}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBarrier()}{~CBarrier()}}
+{\footnotesize\ttfamily CBarrier\+::$\sim$\+CBarrier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_barrier_a0fd5a03fc321c4bf4afa39b4ea73c3bc}\label{class_c_barrier_a0fd5a03fc321c4bf4afa39b4ea73c3bc}} 
+\index{CBarrier@{CBarrier}!Collision@{Collision}}
+\index{Collision@{Collision}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CBarrier\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_barrier_a0fd5a03fc321c4bf4afa39b4ea73c3bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_barrier_a7a7415d026d6df6fe4c0d51500588c06}\label{class_c_barrier_a7a7415d026d6df6fe4c0d51500588c06}} 
+\index{CBarrier@{CBarrier}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CBarrier\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_ac4c7d2514100b7b7f8c819c1d0fa5bb8}{CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_barrier_abef5bba466dba31e24361863f54038a0}\label{class_c_barrier_abef5bba466dba31e24361863f54038a0}} 
+\index{CBarrier@{CBarrier}!Init@{Init}}
+\index{Init@{Init}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CBarrier\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_barrier_a53d027aa61249a74c9584f9ef221f80c}\label{class_c_barrier_a53d027aa61249a74c9584f9ef221f80c}} 
+\index{CBarrier@{CBarrier}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{IsActive()}{IsActive()}}
+{\footnotesize\ttfamily bool CBarrier\+::\+Is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_barrier_a0a0e6c3b692a7751ccb4b08bc62ee34a}\label{class_c_barrier_a0a0e6c3b692a7751ccb4b08bc62ee34a}} 
+\index{CBarrier@{CBarrier}!Render@{Render}}
+\index{Render@{Render}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CBarrier\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_barrier_ae57dba15369c48116679a3831661b91e}\label{class_c_barrier_ae57dba15369c48116679a3831661b91e}} 
+\index{CBarrier@{CBarrier}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CBarrier\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_barrier_ae57dba15369c48116679a3831661b91e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_barrier_a39048d9597798b98649bb48462758f11}\label{class_c_barrier_a39048d9597798b98649bb48462758f11}} 
+\index{CBarrier@{CBarrier}!Update@{Update}}
+\index{Update@{Update}!CBarrier@{CBarrier}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CBarrier\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_barrier_a39048d9597798b98649bb48462758f11_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Barrier/\mbox{\hyperlink{_barrier_8h}{Barrier.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Barrier/\mbox{\hyperlink{_barrier_8cpp}{Barrier.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/LaserBeam/LaserBeam.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_cc5e48a7ebf42b061814166bb7fc8fe6.html">LaserBeam</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LaserBeam.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_laser_beam_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef LASER_BEAM_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define LASER_BEAM_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Actor.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_trajectory.html">CTrajectory</a>;      <span class="comment">// 軌跡.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_effect_manager.html">CEffectManager</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*************************************</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*   レーザービームクラス.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_laser_beam.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_laser_beam.html">CLaserBeam</a> : <span class="keyword">public</span> <a class="code" href="class_c_actor.html">CActor</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*   EFFECT_NAME             = <span class="stringliteral">&quot;ultemateAttackEffeck&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  DEFAULT_MOVE_SPEED              = 0.1f; <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  DEFAULT_PARALYSIS_TIME          = 3.0f; <span class="comment">// 麻痺の時間.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span>  DEFAULT_ATTACK_COLLISION_SCALE  = 1.0f; <span class="comment">// 攻撃当たり判定のサイズ.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span>    MAX_TRAJECTORY_COUNT            = 50;   <span class="comment">// 軌跡の最大頂点数.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span>    TRAJECTORY_TIME                 = 1;    <span class="comment">// 軌跡の頂点加算時間.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">int</span>    TRAJECTORY_END_ADD_VALUE        = 8;    <span class="comment">// 軌跡が終了する際の加算値.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_c_laser_beam.html#aa2ab9e90aed9543505e55306dfd477d3">CLaserBeam</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_c_laser_beam.html#aa2ab9e90aed9543505e55306dfd477d3">CLaserBeam</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; collRad );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_laser_beam.html#a16ac14553e2c5cc7f7e6545a5eb5707e">~CLaserBeam</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_laser_beam.html#ac8f6769e2b9491c0075f74de38a06a1f">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#aa146b988f75ab43edd086a7f074b800d">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#a84d7a05f9c34c9bad9ad68c24397f109">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// エフェクトの描画.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#ab7a49bdb78d158567d6e9095916aa1d4">EffectRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 当たり判定関数.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#a0215296bbf5b3429f5b987e9187936bb">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// 相手座標の設定関数.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#aad63781b5a27b674b7f1dbb5f7f48859">SetTargetPos</a>( <a class="code" href="class_c_actor.html">CActor</a>&amp; actor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#aad63781b5a27b674b7f1dbb5f7f48859">SetTargetPos</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; pos );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// ビームを打つ.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#ac5ffbd6e8678aa3860fcdfcc626d71ba">Shot</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; pos );</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// パラメータを初期に戻す.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#a3ba249b866eadc0b477121a913c8c0bd">ResetParam</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// ベジェ曲線の制御点の設定.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#ab3d479d5a6e0c383ba4135fbdacce896">SetControlPointList</a>( <span class="keyword">const</span> std::vector&lt;D3DXVECTOR3&gt;&amp; pointList );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// 移動速度の設定.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_c_laser_beam.html#aa06bdd6daeb76cc3a979d90568ab8b47">   55</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#aa06bdd6daeb76cc3a979d90568ab8b47">SetMoveSpped</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; moveSpeed ){ m_MoveSpeed = moveSpeed; }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// 麻痺時間の設定.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_laser_beam.html#ace892c89640bc0652d0b45788cc2c054">   57</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_laser_beam.html#ace892c89640bc0652d0b45788cc2c054">SetParalysisTime</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; time ){ m_ParalysisTime = time; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 攻撃中か.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_c_laser_beam.html#adb503d01c7fe245faf5b8e45cb2eb132">   60</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_laser_beam.html#adb503d01c7fe245faf5b8e45cb2eb132">IsInAttack</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsInAttack; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// 攻撃が終了したかどうか.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_laser_beam.html#a064f26722bd88ad3f875a508ab33831c">   62</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_laser_beam.html#a064f26722bd88ad3f875a508ab33831c">IsEndAttack</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsEndAttack; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 二次ベジェ曲線.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> SecondaryBeziercurve();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// 三次ベジェ曲線.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> ThirdBezierCurve();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> CollisionSetting();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// 使用頂点の設定.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> SetVertexPoint();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 頂点の作成.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> CreateVertex();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// エフェクトの取得.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> GetEffect();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ATTACK_COLLISION_SCALE;             <span class="comment">// 攻撃当たり判定のサイズ.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::unique_ptr&lt;CTrajectory&gt;    m_pTrajectory;  <span class="comment">// 軌跡描画クラス.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::shared_ptr&lt;CEffectManager&gt; m_pEffect;      <span class="comment">// エフェクト.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">float</span>       m_MoveSpeed;        <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">float</span>       m_ParalysisTime;    <span class="comment">// 麻痺時間.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    D3DXVECTOR3 m_TargetPosition;   <span class="comment">// 攻撃対象の座標.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">bool</span>        m_IsInAttack;       <span class="comment">// 攻撃中.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span>        m_IsEndAttack;      <span class="comment">// 攻撃終了.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">float</span>       m_FrameCount;       <span class="comment">// フレームカウント.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">float</span>       m_FrameTime;        <span class="comment">// フレーム時間.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    D3DXVECTOR3 m_InitPosition;     <span class="comment">// 初期座標.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::vector&lt;D3DXVECTOR3&gt;    m_ControlPointList;     <span class="comment">// 制御座標.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::vector&lt;D3DXVECTOR3&gt;    m_VertexPointList;      <span class="comment">// 頂点の座標のリスト.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">int</span>                         m_VertexAddTimeCount;   <span class="comment">// 頂点を加算する時間のカウント.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span>                        m_IsPlayEffect;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef LASER_BEAM_H.</span></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html"><div class="ttname"><a href="class_c_effect_manager.html">CEffectManager</a></div><div class="ttdef"><b>Definition:</b> EffectManager.h:14</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html"><div class="ttname"><a href="class_c_laser_beam.html">CLaserBeam</a></div><div class="ttdef"><b>Definition:</b> LaserBeam.h:19</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_a0215296bbf5b3429f5b987e9187936bb"><div class="ttname"><a href="class_c_laser_beam.html#a0215296bbf5b3429f5b987e9187936bb">CLaserBeam::Collision</a></div><div class="ttdeci">virtual void Collision(CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:126</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_a064f26722bd88ad3f875a508ab33831c"><div class="ttname"><a href="class_c_laser_beam.html#a064f26722bd88ad3f875a508ab33831c">CLaserBeam::IsEndAttack</a></div><div class="ttdeci">bool IsEndAttack() const</div><div class="ttdef"><b>Definition:</b> LaserBeam.h:62</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_a16ac14553e2c5cc7f7e6545a5eb5707e"><div class="ttname"><a href="class_c_laser_beam.html#a16ac14553e2c5cc7f7e6545a5eb5707e">CLaserBeam::~CLaserBeam</a></div><div class="ttdeci">virtual ~CLaserBeam()</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:42</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_a3ba249b866eadc0b477121a913c8c0bd"><div class="ttname"><a href="class_c_laser_beam.html#a3ba249b866eadc0b477121a913c8c0bd">CLaserBeam::ResetParam</a></div><div class="ttdeci">void ResetParam()</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:171</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_a84d7a05f9c34c9bad9ad68c24397f109"><div class="ttname"><a href="class_c_laser_beam.html#a84d7a05f9c34c9bad9ad68c24397f109">CLaserBeam::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:100</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_aa06bdd6daeb76cc3a979d90568ab8b47"><div class="ttname"><a href="class_c_laser_beam.html#aa06bdd6daeb76cc3a979d90568ab8b47">CLaserBeam::SetMoveSpped</a></div><div class="ttdeci">void SetMoveSpped(const float &amp;moveSpeed)</div><div class="ttdef"><b>Definition:</b> LaserBeam.h:55</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_aa146b988f75ab43edd086a7f074b800d"><div class="ttname"><a href="class_c_laser_beam.html#aa146b988f75ab43edd086a7f074b800d">CLaserBeam::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:57</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_aa2ab9e90aed9543505e55306dfd477d3"><div class="ttname"><a href="class_c_laser_beam.html#aa2ab9e90aed9543505e55306dfd477d3">CLaserBeam::CLaserBeam</a></div><div class="ttdeci">CLaserBeam()</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:10</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_aad63781b5a27b674b7f1dbb5f7f48859"><div class="ttname"><a href="class_c_laser_beam.html#aad63781b5a27b674b7f1dbb5f7f48859">CLaserBeam::SetTargetPos</a></div><div class="ttdeci">virtual void SetTargetPos(CActor &amp;actor) override</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:142</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_ab3d479d5a6e0c383ba4135fbdacce896"><div class="ttname"><a href="class_c_laser_beam.html#ab3d479d5a6e0c383ba4135fbdacce896">CLaserBeam::SetControlPointList</a></div><div class="ttdeci">void SetControlPointList(const std::vector&lt; D3DXVECTOR3 &gt; &amp;pointList)</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:177</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_ab7a49bdb78d158567d6e9095916aa1d4"><div class="ttname"><a href="class_c_laser_beam.html#ab7a49bdb78d158567d6e9095916aa1d4">CLaserBeam::EffectRender</a></div><div class="ttdeci">virtual void EffectRender() override</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:119</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_ac5ffbd6e8678aa3860fcdfcc626d71ba"><div class="ttname"><a href="class_c_laser_beam.html#ac5ffbd6e8678aa3860fcdfcc626d71ba">CLaserBeam::Shot</a></div><div class="ttdeci">void Shot(const D3DXVECTOR3 &amp;pos)</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:156</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_ac8f6769e2b9491c0075f74de38a06a1f"><div class="ttname"><a href="class_c_laser_beam.html#ac8f6769e2b9491c0075f74de38a06a1f">CLaserBeam::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> LaserBeam.cpp:48</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_ace892c89640bc0652d0b45788cc2c054"><div class="ttname"><a href="class_c_laser_beam.html#ace892c89640bc0652d0b45788cc2c054">CLaserBeam::SetParalysisTime</a></div><div class="ttdeci">void SetParalysisTime(const float &amp;time)</div><div class="ttdef"><b>Definition:</b> LaserBeam.h:57</div></div>
+<div class="ttc" id="aclass_c_laser_beam_html_adb503d01c7fe245faf5b8e45cb2eb132"><div class="ttname"><a href="class_c_laser_beam.html#adb503d01c7fe245faf5b8e45cb2eb132">CLaserBeam::IsInAttack</a></div><div class="ttdeci">bool IsInAttack() const</div><div class="ttdef"><b>Definition:</b> LaserBeam.h:60</div></div>
+<div class="ttc" id="aclass_c_trajectory_html"><div class="ttname"><a href="class_c_trajectory.html">CTrajectory</a></div><div class="ttdef"><b>Definition:</b> Trajectory.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

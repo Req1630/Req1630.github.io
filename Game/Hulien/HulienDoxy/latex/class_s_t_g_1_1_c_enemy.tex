@@ -1,0 +1,178 @@
+\hypertarget{class_s_t_g_1_1_c_enemy}{}\doxysection{STG\+::CEnemy クラス}
+\label{class_s_t_g_1_1_c_enemy}\index{STG::CEnemy@{STG::CEnemy}}
+
+
+{\ttfamily \#include $<$STGEnemy.\+h$>$}
+
+
+
+STG\+::CEnemy の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_s_t_g_1_1_c_enemy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+STG\+::CEnemy 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_s_t_g_1_1_c_enemy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a697af99f303c1a266f9f5cdfca2430b6}{CEnemy}} ()
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a939e350ede6674dce17182a6b2391e43}{CEnemy}} (const \mbox{\hyperlink{struct_s_t_g_1_1_s_enemy_param}{STG\+::\+SEnemy\+Param}} \&param)
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a99bfeefad25cda90eb2c986f26188c15}{CEnemy}} (const \mbox{\hyperlink{struct_s_t_g_1_1_s_enemy_param}{STG\+::\+SEnemy\+Param}} \&param, const std\+::vector$<$ \mbox{\hyperlink{struct_s_t_g_1_1_s_bullet_manager_param}{SBullet\+Manager\+Param}} $>$ \&bullet\+Params)
+\item 
+virtual \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a2439841ebc534918420d84075c831071}{$\sim$\+CEnemy}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_af6bb5346def286a2db0b7c415d8d5244}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_aa869e2d42a1d1ac9c4aeb8e17b0913f2}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a0401d9e86c8786242bed587e9e1755fd}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a5351292a4556943a36c929b3d1085cfd}{Collision}} (\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$p\+Actor) override
+\item 
+float \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a34ef81300691009326cadbef16602112}{Get\+Spawn\+Time}} () const
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a4c68a6ef53d554fa4a42b74bde00523d}{Set\+PositionY}} (const float \&posY)
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a87c6c2a075b0e149b1a0c2e2763d4a49}{Is\+Dead}} () const
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a75e1018d91169cdc100cbe3bb55f5462}{Set\+Last\+Spawn}} ()
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_a924ecd82d07b8dc4c1c8588e4ad7ea80}{Is\+All\+Bullet\+Update\+End}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a697af99f303c1a266f9f5cdfca2430b6}\label{class_s_t_g_1_1_c_enemy_a697af99f303c1a266f9f5cdfca2430b6}} 
+\index{STG::CEnemy@{STG::CEnemy}!CEnemy@{CEnemy}}
+\index{CEnemy@{CEnemy}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{CEnemy()}{CEnemy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily STG\+::\+CEnemy\+::\+CEnemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a939e350ede6674dce17182a6b2391e43}\label{class_s_t_g_1_1_c_enemy_a939e350ede6674dce17182a6b2391e43}} 
+\index{STG::CEnemy@{STG::CEnemy}!CEnemy@{CEnemy}}
+\index{CEnemy@{CEnemy}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{CEnemy()}{CEnemy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily STG\+::\+CEnemy\+::\+CEnemy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_t_g_1_1_s_enemy_param}{STG\+::\+SEnemy\+Param}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a99bfeefad25cda90eb2c986f26188c15}\label{class_s_t_g_1_1_c_enemy_a99bfeefad25cda90eb2c986f26188c15}} 
+\index{STG::CEnemy@{STG::CEnemy}!CEnemy@{CEnemy}}
+\index{CEnemy@{CEnemy}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{CEnemy()}{CEnemy()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily STG\+::\+CEnemy\+::\+CEnemy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_t_g_1_1_s_enemy_param}{STG\+::\+SEnemy\+Param}} \&}]{param,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_s_t_g_1_1_s_bullet_manager_param}{SBullet\+Manager\+Param}} $>$ \&}]{bullet\+Params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a2439841ebc534918420d84075c831071}\label{class_s_t_g_1_1_c_enemy_a2439841ebc534918420d84075c831071}} 
+\index{STG::CEnemy@{STG::CEnemy}!````~CEnemy@{$\sim$CEnemy}}
+\index{````~CEnemy@{$\sim$CEnemy}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEnemy()}{~CEnemy()}}
+{\footnotesize\ttfamily STG\+::\+CEnemy\+::$\sim$\+CEnemy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a5351292a4556943a36c929b3d1085cfd}\label{class_s_t_g_1_1_c_enemy_a5351292a4556943a36c929b3d1085cfd}} 
+\index{STG::CEnemy@{STG::CEnemy}!Collision@{Collision}}
+\index{Collision@{Collision}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void STG\+::\+CEnemy\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}{STG\+::\+CActor}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_enemy_a5351292a4556943a36c929b3d1085cfd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a34ef81300691009326cadbef16602112}\label{class_s_t_g_1_1_c_enemy_a34ef81300691009326cadbef16602112}} 
+\index{STG::CEnemy@{STG::CEnemy}!GetSpawnTime@{GetSpawnTime}}
+\index{GetSpawnTime@{GetSpawnTime}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{GetSpawnTime()}{GetSpawnTime()}}
+{\footnotesize\ttfamily float STG\+::\+CEnemy\+::\+Get\+Spawn\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_af6bb5346def286a2db0b7c415d8d5244}\label{class_s_t_g_1_1_c_enemy_af6bb5346def286a2db0b7c415d8d5244}} 
+\index{STG::CEnemy@{STG::CEnemy}!Init@{Init}}
+\index{Init@{Init}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool STG\+::\+CEnemy\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_enemy_af6bb5346def286a2db0b7c415d8d5244_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a924ecd82d07b8dc4c1c8588e4ad7ea80}\label{class_s_t_g_1_1_c_enemy_a924ecd82d07b8dc4c1c8588e4ad7ea80}} 
+\index{STG::CEnemy@{STG::CEnemy}!IsAllBulletUpdateEnd@{IsAllBulletUpdateEnd}}
+\index{IsAllBulletUpdateEnd@{IsAllBulletUpdateEnd}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{IsAllBulletUpdateEnd()}{IsAllBulletUpdateEnd()}}
+{\footnotesize\ttfamily bool STG\+::\+CEnemy\+::\+Is\+All\+Bullet\+Update\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a87c6c2a075b0e149b1a0c2e2763d4a49}\label{class_s_t_g_1_1_c_enemy_a87c6c2a075b0e149b1a0c2e2763d4a49}} 
+\index{STG::CEnemy@{STG::CEnemy}!IsDead@{IsDead}}
+\index{IsDead@{IsDead}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{IsDead()}{IsDead()}}
+{\footnotesize\ttfamily bool STG\+::\+CEnemy\+::\+Is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a0401d9e86c8786242bed587e9e1755fd}\label{class_s_t_g_1_1_c_enemy_a0401d9e86c8786242bed587e9e1755fd}} 
+\index{STG::CEnemy@{STG::CEnemy}!Render@{Render}}
+\index{Render@{Render}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void STG\+::\+CEnemy\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a75e1018d91169cdc100cbe3bb55f5462}\label{class_s_t_g_1_1_c_enemy_a75e1018d91169cdc100cbe3bb55f5462}} 
+\index{STG::CEnemy@{STG::CEnemy}!SetLastSpawn@{SetLastSpawn}}
+\index{SetLastSpawn@{SetLastSpawn}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{SetLastSpawn()}{SetLastSpawn()}}
+{\footnotesize\ttfamily void STG\+::\+CEnemy\+::\+Set\+Last\+Spawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_a4c68a6ef53d554fa4a42b74bde00523d}\label{class_s_t_g_1_1_c_enemy_a4c68a6ef53d554fa4a42b74bde00523d}} 
+\index{STG::CEnemy@{STG::CEnemy}!SetPositionY@{SetPositionY}}
+\index{SetPositionY@{SetPositionY}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{SetPositionY()}{SetPositionY()}}
+{\footnotesize\ttfamily void STG\+::\+CEnemy\+::\+Set\+PositionY (\begin{DoxyParamCaption}\item[{const float \&}]{posY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_enemy_aa869e2d42a1d1ac9c4aeb8e17b0913f2}\label{class_s_t_g_1_1_c_enemy_aa869e2d42a1d1ac9c4aeb8e17b0913f2}} 
+\index{STG::CEnemy@{STG::CEnemy}!Update@{Update}}
+\index{Update@{Update}!STG::CEnemy@{STG::CEnemy}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void STG\+::\+CEnemy\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Character/\+Enemy/\mbox{\hyperlink{_s_t_g_enemy_8h}{STGEnemy.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Character/\+Enemy/\mbox{\hyperlink{_s_t_g_enemy_8cpp}{STGEnemy.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,157 @@
+\hypertarget{class_c_game_actor_manager}{}\doxysection{CGame\+Actor\+Manager クラス}
+\label{class_c_game_actor_manager}\index{CGameActorManager@{CGameActorManager}}
+
+
+{\ttfamily \#include $<$Game\+Actor\+Manager.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_game_actor_manager_a124bc94d6eed2b96e09de29f7fea3105}{CGame\+Actor\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_c_game_actor_manager_a31a845df0260fbd05fd3d621e11d5944}{$\sim$\+CGame\+Actor\+Manager}} ()
+\item 
+bool \mbox{\hyperlink{class_c_game_actor_manager_ab10d47af8e629e267cc381eb949fa037}{Init}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_actor_manager_a08120a38e3bb84ddaf8bf7952a95eaea}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_actor_manager_a8c97155e855cf9aa1f9dc4afc5dd622e}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_actor_manager_a972142cc810e893b52647e4a4d56664e}{Sprite\+Render}} ()
+\item 
+std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{_object_list_8h_ae3918515e36084aa17b48b6b6d9da95c}{EObject\+Tag}}, std\+::pair$<$ D3\+DXVECTOR3, float $>$ $>$ $>$ \mbox{\hyperlink{class_c_game_actor_manager_a395a658e26c6d774bc085ebfc7345b96}{Get\+Obj\+Position\+List}} () const
+\item 
+bool \mbox{\hyperlink{class_c_game_actor_manager_ac8a8ad3f186fe4046c1b99b9edcc6888}{Is\+Game\+Over}} ()
+\item 
+bool \mbox{\hyperlink{class_c_game_actor_manager_a603ffd460b4b24151ffc102a76df5029}{Is\+Girl\+Abduct}} ()
+\item 
+bool \mbox{\hyperlink{class_c_game_actor_manager_aac20a6ef4f2f9050bbdee5a8d886f815}{Is\+Danger}} ()
+\item 
+bool \mbox{\hyperlink{class_c_game_actor_manager_a79e41a0c49fc72171913199c5e0f7b03}{Is\+Return\+Alien}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_actor_manager_a14b2e7cbe95e94b86f3a1a84ffeeb5ac}{Animation\+Stop}} ()
+\item 
+void \mbox{\hyperlink{class_c_game_actor_manager_a585ec62a23771dfcf99d067231e31df8}{Resume\+Animation}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_game_actor_manager_a124bc94d6eed2b96e09de29f7fea3105}\label{class_c_game_actor_manager_a124bc94d6eed2b96e09de29f7fea3105}} 
+\index{CGameActorManager@{CGameActorManager}!CGameActorManager@{CGameActorManager}}
+\index{CGameActorManager@{CGameActorManager}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{CGameActorManager()}{CGameActorManager()}}
+{\footnotesize\ttfamily CGame\+Actor\+Manager\+::\+CGame\+Actor\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_a31a845df0260fbd05fd3d621e11d5944}\label{class_c_game_actor_manager_a31a845df0260fbd05fd3d621e11d5944}} 
+\index{CGameActorManager@{CGameActorManager}!````~CGameActorManager@{$\sim$CGameActorManager}}
+\index{````~CGameActorManager@{$\sim$CGameActorManager}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGameActorManager()}{~CGameActorManager()}}
+{\footnotesize\ttfamily CGame\+Actor\+Manager\+::$\sim$\+CGame\+Actor\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_game_actor_manager_a14b2e7cbe95e94b86f3a1a84ffeeb5ac}\label{class_c_game_actor_manager_a14b2e7cbe95e94b86f3a1a84ffeeb5ac}} 
+\index{CGameActorManager@{CGameActorManager}!AnimationStop@{AnimationStop}}
+\index{AnimationStop@{AnimationStop}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{AnimationStop()}{AnimationStop()}}
+{\footnotesize\ttfamily void CGame\+Actor\+Manager\+::\+Animation\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_c_game_actor_manager_a14b2e7cbe95e94b86f3a1a84ffeeb5ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_actor_manager_a395a658e26c6d774bc085ebfc7345b96}\label{class_c_game_actor_manager_a395a658e26c6d774bc085ebfc7345b96}} 
+\index{CGameActorManager@{CGameActorManager}!GetObjPositionList@{GetObjPositionList}}
+\index{GetObjPositionList@{GetObjPositionList}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{GetObjPositionList()}{GetObjPositionList()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::pair$<$\mbox{\hyperlink{_object_list_8h_ae3918515e36084aa17b48b6b6d9da95c}{EObject\+Tag}}, std\+::pair$<$D3\+DXVECTOR3, float$>$ $>$ $>$ CGame\+Actor\+Manager\+::\+Get\+Obj\+Position\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_actor_manager_a395a658e26c6d774bc085ebfc7345b96_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_actor_manager_ab10d47af8e629e267cc381eb949fa037}\label{class_c_game_actor_manager_ab10d47af8e629e267cc381eb949fa037}} 
+\index{CGameActorManager@{CGameActorManager}!Init@{Init}}
+\index{Init@{Init}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CGame\+Actor\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_aac20a6ef4f2f9050bbdee5a8d886f815}\label{class_c_game_actor_manager_aac20a6ef4f2f9050bbdee5a8d886f815}} 
+\index{CGameActorManager@{CGameActorManager}!IsDanger@{IsDanger}}
+\index{IsDanger@{IsDanger}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{IsDanger()}{IsDanger()}}
+{\footnotesize\ttfamily bool CGame\+Actor\+Manager\+::\+Is\+Danger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_ac8a8ad3f186fe4046c1b99b9edcc6888}\label{class_c_game_actor_manager_ac8a8ad3f186fe4046c1b99b9edcc6888}} 
+\index{CGameActorManager@{CGameActorManager}!IsGameOver@{IsGameOver}}
+\index{IsGameOver@{IsGameOver}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{IsGameOver()}{IsGameOver()}}
+{\footnotesize\ttfamily bool CGame\+Actor\+Manager\+::\+Is\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_c_game_actor_manager_ac8a8ad3f186fe4046c1b99b9edcc6888_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_game_actor_manager_a603ffd460b4b24151ffc102a76df5029}\label{class_c_game_actor_manager_a603ffd460b4b24151ffc102a76df5029}} 
+\index{CGameActorManager@{CGameActorManager}!IsGirlAbduct@{IsGirlAbduct}}
+\index{IsGirlAbduct@{IsGirlAbduct}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{IsGirlAbduct()}{IsGirlAbduct()}}
+{\footnotesize\ttfamily bool CGame\+Actor\+Manager\+::\+Is\+Girl\+Abduct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_a79e41a0c49fc72171913199c5e0f7b03}\label{class_c_game_actor_manager_a79e41a0c49fc72171913199c5e0f7b03}} 
+\index{CGameActorManager@{CGameActorManager}!IsReturnAlien@{IsReturnAlien}}
+\index{IsReturnAlien@{IsReturnAlien}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{IsReturnAlien()}{IsReturnAlien()}}
+{\footnotesize\ttfamily bool CGame\+Actor\+Manager\+::\+Is\+Return\+Alien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_a8c97155e855cf9aa1f9dc4afc5dd622e}\label{class_c_game_actor_manager_a8c97155e855cf9aa1f9dc4afc5dd622e}} 
+\index{CGameActorManager@{CGameActorManager}!Render@{Render}}
+\index{Render@{Render}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CGame\+Actor\+Manager\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_a585ec62a23771dfcf99d067231e31df8}\label{class_c_game_actor_manager_a585ec62a23771dfcf99d067231e31df8}} 
+\index{CGameActorManager@{CGameActorManager}!ResumeAnimation@{ResumeAnimation}}
+\index{ResumeAnimation@{ResumeAnimation}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{ResumeAnimation()}{ResumeAnimation()}}
+{\footnotesize\ttfamily void CGame\+Actor\+Manager\+::\+Resume\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_a972142cc810e893b52647e4a4d56664e}\label{class_c_game_actor_manager_a972142cc810e893b52647e4a4d56664e}} 
+\index{CGameActorManager@{CGameActorManager}!SpriteRender@{SpriteRender}}
+\index{SpriteRender@{SpriteRender}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{SpriteRender()}{SpriteRender()}}
+{\footnotesize\ttfamily void CGame\+Actor\+Manager\+::\+Sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_game_actor_manager_a08120a38e3bb84ddaf8bf7952a95eaea}\label{class_c_game_actor_manager_a08120a38e3bb84ddaf8bf7952a95eaea}} 
+\index{CGameActorManager@{CGameActorManager}!Update@{Update}}
+\index{Update@{Update}!CGameActorManager@{CGameActorManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CGame\+Actor\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_game_actor_manager_a08120a38e3bb84ddaf8bf7952a95eaea_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Actor\+Manager/\mbox{\hyperlink{_game_actor_manager_8h}{Game\+Actor\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Actor\+Manager/\mbox{\hyperlink{_game_actor_manager_8cpp}{Game\+Actor\+Manager.\+cpp}}\end{DoxyCompactItemize}

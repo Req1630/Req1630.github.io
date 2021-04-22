@@ -1,0 +1,568 @@
+\hypertarget{class_d3_d_x_p_a_r_s_e_r}{}\doxysection{D3\+DXPARSER クラス}
+\label{class_d3_d_x_p_a_r_s_e_r}\index{D3DXPARSER@{D3DXPARSER}}
+
+
+{\ttfamily \#include $<$CDX9\+Skin\+Mesh\+Parser.\+h$>$}
+
+
+
+D3\+DXPARSER 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{class_d3_d_x_p_a_r_s_e_r__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a1931ae4ea5bb9c32ecd0fe1fabaf069f}{D3\+DXPARSER}} ()
+\item 
+\mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ac19d934dd1f0963b4a9d58deeda4f55d}{$\sim$\+D3\+DXPARSER}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a58505702961fbf7136bb795253acd079}{Load\+Mesh\+FromX}} (LPDIRECT3\+DDEVICE9, const char $\ast$file\+Name)
+\item 
+HRESULT \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a903fade8c3aeebde8f5fb382c636f930}{Allocate\+Bone\+Matrix}} (LPD3\+DXMESHCONTAINER)
+\item 
+HRESULT \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ab2c14e79e2242d71546bb6fabfc93770}{Allocate\+All\+Bone\+Matrices}} (LPD3\+DXFRAME)
+\item 
+VOID \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a0cf55fbf2731086d7fa873a7440a2bbe}{Update\+Frame\+Matrices}} (LPD3\+DXFRAME, LPD3\+DXMATRIX)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ab91fd86506edcf1d981b9c70997aba95}{Get\+Num\+Vertices}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a11f37ee063dd68c4926c86b99eb1ee66}{Get\+Num\+Faces}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ac35b576e42ccfeef2972cf057dc3aafe}{Get\+Num\+Materials}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3c1c827be493f50a8bdc71cf1d2d2a80}{Get\+Num\+UVs}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a22c2bcd895758c55264a8a4cd360a41a}{Get\+Num\+Bones}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a2ade49bce530e329c0215bdf4284276d}{Get\+Num\+Bone\+Vertices}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Bone\+Index)
+\item 
+DWORD \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a895bad690b82f2f4a2c4c5855610f727}{Get\+Bone\+Vertices\+Indices}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Bone\+Index, int i\+Index\+In\+Group)
+\item 
+double \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ad6b57abb4b5784fc152d28b6beabb816}{Get\+Bone\+Vertices\+Weights}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Bone\+Index, int i\+Index\+In\+Group)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_af1c35579f1a6f94122d32c1428143b5d}{Get\+Vertex\+Coord}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, DWORD i\+Index)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a49d9da94ceff75f07aaba5f5c6e30a5d}{Get\+Normal}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, DWORD i\+Index)
+\item 
+D3\+DXVECTOR2 \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_afd9602e14cc300166d5be43f660be8f9}{Get\+UV}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, DWORD i\+Index)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ad0a82d6b20b17a7f7319e6e83df07477}{Get\+Index}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, DWORD i\+Index)
+\item 
+D3\+DXVECTOR4 \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_aa86abf17570a9395e999e2406d617cb4}{Get\+Ambient}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Index)
+\item 
+D3\+DXVECTOR4 \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_aef49f4b6bc2c173d43ddc01f6e19e329}{Get\+Diffuse}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Index)
+\item 
+D3\+DXVECTOR4 \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a238519bfa6cdb4257d32851ea4aeff00}{Get\+Specular}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Index)
+\item 
+CHAR $\ast$ \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a71bde8380f7ab4a0196144e580eb08a8}{Get\+Texture\+Path}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int index)
+\item 
+float \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ac3a414b930a5936920ce13adce0bf72e}{Get\+Specular\+Power}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Index)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3a2da44e98a1d81123e1d70e89fb86c2}{Ge\+Face\+Material\+Index}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Face\+Index)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a9aee8fc6a63cdf7bc8aa59bebf872527}{Get\+Face\+Vertex\+Index}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Face\+Index, int i\+Index\+In\+Face)
+\item 
+D3\+DXMATRIX \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_abca35d9c595fcd8ee2afc96990975bd0}{Get\+Bind\+Pose}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Bone\+Index)
+\item 
+D3\+DXMATRIX \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ac4a569507917739c7e76746a05445aed}{Get\+New\+Pose}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Bone\+Index)
+\item 
+CHAR $\ast$ \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a7e966d9f2c59fae333c20f07958fb8d8}{Get\+Bone\+Name}} (\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$p\+Container, int i\+Bone\+Index)
+\item 
+LPD3\+DXMESHCONTAINER \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a50e8140dd3d0f340504a6128e4fd5e7f}{Get\+Mesh\+Container}} (LPD3\+DXFRAME p\+Frame)
+\item 
+void \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_afeee57e211a4acbd59f9d5f07142a296}{Change\+Anim\+Set}} (int index, LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+void \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a537012f957b6ad47d9328329f9d58323}{Change\+Anim\+Set\+\_\+\+Start\+Pos}} (int index, double d\+Start\+Frame\+Pos, LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+void \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a54e88a8f802344d4a649fd2f54bcecaa}{Change\+Anim\+Blend}} (int index, int old\+Index, LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+double \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a038b910c7b6f8012e5829b3abd987861}{Get\+Anim\+Period}} (int index)
+\item 
+int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a2375267c345004ceaef0ef4943d7ef6b}{Get\+Anim\+Max}} (LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+bool \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a7a2dd0ba32bc9a43ef0b48f0257919b0}{Get\+Matrix\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXMATRIX $\ast$p\+Out\+Mat)
+\item 
+bool \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a739d29b696413a81b14ad43dc13a6a59}{Get\+Pos\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXVECTOR3 $\ast$p\+Out\+Pos)
+\item 
+bool \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ad27738a514bc1f8c2c9e6451c86fb5e6}{Set\+Matrix\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXMATRIX in\+Mat)
+\item 
+bool \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3a9707bb5c74f9ae2a1a0426a7d2ca55}{Set\+Pos\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXVECTOR3 in\+Pos)
+\item 
+HRESULT \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3e6457d1ace86f1e25285892f9b0abc5}{Release\+Mesh}} (LPD3\+DXFRAME p\+Frame)
+\item 
+HRESULT \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a7184df3554d2bc8bf4beca642a2164aa}{Release}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_m_y___h_i_e_r_a_r_c_h_y}{MY\+\_\+\+HIERARCHY}} \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_add1a98616278448e3b82d99bec093229}{c\+Hierarchy}}
+\item 
+\mbox{\hyperlink{class_m_y___h_i_e_r_a_r_c_h_y}{MY\+\_\+\+HIERARCHY}} $\ast$ \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a96995e3b04f4533add34ebaf0b6e3e25}{m\+\_\+p\+Hierarchy}}
+\item 
+LPD3\+DXFRAME \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ad2865a74af9533fce8e140e6516d2800}{m\+\_\+p\+Frame\+Root}}
+\item 
+LPD3\+DXANIMATIONCONTROLLER \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a97117aa3812170726aa961d3a4523c9f}{m\+\_\+p\+Anim\+Controller}}
+\item 
+LPD3\+DXANIMATIONSET \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_ad33955b28c0dbb60944ae92cf1eb0c3b}{m\+\_\+p\+Anim\+Set}} \mbox{[}\mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3b0dd1c87c8ce8f5d97f408d72ce5f39}{MAX\+\_\+\+ANIM\+\_\+\+SET}}\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a0494b265d442affaef4016579116a428}{MAX\+\_\+\+BONES}} = 255
+\item 
+static const int \mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3b0dd1c87c8ce8f5d97f408d72ce5f39}{MAX\+\_\+\+ANIM\+\_\+\+SET}} = 100
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a1931ae4ea5bb9c32ecd0fe1fabaf069f}\label{class_d3_d_x_p_a_r_s_e_r_a1931ae4ea5bb9c32ecd0fe1fabaf069f}} 
+\index{D3DXPARSER@{D3DXPARSER}!D3DXPARSER@{D3DXPARSER}}
+\index{D3DXPARSER@{D3DXPARSER}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{D3DXPARSER()}{D3DXPARSER()}}
+{\footnotesize\ttfamily D3\+DXPARSER\+::\+D3\+DXPARSER (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ac19d934dd1f0963b4a9d58deeda4f55d}\label{class_d3_d_x_p_a_r_s_e_r_ac19d934dd1f0963b4a9d58deeda4f55d}} 
+\index{D3DXPARSER@{D3DXPARSER}!````~D3DXPARSER@{$\sim$D3DXPARSER}}
+\index{````~D3DXPARSER@{$\sim$D3DXPARSER}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{$\sim$D3DXPARSER()}{~D3DXPARSER()}}
+{\footnotesize\ttfamily D3\+DXPARSER\+::$\sim$\+D3\+DXPARSER (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ab2c14e79e2242d71546bb6fabfc93770}\label{class_d3_d_x_p_a_r_s_e_r_ab2c14e79e2242d71546bb6fabfc93770}} 
+\index{D3DXPARSER@{D3DXPARSER}!AllocateAllBoneMatrices@{AllocateAllBoneMatrices}}
+\index{AllocateAllBoneMatrices@{AllocateAllBoneMatrices}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{AllocateAllBoneMatrices()}{AllocateAllBoneMatrices()}}
+{\footnotesize\ttfamily HRESULT D3\+DXPARSER\+::\+Allocate\+All\+Bone\+Matrices (\begin{DoxyParamCaption}\item[{LPD3\+DXFRAME}]{p\+Frame }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_ab2c14e79e2242d71546bb6fabfc93770_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_ab2c14e79e2242d71546bb6fabfc93770_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a903fade8c3aeebde8f5fb382c636f930}\label{class_d3_d_x_p_a_r_s_e_r_a903fade8c3aeebde8f5fb382c636f930}} 
+\index{D3DXPARSER@{D3DXPARSER}!AllocateBoneMatrix@{AllocateBoneMatrix}}
+\index{AllocateBoneMatrix@{AllocateBoneMatrix}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{AllocateBoneMatrix()}{AllocateBoneMatrix()}}
+{\footnotesize\ttfamily HRESULT D3\+DXPARSER\+::\+Allocate\+Bone\+Matrix (\begin{DoxyParamCaption}\item[{LPD3\+DXMESHCONTAINER}]{p\+Mesh\+Container\+Base }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a903fade8c3aeebde8f5fb382c636f930_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a54e88a8f802344d4a649fd2f54bcecaa}\label{class_d3_d_x_p_a_r_s_e_r_a54e88a8f802344d4a649fd2f54bcecaa}} 
+\index{D3DXPARSER@{D3DXPARSER}!ChangeAnimBlend@{ChangeAnimBlend}}
+\index{ChangeAnimBlend@{ChangeAnimBlend}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{ChangeAnimBlend()}{ChangeAnimBlend()}}
+{\footnotesize\ttfamily void D3\+DXPARSER\+::\+Change\+Anim\+Blend (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{old\+Index,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a54e88a8f802344d4a649fd2f54bcecaa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_afeee57e211a4acbd59f9d5f07142a296}\label{class_d3_d_x_p_a_r_s_e_r_afeee57e211a4acbd59f9d5f07142a296}} 
+\index{D3DXPARSER@{D3DXPARSER}!ChangeAnimSet@{ChangeAnimSet}}
+\index{ChangeAnimSet@{ChangeAnimSet}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{ChangeAnimSet()}{ChangeAnimSet()}}
+{\footnotesize\ttfamily void D3\+DXPARSER\+::\+Change\+Anim\+Set (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_afeee57e211a4acbd59f9d5f07142a296_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a537012f957b6ad47d9328329f9d58323}\label{class_d3_d_x_p_a_r_s_e_r_a537012f957b6ad47d9328329f9d58323}} 
+\index{D3DXPARSER@{D3DXPARSER}!ChangeAnimSet\_StartPos@{ChangeAnimSet\_StartPos}}
+\index{ChangeAnimSet\_StartPos@{ChangeAnimSet\_StartPos}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{ChangeAnimSet\_StartPos()}{ChangeAnimSet\_StartPos()}}
+{\footnotesize\ttfamily void D3\+DXPARSER\+::\+Change\+Anim\+Set\+\_\+\+Start\+Pos (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{double}]{d\+Start\+Frame\+Pos,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a537012f957b6ad47d9328329f9d58323_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a3a2da44e98a1d81123e1d70e89fb86c2}\label{class_d3_d_x_p_a_r_s_e_r_a3a2da44e98a1d81123e1d70e89fb86c2}} 
+\index{D3DXPARSER@{D3DXPARSER}!GeFaceMaterialIndex@{GeFaceMaterialIndex}}
+\index{GeFaceMaterialIndex@{GeFaceMaterialIndex}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GeFaceMaterialIndex()}{GeFaceMaterialIndex()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Ge\+Face\+Material\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Face\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_aa86abf17570a9395e999e2406d617cb4}\label{class_d3_d_x_p_a_r_s_e_r_aa86abf17570a9395e999e2406d617cb4}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetAmbient@{GetAmbient}}
+\index{GetAmbient@{GetAmbient}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetAmbient()}{GetAmbient()}}
+{\footnotesize\ttfamily D3\+DXVECTOR4 D3\+DXPARSER\+::\+Get\+Ambient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a2375267c345004ceaef0ef4943d7ef6b}\label{class_d3_d_x_p_a_r_s_e_r_a2375267c345004ceaef0ef4943d7ef6b}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetAnimMax@{GetAnimMax}}
+\index{GetAnimMax@{GetAnimMax}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetAnimMax()}{GetAnimMax()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Anim\+Max (\begin{DoxyParamCaption}\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a2375267c345004ceaef0ef4943d7ef6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a038b910c7b6f8012e5829b3abd987861}\label{class_d3_d_x_p_a_r_s_e_r_a038b910c7b6f8012e5829b3abd987861}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetAnimPeriod@{GetAnimPeriod}}
+\index{GetAnimPeriod@{GetAnimPeriod}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetAnimPeriod()}{GetAnimPeriod()}}
+{\footnotesize\ttfamily double D3\+DXPARSER\+::\+Get\+Anim\+Period (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a038b910c7b6f8012e5829b3abd987861_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_abca35d9c595fcd8ee2afc96990975bd0}\label{class_d3_d_x_p_a_r_s_e_r_abca35d9c595fcd8ee2afc96990975bd0}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetBindPose@{GetBindPose}}
+\index{GetBindPose@{GetBindPose}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetBindPose()}{GetBindPose()}}
+{\footnotesize\ttfamily D3\+DXMATRIX D3\+DXPARSER\+::\+Get\+Bind\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Bone\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a7e966d9f2c59fae333c20f07958fb8d8}\label{class_d3_d_x_p_a_r_s_e_r_a7e966d9f2c59fae333c20f07958fb8d8}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetBoneName@{GetBoneName}}
+\index{GetBoneName@{GetBoneName}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetBoneName()}{GetBoneName()}}
+{\footnotesize\ttfamily CHAR $\ast$ D3\+DXPARSER\+::\+Get\+Bone\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Bone\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a895bad690b82f2f4a2c4c5855610f727}\label{class_d3_d_x_p_a_r_s_e_r_a895bad690b82f2f4a2c4c5855610f727}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetBoneVerticesIndices@{GetBoneVerticesIndices}}
+\index{GetBoneVerticesIndices@{GetBoneVerticesIndices}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetBoneVerticesIndices()}{GetBoneVerticesIndices()}}
+{\footnotesize\ttfamily DWORD D3\+DXPARSER\+::\+Get\+Bone\+Vertices\+Indices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Bone\+Index,  }\item[{int}]{i\+Index\+In\+Group }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ad6b57abb4b5784fc152d28b6beabb816}\label{class_d3_d_x_p_a_r_s_e_r_ad6b57abb4b5784fc152d28b6beabb816}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetBoneVerticesWeights@{GetBoneVerticesWeights}}
+\index{GetBoneVerticesWeights@{GetBoneVerticesWeights}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetBoneVerticesWeights()}{GetBoneVerticesWeights()}}
+{\footnotesize\ttfamily double D3\+DXPARSER\+::\+Get\+Bone\+Vertices\+Weights (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Bone\+Index,  }\item[{int}]{i\+Index\+In\+Group }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_aef49f4b6bc2c173d43ddc01f6e19e329}\label{class_d3_d_x_p_a_r_s_e_r_aef49f4b6bc2c173d43ddc01f6e19e329}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetDiffuse@{GetDiffuse}}
+\index{GetDiffuse@{GetDiffuse}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetDiffuse()}{GetDiffuse()}}
+{\footnotesize\ttfamily D3\+DXVECTOR4 D3\+DXPARSER\+::\+Get\+Diffuse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a9aee8fc6a63cdf7bc8aa59bebf872527}\label{class_d3_d_x_p_a_r_s_e_r_a9aee8fc6a63cdf7bc8aa59bebf872527}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetFaceVertexIndex@{GetFaceVertexIndex}}
+\index{GetFaceVertexIndex@{GetFaceVertexIndex}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetFaceVertexIndex()}{GetFaceVertexIndex()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Face\+Vertex\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Face\+Index,  }\item[{int}]{i\+Index\+In\+Face }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ad0a82d6b20b17a7f7319e6e83df07477}\label{class_d3_d_x_p_a_r_s_e_r_ad0a82d6b20b17a7f7319e6e83df07477}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetIndex@{GetIndex}}
+\index{GetIndex@{GetIndex}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetIndex()}{GetIndex()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{DWORD}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a7a2dd0ba32bc9a43ef0b48f0257919b0}\label{class_d3_d_x_p_a_r_s_e_r_a7a2dd0ba32bc9a43ef0b48f0257919b0}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetMatrixFromBone@{GetMatrixFromBone}}
+\index{GetMatrixFromBone@{GetMatrixFromBone}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetMatrixFromBone()}{GetMatrixFromBone()}}
+{\footnotesize\ttfamily bool D3\+DXPARSER\+::\+Get\+Matrix\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXMATRIX $\ast$}]{p\+Out\+Mat }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a7a2dd0ba32bc9a43ef0b48f0257919b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a50e8140dd3d0f340504a6128e4fd5e7f}\label{class_d3_d_x_p_a_r_s_e_r_a50e8140dd3d0f340504a6128e4fd5e7f}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetMeshContainer@{GetMeshContainer}}
+\index{GetMeshContainer@{GetMeshContainer}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetMeshContainer()}{GetMeshContainer()}}
+{\footnotesize\ttfamily LPD3\+DXMESHCONTAINER D3\+DXPARSER\+::\+Get\+Mesh\+Container (\begin{DoxyParamCaption}\item[{LPD3\+DXFRAME}]{p\+Frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ac4a569507917739c7e76746a05445aed}\label{class_d3_d_x_p_a_r_s_e_r_ac4a569507917739c7e76746a05445aed}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNewPose@{GetNewPose}}
+\index{GetNewPose@{GetNewPose}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNewPose()}{GetNewPose()}}
+{\footnotesize\ttfamily D3\+DXMATRIX D3\+DXPARSER\+::\+Get\+New\+Pose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Bone\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a49d9da94ceff75f07aaba5f5c6e30a5d}\label{class_d3_d_x_p_a_r_s_e_r_a49d9da94ceff75f07aaba5f5c6e30a5d}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNormal@{GetNormal}}
+\index{GetNormal@{GetNormal}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNormal()}{GetNormal()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 D3\+DXPARSER\+::\+Get\+Normal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{DWORD}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a22c2bcd895758c55264a8a4cd360a41a}\label{class_d3_d_x_p_a_r_s_e_r_a22c2bcd895758c55264a8a4cd360a41a}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNumBones@{GetNumBones}}
+\index{GetNumBones@{GetNumBones}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNumBones()}{GetNumBones()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Num\+Bones (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a2ade49bce530e329c0215bdf4284276d}\label{class_d3_d_x_p_a_r_s_e_r_a2ade49bce530e329c0215bdf4284276d}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNumBoneVertices@{GetNumBoneVertices}}
+\index{GetNumBoneVertices@{GetNumBoneVertices}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNumBoneVertices()}{GetNumBoneVertices()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Num\+Bone\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Bone\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a11f37ee063dd68c4926c86b99eb1ee66}\label{class_d3_d_x_p_a_r_s_e_r_a11f37ee063dd68c4926c86b99eb1ee66}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNumFaces@{GetNumFaces}}
+\index{GetNumFaces@{GetNumFaces}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNumFaces()}{GetNumFaces()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Num\+Faces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ac35b576e42ccfeef2972cf057dc3aafe}\label{class_d3_d_x_p_a_r_s_e_r_ac35b576e42ccfeef2972cf057dc3aafe}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNumMaterials@{GetNumMaterials}}
+\index{GetNumMaterials@{GetNumMaterials}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNumMaterials()}{GetNumMaterials()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Num\+Materials (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a3c1c827be493f50a8bdc71cf1d2d2a80}\label{class_d3_d_x_p_a_r_s_e_r_a3c1c827be493f50a8bdc71cf1d2d2a80}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNumUVs@{GetNumUVs}}
+\index{GetNumUVs@{GetNumUVs}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNumUVs()}{GetNumUVs()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Num\+UVs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ab91fd86506edcf1d981b9c70997aba95}\label{class_d3_d_x_p_a_r_s_e_r_ab91fd86506edcf1d981b9c70997aba95}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetNumVertices@{GetNumVertices}}
+\index{GetNumVertices@{GetNumVertices}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetNumVertices()}{GetNumVertices()}}
+{\footnotesize\ttfamily int D3\+DXPARSER\+::\+Get\+Num\+Vertices (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a739d29b696413a81b14ad43dc13a6a59}\label{class_d3_d_x_p_a_r_s_e_r_a739d29b696413a81b14ad43dc13a6a59}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetPosFromBone@{GetPosFromBone}}
+\index{GetPosFromBone@{GetPosFromBone}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetPosFromBone()}{GetPosFromBone()}}
+{\footnotesize\ttfamily bool D3\+DXPARSER\+::\+Get\+Pos\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Out\+Pos }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a739d29b696413a81b14ad43dc13a6a59_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a739d29b696413a81b14ad43dc13a6a59_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a238519bfa6cdb4257d32851ea4aeff00}\label{class_d3_d_x_p_a_r_s_e_r_a238519bfa6cdb4257d32851ea4aeff00}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetSpecular@{GetSpecular}}
+\index{GetSpecular@{GetSpecular}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetSpecular()}{GetSpecular()}}
+{\footnotesize\ttfamily D3\+DXVECTOR4 D3\+DXPARSER\+::\+Get\+Specular (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ac3a414b930a5936920ce13adce0bf72e}\label{class_d3_d_x_p_a_r_s_e_r_ac3a414b930a5936920ce13adce0bf72e}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetSpecularPower@{GetSpecularPower}}
+\index{GetSpecularPower@{GetSpecularPower}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetSpecularPower()}{GetSpecularPower()}}
+{\footnotesize\ttfamily float D3\+DXPARSER\+::\+Get\+Specular\+Power (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a71bde8380f7ab4a0196144e580eb08a8}\label{class_d3_d_x_p_a_r_s_e_r_a71bde8380f7ab4a0196144e580eb08a8}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetTexturePath@{GetTexturePath}}
+\index{GetTexturePath@{GetTexturePath}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetTexturePath()}{GetTexturePath()}}
+{\footnotesize\ttfamily CHAR $\ast$ D3\+DXPARSER\+::\+Get\+Texture\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_afd9602e14cc300166d5be43f660be8f9}\label{class_d3_d_x_p_a_r_s_e_r_afd9602e14cc300166d5be43f660be8f9}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetUV@{GetUV}}
+\index{GetUV@{GetUV}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetUV()}{GetUV()}}
+{\footnotesize\ttfamily D3\+DXVECTOR2 D3\+DXPARSER\+::\+Get\+UV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{DWORD}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_af1c35579f1a6f94122d32c1428143b5d}\label{class_d3_d_x_p_a_r_s_e_r_af1c35579f1a6f94122d32c1428143b5d}} 
+\index{D3DXPARSER@{D3DXPARSER}!GetVertexCoord@{GetVertexCoord}}
+\index{GetVertexCoord@{GetVertexCoord}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{GetVertexCoord()}{GetVertexCoord()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 D3\+DXPARSER\+::\+Get\+Vertex\+Coord (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_m_y_m_e_s_h_c_o_n_t_a_i_n_e_r}{MYMESHCONTAINER}} $\ast$}]{p\+Container,  }\item[{DWORD}]{i\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a58505702961fbf7136bb795253acd079}\label{class_d3_d_x_p_a_r_s_e_r_a58505702961fbf7136bb795253acd079}} 
+\index{D3DXPARSER@{D3DXPARSER}!LoadMeshFromX@{LoadMeshFromX}}
+\index{LoadMeshFromX@{LoadMeshFromX}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{LoadMeshFromX()}{LoadMeshFromX()}}
+{\footnotesize\ttfamily HRESULT D3\+DXPARSER\+::\+Load\+Mesh\+FromX (\begin{DoxyParamCaption}\item[{LPDIRECT3\+DDEVICE9}]{p\+Device9,  }\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a58505702961fbf7136bb795253acd079_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a58505702961fbf7136bb795253acd079_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a7184df3554d2bc8bf4beca642a2164aa}\label{class_d3_d_x_p_a_r_s_e_r_a7184df3554d2bc8bf4beca642a2164aa}} 
+\index{D3DXPARSER@{D3DXPARSER}!Release@{Release}}
+\index{Release@{Release}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT D3\+DXPARSER\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a7184df3554d2bc8bf4beca642a2164aa_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a7184df3554d2bc8bf4beca642a2164aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a3e6457d1ace86f1e25285892f9b0abc5}\label{class_d3_d_x_p_a_r_s_e_r_a3e6457d1ace86f1e25285892f9b0abc5}} 
+\index{D3DXPARSER@{D3DXPARSER}!ReleaseMesh@{ReleaseMesh}}
+\index{ReleaseMesh@{ReleaseMesh}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{ReleaseMesh()}{ReleaseMesh()}}
+{\footnotesize\ttfamily HRESULT D3\+DXPARSER\+::\+Release\+Mesh (\begin{DoxyParamCaption}\item[{LPD3\+DXFRAME}]{p\+Frame }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ad27738a514bc1f8c2c9e6451c86fb5e6}\label{class_d3_d_x_p_a_r_s_e_r_ad27738a514bc1f8c2c9e6451c86fb5e6}} 
+\index{D3DXPARSER@{D3DXPARSER}!SetMatrixFromBone@{SetMatrixFromBone}}
+\index{SetMatrixFromBone@{SetMatrixFromBone}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{SetMatrixFromBone()}{SetMatrixFromBone()}}
+{\footnotesize\ttfamily bool D3\+DXPARSER\+::\+Set\+Matrix\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXMATRIX}]{in\+Mat }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_ad27738a514bc1f8c2c9e6451c86fb5e6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a3a9707bb5c74f9ae2a1a0426a7d2ca55}\label{class_d3_d_x_p_a_r_s_e_r_a3a9707bb5c74f9ae2a1a0426a7d2ca55}} 
+\index{D3DXPARSER@{D3DXPARSER}!SetPosFromBone@{SetPosFromBone}}
+\index{SetPosFromBone@{SetPosFromBone}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{SetPosFromBone()}{SetPosFromBone()}}
+{\footnotesize\ttfamily bool D3\+DXPARSER\+::\+Set\+Pos\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXVECTOR3}]{in\+Pos }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a3a9707bb5c74f9ae2a1a0426a7d2ca55_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a3a9707bb5c74f9ae2a1a0426a7d2ca55_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a0cf55fbf2731086d7fa873a7440a2bbe}\label{class_d3_d_x_p_a_r_s_e_r_a0cf55fbf2731086d7fa873a7440a2bbe}} 
+\index{D3DXPARSER@{D3DXPARSER}!UpdateFrameMatrices@{UpdateFrameMatrices}}
+\index{UpdateFrameMatrices@{UpdateFrameMatrices}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{UpdateFrameMatrices()}{UpdateFrameMatrices()}}
+{\footnotesize\ttfamily VOID D3\+DXPARSER\+::\+Update\+Frame\+Matrices (\begin{DoxyParamCaption}\item[{LPD3\+DXFRAME}]{p\+Frame\+Base,  }\item[{LPD3\+DXMATRIX}]{p\+Parent\+Matrix }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d3_d_x_p_a_r_s_e_r_a0cf55fbf2731086d7fa873a7440a2bbe_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_add1a98616278448e3b82d99bec093229}\label{class_d3_d_x_p_a_r_s_e_r_add1a98616278448e3b82d99bec093229}} 
+\index{D3DXPARSER@{D3DXPARSER}!cHierarchy@{cHierarchy}}
+\index{cHierarchy@{cHierarchy}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{cHierarchy}{cHierarchy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m_y___h_i_e_r_a_r_c_h_y}{MY\+\_\+\+HIERARCHY}} D3\+DXPARSER\+::c\+Hierarchy}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a97117aa3812170726aa961d3a4523c9f}\label{class_d3_d_x_p_a_r_s_e_r_a97117aa3812170726aa961d3a4523c9f}} 
+\index{D3DXPARSER@{D3DXPARSER}!m\_pAnimController@{m\_pAnimController}}
+\index{m\_pAnimController@{m\_pAnimController}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{m\_pAnimController}{m\_pAnimController}}
+{\footnotesize\ttfamily LPD3\+DXANIMATIONCONTROLLER D3\+DXPARSER\+::m\+\_\+p\+Anim\+Controller}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ad33955b28c0dbb60944ae92cf1eb0c3b}\label{class_d3_d_x_p_a_r_s_e_r_ad33955b28c0dbb60944ae92cf1eb0c3b}} 
+\index{D3DXPARSER@{D3DXPARSER}!m\_pAnimSet@{m\_pAnimSet}}
+\index{m\_pAnimSet@{m\_pAnimSet}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{m\_pAnimSet}{m\_pAnimSet}}
+{\footnotesize\ttfamily LPD3\+DXANIMATIONSET D3\+DXPARSER\+::m\+\_\+p\+Anim\+Set\mbox{[}\mbox{\hyperlink{class_d3_d_x_p_a_r_s_e_r_a3b0dd1c87c8ce8f5d97f408d72ce5f39}{MAX\+\_\+\+ANIM\+\_\+\+SET}}\mbox{]}}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_ad2865a74af9533fce8e140e6516d2800}\label{class_d3_d_x_p_a_r_s_e_r_ad2865a74af9533fce8e140e6516d2800}} 
+\index{D3DXPARSER@{D3DXPARSER}!m\_pFrameRoot@{m\_pFrameRoot}}
+\index{m\_pFrameRoot@{m\_pFrameRoot}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{m\_pFrameRoot}{m\_pFrameRoot}}
+{\footnotesize\ttfamily LPD3\+DXFRAME D3\+DXPARSER\+::m\+\_\+p\+Frame\+Root}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a96995e3b04f4533add34ebaf0b6e3e25}\label{class_d3_d_x_p_a_r_s_e_r_a96995e3b04f4533add34ebaf0b6e3e25}} 
+\index{D3DXPARSER@{D3DXPARSER}!m\_pHierarchy@{m\_pHierarchy}}
+\index{m\_pHierarchy@{m\_pHierarchy}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{m\_pHierarchy}{m\_pHierarchy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_m_y___h_i_e_r_a_r_c_h_y}{MY\+\_\+\+HIERARCHY}}$\ast$ D3\+DXPARSER\+::m\+\_\+p\+Hierarchy}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a3b0dd1c87c8ce8f5d97f408d72ce5f39}\label{class_d3_d_x_p_a_r_s_e_r_a3b0dd1c87c8ce8f5d97f408d72ce5f39}} 
+\index{D3DXPARSER@{D3DXPARSER}!MAX\_ANIM\_SET@{MAX\_ANIM\_SET}}
+\index{MAX\_ANIM\_SET@{MAX\_ANIM\_SET}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{MAX\_ANIM\_SET}{MAX\_ANIM\_SET}}
+{\footnotesize\ttfamily const int D3\+DXPARSER\+::\+MAX\+\_\+\+ANIM\+\_\+\+SET = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_d3_d_x_p_a_r_s_e_r_a0494b265d442affaef4016579116a428}\label{class_d3_d_x_p_a_r_s_e_r_a0494b265d442affaef4016579116a428}} 
+\index{D3DXPARSER@{D3DXPARSER}!MAX\_BONES@{MAX\_BONES}}
+\index{MAX\_BONES@{MAX\_BONES}!D3DXPARSER@{D3DXPARSER}}
+\doxysubsubsection{\texorpdfstring{MAX\_BONES}{MAX\_BONES}}
+{\footnotesize\ttfamily const int D3\+DXPARSER\+::\+MAX\+\_\+\+BONES = 255\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Mesh/\+Dx9\+Skin\+Mesh/\+Parser/\mbox{\hyperlink{_c_d_x9_skin_mesh_parser_8h}{CDX9\+Skin\+Mesh\+Parser.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Mesh/\+Dx9\+Skin\+Mesh/\+Parser/\mbox{\hyperlink{_c_d_x9_skin_mesh_parser_8cpp}{CDX9\+Skin\+Mesh\+Parser.\+cpp}}\end{DoxyCompactItemize}

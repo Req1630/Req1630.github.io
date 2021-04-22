@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/XAudio2/XAudio2Master/XAudio2MasterVoice.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_a7e3b021d6c65d18f140bdc84e03e579.html">XAudio2</a></li><li class="navelem"><a class="el" href="dir_a4d6b0fabd3e250f16781d555fd95100.html">XAudio2Master</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">XAudio2MasterVoice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_x_audio2_master_voice_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef C_XAUDIO2_MASTERVOICE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define C_XAUDIO2_MASTERVOICE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_x_audio2_8h.html">XAudio2.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="_x_audio2_master_voice_8h.html#a0b48e4fef90a8ccbb9142ef130e08d8f">    5</a></span>&#160;<span class="preprocessor">#define COM_SAFE_RELEASE( p ) { if(p) { (p)-&gt;Release(); (p) = nullptr; } }</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classcls_x_audio2_master_voice.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classcls_x_audio2_master_voice.html#af7680c2303611b0a2d93ad47527b4ead">clsXAudio2MasterVoice</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classcls_x_audio2_master_voice.html#af4db2a05bd494b34305e7070a9b3ddd1">~clsXAudio2MasterVoice</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// インスタンスの取得.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">static</span> <a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a>* <a class="code" href="classcls_x_audio2_master_voice.html#a18233d187d65a7e3669262ee77c60c88">GetInstance</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    IXAudio2* <a class="code" href="classcls_x_audio2_master_voice.html#a298d64ce0d3d0f27f0ec6220577c3de3">GetInterface</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// マスターボイス取得.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    IXAudio2MasteringVoice* <a class="code" href="classcls_x_audio2_master_voice.html#ad088bf618933205a8cb2fe6dccf4e5e2">GetMasteringVoice</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a>&amp; <a class="code" href="classcls_x_audio2_master_voice.html#aa3beaff02ebb13e1e7a7d87c7e116d59">GetGlobalSystem</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// 開放関数.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classcls_x_audio2_master_voice.html#a56b27bdc2e171907b8352c1e9a7cd3aa">Release</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classcls_x_audio2_master_voice.html#a04d441fff9973feb9bf8173f4dded8c3">Initialize</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classcls_x_audio2_master_voice.html#a810cdc637af67e9bc74a2653a8eba68a">   27</a></span>&#160;    IXAudio2 *              <a class="code" href="classcls_x_audio2_master_voice.html#a810cdc637af67e9bc74a2653a8eba68a">m_pXAudioInterface</a>;                <span class="comment">//XAudio2インターフェース</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classcls_x_audio2_master_voice.html#ab62c31a5f8ecfc27819fe6380647018a">   28</a></span>&#160;    IXAudio2MasteringVoice *<a class="code" href="classcls_x_audio2_master_voice.html#ab62c31a5f8ecfc27819fe6380647018a">m_pMasterVoice</a>;                    <span class="comment">//マスタボイス</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// コピー・ムーブコンストラクタ, 代入演算子の削除.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classcls_x_audio2_master_voice.html#af7680c2303611b0a2d93ad47527b4ead">clsXAudio2MasterVoice</a>(<span class="keyword">const</span> <a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a>&amp; operator = (<span class="keyword">const</span> <a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classcls_x_audio2_master_voice.html#af7680c2303611b0a2d93ad47527b4ead">clsXAudio2MasterVoice</a>(<a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a>&amp; operator = (<a class="code" href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//#ifndef C_XAUDIO2_MASTERVOICE_H</span></div>
+<div class="ttc" id="a_x_audio2_8h_html"><div class="ttname"><a href="_x_audio2_8h.html">XAudio2.h</a></div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html"><div class="ttname"><a href="classcls_x_audio2_master_voice.html">clsXAudio2MasterVoice</a></div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.h:9</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_a04d441fff9973feb9bf8173f4dded8c3"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#a04d441fff9973feb9bf8173f4dded8c3">clsXAudio2MasterVoice::Initialize</a></div><div class="ttdeci">bool Initialize()</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:40</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_a18233d187d65a7e3669262ee77c60c88"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#a18233d187d65a7e3669262ee77c60c88">clsXAudio2MasterVoice::GetInstance</a></div><div class="ttdeci">static clsXAudio2MasterVoice * GetInstance()</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:19</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_a298d64ce0d3d0f27f0ec6220577c3de3"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#a298d64ce0d3d0f27f0ec6220577c3de3">clsXAudio2MasterVoice::GetInterface</a></div><div class="ttdeci">IXAudio2 * GetInterface() const</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:28</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_a56b27bdc2e171907b8352c1e9a7cd3aa"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#a56b27bdc2e171907b8352c1e9a7cd3aa">clsXAudio2MasterVoice::Release</a></div><div class="ttdeci">static void Release()</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:64</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_a810cdc637af67e9bc74a2653a8eba68a"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#a810cdc637af67e9bc74a2653a8eba68a">clsXAudio2MasterVoice::m_pXAudioInterface</a></div><div class="ttdeci">IXAudio2 * m_pXAudioInterface</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.h:27</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_aa3beaff02ebb13e1e7a7d87c7e116d59"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#aa3beaff02ebb13e1e7a7d87c7e116d59">clsXAudio2MasterVoice::GetGlobalSystem</a></div><div class="ttdeci">static clsXAudio2MasterVoice &amp; GetGlobalSystem()</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:4</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_ab62c31a5f8ecfc27819fe6380647018a"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#ab62c31a5f8ecfc27819fe6380647018a">clsXAudio2MasterVoice::m_pMasterVoice</a></div><div class="ttdeci">IXAudio2MasteringVoice * m_pMasterVoice</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.h:28</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_ad088bf618933205a8cb2fe6dccf4e5e2"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#ad088bf618933205a8cb2fe6dccf4e5e2">clsXAudio2MasterVoice::GetMasteringVoice</a></div><div class="ttdeci">IXAudio2MasteringVoice * GetMasteringVoice() const</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:34</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_af4db2a05bd494b34305e7070a9b3ddd1"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#af4db2a05bd494b34305e7070a9b3ddd1">clsXAudio2MasterVoice::~clsXAudio2MasterVoice</a></div><div class="ttdeci">~clsXAudio2MasterVoice()</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:15</div></div>
+<div class="ttc" id="aclasscls_x_audio2_master_voice_html_af7680c2303611b0a2d93ad47527b4ead"><div class="ttname"><a href="classcls_x_audio2_master_voice.html#af7680c2303611b0a2d93ad47527b4ead">clsXAudio2MasterVoice::clsXAudio2MasterVoice</a></div><div class="ttdeci">clsXAudio2MasterVoice()</div><div class="ttdef"><b>Definition:</b> XAudio2MasterVoice.cpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

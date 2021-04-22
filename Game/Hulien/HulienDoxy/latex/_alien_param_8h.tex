@@ -1,0 +1,94 @@
+\hypertarget{_alien_param_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Alien/\+Alien\+Param.h ファイル}
+\label{_alien_param_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/Alien/AlienParam.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/Alien/AlienParam.h}}
+
+
+宇宙人の構造体などのヘッダー.  
+
+
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Character.\+h\char`\"{}}\newline
+Alien\+Param.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_alien_param_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_alien_param_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_s_alien_param}{SAlien\+Param}}
+\end{DoxyCompactItemize}
+\doxysubsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacealien}{alien}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411}{alien\+::\+EAlien\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6adf97f83acf6453d4a6a4b1070f3754}{alien\+::\+None}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a4fd1dddbd78f7f7cdcd62e926266611e}{alien\+::\+Spawn}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6bc362dbf494c61ea117fe3c71ca48a5}{alien\+::\+Move}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a3268caeffd536549f2d6374cb493ec0e}{alien\+::\+Abduct}}
+, \newline
+\mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a3e3472ea02095c2554d0e92586381b63}{alien\+::\+Knock\+Back}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411aba6daa7e8746487823d4218ccb38c85e}{alien\+::\+Fright}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6097f89e3092d4ccd249c9d479785c1f}{alien\+::\+Death}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a013ec032d3460d4be4431c6ab1f8f224}{alien\+::\+Escape}}
+, \newline
+\mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411aa2a363347facc7b6bc85f2a2c4918188}{alien\+::\+Rising\+Mother\+Ship}}
+, \mbox{\hyperlink{namespacealien_ad5109b293a3da5ccb362145055f35411a6a061313d22e51e0f25b7cd4dc065233}{alien\+::\+Max}}
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243}{alien\+::\+EMove\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a6adf97f83acf6453d4a6a4b1070f3754}{alien\+::\+None}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243af1a42bd417390fc63b030a519624607a}{alien\+::\+Rotation}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a6bc362dbf494c61ea117fe3c71ca48a5}{alien\+::\+Move}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243adcfafcb4323b102c7e204555d313ba0a}{alien\+::\+Attack}}
+, \newline
+\mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a0f68101772bd5397ef8eb1b632798652}{alien\+::\+Wait}}
+, \mbox{\hyperlink{namespacealien_aa01fe5773378e77edfda68177f2e9243a6a061313d22e51e0f25b7cd4dc065233}{alien\+::\+Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326}{alien\+::\+EAnim\+No}} \+: char \{ \newline
+\mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a87a224093ca60d466b9124e403dc3c1b}{alien\+::\+EAnim\+No\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8cdd41a8b6b69520aa942d7fc2f42655}{alien\+::\+EAnim\+No\+\_\+\+Move}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a83e15644c4171b563daeaefd0e660d67}{alien\+::\+EAnim\+No\+\_\+\+Arm}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a615f010fb48b3dd8e7850af45971ae17}{alien\+::\+EAnim\+No\+\_\+\+Damage}}
+, \newline
+\mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a89f0c0ac6632e705a1f38fdb37be031a}{alien\+::\+EAnim\+No\+\_\+\+Dead}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a3410900be6bf98d4d73213e7f8ad36d7}{alien\+::\+EAnim\+No\+\_\+\+Max}}
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a8e796d0a85eda117bce649713f6d4163}{alien\+::\+EAnim\+No\+\_\+\+Attack}} = EAnim\+No\+\_\+\+Arm
+, \mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a13a31c84c22d47eaf5176f36db202c2b}{alien\+::\+EAnim\+No\+\_\+\+Begin}} = EAnim\+No\+\_\+\+Move
+, \newline
+\mbox{\hyperlink{namespacealien_ac12665c0db1d1bd4fef23aebf1b40326a0b39b54261fa0ada3f46747628e3523e}{alien\+::\+EAnim\+No\+\_\+\+End}} = EAnim\+No\+\_\+\+Max
+ \}
+\item 
+enum \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7f}{alien\+::\+EEffect\+No}} \+: char \{ \newline
+\mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa31561395997d5ed145de490b3ad5052d}{alien\+::\+EEffect\+No\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa4deef0fe3f088300169eca0f13bb4cc8}{alien\+::\+EEffect\+No\+\_\+\+Hit}}
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fab49ed8a8ab4eb2223e21e3c4add94178}{alien\+::\+EEffect\+No\+\_\+\+Spawn}}
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa82daa66a4b38f8f5825d24aed052fe69}{alien\+::\+EEffect\+No\+\_\+\+Dead}}
+, \newline
+\mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa29308444f62dd024cad76e31be0821c3}{alien\+::\+EEffect\+No\+\_\+\+Attack}}
+, \mbox{\hyperlink{namespacealien_af756091ec93fe31db985b186bc7c2f7fa7a18346fb0e7dba76959a99128ffd13c}{alien\+::\+EEffect\+No\+\_\+\+Max}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+宇宙人の構造体などのヘッダー. 
+
+\begin{DoxyAuthor}{著者}
+福田玲也. 
+\end{DoxyAuthor}

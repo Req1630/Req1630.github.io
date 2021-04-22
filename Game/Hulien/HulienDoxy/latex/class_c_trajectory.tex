@@ -1,0 +1,129 @@
+\hypertarget{class_c_trajectory}{}\doxysection{CTrajectory クラス}
+\label{class_c_trajectory}\index{CTrajectory@{CTrajectory}}
+
+
+{\ttfamily \#include $<$Trajectory.\+h$>$}
+
+
+
+CTrajectory の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_c_trajectory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CTrajectory 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_c_trajectory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_trajectory_1_1_c___b_u_f_f_e_r}{C\+\_\+\+BUFFER}}
+\item 
+struct \mbox{\hyperlink{struct_c_trajectory_1_1_v_e_r_t_e_x}{VERTEX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_trajectory_ad9592b2125107295b760eca869b30b41}{CTrajectory}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_trajectory_a2e5fdba3cb558a95c3dc9dcbde5dff66}{$\sim$\+CTrajectory}} ()
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_trajectory_ac8ded6ad24567c510c9dd2c1318a8ab6}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11) override
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_trajectory_a5e0140fa35f931b6d7d4f646cfcab280}{Release}} () override
+\item 
+void \mbox{\hyperlink{class_c_trajectory_a7613f93572c9fffbf1b2344ca34d5ab8}{Render}} ()
+\item 
+void \mbox{\hyperlink{class_c_trajectory_af60d45ebe08cb438f61ebef48f52dbdf}{Create\+Vertex\+Buffer}} (const std\+::vector$<$ D3\+DXVECTOR3 $>$ \&height)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_trajectory_ad9592b2125107295b760eca869b30b41}\label{class_c_trajectory_ad9592b2125107295b760eca869b30b41}} 
+\index{CTrajectory@{CTrajectory}!CTrajectory@{CTrajectory}}
+\index{CTrajectory@{CTrajectory}!CTrajectory@{CTrajectory}}
+\doxysubsubsection{\texorpdfstring{CTrajectory()}{CTrajectory()}}
+{\footnotesize\ttfamily CTrajectory\+::\+CTrajectory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_trajectory_a2e5fdba3cb558a95c3dc9dcbde5dff66}\label{class_c_trajectory_a2e5fdba3cb558a95c3dc9dcbde5dff66}} 
+\index{CTrajectory@{CTrajectory}!````~CTrajectory@{$\sim$CTrajectory}}
+\index{````~CTrajectory@{$\sim$CTrajectory}!CTrajectory@{CTrajectory}}
+\doxysubsubsection{\texorpdfstring{$\sim$CTrajectory()}{~CTrajectory()}}
+{\footnotesize\ttfamily CTrajectory\+::$\sim$\+CTrajectory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_trajectory_af60d45ebe08cb438f61ebef48f52dbdf}\label{class_c_trajectory_af60d45ebe08cb438f61ebef48f52dbdf}} 
+\index{CTrajectory@{CTrajectory}!CreateVertexBuffer@{CreateVertexBuffer}}
+\index{CreateVertexBuffer@{CreateVertexBuffer}!CTrajectory@{CTrajectory}}
+\doxysubsubsection{\texorpdfstring{CreateVertexBuffer()}{CreateVertexBuffer()}}
+{\footnotesize\ttfamily void CTrajectory\+::\+Create\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ D3\+DXVECTOR3 $>$ \&}]{height }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_trajectory_af60d45ebe08cb438f61ebef48f52dbdf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_trajectory_ac8ded6ad24567c510c9dd2c1318a8ab6}\label{class_c_trajectory_ac8ded6ad24567c510c9dd2c1318a8ab6}} 
+\index{CTrajectory@{CTrajectory}!Init@{Init}}
+\index{Init@{Init}!CTrajectory@{CTrajectory}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CTrajectory\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}{CShader\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_trajectory_ac8ded6ad24567c510c9dd2c1318a8ab6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_trajectory_a5e0140fa35f931b6d7d4f646cfcab280}\label{class_c_trajectory_a5e0140fa35f931b6d7d4f646cfcab280}} 
+\index{CTrajectory@{CTrajectory}!Release@{Release}}
+\index{Release@{Release}!CTrajectory@{CTrajectory}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT CTrajectory\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_trajectory_a7613f93572c9fffbf1b2344ca34d5ab8}\label{class_c_trajectory_a7613f93572c9fffbf1b2344ca34d5ab8}} 
+\index{CTrajectory@{CTrajectory}!Render@{Render}}
+\index{Render@{Render}!CTrajectory@{CTrajectory}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CTrajectory\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_trajectory_a7613f93572c9fffbf1b2344ca34d5ab8_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Trajectory/\mbox{\hyperlink{_trajectory_8h}{Trajectory.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Trajectory/\mbox{\hyperlink{_trajectory_8cpp}{Trajectory.\+cpp}}\end{DoxyCompactItemize}

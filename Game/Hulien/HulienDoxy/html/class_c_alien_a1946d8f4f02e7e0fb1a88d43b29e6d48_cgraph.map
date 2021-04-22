@@ -1,0 +1,9 @@
+<map id="CAlien::GirlCollision" name="CAlien::GirlCollision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,143,159"/>
+<area shape="rect" id="node2" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="205,5,368,32"/>
+<area shape="rect" id="node3" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="191,56,383,83"/>
+<area shape="rect" id="node4" href="$class_c_character.html#a0ca58686329d1caf5b67460d32ffac25" title=" " alt="" coords="200,107,373,133"/>
+<area shape="rect" id="node5" href="$class_c_game_object.html#ac96a6cda895f9d0f520e6b43b82d2d77" title=" " alt="" coords="197,157,376,184"/>
+<area shape="rect" id="node6" href="$class_c_game_object.html#ae521d08312342c055e9543c7d145682a" title=" " alt="" coords="192,208,381,235"/>
+<area shape="rect" id="node7" href="$class_c_game_object.html#a6897eb0511df6b293459e9b984658db1" title=" " alt="" coords="204,259,369,285"/>
+</map>

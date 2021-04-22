@@ -1,0 +1,11 @@
+<map id="CEditBase" name="CEditBase">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,89,209"/>
+<area shape="rect" id="node2" href="$class_c_alien_param_edit.html" title=" " alt="" coords="150,5,271,32"/>
+<area shape="rect" id="node3" href="$class_c_explosion_edit.html" title=" " alt="" coords="155,56,266,83"/>
+<area shape="rect" id="node4" href="$class_c_girl_edit.html" title=" " alt="" coords="173,107,248,133"/>
+<area shape="rect" id="node5" href="$class_c_invisible_wall_edit.html" title=" " alt="" coords="148,157,273,184"/>
+<area shape="rect" id="node6" href="$class_c_item_edit.html" title=" " alt="" coords="171,208,250,235"/>
+<area shape="rect" id="node7" href="$class_c_mother_ship_u_f_o_edit.html" title=" " alt="" coords="137,259,284,285"/>
+<area shape="rect" id="node8" href="$class_c_player_edit.html" title=" " alt="" coords="165,309,256,336"/>
+<area shape="rect" id="node9" href="$class_c_spawn_edit.html" title=" " alt="" coords="164,360,257,387"/>
+</map>

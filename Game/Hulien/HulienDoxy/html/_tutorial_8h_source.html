@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/Tutorial/Tutorial.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_0c121a12e44fde1de8941bc42f2f39f2.html">Tutorial</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Tutorial.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_tutorial_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TUTORIAL_WIDGET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TUTORIAL_WIDGET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Widget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_transition.html">CTransition</a>;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_button_exp.html">CButtonExp</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_c_tutorial.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_tutorial.html">CTutorial</a> : <span class="keyword">public</span> <a class="code" href="class_c_widget.html">CWidget</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_ONE_NAME    = <span class="stringliteral">&quot;Tutorial1&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_TWO_NAME    = <span class="stringliteral">&quot;Tutorial2&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_THREE_NAME  = <span class="stringliteral">&quot;Tutorial3&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_FOUR_NAME   = <span class="stringliteral">&quot;Tutorial4&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_FIVE_NAME   = <span class="stringliteral">&quot;Tutorial5&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_SIX_NAME    = <span class="stringliteral">&quot;Tutorial6&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TUTORIAL_SEVEN_NAME  = <span class="stringliteral">&quot;Tutorial7&quot;</span>;  <span class="comment">// チュートリアル画像.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_BACKGROUND_NAME      = <span class="stringliteral">&quot;Fade&quot;</span>;       <span class="comment">// 背景画像.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_ARROW_RIGHT          = <span class="stringliteral">&quot;arrowRight&quot;</span>;         <span class="comment">// 矢印画像.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_ARROW_LEFT           = <span class="stringliteral">&quot;arrowLeft&quot;</span>;          <span class="comment">// 矢印画像.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_SELECT_ARROW_RIGHT   = <span class="stringliteral">&quot;selectArrowRight&quot;</span>;   <span class="comment">// 選択状態の矢印画像.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_SELECT_ARROW_LEFT    = <span class="stringliteral">&quot;selectArrowLeft&quot;</span>;    <span class="comment">// 選択状態の矢印画像.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_BUTTON_NAME  = <span class="stringliteral">&quot;buttonB&quot;</span>;    <span class="comment">// スプライトのファイル名.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_TITLE_NAME   = <span class="stringliteral">&quot;skip&quot;</span>;       <span class="comment">// スプライトのファイル名.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> BACK_GROUND_ALPHA_SPEED     = 0.01f;    <span class="comment">// 背景のアルファ速度.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> BACK_GROUND_ALPHA_MAX       = 0.4f;     <span class="comment">// 背景のアルファ最大値.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> BACK_GROUND_ALPHA_MIN       = 0.0f;     <span class="comment">// 背景のアルファ最小値.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> TRANSITION_SPEED            = 0.02f;    <span class="comment">// トランジションの速度.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> TRANSITION_MAX              = 1.0f;     <span class="comment">// トランジションの最大値.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> TRANSITION_MIN              = 0.0f;     <span class="comment">// トランジションの最小値.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ARROW_RENDER_ADJ_POS_X      = 10.0f;        <span class="comment">// 矢印の描画座標調整値.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ARROW_SCALE         = 1.0f;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ARROW_ADJ_SCALE     = 0.5f;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ARROW_SCALE_VALUE   = -0.2f;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> INPUT_WAIT_TIME_MAX     = 30.0f;            <span class="comment">// 入力待機フレーム.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> D3DXVECTOR3 BUTTON_EXP_RENDER_POS = { 950.0f, 600.0f, 0.0f };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">enum</span> enTutorialState : <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        ETutorialState_None,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        ETutorialState_One = 0, <span class="comment">// 一枚目.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        ETutorialState_Two,     <span class="comment">// 二枚目.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        ETutorialState_Three,   <span class="comment">// 三枚目.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        ETutorialState_Four,    <span class="comment">// 四枚目.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ETutorialState_Fives,   <span class="comment">// 五枚目.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ETutorialState_Six,     <span class="comment">// 六枚目.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ETutorialState_Seven,   <span class="comment">// 七枚目.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        ETutorialState_Max,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        ETutorialState_Start    = ETutorialState_One,   <span class="comment">// 開始値.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        ETutorialState_End      = ETutorialState_Max,   <span class="comment">// 終了値.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    } <span class="keyword">typedef</span> ETutorialState;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">enum</span> enArrowSpriteNo : <span class="keywordtype">char</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        EArrowSpriteNo_None = -1,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        EArrowSpriteNo_ArrowRight = 0,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        EArrowSpriteNo_ArrowLeft,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        EArrowSpriteNo_SelectArrowRight,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        EArrowSpriteNo_SelectArrowLeft,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        EArrowSpriteNo_Max,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        EArrowSpriteNo_Start    = EArrowSpriteNo_ArrowRight,        <span class="comment">// 開始値.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        EArrowSpriteNo_End      = EArrowSpriteNo_SelectArrowLeft,   <span class="comment">// 終了値.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    } <span class="keyword">typedef</span> EArrowSpriteNo;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">struct </span>stArrowParam</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        D3DXVECTOR3 vPos;   <span class="comment">// 座標.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">float</span>       Scale;  <span class="comment">// 大きさ.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        stArrowParam()</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            : vPos  ( 0.0f, 0.0f, 0.0f )</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            , Scale ( 1.0f )</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    } <span class="keyword">typedef</span> SArrowParam;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="class_c_tutorial.html#a6440b2acb984b528ec9384ebb8051a97">CTutorial</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_tutorial.html#a4e3cf775e100e40b1ca10d0c4f334592">~CTutorial</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_tutorial.html#a6eab069d98487dbdaa0d910bd458513a">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_tutorial.html#acc6a296161a71973e98adca014fb32aa">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_tutorial.html#a5d716d4c2063f753c8c0d71708091008">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// チュートリアルを開始する.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_c_tutorial.html#a19e460ab4bd39e3ec9adbda66ede8e98">  107</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_tutorial.html#a19e460ab4bd39e3ec9adbda66ede8e98">SetupTutorial</a>() { m_IsSetup = <span class="keyword">true</span>; m_IsTutorialEnd = <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// チュートリアルが終了したか.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_c_tutorial.html#a4f82b2d7c6ecce59a668423fa2feda9b">  109</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_tutorial.html#a4f82b2d7c6ecce59a668423fa2feda9b">IsTutorialEnd</a>() { <span class="keywordflow">return</span> m_BackGroundAlpha &lt;= BACK_GROUND_ALPHA_MIN &amp;&amp; m_IsTutorialEnd == <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 矢印の描画.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> ArrowRender();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pSprites;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pArrowSprites;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pSkipSprites;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::vector&lt;SArrowParam&gt;                m_ArrowParams;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::unique_ptr&lt;CTransition&gt;            m_pTransition;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    std::unique_ptr&lt;CButtonExp&gt;             m_pButtonExp;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span>     m_NowSpriteNo;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span>     m_SelectMoveNo;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">float</span>   m_InputWaitTime;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">float</span>   m_BackGroundAlpha;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">float</span>   m_TransitionValue;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">bool</span>    m_IsSetup;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">bool</span>    m_IsTutorialEnd;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef TUTORIAL_WIDGET_H.</span></div>
+<div class="ttc" id="aclass_c_button_exp_html"><div class="ttname"><a href="class_c_button_exp.html">CButtonExp</a></div><div class="ttdef"><b>Definition:</b> ButtonExplanation.h:9</div></div>
+<div class="ttc" id="aclass_c_transition_html"><div class="ttname"><a href="class_c_transition.html">CTransition</a></div><div class="ttdef"><b>Definition:</b> Transition.h:26</div></div>
+<div class="ttc" id="aclass_c_tutorial_html"><div class="ttname"><a href="class_c_tutorial.html">CTutorial</a></div><div class="ttdef"><b>Definition:</b> Tutorial.h:12</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_a19e460ab4bd39e3ec9adbda66ede8e98"><div class="ttname"><a href="class_c_tutorial.html#a19e460ab4bd39e3ec9adbda66ede8e98">CTutorial::SetupTutorial</a></div><div class="ttdeci">void SetupTutorial()</div><div class="ttdef"><b>Definition:</b> Tutorial.h:107</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_a4e3cf775e100e40b1ca10d0c4f334592"><div class="ttname"><a href="class_c_tutorial.html#a4e3cf775e100e40b1ca10d0c4f334592">CTutorial::~CTutorial</a></div><div class="ttdeci">virtual ~CTutorial()</div><div class="ttdef"><b>Definition:</b> Tutorial.cpp:28</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_a4f82b2d7c6ecce59a668423fa2feda9b"><div class="ttname"><a href="class_c_tutorial.html#a4f82b2d7c6ecce59a668423fa2feda9b">CTutorial::IsTutorialEnd</a></div><div class="ttdeci">bool IsTutorialEnd()</div><div class="ttdef"><b>Definition:</b> Tutorial.h:109</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_a5d716d4c2063f753c8c0d71708091008"><div class="ttname"><a href="class_c_tutorial.html#a5d716d4c2063f753c8c0d71708091008">CTutorial::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> Tutorial.cpp:98</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_a6440b2acb984b528ec9384ebb8051a97"><div class="ttname"><a href="class_c_tutorial.html#a6440b2acb984b528ec9384ebb8051a97">CTutorial::CTutorial</a></div><div class="ttdeci">CTutorial()</div><div class="ttdef"><b>Definition:</b> Tutorial.cpp:9</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_a6eab069d98487dbdaa0d910bd458513a"><div class="ttname"><a href="class_c_tutorial.html#a6eab069d98487dbdaa0d910bd458513a">CTutorial::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> Tutorial.cpp:33</div></div>
+<div class="ttc" id="aclass_c_tutorial_html_acc6a296161a71973e98adca014fb32aa"><div class="ttname"><a href="class_c_tutorial.html#acc6a296161a71973e98adca014fb32aa">CTutorial::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> Tutorial.cpp:50</div></div>
+<div class="ttc" id="aclass_c_widget_html"><div class="ttname"><a href="class_c_widget.html">CWidget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

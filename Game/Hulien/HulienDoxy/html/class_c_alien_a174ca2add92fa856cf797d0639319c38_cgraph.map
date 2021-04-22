@@ -1,0 +1,6 @@
+<map id="CAlien::Spawning" name="CAlien::Spawning">
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,129,69"/>
+<area shape="rect" id="node2" href="$class_c_sound_manager.html#a589970cca5e4693633972a052b874679" title=" " alt="" coords="177,5,364,47"/>
+<area shape="rect" id="node4" href="$class_c_character.html#a0ca58686329d1caf5b67460d32ffac25" title=" " alt="" coords="184,71,357,98"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="412,13,608,39"/>
+</map>

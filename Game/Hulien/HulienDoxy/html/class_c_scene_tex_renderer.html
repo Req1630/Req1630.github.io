@@ -1,0 +1,1259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: CSceneTexRenderer クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">クラス</a> &#124;
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="#pub-static-attribs">静的公開変数類</a> &#124;
+<a href="class_c_scene_tex_renderer-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CSceneTexRenderer クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_scene_tex_renderer_8h_source.html">SceneTexRenderer.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+クラス</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_scene_tex_renderer_1_1_c___b_u_f_f_e_r___p_e_r___f_r_a_m_e.html">C_BUFFER_PER_FRAME</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_scene_tex_renderer_1_1_c___b_u_f_f_e_r___p_e_r___i_n_i_t.html">C_BUFFER_PER_INIT</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_c_scene_tex_renderer_1_1_v_e_r_t_e_x.html">VERTEX</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:aa90d3716d6782b6f1522dae219e84f03"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#aa90d3716d6782b6f1522dae219e84f03">EGBufferNo</a> { <a class="el" href="class_c_scene_tex_renderer.html#aa90d3716d6782b6f1522dae219e84f03a51c94a24fa3123a0f5c27d32b96926a6">enGBufferNo_COLOR</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#aa90d3716d6782b6f1522dae219e84f03a99973f00f0cbdf55137b693e7d8ea8eb">enGBufferNo_NORMAL</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#aa90d3716d6782b6f1522dae219e84f03a7442d6925fca11fbed1fde0f8db5ace8">enGBufferNo_Z_DEPTH</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#aa90d3716d6782b6f1522dae219e84f03a2df51b2d5b1580ba9b5a25561b2dca21">enGBufferNo_MAX</a>
+ }</td></tr>
+<tr class="separator:aa90d3716d6782b6f1522dae219e84f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdda603fe81708b02282a485c7ae8701"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#acdda603fe81708b02282a485c7ae8701">EScreenRenderNo</a> { <a class="el" href="class_c_scene_tex_renderer.html#acdda603fe81708b02282a485c7ae8701a86f117a4fa3fdabaf518fef7c1ed3167">EScreenRenderNo_None</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#acdda603fe81708b02282a485c7ae8701af003391df425c0a8918301ff80dd1ef1">EScreenRenderNo_Tmp</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#acdda603fe81708b02282a485c7ae8701ae7097fee04430ada83a59507b24730c7">EScreenRenderNo_Max</a>
+ }</td></tr>
+<tr class="separator:acdda603fe81708b02282a485c7ae8701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3b33c9aa51736350ad7a60fb515ccc"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccc">ERenderPass</a> { <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccca3f39588bb19e28051d9aedfbb170025c">Shadow</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccca01473171826aa7c969fb1d7433923d59">Trans</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccca628adbb6c98e56748110061187f57243">GBuffer</a>
+, <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccca6a061313d22e51e0f25b7cd4dc065233">Max</a>
+ }</td></tr>
+<tr class="separator:aba3b33c9aa51736350ad7a60fb515ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a7bd726fc68fb5e818b07eed616c9479f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a7bd726fc68fb5e818b07eed616c9479f">CSceneTexRenderer</a> ()</td></tr>
+<tr class="separator:a7bd726fc68fb5e818b07eed616c9479f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad7f27c288876f67ecf488f24e7a125d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#aad7f27c288876f67ecf488f24e7a125d">~CSceneTexRenderer</a> ()</td></tr>
+<tr class="separator:aad7f27c288876f67ecf488f24e7a125d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:aefd3a4ccdd562d7c5864c0bd3efd84f5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_scene_tex_renderer.html">CSceneTexRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5">GetInstance</a> ()</td></tr>
+<tr class="separator:aefd3a4ccdd562d7c5864c0bd3efd84f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d62158d4ce034c8ee9867e0ade67bc"><td class="memItemLeft" align="right" valign="top">static HRESULT&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#ab4d62158d4ce034c8ee9867e0ade67bc">Init</a> ()</td></tr>
+<tr class="separator:ab4d62158d4ce034c8ee9867e0ade67bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1ff3e132611de2afa015640c2add3d5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#aa1ff3e132611de2afa015640c2add3d5">Release</a> ()</td></tr>
+<tr class="separator:aa1ff3e132611de2afa015640c2add3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4263eccaa5ea4671b4c34c323c649b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a4e4263eccaa5ea4671b4c34c323c649b">Render</a> (const bool &amp;isBloomSmpling=true)</td></tr>
+<tr class="separator:a4e4263eccaa5ea4671b4c34c323c649b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d6d1c7b68046f54e2b479d17e6c811"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a87d6d1c7b68046f54e2b479d17e6c811">FinalRender</a> ()</td></tr>
+<tr class="separator:a87d6d1c7b68046f54e2b479d17e6c811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf92e5529e5c83b28be1c2d8ae78beae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#abf92e5529e5c83b28be1c2d8ae78beae">ClearBuffer</a> ()</td></tr>
+<tr class="separator:abf92e5529e5c83b28be1c2d8ae78beae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1e190ad39f69654af67836ef3f1c71"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a5f1e190ad39f69654af67836ef3f1c71">SetRenderPass</a> (const <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccc">ERenderPass</a> &amp;pass)</td></tr>
+<tr class="separator:a5f1e190ad39f69654af67836ef3f1c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654751fbf5f69dc92062d281f66add3b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccc">ERenderPass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a654751fbf5f69dc92062d281f66add3b">GetRenderPass</a> ()</td></tr>
+<tr class="separator:a654751fbf5f69dc92062d281f66add3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed4bad0ba78a56d977fdd0aced43d50c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#aed4bad0ba78a56d977fdd0aced43d50c">SetShadowBuffer</a> (int i)</td></tr>
+<tr class="separator:aed4bad0ba78a56d977fdd0aced43d50c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49263ecbbcf486864d7276df248ec9b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#ac49263ecbbcf486864d7276df248ec9b">SetGBuffer</a> ()</td></tr>
+<tr class="separator:ac49263ecbbcf486864d7276df248ec9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5131db10e5482a7123afb48b6b7271"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#abe5131db10e5482a7123afb48b6b7271">SetTransBuffer</a> ()</td></tr>
+<tr class="separator:abe5131db10e5482a7123afb48b6b7271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d203ef44927d21e8b098792af28e08b"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; ID3D11ShaderResourceView * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a5d203ef44927d21e8b098792af28e08b">GetShadowBuffer</a> ()</td></tr>
+<tr class="separator:a5d203ef44927d21e8b098792af28e08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e735db3b1b8c10da3b6761e0c15db01"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; ID3D11ShaderResourceView * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a7e735db3b1b8c10da3b6761e0c15db01">GetGBuffer</a> ()</td></tr>
+<tr class="separator:a7e735db3b1b8c10da3b6761e0c15db01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621bb907b60335ccb523fc51c41404d2"><td class="memItemLeft" align="right" valign="top">static ID3D11ShaderResourceView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a621bb907b60335ccb523fc51c41404d2">GetTransBaffer</a> ()</td></tr>
+<tr class="separator:a621bb907b60335ccb523fc51c41404d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af651a38ec36f53d97c14ece0833c5026"><td class="memItemLeft" align="right" valign="top">static ID3D11ShaderResourceView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#af651a38ec36f53d97c14ece0833c5026">GetTmpScreenTexture</a> ()</td></tr>
+<tr class="separator:af651a38ec36f53d97c14ece0833c5026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88db59b8a94f340abe3bb49a752dd240"><td class="memItemLeft" align="right" valign="top">static ID3D11ShaderResourceView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a88db59b8a94f340abe3bb49a752dd240">GetBlurTexture</a> ()</td></tr>
+<tr class="separator:a88db59b8a94f340abe3bb49a752dd240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba9908c780746688afb853793e7f44b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a0ba9908c780746688afb853793e7f44b">SetSaveScreen</a> (const bool &amp;isSave)</td></tr>
+<tr class="separator:a0ba9908c780746688afb853793e7f44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a824814aa515611590f3d89074cff3e34"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a824814aa515611590f3d89074cff3e34">SetIsStartLoad</a> (const bool &amp;isLoad)</td></tr>
+<tr class="separator:a824814aa515611590f3d89074cff3e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21cfbbbbf606047fefdd0d1818121630"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a21cfbbbbf606047fefdd0d1818121630">SetIsEndLoad</a> (const bool &amp;isLoad)</td></tr>
+<tr class="separator:a21cfbbbbf606047fefdd0d1818121630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a909f1abf24494daa5301a129e3b6e3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a9a909f1abf24494daa5301a129e3b6e3">Resize</a> ()</td></tr>
+<tr class="separator:a9a909f1abf24494daa5301a129e3b6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+静的公開変数類</h2></td></tr>
+<tr class="memitem:a338f018f4aa4498a62420db04d404354"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_scene_tex_renderer.html#a338f018f4aa4498a62420db04d404354">MAX_CASCADE</a> = 4</td></tr>
+<tr class="separator:a338f018f4aa4498a62420db04d404354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="aa90d3716d6782b6f1522dae219e84f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa90d3716d6782b6f1522dae219e84f03">&#9670;&nbsp;</a></span>EGBufferNo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_scene_tex_renderer.html#aa90d3716d6782b6f1522dae219e84f03">CSceneTexRenderer::EGBufferNo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aa90d3716d6782b6f1522dae219e84f03a51c94a24fa3123a0f5c27d32b96926a6"></a>enGBufferNo_COLOR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa90d3716d6782b6f1522dae219e84f03a99973f00f0cbdf55137b693e7d8ea8eb"></a>enGBufferNo_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa90d3716d6782b6f1522dae219e84f03a7442d6925fca11fbed1fde0f8db5ace8"></a>enGBufferNo_Z_DEPTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa90d3716d6782b6f1522dae219e84f03a2df51b2d5b1580ba9b5a25561b2dca21"></a>enGBufferNo_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aba3b33c9aa51736350ad7a60fb515ccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba3b33c9aa51736350ad7a60fb515ccc">&#9670;&nbsp;</a></span>ERenderPass</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccc">CSceneTexRenderer::ERenderPass</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="aba3b33c9aa51736350ad7a60fb515ccca3f39588bb19e28051d9aedfbb170025c"></a>Shadow&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba3b33c9aa51736350ad7a60fb515ccca01473171826aa7c969fb1d7433923d59"></a>Trans&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba3b33c9aa51736350ad7a60fb515ccca628adbb6c98e56748110061187f57243"></a>GBuffer&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aba3b33c9aa51736350ad7a60fb515ccca6a061313d22e51e0f25b7cd4dc065233"></a>Max&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="acdda603fe81708b02282a485c7ae8701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdda603fe81708b02282a485c7ae8701">&#9670;&nbsp;</a></span>EScreenRenderNo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_scene_tex_renderer.html#acdda603fe81708b02282a485c7ae8701">CSceneTexRenderer::EScreenRenderNo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="acdda603fe81708b02282a485c7ae8701a86f117a4fa3fdabaf518fef7c1ed3167"></a>EScreenRenderNo_None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acdda603fe81708b02282a485c7ae8701af003391df425c0a8918301ff80dd1ef1"></a>EScreenRenderNo_Tmp&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acdda603fe81708b02282a485c7ae8701ae7097fee04430ada83a59507b24730c7"></a>EScreenRenderNo_Max&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a7bd726fc68fb5e818b07eed616c9479f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bd726fc68fb5e818b07eed616c9479f">&#9670;&nbsp;</a></span>CSceneTexRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSceneTexRenderer::CSceneTexRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad7f27c288876f67ecf488f24e7a125d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad7f27c288876f67ecf488f24e7a125d">&#9670;&nbsp;</a></span>~CSceneTexRenderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CSceneTexRenderer::~CSceneTexRenderer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_aad7f27c288876f67ecf488f24e7a125d_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_aad7f27c288876f67ecf488f24e7a125d_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_aad7f27c288876f67ecf488f24e7a125d_cgraph" id="aclass_c_scene_tex_renderer_aad7f27c288876f67ecf488f24e7a125d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aa1ff3e132611de2afa015640c2add3d5" title=" " alt="" coords="203,5,352,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="400,5,549,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="abf92e5529e5c83b28be1c2d8ae78beae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf92e5529e5c83b28be1c2d8ae78beae">&#9670;&nbsp;</a></span>ClearBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::ClearBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_abf92e5529e5c83b28be1c2d8ae78beae_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_abf92e5529e5c83b28be1c2d8ae78beae_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_abf92e5529e5c83b28be1c2d8ae78beae_cgraph" id="aclass_c_scene_tex_renderer_abf92e5529e5c83b28be1c2d8ae78beae_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a87d6d1c7b68046f54e2b479d17e6c811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d6d1c7b68046f54e2b479d17e6c811">&#9670;&nbsp;</a></span>FinalRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::FinalRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a87d6d1c7b68046f54e2b479d17e6c811_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a87d6d1c7b68046f54e2b479d17e6c811_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a87d6d1c7b68046f54e2b479d17e6c811_cgraph" id="aclass_c_scene_tex_renderer_a87d6d1c7b68046f54e2b479d17e6c811_cgraph">
+<area shape="rect" title=" " alt="" coords="5,57,155,98"/>
+<area shape="rect" href="class_c_direct_x11.html#a912bbe5d1de84d1dea10cea088a6f235" title=" " alt="" coords="208,5,375,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="217,57,366,98"/>
+<area shape="rect" href="class_c_direct_x11.html#ab98694b9435d5bfb6e0bf530d86c573b" title=" " alt="" coords="203,123,380,149"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="428,64,592,91"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a88db59b8a94f340abe3bb49a752dd240"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88db59b8a94f340abe3bb49a752dd240">&#9670;&nbsp;</a></span>GetBlurTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ID3D11ShaderResourceView * CSceneTexRenderer::GetBlurTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_cgraph" id="aclass_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_icgraph" id="aclass_c_scene_tex_renderer_a88db59b8a94f340abe3bb49a752dd240_icgraph">
+<area shape="rect" title=" " alt="" coords="373,23,523,65"/>
+<area shape="rect" href="class_c_config_widget.html#ac01d037bf67f570e8a7883c43c7b5d2b" title=" " alt="" coords="168,31,325,57"/>
+<area shape="rect" href="class_c_game.html#a31537642830499ad33e27c3105179b57" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="11,68,115,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7e735db3b1b8c10da3b6761e0c15db01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e735db3b1b8c10da3b6761e0c15db01">&#9670;&nbsp;</a></span>GetGBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;ID3D11ShaderResourceView*&gt; CSceneTexRenderer::GetGBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_cgraph" id="aclass_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_icgraph" id="aclass_c_scene_tex_renderer_a7e735db3b1b8c10da3b6761e0c15db01_icgraph">
+<area shape="rect" title=" " alt="" coords="168,23,317,65"/>
+<area shape="rect" href="class_c_game.html#a31537642830499ad33e27c3105179b57" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="11,56,115,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aefd3a4ccdd562d7c5864c0bd3efd84f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefd3a4ccdd562d7c5864c0bd3efd84f5">&#9670;&nbsp;</a></span>GetInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_scene_tex_renderer.html">CSceneTexRenderer</a> * CSceneTexRenderer::GetInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_aefd3a4ccdd562d7c5864c0bd3efd84f5_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_aefd3a4ccdd562d7c5864c0bd3efd84f5_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_aefd3a4ccdd562d7c5864c0bd3efd84f5_icgraph" id="aclass_c_scene_tex_renderer_aefd3a4ccdd562d7c5864c0bd3efd84f5_icgraph">
+<area shape="rect" title=" " alt="" coords="695,608,844,650"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#abf92e5529e5c83b28be1c2d8ae78beae" title=" " alt="" coords="489,30,638,71"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a87d6d1c7b68046f54e2b479d17e6c811" title=" " alt="" coords="489,95,638,136"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a88db59b8a94f340abe3bb49a752dd240" title=" " alt="" coords="489,160,638,202"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a7e735db3b1b8c10da3b6761e0c15db01" title=" " alt="" coords="252,99,401,140"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a654751fbf5f69dc92062d281f66add3b" title=" " alt="" coords="489,1116,638,1158"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a5d203ef44927d21e8b098792af28e08b" title=" " alt="" coords="489,1214,638,1255"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#af651a38ec36f53d97c14ece0833c5026" title=" " alt="" coords="251,282,403,323"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a621bb907b60335ccb523fc51c41404d2" title=" " alt="" coords="252,216,401,258"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#ab4d62158d4ce034c8ee9867e0ade67bc" title=" " alt="" coords="480,1344,647,1370"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a9a909f1abf24494daa5301a129e3b6e3" title=" " alt="" coords="252,1463,401,1504"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aa1ff3e132611de2afa015640c2add3d5" title=" " alt="" coords="489,1446,638,1487"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a4e4263eccaa5ea4671b4c34c323c649b" title=" " alt="" coords="489,412,638,454"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#ac49263ecbbcf486864d7276df248ec9b" title=" " alt="" coords="489,478,638,519"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a21cfbbbbf606047fefdd0d1818121630" title=" " alt="" coords="489,1511,638,1552"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a824814aa515611590f3d89074cff3e34" title=" " alt="" coords="489,720,638,762"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a5f1e190ad39f69654af67836ef3f1c71" title=" " alt="" coords="489,608,638,650"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a0ba9908c780746688afb853793e7f44b" title=" " alt="" coords="489,543,638,584"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aed4bad0ba78a56d977fdd0aced43d50c" title=" " alt="" coords="489,1576,638,1618"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#abe5131db10e5482a7123afb48b6b7271" title=" " alt="" coords="489,1642,638,1683"/>
+<area shape="rect" href="class_c_config_widget.html#ac01d037bf67f570e8a7883c43c7b5d2b" title=" " alt="" coords="248,48,405,74"/>
+<area shape="rect" href="class_c_game.html#a31537642830499ad33e27c3105179b57" title=" " alt="" coords="32,106,147,133"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="37,257,141,284"/>
+<area shape="rect" href="class_c_game_object.html#af0892117053801153554374c1b87babd" title=" " alt="" coords="233,1108,420,1134"/>
+<area shape="rect" href="class_c_laser_beam.html#a84d7a05f9c34c9bad9ad68c24397f109" title=" " alt="" coords="253,1158,400,1185"/>
+<area shape="rect" href="class_c_sky_dome.html#a9a94faf17a91e615b202edb53ea089c8" title=" " alt="" coords="258,1209,395,1236"/>
+<area shape="rect" href="class_c_u_f_o_light.html#a78bd4c96f4bf2e39e48c123681dfd5fd" title=" " alt="" coords="259,1260,394,1286"/>
+<area shape="rect" href="class_c_effect.html#aa869140a2f60db97edbccf9308af7a76" title=" " alt="" coords="270,1310,383,1337"/>
+<area shape="rect" href="class_c_font.html#a33bd77c3a95851e36d268005d36b983a" title=" " alt="" coords="273,1006,380,1033"/>
+<area shape="rect" href="class_c_font.html#a10149b2c5c66bd87098825e6fde77247" title=" " alt="" coords="267,1057,386,1084"/>
+<area shape="rect" href="class_c_item_base.html#aede174da0d6542991784e337db4e8c9e" title=" " alt="" coords="5,1209,173,1236"/>
+<area shape="rect" href="class_c_alien_a.html#ad11e6c40dd918c142c42af9f3947c1fb" title=" " alt="" coords="30,1006,149,1033"/>
+<area shape="rect" href="class_c_alien_b.html#aaa5b9cb6bcce4e8c18792b00e4692827" title=" " alt="" coords="30,1057,149,1084"/>
+<area shape="rect" href="class_c_alien_c.html#a5c413b4f821c10fd32b80941153aea4a" title=" " alt="" coords="30,1108,149,1134"/>
+<area shape="rect" href="class_c_alien_d.html#a79a3396759c12e8e6ab14e41b38db327" title=" " alt="" coords="30,1158,149,1185"/>
+<area shape="rect" href="class_c_d_x9_static_mesh.html#a9cf6f079c88cd9ea89e62e44078174b0" title=" " alt="" coords="242,1361,411,1388"/>
+<area shape="rect" href="class_c_main.html#a05bf9c91465b45e7081e917a3f3ef3c7" title=" " alt="" coords="285,1412,369,1438"/>
+<area shape="rect" href="_main_8cpp.html#a9135ea2a0d6fce68ba3b858226a31a4f" title=" " alt="" coords="51,1470,127,1497"/>
+<area shape="rect" href="class_c_main.html#a5502672f2f03864e5dc6436a845caa85" title=" " alt="" coords="269,1594,384,1621"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aad7f27c288876f67ecf488f24e7a125d" title=" " alt="" coords="252,1528,401,1570"/>
+<area shape="rect" href="class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="221,550,432,577"/>
+<area shape="rect" href="class_c_game_over.html#a63b5922af121e34d257fca6e1aa6349c" title=" " alt="" coords="256,449,397,476"/>
+<area shape="rect" href="class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="256,500,397,526"/>
+<area shape="rect" href="class_c_editor.html#a9aff35dac676527f5e1ec8fade01875f" title=" " alt="" coords="276,753,377,780"/>
+<area shape="rect" href="class_c_game.html#acc8934bf2f3c9c6466405dbd5cba56e3" title=" " alt="" coords="275,804,378,830"/>
+<area shape="rect" href="class_c_game_clear.html#a7b9d98ca879f2b10dd9126d050778614" title=" " alt="" coords="261,854,393,881"/>
+<area shape="rect" href="class_c_game_over.html#a852b6bfc0638bd23176bd7f997357b28" title=" " alt="" coords="263,905,391,932"/>
+<area shape="rect" href="class_c_title.html#a9370f8925d0381bba8fedd7d2834ab74" title=" " alt="" coords="281,956,372,982"/>
+<area shape="rect" href="class_c_game_clear_event.html#a1dab676fd2def2f7fd4236632a851102" title=" " alt="" coords="245,652,409,678"/>
+<area shape="rect" href="class_c_game_over_event.html#a97f5e3a7bcec69ed6a3e5be735e2a648" title=" " alt="" coords="247,702,407,729"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a654751fbf5f69dc92062d281f66add3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654751fbf5f69dc92062d281f66add3b">&#9670;&nbsp;</a></span>GetRenderPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccc">ERenderPass</a> CSceneTexRenderer::GetRenderPass </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_cgraph" id="aclass_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_icgraph" id="aclass_c_scene_tex_renderer_a654751fbf5f69dc92062d281f66add3b_icgraph">
+<area shape="rect" title=" " alt="" coords="701,570,851,611"/>
+<area shape="rect" href="class_c_game_object.html#af0892117053801153554374c1b87babd" title=" " alt="" coords="467,425,653,452"/>
+<area shape="rect" href="class_c_laser_beam.html#a84d7a05f9c34c9bad9ad68c24397f109" title=" " alt="" coords="487,476,633,503"/>
+<area shape="rect" href="class_c_sky_dome.html#a9a94faf17a91e615b202edb53ea089c8" title=" " alt="" coords="491,527,629,553"/>
+<area shape="rect" href="class_c_u_f_o_light.html#a78bd4c96f4bf2e39e48c123681dfd5fd" title=" " alt="" coords="493,577,627,604"/>
+<area shape="rect" href="class_c_effect.html#aa869140a2f60db97edbccf9308af7a76" title=" " alt="" coords="503,628,617,655"/>
+<area shape="rect" href="class_c_font.html#a33bd77c3a95851e36d268005d36b983a" title=" " alt="" coords="507,679,613,705"/>
+<area shape="rect" href="class_c_font.html#a10149b2c5c66bd87098825e6fde77247" title=" " alt="" coords="501,729,619,756"/>
+<area shape="rect" href="class_c_item_base.html#aede174da0d6542991784e337db4e8c9e" title=" " alt="" coords="248,96,416,123"/>
+<area shape="rect" href="class_c_alien_a.html#ad11e6c40dd918c142c42af9f3947c1fb" title=" " alt="" coords="273,147,391,173"/>
+<area shape="rect" href="class_c_alien_b.html#aaa5b9cb6bcce4e8c18792b00e4692827" title=" " alt="" coords="273,197,391,224"/>
+<area shape="rect" href="class_c_alien_c.html#a5c413b4f821c10fd32b80941153aea4a" title=" " alt="" coords="273,248,391,275"/>
+<area shape="rect" href="class_c_alien_d.html#a79a3396759c12e8e6ab14e41b38db327" title=" " alt="" coords="273,299,391,325"/>
+<area shape="rect" href="class_c_edit_alien_a.html#a6add98f8a27c1ee9cfd62c6321ed26e9" title=" " alt="" coords="261,349,403,376"/>
+<area shape="rect" href="class_c_edit_alien_b.html#a23be0817a955a0817c785c95a7749a61" title=" " alt="" coords="261,400,403,427"/>
+<area shape="rect" href="class_c_edit_alien_c.html#a94fbf76c4eed79b7e9ac5453582b373e" title=" " alt="" coords="261,451,403,477"/>
+<area shape="rect" href="class_c_edit_alien_d.html#a2746c946074a5853bb4e62b8c49ea155" title=" " alt="" coords="261,501,403,528"/>
+<area shape="rect" href="class_c_girl.html#a97a6ea9adc70b741ad209ad37ddef2d4" title=" " alt="" coords="282,552,382,579"/>
+<area shape="rect" href="class_c_item_base.html#a9f7f50fd8c9f42f8beb33fe43cb33ccd" title=" " alt="" coords="265,603,399,629"/>
+<area shape="rect" href="class_c_mother_ship_u_f_o.html#ab63ece9c5cee9a624fca448fa5292cf6" title=" " alt="" coords="245,653,419,680"/>
+<area shape="rect" href="class_c_spawn_u_f_o.html#a8717e1580fc9a12e9bc39652bad0a349" title=" " alt="" coords="259,704,405,731"/>
+<area shape="rect" href="class_s_t_g_1_1_c_bullet.html#acdc51ffae36aff81241ed4329baf859b" title=" " alt="" coords="259,755,405,781"/>
+<area shape="rect" href="class_c_attack_up_item.html#a96b6267c70bf8cc15b2743a33b676632" title=" " alt="" coords="5,5,197,32"/>
+<area shape="rect" href="class_c_life_recovery_item.html#ab06210b2542bcf953d707f6c0beea09a" title=" " alt="" coords="33,57,170,98"/>
+<area shape="rect" href="class_c_move_speed_up_item.html#a15b64c44e622371dd78bb5e6f2861c19" title=" " alt="" coords="11,122,191,163"/>
+<area shape="rect" href="class_c_s_p_effect_time_item.html#a315fd4de26cb35d5cca0a818d10f0e3f" title=" " alt="" coords="30,187,173,229"/>
+<area shape="rect" href="class_c_edit_item.html#aac4d076b3a7078eeaacf86fcf370afac" title=" " alt="" coords="37,493,165,520"/>
+<area shape="rect" href="class_c_attack_up_item.html#a4f3dee657e19ea7820607be75c47efdf" title=" " alt="" coords="22,544,181,571"/>
+<area shape="rect" href="class_c_life_recovery_item.html#a008cbb2f714072e2f3a306039c8e5310" title=" " alt="" coords="33,595,170,637"/>
+<area shape="rect" href="class_c_move_speed_up_item.html#ab18d614bdc44bd817c32764da181f42f" title=" " alt="" coords="7,661,195,688"/>
+<area shape="rect" href="class_c_s_p_effect_time_item.html#ac0328a500427c4a7b463dbbfebe12048" title=" " alt="" coords="30,713,173,754"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5d203ef44927d21e8b098792af28e08b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d203ef44927d21e8b098792af28e08b">&#9670;&nbsp;</a></span>GetShadowBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::vector&lt;ID3D11ShaderResourceView*&gt; CSceneTexRenderer::GetShadowBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_cgraph" id="aclass_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_icgraph" id="aclass_c_scene_tex_renderer_a5d203ef44927d21e8b098792af28e08b_icgraph">
+<area shape="rect" title=" " alt="" coords="223,5,372,47"/>
+<area shape="rect" href="class_c_d_x9_static_mesh.html#a9cf6f079c88cd9ea89e62e44078174b0" title=" " alt="" coords="5,13,175,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af651a38ec36f53d97c14ece0833c5026"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af651a38ec36f53d97c14ece0833c5026">&#9670;&nbsp;</a></span>GetTmpScreenTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ID3D11ShaderResourceView* CSceneTexRenderer::GetTmpScreenTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_cgraph" id="aclass_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,157,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="205,5,355,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_icgraph" id="aclass_c_scene_tex_renderer_af651a38ec36f53d97c14ece0833c5026_icgraph">
+<area shape="rect" title=" " alt="" coords="168,23,320,65"/>
+<area shape="rect" href="class_c_game.html#a31537642830499ad33e27c3105179b57" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="11,56,115,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a621bb907b60335ccb523fc51c41404d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a621bb907b60335ccb523fc51c41404d2">&#9670;&nbsp;</a></span>GetTransBaffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ID3D11ShaderResourceView* CSceneTexRenderer::GetTransBaffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_cgraph" id="aclass_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_icgraph" id="aclass_c_scene_tex_renderer_a621bb907b60335ccb523fc51c41404d2_icgraph">
+<area shape="rect" title=" " alt="" coords="168,23,317,65"/>
+<area shape="rect" href="class_c_game.html#a31537642830499ad33e27c3105179b57" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="11,56,115,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab4d62158d4ce034c8ee9867e0ade67bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d62158d4ce034c8ee9867e0ade67bc">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HRESULT CSceneTexRenderer::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_cgraph" id="aclass_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,172,141"/>
+<area shape="rect" href="class_c_direct_x11.html#a4fe7f4d36f2e5e34d3ee20a49d5e17c1" title=" " alt="" coords="229,5,389,32"/>
+<area shape="rect" href="class_c_direct_x11.html#afa4cf11fa8d868b09eea919420850ab4" title=" " alt="" coords="233,56,386,83"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="235,107,384,149"/>
+<area shape="rect" href="class_c_direct_x11.html#a1bf4c2badb0f65828a69e03e24acb6fc" title=" " alt="" coords="220,173,399,200"/>
+<area shape="rect" href="class_c_direct_x11.html#aee9c5921e04f5492df11b1f2249ad5d7" title=" " alt="" coords="221,224,397,251"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="447,115,611,141"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_icgraph" id="aclass_c_scene_tex_renderer_ab4d62158d4ce034c8ee9867e0ade67bc_icgraph">
+<area shape="rect" title=" " alt="" coords="505,35,672,61"/>
+<area shape="rect" href="class_c_main.html#a05bf9c91465b45e7081e917a3f3ef3c7" title=" " alt="" coords="341,5,425,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a9a909f1abf24494daa5301a129e3b6e3" title=" " alt="" coords="308,57,457,98"/>
+<area shape="rect" href="_main_8cpp.html#a9135ea2a0d6fce68ba3b858226a31a4f" title=" " alt="" coords="184,64,260,91"/>
+<area shape="rect" href="class_c_main.html#a7d36eed0b00bf47e39b1e0243dd51ee6" title=" " alt="" coords="5,64,136,91"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa1ff3e132611de2afa015640c2add3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1ff3e132611de2afa015640c2add3d5">&#9670;&nbsp;</a></span>Release()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::Release </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_cgraph" id="aclass_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_icgraph" id="aclass_c_scene_tex_renderer_aa1ff3e132611de2afa015640c2add3d5_icgraph">
+<area shape="rect" title=" " alt="" coords="505,57,655,98"/>
+<area shape="rect" href="class_c_main.html#a5502672f2f03864e5dc6436a845caa85" title=" " alt="" coords="325,5,440,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#a9a909f1abf24494daa5301a129e3b6e3" title=" " alt="" coords="308,57,457,98"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aad7f27c288876f67ecf488f24e7a125d" title=" " alt="" coords="308,122,457,163"/>
+<area shape="rect" href="_main_8cpp.html#a9135ea2a0d6fce68ba3b858226a31a4f" title=" " alt="" coords="184,64,260,91"/>
+<area shape="rect" href="class_c_main.html#a7d36eed0b00bf47e39b1e0243dd51ee6" title=" " alt="" coords="5,64,136,91"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4e4263eccaa5ea4671b4c34c323c649b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4263eccaa5ea4671b4c34c323c649b">&#9670;&nbsp;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::Render </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>isBloomSmpling</em> = <code>true</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_cgraph" id="aclass_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,57,155,98"/>
+<area shape="rect" href="class_c_direct_x11.html#a912bbe5d1de84d1dea10cea088a6f235" title=" " alt="" coords="203,5,369,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="211,57,361,98"/>
+<area shape="rect" href="class_c_key_input.html#ae7a4a5c4b186f9a31b7116753db544a0" title=" " alt="" coords="223,123,349,149"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="417,5,581,32"/>
+<area shape="rect" href="class_c_key_input.html#a19ad5f5de9ee2e016d1b64a3160eed70" title=" " alt="" coords="428,123,571,149"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_icgraph" id="aclass_c_scene_tex_renderer_a4e4263eccaa5ea4671b4c34c323c649b_icgraph">
+<area shape="rect" title=" " alt="" coords="524,74,673,115"/>
+<area shape="rect" href="class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,5,476,32"/>
+<area shape="rect" href="class_c_game_over.html#a63b5922af121e34d257fca6e1aa6349c" title=" " alt="" coords="300,56,441,83"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="319,107,423,133"/>
+<area shape="rect" href="class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,157,441,184"/>
+<area shape="rect" href="class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,5,217,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9a909f1abf24494daa5301a129e3b6e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a909f1abf24494daa5301a129e3b6e3">&#9670;&nbsp;</a></span>Resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::Resize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_cgraph" id="aclass_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,155,97"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="432,5,581,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#ab4d62158d4ce034c8ee9867e0ade67bc" title=" " alt="" coords="203,122,369,149"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aa1ff3e132611de2afa015640c2add3d5" title=" " alt="" coords="211,56,361,97"/>
+<area shape="rect" href="class_c_direct_x11.html#a4fe7f4d36f2e5e34d3ee20a49d5e17c1" title=" " alt="" coords="427,71,587,98"/>
+<area shape="rect" href="class_c_direct_x11.html#afa4cf11fa8d868b09eea919420850ab4" title=" " alt="" coords="430,122,583,149"/>
+<area shape="rect" href="class_c_direct_x11.html#a1bf4c2badb0f65828a69e03e24acb6fc" title=" " alt="" coords="417,173,596,199"/>
+<area shape="rect" href="class_c_direct_x11.html#aee9c5921e04f5492df11b1f2249ad5d7" title=" " alt="" coords="419,223,595,250"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="644,147,808,174"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_icgraph" id="aclass_c_scene_tex_renderer_a9a909f1abf24494daa5301a129e3b6e3_icgraph">
+<area shape="rect" title=" " alt="" coords="308,5,457,47"/>
+<area shape="rect" href="_main_8cpp.html#a9135ea2a0d6fce68ba3b858226a31a4f" title=" " alt="" coords="184,13,260,39"/>
+<area shape="rect" href="class_c_main.html#a7d36eed0b00bf47e39b1e0243dd51ee6" title=" " alt="" coords="5,13,136,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac49263ecbbcf486864d7276df248ec9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac49263ecbbcf486864d7276df248ec9b">&#9670;&nbsp;</a></span>SetGBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::SetGBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_cgraph" id="aclass_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,155,69"/>
+<area shape="rect" href="class_c_direct_x11.html#a912bbe5d1de84d1dea10cea088a6f235" title=" " alt="" coords="203,5,369,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="211,57,361,98"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="417,5,581,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_icgraph" id="aclass_c_scene_tex_renderer_ac49263ecbbcf486864d7276df248ec9b_icgraph">
+<area shape="rect" title=" " alt="" coords="524,74,673,115"/>
+<area shape="rect" href="class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,5,476,32"/>
+<area shape="rect" href="class_c_game_over.html#a63b5922af121e34d257fca6e1aa6349c" title=" " alt="" coords="300,56,441,83"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="319,107,423,133"/>
+<area shape="rect" href="class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,157,441,184"/>
+<area shape="rect" href="class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,5,217,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a21cfbbbbf606047fefdd0d1818121630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21cfbbbbf606047fefdd0d1818121630">&#9670;&nbsp;</a></span>SetIsEndLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CSceneTexRenderer::SetIsEndLoad </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>isLoad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a21cfbbbbf606047fefdd0d1818121630_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a21cfbbbbf606047fefdd0d1818121630_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a21cfbbbbf606047fefdd0d1818121630_cgraph" id="aclass_c_scene_tex_renderer_a21cfbbbbf606047fefdd0d1818121630_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a824814aa515611590f3d89074cff3e34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a824814aa515611590f3d89074cff3e34">&#9670;&nbsp;</a></span>SetIsStartLoad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CSceneTexRenderer::SetIsStartLoad </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>isLoad</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_cgraph" id="aclass_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_icgraph" id="aclass_c_scene_tex_renderer_a824814aa515611590f3d89074cff3e34_icgraph">
+<area shape="rect" title=" " alt="" coords="524,201,673,242"/>
+<area shape="rect" href="class_c_editor.html#a9aff35dac676527f5e1ec8fade01875f" title=" " alt="" coords="320,5,421,32"/>
+<area shape="rect" href="class_c_game.html#acc8934bf2f3c9c6466405dbd5cba56e3" title=" " alt="" coords="319,56,422,83"/>
+<area shape="rect" href="class_c_game_clear.html#a7b9d98ca879f2b10dd9126d050778614" title=" " alt="" coords="305,107,437,133"/>
+<area shape="rect" href="class_c_game_over.html#a852b6bfc0638bd23176bd7f997357b28" title=" " alt="" coords="307,157,435,184"/>
+<area shape="rect" href="class_c_title.html#a9370f8925d0381bba8fedd7d2834ab74" title=" " alt="" coords="325,208,416,235"/>
+<area shape="rect" href="class_c_game_clear_event.html#a1dab676fd2def2f7fd4236632a851102" title=" " alt="" coords="289,259,453,285"/>
+<area shape="rect" href="class_c_game_over_event.html#a97f5e3a7bcec69ed6a3e5be735e2a648" title=" " alt="" coords="291,309,451,336"/>
+<area shape="rect" href="class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,360,476,387"/>
+<area shape="rect" href="class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,411,441,437"/>
+<area shape="rect" href="class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,360,217,387"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f1e190ad39f69654af67836ef3f1c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1e190ad39f69654af67836ef3f1c71">&#9670;&nbsp;</a></span>SetRenderPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CSceneTexRenderer::SetRenderPass </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_c_scene_tex_renderer.html#aba3b33c9aa51736350ad7a60fb515ccc">ERenderPass</a> &amp;&#160;</td>
+          <td class="paramname"><em>pass</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_cgraph" id="aclass_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_icgraph" id="aclass_c_scene_tex_renderer_a5f1e190ad39f69654af67836ef3f1c71_icgraph">
+<area shape="rect" title=" " alt="" coords="524,74,673,115"/>
+<area shape="rect" href="class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,5,476,32"/>
+<area shape="rect" href="class_c_game_over.html#a63b5922af121e34d257fca6e1aa6349c" title=" " alt="" coords="300,56,441,83"/>
+<area shape="rect" href="class_c_title.html#a2fb880a5c88c2818ff0c9e9252279b42" title=" " alt="" coords="319,107,423,133"/>
+<area shape="rect" href="class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,157,441,184"/>
+<area shape="rect" href="class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,5,217,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0ba9908c780746688afb853793e7f44b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba9908c780746688afb853793e7f44b">&#9670;&nbsp;</a></span>SetSaveScreen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CSceneTexRenderer::SetSaveScreen </td>
+          <td>(</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>isSave</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_cgraph" id="aclass_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,155,47"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="203,5,352,47"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_icgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_icgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_icgraph" id="aclass_c_scene_tex_renderer_a0ba9908c780746688afb853793e7f44b_icgraph">
+<area shape="rect" title=" " alt="" coords="524,23,673,65"/>
+<area shape="rect" href="class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,5,476,32"/>
+<area shape="rect" href="class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,56,441,83"/>
+<area shape="rect" href="class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,5,217,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed4bad0ba78a56d977fdd0aced43d50c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed4bad0ba78a56d977fdd0aced43d50c">&#9670;&nbsp;</a></span>SetShadowBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::SetShadowBuffer </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_aed4bad0ba78a56d977fdd0aced43d50c_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_aed4bad0ba78a56d977fdd0aced43d50c_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_aed4bad0ba78a56d977fdd0aced43d50c_cgraph" id="aclass_c_scene_tex_renderer_aed4bad0ba78a56d977fdd0aced43d50c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,155,69"/>
+<area shape="rect" href="class_c_direct_x11.html#a912bbe5d1de84d1dea10cea088a6f235" title=" " alt="" coords="203,5,369,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="211,57,361,98"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="417,5,581,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abe5131db10e5482a7123afb48b6b7271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5131db10e5482a7123afb48b6b7271">&#9670;&nbsp;</a></span>SetTransBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CSceneTexRenderer::SetTransBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_scene_tex_renderer_abe5131db10e5482a7123afb48b6b7271_cgraph.png" border="0" usemap="#aclass_c_scene_tex_renderer_abe5131db10e5482a7123afb48b6b7271_cgraph" alt=""/></div>
+<map name="aclass_c_scene_tex_renderer_abe5131db10e5482a7123afb48b6b7271_cgraph" id="aclass_c_scene_tex_renderer_abe5131db10e5482a7123afb48b6b7271_cgraph">
+<area shape="rect" title=" " alt="" coords="5,27,155,69"/>
+<area shape="rect" href="class_c_direct_x11.html#a912bbe5d1de84d1dea10cea088a6f235" title=" " alt="" coords="203,5,369,32"/>
+<area shape="rect" href="class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="211,57,361,98"/>
+<area shape="rect" href="class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="417,5,581,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a338f018f4aa4498a62420db04d404354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a338f018f4aa4498a62420db04d404354">&#9670;&nbsp;</a></span>MAX_CASCADE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CSceneTexRenderer::MAX_CASCADE = 4</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/SceneTexRenderer/<a class="el" href="_scene_tex_renderer_8h_source.html">SceneTexRenderer.h</a></li>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/SceneTexRenderer/<a class="el" href="_scene_tex_renderer_8cpp.html">SceneTexRenderer.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

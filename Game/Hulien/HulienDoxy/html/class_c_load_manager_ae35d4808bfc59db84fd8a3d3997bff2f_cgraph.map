@@ -1,0 +1,13 @@
+<map id="CLoadManager::LoadResource" name="CLoadManager::LoadResource">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,205,159"/>
+<area shape="rect" id="node2" href="$class_c_sound_manager.html#a9666c70442921299d8f3046787ae47fe" title=" " alt="" coords="253,56,481,83"/>
+<area shape="rect" id="node6" href="$class_c_mesh_resorce.html#a39191ef6adfe682a3c2a6d5ee2554779" title=" " alt="" coords="294,107,441,133"/>
+<area shape="rect" id="node8" href="$class_c_font_resource.html#a019524bcbde8b7b0fd873be599140d04" title=" " alt="" coords="293,157,441,184"/>
+<area shape="rect" id="node10" href="$class_c_sprite_resource.html#a57baaa7f14aa8d03b21f95401e981c04" title=" " alt="" coords="289,208,445,235"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="776,5,972,32"/>
+<area shape="rect" id="node4" href="$class_c_sound_manager.html#a299c6a7021e4f697eb3b5c4bb559aaab" title=" " alt="" coords="529,56,728,83"/>
+<area shape="rect" id="node5" href="$class_c_file_manager.html#a5791a16903642e5e5ef658a0f171bc52" title=" " alt="" coords="777,56,971,83"/>
+<area shape="rect" id="node7" href="$class_c_mesh_resorce.html#a9b844e3c52eb2df7b1f3d9f645886e8d" title=" " alt="" coords="534,107,723,133"/>
+<area shape="rect" id="node9" href="$class_c_font_resource.html#a4c5cf037a682198f0b2be2a46bdac2e3" title=" " alt="" coords="533,157,724,184"/>
+<area shape="rect" id="node11" href="$class_c_sprite_resource.html#ad8a70c45c286d57ab3a178cd38286cda" title=" " alt="" coords="529,208,728,235"/>
+</map>

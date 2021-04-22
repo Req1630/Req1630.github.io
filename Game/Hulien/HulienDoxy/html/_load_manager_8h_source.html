@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Resource/LoadManager/LoadManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_344fffd2d0b331d1f9d9351e360d27b1.html">Resource</a></li><li class="navelem"><a class="el" href="dir_609cd5cb836a092ba78fe83f86db2c5b.html">LoadManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">LoadManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_load_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef LOAD_MANAGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define LOAD_MANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/*********************************************</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*   各リソース類の読み込みをまとめるクラス.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_c_load_manager.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_load_manager.html">CLoadManager</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LOAD_BACK_IMAGE = <span class="stringliteral">&quot;Data\\Texture\\_LoadTexture\\loadBase.png&quot;</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LOAD_ANIM_IMAGE = <span class="stringliteral">&quot;Data\\Texture\\_LoadTexture\\loadUfo.png&quot;</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LOAD_TEXT_IMAGE = <span class="stringliteral">&quot;Data\\Texture\\_LoadTexture\\loadLogo.png&quot;</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LOAD_IOCN_IMAGE = <span class="stringliteral">&quot;Data\\Texture\\_LoadTexture\\2loadLogo.png&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> SCALE_DOWN_SPEED = 0.02f;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_c_load_manager.html#af73fbfc7a86b28438553f16fcb291ae0">CLoadManager</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_c_load_manager.html#a4e5e2620b76ccfca3fde75614a310402">~CLoadManager</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 読み込み.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_load_manager.html#ae35d4808bfc59db84fd8a3d3997bff2f">LoadResource</a>( </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        HWND hWnd, </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        ID3D11Device* pDevice11, </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        ID3D11DeviceContext* pContext11, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        LPDIRECT3DDEVICE9 pDevice9  );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// スレッドの解放.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_load_manager.html#a893371cf40ca923a46b980e970b06dfa">ThreadRelease</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 描画.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_load_manager.html#a68ccc3bd71e4dbcf80296381c2f5b955">Render</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// ロード失敗.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_load_manager.html#a3de6eda3f123cd84a9a9f712b7cf7b0f">   44</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_load_manager.html#a3de6eda3f123cd84a9a9f712b7cf7b0f">IsLoadFailed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isLoadFailed; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// ロードが終了したか.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_load_manager.html#a70182b01a9b9669b8af766b26745f6f8">   46</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_load_manager.html#a70182b01a9b9669b8af766b26745f6f8">IsLoadEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_isAllLoadEnd; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// スプライトの取得.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    HRESULT GetSprite( </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        ID3D11Device* pDevice11, </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        ID3D11DeviceContext* pContext11 );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::thread m_Thread;       <span class="comment">// スレッド.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::mutex  m_Mutex;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_Sprites;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">float</span>   m_UFOSpriteSize;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> m_isAllLoadEnd;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> m_isLoadEnd;           <span class="comment">// ロードが終了したか.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> m_isThreadJoined;      <span class="comment">// スレッドが解放されたか.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> m_isLoadFailed;        <span class="comment">// ロード失敗.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> m_isLoadSpriteFailed;  <span class="comment">// ロードスプライトの読み込み失敗.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef LOAD_MANAGER_H.</span></div>
+<div class="ttc" id="aclass_c_load_manager_html"><div class="ttname"><a href="class_c_load_manager.html">CLoadManager</a></div><div class="ttdef"><b>Definition:</b> LoadManager.h:20</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_a3de6eda3f123cd84a9a9f712b7cf7b0f"><div class="ttname"><a href="class_c_load_manager.html#a3de6eda3f123cd84a9a9f712b7cf7b0f">CLoadManager::IsLoadFailed</a></div><div class="ttdeci">bool IsLoadFailed() const</div><div class="ttdef"><b>Definition:</b> LoadManager.h:44</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_a4e5e2620b76ccfca3fde75614a310402"><div class="ttname"><a href="class_c_load_manager.html#a4e5e2620b76ccfca3fde75614a310402">CLoadManager::~CLoadManager</a></div><div class="ttdeci">~CLoadManager()</div><div class="ttdef"><b>Definition:</b> LoadManager.cpp:22</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_a68ccc3bd71e4dbcf80296381c2f5b955"><div class="ttname"><a href="class_c_load_manager.html#a68ccc3bd71e4dbcf80296381c2f5b955">CLoadManager::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> LoadManager.cpp:74</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_a70182b01a9b9669b8af766b26745f6f8"><div class="ttname"><a href="class_c_load_manager.html#a70182b01a9b9669b8af766b26745f6f8">CLoadManager::IsLoadEnd</a></div><div class="ttdeci">bool IsLoadEnd() const</div><div class="ttdef"><b>Definition:</b> LoadManager.h:46</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_a893371cf40ca923a46b980e970b06dfa"><div class="ttname"><a href="class_c_load_manager.html#a893371cf40ca923a46b980e970b06dfa">CLoadManager::ThreadRelease</a></div><div class="ttdeci">bool ThreadRelease()</div><div class="ttdef"><b>Definition:</b> LoadManager.cpp:99</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_ae35d4808bfc59db84fd8a3d3997bff2f"><div class="ttname"><a href="class_c_load_manager.html#ae35d4808bfc59db84fd8a3d3997bff2f">CLoadManager::LoadResource</a></div><div class="ttdeci">void LoadResource(HWND hWnd, ID3D11Device *pDevice11, ID3D11DeviceContext *pContext11, LPDIRECT3DDEVICE9 pDevice9)</div><div class="ttdef"><b>Definition:</b> LoadManager.cpp:31</div></div>
+<div class="ttc" id="aclass_c_load_manager_html_af73fbfc7a86b28438553f16fcb291ae0"><div class="ttname"><a href="class_c_load_manager.html#af73fbfc7a86b28438553f16fcb291ae0">CLoadManager::CLoadManager</a></div><div class="ttdeci">CLoadManager()</div><div class="ttdef"><b>Definition:</b> LoadManager.cpp:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="STG::CPlayer::Collision" name="STG::CPlayer::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$class_s_t_g_1_1_c_actor.html#af917eff96b6e99bd45fdc0255d03076e" title=" " alt="" coords="212,5,372,32"/>
+<area shape="rect" id="node3" href="$class_s_t_g_1_1_c_actor.html#af107a77a4e2a7ff06977d10ea19b9f63" title=" " alt="" coords="219,56,365,83"/>
+</map>

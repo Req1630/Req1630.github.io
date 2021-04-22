@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Character/Player/Player.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1bdeeabc02c3c6e2721e886e81d33611.html">Character</a></li><li class="navelem"><a class="el" href="dir_15f30b5259cd92e8fbebfac9feda41ee.html">Player</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Player.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_player_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef PLAYER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define PLAYER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Character.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_player_param_8h.html">PlayerParam.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_rot_look_at_center.html">CRotLookAtCenter</a>; <span class="comment">// カメラクラス.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_character_widget.html">CCharacterWidget</a>; <span class="comment">// キャラクタUIクラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_effect_manager.html">CEffectManager</a>;   <span class="comment">// エフェクトクラス.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_effect_timer.html">CEffectTimer</a>;     <span class="comment">// アイテムの時間管理クラス.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">/***************************************</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*   プレイヤークラス.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_c_player.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_player.html">CPlayer</a> : <span class="keyword">public</span> <a class="code" href="class_c_character.html">CCharacter</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// パラメータのファイルパス.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* PARAMETER_FILE_PATH = <span class="stringliteral">&quot;Data\\GameParam\\Player\\Player.bin&quot;</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// モデル名.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* MODEL_NAME          = <span class="stringliteral">&quot;kaito_s&quot;</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// エフェクト名.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* ATTACK_ONE_EFFECT_NAME      = <span class="stringliteral">&quot;slash_effect_1&quot;</span>; <span class="comment">// 攻撃1.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* ATTACK_TWO_EFFECT_NAME      = <span class="stringliteral">&quot;slash_effect_2&quot;</span>; <span class="comment">// 攻撃2.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* ATTACK_THREE_EFFECT_NAME    = <span class="stringliteral">&quot;slash_effect_3&quot;</span>; <span class="comment">// 攻撃3.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPECIAL_ABILITY_EFFECT_NAME = <span class="stringliteral">&quot;uvtest&quot;</span>;         <span class="comment">// 特殊能力.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* AVOIDANCE_EFFECT_NAME       = <span class="stringliteral">&quot;sandSmoke&quot;</span>;      <span class="comment">// 回避.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* PARALYSIS_EFFECT_NAME       = <span class="stringliteral">&quot;uvtest&quot;</span>;         <span class="comment">// 麻痺.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// ボーン名.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* RIGHT_FOOT_BONE_NAME    = <span class="stringliteral">&quot;kaito_rifa_2_R_asi_4&quot;</span>;       <span class="comment">// 右足.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LEFT_FOOT_BONE_NAME     = <span class="stringliteral">&quot;kaito_rifa_2_L_asi_4&quot;</span>;       <span class="comment">// 左足.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* LITTLE_FINGER_BONE_NAME = <span class="stringliteral">&quot;kaito_rifa_2_L_yubi_5_1&quot;</span>;    <span class="comment">// 小指.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* RING_FINGER_BONE_NAME   = <span class="stringliteral">&quot;kaito_rifa_2_L_yubi_4_1&quot;</span>;    <span class="comment">// 薬指.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> TWO = 2.0f;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_COUNT_MAX            = 100.0f;   <span class="comment">// カメラのカウント最大値.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_BACK_DIRECTION_X     = 20.0f;    <span class="comment">// カメラの距離 : x;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_BACK_DIRECTION_Z     = 10.0f;    <span class="comment">// カメラの距離 : z;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_BACK_HEIGHT          = 8.0f;     <span class="comment">// カメラの高さ.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_BACK_LERP_VALUE      = 0.1f;     <span class="comment">// カメラの補完値.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_FREQUENCY_LOOKPOS    = 15.0f;    <span class="comment">// カメラ注視位置の周波数.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_AMPLITUDE_LOOKPOS    = 0.01f;    <span class="comment">// カメラ注視位置の振幅.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_RETURN_COUNT_ADD     = 0.001f;   <span class="comment">// カメラの戻るときのカウント加算値.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> CAMERA_RETURN_COUNT_MAX     = 0.1f;     <span class="comment">// カメラの戻るときのカウント最大値.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ATTACK_EFFECT_RENDER_HEIGHT = 5.0f;             <span class="comment">// 攻撃エフェクトの描画高さ.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> AVOID_EFFECT_RENDER_HEIGHT  = 10.0f;            <span class="comment">// 回避エフェクトの描画高さ.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> PLAY_WARNING_SE_LIFE_ONE_THIRD  = 1.0f / 4.0f;  <span class="comment">// 警告音を再生する体力の</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 声の音量.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> VOICE_VOLUME = 1.5f;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_c_player.html#a931a59adf2ada5376122e30b33ae2c4c">CPlayer</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_player.html#ad02df04887bccfe3b82298895da24af6">~CPlayer</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_player.html#af427666ac35a0b3d90fcc4ffa42c8fd3">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#a4582a8020f6734842edea64909bd4b40">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#adde42d001de461b2192bbb39d7e69aa1">Render</a>() <span class="keyword">override</span>; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// エフェクト描画関数.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#a24cceab09336374cb0db45c753985e90">EffectRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// 当たり判定関数.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#afb9f23b4c32fe74b9fefc05767bdc51f">Collision</a>( <a class="code" href="class_c_actor.html">CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// 相手座標の設定関数.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#a4e84d2e83cec95fa94fe2b0bd08f6d12">SetTargetPos</a>( <a class="code" href="class_c_actor.html">CActor</a>&amp; actor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// スプライトの描画.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#ad6511559416f260d6ac4063984c7564b">SpriteRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// 特殊能力を使っているか.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_player.html#aa88045dd907e989acefddac62db0687d">IsSpecialAbility</a>();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// 死亡したか.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_c_player.html#a2a474d0e7521313bdd411e481fc274cf">   84</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_player.html#a2a474d0e7521313bdd411e481fc274cf">IsDead</a>(){ <span class="keywordflow">return</span> <a class="code" href="class_c_character.html#a1c2e4fef035865575b0ceb77387dd460">m_AnimFrameList</a>[<a class="code" href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6aad9647695f07e3a2f43fdb0342ff24908">player::EAnimNo_Dead</a>].IsNowFrameOver(); }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// カメラの方向.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_player.html#a05c9696a60fe2c53889ebbea89b21f4b">GetCameraRadianX</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// ベクトルの取得.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_c_player.html#ae58c494b48bdf1f1ff93a6e44d8476bb">   89</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#ae58c494b48bdf1f1ff93a6e44d8476bb">SetVector</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vec )<span class="keyword"> override </span>{ m_HitVector = vec; }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// アニメーションを再開する.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#a83fcaa076fceaecdced51b98d94533ed">ResumeAnimation</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// カメラを揺らす.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_player.html#ab19f818e7c2af4ae08bb97060f4a0c41">CameraShake</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// パラメータの設定(editなどで使用).</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_player.html#a5d1a4c04fd339230276a83120fb21eba">SetParameter</a>( <span class="keyword">const</span> <a class="code" href="structplayer_1_1_s_player_param.html">player::SPlayerParam</a>&amp; param, <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isEdit = <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// 操作関数.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">void</span> Controller();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// カメラ操作.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> CameraController();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// 攻撃操作関数.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> AttackController();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// 特殊能力操作関数.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> SPController();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// 回避操作関数.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">void</span> AvoidController();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// 移動関数(アニメーションとのずれの調整).</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> Move() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// 攻撃時の移動.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> AttackMove();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// 回避動作関数.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> AvoidMove();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// ノックバック動作関数.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> KnockBack();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// 死亡動作関数.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> Dead();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// カメラの更新.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> CameraUpdate();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// 攻撃の当たり判定.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> AttackCollision( <a class="code" href="class_c_actor.html">CActor</a>* pActor );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// 攻撃範囲との判定.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> AttackRangeDecision( <a class="code" href="class_c_actor.html">CActor</a>* pActor );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// 特殊能力時のカメラ動作.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">void</span> SPCameraUpdate();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// ヒットストップの更新.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> HitStopUpdate();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// 特殊能力回復更新関数.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> SpecialAbilityUpdate();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// 攻撃力UP更新関数.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> AttackUpUpdate();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// 移動速度UP更新関数.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> MoveSpeedUpUpdate();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">// 麻痺中の更新関数.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> ParalysisUpdate();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="comment">// 攻撃アニメーション.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">void</span> AttackAnimation();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// 攻撃の追加ができたか.</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">bool</span> IsPushAttack();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// ライフ計算関数.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> LifeCalculation( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">bool</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="comment">// 特殊能力回復時間、効力時間設定関数.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetSPEffectTime( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">float</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// 攻撃力、効力時間設定関数.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetAttackEffectTime( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">float</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// 移動速度、効力時間設定関数.</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetMoveSpeedEffectTime( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;,<span class="keywordtype">float</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// 麻痺の設定.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetParalysisTime( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// アニメーションのずれ(引きずり)を調整.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">bool</span> AnimationDraggingAdj( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animAdjNo );</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="comment">// 当たり判定の設定.</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">bool</span> ColliderSetting();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="comment">// エフェクトの設定.</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">bool</span> EffectSetting();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">// アニメーションフレームの設定.</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SetAnimFrameList() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">// エディット用の描画関数.</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">void</span> EditRender();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// サウンドの設定.</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">bool</span> SoundSetting();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">// 音量の設定.</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">void</span> VolumeSetting(<span class="keyword">const</span> <span class="keywordtype">char</span>* soung, <span class="keywordtype">float</span> volume);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// ウィジェット設定.</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordtype">bool</span> WidgetSetting();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::shared_ptr&lt;CRotLookAtCenter&gt;               m_pCamera;              <span class="comment">// カメラクラス.</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    std::shared_ptr&lt;CCamera&gt;                        m_pSPCamera;            <span class="comment">// 特殊能力カメラクラス.</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    std::shared_ptr&lt;CCollisionManager&gt;              m_pAttackCollManager;   <span class="comment">// 攻撃用の当たり判定.</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::vector&lt;std::shared_ptr&lt;CEffectManager&gt;&gt;    m_pEffects;             <span class="comment">// エフェクト.</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    std::vector&lt;std::shared_ptr&lt;CEffectTimer&gt;&gt;      m_pEffectTimers;        <span class="comment">// 効果時間計測クラス.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    std::vector&lt;std::shared_ptr&lt;CCharacterWidget&gt;&gt;  m_pWidget;              <span class="comment">// Widgetクラス.</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">int</span>                             m_AttackComboCount;         <span class="comment">// 攻撃コンボカウント.</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::queue&lt;player::SAttackData&gt; m_AttackDataQueue;          <span class="comment">// 攻撃データのキュー.</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    D3DXVECTOR3                     m_AttackPosition;           <span class="comment">// 攻撃用当たり判定座標.</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    D3DXVECTOR3     m_GirlPosition;     <span class="comment">// 女の子の座標.</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    D3DXVECTOR3     m_AttackVector;     <span class="comment">// 攻撃時のベクトル.</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    D3DXVECTOR3     m_AvoidVector;      <span class="comment">// 回避ベクトル.</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    D3DXVECTOR3     m_HitVector;        <span class="comment">// 衝突時のベクトル.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    D3DXVECTOR3     m_TargetVector;     <span class="comment">// 目的のベクトル.</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="structplayer_1_1_s_anim_dragging_adj_param.html">player::SAnimDraggingAdjParam</a>       m_AnimAdjDrggingParam;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="structplayer_1_1_s_attack_adj_param.html">player::SAttackAdjParam</a>             m_AttackAdjParam;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="structplayer_1_1_s_player_param.html">player::SPlayerParam</a>    m_Parameter;            <span class="comment">// パラメーター.</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordtype">float</span>           m_LifePoint;            <span class="comment">// 体力.</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordtype">float</span>           m_SpecialAbility;       <span class="comment">// 特殊能力.</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   m_StatusFlag;           <span class="comment">// 現在の状態のフラグ.</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">float</span>           m_AttackRangeLenght;        <span class="comment">// 攻撃範囲のターゲットとの距離(比較用).</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">float</span>           m_SpecialAbilityValue;      <span class="comment">// 特殊能力回復力.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">float</span>           m_ItemSpecialAbilityValue;  <span class="comment">// アイテム特殊能力回復値.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordtype">float</span>           m_AttackPower;              <span class="comment">// 攻撃力.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">float</span>           m_MoveSpeed;                <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">float</span>           m_MoveSpeedMulValue;        <span class="comment">// 移動速度に掛け合わせる値.</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    D3DXVECTOR3     m_HitStopCameraPosition;    <span class="comment">// ヒットストップ用のカメラの座標.</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    D3DXVECTOR3     m_CameraNextPosition;       <span class="comment">// カメラの座標.</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    D3DXVECTOR3     m_CameraPosition;           <span class="comment">// カメラの座標.</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    D3DXVECTOR3     m_CameraLookPosition;       <span class="comment">// カメラの視点座標.</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordtype">float</span>           m_CameraCount;              <span class="comment">// カメラのカウント.</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordtype">float</span>           m_CameraReturnCount;        <span class="comment">// カメラの戻るカウント.</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordtype">float</span>           m_CameraLerp;               <span class="comment">// カメラ移動の補間値.</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordtype">int</span>             m_NowSPCameraStete;         <span class="comment">// 特殊能力のカメラ状態.</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordtype">int</span>             m_ParalysisCameraShakeCount;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordtype">bool</span>            m_OneStepCmaeraSeting;      <span class="comment">// カメラの設定(一回だけ使用).</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;};</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef PLAYER_H.</span></div>
+<div class="ttc" id="a_player_param_8h_html"><div class="ttname"><a href="_player_param_8h.html">PlayerParam.h</a></div><div class="ttdoc">プレイヤーの構造体などのヘッター.</div></div>
+<div class="ttc" id="aclass_c_actor_html"><div class="ttname"><a href="class_c_actor.html">CActor</a></div><div class="ttdef"><b>Definition:</b> Actor.h:19</div></div>
+<div class="ttc" id="aclass_c_character_html"><div class="ttname"><a href="class_c_character.html">CCharacter</a></div><div class="ttdef"><b>Definition:</b> Character.h:16</div></div>
+<div class="ttc" id="aclass_c_character_html_a1c2e4fef035865575b0ceb77387dd460"><div class="ttname"><a href="class_c_character.html#a1c2e4fef035865575b0ceb77387dd460">CCharacter::m_AnimFrameList</a></div><div class="ttdeci">anim::AAnimFrameList m_AnimFrameList</div><div class="ttdef"><b>Definition:</b> Character.h:108</div></div>
+<div class="ttc" id="aclass_c_character_widget_html"><div class="ttname"><a href="class_c_character_widget.html">CCharacterWidget</a></div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:11</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html"><div class="ttname"><a href="class_c_effect_manager.html">CEffectManager</a></div><div class="ttdef"><b>Definition:</b> EffectManager.h:14</div></div>
+<div class="ttc" id="aclass_c_effect_timer_html"><div class="ttname"><a href="class_c_effect_timer.html">CEffectTimer</a></div><div class="ttdef"><b>Definition:</b> EffectTimer.h:13</div></div>
+<div class="ttc" id="aclass_c_player_html"><div class="ttname"><a href="class_c_player.html">CPlayer</a></div><div class="ttdef"><b>Definition:</b> Player.h:22</div></div>
+<div class="ttc" id="aclass_c_player_html_a05c9696a60fe2c53889ebbea89b21f4b"><div class="ttname"><a href="class_c_player.html#a05c9696a60fe2c53889ebbea89b21f4b">CPlayer::GetCameraRadianX</a></div><div class="ttdeci">float GetCameraRadianX()</div><div class="ttdef"><b>Definition:</b> Player.cpp:224</div></div>
+<div class="ttc" id="aclass_c_player_html_a24cceab09336374cb0db45c753985e90"><div class="ttname"><a href="class_c_player.html#a24cceab09336374cb0db45c753985e90">CPlayer::EffectRender</a></div><div class="ttdeci">virtual void EffectRender() override</div><div class="ttdef"><b>Definition:</b> Player.cpp:536</div></div>
+<div class="ttc" id="aclass_c_player_html_a2a474d0e7521313bdd411e481fc274cf"><div class="ttname"><a href="class_c_player.html#a2a474d0e7521313bdd411e481fc274cf">CPlayer::IsDead</a></div><div class="ttdeci">bool IsDead()</div><div class="ttdef"><b>Definition:</b> Player.h:84</div></div>
+<div class="ttc" id="aclass_c_player_html_a4582a8020f6734842edea64909bd4b40"><div class="ttname"><a href="class_c_player.html#a4582a8020f6734842edea64909bd4b40">CPlayer::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> Player.cpp:103</div></div>
+<div class="ttc" id="aclass_c_player_html_a4e84d2e83cec95fa94fe2b0bd08f6d12"><div class="ttname"><a href="class_c_player.html#a4e84d2e83cec95fa94fe2b0bd08f6d12">CPlayer::SetTargetPos</a></div><div class="ttdeci">virtual void SetTargetPos(CActor &amp;actor) override</div><div class="ttdef"><b>Definition:</b> Player.cpp:184</div></div>
+<div class="ttc" id="aclass_c_player_html_a5d1a4c04fd339230276a83120fb21eba"><div class="ttname"><a href="class_c_player.html#a5d1a4c04fd339230276a83120fb21eba">CPlayer::SetParameter</a></div><div class="ttdeci">void SetParameter(const player::SPlayerParam &amp;param, const bool &amp;isEdit=false)</div><div class="ttdef"><b>Definition:</b> Player.cpp:254</div></div>
+<div class="ttc" id="aclass_c_player_html_a83fcaa076fceaecdced51b98d94533ed"><div class="ttname"><a href="class_c_player.html#a83fcaa076fceaecdced51b98d94533ed">CPlayer::ResumeAnimation</a></div><div class="ttdeci">virtual void ResumeAnimation() override</div><div class="ttdef"><b>Definition:</b> Player.cpp:230</div></div>
+<div class="ttc" id="aclass_c_player_html_a931a59adf2ada5376122e30b33ae2c4c"><div class="ttname"><a href="class_c_player.html#a931a59adf2ada5376122e30b33ae2c4c">CPlayer::CPlayer</a></div><div class="ttdeci">CPlayer()</div><div class="ttdef"><b>Definition:</b> Player.cpp:23</div></div>
+<div class="ttc" id="aclass_c_player_html_aa88045dd907e989acefddac62db0687d"><div class="ttname"><a href="class_c_player.html#aa88045dd907e989acefddac62db0687d">CPlayer::IsSpecialAbility</a></div><div class="ttdeci">bool IsSpecialAbility()</div><div class="ttdef"><b>Definition:</b> Player.cpp:215</div></div>
+<div class="ttc" id="aclass_c_player_html_ab19f818e7c2af4ae08bb97060f4a0c41"><div class="ttname"><a href="class_c_player.html#ab19f818e7c2af4ae08bb97060f4a0c41">CPlayer::CameraShake</a></div><div class="ttdeci">bool CameraShake()</div><div class="ttdef"><b>Definition:</b> Player.cpp:239</div></div>
+<div class="ttc" id="aclass_c_player_html_ad02df04887bccfe3b82298895da24af6"><div class="ttname"><a href="class_c_player.html#ad02df04887bccfe3b82298895da24af6">CPlayer::~CPlayer</a></div><div class="ttdeci">virtual ~CPlayer()</div><div class="ttdef"><b>Definition:</b> Player.cpp:68</div></div>
+<div class="ttc" id="aclass_c_player_html_ad6511559416f260d6ac4063984c7564b"><div class="ttname"><a href="class_c_player.html#ad6511559416f260d6ac4063984c7564b">CPlayer::SpriteRender</a></div><div class="ttdeci">virtual void SpriteRender() override</div><div class="ttdef"><b>Definition:</b> Player.cpp:191</div></div>
+<div class="ttc" id="aclass_c_player_html_adde42d001de461b2192bbb39d7e69aa1"><div class="ttname"><a href="class_c_player.html#adde42d001de461b2192bbb39d7e69aa1">CPlayer::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> Player.cpp:152</div></div>
+<div class="ttc" id="aclass_c_player_html_ae58c494b48bdf1f1ff93a6e44d8476bb"><div class="ttname"><a href="class_c_player.html#ae58c494b48bdf1f1ff93a6e44d8476bb">CPlayer::SetVector</a></div><div class="ttdeci">virtual void SetVector(const D3DXVECTOR3 &amp;vec) override</div><div class="ttdef"><b>Definition:</b> Player.h:89</div></div>
+<div class="ttc" id="aclass_c_player_html_af427666ac35a0b3d90fcc4ffa42c8fd3"><div class="ttname"><a href="class_c_player.html#af427666ac35a0b3d90fcc4ffa42c8fd3">CPlayer::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> Player.cpp:73</div></div>
+<div class="ttc" id="aclass_c_player_html_afb9f23b4c32fe74b9fefc05767bdc51f"><div class="ttname"><a href="class_c_player.html#afb9f23b4c32fe74b9fefc05767bdc51f">CPlayer::Collision</a></div><div class="ttdeci">virtual void Collision(CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> Player.cpp:173</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html"><div class="ttname"><a href="class_c_rot_look_at_center.html">CRotLookAtCenter</a></div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:15</div></div>
+<div class="ttc" id="anamespaceplayer_html_aa222927d94eceaaf4527810c474ead6aad9647695f07e3a2f43fdb0342ff24908"><div class="ttname"><a href="namespaceplayer.html#aa222927d94eceaaf4527810c474ead6aad9647695f07e3a2f43fdb0342ff24908">player::EAnimNo_Dead</a></div><div class="ttdeci">@ EAnimNo_Dead</div><div class="ttdef"><b>Definition:</b> PlayerParam.h:81</div></div>
+<div class="ttc" id="astructplayer_1_1_s_anim_dragging_adj_param_html"><div class="ttname"><a href="structplayer_1_1_s_anim_dragging_adj_param.html">player::SAnimDraggingAdjParam</a></div><div class="ttdef"><b>Definition:</b> PlayerParam.h:228</div></div>
+<div class="ttc" id="astructplayer_1_1_s_attack_adj_param_html"><div class="ttname"><a href="structplayer_1_1_s_attack_adj_param.html">player::SAttackAdjParam</a></div><div class="ttdef"><b>Definition:</b> PlayerParam.h:195</div></div>
+<div class="ttc" id="astructplayer_1_1_s_player_param_html"><div class="ttname"><a href="structplayer_1_1_s_player_param.html">player::SPlayerParam</a></div><div class="ttdef"><b>Definition:</b> PlayerParam.h:15</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

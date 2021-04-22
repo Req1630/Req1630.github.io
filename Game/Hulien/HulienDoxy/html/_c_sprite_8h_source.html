@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Sprite/CSprite.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_5c15922cfdfce904fe14889b7730f5cf.html">Sprite</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">CSprite.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_sprite_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CSPRITE_UI_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CSPRITE_UI_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Common.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\Shader\SpriteShader\SpriteShader.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_sprite_state_8h.html">SpriteState.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_c_sprite.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_sprite.html">CSprite</a> : <span class="keyword">public</span> <a class="code" href="class_c_common.html">CCommon</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_c_sprite.html#a9a1f71b65de92ccde491a8f9335ccde7">CSprite</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_c_sprite.html#a9a1f71b65de92ccde491a8f9335ccde7">CSprite</a>(</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        ID3D11Device* pDevice11,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        ID3D11DeviceContext* pContext11,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_s_sprite_state.html">SSpriteState</a>&amp; pSs);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_sprite.html#a274146d807d98947cff67621e783d31d">~CSprite</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// 初期化.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    HRESULT <a class="code" href="class_c_sprite.html#acc86d110750d89f7c29c8c54fe3ea447">Init</a>(</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        ID3D11Device* pDevice11,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        ID3D11DeviceContext* pContext11,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_s_sprite_state.html">SSpriteState</a>&amp; pSs);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 解放.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#ac792f309461325813cf28b5cccdee507">Release</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// レンダリング.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 3D空間に配置.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#a381519c93a7260a857b6d3447e0107e8">Render</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isBillboard = <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// UIとして配置.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#a15676e1e4d73ea47e4f9bca69742f1f7">RenderUI</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// アニメーション番号の設定.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#a9681e26e4a3fcdaf28b03ca685570cf9">SetAnimNumber</a>( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; animNumber );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// フレームタイムの設定(何フレームでアニメーションするか).</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_sprite.html#a487cec91339b11905ae4a2c13ea62433">   38</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#a487cec91339b11905ae4a2c13ea62433">SetFrameTime</a>( <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; frameTime ) { m_pSpriteData-&gt;FrameTime = frameTime; }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// アニメーションを再生する.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_sprite.html#aad33e1b8091d28d033dd4515078ad1fa">   40</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#aad33e1b8091d28d033dd4515078ad1fa">PlayAnimation</a>() {m_pSpriteData-&gt;IsAnimation = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 表示画像サイズの取得.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_sprite.html#a2646046112a2792a97a45f292efba5cd">   42</a></span>&#160;    D3DXVECTOR2 <a class="code" href="class_c_sprite.html#a2646046112a2792a97a45f292efba5cd">GetSpriteSize</a>() { <span class="keywordflow">return</span> { m_pSpriteData-&gt;SState.Disp.w, m_pSpriteData-&gt;SState.Disp.h }; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// 描画座標の取得.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_c_sprite.html#a431cb1a7355fce5a279091ed4ab88920">   44</a></span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_sprite.html#a431cb1a7355fce5a279091ed4ab88920">GetRenderPos</a>() { <span class="keywordflow">return</span> m_pSpriteData-&gt;SState.vPos; }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// スプライト情報の設定.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_c_sprite.html#a81d3a99b5552660822bf5cf9e7633c40">   46</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#a81d3a99b5552660822bf5cf9e7633c40">SetSpriteData</a>( <span class="keyword">const</span> std::shared_ptr&lt;SSpriteData&gt;&amp; pSpriteData ){ m_pSpriteData = pSpriteData; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// スプライト情報の取得.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_c_sprite.html#abf8f791e7242b1c223a6b480a10da46f">   48</a></span>&#160;    std::shared_ptr&lt;SSpriteData&gt; <a class="code" href="class_c_sprite.html#abf8f791e7242b1c223a6b480a10da46f">GetSpriteData</a>(){ <span class="keywordflow">return</span> m_pSpriteData; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// アニメーションをするかどうか.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_sprite.html#af28caeaf201ae0fb73b739b6e5fc3104">   51</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#af28caeaf201ae0fb73b739b6e5fc3104">SetIsAnimation</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isAnim ){ m_pSpriteData-&gt;IsAnimation = isAnim; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// UVスクロールをするかどうか.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_sprite.html#aceba0b9bb9640dd118445b363159bf8e">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sprite.html#aceba0b9bb9640dd118445b363159bf8e">SetIsUVScroll</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isScroll ){ m_pSpriteData-&gt;IsUVScroll = isScroll; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// モデル作成.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    HRESULT InitModel();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// テクスチャ作成.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    HRESULT CreateTexture( <span class="keyword">const</span> <span class="keywordtype">char</span>* fileName, ID3D11ShaderResourceView** pTexture );</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// サンプラの作成.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    HRESULT InitSample();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// world行列の作成.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    D3DXMATRIX CreateWorldMatrix();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// UV座標に変換.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    D3DXVECTOR2 ConvertIntoUV();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// アニメーションの更新.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> AnimUpdate();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// UVスクロールの更新.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> UVScrollUpdate();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 頂点情報の作成.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> CreateVERTEX(</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; w, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; h,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; u, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; v);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// テクスチャの比率を取得.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> myGcd( <span class="keywordtype">int</span> t, <span class="keywordtype">int</span> t2 )</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">if</span> (t2 == 0) <span class="keywordflow">return</span> t;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> myGcd(t2, t % t2);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::unique_ptr&lt;CSpriteShader&gt;  m_pSpriteShader;    <span class="comment">// スプライトシェーダー.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::shared_ptr&lt;SSpriteData&gt;    m_pSpriteData;      <span class="comment">// スプライト情報.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    ID3D11SamplerState*             m_pSampleLinear;    <span class="comment">// サンプラ:テクスチャに各種フィルタをかける.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="struct_c_sprite_shader_1_1_v_e_r_t_e_x.html">CSpriteShader::VERTEX</a> m_VerticesUI[4];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef CSPRITE_UI_H.</span></div>
+<div class="ttc" id="a_sprite_state_8h_html"><div class="ttname"><a href="_sprite_state_8h.html">SpriteState.h</a></div></div>
+<div class="ttc" id="aclass_c_common_html"><div class="ttname"><a href="class_c_common.html">CCommon</a></div><div class="ttdef"><b>Definition:</b> Common.h:8</div></div>
+<div class="ttc" id="aclass_c_sprite_html"><div class="ttname"><a href="class_c_sprite.html">CSprite</a></div><div class="ttdef"><b>Definition:</b> CSprite.h:9</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a15676e1e4d73ea47e4f9bca69742f1f7"><div class="ttname"><a href="class_c_sprite.html#a15676e1e4d73ea47e4f9bca69742f1f7">CSprite::RenderUI</a></div><div class="ttdeci">void RenderUI()</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:214</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a2646046112a2792a97a45f292efba5cd"><div class="ttname"><a href="class_c_sprite.html#a2646046112a2792a97a45f292efba5cd">CSprite::GetSpriteSize</a></div><div class="ttdeci">D3DXVECTOR2 GetSpriteSize()</div><div class="ttdef"><b>Definition:</b> CSprite.h:42</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a274146d807d98947cff67621e783d31d"><div class="ttname"><a href="class_c_sprite.html#a274146d807d98947cff67621e783d31d">CSprite::~CSprite</a></div><div class="ttdeci">virtual ~CSprite()</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:26</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a381519c93a7260a857b6d3447e0107e8"><div class="ttname"><a href="class_c_sprite.html#a381519c93a7260a857b6d3447e0107e8">CSprite::Render</a></div><div class="ttdeci">void Render(const bool &amp;isBillboard=false)</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:174</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a431cb1a7355fce5a279091ed4ab88920"><div class="ttname"><a href="class_c_sprite.html#a431cb1a7355fce5a279091ed4ab88920">CSprite::GetRenderPos</a></div><div class="ttdeci">D3DXVECTOR3 GetRenderPos()</div><div class="ttdef"><b>Definition:</b> CSprite.h:44</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a487cec91339b11905ae4a2c13ea62433"><div class="ttname"><a href="class_c_sprite.html#a487cec91339b11905ae4a2c13ea62433">CSprite::SetFrameTime</a></div><div class="ttdeci">void SetFrameTime(const int &amp;frameTime)</div><div class="ttdef"><b>Definition:</b> CSprite.h:38</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a81d3a99b5552660822bf5cf9e7633c40"><div class="ttname"><a href="class_c_sprite.html#a81d3a99b5552660822bf5cf9e7633c40">CSprite::SetSpriteData</a></div><div class="ttdeci">void SetSpriteData(const std::shared_ptr&lt; SSpriteData &gt; &amp;pSpriteData)</div><div class="ttdef"><b>Definition:</b> CSprite.h:46</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a9681e26e4a3fcdaf28b03ca685570cf9"><div class="ttname"><a href="class_c_sprite.html#a9681e26e4a3fcdaf28b03ca685570cf9">CSprite::SetAnimNumber</a></div><div class="ttdeci">void SetAnimNumber(const int &amp;animNumber)</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:260</div></div>
+<div class="ttc" id="aclass_c_sprite_html_a9a1f71b65de92ccde491a8f9335ccde7"><div class="ttname"><a href="class_c_sprite.html#a9a1f71b65de92ccde491a8f9335ccde7">CSprite::CSprite</a></div><div class="ttdeci">CSprite()</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:7</div></div>
+<div class="ttc" id="aclass_c_sprite_html_aad33e1b8091d28d033dd4515078ad1fa"><div class="ttname"><a href="class_c_sprite.html#aad33e1b8091d28d033dd4515078ad1fa">CSprite::PlayAnimation</a></div><div class="ttdeci">void PlayAnimation()</div><div class="ttdef"><b>Definition:</b> CSprite.h:40</div></div>
+<div class="ttc" id="aclass_c_sprite_html_abf8f791e7242b1c223a6b480a10da46f"><div class="ttname"><a href="class_c_sprite.html#abf8f791e7242b1c223a6b480a10da46f">CSprite::GetSpriteData</a></div><div class="ttdeci">std::shared_ptr&lt; SSpriteData &gt; GetSpriteData()</div><div class="ttdef"><b>Definition:</b> CSprite.h:48</div></div>
+<div class="ttc" id="aclass_c_sprite_html_ac792f309461325813cf28b5cccdee507"><div class="ttname"><a href="class_c_sprite.html#ac792f309461325813cf28b5cccdee507">CSprite::Release</a></div><div class="ttdeci">void Release()</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:48</div></div>
+<div class="ttc" id="aclass_c_sprite_html_acc86d110750d89f7c29c8c54fe3ea447"><div class="ttname"><a href="class_c_sprite.html#acc86d110750d89f7c29c8c54fe3ea447">CSprite::Init</a></div><div class="ttdeci">HRESULT Init(ID3D11Device *pDevice11, ID3D11DeviceContext *pContext11, const char *fileName, const SSpriteState &amp;pSs)</div><div class="ttdef"><b>Definition:</b> CSprite.cpp:32</div></div>
+<div class="ttc" id="aclass_c_sprite_html_aceba0b9bb9640dd118445b363159bf8e"><div class="ttname"><a href="class_c_sprite.html#aceba0b9bb9640dd118445b363159bf8e">CSprite::SetIsUVScroll</a></div><div class="ttdeci">void SetIsUVScroll(const bool &amp;isScroll)</div><div class="ttdef"><b>Definition:</b> CSprite.h:53</div></div>
+<div class="ttc" id="aclass_c_sprite_html_af28caeaf201ae0fb73b739b6e5fc3104"><div class="ttname"><a href="class_c_sprite.html#af28caeaf201ae0fb73b739b6e5fc3104">CSprite::SetIsAnimation</a></div><div class="ttdeci">void SetIsAnimation(const bool &amp;isAnim)</div><div class="ttdef"><b>Definition:</b> CSprite.h:51</div></div>
+<div class="ttc" id="astruct_c_sprite_shader_1_1_v_e_r_t_e_x_html"><div class="ttname"><a href="struct_c_sprite_shader_1_1_v_e_r_t_e_x.html">CSpriteShader::VERTEX</a></div><div class="ttdef"><b>Definition:</b> SpriteShader.h:23</div></div>
+<div class="ttc" id="astruct_s_sprite_state_html"><div class="ttname"><a href="struct_s_sprite_state.html">SSpriteState</a></div><div class="ttdef"><b>Definition:</b> SpriteState.h:32</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

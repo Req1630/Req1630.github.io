@@ -1,0 +1,241 @@
+\hypertarget{class_c_collider_base}{}\doxysection{CCollider\+Base クラス}
+\label{class_c_collider_base}\index{CColliderBase@{CColliderBase}}
+
+
+{\ttfamily \#include $<$Collider\+Base.\+h$>$}
+
+
+
+CCollider\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_collider_base_a54f284b1d911c16249574725b9170c7e}{CCollider\+Base}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_collider_base_a7b2b05aa2064e2d3638af032633cfd44}{$\sim$\+CCollider\+Base}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_collider_base_a5277b3ffd6abed9c34b61a6ed51d83db}{Debug\+Render}} ()=0
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_collider_base_a5e18e0fa3800aaf61b7d367367fa955c}{Get\+Position}} () const
+\item 
+void \mbox{\hyperlink{class_c_collider_base_a6460acd217533910b54280cae3d95a31}{Set\+Position}} (D3\+DXVECTOR3 $\ast$pv\+Position)
+\item 
+void \mbox{\hyperlink{class_c_collider_base_aa454e12302ac97428da21f3cdc143ddc}{Set\+Adj\+Position}} (const D3\+DXVECTOR3 \&pos)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_collider_base_a519214a78b090e223f4409cef741f888}{Get\+Rotation}} () const
+\item 
+void \mbox{\hyperlink{class_c_collider_base_a41f844b57025ba557d6f72a082fea98c}{Set\+Rotation}} (D3\+DXVECTOR3 $\ast$pv\+Rotation)
+\item 
+float \mbox{\hyperlink{class_c_collider_base_ae7457760ef60486dc31b458e3919177c}{Get\+Scale}} () const
+\item 
+void \mbox{\hyperlink{class_c_collider_base_a7f1a552fb42321bc7004dee0e90aa48f}{Set\+Scale}} (float $\ast$p\+Scale)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collider_base_a4c7fec97335574b0f033fd6603077652}{Get\+Bounding\+Box}} (LPD3\+DXMESH p\+In\+Mesh, D3\+DXVECTOR3 \&v\+Out\+Max, D3\+DXVECTOR3 \&v\+Out\+Min)
+\item 
+HRESULT \mbox{\hyperlink{class_c_collider_base_a413fb6d4f43543932fae503b44c5661f}{Get\+Bounding\+Sphere}} (LPD3\+DXMESH p\+In\+Mesh, float \&f\+Out\+Radius)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+D3\+DXVECTOR3 $\ast$ \mbox{\hyperlink{class_c_collider_base_a63b24ff573c132299cc17ca996780e93}{m\+\_\+pv\+Position}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_collider_base_ac0676a4b42f42450c2b5953fceb20b4d}{m\+\_\+v\+Adj\+Position}}
+\item 
+D3\+DXVECTOR3 $\ast$ \mbox{\hyperlink{class_c_collider_base_a0128631d048ff98e637d49cf941af7bc}{m\+\_\+pv\+Rotation}}
+\item 
+float $\ast$ \mbox{\hyperlink{class_c_collider_base_ac91d0c7a0f1033b66450cf64648bdd95}{m\+\_\+p\+Scale}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_collider_base_a54f284b1d911c16249574725b9170c7e}\label{class_c_collider_base_a54f284b1d911c16249574725b9170c7e}} 
+\index{CColliderBase@{CColliderBase}!CColliderBase@{CColliderBase}}
+\index{CColliderBase@{CColliderBase}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{CColliderBase()}{CColliderBase()}}
+{\footnotesize\ttfamily CCollider\+Base\+::\+CCollider\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_collider_base_a7b2b05aa2064e2d3638af032633cfd44}\label{class_c_collider_base_a7b2b05aa2064e2d3638af032633cfd44}} 
+\index{CColliderBase@{CColliderBase}!````~CColliderBase@{$\sim$CColliderBase}}
+\index{````~CColliderBase@{$\sim$CColliderBase}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$CColliderBase()}{~CColliderBase()}}
+{\footnotesize\ttfamily CCollider\+Base\+::$\sim$\+CCollider\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_collider_base_a5277b3ffd6abed9c34b61a6ed51d83db}\label{class_c_collider_base_a5277b3ffd6abed9c34b61a6ed51d83db}} 
+\index{CColliderBase@{CColliderBase}!DebugRender@{DebugRender}}
+\index{DebugRender@{DebugRender}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{DebugRender()}{DebugRender()}}
+{\footnotesize\ttfamily virtual void CCollider\+Base\+::\+Debug\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_sphere_collision_a48cba9a82505edbbd7c97c651ab97a84}{CSphere\+Collision}}, \mbox{\hyperlink{class_c_o_b_box_collision_a4e9daacdbe7600f1db73eada94d4cfdf}{COBBox\+Collision}}, \mbox{\hyperlink{class_c_capsule_collision_a5dbe6be88f59876b9499c769c6664b19}{CCapsule\+Collision}}で実装されています。
+
+\mbox{\Hypertarget{class_c_collider_base_a4c7fec97335574b0f033fd6603077652}\label{class_c_collider_base_a4c7fec97335574b0f033fd6603077652}} 
+\index{CColliderBase@{CColliderBase}!GetBoundingBox@{GetBoundingBox}}
+\index{GetBoundingBox@{GetBoundingBox}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{GetBoundingBox()}{GetBoundingBox()}}
+{\footnotesize\ttfamily HRESULT CCollider\+Base\+::\+Get\+Bounding\+Box (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+In\+Mesh,  }\item[{D3\+DXVECTOR3 \&}]{v\+Out\+Max,  }\item[{D3\+DXVECTOR3 \&}]{v\+Out\+Min }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a4c7fec97335574b0f033fd6603077652_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_a413fb6d4f43543932fae503b44c5661f}\label{class_c_collider_base_a413fb6d4f43543932fae503b44c5661f}} 
+\index{CColliderBase@{CColliderBase}!GetBoundingSphere@{GetBoundingSphere}}
+\index{GetBoundingSphere@{GetBoundingSphere}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{GetBoundingSphere()}{GetBoundingSphere()}}
+{\footnotesize\ttfamily HRESULT CCollider\+Base\+::\+Get\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+In\+Mesh,  }\item[{float \&}]{f\+Out\+Radius }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a413fb6d4f43543932fae503b44c5661f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a413fb6d4f43543932fae503b44c5661f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_a5e18e0fa3800aaf61b7d367367fa955c}\label{class_c_collider_base_a5e18e0fa3800aaf61b7d367367fa955c}} 
+\index{CColliderBase@{CColliderBase}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCollider\+Base\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a5e18e0fa3800aaf61b7d367367fa955c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_a519214a78b090e223f4409cef741f888}\label{class_c_collider_base_a519214a78b090e223f4409cef741f888}} 
+\index{CColliderBase@{CColliderBase}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCollider\+Base\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a519214a78b090e223f4409cef741f888_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_ae7457760ef60486dc31b458e3919177c}\label{class_c_collider_base_ae7457760ef60486dc31b458e3919177c}} 
+\index{CColliderBase@{CColliderBase}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily float CCollider\+Base\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_collider_base_aa454e12302ac97428da21f3cdc143ddc}\label{class_c_collider_base_aa454e12302ac97428da21f3cdc143ddc}} 
+\index{CColliderBase@{CColliderBase}!SetAdjPosition@{SetAdjPosition}}
+\index{SetAdjPosition@{SetAdjPosition}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{SetAdjPosition()}{SetAdjPosition()}}
+{\footnotesize\ttfamily void CCollider\+Base\+::\+Set\+Adj\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_aa454e12302ac97428da21f3cdc143ddc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_a6460acd217533910b54280cae3d95a31}\label{class_c_collider_base_a6460acd217533910b54280cae3d95a31}} 
+\index{CColliderBase@{CColliderBase}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void CCollider\+Base\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 $\ast$}]{pv\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a6460acd217533910b54280cae3d95a31_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_a41f844b57025ba557d6f72a082fea98c}\label{class_c_collider_base_a41f844b57025ba557d6f72a082fea98c}} 
+\index{CColliderBase@{CColliderBase}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily void CCollider\+Base\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{D3\+DXVECTOR3 $\ast$}]{pv\+Rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a41f844b57025ba557d6f72a082fea98c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_collider_base_a7f1a552fb42321bc7004dee0e90aa48f}\label{class_c_collider_base_a7f1a552fb42321bc7004dee0e90aa48f}} 
+\index{CColliderBase@{CColliderBase}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}}
+{\footnotesize\ttfamily void CCollider\+Base\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{float $\ast$}]{p\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_collider_base_a7f1a552fb42321bc7004dee0e90aa48f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_collider_base_ac91d0c7a0f1033b66450cf64648bdd95}\label{class_c_collider_base_ac91d0c7a0f1033b66450cf64648bdd95}} 
+\index{CColliderBase@{CColliderBase}!m\_pScale@{m\_pScale}}
+\index{m\_pScale@{m\_pScale}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pScale}{m\_pScale}}
+{\footnotesize\ttfamily float$\ast$ CCollider\+Base\+::m\+\_\+p\+Scale\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_collider_base_a63b24ff573c132299cc17ca996780e93}\label{class_c_collider_base_a63b24ff573c132299cc17ca996780e93}} 
+\index{CColliderBase@{CColliderBase}!m\_pvPosition@{m\_pvPosition}}
+\index{m\_pvPosition@{m\_pvPosition}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pvPosition}{m\_pvPosition}}
+{\footnotesize\ttfamily D3\+DXVECTOR3$\ast$ CCollider\+Base\+::m\+\_\+pv\+Position\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_collider_base_a0128631d048ff98e637d49cf941af7bc}\label{class_c_collider_base_a0128631d048ff98e637d49cf941af7bc}} 
+\index{CColliderBase@{CColliderBase}!m\_pvRotation@{m\_pvRotation}}
+\index{m\_pvRotation@{m\_pvRotation}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pvRotation}{m\_pvRotation}}
+{\footnotesize\ttfamily D3\+DXVECTOR3$\ast$ CCollider\+Base\+::m\+\_\+pv\+Rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_collider_base_ac0676a4b42f42450c2b5953fceb20b4d}\label{class_c_collider_base_ac0676a4b42f42450c2b5953fceb20b4d}} 
+\index{CColliderBase@{CColliderBase}!m\_vAdjPosition@{m\_vAdjPosition}}
+\index{m\_vAdjPosition@{m\_vAdjPosition}!CColliderBase@{CColliderBase}}
+\doxysubsubsection{\texorpdfstring{m\_vAdjPosition}{m\_vAdjPosition}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CCollider\+Base\+::m\+\_\+v\+Adj\+Position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Collider\+Base/\mbox{\hyperlink{_collider_base_8h}{Collider\+Base.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Collider\+Base/\mbox{\hyperlink{_collider_base_8cpp}{Collider\+Base.\+cpp}}\end{DoxyCompactItemize}

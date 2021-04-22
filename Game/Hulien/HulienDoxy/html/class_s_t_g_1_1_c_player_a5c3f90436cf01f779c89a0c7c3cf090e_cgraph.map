@@ -1,0 +1,7 @@
+<map id="STG::CPlayer::Controller" name="STG::CPlayer::Controller">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,171,108"/>
+<area shape="rect" id="node2" href="$class_c_x_input.html#a281a3f32681b5573538fd21dda015440" title=" " alt="" coords="221,5,381,32"/>
+<area shape="rect" id="node3" href="$class_c_x_input.html#a7aed4dcbe2bcaf6a3e66cc75deae64fc" title=" " alt="" coords="219,56,382,83"/>
+<area shape="rect" id="node4" href="$class_c_x_input.html#a5a4c1fb5bc724d78dbd9560ded102f9b" title=" " alt="" coords="219,107,382,133"/>
+<area shape="rect" id="node5" href="$class_c_x_input.html#aeec3dcae35bac5fdea886d3553f1fca5" title=" " alt="" coords="219,157,383,184"/>
+</map>

@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/STG/Character/Enemy/STGEnemy.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_276a54fb21f513fac7132c893a2a5fc2.html">STG</a></li><li class="navelem"><a class="el" href="dir_6fcb8498315d752def033d8c0091df91.html">Character</a></li><li class="navelem"><a class="el" href="dir_34a5c5de1da50579b89ff86a537d434c.html">Enemy</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">STGEnemy.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_s_t_g_enemy_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="namespace_s_t_g.html#a7938e9c4280e54705218d4ec8c7169b7">    1</a></span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STG_ENEMY_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define STG_ENEMY_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\STGCharacter.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s_t_g_enemy_param_8h.html">STGEnemyParam.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_font.html">CFont</a>;    <span class="comment">// フォントクラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_bullet_manager.html">CBulletManager</a>;   <span class="comment">// 弾管理クラス.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">struct </span>stBulletManagerParam typedef <a class="code" href="struct_s_t_g_1_1_s_bullet_manager_param.html">SBulletManagerParam</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_s_t_g.html">STG</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">    /*****************************************</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    *   敵クラス.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    **/</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_enemy.html">   27</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_s_t_g_1_1_c_enemy.html">CEnemy</a> : <span class="keyword">public</span> <a class="code" href="class_s_t_g_1_1_c_character.html">STG::CCharacter</a></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="comment">// 死亡した際のカメラアップパラメータ.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">struct </span>stDeadUpParam</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <span class="keywordtype">float</span>   MoveSpeed;          <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordtype">float</span>   MoveAccValue;       <span class="comment">// 移動加速値.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordtype">float</span>   CameraShakeCount;   <span class="comment">// カメラの揺れカウント.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordtype">bool</span>    IsMoveEnd;          <span class="comment">// 移動が終了したか.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keywordtype">bool</span>    IsPlaySE;           <span class="comment">// SEを鳴らしたか.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            stDeadUpParam()</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                : MoveSpeed         ( 0.2f )</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                , MoveAccValue      ( 0.0f )</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                , CameraShakeCount  ( 40.0f )</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                , IsMoveEnd         ( <span class="keyword">false</span> )</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                , IsPlaySE          ( <span class="keyword">false</span> )</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            {}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">inline</span> <span class="keywordtype">float</span> GetShakeValue()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">            </span>{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <span class="keywordflow">return</span> sinf( <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DX_PI) * 2.0f / 3.0f * this-&gt;CameraShakeCount ) *</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                    ( this-&gt;CameraShakeCount*0.005f );</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        } <span class="keyword">typedef</span> SDeadUpParam;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_enemy.html#a697af99f303c1a266f9f5cdfca2430b6">CEnemy</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_enemy.html#a697af99f303c1a266f9f5cdfca2430b6">CEnemy</a>( <span class="keyword">const</span> <a class="code" href="struct_s_t_g_1_1_s_enemy_param.html">STG::SEnemyParam</a>&amp; param );</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_s_t_g_1_1_c_enemy.html#a697af99f303c1a266f9f5cdfca2430b6">CEnemy</a>( </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keyword">const</span> <a class="code" href="struct_s_t_g_1_1_s_enemy_param.html">STG::SEnemyParam</a>&amp; param, </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">const</span> std::vector&lt;SBulletManagerParam&gt;&amp; bulletParams );</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a2439841ebc534918420d84075c831071">~CEnemy</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#af6bb5346def286a2db0b7c415d8d5244">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#aa869e2d42a1d1ac9c4aeb8e17b0913f2">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a0401d9e86c8786242bed587e9e1755fd">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">// 当たり判定.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a5351292a4556943a36c929b3d1085cfd">Collision</a>( <a class="code" href="class_s_t_g_1_1_c_actor.html">STG::CActor</a>* pActor ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// スポーン時間の取得.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_enemy.html#a34ef81300691009326cadbef16602112">   71</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">float</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a34ef81300691009326cadbef16602112">GetSpawnTime</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> PARAMETER.<a class="code" href="struct_s_t_g_1_1_s_enemy_param.html#a6fec955b2db8f6ff67bd5ef1bfd6b5e0">SpawnTime</a>; }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">// y座標の設定.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_enemy.html#a4c68a6ef53d554fa4a42b74bde00523d">   73</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a4c68a6ef53d554fa4a42b74bde00523d">SetPositionY</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; posY ){ <a class="code" href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">m_vPosition</a>.y = posY; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">// 死亡したか.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_enemy.html#a87c6c2a075b0e149b1a0c2e2763d4a49">   76</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a87c6c2a075b0e149b1a0c2e2763d4a49">IsDead</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_DeadUpParam.CameraShakeCount &lt;= 0.0f; }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// 最後のスポーンフラグの設定.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_enemy.html#a75e1018d91169cdc100cbe3bb55f5462">   79</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a75e1018d91169cdc100cbe3bb55f5462">SetLastSpawn</a>(){ m_IsMySpawnLast = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// 全弾の動作が終了したか.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_s_t_g_1_1_c_enemy.html#a924ecd82d07b8dc4c1c8588e4ad7ea80">   82</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_s_t_g_1_1_c_enemy.html#a924ecd82d07b8dc4c1c8588e4ad7ea80">IsAllBulletUpdateEnd</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsAllBulletUpdateEnd == <span class="keyword">true</span> &amp;&amp; <a class="code" href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">m_IsActive</a> == <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// スポーン.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordtype">void</span> Spawn();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">// 移動関数.</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> Move() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// 弾を撃つ.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">void</span> Shot();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">// 逃げる.</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> Escape();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// 死亡.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> Dead();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// スポーンラストの際の死亡処理.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordtype">void</span> SpawnLastDead();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// 当たった時の揺れ.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordtype">void</span> HitShake();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// ライフ計算関数.</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> LifeCalculation( <span class="keyword">const</span> std::function&lt;<span class="keywordtype">void</span>(<span class="keywordtype">float</span>&amp;)&gt;&amp; ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="comment">// ランダムで移動ベクトルを検索.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordtype">void</span> SearchRandomMoveVector();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="comment">// 当たり判定の作成.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordtype">bool</span> CollisionInit();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keyword">const</span> <a class="code" href="struct_s_t_g_1_1_s_enemy_param.html">STG::SEnemyParam</a> PARAMETER;   <span class="comment">// パラメータ.</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        std::vector&lt;std::unique_ptr&lt;CBulletManager&gt;&gt;    m_pGuns;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::unique_ptr&lt;CFont&gt;  m_pFont;                <span class="comment">// フォントクラス.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="namespace_s_t_g.html#a55dc19c0d7ddc2215e7227af70c29adb">STG::EEnemyState</a>        m_NowState;             <span class="comment">// 現在の状態.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        SDeadUpParam            m_DeadUpParam;          <span class="comment">// 死亡時のカメラアップパラメータ.</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        D3DXVECTOR3             m_FontRotation;         <span class="comment">// フォントの回転値.</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordtype">float</span>                   m_MoveSpeed;            <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordtype">float</span>                   m_MoveingDistance;      <span class="comment">// 移動距離.</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">float</span>                   m_MoveingDistanceMax;   <span class="comment">// 移動距離.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">float</span>                   m_ShakeCount;           <span class="comment">// 揺れのカウント.</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordtype">float</span>                   m_EscapeCount;          <span class="comment">// 逃げるカウント.</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">int</span>                     m_SpawnCount;           <span class="comment">// スポーンカウント.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">bool</span>                    m_IsHitShake;           <span class="comment">// 当たった時の揺れをするか.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">bool</span>                    m_IsMySpawnLast;        <span class="comment">// 自分が最後のスポーン.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordtype">bool</span>                    m_IsAllBulletUpdateEnd; <span class="comment">// 全弾の動作が終了したか.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    };</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef STG_ENEMY_H.</span></div>
+<div class="ttc" id="a_s_t_g_enemy_param_8h_html"><div class="ttname"><a href="_s_t_g_enemy_param_8h.html">STGEnemyParam.h</a></div><div class="ttdoc">STG用の敵パラメータ.</div></div>
+<div class="ttc" id="aclass_c_font_html"><div class="ttname"><a href="class_c_font.html">CFont</a></div><div class="ttdef"><b>Definition:</b> Font.h:16</div></div>
+<div class="ttc" id="aclass_c_game_object_html_a67f2224f36e99bfa9a1bf17f4cb28a78"><div class="ttname"><a href="class_c_game_object.html#a67f2224f36e99bfa9a1bf17f4cb28a78">CGameObject::m_vPosition</a></div><div class="ttdeci">D3DXVECTOR3 m_vPosition</div><div class="ttdef"><b>Definition:</b> GameObject.h:55</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html">STG::CActor</a></div><div class="ttdef"><b>Definition:</b> STGActor.h:22</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_actor_html_a232d4f587e8f4704ae432579c67357fb"><div class="ttname"><a href="class_s_t_g_1_1_c_actor.html#a232d4f587e8f4704ae432579c67357fb">STG::CActor::m_IsActive</a></div><div class="ttdeci">bool m_IsActive</div><div class="ttdef"><b>Definition:</b> STGActor.h:53</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_bullet_manager_html"><div class="ttname"><a href="class_s_t_g_1_1_c_bullet_manager.html">STG::CBulletManager</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:18</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_character_html"><div class="ttname"><a href="class_s_t_g_1_1_c_character.html">STG::CCharacter</a></div><div class="ttdef"><b>Definition:</b> STGCharacter.h:18</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html">STG::CEnemy</a></div><div class="ttdef"><b>Definition:</b> STGEnemy.h:28</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a0401d9e86c8786242bed587e9e1755fd"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a0401d9e86c8786242bed587e9e1755fd">STG::CEnemy::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> STGEnemy.cpp:131</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a2439841ebc534918420d84075c831071"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a2439841ebc534918420d84075c831071">STG::CEnemy::~CEnemy</a></div><div class="ttdeci">virtual ~CEnemy()</div><div class="ttdef"><b>Definition:</b> STGEnemy.cpp:91</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a34ef81300691009326cadbef16602112"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a34ef81300691009326cadbef16602112">STG::CEnemy::GetSpawnTime</a></div><div class="ttdeci">float GetSpawnTime() const</div><div class="ttdef"><b>Definition:</b> STGEnemy.h:71</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a4c68a6ef53d554fa4a42b74bde00523d"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a4c68a6ef53d554fa4a42b74bde00523d">STG::CEnemy::SetPositionY</a></div><div class="ttdeci">void SetPositionY(const float &amp;posY)</div><div class="ttdef"><b>Definition:</b> STGEnemy.h:73</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a5351292a4556943a36c929b3d1085cfd"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a5351292a4556943a36c929b3d1085cfd">STG::CEnemy::Collision</a></div><div class="ttdeci">virtual void Collision(STG::CActor *pActor) override</div><div class="ttdef"><b>Definition:</b> STGEnemy.cpp:154</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a697af99f303c1a266f9f5cdfca2430b6"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a697af99f303c1a266f9f5cdfca2430b6">STG::CEnemy::CEnemy</a></div><div class="ttdeci">CEnemy()</div><div class="ttdef"><b>Definition:</b> STGEnemy.cpp:43</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a75e1018d91169cdc100cbe3bb55f5462"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a75e1018d91169cdc100cbe3bb55f5462">STG::CEnemy::SetLastSpawn</a></div><div class="ttdeci">void SetLastSpawn()</div><div class="ttdef"><b>Definition:</b> STGEnemy.h:79</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a87c6c2a075b0e149b1a0c2e2763d4a49"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a87c6c2a075b0e149b1a0c2e2763d4a49">STG::CEnemy::IsDead</a></div><div class="ttdeci">bool IsDead() const</div><div class="ttdef"><b>Definition:</b> STGEnemy.h:76</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_a924ecd82d07b8dc4c1c8588e4ad7ea80"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#a924ecd82d07b8dc4c1c8588e4ad7ea80">STG::CEnemy::IsAllBulletUpdateEnd</a></div><div class="ttdeci">bool IsAllBulletUpdateEnd() const</div><div class="ttdef"><b>Definition:</b> STGEnemy.h:82</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_aa869e2d42a1d1ac9c4aeb8e17b0913f2"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#aa869e2d42a1d1ac9c4aeb8e17b0913f2">STG::CEnemy::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> STGEnemy.cpp:106</div></div>
+<div class="ttc" id="aclass_s_t_g_1_1_c_enemy_html_af6bb5346def286a2db0b7c415d8d5244"><div class="ttname"><a href="class_s_t_g_1_1_c_enemy.html#af6bb5346def286a2db0b7c415d8d5244">STG::CEnemy::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> STGEnemy.cpp:96</div></div>
+<div class="ttc" id="anamespace_s_t_g_html"><div class="ttname"><a href="namespace_s_t_g.html">STG</a></div><div class="ttdef"><b>Definition:</b> BuletManager.h:13</div></div>
+<div class="ttc" id="anamespace_s_t_g_html_a55dc19c0d7ddc2215e7227af70c29adb"><div class="ttname"><a href="namespace_s_t_g.html#a55dc19c0d7ddc2215e7227af70c29adb">STG::EEnemyState</a></div><div class="ttdeci">EEnemyState</div><div class="ttdef"><b>Definition:</b> STGEnemyParam.h:35</div></div>
+<div class="ttc" id="astruct_s_t_g_1_1_s_bullet_manager_param_html"><div class="ttname"><a href="struct_s_t_g_1_1_s_bullet_manager_param.html">STG::SBulletManagerParam</a></div><div class="ttdef"><b>Definition:</b> BulletManagerParam.h:15</div></div>
+<div class="ttc" id="astruct_s_t_g_1_1_s_enemy_param_html"><div class="ttname"><a href="struct_s_t_g_1_1_s_enemy_param.html">STG::SEnemyParam</a></div><div class="ttdef"><b>Definition:</b> STGEnemyParam.h:15</div></div>
+<div class="ttc" id="astruct_s_t_g_1_1_s_enemy_param_html_a6fec955b2db8f6ff67bd5ef1bfd6b5e0"><div class="ttname"><a href="struct_s_t_g_1_1_s_enemy_param.html#a6fec955b2db8f6ff67bd5ef1bfd6b5e0">STG::SEnemyParam::SpawnTime</a></div><div class="ttdeci">float SpawnTime</div><div class="ttdef"><b>Definition:</b> STGEnemyParam.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

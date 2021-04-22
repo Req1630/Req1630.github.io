@@ -1,0 +1,8 @@
+<map id="CCollisionManager::IsOBBToOBB" name="CCollisionManager::IsOBBToOBB">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,144,149"/>
+<area shape="rect" id="node2" href="$class_c_o_b_box_collision.html#ab5508a2799e638302bbd165d5d6dfdb9" title=" " alt="" coords="192,5,395,32"/>
+<area shape="rect" id="node3" href="$class_c_o_b_box_collision.html#a5e48c38847660300b1c7f2aceed41a74" title=" " alt="" coords="198,56,389,83"/>
+<area shape="rect" id="node4" href="$class_c_collision_manager.html#aa2010e4225d10daa335edb4aed4c975d" title=" " alt="" coords="224,107,363,149"/>
+<area shape="rect" id="node5" href="$class_c_collider_base.html#a5e18e0fa3800aaf61b7d367367fa955c" title=" " alt="" coords="203,173,383,200"/>
+<area shape="rect" id="node6" href="$class_c_o_b_box_collision.html#a38ff70f832b48c4e774c268745bb14b0" title=" " alt="" coords="196,225,391,266"/>
+</map>

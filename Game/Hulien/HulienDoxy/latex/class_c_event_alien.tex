@@ -1,0 +1,389 @@
+\hypertarget{class_c_event_alien}{}\doxysection{CEvent\+Alien クラス}
+\label{class_c_event_alien}\index{CEventAlien@{CEventAlien}}
+
+
+{\ttfamily \#include $<$Event\+Alien.\+h$>$}
+
+
+
+CEvent\+Alien の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{class_c_event_alien__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEvent\+Alien 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}{EEvent\+Alien\+State}} \{ \newline
+\mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea4fd1dddbd78f7f7cdcd62e926266611e}{Spawn}}
+, \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6bc362dbf494c61ea117fe3c71ca48a5}{Move}}
+, \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea3268caeffd536549f2d6374cb493ec0e}{Abduct}}
+, \newline
+\mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea013ec032d3460d4be4431c6ab1f8f224}{Escape}}
+, \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea63f0bec27f1622280627c850ba08650b}{Blow\+Away}}
+, \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea0f68101772bd5397ef8eb1b632798652}{Wait}}
+, \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805b}{EAnim\+No}} \{ \newline
+\mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba82bfc6d58802928849211ddac3d87794}{EAnim\+No\+\_\+\+None}} = -\/1
+, \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bad6d5e4ad055e001abc0d7fd04b5933d8}{EAnim\+No\+\_\+\+Move}}
+, \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805baf391ced354dc28184159140dd216d691}{EAnim\+No\+\_\+\+Arm}}
+, \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba44606b2d9b3fd3c2832ab3ea0ab234d5}{EAnim\+No\+\_\+\+Damage}}
+, \newline
+\mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bad60fe330aeaf05a1f1130d1e1e241b36}{EAnim\+No\+\_\+\+Dead}}
+, \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba3982e19cd1f051a728bd69a4a59b7b5c}{EAnim\+No\+\_\+\+Max}}
+, \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bab4d09585b773fca9a60359a333973dc7}{EAnim\+No\+\_\+\+Begin}} = EAnim\+No\+\_\+\+Move
+, \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba0318c51e342bf696d2d83898e18cf7dc}{EAnim\+No\+\_\+\+End}} = EAnim\+No\+\_\+\+Max
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_alien_aa2887b22903e156d17f1b5b0a8410712}{CEvent\+Alien}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_alien_aa41187c35b6f5c6792eef210d306c87a}{$\sim$\+CEvent\+Alien}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_event_alien_ac67066554c3c3e7f1ff978e8869dc9d3}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor) override
+\item 
+bool \mbox{\hyperlink{class_c_event_alien_a430ecbc1ea4edb3071bf876bb1b77f5f}{Is\+Barrier\+Hit}} () const
+\item 
+void \mbox{\hyperlink{class_c_event_alien_a0c43ec60e175100b3572229e2d2bbe78}{Set\+Alien\+State}} (const \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}{EEvent\+Alien\+State}} \&state)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_event_alien_a6d47b7f0a4a23806604334d2b4a33ab5}{Get\+Target\+Position}} () const
+\item 
+bool \mbox{\hyperlink{class_c_event_alien_a85f8f05aaded22c2bf90ef747a6b0176}{Is\+Grab}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_event_alien_afd4a44e53bcf4213b58e4622f14e163c}{Current\+State\+Update}} ()
+\item 
+void \mbox{\hyperlink{class_c_event_alien_ac62bb5b4220baf4a9e80440e25ccbf3c}{Set\+Girl\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&actor)
+\item 
+virtual void \mbox{\hyperlink{class_c_event_alien_a4296423fa962e3866261adaaf3a2203a}{Spawning}} ()
+\item 
+void \mbox{\hyperlink{class_c_event_alien_a3e073ed3bc1dd073169e00e820055dc4}{Girl\+Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor)
+\item 
+void \mbox{\hyperlink{class_c_event_alien_a2a718ed8e0ade1d1abdcb36c621da04d}{Barrier\+Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_arm}{CArm}} $>$ \mbox{\hyperlink{class_c_event_alien_a22a35044aabdd67db9a181950fa02606}{m\+\_\+p\+Arm}}
+\item 
+D3\+DXVECTOR3 $\ast$ \mbox{\hyperlink{class_c_event_alien_abdd7397f3914ad9a9e36a746557a3870}{m\+\_\+p\+Abduct\+UFOPosition}}
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_event_alien_a7b6a30332acb4d9b300b351e27280af0}{m\+\_\+v\+Target\+Position}}
+\item 
+\mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}{EEvent\+Alien\+State}} \mbox{\hyperlink{class_c_event_alien_aab079dcc1d02c4304cb2e1fa0f937e0e}{m\+\_\+\+Now\+State}}
+\item 
+bool \mbox{\hyperlink{class_c_event_alien_a91be83110b076339c6b3d7ae25dc3de5}{m\+\_\+\+Is\+Barrier\+Hit}}
+\item 
+float \mbox{\hyperlink{class_c_event_alien_a78a687181ce22fc95beda5bfe29bffae}{m\+\_\+\+Speed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{列挙型メンバ詳解}
+\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805b}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805b}} 
+\index{CEventAlien@{CEventAlien}!EAnimNo@{EAnimNo}}
+\index{EAnimNo@{EAnimNo}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{EAnimNo}{EAnimNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805b}{CEvent\+Alien\+::\+EAnim\+No}}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_None@{EAnimNo\_None}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_None@{EAnimNo\_None}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba82bfc6d58802928849211ddac3d87794}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba82bfc6d58802928849211ddac3d87794}} 
+EAnim\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Move@{EAnimNo\_Move}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_Move@{EAnimNo\_Move}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bad6d5e4ad055e001abc0d7fd04b5933d8}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bad6d5e4ad055e001abc0d7fd04b5933d8}} 
+EAnim\+No\+\_\+\+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Arm@{EAnimNo\_Arm}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_Arm@{EAnimNo\_Arm}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805baf391ced354dc28184159140dd216d691}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805baf391ced354dc28184159140dd216d691}} 
+EAnim\+No\+\_\+\+Arm&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Damage@{EAnimNo\_Damage}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_Damage@{EAnimNo\_Damage}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba44606b2d9b3fd3c2832ab3ea0ab234d5}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba44606b2d9b3fd3c2832ab3ea0ab234d5}} 
+EAnim\+No\+\_\+\+Damage&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Dead@{EAnimNo\_Dead}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_Dead@{EAnimNo\_Dead}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bad60fe330aeaf05a1f1130d1e1e241b36}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bad60fe330aeaf05a1f1130d1e1e241b36}} 
+EAnim\+No\+\_\+\+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Max@{EAnimNo\_Max}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_Max@{EAnimNo\_Max}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba3982e19cd1f051a728bd69a4a59b7b5c}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba3982e19cd1f051a728bd69a4a59b7b5c}} 
+EAnim\+No\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_Begin@{EAnimNo\_Begin}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_Begin@{EAnimNo\_Begin}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bab4d09585b773fca9a60359a333973dc7}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805bab4d09585b773fca9a60359a333973dc7}} 
+EAnim\+No\+\_\+\+Begin&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EAnimNo\_End@{EAnimNo\_End}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!EAnimNo\_End@{EAnimNo\_End}}}\mbox{\Hypertarget{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba0318c51e342bf696d2d83898e18cf7dc}\label{class_c_event_alien_a2c950deeacf664cb9cc5670336c0805ba0318c51e342bf696d2d83898e18cf7dc}} 
+EAnim\+No\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}} 
+\index{CEventAlien@{CEventAlien}!EEventAlienState@{EEventAlienState}}
+\index{EEventAlienState@{EEventAlienState}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{EEventAlienState}{EEventAlienState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}{CEvent\+Alien\+::\+EEvent\+Alien\+State}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!None@{None}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6adf97f83acf6453d4a6a4b1070f3754}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spawn@{Spawn}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!Spawn@{Spawn}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea4fd1dddbd78f7f7cdcd62e926266611e}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea4fd1dddbd78f7f7cdcd62e926266611e}} 
+Spawn&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Move@{Move}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!Move@{Move}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6bc362dbf494c61ea117fe3c71ca48a5}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6bc362dbf494c61ea117fe3c71ca48a5}} 
+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Abduct@{Abduct}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!Abduct@{Abduct}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea3268caeffd536549f2d6374cb493ec0e}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea3268caeffd536549f2d6374cb493ec0e}} 
+Abduct&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Escape@{Escape}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!Escape@{Escape}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea013ec032d3460d4be4431c6ab1f8f224}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea013ec032d3460d4be4431c6ab1f8f224}} 
+Escape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BlowAway@{BlowAway}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!BlowAway@{BlowAway}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea63f0bec27f1622280627c850ba08650b}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea63f0bec27f1622280627c850ba08650b}} 
+Blow\+Away&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Wait@{Wait}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!Wait@{Wait}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea0f68101772bd5397ef8eb1b632798652}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea0f68101772bd5397ef8eb1b632798652}} 
+Wait&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!CEventAlien@{CEventAlien}}\index{CEventAlien@{CEventAlien}!Max@{Max}}}\mbox{\Hypertarget{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6a061313d22e51e0f25b7cd4dc065233}\label{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628ea6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_alien_aa2887b22903e156d17f1b5b0a8410712}\label{class_c_event_alien_aa2887b22903e156d17f1b5b0a8410712}} 
+\index{CEventAlien@{CEventAlien}!CEventAlien@{CEventAlien}}
+\index{CEventAlien@{CEventAlien}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{CEventAlien()}{CEventAlien()}}
+{\footnotesize\ttfamily CEvent\+Alien\+::\+CEvent\+Alien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_alien_aa41187c35b6f5c6792eef210d306c87a}\label{class_c_event_alien_aa41187c35b6f5c6792eef210d306c87a}} 
+\index{CEventAlien@{CEventAlien}!````~CEventAlien@{$\sim$CEventAlien}}
+\index{````~CEventAlien@{$\sim$CEventAlien}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventAlien()}{~CEventAlien()}}
+{\footnotesize\ttfamily CEvent\+Alien\+::$\sim$\+CEvent\+Alien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_alien_a2a718ed8e0ade1d1abdcb36c621da04d}\label{class_c_event_alien_a2a718ed8e0ade1d1abdcb36c621da04d}} 
+\index{CEventAlien@{CEventAlien}!BarrierCollision@{BarrierCollision}}
+\index{BarrierCollision@{BarrierCollision}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{BarrierCollision()}{BarrierCollision()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Barrier\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_a2a718ed8e0ade1d1abdcb36c621da04d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_a2a718ed8e0ade1d1abdcb36c621da04d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_alien_afd4a44e53bcf4213b58e4622f14e163c}\label{class_c_event_alien_afd4a44e53bcf4213b58e4622f14e163c}} 
+\index{CEventAlien@{CEventAlien}!CurrentStateUpdate@{CurrentStateUpdate}}
+\index{CurrentStateUpdate@{CurrentStateUpdate}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{CurrentStateUpdate()}{CurrentStateUpdate()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Current\+State\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_afd4a44e53bcf4213b58e4622f14e163c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_afd4a44e53bcf4213b58e4622f14e163c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_alien_a6d47b7f0a4a23806604334d2b4a33ab5}\label{class_c_event_alien_a6d47b7f0a4a23806604334d2b4a33ab5}} 
+\index{CEventAlien@{CEventAlien}!GetTargetPosition@{GetTargetPosition}}
+\index{GetTargetPosition@{GetTargetPosition}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{GetTargetPosition()}{GetTargetPosition()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CEvent\+Alien\+::\+Get\+Target\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_alien_a3e073ed3bc1dd073169e00e820055dc4}\label{class_c_event_alien_a3e073ed3bc1dd073169e00e820055dc4}} 
+\index{CEventAlien@{CEventAlien}!GirlCollision@{GirlCollision}}
+\index{GirlCollision@{GirlCollision}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{GirlCollision()}{GirlCollision()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Girl\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_a3e073ed3bc1dd073169e00e820055dc4_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_a3e073ed3bc1dd073169e00e820055dc4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_alien_a430ecbc1ea4edb3071bf876bb1b77f5f}\label{class_c_event_alien_a430ecbc1ea4edb3071bf876bb1b77f5f}} 
+\index{CEventAlien@{CEventAlien}!IsBarrierHit@{IsBarrierHit}}
+\index{IsBarrierHit@{IsBarrierHit}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{IsBarrierHit()}{IsBarrierHit()}}
+{\footnotesize\ttfamily bool CEvent\+Alien\+::\+Is\+Barrier\+Hit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_alien_a85f8f05aaded22c2bf90ef747a6b0176}\label{class_c_event_alien_a85f8f05aaded22c2bf90ef747a6b0176}} 
+\index{CEventAlien@{CEventAlien}!IsGrab@{IsGrab}}
+\index{IsGrab@{IsGrab}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{IsGrab()}{IsGrab()}}
+{\footnotesize\ttfamily bool CEvent\+Alien\+::\+Is\+Grab (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_c_event_alien_a0c43ec60e175100b3572229e2d2bbe78}\label{class_c_event_alien_a0c43ec60e175100b3572229e2d2bbe78}} 
+\index{CEventAlien@{CEventAlien}!SetAlienState@{SetAlienState}}
+\index{SetAlienState@{SetAlienState}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{SetAlienState()}{SetAlienState()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Set\+Alien\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}{EEvent\+Alien\+State}} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_alien_ac62bb5b4220baf4a9e80440e25ccbf3c}\label{class_c_event_alien_ac62bb5b4220baf4a9e80440e25ccbf3c}} 
+\index{CEventAlien@{CEventAlien}!SetGirlPos@{SetGirlPos}}
+\index{SetGirlPos@{SetGirlPos}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{SetGirlPos()}{SetGirlPos()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Set\+Girl\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_ac62bb5b4220baf4a9e80440e25ccbf3c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_ac62bb5b4220baf4a9e80440e25ccbf3c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_alien_ac67066554c3c3e7f1ff978e8869dc9d3}\label{class_c_event_alien_ac67066554c3c3e7f1ff978e8869dc9d3}} 
+\index{CEventAlien@{CEventAlien}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_ac67066554c3c3e7f1ff978e8869dc9d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_alien_a4296423fa962e3866261adaaf3a2203a}\label{class_c_event_alien_a4296423fa962e3866261adaaf3a2203a}} 
+\index{CEventAlien@{CEventAlien}!Spawning@{Spawning}}
+\index{Spawning@{Spawning}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{Spawning()}{Spawning()}}
+{\footnotesize\ttfamily void CEvent\+Alien\+::\+Spawning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_alien_a4296423fa962e3866261adaaf3a2203a_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_event_alien_a91be83110b076339c6b3d7ae25dc3de5}\label{class_c_event_alien_a91be83110b076339c6b3d7ae25dc3de5}} 
+\index{CEventAlien@{CEventAlien}!m\_IsBarrierHit@{m\_IsBarrierHit}}
+\index{m\_IsBarrierHit@{m\_IsBarrierHit}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{m\_IsBarrierHit}{m\_IsBarrierHit}}
+{\footnotesize\ttfamily bool CEvent\+Alien\+::m\+\_\+\+Is\+Barrier\+Hit\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_alien_aab079dcc1d02c4304cb2e1fa0f937e0e}\label{class_c_event_alien_aab079dcc1d02c4304cb2e1fa0f937e0e}} 
+\index{CEventAlien@{CEventAlien}!m\_NowState@{m\_NowState}}
+\index{m\_NowState@{m\_NowState}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{m\_NowState}{m\_NowState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_event_alien_a12d69467f8cc27fe7af2aa8f92d2628e}{EEvent\+Alien\+State}} CEvent\+Alien\+::m\+\_\+\+Now\+State\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_alien_abdd7397f3914ad9a9e36a746557a3870}\label{class_c_event_alien_abdd7397f3914ad9a9e36a746557a3870}} 
+\index{CEventAlien@{CEventAlien}!m\_pAbductUFOPosition@{m\_pAbductUFOPosition}}
+\index{m\_pAbductUFOPosition@{m\_pAbductUFOPosition}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{m\_pAbductUFOPosition}{m\_pAbductUFOPosition}}
+{\footnotesize\ttfamily D3\+DXVECTOR3$\ast$ CEvent\+Alien\+::m\+\_\+p\+Abduct\+UFOPosition\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_alien_a22a35044aabdd67db9a181950fa02606}\label{class_c_event_alien_a22a35044aabdd67db9a181950fa02606}} 
+\index{CEventAlien@{CEventAlien}!m\_pArm@{m\_pArm}}
+\index{m\_pArm@{m\_pArm}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{m\_pArm}{m\_pArm}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_arm}{CArm}}$>$ CEvent\+Alien\+::m\+\_\+p\+Arm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_alien_a78a687181ce22fc95beda5bfe29bffae}\label{class_c_event_alien_a78a687181ce22fc95beda5bfe29bffae}} 
+\index{CEventAlien@{CEventAlien}!m\_Speed@{m\_Speed}}
+\index{m\_Speed@{m\_Speed}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{m\_Speed}{m\_Speed}}
+{\footnotesize\ttfamily float CEvent\+Alien\+::m\+\_\+\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_alien_a7b6a30332acb4d9b300b351e27280af0}\label{class_c_event_alien_a7b6a30332acb4d9b300b351e27280af0}} 
+\index{CEventAlien@{CEventAlien}!m\_vTargetPosition@{m\_vTargetPosition}}
+\index{m\_vTargetPosition@{m\_vTargetPosition}!CEventAlien@{CEventAlien}}
+\doxysubsubsection{\texorpdfstring{m\_vTargetPosition}{m\_vTargetPosition}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CEvent\+Alien\+::m\+\_\+v\+Target\+Position\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\+Event\+Alien/\mbox{\hyperlink{_event_alien_8h}{Event\+Alien.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\+Event\+Alien/\mbox{\hyperlink{_event_alien_8cpp}{Event\+Alien.\+cpp}}\end{DoxyCompactItemize}

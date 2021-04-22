@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: CPlayerEdit クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公開型</a> &#124;
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="class_c_player_edit-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CPlayerEdit クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_player_edit_8h_source.html">PlayerEdit.h</a>&gt;</code></p>
+<div class="dynheader">
+CPlayerEdit の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_player_edit__inherit__graph.png" border="0" usemap="#a_c_player_edit_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_c_player_edit_inherit__map" id="a_c_player_edit_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,80,96,107"/>
+<area shape="rect" href="class_c_edit_base.html" title=" " alt="" coords="9,5,93,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<div class="dynheader">
+CPlayerEdit 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_player_edit__coll__graph.png" border="0" usemap="#a_c_player_edit_coll__map" alt="Collaboration graph"/></div>
+<map name="a_c_player_edit_coll__map" id="a_c_player_edit_coll__map">
+<area shape="rect" title=" " alt="" coords="5,80,96,107"/>
+<area shape="rect" href="class_c_edit_base.html" title=" " alt="" coords="9,5,93,32"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">凡例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+公開型</h2></td></tr>
+<tr class="memitem:a6da1f6e6f3f108da34c790bdfeea33fa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33fa">EParamNo</a> { <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faacf4c3c23668875c7cc15eb400edd88d1">EParamNo_None</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa1d72194ecb7fb9757bf05ab969cb7aad">EParamNo_MoveSpeed</a> = 0
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faabb48c179f6f8ab119ff0f128a4c7cab4">EParamNo_RotationSpeed</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaae90c482b25ea8be408f1c956c6844c0">EParamNo_SphereAdjPosX</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa3a4854bec54d1aa8f68080b79c19c38c">EParamNo_SphereAdjPosY</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa06dde7fd82f75910830f137ea31dfb3b">EParamNo_SphereAdjPosZ</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa50dd035a369ec1a2b35c4f0549aa882b">EParamNo_SphereAdjRadius</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa516edace25b1bb4f3888ce8124d80483">EParamNo_LifeMax</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa820ac297980950e5d56cbfa2d21b08e2">EParamNo_SpecialAbilityMax</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaddceacdbcb3299dcbd20d1aae0528135">EParamNo_SpecialAbilityValue</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faac8516e933c2b27ac3c087c521016e373">EParamNo_AttackPower</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa7ef2250a3688900856b0b922c4281510">EParamNo_EnemyKnockBackPower</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa981ed06048b8727aa347ddfc7847e3a5">EParamNo_AttackComboMax</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa37d4942df45885f58c57f146f660a8e7">EParamNo_AttackQueueMax</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa9e7c3bea3f1f2092c2502a6d89a4fe04">EParamNo_AttackSearcLenght</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa284d6e6563d28d597c327a825b1b7017">EParamNo_AttackFanRadian</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa88f0888d678aa556089918c92adccb94">EParamNo_InvincibleTime</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaefb4626ddb515bddd4e4f85d6bb53718">EParamNo_AvoidMoveDistance</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaae47fb37f905bcb0533e98e3daefdc6d">EParamNo_AvoidMoveSpeed</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa04911fcbe044febedc54793c4366da7b">EParamNo_HitKnocBackMoveSpeed</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa6e3746cb4a16f01bd57179172b07c3c5">EParamNo_MoveSpeedMulAddValue</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa911ca430d5e4a86c88ba4c0346fb228e">EParamNo_MoveSpeedMulMaxValue</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa4544f1c02645a7c8a3758dbf52da4ee3">EParamNo_ToleranceRadian</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa97f4d681344241b82c63ec304aeb086d">EParamNo_CapsuleAdjRadius</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa3912eb67f21ddb5b980be8ea43397700">EParamNo_CameraMoveSpeed</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa41b105c5ee0e361d9cc7aaac9842f1b3">EParamNo_CameraDistance</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaeb54486bcd7ef5713cae826f17ccdb41">EParamNo_CameraHeight</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faab0e040502b50988da0ddc0bf0cc38baa">EParamNo_StartFrame_Dragging</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa57732650e9b1a286647180cb57658a91">EParamNo_EndFrame_Dragging</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa6b3b0dcb35d128e0a1177642334e322a">EParamNo_MoveSpeed_Dragging</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faae6c1be23335b36729a67e3b34426c6e1">EParamNo_EnabledEndFrame</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaed4ae16cd358e6841972b24a7d9ac890">EParamNo_CollEnabledEndFrame</a>
+, <br />
+&#160;&#160;<a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaea5740d996a102045d0710cfebe12660">EParamNo_CollisionRadius</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa5041a0d2ab6e305354d4099cfc094eb7">EParamNo_CollisionDistance</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faaa3469a6772f4a0752899e54e9cb821b6">EParamNo_CollInvalidPosition</a>
+, <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33faa37988bdf28750e2380b4a318e1b0edf4">EParamNo_Max</a>
+<br />
+ }</td></tr>
+<tr class="separator:a6da1f6e6f3f108da34c790bdfeea33fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:ae22798aee5626a7c88e479ad31b1e4a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#ae22798aee5626a7c88e479ad31b1e4a8">CPlayerEdit</a> ()</td></tr>
+<tr class="separator:ae22798aee5626a7c88e479ad31b1e4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa201d6438275e024383bb2007f74276a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#aa201d6438275e024383bb2007f74276a">~CPlayerEdit</a> ()</td></tr>
+<tr class="separator:aa201d6438275e024383bb2007f74276a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab053348e7dfaa50a457c6b5a6327b2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#acab053348e7dfaa50a457c6b5a6327b2">Init</a> () override</td></tr>
+<tr class="separator:acab053348e7dfaa50a457c6b5a6327b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20517593345a362327ceee02090fbcd6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#a20517593345a362327ceee02090fbcd6">Update</a> () override</td></tr>
+<tr class="separator:a20517593345a362327ceee02090fbcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3263504fb55faf686e13db872e6ca4bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#a3263504fb55faf686e13db872e6ca4bf">Render</a> () override</td></tr>
+<tr class="separator:a3263504fb55faf686e13db872e6ca4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22dc9c5a03b0f8eec87da02e8a1ecb99"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#a22dc9c5a03b0f8eec87da02e8a1ecb99">ModelRender</a> () override</td></tr>
+<tr class="separator:a22dc9c5a03b0f8eec87da02e8a1ecb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b813254d78e935d3e4db7de8fd7a98f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_player_edit.html#a6b813254d78e935d3e4db7de8fd7a98f">EffectRender</a> () override</td></tr>
+<tr class="separator:a6b813254d78e935d3e4db7de8fd7a98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_c_edit_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_c_edit_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_c_edit_base.html">CEditBase</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a23fd5ea8043fb84fab5d317ad5c4ecf7 inherit pub_methods_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a23fd5ea8043fb84fab5d317ad5c4ecf7">CEditBase</a> ()</td></tr>
+<tr class="separator:a23fd5ea8043fb84fab5d317ad5c4ecf7 inherit pub_methods_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0ea251a37dcccd0bbd7f7db9f70330 inherit pub_methods_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a5b0ea251a37dcccd0bbd7f7db9f70330">~CEditBase</a> ()</td></tr>
+<tr class="separator:a5b0ea251a37dcccd0bbd7f7db9f70330 inherit pub_methods_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828b65e35f629e449b723ecb85d2d911 inherit pub_methods_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a828b65e35f629e449b723ecb85d2d911">IsSetCamera</a> ()</td></tr>
+<tr class="separator:a828b65e35f629e449b723ecb85d2d911 inherit pub_methods_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pro_methods_class_c_edit_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_c_edit_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_c_edit_base.html">CEditBase</a> に属する継承限定公開メンバ関数</td></tr>
+<tr class="memitem:a7e583cd1fea446381f4e403d1ab85216 inherit pro_methods_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a7e583cd1fea446381f4e403d1ab85216">ReadEditParam</a> (const char *filName)</td></tr>
+<tr class="separator:a7e583cd1fea446381f4e403d1ab85216 inherit pro_methods_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_c_edit_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_c_edit_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_c_edit_base.html">CEditBase</a> に属する継承限定公開変数類</td></tr>
+<tr class="memitem:a34f8234840dcc62ed150099bd34f1bac inherit pro_attribs_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a34f8234840dcc62ed150099bd34f1bac">m_IsSetCamera</a></td></tr>
+<tr class="separator:a34f8234840dcc62ed150099bd34f1bac inherit pro_attribs_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6de91e02ec3afba0d5815bdd1b295010 inherit pro_attribs_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_c_im_gui_manager_1_1_s_drag_state.html">CImGuiManager::SDragState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a6de91e02ec3afba0d5815bdd1b295010">m_DragStateList</a></td></tr>
+<tr class="separator:a6de91e02ec3afba0d5815bdd1b295010 inherit pro_attribs_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_c_edit_base"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_c_edit_base')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="class_c_edit_base.html">CEditBase</a> に属する継承静的限定公開変数類</td></tr>
+<tr class="memitem:a554efa462574aa1ea6795ee58bee146b inherit pro_static_attribs_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">static const ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#a554efa462574aa1ea6795ee58bee146b">WINDOW_SIZE</a> = { <a class="el" href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a>/2.0f, <a class="el" href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a>-70.0f }</td></tr>
+<tr class="separator:a554efa462574aa1ea6795ee58bee146b inherit pro_static_attribs_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0e7ee1203bbbbf2f35c652113206c98 inherit pro_static_attribs_class_c_edit_base"><td class="memItemLeft" align="right" valign="top">static const ImVec2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_edit_base.html#af0e7ee1203bbbbf2f35c652113206c98">RENDER_POSITION</a> = { 0.0f, 70.0f }</td></tr>
+<tr class="separator:af0e7ee1203bbbbf2f35c652113206c98 inherit pro_static_attribs_class_c_edit_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">列挙型メンバ詳解</h2>
+<a id="a6da1f6e6f3f108da34c790bdfeea33fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da1f6e6f3f108da34c790bdfeea33fa">&#9670;&nbsp;</a></span>EParamNo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_c_player_edit.html#a6da1f6e6f3f108da34c790bdfeea33fa">CPlayerEdit::EParamNo</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faacf4c3c23668875c7cc15eb400edd88d1"></a>EParamNo_None&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa1d72194ecb7fb9757bf05ab969cb7aad"></a>EParamNo_MoveSpeed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faabb48c179f6f8ab119ff0f128a4c7cab4"></a>EParamNo_RotationSpeed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaae90c482b25ea8be408f1c956c6844c0"></a>EParamNo_SphereAdjPosX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa3a4854bec54d1aa8f68080b79c19c38c"></a>EParamNo_SphereAdjPosY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa06dde7fd82f75910830f137ea31dfb3b"></a>EParamNo_SphereAdjPosZ&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa50dd035a369ec1a2b35c4f0549aa882b"></a>EParamNo_SphereAdjRadius&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa516edace25b1bb4f3888ce8124d80483"></a>EParamNo_LifeMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa820ac297980950e5d56cbfa2d21b08e2"></a>EParamNo_SpecialAbilityMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaddceacdbcb3299dcbd20d1aae0528135"></a>EParamNo_SpecialAbilityValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faac8516e933c2b27ac3c087c521016e373"></a>EParamNo_AttackPower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa7ef2250a3688900856b0b922c4281510"></a>EParamNo_EnemyKnockBackPower&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa981ed06048b8727aa347ddfc7847e3a5"></a>EParamNo_AttackComboMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa37d4942df45885f58c57f146f660a8e7"></a>EParamNo_AttackQueueMax&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa9e7c3bea3f1f2092c2502a6d89a4fe04"></a>EParamNo_AttackSearcLenght&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa284d6e6563d28d597c327a825b1b7017"></a>EParamNo_AttackFanRadian&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa88f0888d678aa556089918c92adccb94"></a>EParamNo_InvincibleTime&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaefb4626ddb515bddd4e4f85d6bb53718"></a>EParamNo_AvoidMoveDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaae47fb37f905bcb0533e98e3daefdc6d"></a>EParamNo_AvoidMoveSpeed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa04911fcbe044febedc54793c4366da7b"></a>EParamNo_HitKnocBackMoveSpeed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa6e3746cb4a16f01bd57179172b07c3c5"></a>EParamNo_MoveSpeedMulAddValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa911ca430d5e4a86c88ba4c0346fb228e"></a>EParamNo_MoveSpeedMulMaxValue&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa4544f1c02645a7c8a3758dbf52da4ee3"></a>EParamNo_ToleranceRadian&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa97f4d681344241b82c63ec304aeb086d"></a>EParamNo_CapsuleAdjRadius&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa3912eb67f21ddb5b980be8ea43397700"></a>EParamNo_CameraMoveSpeed&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa41b105c5ee0e361d9cc7aaac9842f1b3"></a>EParamNo_CameraDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaeb54486bcd7ef5713cae826f17ccdb41"></a>EParamNo_CameraHeight&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faab0e040502b50988da0ddc0bf0cc38baa"></a>EParamNo_StartFrame_Dragging&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa57732650e9b1a286647180cb57658a91"></a>EParamNo_EndFrame_Dragging&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa6b3b0dcb35d128e0a1177642334e322a"></a>EParamNo_MoveSpeed_Dragging&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faae6c1be23335b36729a67e3b34426c6e1"></a>EParamNo_EnabledEndFrame&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaed4ae16cd358e6841972b24a7d9ac890"></a>EParamNo_CollEnabledEndFrame&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaea5740d996a102045d0710cfebe12660"></a>EParamNo_CollisionRadius&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa5041a0d2ab6e305354d4099cfc094eb7"></a>EParamNo_CollisionDistance&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faaa3469a6772f4a0752899e54e9cb821b6"></a>EParamNo_CollInvalidPosition&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6da1f6e6f3f108da34c790bdfeea33faa37988bdf28750e2380b4a318e1b0edf4"></a>EParamNo_Max&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="ae22798aee5626a7c88e479ad31b1e4a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22798aee5626a7c88e479ad31b1e4a8">&#9670;&nbsp;</a></span>CPlayerEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPlayerEdit::CPlayerEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa201d6438275e024383bb2007f74276a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa201d6438275e024383bb2007f74276a">&#9670;&nbsp;</a></span>~CPlayerEdit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPlayerEdit::~CPlayerEdit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a6b813254d78e935d3e4db7de8fd7a98f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b813254d78e935d3e4db7de8fd7a98f">&#9670;&nbsp;</a></span>EffectRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPlayerEdit::EffectRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_edit_base.html#ac11e9e315cef8eb59c12e850a00d380d">CEditBase</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="acab053348e7dfaa50a457c6b5a6327b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab053348e7dfaa50a457c6b5a6327b2">&#9670;&nbsp;</a></span>Init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CPlayerEdit::Init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_edit_base.html#a3c8ec668386d454a8736bcbfb718e39e">CEditBase</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_player_edit_acab053348e7dfaa50a457c6b5a6327b2_cgraph.png" border="0" usemap="#aclass_c_player_edit_acab053348e7dfaa50a457c6b5a6327b2_cgraph" alt=""/></div>
+<map name="aclass_c_player_edit_acab053348e7dfaa50a457c6b5a6327b2_cgraph" id="aclass_c_player_edit_acab053348e7dfaa50a457c6b5a6327b2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,121,57"/>
+<area shape="rect" href="class_c_file_manager.html#a5791a16903642e5e5ef658a0f171bc52" title=" " alt="" coords="169,5,364,32"/>
+<area shape="rect" href="class_c_edit_base.html#a7e583cd1fea446381f4e403d1ab85216" title=" " alt="" coords="175,56,358,83"/>
+<area shape="rect" href="_global_8h.html#aa283894c924650d8db619a0f93f97b25" title=" " alt="" coords="412,56,553,83"/>
+<area shape="rect" href="class_c_log.html#acff1fd25b324a62fca5dcb050073eea5" title=" " alt="" coords="601,56,688,83"/>
+<area shape="rect" href="class_c_log.html#a2c38f57ef8b010d0d2c11990a6eb9098" title=" " alt="" coords="736,56,867,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a22dc9c5a03b0f8eec87da02e8a1ecb99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22dc9c5a03b0f8eec87da02e8a1ecb99">&#9670;&nbsp;</a></span>ModelRender()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPlayerEdit::ModelRender </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_edit_base.html#a3cf4f5d57d588bf342965c7f82ec3edc">CEditBase</a>を実装しています。</p>
+
+</div>
+</div>
+<a id="a3263504fb55faf686e13db872e6ca4bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3263504fb55faf686e13db872e6ca4bf">&#9670;&nbsp;</a></span>Render()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPlayerEdit::Render </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_edit_base.html#a5cf096347b3e719c960b6e7bd6e92765">CEditBase</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_player_edit_a3263504fb55faf686e13db872e6ca4bf_cgraph.png" border="0" usemap="#aclass_c_player_edit_a3263504fb55faf686e13db872e6ca4bf_cgraph" alt=""/></div>
+<map name="aclass_c_player_edit_a3263504fb55faf686e13db872e6ca4bf_cgraph" id="aclass_c_player_edit_a3263504fb55faf686e13db872e6ca4bf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,145,83"/>
+<area shape="rect" href="class_c_file_manager.html#a5791a16903642e5e5ef658a0f171bc52" title=" " alt="" coords="193,5,388,32"/>
+<area shape="rect" href="class_c_file_manager.html#a0b3629561e959f15a179a49a5b91d7a4" title=" " alt="" coords="197,56,385,83"/>
+<area shape="rect" href="struct_c_im_gui_manager_1_1_s_success.html#aa74fb41f4f7c5a335ed409dfa55b9be2" title=" " alt="" coords="199,107,382,149"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a20517593345a362327ceee02090fbcd6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20517593345a362327ceee02090fbcd6">&#9670;&nbsp;</a></span>Update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPlayerEdit::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_c_edit_base.html#a58135e4eb99a07a43ac650a4ac6560ac">CEditBase</a>を実装しています。</p>
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_player_edit_a20517593345a362327ceee02090fbcd6_cgraph.png" border="0" usemap="#aclass_c_player_edit_a20517593345a362327ceee02090fbcd6_cgraph" alt=""/></div>
+<map name="aclass_c_player_edit_a20517593345a362327ceee02090fbcd6_cgraph" id="aclass_c_player_edit_a20517593345a362327ceee02090fbcd6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,145,57"/>
+<area shape="rect" href="class_c_input.html#a6a05cb0f29e7cae3fe68d46dbe3b7c4f" title=" " alt="" coords="193,31,352,57"/>
+<area shape="rect" href="class_c_key_input.html#a8ef8a4223b33b03a9bfa7b89717c9a00" title=" " alt="" coords="400,5,581,32"/>
+<area shape="rect" href="class_c_x_input.html#af325b18bf39addfde11f511da4b090ef" title=" " alt="" coords="408,56,573,83"/>
+<area shape="rect" href="class_c_key_input.html#a19ad5f5de9ee2e016d1b64a3160eed70" title=" " alt="" coords="629,5,772,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Editor/PlayerEdit/<a class="el" href="_player_edit_8h_source.html">PlayerEdit.h</a></li>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Editor/PlayerEdit/<a class="el" href="_player_edit_8cpp.html">PlayerEdit.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

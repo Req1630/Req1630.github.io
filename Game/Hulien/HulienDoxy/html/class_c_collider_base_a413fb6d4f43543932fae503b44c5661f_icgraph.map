@@ -1,0 +1,8 @@
+<map id="CColliderBase::GetBoundingSphere" name="CColliderBase::GetBoundingSphere">
+<area shape="rect" id="node1" title=" " alt="" coords="437,65,624,107"/>
+<area shape="rect" id="node2" href="$class_c_capsule_collision.html#a7b4d33ae4ebaf942d94841a703a4ef6e" title=" " alt="" coords="231,32,366,73"/>
+<area shape="rect" id="node5" href="$class_c_sphere_collision.html#a5f89cf3c6934850031092e196d8a1f8d" title=" " alt="" coords="208,97,389,139"/>
+<area shape="rect" id="node3" href="$class_c_collision_manager.html#ab745441286cb42d1655a1fb74caa3af8" title=" " alt="" coords="5,71,160,98"/>
+<area shape="rect" id="node4" href="$class_c_collision_manager.html#a514743a2e9d437e371a2040865d02db9" title=" " alt="" coords="13,5,152,47"/>
+<area shape="rect" id="node6" href="$class_c_collision_manager.html#abda2d98615ce33d6979669e1224081b4" title=" " alt="" coords="13,123,152,164"/>
+</map>

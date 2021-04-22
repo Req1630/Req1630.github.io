@@ -1,0 +1,5 @@
+<map id="COBBoxCollision::DebugRender" name="COBBoxCollision::DebugRender">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,213,57"/>
+<area shape="rect" id="node2" href="$class_c_collider_base.html#a5e18e0fa3800aaf61b7d367367fa955c" title=" " alt="" coords="262,5,442,32"/>
+<area shape="rect" id="node3" href="$class_c_collider_base.html#a519214a78b090e223f4409cef741f888" title=" " alt="" coords="261,56,443,83"/>
+</map>

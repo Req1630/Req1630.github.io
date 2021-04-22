@@ -1,0 +1,6 @@
+<map id="CXAudio2PlayBGM" name="CXAudio2PlayBGM">
+<area shape="rect" id="node1" title=" " alt="" coords="75,171,210,197"/>
+<area shape="rect" id="node2" href="$class_voice_callback.html" title=" " alt="" coords="30,81,135,108"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node4" href="$class_c_ogg_load.html" title=" " alt="" coords="160,81,243,108"/>
+</map>

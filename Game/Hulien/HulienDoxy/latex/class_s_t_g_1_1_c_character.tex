@@ -1,0 +1,142 @@
+\hypertarget{class_s_t_g_1_1_c_character}{}\doxysection{STG\+::CCharacter クラス}
+\label{class_s_t_g_1_1_c_character}\index{STG::CCharacter@{STG::CCharacter}}
+
+
+{\ttfamily \#include $<$STGCharacter.\+h$>$}
+
+
+
+STG\+::CCharacter の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_s_t_g_1_1_c_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+STG\+::CCharacter 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_s_t_g_1_1_c_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_character_a94574d74f605d70d70acb96e01233adf}{CCharacter}} ()
+\item 
+virtual \mbox{\hyperlink{class_s_t_g_1_1_c_character_a8f8fb8991776a6b6a49c796e79968c91}{$\sim$\+CCharacter}} ()
+\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}} $>$ $>$ \mbox{\hyperlink{class_s_t_g_1_1_c_character_a892560326012bc3a04bf553ad2792de3}{Get\+Bullets}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_character_a30dbc9bc31f3ee38e498148c481858ef}{Move}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_character_a32b23b10569c614e923596597feb6110}{Bullet\+Init}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}} $>$$>$ \&bullets, const int \&bullet\+Count, const char $\ast$model\+Name)
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_character_a80d760c343359b00ccc8a128be1c86e8}{Bullet\+Update}} ()
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_character_ae71fb228e42466e36f323cce8ec32389}{Bullet\+Render}} (const D3\+DXVECTOR3 \&color=\{ 0.\+0f, 0.\+0f, 0.\+0f \})
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_character_a06efba9492a3124211be7107b78b5f41}{Bullet\+Shot}} (const float \&rot, const float \&move\+Speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}} $>$ $>$ \mbox{\hyperlink{class_s_t_g_1_1_c_character_a7a15f753f4d15e05067a7cf3c899a724}{m\+\_\+p\+Bullets}}
+\item 
+int \mbox{\hyperlink{class_s_t_g_1_1_c_character_a1f3b933b5ccb83ab89d0a6b2ee6e496f}{m\+\_\+\+Shot\+Count}}
+\item 
+float \mbox{\hyperlink{class_s_t_g_1_1_c_character_ad4a0056c7422f0ee211c55bb86d12370}{m\+\_\+\+Life\+Point}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a94574d74f605d70d70acb96e01233adf}\label{class_s_t_g_1_1_c_character_a94574d74f605d70d70acb96e01233adf}} 
+\index{STG::CCharacter@{STG::CCharacter}!CCharacter@{CCharacter}}
+\index{CCharacter@{CCharacter}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{CCharacter()}{CCharacter()}}
+{\footnotesize\ttfamily CCharacter\+::\+CCharacter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a8f8fb8991776a6b6a49c796e79968c91}\label{class_s_t_g_1_1_c_character_a8f8fb8991776a6b6a49c796e79968c91}} 
+\index{STG::CCharacter@{STG::CCharacter}!````~CCharacter@{$\sim$CCharacter}}
+\index{````~CCharacter@{$\sim$CCharacter}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CCharacter()}{~CCharacter()}}
+{\footnotesize\ttfamily CCharacter\+::$\sim$\+CCharacter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a32b23b10569c614e923596597feb6110}\label{class_s_t_g_1_1_c_character_a32b23b10569c614e923596597feb6110}} 
+\index{STG::CCharacter@{STG::CCharacter}!BulletInit@{BulletInit}}
+\index{BulletInit@{BulletInit}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{BulletInit()}{BulletInit()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Bullet\+Init (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}} $>$$>$ \&}]{bullets,  }\item[{const int \&}]{bullet\+Count,  }\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_ae71fb228e42466e36f323cce8ec32389}\label{class_s_t_g_1_1_c_character_ae71fb228e42466e36f323cce8ec32389}} 
+\index{STG::CCharacter@{STG::CCharacter}!BulletRender@{BulletRender}}
+\index{BulletRender@{BulletRender}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{BulletRender()}{BulletRender()}}
+{\footnotesize\ttfamily void CCharacter\+::\+Bullet\+Render (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{color = {\ttfamily \{~0.0f,~0.0f,~0.0f~\}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a06efba9492a3124211be7107b78b5f41}\label{class_s_t_g_1_1_c_character_a06efba9492a3124211be7107b78b5f41}} 
+\index{STG::CCharacter@{STG::CCharacter}!BulletShot@{BulletShot}}
+\index{BulletShot@{BulletShot}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{BulletShot()}{BulletShot()}}
+{\footnotesize\ttfamily bool CCharacter\+::\+Bullet\+Shot (\begin{DoxyParamCaption}\item[{const float \&}]{rot,  }\item[{const float \&}]{move\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a80d760c343359b00ccc8a128be1c86e8}\label{class_s_t_g_1_1_c_character_a80d760c343359b00ccc8a128be1c86e8}} 
+\index{STG::CCharacter@{STG::CCharacter}!BulletUpdate@{BulletUpdate}}
+\index{BulletUpdate@{BulletUpdate}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{BulletUpdate()}{BulletUpdate()}}
+{\footnotesize\ttfamily void CCharacter\+::\+Bullet\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a892560326012bc3a04bf553ad2792de3}\label{class_s_t_g_1_1_c_character_a892560326012bc3a04bf553ad2792de3}} 
+\index{STG::CCharacter@{STG::CCharacter}!GetBullets@{GetBullets}}
+\index{GetBullets@{GetBullets}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{GetBullets()}{GetBullets()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}}$>$ $>$ STG\+::\+CCharacter\+::\+Get\+Bullets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_actor_a53a602092039333528f5b63894fa6666}{STG\+::\+CActor}}を再実装しています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a30dbc9bc31f3ee38e498148c481858ef}\label{class_s_t_g_1_1_c_character_a30dbc9bc31f3ee38e498148c481858ef}} 
+\index{STG::CCharacter@{STG::CCharacter}!Move@{Move}}
+\index{Move@{Move}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily virtual void STG\+::\+CCharacter\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_ad4a0056c7422f0ee211c55bb86d12370}\label{class_s_t_g_1_1_c_character_ad4a0056c7422f0ee211c55bb86d12370}} 
+\index{STG::CCharacter@{STG::CCharacter}!m\_LifePoint@{m\_LifePoint}}
+\index{m\_LifePoint@{m\_LifePoint}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_LifePoint}{m\_LifePoint}}
+{\footnotesize\ttfamily float STG\+::\+CCharacter\+::m\+\_\+\+Life\+Point\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a7a15f753f4d15e05067a7cf3c899a724}\label{class_s_t_g_1_1_c_character_a7a15f753f4d15e05067a7cf3c899a724}} 
+\index{STG::CCharacter@{STG::CCharacter}!m\_pBullets@{m\_pBullets}}
+\index{m\_pBullets@{m\_pBullets}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_pBullets}{m\_pBullets}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}}$>$ $>$ STG\+::\+CCharacter\+::m\+\_\+p\+Bullets\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_character_a1f3b933b5ccb83ab89d0a6b2ee6e496f}\label{class_s_t_g_1_1_c_character_a1f3b933b5ccb83ab89d0a6b2ee6e496f}} 
+\index{STG::CCharacter@{STG::CCharacter}!m\_ShotCount@{m\_ShotCount}}
+\index{m\_ShotCount@{m\_ShotCount}!STG::CCharacter@{STG::CCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_ShotCount}{m\_ShotCount}}
+{\footnotesize\ttfamily int STG\+::\+CCharacter\+::m\+\_\+\+Shot\+Count\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Character/\mbox{\hyperlink{_s_t_g_character_8h}{STGCharacter.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Character/\mbox{\hyperlink{_s_t_g_character_8cpp}{STGCharacter.\+cpp}}\end{DoxyCompactItemize}

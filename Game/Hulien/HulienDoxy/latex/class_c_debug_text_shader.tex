@@ -1,0 +1,105 @@
+\hypertarget{class_c_debug_text_shader}{}\doxysection{CDebug\+Text\+Shader クラス}
+\label{class_c_debug_text_shader}\index{CDebugTextShader@{CDebugTextShader}}
+
+
+{\ttfamily \#include $<$Debug\+Text\+Shader.\+h$>$}
+
+
+
+CDebug\+Text\+Shader の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_c_debug_text_shader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CDebug\+Text\+Shader 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_c_debug_text_shader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_debug_text_shader_1_1_c___b_u_f_f_e_r}{C\+\_\+\+BUFFER}}
+\item 
+struct \mbox{\hyperlink{struct_c_debug_text_shader_1_1_v_e_r_t_e_x}{VERTEX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_debug_text_shader_a15d2e7d4bac158b9cee7a1dfaacf1157}{CDebug\+Text\+Shader}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_debug_text_shader_a41b36cedc1b3c940ede81bd28936d120}{$\sim$\+CDebug\+Text\+Shader}} ()
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_debug_text_shader_a9b80a9abf6948cc1b79b4194dc5af1e0}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11) override
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_debug_text_shader_ae8cb520859f3eb47579f3a24d8b93722}{Release}} () override
+\item 
+void \mbox{\hyperlink{class_c_debug_text_shader_a395fee7eecf4d2d042bec220351b74ac}{Set\+Constant\+Buffer\+Data}} (const D3\+DXMATRIX \&m\+WVP, const D3\+DXVECTOR4 \&color)
+\item 
+void \mbox{\hyperlink{class_c_debug_text_shader_a1c5e48521a391fd252a09095f70f22f6}{Shader\+Set}} (ID3\+D11\+Buffer $\ast$p\+Vertex\+Buffer, ID3\+D11\+Sampler\+State $\ast$p\+Sample\+Linear, ID3\+D11\+Shader\+Resource\+View $\ast$p\+Ascii\+Texture)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_debug_text_shader_a15d2e7d4bac158b9cee7a1dfaacf1157}\label{class_c_debug_text_shader_a15d2e7d4bac158b9cee7a1dfaacf1157}} 
+\index{CDebugTextShader@{CDebugTextShader}!CDebugTextShader@{CDebugTextShader}}
+\index{CDebugTextShader@{CDebugTextShader}!CDebugTextShader@{CDebugTextShader}}
+\doxysubsubsection{\texorpdfstring{CDebugTextShader()}{CDebugTextShader()}}
+{\footnotesize\ttfamily CDebug\+Text\+Shader\+::\+CDebug\+Text\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_debug_text_shader_a41b36cedc1b3c940ede81bd28936d120}\label{class_c_debug_text_shader_a41b36cedc1b3c940ede81bd28936d120}} 
+\index{CDebugTextShader@{CDebugTextShader}!````~CDebugTextShader@{$\sim$CDebugTextShader}}
+\index{````~CDebugTextShader@{$\sim$CDebugTextShader}!CDebugTextShader@{CDebugTextShader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CDebugTextShader()}{~CDebugTextShader()}}
+{\footnotesize\ttfamily CDebug\+Text\+Shader\+::$\sim$\+CDebug\+Text\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_debug_text_shader_a9b80a9abf6948cc1b79b4194dc5af1e0}\label{class_c_debug_text_shader_a9b80a9abf6948cc1b79b4194dc5af1e0}} 
+\index{CDebugTextShader@{CDebugTextShader}!Init@{Init}}
+\index{Init@{Init}!CDebugTextShader@{CDebugTextShader}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CDebug\+Text\+Shader\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_debug_text_shader_ae8cb520859f3eb47579f3a24d8b93722}\label{class_c_debug_text_shader_ae8cb520859f3eb47579f3a24d8b93722}} 
+\index{CDebugTextShader@{CDebugTextShader}!Release@{Release}}
+\index{Release@{Release}!CDebugTextShader@{CDebugTextShader}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT CDebug\+Text\+Shader\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_debug_text_shader_a395fee7eecf4d2d042bec220351b74ac}\label{class_c_debug_text_shader_a395fee7eecf4d2d042bec220351b74ac}} 
+\index{CDebugTextShader@{CDebugTextShader}!SetConstantBufferData@{SetConstantBufferData}}
+\index{SetConstantBufferData@{SetConstantBufferData}!CDebugTextShader@{CDebugTextShader}}
+\doxysubsubsection{\texorpdfstring{SetConstantBufferData()}{SetConstantBufferData()}}
+{\footnotesize\ttfamily void CDebug\+Text\+Shader\+::\+Set\+Constant\+Buffer\+Data (\begin{DoxyParamCaption}\item[{const D3\+DXMATRIX \&}]{m\+WVP,  }\item[{const D3\+DXVECTOR4 \&}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_debug_text_shader_a1c5e48521a391fd252a09095f70f22f6}\label{class_c_debug_text_shader_a1c5e48521a391fd252a09095f70f22f6}} 
+\index{CDebugTextShader@{CDebugTextShader}!ShaderSet@{ShaderSet}}
+\index{ShaderSet@{ShaderSet}!CDebugTextShader@{CDebugTextShader}}
+\doxysubsubsection{\texorpdfstring{ShaderSet()}{ShaderSet()}}
+{\footnotesize\ttfamily void CDebug\+Text\+Shader\+::\+Shader\+Set (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$}]{p\+Vertex\+Buffer,  }\item[{ID3\+D11\+Sampler\+State $\ast$}]{p\+Sample\+Linear,  }\item[{ID3\+D11\+Shader\+Resource\+View $\ast$}]{p\+Ascii\+Texture }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Debug\+Text\+Shader/\mbox{\hyperlink{_debug_text_shader_8h}{Debug\+Text\+Shader.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Debug\+Text\+Shader/\mbox{\hyperlink{_debug_text_shader_8cpp}{Debug\+Text\+Shader.\+cpp}}\end{DoxyCompactItemize}

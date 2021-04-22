@@ -1,0 +1,6 @@
+<map id="CItemBase::Drop" name="CItemBase::Drop">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,127,57"/>
+<area shape="rect" id="node2" href="$class_c_game_object.html#ad898aaafe84a7975ed56a1630f75aa61" title=" " alt="" coords="195,5,325,32"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#afad95ce9fcef4a2822300710ccdc113a" title=" " alt="" coords="175,56,345,83"/>
+<area shape="rect" id="node4" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="393,56,589,83"/>
+</map>

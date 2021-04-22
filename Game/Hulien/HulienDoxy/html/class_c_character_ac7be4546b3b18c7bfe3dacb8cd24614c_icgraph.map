@@ -1,0 +1,4 @@
+<map id="CCharacter::FootStepCollisionSetting" name="CCharacter::FootStepCollisionSetting">
+<area shape="rect" id="node1" title=" " alt="" coords="147,5,344,47"/>
+<area shape="rect" id="node2" href="$class_c_player.html#af427666ac35a0b3d90fcc4ffa42c8fd3" title=" " alt="" coords="5,13,99,39"/>
+</map>

@@ -1,0 +1,257 @@
+\hypertarget{class_c_rot_look_at_center}{}\doxysection{CRot\+Look\+At\+Center クラス}
+\label{class_c_rot_look_at_center}\index{CRotLookAtCenter@{CRotLookAtCenter}}
+
+
+{\ttfamily \#include $<$Rot\+Look\+At\+Center.\+h$>$}
+
+
+
+CRot\+Look\+At\+Center の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_c_rot_look_at_center__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CRot\+Look\+At\+Center 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{class_c_rot_look_at_center__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_rot_look_at_center_1_1_s_config_state}{SConfig\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_rot_look_at_center_a70406dcb8988172448e6dd44a941d762}{CRot\+Look\+At\+Center}} ()
+\item 
+\mbox{\hyperlink{class_c_rot_look_at_center_a927898467c0cb34cd6add9fae7fc0c10}{CRot\+Look\+At\+Center}} (const bool \&is\+Load)
+\item 
+virtual \mbox{\hyperlink{class_c_rot_look_at_center_a43659afd01e7800d393913e560f10370}{$\sim$\+CRot\+Look\+At\+Center}} ()
+\item 
+bool \mbox{\hyperlink{class_c_rot_look_at_center_ad1df5fd8840eeb4525181c81786f908d}{Load\+Parameter}} (const bool \&is\+Load)
+\item 
+virtual void \mbox{\hyperlink{class_c_rot_look_at_center_aed98f0c4ea577e2be3fb99ec9bb327a8}{Update}} () override
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_ad5c8b5dc0cbc6c4567f18a3684202cf2}{Rotation\+Look\+At\+Object}} (const D3\+DXVECTOR3 \&v\+Look\+Pos, const float \&atten\+Rate)
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_af6cc459860b267b9f908bb84d6a34dfb}{Degree\+Horizontal\+Move}} (const float \&move\+Power)
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_a49350e335da2d350c7ee2c893037a2df}{Degree\+Horizontal\+Right\+Move}} ()
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_ade12a7ebda03a933d2eb62db1ce79a5e}{Degree\+Horizontal\+Left\+Move}} ()
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_af88f7317831620466c2487a8b41ad6ed}{Degree\+Vertical\+Move}} (const float \&move\+Power)
+\item 
+float \mbox{\hyperlink{class_c_rot_look_at_center_a8a897620a2020f34d85303d06398ecbf}{Get\+RadianX}} () const
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_ac14480d01badbd77d790370ee2f3beb2}{Set\+Length}} (const float \&length)
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_a57192336d0b1e208ed406cf3ac7e8853}{Set\+Height}} (const float \&height)
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_a1e3570050baa7c2f8c0d67afe2a03099}{Set\+Horizontal\+Degree}} (const float \&max, const float \&min)
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_a2e1fb4f5e6aafa99c3f4796a8263fba4}{Set\+Vertical\+Degree}} (const float \&max, const float \&min)
+\item 
+void \mbox{\hyperlink{class_c_rot_look_at_center_a68a616d1d2d25814b4c7ac2c386fc9e7}{Set\+Add\+Position\+Value}} (const D3\+DXVECTOR3 \&add\+Value)
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{class_c_rot_look_at_center_a5cf5b312cd8bdff6327f63e51a728170}{CONFIG\+\_\+\+FILE\+\_\+\+PATH}} = \char`\"{}Data\textbackslash{}\textbackslash{}\+Config\textbackslash{}\textbackslash{}\+Camera.\+bin\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_rot_look_at_center_a70406dcb8988172448e6dd44a941d762}\label{class_c_rot_look_at_center_a70406dcb8988172448e6dd44a941d762}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!CRotLookAtCenter@{CRotLookAtCenter}}
+\index{CRotLookAtCenter@{CRotLookAtCenter}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{CRotLookAtCenter()}{CRotLookAtCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CRot\+Look\+At\+Center\+::\+CRot\+Look\+At\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_a927898467c0cb34cd6add9fae7fc0c10}\label{class_c_rot_look_at_center_a927898467c0cb34cd6add9fae7fc0c10}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!CRotLookAtCenter@{CRotLookAtCenter}}
+\index{CRotLookAtCenter@{CRotLookAtCenter}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{CRotLookAtCenter()}{CRotLookAtCenter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CRot\+Look\+At\+Center\+::\+CRot\+Look\+At\+Center (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Load }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_a927898467c0cb34cd6add9fae7fc0c10_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_rot_look_at_center_a43659afd01e7800d393913e560f10370}\label{class_c_rot_look_at_center_a43659afd01e7800d393913e560f10370}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!````~CRotLookAtCenter@{$\sim$CRotLookAtCenter}}
+\index{````~CRotLookAtCenter@{$\sim$CRotLookAtCenter}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CRotLookAtCenter()}{~CRotLookAtCenter()}}
+{\footnotesize\ttfamily CRot\+Look\+At\+Center\+::$\sim$\+CRot\+Look\+At\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_rot_look_at_center_ade12a7ebda03a933d2eb62db1ce79a5e}\label{class_c_rot_look_at_center_ade12a7ebda03a933d2eb62db1ce79a5e}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!DegreeHorizontalLeftMove@{DegreeHorizontalLeftMove}}
+\index{DegreeHorizontalLeftMove@{DegreeHorizontalLeftMove}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{DegreeHorizontalLeftMove()}{DegreeHorizontalLeftMove()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Degree\+Horizontal\+Left\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_ade12a7ebda03a933d2eb62db1ce79a5e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_rot_look_at_center_af6cc459860b267b9f908bb84d6a34dfb}\label{class_c_rot_look_at_center_af6cc459860b267b9f908bb84d6a34dfb}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!DegreeHorizontalMove@{DegreeHorizontalMove}}
+\index{DegreeHorizontalMove@{DegreeHorizontalMove}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{DegreeHorizontalMove()}{DegreeHorizontalMove()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Degree\+Horizontal\+Move (\begin{DoxyParamCaption}\item[{const float \&}]{move\+Power }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_af6cc459860b267b9f908bb84d6a34dfb_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_af6cc459860b267b9f908bb84d6a34dfb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_rot_look_at_center_a49350e335da2d350c7ee2c893037a2df}\label{class_c_rot_look_at_center_a49350e335da2d350c7ee2c893037a2df}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!DegreeHorizontalRightMove@{DegreeHorizontalRightMove}}
+\index{DegreeHorizontalRightMove@{DegreeHorizontalRightMove}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{DegreeHorizontalRightMove()}{DegreeHorizontalRightMove()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Degree\+Horizontal\+Right\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_a49350e335da2d350c7ee2c893037a2df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_rot_look_at_center_af88f7317831620466c2487a8b41ad6ed}\label{class_c_rot_look_at_center_af88f7317831620466c2487a8b41ad6ed}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!DegreeVerticalMove@{DegreeVerticalMove}}
+\index{DegreeVerticalMove@{DegreeVerticalMove}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{DegreeVerticalMove()}{DegreeVerticalMove()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Degree\+Vertical\+Move (\begin{DoxyParamCaption}\item[{const float \&}]{move\+Power }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_af88f7317831620466c2487a8b41ad6ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_rot_look_at_center_a8a897620a2020f34d85303d06398ecbf}\label{class_c_rot_look_at_center_a8a897620a2020f34d85303d06398ecbf}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!GetRadianX@{GetRadianX}}
+\index{GetRadianX@{GetRadianX}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{GetRadianX()}{GetRadianX()}}
+{\footnotesize\ttfamily float CRot\+Look\+At\+Center\+::\+Get\+RadianX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_ad1df5fd8840eeb4525181c81786f908d}\label{class_c_rot_look_at_center_ad1df5fd8840eeb4525181c81786f908d}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!LoadParameter@{LoadParameter}}
+\index{LoadParameter@{LoadParameter}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{LoadParameter()}{LoadParameter()}}
+{\footnotesize\ttfamily bool CRot\+Look\+At\+Center\+::\+Load\+Parameter (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Load }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_ad1df5fd8840eeb4525181c81786f908d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_rot_look_at_center_ad1df5fd8840eeb4525181c81786f908d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_rot_look_at_center_ad5c8b5dc0cbc6c4567f18a3684202cf2}\label{class_c_rot_look_at_center_ad5c8b5dc0cbc6c4567f18a3684202cf2}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!RotationLookAtObject@{RotationLookAtObject}}
+\index{RotationLookAtObject@{RotationLookAtObject}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{RotationLookAtObject()}{RotationLookAtObject()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Rotation\+Look\+At\+Object (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Look\+Pos,  }\item[{const float \&}]{atten\+Rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_a68a616d1d2d25814b4c7ac2c386fc9e7}\label{class_c_rot_look_at_center_a68a616d1d2d25814b4c7ac2c386fc9e7}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!SetAddPositionValue@{SetAddPositionValue}}
+\index{SetAddPositionValue@{SetAddPositionValue}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{SetAddPositionValue()}{SetAddPositionValue()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Set\+Add\+Position\+Value (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{add\+Value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_a57192336d0b1e208ed406cf3ac7e8853}\label{class_c_rot_look_at_center_a57192336d0b1e208ed406cf3ac7e8853}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!SetHeight@{SetHeight}}
+\index{SetHeight@{SetHeight}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{SetHeight()}{SetHeight()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Set\+Height (\begin{DoxyParamCaption}\item[{const float \&}]{height }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_a1e3570050baa7c2f8c0d67afe2a03099}\label{class_c_rot_look_at_center_a1e3570050baa7c2f8c0d67afe2a03099}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!SetHorizontalDegree@{SetHorizontalDegree}}
+\index{SetHorizontalDegree@{SetHorizontalDegree}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{SetHorizontalDegree()}{SetHorizontalDegree()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Set\+Horizontal\+Degree (\begin{DoxyParamCaption}\item[{const float \&}]{max,  }\item[{const float \&}]{min }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_ac14480d01badbd77d790370ee2f3beb2}\label{class_c_rot_look_at_center_ac14480d01badbd77d790370ee2f3beb2}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!SetLength@{SetLength}}
+\index{SetLength@{SetLength}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{SetLength()}{SetLength()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Set\+Length (\begin{DoxyParamCaption}\item[{const float \&}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_a2e1fb4f5e6aafa99c3f4796a8263fba4}\label{class_c_rot_look_at_center_a2e1fb4f5e6aafa99c3f4796a8263fba4}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!SetVerticalDegree@{SetVerticalDegree}}
+\index{SetVerticalDegree@{SetVerticalDegree}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{SetVerticalDegree()}{SetVerticalDegree()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Set\+Vertical\+Degree (\begin{DoxyParamCaption}\item[{const float \&}]{max,  }\item[{const float \&}]{min }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_rot_look_at_center_aed98f0c4ea577e2be3fb99ec9bb327a8}\label{class_c_rot_look_at_center_aed98f0c4ea577e2be3fb99ec9bb327a8}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!Update@{Update}}
+\index{Update@{Update}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CRot\+Look\+At\+Center\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_camera_a664debc0a2d44acea6112db076a520bf}{CCamera}}を再実装しています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_rot_look_at_center_a5cf5b312cd8bdff6327f63e51a728170}\label{class_c_rot_look_at_center_a5cf5b312cd8bdff6327f63e51a728170}} 
+\index{CRotLookAtCenter@{CRotLookAtCenter}!CONFIG\_FILE\_PATH@{CONFIG\_FILE\_PATH}}
+\index{CONFIG\_FILE\_PATH@{CONFIG\_FILE\_PATH}!CRotLookAtCenter@{CRotLookAtCenter}}
+\doxysubsubsection{\texorpdfstring{CONFIG\_FILE\_PATH}{CONFIG\_FILE\_PATH}}
+{\footnotesize\ttfamily const char$\ast$ CRot\+Look\+At\+Center\+::\+CONFIG\+\_\+\+FILE\+\_\+\+PATH = \char`\"{}Data\textbackslash{}\textbackslash{}\+Config\textbackslash{}\textbackslash{}\+Camera.\+bin\char`\"{}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Camera/\+Rot\+Look\+At\+Center/\mbox{\hyperlink{_rot_look_at_center_8h}{Rot\+Look\+At\+Center.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Camera/\+Rot\+Look\+At\+Center/\mbox{\hyperlink{_rot_look_at_center_8cpp}{Rot\+Look\+At\+Center.\+cpp}}\end{DoxyCompactItemize}

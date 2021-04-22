@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Effect/EffectManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_24a0f747464cf79459b7badddf1f4fa4.html">Effect</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EffectManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_effect_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef EFFECT_MANAGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define EFFECT_MANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_effect_8h.html">Effect.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_effect_manager.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_effect_manager.html">CEffectManager</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_c_effect_manager.html#ac193c8f62df21e0946b913cc74d32a15">CEffectManager</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_c_effect_manager.html#ae55bed3544d20651238ed14e8cd89974">~CEffectManager</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// エフェクトの設定.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_effect_manager.html#a4ce81a413f70b3e911ef403e05d6a3fa">SetEffect</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* effectName );</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// 描画.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#a3777467b40a2fcedf8733254e5bef429">Render</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// 再生.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#ac462404e0ccc508cd8671335654e8f65">Play</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vPos );</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// 停止.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#adfd9b578f4435928950c333ccc85dbc5">Stop</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 全て停止.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#ad8e38e420537d9fcda5df628cd723732">StopAll</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// 一時停止もしくは再開する.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#a8fbba69838138a247220b941ed70f6eb">Pause</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; bFlag );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// すべてを一時停止もしくは再開する.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#a871fefc28fce0eef92bf91170d2b9f5a">AllPause</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; bFlag );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 位置を指定する.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#aa8c17f893158906d9040267dc2669f53">SetLocation</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vPos );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// サイズを指定する.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#aac0dcd506699fb1a77f35d87a8ce8838">SetScale</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vScale );</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#aac0dcd506699fb1a77f35d87a8ce8838">SetScale</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; scale );</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 回転を指定する.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#adec77bd655c2634b7d6823f6a6c3a09b">SetRotation</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vRot );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 再生速度を設定する.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_effect_manager.html#a08dc71dd795946ffde9697012bba1f18">SetSpeed</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; fSpeed );</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 存在しているか.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_effect_manager.html#a5145ed459852f3ecf87836ef1df05f0a">IsExists</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::shared_ptr&lt;CEffect&gt;    m_pEffect;  <span class="comment">// エフェクトクラス.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_c_effect.html#ad5437921fcb4d827e18aea3027468a24">CEffect::Handle</a>             m_Handle;   <span class="comment">// エフェクトハンドル.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef EFFECT_MANAGER_H.</span></div>
+<div class="ttc" id="a_effect_8h_html"><div class="ttname"><a href="_effect_8h.html">Effect.h</a></div></div>
+<div class="ttc" id="aclass_c_effect_html_ad5437921fcb4d827e18aea3027468a24"><div class="ttname"><a href="class_c_effect.html#ad5437921fcb4d827e18aea3027468a24">CEffect::Handle</a></div><div class="ttdeci">int Handle</div><div class="ttdef"><b>Definition:</b> Effect.h:61</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html"><div class="ttname"><a href="class_c_effect_manager.html">CEffectManager</a></div><div class="ttdef"><b>Definition:</b> EffectManager.h:14</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_a08dc71dd795946ffde9697012bba1f18"><div class="ttname"><a href="class_c_effect_manager.html#a08dc71dd795946ffde9697012bba1f18">CEffectManager::SetSpeed</a></div><div class="ttdeci">void SetSpeed(const float &amp;fSpeed)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:107</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_a3777467b40a2fcedf8733254e5bef429"><div class="ttname"><a href="class_c_effect_manager.html#a3777467b40a2fcedf8733254e5bef429">CEffectManager::Render</a></div><div class="ttdeci">void Render()</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:28</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_a4ce81a413f70b3e911ef403e05d6a3fa"><div class="ttname"><a href="class_c_effect_manager.html#a4ce81a413f70b3e911ef403e05d6a3fa">CEffectManager::SetEffect</a></div><div class="ttdeci">bool SetEffect(const char *effectName)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:17</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_a5145ed459852f3ecf87836ef1df05f0a"><div class="ttname"><a href="class_c_effect_manager.html#a5145ed459852f3ecf87836ef1df05f0a">CEffectManager::IsExists</a></div><div class="ttdeci">bool IsExists()</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:115</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_a871fefc28fce0eef92bf91170d2b9f5a"><div class="ttname"><a href="class_c_effect_manager.html#a871fefc28fce0eef92bf91170d2b9f5a">CEffectManager::AllPause</a></div><div class="ttdeci">void AllPause(const bool &amp;bFlag)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:71</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_a8fbba69838138a247220b941ed70f6eb"><div class="ttname"><a href="class_c_effect_manager.html#a8fbba69838138a247220b941ed70f6eb">CEffectManager::Pause</a></div><div class="ttdeci">void Pause(const bool &amp;bFlag)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:63</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_aa8c17f893158906d9040267dc2669f53"><div class="ttname"><a href="class_c_effect_manager.html#aa8c17f893158906d9040267dc2669f53">CEffectManager::SetLocation</a></div><div class="ttdeci">void SetLocation(const D3DXVECTOR3 &amp;vPos)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:79</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_aac0dcd506699fb1a77f35d87a8ce8838"><div class="ttname"><a href="class_c_effect_manager.html#aac0dcd506699fb1a77f35d87a8ce8838">CEffectManager::SetScale</a></div><div class="ttdeci">void SetScale(const D3DXVECTOR3 &amp;vScale)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:87</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_ac193c8f62df21e0946b913cc74d32a15"><div class="ttname"><a href="class_c_effect_manager.html#ac193c8f62df21e0946b913cc74d32a15">CEffectManager::CEffectManager</a></div><div class="ttdeci">CEffectManager()</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:4</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_ac462404e0ccc508cd8671335654e8f65"><div class="ttname"><a href="class_c_effect_manager.html#ac462404e0ccc508cd8671335654e8f65">CEffectManager::Play</a></div><div class="ttdeci">void Play(const D3DXVECTOR3 &amp;vPos)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:38</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_ad8e38e420537d9fcda5df628cd723732"><div class="ttname"><a href="class_c_effect_manager.html#ad8e38e420537d9fcda5df628cd723732">CEffectManager::StopAll</a></div><div class="ttdeci">void StopAll()</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:55</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_adec77bd655c2634b7d6823f6a6c3a09b"><div class="ttname"><a href="class_c_effect_manager.html#adec77bd655c2634b7d6823f6a6c3a09b">CEffectManager::SetRotation</a></div><div class="ttdeci">void SetRotation(const D3DXVECTOR3 &amp;vRot)</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:99</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_adfd9b578f4435928950c333ccc85dbc5"><div class="ttname"><a href="class_c_effect_manager.html#adfd9b578f4435928950c333ccc85dbc5">CEffectManager::Stop</a></div><div class="ttdeci">void Stop()</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:47</div></div>
+<div class="ttc" id="aclass_c_effect_manager_html_ae55bed3544d20651238ed14e8cd89974"><div class="ttname"><a href="class_c_effect_manager.html#ae55bed3544d20651238ed14e8cd89974">CEffectManager::~CEffectManager</a></div><div class="ttdeci">~CEffectManager()</div><div class="ttdef"><b>Definition:</b> EffectManager.cpp:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

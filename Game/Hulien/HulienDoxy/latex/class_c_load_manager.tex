@@ -1,0 +1,101 @@
+\hypertarget{class_c_load_manager}{}\doxysection{CLoad\+Manager クラス}
+\label{class_c_load_manager}\index{CLoadManager@{CLoadManager}}
+
+
+{\ttfamily \#include $<$Load\+Manager.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_load_manager_af73fbfc7a86b28438553f16fcb291ae0}{CLoad\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_c_load_manager_a4e5e2620b76ccfca3fde75614a310402}{$\sim$\+CLoad\+Manager}} ()
+\item 
+void \mbox{\hyperlink{class_c_load_manager_ae35d4808bfc59db84fd8a3d3997bff2f}{Load\+Resource}} (HWND h\+Wnd, ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, LPDIRECT3\+DDEVICE9 p\+Device9)
+\item 
+bool \mbox{\hyperlink{class_c_load_manager_a893371cf40ca923a46b980e970b06dfa}{Thread\+Release}} ()
+\item 
+void \mbox{\hyperlink{class_c_load_manager_a68ccc3bd71e4dbcf80296381c2f5b955}{Render}} ()
+\item 
+bool \mbox{\hyperlink{class_c_load_manager_a3de6eda3f123cd84a9a9f712b7cf7b0f}{Is\+Load\+Failed}} () const
+\item 
+bool \mbox{\hyperlink{class_c_load_manager_a70182b01a9b9669b8af766b26745f6f8}{Is\+Load\+End}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_load_manager_af73fbfc7a86b28438553f16fcb291ae0}\label{class_c_load_manager_af73fbfc7a86b28438553f16fcb291ae0}} 
+\index{CLoadManager@{CLoadManager}!CLoadManager@{CLoadManager}}
+\index{CLoadManager@{CLoadManager}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{CLoadManager()}{CLoadManager()}}
+{\footnotesize\ttfamily CLoad\+Manager\+::\+CLoad\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_load_manager_a4e5e2620b76ccfca3fde75614a310402}\label{class_c_load_manager_a4e5e2620b76ccfca3fde75614a310402}} 
+\index{CLoadManager@{CLoadManager}!````~CLoadManager@{$\sim$CLoadManager}}
+\index{````~CLoadManager@{$\sim$CLoadManager}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CLoadManager()}{~CLoadManager()}}
+{\footnotesize\ttfamily CLoad\+Manager\+::$\sim$\+CLoad\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_load_manager_a70182b01a9b9669b8af766b26745f6f8}\label{class_c_load_manager_a70182b01a9b9669b8af766b26745f6f8}} 
+\index{CLoadManager@{CLoadManager}!IsLoadEnd@{IsLoadEnd}}
+\index{IsLoadEnd@{IsLoadEnd}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{IsLoadEnd()}{IsLoadEnd()}}
+{\footnotesize\ttfamily bool CLoad\+Manager\+::\+Is\+Load\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_load_manager_a3de6eda3f123cd84a9a9f712b7cf7b0f}\label{class_c_load_manager_a3de6eda3f123cd84a9a9f712b7cf7b0f}} 
+\index{CLoadManager@{CLoadManager}!IsLoadFailed@{IsLoadFailed}}
+\index{IsLoadFailed@{IsLoadFailed}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{IsLoadFailed()}{IsLoadFailed()}}
+{\footnotesize\ttfamily bool CLoad\+Manager\+::\+Is\+Load\+Failed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_load_manager_ae35d4808bfc59db84fd8a3d3997bff2f}\label{class_c_load_manager_ae35d4808bfc59db84fd8a3d3997bff2f}} 
+\index{CLoadManager@{CLoadManager}!LoadResource@{LoadResource}}
+\index{LoadResource@{LoadResource}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{LoadResource()}{LoadResource()}}
+{\footnotesize\ttfamily void CLoad\+Manager\+::\+Load\+Resource (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{LPDIRECT3\+DDEVICE9}]{p\+Device9 }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_load_manager_ae35d4808bfc59db84fd8a3d3997bff2f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_load_manager_a68ccc3bd71e4dbcf80296381c2f5b955}\label{class_c_load_manager_a68ccc3bd71e4dbcf80296381c2f5b955}} 
+\index{CLoadManager@{CLoadManager}!Render@{Render}}
+\index{Render@{Render}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CLoad\+Manager\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_load_manager_a68ccc3bd71e4dbcf80296381c2f5b955_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_load_manager_a893371cf40ca923a46b980e970b06dfa}\label{class_c_load_manager_a893371cf40ca923a46b980e970b06dfa}} 
+\index{CLoadManager@{CLoadManager}!ThreadRelease@{ThreadRelease}}
+\index{ThreadRelease@{ThreadRelease}!CLoadManager@{CLoadManager}}
+\doxysubsubsection{\texorpdfstring{ThreadRelease()}{ThreadRelease()}}
+{\footnotesize\ttfamily bool CLoad\+Manager\+::\+Thread\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_load_manager_a893371cf40ca923a46b980e970b06dfa_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Load\+Manager/\mbox{\hyperlink{_load_manager_8h}{Load\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Load\+Manager/\mbox{\hyperlink{_load_manager_8cpp}{Load\+Manager.\+cpp}}\end{DoxyCompactItemize}

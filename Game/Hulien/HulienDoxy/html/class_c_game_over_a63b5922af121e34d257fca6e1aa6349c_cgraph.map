@@ -1,0 +1,11 @@
+<map id="CGameOver::Render" name="CGameOver::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,92,147,119"/>
+<area shape="rect" id="node2" href="$class_c_scene_tex_renderer.html#a4e4263eccaa5ea4671b4c34c323c649b" title=" " alt="" coords="195,19,344,61"/>
+<area shape="rect" id="node8" href="$class_c_scene_tex_renderer.html#ac49263ecbbcf486864d7276df248ec9b" title=" " alt="" coords="195,85,344,126"/>
+<area shape="rect" id="node9" href="$class_c_scene_tex_renderer.html#a5f1e190ad39f69654af67836ef3f1c71" title=" " alt="" coords="195,150,344,191"/>
+<area shape="rect" id="node3" href="$class_c_direct_x11.html#a912bbe5d1de84d1dea10cea088a6f235" title=" " alt="" coords="392,56,559,83"/>
+<area shape="rect" id="node5" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="401,107,550,149"/>
+<area shape="rect" id="node6" href="$class_c_key_input.html#ae7a4a5c4b186f9a31b7116753db544a0" title=" " alt="" coords="412,5,539,32"/>
+<area shape="rect" id="node4" href="$class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="607,56,771,83"/>
+<area shape="rect" id="node7" href="$class_c_key_input.html#a19ad5f5de9ee2e016d1b64a3160eed70" title=" " alt="" coords="617,5,760,32"/>
+</map>

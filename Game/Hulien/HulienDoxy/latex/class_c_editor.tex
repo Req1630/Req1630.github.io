@@ -1,0 +1,118 @@
+\hypertarget{class_c_editor}{}\doxysection{CEditor クラス}
+\label{class_c_editor}\index{CEditor@{CEditor}}
+
+
+{\ttfamily \#include $<$Editor.\+h$>$}
+
+
+
+CEditor の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_c_editor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEditor 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_c_editor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_editor_a178ec42472d3e945246cee35ae4c599c}{CEditor}} (\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$p\+Scene\+Manager)
+\item 
+virtual \mbox{\hyperlink{class_c_editor_ab5533e121b36d62f7b96939675383c88}{$\sim$\+CEditor}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_editor_a9aff35dac676527f5e1ec8fade01875f}{Load}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_editor_a7053b546216734f2ffe68b43bb35d683}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_editor_a7df0a2744742e8eefb745b62f4070894}{Render}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_editor_a178ec42472d3e945246cee35ae4c599c}\label{class_c_editor_a178ec42472d3e945246cee35ae4c599c}} 
+\index{CEditor@{CEditor}!CEditor@{CEditor}}
+\index{CEditor@{CEditor}!CEditor@{CEditor}}
+\doxysubsubsection{\texorpdfstring{CEditor()}{CEditor()}}
+{\footnotesize\ttfamily CEditor\+::\+CEditor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$}]{p\+Scene\+Manager }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_editor_a178ec42472d3e945246cee35ae4c599c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_editor_ab5533e121b36d62f7b96939675383c88}\label{class_c_editor_ab5533e121b36d62f7b96939675383c88}} 
+\index{CEditor@{CEditor}!````~CEditor@{$\sim$CEditor}}
+\index{````~CEditor@{$\sim$CEditor}!CEditor@{CEditor}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEditor()}{~CEditor()}}
+{\footnotesize\ttfamily CEditor\+::$\sim$\+CEditor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_editor_a9aff35dac676527f5e1ec8fade01875f}\label{class_c_editor_a9aff35dac676527f5e1ec8fade01875f}} 
+\index{CEditor@{CEditor}!Load@{Load}}
+\index{Load@{Load}!CEditor@{CEditor}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily bool CEditor\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_scene_base_a2f939458091e8be68dd4a2a7797f5ee7}{CScene\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_editor_a9aff35dac676527f5e1ec8fade01875f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_editor_a7df0a2744742e8eefb745b62f4070894}\label{class_c_editor_a7df0a2744742e8eefb745b62f4070894}} 
+\index{CEditor@{CEditor}!Render@{Render}}
+\index{Render@{Render}!CEditor@{CEditor}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEditor\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_scene_base_a72cc6cb52a745200614dd2ea73891f03}{CScene\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_editor_a7053b546216734f2ffe68b43bb35d683}\label{class_c_editor_a7053b546216734f2ffe68b43bb35d683}} 
+\index{CEditor@{CEditor}!Update@{Update}}
+\index{Update@{Update}!CEditor@{CEditor}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CEditor\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_scene_base_a3bf927b04b1ea8ef265d84b04fbaa96c}{CScene\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_editor_a7053b546216734f2ffe68b43bb35d683_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene/\+Scenes/\+Editor/\mbox{\hyperlink{_editor_8h}{Editor.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene/\+Scenes/\+Editor/\mbox{\hyperlink{_editor_8cpp}{Editor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Shader/SimpleShader/SimpleShader.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_85898c7bdd0b86dd61a28d54cd747925.html">Shader</a></li><li class="navelem"><a class="el" href="dir_ba7b7a433eb77409e4db001ec9291a77.html">SimpleShader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SimpleShader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_simple_shader_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SIMPLE_SHADER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SIMPLE_SHADER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\ShaderBase.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_c_simple_shader.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_simple_shader.html">CSimpleShader</a> : <span class="keyword">public</span> <a class="code" href="class_c_shader_base.html">CShaderBase</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SHADER_NAME = <span class="stringliteral">&quot;Data\\Shader\\SimpleShader.hlsl&quot;</span>;    <span class="comment">// シェーダーファイル名.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">// コンスタントバッファのアプリ側の定義.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//※シェーダー内のコンスタントバッファと一致している必要あり.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html">   13</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html">C_BUFFER</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html#a383175787396cd4d3f94de7be5f28744">   15</a></span>&#160;        D3DXMATRIX  <a class="code" href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html#a383175787396cd4d3f94de7be5f28744">mWVP</a>;       <span class="comment">// ワールド,ビュー,プロジェクションの合成変換行列.  </span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html#a92514e1d6158c79c89b5bc6a9f0a1fbd">   16</a></span>&#160;        D3DXVECTOR4 <a class="code" href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html#a92514e1d6158c79c89b5bc6a9f0a1fbd">vColor</a>;     <span class="comment">// カラー(RGBAの型に合わせる).</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// 頂点の構造体.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_c_simple_shader_1_1_v_e_r_t_e_x.html">   19</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_simple_shader_1_1_v_e_r_t_e_x.html">VERTEX</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_c_simple_shader_1_1_v_e_r_t_e_x.html#adc9f12cc1e30197dffb8ddc3701ac283">   21</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_simple_shader_1_1_v_e_r_t_e_x.html#adc9f12cc1e30197dffb8ddc3701ac283">Pos</a>;    <span class="comment">// 頂点座標.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_c_simple_shader.html#af015de73fe6d37166c6d59f8c975586b">CSimpleShader</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_simple_shader.html#af25ccd1a9d46d1f7040ffbaf1d7a9c62">~CSimpleShader</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 初期化.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="class_c_simple_shader.html#ac760261329037cf21306f1ec9971f004">Init</a>( ID3D11Device* pDevice11, ID3D11DeviceContext* pContext11 ) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 解放.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="class_c_simple_shader.html#ad6bb31d4b8c595e820d06b20a6c95ef6">Release</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// コンスタントバッファにデータを渡す.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_simple_shader.html#a72d88187a1690d361db2dd20b3f69b00">SetConstantBufferData</a>( <span class="keyword">const</span> D3DXMATRIX&amp; mWVP, <span class="keyword">const</span> D3DXVECTOR4&amp; color );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// 各種シェーダの設定.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_simple_shader.html#a2501c6d260a4f34f8b9f788ddb3d19e2">ShaderSet</a>( ID3D11Buffer* pVertexBuffer, ID3D11Buffer* pIndexBuffer );</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// シェーダー作成.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> HRESULT InitShader() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef SIMPLE_SHADER_H.</span></div>
+<div class="ttc" id="aclass_c_shader_base_html"><div class="ttname"><a href="class_c_shader_base.html">CShaderBase</a></div><div class="ttdef"><b>Definition:</b> ShaderBase.h:7</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html"><div class="ttname"><a href="class_c_simple_shader.html">CSimpleShader</a></div><div class="ttdef"><b>Definition:</b> SimpleShader.h:7</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html_a2501c6d260a4f34f8b9f788ddb3d19e2"><div class="ttname"><a href="class_c_simple_shader.html#a2501c6d260a4f34f8b9f788ddb3d19e2">CSimpleShader::ShaderSet</a></div><div class="ttdeci">void ShaderSet(ID3D11Buffer *pVertexBuffer, ID3D11Buffer *pIndexBuffer)</div><div class="ttdef"><b>Definition:</b> SimpleShader.cpp:73</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html_a72d88187a1690d361db2dd20b3f69b00"><div class="ttname"><a href="class_c_simple_shader.html#a72d88187a1690d361db2dd20b3f69b00">CSimpleShader::SetConstantBufferData</a></div><div class="ttdeci">void SetConstantBufferData(const D3DXMATRIX &amp;mWVP, const D3DXVECTOR4 &amp;color)</div><div class="ttdef"><b>Definition:</b> SimpleShader.cpp:43</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html_ac760261329037cf21306f1ec9971f004"><div class="ttname"><a href="class_c_simple_shader.html#ac760261329037cf21306f1ec9971f004">CSimpleShader::Init</a></div><div class="ttdeci">virtual HRESULT Init(ID3D11Device *pDevice11, ID3D11DeviceContext *pContext11) override</div><div class="ttdef"><b>Definition:</b> SimpleShader.cpp:14</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html_ad6bb31d4b8c595e820d06b20a6c95ef6"><div class="ttname"><a href="class_c_simple_shader.html#ad6bb31d4b8c595e820d06b20a6c95ef6">CSimpleShader::Release</a></div><div class="ttdeci">virtual HRESULT Release() override</div><div class="ttdef"><b>Definition:</b> SimpleShader.cpp:27</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html_af015de73fe6d37166c6d59f8c975586b"><div class="ttname"><a href="class_c_simple_shader.html#af015de73fe6d37166c6d59f8c975586b">CSimpleShader::CSimpleShader</a></div><div class="ttdeci">CSimpleShader()</div><div class="ttdef"><b>Definition:</b> SimpleShader.cpp:3</div></div>
+<div class="ttc" id="aclass_c_simple_shader_html_af25ccd1a9d46d1f7040ffbaf1d7a9c62"><div class="ttname"><a href="class_c_simple_shader.html#af25ccd1a9d46d1f7040ffbaf1d7a9c62">CSimpleShader::~CSimpleShader</a></div><div class="ttdeci">virtual ~CSimpleShader()</div><div class="ttdef"><b>Definition:</b> SimpleShader.cpp:7</div></div>
+<div class="ttc" id="astruct_c_simple_shader_1_1_c___b_u_f_f_e_r_html"><div class="ttname"><a href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html">CSimpleShader::C_BUFFER</a></div><div class="ttdef"><b>Definition:</b> SimpleShader.h:14</div></div>
+<div class="ttc" id="astruct_c_simple_shader_1_1_c___b_u_f_f_e_r_html_a383175787396cd4d3f94de7be5f28744"><div class="ttname"><a href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html#a383175787396cd4d3f94de7be5f28744">CSimpleShader::C_BUFFER::mWVP</a></div><div class="ttdeci">D3DXMATRIX mWVP</div><div class="ttdef"><b>Definition:</b> SimpleShader.h:15</div></div>
+<div class="ttc" id="astruct_c_simple_shader_1_1_c___b_u_f_f_e_r_html_a92514e1d6158c79c89b5bc6a9f0a1fbd"><div class="ttname"><a href="struct_c_simple_shader_1_1_c___b_u_f_f_e_r.html#a92514e1d6158c79c89b5bc6a9f0a1fbd">CSimpleShader::C_BUFFER::vColor</a></div><div class="ttdeci">D3DXVECTOR4 vColor</div><div class="ttdef"><b>Definition:</b> SimpleShader.h:16</div></div>
+<div class="ttc" id="astruct_c_simple_shader_1_1_v_e_r_t_e_x_html"><div class="ttname"><a href="struct_c_simple_shader_1_1_v_e_r_t_e_x.html">CSimpleShader::VERTEX</a></div><div class="ttdef"><b>Definition:</b> SimpleShader.h:20</div></div>
+<div class="ttc" id="astruct_c_simple_shader_1_1_v_e_r_t_e_x_html_adc9f12cc1e30197dffb8ddc3701ac283"><div class="ttname"><a href="struct_c_simple_shader_1_1_v_e_r_t_e_x.html#adc9f12cc1e30197dffb8ddc3701ac283">CSimpleShader::VERTEX::Pos</a></div><div class="ttdeci">D3DXVECTOR3 Pos</div><div class="ttdef"><b>Definition:</b> SimpleShader.h:21</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

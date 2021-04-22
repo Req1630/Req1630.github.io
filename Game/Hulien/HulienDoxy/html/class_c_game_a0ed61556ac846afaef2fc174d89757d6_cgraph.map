@@ -1,0 +1,10 @@
+<map id="CGame::Update" name="CGame::Update">
+<area shape="rect" id="node1" title=" " alt="" coords="5,115,120,141"/>
+<area shape="rect" id="node2" href="$class_c_fade.html#a4cefa9318db410b5f56af7a754f02346" title=" " alt="" coords="214,5,342,32"/>
+<area shape="rect" id="node4" href="$class_c_scene_manager.html#ac55b1b5372bc9a96fdd102b65a7b0562" title=" " alt="" coords="168,56,388,83"/>
+<area shape="rect" id="node5" href="$class_c_scene_manager.html#a027aefa1e117e7379276c268a02ff30d" title=" " alt="" coords="177,107,379,149"/>
+<area shape="rect" id="node6" href="$class_c_scene_manager.html#a81719fba17b3cfe3ebbd0e6a8e421472" title=" " alt="" coords="177,173,379,214"/>
+<area shape="rect" id="node7" href="$class_c_fog.html#aa03239241c34922daa0db100e4b9dd55" title=" " alt="" coords="227,239,329,265"/>
+<area shape="rect" id="node3" href="$class_c_fade.html#a16098384b1c429b884c50c86e0120807" title=" " alt="" coords="436,5,575,32"/>
+<area shape="rect" id="node8" href="$class_c_fog.html#aa2131ba35e2efaf906fad79279fc1879" title=" " alt="" coords="440,239,571,265"/>
+</map>

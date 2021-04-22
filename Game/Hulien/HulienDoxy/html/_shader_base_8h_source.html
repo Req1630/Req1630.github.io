@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Common/Shader/ShaderBase.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_e61eb6e8887e5da9e9f6727c1f5c0b92.html">Common</a></li><li class="navelem"><a class="el" href="dir_85898c7bdd0b86dd61a28d54cd747925.html">Shader</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ShaderBase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_shader_base_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SHADER_BASE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SHADER_BASE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_c_shader_base.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_shader_base.html">CShaderBase</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="class_c_shader_base.html#a49e9ff85d6f526090ddb148416098a01">CShaderBase</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_shader_base.html#a7ec92ce9e566a1bc6248c4ba5952d6fd">~CShaderBase</a>();</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// 初期化.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a3826d26d0e9791ca3c08d664d203a2d4">   13</a></span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="class_c_shader_base.html#a3826d26d0e9791ca3c08d664d203a2d4">Init</a>( ID3D11Device* pDevice11, ID3D11DeviceContext* pContext11 ) = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// 解放.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a3b2a11871858fd1666906ad7a45ec602">   15</a></span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="class_c_shader_base.html#a3b2a11871858fd1666906ad7a45ec602">Release</a>() = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// シェーダー作成.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a22c772529658c8d6d2599185c3630b22">   18</a></span>&#160;    <span class="keyword">virtual</span> HRESULT <a class="code" href="class_c_shader_base.html#a22c772529658c8d6d2599185c3630b22">InitShader</a>() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// シェーダー読込関数.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> HRESULT <a class="code" href="class_c_shader_base.html#a22c772529658c8d6d2599185c3630b22">InitShader</a>(</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* filePath,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* entryPoint,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* shaderModel,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        UINT compileFlag,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        ID3DBlob** ppCompiledShader,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        ID3DBlob** ppErrors );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// バーテックスシェーダー作成関数.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    HRESULT <a class="code" href="class_c_shader_base.html#abd44de91ce6fe59797b5be7eb2d9e393">CreateVertexShader</a>(</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        ID3DBlob* pCompiledShader,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        ID3D11VertexShader** pVertexShader );</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// ピクセルスシェーダー作成関数.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    HRESULT <a class="code" href="class_c_shader_base.html#af450d765de88aae615ab2de630c49ba3">CreatePixelShader</a>(</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        ID3DBlob* pCompiledShader,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        ID3D11PixelShader** pPixelShader );</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// インプットレイアウト作成関数.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    HRESULT <a class="code" href="class_c_shader_base.html#a01550949bf511b3a3c45b9310829b2dc">CreateInputLayout</a>(</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        D3D11_INPUT_ELEMENT_DESC* pLayout,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        UINT numElements,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        ID3DBlob* pCompiledShader, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        ID3D11InputLayout** <a class="code" href="class_c_shader_base.html#a956a27e5c1685b103844c94ba25e2707">m_pVertexLayout</a> );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// コンスタントバッファ作成関数.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    HRESULT <a class="code" href="class_c_shader_base.html#ad4d8c2e48921a1f57a460ea32106d602">CreateConstantBuffer</a>( </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        ID3D11Buffer** pConstantBuffer,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        UINT size );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 頂点インプットレイアウトの取得.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// POSITIONの取得.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    D3D11_INPUT_ELEMENT_DESC <a class="code" href="class_c_shader_base.html#a772063ab92b04e577feca59320a4d657">GetPositionInputElement</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// TEXCOORDの取得.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    D3D11_INPUT_ELEMENT_DESC <a class="code" href="class_c_shader_base.html#aa05e61503b69891ba5b5671248865a08">GetTexcoordInputElement</a>() <span class="keyword">const</span>; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a2bafc1e291ea54cb2544977a1cbb0d45">   61</a></span>&#160;    ID3D11Device*           <a class="code" href="class_c_shader_base.html#a2bafc1e291ea54cb2544977a1cbb0d45">m_pDevice11</a>;        <span class="comment">// デバイスオブジェクト.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#aefe7429b336015bf592c35b7359cfb22">   62</a></span>&#160;    ID3D11DeviceContext*    <a class="code" href="class_c_shader_base.html#aefe7429b336015bf592c35b7359cfb22">m_pContext11</a>;       <span class="comment">// デバイスコンテキスト.</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a788c0181fca8067e0c5b02a37c6bcfb2">   64</a></span>&#160;    ID3D11VertexShader*     <a class="code" href="class_c_shader_base.html#a788c0181fca8067e0c5b02a37c6bcfb2">m_pVertexShader</a>;    <span class="comment">// 頂点シェーダー.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#ac6e1bc8b5138003c4b4a97f24b91487f">   65</a></span>&#160;    ID3D11PixelShader*      <a class="code" href="class_c_shader_base.html#ac6e1bc8b5138003c4b4a97f24b91487f">m_pPixelShader</a>;     <span class="comment">// ピクセルシェーダー.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a956a27e5c1685b103844c94ba25e2707">   66</a></span>&#160;    ID3D11InputLayout*      <a class="code" href="class_c_shader_base.html#a956a27e5c1685b103844c94ba25e2707">m_pVertexLayout</a>;    <span class="comment">// 頂点レイアウト.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_c_shader_base.html#a238c789ff8a9ba18dcabc8457ae3bae8">   67</a></span>&#160;    ID3D11Buffer*           <a class="code" href="class_c_shader_base.html#a238c789ff8a9ba18dcabc8457ae3bae8">m_pConstantBuffer</a>;  <span class="comment">// コンスタントバッファ.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef SHADER_BASE_H.</span></div>
+<div class="ttc" id="aclass_c_shader_base_html"><div class="ttname"><a href="class_c_shader_base.html">CShaderBase</a></div><div class="ttdef"><b>Definition:</b> ShaderBase.h:7</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a01550949bf511b3a3c45b9310829b2dc"><div class="ttname"><a href="class_c_shader_base.html#a01550949bf511b3a3c45b9310829b2dc">CShaderBase::CreateInputLayout</a></div><div class="ttdeci">HRESULT CreateInputLayout(D3D11_INPUT_ELEMENT_DESC *pLayout, UINT numElements, ID3DBlob *pCompiledShader, ID3D11InputLayout **m_pVertexLayout)</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:73</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a22c772529658c8d6d2599185c3630b22"><div class="ttname"><a href="class_c_shader_base.html#a22c772529658c8d6d2599185c3630b22">CShaderBase::InitShader</a></div><div class="ttdeci">virtual HRESULT InitShader()=0</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a238c789ff8a9ba18dcabc8457ae3bae8"><div class="ttname"><a href="class_c_shader_base.html#a238c789ff8a9ba18dcabc8457ae3bae8">CShaderBase::m_pConstantBuffer</a></div><div class="ttdeci">ID3D11Buffer * m_pConstantBuffer</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:67</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a2bafc1e291ea54cb2544977a1cbb0d45"><div class="ttname"><a href="class_c_shader_base.html#a2bafc1e291ea54cb2544977a1cbb0d45">CShaderBase::m_pDevice11</a></div><div class="ttdeci">ID3D11Device * m_pDevice11</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:61</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a3826d26d0e9791ca3c08d664d203a2d4"><div class="ttname"><a href="class_c_shader_base.html#a3826d26d0e9791ca3c08d664d203a2d4">CShaderBase::Init</a></div><div class="ttdeci">virtual HRESULT Init(ID3D11Device *pDevice11, ID3D11DeviceContext *pContext11)=0</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a3b2a11871858fd1666906ad7a45ec602"><div class="ttname"><a href="class_c_shader_base.html#a3b2a11871858fd1666906ad7a45ec602">CShaderBase::Release</a></div><div class="ttdeci">virtual HRESULT Release()=0</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a49e9ff85d6f526090ddb148416098a01"><div class="ttname"><a href="class_c_shader_base.html#a49e9ff85d6f526090ddb148416098a01">CShaderBase::CShaderBase</a></div><div class="ttdeci">CShaderBase()</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:3</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a772063ab92b04e577feca59320a4d657"><div class="ttname"><a href="class_c_shader_base.html#a772063ab92b04e577feca59320a4d657">CShaderBase::GetPositionInputElement</a></div><div class="ttdeci">D3D11_INPUT_ELEMENT_DESC GetPositionInputElement() const</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:111</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a788c0181fca8067e0c5b02a37c6bcfb2"><div class="ttname"><a href="class_c_shader_base.html#a788c0181fca8067e0c5b02a37c6bcfb2">CShaderBase::m_pVertexShader</a></div><div class="ttdeci">ID3D11VertexShader * m_pVertexShader</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:64</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a7ec92ce9e566a1bc6248c4ba5952d6fd"><div class="ttname"><a href="class_c_shader_base.html#a7ec92ce9e566a1bc6248c4ba5952d6fd">CShaderBase::~CShaderBase</a></div><div class="ttdeci">virtual ~CShaderBase()</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:13</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_a956a27e5c1685b103844c94ba25e2707"><div class="ttname"><a href="class_c_shader_base.html#a956a27e5c1685b103844c94ba25e2707">CShaderBase::m_pVertexLayout</a></div><div class="ttdeci">ID3D11InputLayout * m_pVertexLayout</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:66</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_aa05e61503b69891ba5b5671248865a08"><div class="ttname"><a href="class_c_shader_base.html#aa05e61503b69891ba5b5671248865a08">CShaderBase::GetTexcoordInputElement</a></div><div class="ttdeci">D3D11_INPUT_ELEMENT_DESC GetTexcoordInputElement() const</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:128</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_abd44de91ce6fe59797b5be7eb2d9e393"><div class="ttname"><a href="class_c_shader_base.html#abd44de91ce6fe59797b5be7eb2d9e393">CShaderBase::CreateVertexShader</a></div><div class="ttdeci">HRESULT CreateVertexShader(ID3DBlob *pCompiledShader, ID3D11VertexShader **pVertexShader)</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:45</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_ac6e1bc8b5138003c4b4a97f24b91487f"><div class="ttname"><a href="class_c_shader_base.html#ac6e1bc8b5138003c4b4a97f24b91487f">CShaderBase::m_pPixelShader</a></div><div class="ttdeci">ID3D11PixelShader * m_pPixelShader</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:65</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_ad4d8c2e48921a1f57a460ea32106d602"><div class="ttname"><a href="class_c_shader_base.html#ad4d8c2e48921a1f57a460ea32106d602">CShaderBase::CreateConstantBuffer</a></div><div class="ttdeci">HRESULT CreateConstantBuffer(ID3D11Buffer **pConstantBuffer, UINT size)</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:90</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_aefe7429b336015bf592c35b7359cfb22"><div class="ttname"><a href="class_c_shader_base.html#aefe7429b336015bf592c35b7359cfb22">CShaderBase::m_pContext11</a></div><div class="ttdeci">ID3D11DeviceContext * m_pContext11</div><div class="ttdef"><b>Definition:</b> ShaderBase.h:62</div></div>
+<div class="ttc" id="aclass_c_shader_base_html_af450d765de88aae615ab2de630c49ba3"><div class="ttname"><a href="class_c_shader_base.html#af450d765de88aae615ab2de630c49ba3">CShaderBase::CreatePixelShader</a></div><div class="ttdeci">HRESULT CreatePixelShader(ID3DBlob *pCompiledShader, ID3D11PixelShader **pPixelShader)</div><div class="ttdef"><b>Definition:</b> ShaderBase.cpp:59</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

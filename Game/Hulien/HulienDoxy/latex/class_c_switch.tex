@@ -1,0 +1,154 @@
+\hypertarget{class_c_switch}{}\doxysection{CSwitch クラス}
+\label{class_c_switch}\index{CSwitch@{CSwitch}}
+
+
+{\ttfamily \#include $<$Switch.\+h$>$}
+
+
+
+CSwitch の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_switch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CSwitch 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_switch__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_switch_a730bb05d0d4fbfd22ae1b37caa7421ac}{CSwitch}} ()
+\item 
+\mbox{\hyperlink{class_c_switch_aae07a1f4dc6ebd231c55a49fe4a4b088}{CSwitch}} (const char $\ast$on\+Name, const char $\ast$off\+Name)
+\item 
+virtual \mbox{\hyperlink{class_c_switch_adc5a9ced39e96f5956505956d7ca9910}{$\sim$\+CSwitch}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_switch_a1c8a4a2eac14c7162e69c7dfde9abfd6}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_switch_a02c413d64aff2371b3109d92267c5cbc}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_switch_a8184d7576c109366e9b5290ab97509c2}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_switch_a6ff0a9c2ce6adf2fe5e45f90f6d19770}{Set\+Value}} (const bool \&value)
+\item 
+bool \mbox{\hyperlink{class_c_switch_a3de38905c0b82f06dc83bb35ad6b8c05}{Get\+Value}} () const
+\item 
+void \mbox{\hyperlink{class_c_switch_ab9f7bb368da71a9b87b7d3b4ff082f1c}{Set\+Now\+Value}} ()
+\item 
+void \mbox{\hyperlink{class_c_switch_a6f10008628ba09e33779b5bab7739fcf}{Re\+Set\+Value}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_switch_a25dfe7a64938814d3fba3ba2c81f32d5}{Set\+Position}} (const D3\+DXVECTOR3 \&v\+Pos) override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_switch_a730bb05d0d4fbfd22ae1b37caa7421ac}\label{class_c_switch_a730bb05d0d4fbfd22ae1b37caa7421ac}} 
+\index{CSwitch@{CSwitch}!CSwitch@{CSwitch}}
+\index{CSwitch@{CSwitch}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{CSwitch()}{CSwitch()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CSwitch\+::\+CSwitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_switch_aae07a1f4dc6ebd231c55a49fe4a4b088}\label{class_c_switch_aae07a1f4dc6ebd231c55a49fe4a4b088}} 
+\index{CSwitch@{CSwitch}!CSwitch@{CSwitch}}
+\index{CSwitch@{CSwitch}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{CSwitch()}{CSwitch()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CSwitch\+::\+CSwitch (\begin{DoxyParamCaption}\item[{const char $\ast$}]{on\+Name,  }\item[{const char $\ast$}]{off\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_switch_adc5a9ced39e96f5956505956d7ca9910}\label{class_c_switch_adc5a9ced39e96f5956505956d7ca9910}} 
+\index{CSwitch@{CSwitch}!````~CSwitch@{$\sim$CSwitch}}
+\index{````~CSwitch@{$\sim$CSwitch}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSwitch()}{~CSwitch()}}
+{\footnotesize\ttfamily CSwitch\+::$\sim$\+CSwitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_switch_a3de38905c0b82f06dc83bb35ad6b8c05}\label{class_c_switch_a3de38905c0b82f06dc83bb35ad6b8c05}} 
+\index{CSwitch@{CSwitch}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily bool CSwitch\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_switch_a1c8a4a2eac14c7162e69c7dfde9abfd6}\label{class_c_switch_a1c8a4a2eac14c7162e69c7dfde9abfd6}} 
+\index{CSwitch@{CSwitch}!Init@{Init}}
+\index{Init@{Init}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CSwitch\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_switch_a8184d7576c109366e9b5290ab97509c2}\label{class_c_switch_a8184d7576c109366e9b5290ab97509c2}} 
+\index{CSwitch@{CSwitch}!Render@{Render}}
+\index{Render@{Render}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CSwitch\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_switch_a6f10008628ba09e33779b5bab7739fcf}\label{class_c_switch_a6f10008628ba09e33779b5bab7739fcf}} 
+\index{CSwitch@{CSwitch}!ReSetValue@{ReSetValue}}
+\index{ReSetValue@{ReSetValue}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{ReSetValue()}{ReSetValue()}}
+{\footnotesize\ttfamily void CSwitch\+::\+Re\+Set\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_switch_ab9f7bb368da71a9b87b7d3b4ff082f1c}\label{class_c_switch_ab9f7bb368da71a9b87b7d3b4ff082f1c}} 
+\index{CSwitch@{CSwitch}!SetNowValue@{SetNowValue}}
+\index{SetNowValue@{SetNowValue}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{SetNowValue()}{SetNowValue()}}
+{\footnotesize\ttfamily void CSwitch\+::\+Set\+Now\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_switch_a25dfe7a64938814d3fba3ba2c81f32d5}\label{class_c_switch_a25dfe7a64938814d3fba3ba2c81f32d5}} 
+\index{CSwitch@{CSwitch}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void CSwitch\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}{CGame\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_switch_a6ff0a9c2ce6adf2fe5e45f90f6d19770}\label{class_c_switch_a6ff0a9c2ce6adf2fe5e45f90f6d19770}} 
+\index{CSwitch@{CSwitch}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
+{\footnotesize\ttfamily void CSwitch\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{const bool \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_switch_a02c413d64aff2371b3109d92267c5cbc}\label{class_c_switch_a02c413d64aff2371b3109d92267c5cbc}} 
+\index{CSwitch@{CSwitch}!Update@{Update}}
+\index{Update@{Update}!CSwitch@{CSwitch}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CSwitch\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_switch_a02c413d64aff2371b3109d92267c5cbc_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Switch/\mbox{\hyperlink{_switch_8h}{Switch.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Widget/\+Switch/\mbox{\hyperlink{_switch_8cpp}{Switch.\+cpp}}\end{DoxyCompactItemize}

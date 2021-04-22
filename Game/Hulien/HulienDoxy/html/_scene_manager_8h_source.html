@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/SceneManager/SceneManager.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_26b02589e53dd6a6cf02171ae1971281.html">Scene</a></li><li class="navelem"><a class="el" href="dir_467e106a91e42ebda4f2ffef691a05ec.html">SceneManager</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SceneManager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene_manager_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SCENE_MANAGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SCENE_MANAGER_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\SceneBase\SceneBase.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;..\..\GameObject\Widget\Fade\Fade.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_command.html">CCommand</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_gage.html">CGage</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// シーンの種類.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">   16</a></span>&#160;<span class="keyword">enum class</span> enSceneNo</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b">Title</a>,      <span class="comment">// タイトル.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651">GameMain</a>,   <span class="comment">// ゲームメイン.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb">GameClear</a>,  <span class="comment">// ゲームクリア.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3">GameOver</a>,   <span class="comment">// ゲームオーバー.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e">Config</a>,     <span class="comment">// 設定.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35">Edit</a>,       <span class="comment">// エディット.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b">ResultCheck</a>,        <span class="comment">// ゲームクリアかゲームオーバーの確認.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37">Start</a> = <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b">Title</a>,      <span class="comment">// 初めのシーン.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">EScene</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">/**********************************</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">*   シーン管理クラス.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_scene_manager.html">CSceneManager</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{   </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_c_scene_manager.html#aac7331a7a92c7c0781a5e2358ec636a8">CSceneManager</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_c_scene_manager.html#a8f9bae5361fe27dd07f3f5a89e11354f">~CSceneManager</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#af5300bb3c0e44013b45489f37697afb6">Update</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 次のシーンに移動.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#ac55b1b5372bc9a96fdd102b65a7b0562">NextSceneMove</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// ゲーム終了.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#af5619a47213ddb7c2f9a14346b06829f">EndGameClose</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// タイトルシーンへ移動.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a1253aee4ffadd98214a9b07f7104efd9">   51</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a1253aee4ffadd98214a9b07f7104efd9">SetNextTitle</a>(){ m_NextScene = <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b">EScene::Title</a>; }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// ゲームオーバーの設定.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a181abdb0301a1ac255b30d95bc1aaf75">   53</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a181abdb0301a1ac255b30d95bc1aaf75">OnGameOver</a>(){ m_IsGameOver = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// ゲームリトライ.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a13a81a30af9d07bcfb32ecd50d818c4f">RetryGame</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// HWND設定.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a3a19d148af1131162a06649e0485fd20">   57</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a3a19d148af1131162a06649e0485fd20">SethWnd</a>(HWND hWnd) { m_hWnd = hWnd; }</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a2a045ded8d248f911114d9111757e308">   58</a></span>&#160;    <span class="keyword">inline</span> HWND <a class="code" href="class_c_scene_manager.html#a2a045ded8d248f911114d9111757e308">GethWnd</a>(){ <span class="keywordflow">return</span> m_hWnd; }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// リトライしたか.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a69b65ddd24c219ee46a3c2b79d068c32">   61</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_scene_manager.html#a69b65ddd24c219ee46a3c2b79d068c32">GetRetry</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_IsRetry; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// 現在再生されているBGMの名前の設定.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a90aca1802b1c37d55441c611df80fff3">   64</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a90aca1802b1c37d55441c611df80fff3">SetNowBGMName</a>( <span class="keyword">const</span> <span class="keywordtype">char</span>* name ){ m_NowBGMName = name; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// エディットシーンに切り替えれるか.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a81719fba17b3cfe3ebbd0e6a8e421472">   67</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a81719fba17b3cfe3ebbd0e6a8e421472">OnEditSceneChangeActive</a>(){ m_IsEditSceneChangeActive = <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_c_scene_manager.html#a027aefa1e117e7379276c268a02ff30d">   68</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_scene_manager.html#a027aefa1e117e7379276c268a02ff30d">OffEditSceneChangeActive</a>(){ m_IsEditSceneChangeActive = <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// エディットシーンに変更.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> ChangeEditScene();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    HWND m_hWnd;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::shared_ptr&lt;CSceneBase&gt; m_pScene;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::unique_ptr&lt;CCommand&gt;   m_pCommand;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::string                 m_NowBGMName;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">EScene</a>  m_NowScene;                 <span class="comment">// 現在のシーン.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">EScene</a>  m_NextScene;                <span class="comment">// 次のシーン.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span>    m_IsLoadEnd;                <span class="comment">// ロードが終了したか.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span>    m_IsGameOver;               <span class="comment">// ゲームオーバーか.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span>    m_IsGameEnd;                <span class="comment">// ゲームを終了したか.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span>    m_IsRetry;                  <span class="comment">// リトライしたか.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span>    m_IsChangeEditScene;        <span class="comment">// エディットシーンに切り替えるか.</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span>    m_IsEditSceneChangeActive;  <span class="comment">// エディットシーンに切り替えれるか.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// #ifndef SCENE_MANAGER_H.</span></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">ERS_STATE::Max</a></div><div class="ttdeci">@ Max</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4b"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4b">EScene</a></div><div class="ttdeci">EScene</div><div class="ttdef"><b>Definition:</b> SceneManager.h:17</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b">EScene::ResultCheck</a></div><div class="ttdeci">@ ResultCheck</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb">EScene::GameClear</a></div><div class="ttdeci">@ GameClear</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651">EScene::GameMain</a></div><div class="ttdeci">@ GameMain</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35">EScene::Edit</a></div><div class="ttdeci">@ Edit</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3">EScene::GameOver</a></div><div class="ttdeci">@ GameOver</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37">EScene::Start</a></div><div class="ttdeci">@ Start</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b">EScene::Title</a></div><div class="ttdeci">@ Title</div></div>
+<div class="ttc" id="a_scene_manager_8h_html_a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e"><div class="ttname"><a href="_scene_manager_8h.html#a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e">EScene::Config</a></div><div class="ttdeci">@ Config</div></div>
+<div class="ttc" id="aclass_c_command_html"><div class="ttname"><a href="class_c_command.html">CCommand</a></div><div class="ttdef"><b>Definition:</b> Command.h:16</div></div>
+<div class="ttc" id="aclass_c_gage_html"><div class="ttname"><a href="class_c_gage.html">CGage</a></div><div class="ttdef"><b>Definition:</b> Gage.h:7</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html"><div class="ttname"><a href="class_c_scene_manager.html">CSceneManager</a></div><div class="ttdef"><b>Definition:</b> SceneManager.h:39</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a027aefa1e117e7379276c268a02ff30d"><div class="ttname"><a href="class_c_scene_manager.html#a027aefa1e117e7379276c268a02ff30d">CSceneManager::OffEditSceneChangeActive</a></div><div class="ttdeci">void OffEditSceneChangeActive()</div><div class="ttdef"><b>Definition:</b> SceneManager.h:68</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a1253aee4ffadd98214a9b07f7104efd9"><div class="ttname"><a href="class_c_scene_manager.html#a1253aee4ffadd98214a9b07f7104efd9">CSceneManager::SetNextTitle</a></div><div class="ttdeci">void SetNextTitle()</div><div class="ttdef"><b>Definition:</b> SceneManager.h:51</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a13a81a30af9d07bcfb32ecd50d818c4f"><div class="ttname"><a href="class_c_scene_manager.html#a13a81a30af9d07bcfb32ecd50d818c4f">CSceneManager::RetryGame</a></div><div class="ttdeci">void RetryGame()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:151</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a181abdb0301a1ac255b30d95bc1aaf75"><div class="ttname"><a href="class_c_scene_manager.html#a181abdb0301a1ac255b30d95bc1aaf75">CSceneManager::OnGameOver</a></div><div class="ttdeci">void OnGameOver()</div><div class="ttdef"><b>Definition:</b> SceneManager.h:53</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a2a045ded8d248f911114d9111757e308"><div class="ttname"><a href="class_c_scene_manager.html#a2a045ded8d248f911114d9111757e308">CSceneManager::GethWnd</a></div><div class="ttdeci">HWND GethWnd()</div><div class="ttdef"><b>Definition:</b> SceneManager.h:58</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a3a19d148af1131162a06649e0485fd20"><div class="ttname"><a href="class_c_scene_manager.html#a3a19d148af1131162a06649e0485fd20">CSceneManager::SethWnd</a></div><div class="ttdeci">void SethWnd(HWND hWnd)</div><div class="ttdef"><b>Definition:</b> SceneManager.h:57</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a69b65ddd24c219ee46a3c2b79d068c32"><div class="ttname"><a href="class_c_scene_manager.html#a69b65ddd24c219ee46a3c2b79d068c32">CSceneManager::GetRetry</a></div><div class="ttdeci">bool GetRetry() const</div><div class="ttdef"><b>Definition:</b> SceneManager.h:61</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a81719fba17b3cfe3ebbd0e6a8e421472"><div class="ttname"><a href="class_c_scene_manager.html#a81719fba17b3cfe3ebbd0e6a8e421472">CSceneManager::OnEditSceneChangeActive</a></div><div class="ttdeci">void OnEditSceneChangeActive()</div><div class="ttdef"><b>Definition:</b> SceneManager.h:67</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a8f9bae5361fe27dd07f3f5a89e11354f"><div class="ttname"><a href="class_c_scene_manager.html#a8f9bae5361fe27dd07f3f5a89e11354f">CSceneManager::~CSceneManager</a></div><div class="ttdeci">~CSceneManager()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:35</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_a90aca1802b1c37d55441c611df80fff3"><div class="ttname"><a href="class_c_scene_manager.html#a90aca1802b1c37d55441c611df80fff3">CSceneManager::SetNowBGMName</a></div><div class="ttdeci">void SetNowBGMName(const char *name)</div><div class="ttdef"><b>Definition:</b> SceneManager.h:64</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_aac7331a7a92c7c0781a5e2358ec636a8"><div class="ttname"><a href="class_c_scene_manager.html#aac7331a7a92c7c0781a5e2358ec636a8">CSceneManager::CSceneManager</a></div><div class="ttdeci">CSceneManager()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:16</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_ac55b1b5372bc9a96fdd102b65a7b0562"><div class="ttname"><a href="class_c_scene_manager.html#ac55b1b5372bc9a96fdd102b65a7b0562">CSceneManager::NextSceneMove</a></div><div class="ttdeci">void NextSceneMove()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:87</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_af5300bb3c0e44013b45489f37697afb6"><div class="ttname"><a href="class_c_scene_manager.html#af5300bb3c0e44013b45489f37697afb6">CSceneManager::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:42</div></div>
+<div class="ttc" id="aclass_c_scene_manager_html_af5619a47213ddb7c2f9a14346b06829f"><div class="ttname"><a href="class_c_scene_manager.html#af5619a47213ddb7c2f9a14346b06829f">CSceneManager::EndGameClose</a></div><div class="ttdeci">void EndGameClose()</div><div class="ttdef"><b>Definition:</b> SceneManager.cpp:142</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

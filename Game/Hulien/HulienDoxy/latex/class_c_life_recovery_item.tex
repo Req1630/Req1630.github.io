@@ -1,0 +1,186 @@
+\hypertarget{class_c_life_recovery_item}{}\doxysection{CLife\+Recovery\+Item クラス}
+\label{class_c_life_recovery_item}\index{CLifeRecoveryItem@{CLifeRecoveryItem}}
+
+
+{\ttfamily \#include $<$Life\+Recovery.\+h$>$}
+
+
+
+CLife\+Recovery\+Item の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{class_c_life_recovery_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CLife\+Recovery\+Item 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_c_life_recovery_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_life_recovery_item_ac25cff6278717d22af5b8865d9a94c5c}{CLife\+Recovery\+Item}} ()
+\item 
+\mbox{\hyperlink{class_c_life_recovery_item_a94ac9d78b2876d0c6f274bf1dadd5621}{CLife\+Recovery\+Item}} (const float $\ast$p\+Life\+Recovery\+Value, const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{CItem\+Base\+::\+SParameter}} $\ast$p\+Param)
+\item 
+virtual \mbox{\hyperlink{class_c_life_recovery_item_ae75c00437cff14fdb420f15ac9a6192c}{$\sim$\+CLife\+Recovery\+Item}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_life_recovery_item_acabead8a16eeff0c919a47c928de24a1}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_life_recovery_item_a913e3d669a40be0b49e1b3712b1143c2}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_life_recovery_item_a008cbb2f714072e2f3a306039c8e5310}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_life_recovery_item_ab06210b2542bcf953d707f6c0beea09a}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_life_recovery_item_a6220636a1df5343bb4a86c0daba721b4}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_life_recovery_item_a5c2a6f29e45fb38fa01aec7343a471e2}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&p\+Actor) override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_life_recovery_item_ac25cff6278717d22af5b8865d9a94c5c}\label{class_c_life_recovery_item_ac25cff6278717d22af5b8865d9a94c5c}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{CLifeRecoveryItem()}{CLifeRecoveryItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CLife\+Recovery\+Item\+::\+CLife\+Recovery\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_life_recovery_item_a94ac9d78b2876d0c6f274bf1dadd5621}\label{class_c_life_recovery_item_a94ac9d78b2876d0c6f274bf1dadd5621}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{CLifeRecoveryItem()}{CLifeRecoveryItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CLife\+Recovery\+Item\+::\+CLife\+Recovery\+Item (\begin{DoxyParamCaption}\item[{const float $\ast$}]{p\+Life\+Recovery\+Value,  }\item[{const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{CItem\+Base\+::\+SParameter}} $\ast$}]{p\+Param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_life_recovery_item_ae75c00437cff14fdb420f15ac9a6192c}\label{class_c_life_recovery_item_ae75c00437cff14fdb420f15ac9a6192c}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!````~CLifeRecoveryItem@{$\sim$CLifeRecoveryItem}}
+\index{````~CLifeRecoveryItem@{$\sim$CLifeRecoveryItem}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{$\sim$CLifeRecoveryItem()}{~CLifeRecoveryItem()}}
+{\footnotesize\ttfamily CLife\+Recovery\+Item\+::$\sim$\+CLife\+Recovery\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_life_recovery_item_a6220636a1df5343bb4a86c0daba721b4}\label{class_c_life_recovery_item_a6220636a1df5343bb4a86c0daba721b4}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!Collision@{Collision}}
+\index{Collision@{Collision}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CLife\+Recovery\+Item\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a4d5f47448403bdfc77279a7f04644861}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_life_recovery_item_a6220636a1df5343bb4a86c0daba721b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_life_recovery_item_ab06210b2542bcf953d707f6c0beea09a}\label{class_c_life_recovery_item_ab06210b2542bcf953d707f6c0beea09a}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CLife\+Recovery\+Item\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_aede174da0d6542991784e337db4e8c9e}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_life_recovery_item_ab06210b2542bcf953d707f6c0beea09a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_life_recovery_item_acabead8a16eeff0c919a47c928de24a1}\label{class_c_life_recovery_item_acabead8a16eeff0c919a47c928de24a1}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!Init@{Init}}
+\index{Init@{Init}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CLife\+Recovery\+Item\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_life_recovery_item_acabead8a16eeff0c919a47c928de24a1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_life_recovery_item_a008cbb2f714072e2f3a306039c8e5310}\label{class_c_life_recovery_item_a008cbb2f714072e2f3a306039c8e5310}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!Render@{Render}}
+\index{Render@{Render}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CLife\+Recovery\+Item\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_life_recovery_item_a008cbb2f714072e2f3a306039c8e5310_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_life_recovery_item_a5c2a6f29e45fb38fa01aec7343a471e2}\label{class_c_life_recovery_item_a5c2a6f29e45fb38fa01aec7343a471e2}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CLife\+Recovery\+Item\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_life_recovery_item_a5c2a6f29e45fb38fa01aec7343a471e2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_life_recovery_item_a913e3d669a40be0b49e1b3712b1143c2}\label{class_c_life_recovery_item_a913e3d669a40be0b49e1b3712b1143c2}} 
+\index{CLifeRecoveryItem@{CLifeRecoveryItem}!Update@{Update}}
+\index{Update@{Update}!CLifeRecoveryItem@{CLifeRecoveryItem}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CLife\+Recovery\+Item\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_c_life_recovery_item_a913e3d669a40be0b49e1b3712b1143c2_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Item/\+Items/\+Life\+Recovery/\mbox{\hyperlink{_life_recovery_8h}{Life\+Recovery.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Item/\+Items/\+Life\+Recovery/\mbox{\hyperlink{_life_recovery_8cpp}{Life\+Recovery.\+cpp}}\end{DoxyCompactItemize}

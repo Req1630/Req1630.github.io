@@ -1,0 +1,106 @@
+\hypertarget{class_c_font}{}\doxysection{CFont クラス}
+\label{class_c_font}\index{CFont@{CFont}}
+
+
+{\ttfamily \#include $<$Font.\+h$>$}
+
+
+
+CFont の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_font__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CFont 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_font__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_font_a3f49893acc711805888c11aa8e931666}{CFont}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_font_a1e1d2d4b4d14c7004289291785d75728}{$\sim$\+CFont}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_font_a7cac194e5b1edbbb842f594a1bc01eca}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+void \mbox{\hyperlink{class_c_font_a10149b2c5c66bd87098825e6fde77247}{Render\+UI}} (const std\+::string \&text)
+\item 
+void \mbox{\hyperlink{class_c_font_a33bd77c3a95851e36d268005d36b983a}{Render}} (const std\+::string \&text, const bool \&is\+Billboard=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_font_a3f49893acc711805888c11aa8e931666}\label{class_c_font_a3f49893acc711805888c11aa8e931666}} 
+\index{CFont@{CFont}!CFont@{CFont}}
+\index{CFont@{CFont}!CFont@{CFont}}
+\doxysubsubsection{\texorpdfstring{CFont()}{CFont()}}
+{\footnotesize\ttfamily CFont\+::\+CFont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_font_a1e1d2d4b4d14c7004289291785d75728}\label{class_c_font_a1e1d2d4b4d14c7004289291785d75728}} 
+\index{CFont@{CFont}!````~CFont@{$\sim$CFont}}
+\index{````~CFont@{$\sim$CFont}!CFont@{CFont}}
+\doxysubsubsection{\texorpdfstring{$\sim$CFont()}{~CFont()}}
+{\footnotesize\ttfamily CFont\+::$\sim$\+CFont (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_font_a7cac194e5b1edbbb842f594a1bc01eca}\label{class_c_font_a7cac194e5b1edbbb842f594a1bc01eca}} 
+\index{CFont@{CFont}!Init@{Init}}
+\index{Init@{Init}!CFont@{CFont}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CFont\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_c_font_a7cac194e5b1edbbb842f594a1bc01eca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_font_a33bd77c3a95851e36d268005d36b983a}\label{class_c_font_a33bd77c3a95851e36d268005d36b983a}} 
+\index{CFont@{CFont}!Render@{Render}}
+\index{Render@{Render}!CFont@{CFont}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CFont\+::\+Render (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const bool \&}]{is\+Billboard = {\ttfamily false} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_font_a33bd77c3a95851e36d268005d36b983a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_font_a10149b2c5c66bd87098825e6fde77247}\label{class_c_font_a10149b2c5c66bd87098825e6fde77247}} 
+\index{CFont@{CFont}!RenderUI@{RenderUI}}
+\index{RenderUI@{RenderUI}!CFont@{CFont}}
+\doxysubsubsection{\texorpdfstring{RenderUI()}{RenderUI()}}
+{\footnotesize\ttfamily void CFont\+::\+Render\+UI (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_font_a10149b2c5c66bd87098825e6fde77247_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Font/\mbox{\hyperlink{_font_8h}{Font.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Font/\mbox{\hyperlink{_font_8cpp}{Font.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,174 @@
+\hypertarget{class_c_o_b_box_collision}{}\doxysection{COBBox\+Collision クラス}
+\label{class_c_o_b_box_collision}\index{COBBoxCollision@{COBBoxCollision}}
+
+
+{\ttfamily \#include $<$OBBox\+Collision.\+h$>$}
+
+
+
+COBBox\+Collision の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_c_o_b_box_collision__inherit__graph}
+\end{center}
+\end{figure}
+
+
+COBBox\+Collision 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_c_o_b_box_collision__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_o_b_box_collision_a3ae77f6404c2e3acfbeebbbaca50ecac}{COBBox\+Collision}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_o_b_box_collision_ac795bf7a0d727700b43681d6b43f8df3}{$\sim$\+COBBox\+Collision}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_o_b_box_collision_a6cc879def3064124f66ab3edc580f68b}{Init\+Model\+Box}} (LPD3\+DXMESH p\+Mesh)
+\item 
+HRESULT \mbox{\hyperlink{class_c_o_b_box_collision_a91324fb72aa5453d8ef0e0e0ff1c8bec}{Init\+Model\+Box}} (const D3\+DXVECTOR3 \&length)
+\item 
+virtual void \mbox{\hyperlink{class_c_o_b_box_collision_a4e9daacdbe7600f1db73eada94d4cfdf}{Debug\+Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_o_b_box_collision_a38ff70f832b48c4e774c268745bb14b0}{Set\+Change\+Color}} (const bool \&changed)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_o_b_box_collision_ab5508a2799e638302bbd165d5d6dfdb9}{Get\+Direction}} (const int \&index)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_o_b_box_collision_a5e48c38847660300b1c7f2aceed41a74}{Get\+Length}} ()
+\item 
+void \mbox{\hyperlink{class_c_o_b_box_collision_ad80b060c11d0471dea6bc7bca0115c18}{Set\+Adj\+Length}} (const D3\+DXVECTOR3 \&length)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_o_b_box_collision_a3ae77f6404c2e3acfbeebbbaca50ecac}\label{class_c_o_b_box_collision_a3ae77f6404c2e3acfbeebbbaca50ecac}} 
+\index{COBBoxCollision@{COBBoxCollision}!COBBoxCollision@{COBBoxCollision}}
+\index{COBBoxCollision@{COBBoxCollision}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{COBBoxCollision()}{COBBoxCollision()}}
+{\footnotesize\ttfamily COBBox\+Collision\+::\+COBBox\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_o_b_box_collision_ac795bf7a0d727700b43681d6b43f8df3}\label{class_c_o_b_box_collision_ac795bf7a0d727700b43681d6b43f8df3}} 
+\index{COBBoxCollision@{COBBoxCollision}!````~COBBoxCollision@{$\sim$COBBoxCollision}}
+\index{````~COBBoxCollision@{$\sim$COBBoxCollision}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{$\sim$COBBoxCollision()}{~COBBoxCollision()}}
+{\footnotesize\ttfamily COBBox\+Collision\+::$\sim$\+COBBox\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_o_b_box_collision_a4e9daacdbe7600f1db73eada94d4cfdf}\label{class_c_o_b_box_collision_a4e9daacdbe7600f1db73eada94d4cfdf}} 
+\index{COBBoxCollision@{COBBoxCollision}!DebugRender@{DebugRender}}
+\index{DebugRender@{DebugRender}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{DebugRender()}{DebugRender()}}
+{\footnotesize\ttfamily void COBBox\+Collision\+::\+Debug\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_collider_base_a5277b3ffd6abed9c34b61a6ed51d83db}{CCollider\+Base}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_a4e9daacdbe7600f1db73eada94d4cfdf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_o_b_box_collision_ab5508a2799e638302bbd165d5d6dfdb9}\label{class_c_o_b_box_collision_ab5508a2799e638302bbd165d5d6dfdb9}} 
+\index{COBBoxCollision@{COBBoxCollision}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 COBBox\+Collision\+::\+Get\+Direction (\begin{DoxyParamCaption}\item[{const int \&}]{index }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_ab5508a2799e638302bbd165d5d6dfdb9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_o_b_box_collision_a5e48c38847660300b1c7f2aceed41a74}\label{class_c_o_b_box_collision_a5e48c38847660300b1c7f2aceed41a74}} 
+\index{COBBoxCollision@{COBBoxCollision}!GetLength@{GetLength}}
+\index{GetLength@{GetLength}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{GetLength()}{GetLength()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 COBBox\+Collision\+::\+Get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_a5e48c38847660300b1c7f2aceed41a74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_o_b_box_collision_a91324fb72aa5453d8ef0e0e0ff1c8bec}\label{class_c_o_b_box_collision_a91324fb72aa5453d8ef0e0e0ff1c8bec}} 
+\index{COBBoxCollision@{COBBoxCollision}!InitModelBox@{InitModelBox}}
+\index{InitModelBox@{InitModelBox}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{InitModelBox()}{InitModelBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily HRESULT COBBox\+Collision\+::\+Init\+Model\+Box (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_o_b_box_collision_a6cc879def3064124f66ab3edc580f68b}\label{class_c_o_b_box_collision_a6cc879def3064124f66ab3edc580f68b}} 
+\index{COBBoxCollision@{COBBoxCollision}!InitModelBox@{InitModelBox}}
+\index{InitModelBox@{InitModelBox}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{InitModelBox()}{InitModelBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT COBBox\+Collision\+::\+Init\+Model\+Box (\begin{DoxyParamCaption}\item[{LPD3\+DXMESH}]{p\+Mesh }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_a6cc879def3064124f66ab3edc580f68b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_a6cc879def3064124f66ab3edc580f68b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_o_b_box_collision_ad80b060c11d0471dea6bc7bca0115c18}\label{class_c_o_b_box_collision_ad80b060c11d0471dea6bc7bca0115c18}} 
+\index{COBBoxCollision@{COBBoxCollision}!SetAdjLength@{SetAdjLength}}
+\index{SetAdjLength@{SetAdjLength}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{SetAdjLength()}{SetAdjLength()}}
+{\footnotesize\ttfamily void COBBox\+Collision\+::\+Set\+Adj\+Length (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_ad80b060c11d0471dea6bc7bca0115c18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_o_b_box_collision_a38ff70f832b48c4e774c268745bb14b0}\label{class_c_o_b_box_collision_a38ff70f832b48c4e774c268745bb14b0}} 
+\index{COBBoxCollision@{COBBoxCollision}!SetChangeColor@{SetChangeColor}}
+\index{SetChangeColor@{SetChangeColor}!COBBoxCollision@{COBBoxCollision}}
+\doxysubsubsection{\texorpdfstring{SetChangeColor()}{SetChangeColor()}}
+{\footnotesize\ttfamily void COBBox\+Collision\+::\+Set\+Change\+Color (\begin{DoxyParamCaption}\item[{const bool \&}]{changed }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_o_b_box_collision_a38ff70f832b48c4e774c268745bb14b0_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Colliders/\+OBBox/\mbox{\hyperlink{_o_b_box_collision_8h}{OBBox\+Collision.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Collider/\+Colliders/\+OBBox/\mbox{\hyperlink{_o_b_box_collision_8cpp}{OBBox\+Collision.\+cpp}}\end{DoxyCompactItemize}

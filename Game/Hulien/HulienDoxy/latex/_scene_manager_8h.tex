@@ -1,0 +1,107 @@
+\hypertarget{_scene_manager_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene/\+Scene\+Manager/\+Scene\+Manager.h ファイル}
+\label{_scene_manager_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/SceneManager/SceneManager.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/SceneManager/SceneManager.h}}
+
+
+シーン管理クラス.  
+
+
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Scene\+Base\textbackslash{}\+Scene\+Base.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}..\textbackslash{}\+Game\+Object\textbackslash{}\+Widget\textbackslash{}\+Fade\textbackslash{}\+Fade.\+h\char`\"{}}\newline
+Scene\+Manager.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_scene_manager_8h__incl}
+\end{center}
+\end{figure}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_scene_manager_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4b}{EScene}} \{ \newline
+\mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b}{Title}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651}{Game\+Main}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb}{Game\+Clear}}
+, \newline
+\mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3}{Game\+Over}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e}{Config}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35}{Edit}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba6a061313d22e51e0f25b7cd4dc065233}{Max}}
+, \newline
+\mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b}{Result\+Check}}
+, \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37}{Start}} = Title
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+シーン管理クラス. 
+
+\begin{DoxyAuthor}{著者}
+福田玲也. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4b}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4b}} 
+\index{SceneManager.h@{SceneManager.h}!EScene@{EScene}}
+\index{EScene@{EScene}!SceneManager.h@{SceneManager.h}}
+\doxysubsubsection{\texorpdfstring{EScene}{EScene}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4b}{EScene}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!None@{None}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba6adf97f83acf6453d4a6a4b1070f3754}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Title@{Title}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!Title@{Title}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4bab78a3223503896721cca1303f776159b}} 
+Title&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameMain@{GameMain}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!GameMain@{GameMain}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba75e7135d8b0a7c0014983cb823109651}} 
+Game\+Main&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameClear@{GameClear}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!GameClear@{GameClear}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba52b4113d941d3ef49056dd31224c2efb}} 
+Game\+Clear&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GameOver@{GameOver}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!GameOver@{GameOver}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba8f347bc7cebca9fa6d97e70c6bc29eb3}} 
+Game\+Over&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Config@{Config}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!Config@{Config}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4bafa535ffb25e1fd20341652f9be21e06e}} 
+Config&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Edit@{Edit}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!Edit@{Edit}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba7dce122004969d56ae2e0245cb754d35}} 
+Edit&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!Max@{Max}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba6a061313d22e51e0f25b7cd4dc065233}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ResultCheck@{ResultCheck}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!ResultCheck@{ResultCheck}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4ba11947055e5dea7f4fb2d2bdb07a6780b}} 
+Result\+Check&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!SceneManager.h@{SceneManager.h}}\index{SceneManager.h@{SceneManager.h}!Start@{Start}}}\mbox{\Hypertarget{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37}\label{_scene_manager_8h_a7908051915a7d09cc76a65419eec0f4baa6122a65eaa676f700ae68d393054a37}} 
+Start&\\
+\hline
+
+\end{DoxyEnumFields}

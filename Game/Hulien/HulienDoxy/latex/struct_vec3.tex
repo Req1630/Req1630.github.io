@@ -1,0 +1,153 @@
+\hypertarget{struct_vec3}{}\doxysection{Vec3 構造体}
+\label{struct_vec3}\index{Vec3@{Vec3}}
+
+
+{\ttfamily \#include $<$My\+Vector.\+h$>$}
+
+
+
+Vec3 の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{struct_vec3__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Vec3 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=124pt]{struct_vec3__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vec3_aae7a1ffaa1108a30c281da216d1cd312}{Vec3}} ()
+\item 
+\mbox{\hyperlink{struct_vec3_a842ccdcdb2b4c7ca7cef20e6e786a231}{Vec3}} (float \mbox{\hyperlink{struct_float3_ac596e0cf37e992db116ebe169ec6cd2d}{x}}, float \mbox{\hyperlink{struct_float3_a86c923e4acaf36c9d325bca554b3f3a9}{y}}, float \mbox{\hyperlink{struct_float3_a921399d2713f5b390fcf6060d7ccac00}{z}})
+\item 
+\mbox{\hyperlink{struct_vec3_a03d605d8a9d2249cedfeb850cbce04d2}{Vec3}} (const \mbox{\hyperlink{struct_float3}{Float3}} \&r)
+\item 
+\mbox{\hyperlink{struct_vec3_a1f5422fc4645496196292fa5314ef77c}{$\sim$\+Vec3}} ()
+\item 
+\mbox{\hyperlink{struct_vec3}{Vec3}} \& \mbox{\hyperlink{struct_vec3_aa914f0132dd9e460f07e45cad2d41b33}{operator=}} (const \mbox{\hyperlink{struct_float3}{Float3}} \&r)
+\item 
+void \mbox{\hyperlink{struct_vec3_abfa4d494db20ede8ec46de2582d25799}{norm}} ()
+\item 
+bool \mbox{\hyperlink{struct_vec3_af24d3a858cea2fcc058ea4a958c13715}{is\+Vertical}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&r) const
+\item 
+bool \mbox{\hyperlink{struct_vec3_afa12c7ca485a2a29113e8b3c8e3373a7}{is\+Parallel}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&r) const
+\item 
+bool \mbox{\hyperlink{struct_vec3_ac4ac4782598f172bcc0c104ec5833068}{is\+Sharp\+Angle}} (const \mbox{\hyperlink{struct_vec3}{Vec3}} \&r) const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{struct_vec3_aae7a1ffaa1108a30c281da216d1cd312}\label{struct_vec3_aae7a1ffaa1108a30c281da216d1cd312}} 
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{Vec3()}{Vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Vec3\+::\+Vec3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{struct_vec3_a842ccdcdb2b4c7ca7cef20e6e786a231}\label{struct_vec3_a842ccdcdb2b4c7ca7cef20e6e786a231}} 
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{Vec3()}{Vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Vec3\+::\+Vec3 (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{struct_vec3_a03d605d8a9d2249cedfeb850cbce04d2}\label{struct_vec3_a03d605d8a9d2249cedfeb850cbce04d2}} 
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\index{Vec3@{Vec3}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{Vec3()}{Vec3()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Vec3\+::\+Vec3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_float3}{Float3}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{struct_vec3_a1f5422fc4645496196292fa5314ef77c}\label{struct_vec3_a1f5422fc4645496196292fa5314ef77c}} 
+\index{Vec3@{Vec3}!````~Vec3@{$\sim$Vec3}}
+\index{````~Vec3@{$\sim$Vec3}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{$\sim$Vec3()}{~Vec3()}}
+{\footnotesize\ttfamily Vec3\+::$\sim$\+Vec3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{struct_vec3_afa12c7ca485a2a29113e8b3c8e3373a7}\label{struct_vec3_afa12c7ca485a2a29113e8b3c8e3373a7}} 
+\index{Vec3@{Vec3}!isParallel@{isParallel}}
+\index{isParallel@{isParallel}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{isParallel()}{isParallel()}}
+{\footnotesize\ttfamily bool Vec3\+::is\+Parallel (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_vec3_afa12c7ca485a2a29113e8b3c8e3373a7_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_vec3_afa12c7ca485a2a29113e8b3c8e3373a7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_vec3_ac4ac4782598f172bcc0c104ec5833068}\label{struct_vec3_ac4ac4782598f172bcc0c104ec5833068}} 
+\index{Vec3@{Vec3}!isSharpAngle@{isSharpAngle}}
+\index{isSharpAngle@{isSharpAngle}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{isSharpAngle()}{isSharpAngle()}}
+{\footnotesize\ttfamily bool Vec3\+::is\+Sharp\+Angle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{struct_vec3_ac4ac4782598f172bcc0c104ec5833068_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_vec3_af24d3a858cea2fcc058ea4a958c13715}\label{struct_vec3_af24d3a858cea2fcc058ea4a958c13715}} 
+\index{Vec3@{Vec3}!isVertical@{isVertical}}
+\index{isVertical@{isVertical}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{isVertical()}{isVertical()}}
+{\footnotesize\ttfamily bool Vec3\+::is\+Vertical (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vec3}{Vec3}} \&}]{r }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{struct_vec3_af24d3a858cea2fcc058ea4a958c13715_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_vec3_abfa4d494db20ede8ec46de2582d25799}\label{struct_vec3_abfa4d494db20ede8ec46de2582d25799}} 
+\index{Vec3@{Vec3}!norm@{norm}}
+\index{norm@{norm}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{norm()}{norm()}}
+{\footnotesize\ttfamily void Vec3\+::norm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_vec3_abfa4d494db20ede8ec46de2582d25799_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{struct_vec3_aa914f0132dd9e460f07e45cad2d41b33}\label{struct_vec3_aa914f0132dd9e460f07e45cad2d41b33}} 
+\index{Vec3@{Vec3}!operator=@{operator=}}
+\index{operator=@{operator=}!Vec3@{Vec3}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vec3}{Vec3}}\& Vec3\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_float3}{Float3}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+My\+Vector/\mbox{\hyperlink{_my_vector_8h}{My\+Vector.\+h}}\end{DoxyCompactItemize}

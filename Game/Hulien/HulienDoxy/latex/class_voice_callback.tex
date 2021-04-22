@@ -1,0 +1,126 @@
+\hypertarget{class_voice_callback}{}\doxysection{Voice\+Callback クラス}
+\label{class_voice_callback}\index{VoiceCallback@{VoiceCallback}}
+
+
+{\ttfamily \#include $<$Voice\+Call\+Back.\+h$>$}
+
+
+
+Voice\+Callback の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_voice_callback__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Voice\+Callback 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_voice_callback__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_voice_callback_acebe518391f41f33c361651f9764e86d}{Voice\+Callback}} ()
+\item 
+\mbox{\hyperlink{class_voice_callback_a6b225be70f78f9f4e847ffd2fcf8b635}{$\sim$\+Voice\+Callback}} ()
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_a777f6bb698d8300fa8e7ee54002c43ae}{On\+Stream\+End}} ()
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_a8a7d9e62ff67dcba6cb497faaab68d84}{On\+Voice\+Processing\+Pass\+End}} ()
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_aa68a01a72828ac2ac4cf5651488b4791}{On\+Voice\+Processing\+Pass\+Start}} (UINT32 Samples\+Required)
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_a050e02f3b26aaffc0fd095144d342034}{On\+Buffer\+End}} (void $\ast$p\+Buffer\+Context)
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_a47705d113830820549ce02a72c544c9f}{On\+Buffer\+Start}} (void $\ast$p\+Buffer\+Context)
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_a83386e40fdd09b66228e2f38892a5876}{On\+Loop\+End}} (void $\ast$p\+Buffer\+Context)
+\item 
+void STDMETHODCALLTYPE \mbox{\hyperlink{class_voice_callback_adc6d4ede786c38f4a1eafd5c2d701c4b}{On\+Voice\+Error}} (void $\ast$p\+Buffer\+Context, HRESULT Error)
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+HANDLE \mbox{\hyperlink{class_voice_callback_a49f5125a0a64279a99307e3ff79dbb19}{event}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_voice_callback_acebe518391f41f33c361651f9764e86d}\label{class_voice_callback_acebe518391f41f33c361651f9764e86d}} 
+\index{VoiceCallback@{VoiceCallback}!VoiceCallback@{VoiceCallback}}
+\index{VoiceCallback@{VoiceCallback}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{VoiceCallback()}{VoiceCallback()}}
+{\footnotesize\ttfamily Voice\+Callback\+::\+Voice\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_a6b225be70f78f9f4e847ffd2fcf8b635}\label{class_voice_callback_a6b225be70f78f9f4e847ffd2fcf8b635}} 
+\index{VoiceCallback@{VoiceCallback}!````~VoiceCallback@{$\sim$VoiceCallback}}
+\index{````~VoiceCallback@{$\sim$VoiceCallback}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{$\sim$VoiceCallback()}{~VoiceCallback()}}
+{\footnotesize\ttfamily Voice\+Callback\+::$\sim$\+Voice\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_voice_callback_a050e02f3b26aaffc0fd095144d342034}\label{class_voice_callback_a050e02f3b26aaffc0fd095144d342034}} 
+\index{VoiceCallback@{VoiceCallback}!OnBufferEnd@{OnBufferEnd}}
+\index{OnBufferEnd@{OnBufferEnd}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnBufferEnd()}{OnBufferEnd()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Buffer\+End (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Buffer\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_a47705d113830820549ce02a72c544c9f}\label{class_voice_callback_a47705d113830820549ce02a72c544c9f}} 
+\index{VoiceCallback@{VoiceCallback}!OnBufferStart@{OnBufferStart}}
+\index{OnBufferStart@{OnBufferStart}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnBufferStart()}{OnBufferStart()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Buffer\+Start (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Buffer\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_a83386e40fdd09b66228e2f38892a5876}\label{class_voice_callback_a83386e40fdd09b66228e2f38892a5876}} 
+\index{VoiceCallback@{VoiceCallback}!OnLoopEnd@{OnLoopEnd}}
+\index{OnLoopEnd@{OnLoopEnd}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnLoopEnd()}{OnLoopEnd()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Loop\+End (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Buffer\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_a777f6bb698d8300fa8e7ee54002c43ae}\label{class_voice_callback_a777f6bb698d8300fa8e7ee54002c43ae}} 
+\index{VoiceCallback@{VoiceCallback}!OnStreamEnd@{OnStreamEnd}}
+\index{OnStreamEnd@{OnStreamEnd}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnStreamEnd()}{OnStreamEnd()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Stream\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_adc6d4ede786c38f4a1eafd5c2d701c4b}\label{class_voice_callback_adc6d4ede786c38f4a1eafd5c2d701c4b}} 
+\index{VoiceCallback@{VoiceCallback}!OnVoiceError@{OnVoiceError}}
+\index{OnVoiceError@{OnVoiceError}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnVoiceError()}{OnVoiceError()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Voice\+Error (\begin{DoxyParamCaption}\item[{void $\ast$}]{p\+Buffer\+Context,  }\item[{HRESULT}]{Error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_a8a7d9e62ff67dcba6cb497faaab68d84}\label{class_voice_callback_a8a7d9e62ff67dcba6cb497faaab68d84}} 
+\index{VoiceCallback@{VoiceCallback}!OnVoiceProcessingPassEnd@{OnVoiceProcessingPassEnd}}
+\index{OnVoiceProcessingPassEnd@{OnVoiceProcessingPassEnd}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnVoiceProcessingPassEnd()}{OnVoiceProcessingPassEnd()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Voice\+Processing\+Pass\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_voice_callback_aa68a01a72828ac2ac4cf5651488b4791}\label{class_voice_callback_aa68a01a72828ac2ac4cf5651488b4791}} 
+\index{VoiceCallback@{VoiceCallback}!OnVoiceProcessingPassStart@{OnVoiceProcessingPassStart}}
+\index{OnVoiceProcessingPassStart@{OnVoiceProcessingPassStart}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{OnVoiceProcessingPassStart()}{OnVoiceProcessingPassStart()}}
+{\footnotesize\ttfamily void STDMETHODCALLTYPE Voice\+Callback\+::\+On\+Voice\+Processing\+Pass\+Start (\begin{DoxyParamCaption}\item[{UINT32}]{Samples\+Required }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_voice_callback_a49f5125a0a64279a99307e3ff79dbb19}\label{class_voice_callback_a49f5125a0a64279a99307e3ff79dbb19}} 
+\index{VoiceCallback@{VoiceCallback}!event@{event}}
+\index{event@{event}!VoiceCallback@{VoiceCallback}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily HANDLE Voice\+Callback\+::event}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\+XAudio2\+Call\+Back/\mbox{\hyperlink{_voice_call_back_8h}{Voice\+Call\+Back.\+h}}\end{DoxyCompactItemize}

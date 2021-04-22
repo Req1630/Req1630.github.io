@@ -1,0 +1,9 @@
+<map id="CSkyDomeModel::Render" name="CSkyDomeModel::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,177,108"/>
+<area shape="rect" id="node2" href="$class_c_camera_manager.html#aee6441b686ce18610a4748aeb37c6c8a" title=" " alt="" coords="233,5,436,32"/>
+<area shape="rect" id="node3" href="$class_c_camera_manager.html#ac60999cfe7c66600c721367dc3d87c45" title=" " alt="" coords="227,56,442,83"/>
+<area shape="rect" id="node4" href="$class_c_camera_manager.html#a52bbaea5e90b571603d650f46db105de" title=" " alt="" coords="225,107,444,133"/>
+<area shape="rect" id="node5" href="$class_c_common.html#aa2b4cc503db5f5ed64fb81dd815343eb" title=" " alt="" coords="262,157,407,184"/>
+<area shape="rect" id="node6" href="$class_c_direct_x11.html#aef503e8641a39cda992d9fe675529ac5" title=" " alt="" coords="492,157,640,184"/>
+<area shape="rect" id="node7" href="$class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="688,157,852,184"/>
+</map>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/Scenes/GameClear/GameClear.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_26b02589e53dd6a6cf02171ae1971281.html">Scene</a></li><li class="navelem"><a class="el" href="dir_cc68c70b817f35837718f58411e6202b.html">Scenes</a></li><li class="navelem"><a class="el" href="dir_7cfdf091ddce341a8988e8a43d9522d6.html">GameClear</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a>  </div>
+  <div class="headertitle">
+<div class="title">GameClear.cpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_scene_list_8h_source.html">..\SceneList.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_clear_widget_8h_source.html">..\..\..\GameObject\Widget\SceneWidget\ClearWidget\ClearWidget.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_s_t_g_manager_8h_source.html">..\..\..\GameObject\STG\STGManager\STGManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_fade_8h_source.html">..\..\..\GameObject\Widget\Fade\Fade.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_input_8h_source.html">..\..\..\Utility\Input\Input.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sound_manager_8h_source.html">..\..\..\XAudio2\SoundManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_tex_renderer_8h_source.html">..\..\..\Common\SceneTexRenderer\SceneTexRenderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_d3_d_x11_8h_source.html">..\..\..\Common\D3DX\D3DX11.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+GameClear.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_game_clear_8cpp__incl.png" border="0" usemap="#a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_game_clear_2_game_clear_8cpp" alt=""/></div>
+<map name="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_game_clear_2_game_clear_8cpp" id="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_game_clear_2_game_clear_8cpp">
+<area shape="rect" title=" " alt="" coords="1681,5,1867,76"/>
+<area shape="rect" href="_scene_list_8h.html" title=" " alt="" coords="864,124,967,151"/>
+<area shape="rect" href="_d3_d_x11_8h.html" title="DirectX11 Deviceを持っているクラス." alt="" coords="1709,578,1788,605"/>
+<area shape="rect" href="_fade_8h.html" title=" " alt="" coords="1860,303,2024,344"/>
+<area shape="rect" href="_clear_widget_8h.html" title=" " alt="" coords="2019,199,2201,255"/>
+<area shape="rect" href="_s_t_g_manager_8h.html" title="STG全体を管理するクラス." alt="" coords="5,392,228,433"/>
+<area shape="rect" href="_input_8h.html" title=" " alt="" coords="1202,481,1325,523"/>
+<area shape="rect" href="_sound_manager_8h.html" title=" " alt="" coords="2491,399,2697,426"/>
+<area shape="rect" href="_scene_tex_renderer_8h.html" title="ポストエフェクトなどを描画する." alt="" coords="1535,303,1733,344"/>
+<area shape="rect" href="_scene_manager_8h.html" title="シーン管理クラス." alt="" coords="1297,213,1520,240"/>
+<area shape="rect" href="_title_8h.html" title=" " alt="" coords="1058,213,1143,240"/>
+<area shape="rect" href="_game_8h.html" title=" " alt="" coords="685,213,791,240"/>
+<area shape="rect" href="_game_clear_8h.html" title=" " alt="" coords="816,213,983,240"/>
+<area shape="rect" href="_game_over_8h.html" title=" " alt="" coords="368,213,527,240"/>
+<area shape="rect" href="_config_8h.html" title=" " alt="" coords="551,213,661,240"/>
+<area shape="rect" href="_editor_8h.html" title=" " alt="" coords="1168,213,1273,240"/>
+<area shape="rect" href="_scene_base_8h.html" title="シーン基底クラス." alt="" coords="701,310,884,337"/>
+<area shape="rect" title=" " alt="" coords="715,660,801,687"/>
+<area shape="rect" title=" " alt="" coords="1707,660,1761,687"/>
+<area shape="rect" title=" " alt="" coords="257,660,326,687"/>
+<area shape="rect" href="_global_8h.html" title=" " alt="" coords="784,489,879,515"/>
+<area shape="rect" title=" " alt="" coords="555,578,625,605"/>
+<area shape="rect" title=" " alt="" coords="649,578,721,605"/>
+<area shape="rect" title=" " alt="" coords="984,578,1063,605"/>
+<area shape="rect" title=" " alt="" coords="795,578,867,605"/>
+<area shape="rect" href="_d3_d_x9_8h.html" title="DirectX9 Deviceを持っているクラス." alt="" coords="892,578,960,605"/>
+<area shape="rect" href="_my_log_8h.html" title=" " alt="" coords="379,578,531,605"/>
+<area shape="rect" title=" " alt="" coords="1874,660,1930,687"/>
+<area shape="rect" href="_widget_8h.html" title=" " alt="" coords="1983,399,2069,426"/>
+<area shape="rect" href="_c_sprite_8h.html" title=" " alt="" coords="1363,303,1511,344"/>
+<area shape="rect" href="_capsule_model_8h.html" title="カプセルモデルを描画するクラス." alt="" coords="959,303,1130,344"/>
+<area shape="rect" href="_capsule_collision_8h.html" title=" " alt="" coords="1154,303,1338,344"/>
+<area shape="rect" href="_common_8h.html" title=" " alt="" coords="1435,399,1532,426"/>
+<area shape="rect" href="_sprite_shader_8h.html" title=" " alt="" coords="1557,392,1711,433"/>
+<area shape="rect" href="_scene_widget_8h.html" title=" " alt="" coords="2049,310,2171,337"/>
+<area shape="rect" href="_key_input_8h.html" title=" " alt="" coords="1087,578,1226,605"/>
+<area shape="rect" href="_input_struct_8h.html" title=" " alt="" coords="1209,660,1317,687"/>
+<area shape="rect" href="_x_input_8h.html" title="This is Use Xinput Controller file." alt="" coords="1301,578,1407,605"/>
+<area shape="rect" title=" " alt="" coords="1403,660,1513,687"/>
+<area shape="rect" title=" " alt="" coords="1557,578,1634,605"/>
+<area shape="rect" title=" " alt="" coords="2863,489,2909,515"/>
+<area shape="rect" title=" " alt="" coords="2934,489,3009,515"/>
+<area shape="rect" title=" " alt="" coords="3033,489,3105,515"/>
+<area shape="rect" title=" " alt="" coords="2631,489,2690,515"/>
+<area shape="rect" href="_x_audio2_play_b_g_m_8h.html" title=" " alt="" coords="2117,489,2330,515"/>
+<area shape="rect" title=" " alt="" coords="2413,578,2471,605"/>
+<area shape="rect" href="_x_audio2_wave_load_8h.html" title=" " alt="" coords="2015,571,2159,612"/>
+<area shape="rect" href="_ogg_load_8h.html" title=" " alt="" coords="2184,578,2337,605"/>
+<area shape="rect" href="_x_audio2_play_s_e_8h.html" title=" " alt="" coords="2355,489,2556,515"/>
+<area shape="rect" title=" " alt="" coords="2715,489,2839,515"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:ae64256fd228c8516841be32f294fc4f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_game_clear_8cpp.html#ae64256fd228c8516841be32f294fc4f8">ENDING_STG</a></td></tr>
+<tr class="separator:ae64256fd228c8516841be32f294fc4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="ae64256fd228c8516841be32f294fc4f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae64256fd228c8516841be32f294fc4f8">&#9670;&nbsp;</a></span>ENDING_STG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENDING_STG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

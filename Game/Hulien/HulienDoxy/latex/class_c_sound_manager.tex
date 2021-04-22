@@ -1,0 +1,773 @@
+\hypertarget{class_c_sound_manager}{}\doxysection{CSound\+Manager クラス}
+\label{class_c_sound_manager}\index{CSoundManager@{CSoundManager}}
+
+
+{\ttfamily \#include $<$Sound\+Manager.\+h$>$}
+
+
+
+CSound\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{class_c_sound_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_sound_manager_1_1_sound_volume}{Sound\+Volume}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_sound_manager_ae8358c75282bcceb23bd23ea9328e407}{CSound\+Manager}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_sound_manager_a75bc0ad3cc339baeb29372632c02f5f2}{$\sim$\+CSound\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_sound_manager}{CSound\+Manager}} $\ast$ \mbox{\hyperlink{class_c_sound_manager_a19134e728f19e7a4950200fa741a6805}{Get\+Instance}} ()
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a9666c70442921299d8f3046787ae47fe}{Create\+Sound\+Data}} ()
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_a299c6a7021e4f697eb3b5c4bb559aaab}{Load\+Volume}} ()
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_a532b8f7580f1994f20a32f45c8ef5a72}{Save\+Volume}} ()
+\item 
+static float \mbox{\hyperlink{class_c_sound_manager_a9b2c31e2ee974b0fd7814c01eeeac2a7}{Get\+Game\+BGMVolume}} ()
+\item 
+static float \mbox{\hyperlink{class_c_sound_manager_aabf9aece952f7f0ba0cc1ebefcc43b4d}{Get\+Master\+Volume}} ()
+\item 
+static float \mbox{\hyperlink{class_c_sound_manager_a865cc0164ead125d4340123e9abd2dd7}{Get\+BGMVolume}} ()
+\item 
+static float \mbox{\hyperlink{class_c_sound_manager_a248b4b7e1d0c1967435b893a9bea7e83}{Get\+Game\+SEVolume}} ()
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_aa42b1432bc313686dedc405306dbb9c9}{BGMPoint\+Seek}} (const std\+::string \&Name, int Hour, int Minutes, double Second)
+\item 
+static double \mbox{\hyperlink{class_c_sound_manager_ad2941f1a5050a506603cf155dadd0279}{Get\+BGMFrame}} (const std\+::string \&Name)
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_a9d7e2fb21d7282a61bfc859dd3a241bf}{Get\+Move\+Up\+Thread}} (const std\+::string \&Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_adc9c41e0e667689a944e3dfaba05f120}{Again\+Play\+BGM}} (const std\+::string Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a6e6693de88423866b3f5d3c42c249c6d}{Thread\+Play\+BGM}} (const std\+::string \&Name, const bool \&Loop\+Flag=true)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_ae6f2e0b45b00bbc766e2f5b7bae3c9c6}{Stop\+BGM}} (const std\+::string Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a3ccddbbcaf85123b606ffec66a67be63}{Fade\+Out\+BGM}} (const std\+::string Name, const bool Stop\+Fade\+In=true)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a017eb1bf9f19eb00ca082b53f4303401}{Fade\+In\+BGM}} (const std\+::string Name, const bool Stop\+Fade\+Out=true)
+\item 
+static float \mbox{\hyperlink{class_c_sound_manager_ae3c79e6a046907e075dc44ce1bd7bcac}{Get\+BGMVolume}} (const std\+::string Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_acdd98d40cc1221b754aad5fa544d4e75}{Set\+BGMVolume}} (const std\+::string Name, const float Volume)
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_aa788dd79b3775927bc0ca39a1b1486d7}{Stop\+BGMThread}} (const std\+::string BGMName)
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_af47617fad64ae9bb92ca5b0cf1c255db}{Get\+Is\+Play\+BGM}} (const std\+::string BGMName)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_abc843686a26591bd6bdaa026b661e6b7}{Set\+BGMPitch}} (const std\+::string Name, const float Value)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_afad95ce9fcef4a2822300710ccdc113a}{Play\+SE}} (const std\+::string \&Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a589970cca5e4693633972a052b874679}{No\+Multiple\+SEPlay}} (const std\+::string \&Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a31b8ad3facb95b12dc4fe1c1d906d479}{Stop\+SE}} (const std\+::string Name, const size\+\_\+t Array\+Num)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a6c6461fcd5d67d79cca2d09a5c6b63e3}{Stop\+All\+SE}} (const std\+::string Name)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a0b740aa968c9b433c9f56e0b621f158f}{Set\+SEVolume}} (const std\+::string Name, const float Volume)
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_ac429226051c40f55e1ebb32a2983d2d0}{Get\+Is\+Play\+SE}} (const std\+::string Name, const size\+\_\+t Array\+Num)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_af387f105b620d7dadd4428331303bd0e}{Set\+Another\+SEVolume}} (const std\+::string Name, const float \&Volume)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_ae379945a16f43eefc28f827d03553e91}{Set\+Use\+Another\+SEVolume\+Flag}} (const std\+::string Name, const bool \&b\+Flag)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_abccaea208bd166835bbea5c2f2116fce}{Release}} ()
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a77003980933a13ba0d6af77327fa7375}{Set\+Master\+Volume}} (float \&Master\+Volume)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a030fff9b548f376a902de1c44e481614}{Create\+Change\+Sound\+Volume\+Thread}} ()
+\item 
+static bool \mbox{\hyperlink{class_c_sound_manager_a227ed1037326d485f7f342540ca1c25e}{Release\+Change\+Sound\+Volume\+Thread}} ()
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_a62d35acc75b28d6307f395a34905406d}{Set\+Select\+Change\+SEVolume\+Flag}} (std\+::string \&s\+Name, const bool \&b\+Flag)
+\item 
+static void \mbox{\hyperlink{class_c_sound_manager_aefe1b2266278c63787a4759fc3219d70}{State\+Change\+Volume\+Thread}} (const bool \&b\+Flag)
+\item 
+static const bool \mbox{\hyperlink{class_c_sound_manager_a36cdc1700abaa04dac73bc216872f153}{Get\+Create\+Option\+Thread}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_c_sound_manager_1_1_sound_volume}{Sound\+Volume}} \mbox{\hyperlink{class_c_sound_manager_a65a80fc3000c3c2012e229507af84f05}{m\+\_\+st\+Sound}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_sound_manager_ae8358c75282bcceb23bd23ea9328e407}\label{class_c_sound_manager_ae8358c75282bcceb23bd23ea9328e407}} 
+\index{CSoundManager@{CSoundManager}!CSoundManager@{CSoundManager}}
+\index{CSoundManager@{CSoundManager}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{CSoundManager()}{CSoundManager()}}
+{\footnotesize\ttfamily CSound\+Manager\+::\+CSound\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sound_manager_a75bc0ad3cc339baeb29372632c02f5f2}\label{class_c_sound_manager_a75bc0ad3cc339baeb29372632c02f5f2}} 
+\index{CSoundManager@{CSoundManager}!````~CSoundManager@{$\sim$CSoundManager}}
+\index{````~CSoundManager@{$\sim$CSoundManager}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSoundManager()}{~CSoundManager()}}
+{\footnotesize\ttfamily CSound\+Manager\+::$\sim$\+CSound\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_sound_manager_adc9c41e0e667689a944e3dfaba05f120}\label{class_c_sound_manager_adc9c41e0e667689a944e3dfaba05f120}} 
+\index{CSoundManager@{CSoundManager}!AgainPlayBGM@{AgainPlayBGM}}
+\index{AgainPlayBGM@{AgainPlayBGM}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{AgainPlayBGM()}{AgainPlayBGM()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Again\+Play\+BGM (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_adc9c41e0e667689a944e3dfaba05f120_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_aa42b1432bc313686dedc405306dbb9c9}\label{class_c_sound_manager_aa42b1432bc313686dedc405306dbb9c9}} 
+\index{CSoundManager@{CSoundManager}!BGMPointSeek@{BGMPointSeek}}
+\index{BGMPointSeek@{BGMPointSeek}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{BGMPointSeek()}{BGMPointSeek()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+BGMPoint\+Seek (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Name,  }\item[{int}]{Hour,  }\item[{int}]{Minutes,  }\item[{double}]{Second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_aa42b1432bc313686dedc405306dbb9c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a030fff9b548f376a902de1c44e481614}\label{class_c_sound_manager_a030fff9b548f376a902de1c44e481614}} 
+\index{CSoundManager@{CSoundManager}!CreateChangeSoundVolumeThread@{CreateChangeSoundVolumeThread}}
+\index{CreateChangeSoundVolumeThread@{CreateChangeSoundVolumeThread}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{CreateChangeSoundVolumeThread()}{CreateChangeSoundVolumeThread()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Create\+Change\+Sound\+Volume\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a030fff9b548f376a902de1c44e481614_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a030fff9b548f376a902de1c44e481614_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a9666c70442921299d8f3046787ae47fe}\label{class_c_sound_manager_a9666c70442921299d8f3046787ae47fe}} 
+\index{CSoundManager@{CSoundManager}!CreateSoundData@{CreateSoundData}}
+\index{CreateSoundData@{CreateSoundData}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{CreateSoundData()}{CreateSoundData()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Create\+Sound\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a9666c70442921299d8f3046787ae47fe_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a9666c70442921299d8f3046787ae47fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a017eb1bf9f19eb00ca082b53f4303401}\label{class_c_sound_manager_a017eb1bf9f19eb00ca082b53f4303401}} 
+\index{CSoundManager@{CSoundManager}!FadeInBGM@{FadeInBGM}}
+\index{FadeInBGM@{FadeInBGM}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{FadeInBGM()}{FadeInBGM()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Fade\+In\+BGM (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const bool}]{Stop\+Fade\+Out = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a017eb1bf9f19eb00ca082b53f4303401_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a017eb1bf9f19eb00ca082b53f4303401_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a3ccddbbcaf85123b606ffec66a67be63}\label{class_c_sound_manager_a3ccddbbcaf85123b606ffec66a67be63}} 
+\index{CSoundManager@{CSoundManager}!FadeOutBGM@{FadeOutBGM}}
+\index{FadeOutBGM@{FadeOutBGM}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{FadeOutBGM()}{FadeOutBGM()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Fade\+Out\+BGM (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const bool}]{Stop\+Fade\+In = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a3ccddbbcaf85123b606ffec66a67be63_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a3ccddbbcaf85123b606ffec66a67be63_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_ad2941f1a5050a506603cf155dadd0279}\label{class_c_sound_manager_ad2941f1a5050a506603cf155dadd0279}} 
+\index{CSoundManager@{CSoundManager}!GetBGMFrame@{GetBGMFrame}}
+\index{GetBGMFrame@{GetBGMFrame}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetBGMFrame()}{GetBGMFrame()}}
+{\footnotesize\ttfamily double CSound\+Manager\+::\+Get\+BGMFrame (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_ad2941f1a5050a506603cf155dadd0279_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a865cc0164ead125d4340123e9abd2dd7}\label{class_c_sound_manager_a865cc0164ead125d4340123e9abd2dd7}} 
+\index{CSoundManager@{CSoundManager}!GetBGMVolume@{GetBGMVolume}}
+\index{GetBGMVolume@{GetBGMVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetBGMVolume()}{GetBGMVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static float CSound\+Manager\+::\+Get\+BGMVolume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a865cc0164ead125d4340123e9abd2dd7_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a865cc0164ead125d4340123e9abd2dd7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_ae3c79e6a046907e075dc44ce1bd7bcac}\label{class_c_sound_manager_ae3c79e6a046907e075dc44ce1bd7bcac}} 
+\index{CSoundManager@{CSoundManager}!GetBGMVolume@{GetBGMVolume}}
+\index{GetBGMVolume@{GetBGMVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetBGMVolume()}{GetBGMVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float CSound\+Manager\+::\+Get\+BGMVolume (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_ae3c79e6a046907e075dc44ce1bd7bcac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a36cdc1700abaa04dac73bc216872f153}\label{class_c_sound_manager_a36cdc1700abaa04dac73bc216872f153}} 
+\index{CSoundManager@{CSoundManager}!GetCreateOptionThread@{GetCreateOptionThread}}
+\index{GetCreateOptionThread@{GetCreateOptionThread}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetCreateOptionThread()}{GetCreateOptionThread()}}
+{\footnotesize\ttfamily static const bool CSound\+Manager\+::\+Get\+Create\+Option\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a36cdc1700abaa04dac73bc216872f153_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a9b2c31e2ee974b0fd7814c01eeeac2a7}\label{class_c_sound_manager_a9b2c31e2ee974b0fd7814c01eeeac2a7}} 
+\index{CSoundManager@{CSoundManager}!GetGameBGMVolume@{GetGameBGMVolume}}
+\index{GetGameBGMVolume@{GetGameBGMVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetGameBGMVolume()}{GetGameBGMVolume()}}
+{\footnotesize\ttfamily static float CSound\+Manager\+::\+Get\+Game\+BGMVolume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a9b2c31e2ee974b0fd7814c01eeeac2a7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a248b4b7e1d0c1967435b893a9bea7e83}\label{class_c_sound_manager_a248b4b7e1d0c1967435b893a9bea7e83}} 
+\index{CSoundManager@{CSoundManager}!GetGameSEVolume@{GetGameSEVolume}}
+\index{GetGameSEVolume@{GetGameSEVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetGameSEVolume()}{GetGameSEVolume()}}
+{\footnotesize\ttfamily static float CSound\+Manager\+::\+Get\+Game\+SEVolume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a248b4b7e1d0c1967435b893a9bea7e83_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a19134e728f19e7a4950200fa741a6805}\label{class_c_sound_manager_a19134e728f19e7a4950200fa741a6805}} 
+\index{CSoundManager@{CSoundManager}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_sound_manager}{CSound\+Manager}} $\ast$ CSound\+Manager\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_c_sound_manager_a19134e728f19e7a4950200fa741a6805_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_af47617fad64ae9bb92ca5b0cf1c255db}\label{class_c_sound_manager_af47617fad64ae9bb92ca5b0cf1c255db}} 
+\index{CSoundManager@{CSoundManager}!GetIsPlayBGM@{GetIsPlayBGM}}
+\index{GetIsPlayBGM@{GetIsPlayBGM}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetIsPlayBGM()}{GetIsPlayBGM()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Get\+Is\+Play\+BGM (\begin{DoxyParamCaption}\item[{const std\+::string}]{BGMName }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_af47617fad64ae9bb92ca5b0cf1c255db_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_ac429226051c40f55e1ebb32a2983d2d0}\label{class_c_sound_manager_ac429226051c40f55e1ebb32a2983d2d0}} 
+\index{CSoundManager@{CSoundManager}!GetIsPlaySE@{GetIsPlaySE}}
+\index{GetIsPlaySE@{GetIsPlaySE}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetIsPlaySE()}{GetIsPlaySE()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Get\+Is\+Play\+SE (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const size\+\_\+t}]{Array\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_ac429226051c40f55e1ebb32a2983d2d0_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_ac429226051c40f55e1ebb32a2983d2d0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_aabf9aece952f7f0ba0cc1ebefcc43b4d}\label{class_c_sound_manager_aabf9aece952f7f0ba0cc1ebefcc43b4d}} 
+\index{CSoundManager@{CSoundManager}!GetMasterVolume@{GetMasterVolume}}
+\index{GetMasterVolume@{GetMasterVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetMasterVolume()}{GetMasterVolume()}}
+{\footnotesize\ttfamily static float CSound\+Manager\+::\+Get\+Master\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_aabf9aece952f7f0ba0cc1ebefcc43b4d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a9d7e2fb21d7282a61bfc859dd3a241bf}\label{class_c_sound_manager_a9d7e2fb21d7282a61bfc859dd3a241bf}} 
+\index{CSoundManager@{CSoundManager}!GetMoveUpThread@{GetMoveUpThread}}
+\index{GetMoveUpThread@{GetMoveUpThread}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{GetMoveUpThread()}{GetMoveUpThread()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Get\+Move\+Up\+Thread (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a9d7e2fb21d7282a61bfc859dd3a241bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a299c6a7021e4f697eb3b5c4bb559aaab}\label{class_c_sound_manager_a299c6a7021e4f697eb3b5c4bb559aaab}} 
+\index{CSoundManager@{CSoundManager}!LoadVolume@{LoadVolume}}
+\index{LoadVolume@{LoadVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{LoadVolume()}{LoadVolume()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Load\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a299c6a7021e4f697eb3b5c4bb559aaab_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a299c6a7021e4f697eb3b5c4bb559aaab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a589970cca5e4693633972a052b874679}\label{class_c_sound_manager_a589970cca5e4693633972a052b874679}} 
+\index{CSoundManager@{CSoundManager}!NoMultipleSEPlay@{NoMultipleSEPlay}}
+\index{NoMultipleSEPlay@{NoMultipleSEPlay}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{NoMultipleSEPlay()}{NoMultipleSEPlay()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+No\+Multiple\+SEPlay (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a589970cca5e4693633972a052b874679_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a589970cca5e4693633972a052b874679_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_afad95ce9fcef4a2822300710ccdc113a}\label{class_c_sound_manager_afad95ce9fcef4a2822300710ccdc113a}} 
+\index{CSoundManager@{CSoundManager}!PlaySE@{PlaySE}}
+\index{PlaySE@{PlaySE}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{PlaySE()}{PlaySE()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Play\+SE (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_afad95ce9fcef4a2822300710ccdc113a_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_afad95ce9fcef4a2822300710ccdc113a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_abccaea208bd166835bbea5c2f2116fce}\label{class_c_sound_manager_abccaea208bd166835bbea5c2f2116fce}} 
+\index{CSoundManager@{CSoundManager}!Release@{Release}}
+\index{Release@{Release}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_abccaea208bd166835bbea5c2f2116fce_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_abccaea208bd166835bbea5c2f2116fce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a227ed1037326d485f7f342540ca1c25e}\label{class_c_sound_manager_a227ed1037326d485f7f342540ca1c25e}} 
+\index{CSoundManager@{CSoundManager}!ReleaseChangeSoundVolumeThread@{ReleaseChangeSoundVolumeThread}}
+\index{ReleaseChangeSoundVolumeThread@{ReleaseChangeSoundVolumeThread}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{ReleaseChangeSoundVolumeThread()}{ReleaseChangeSoundVolumeThread()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Release\+Change\+Sound\+Volume\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a227ed1037326d485f7f342540ca1c25e_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a227ed1037326d485f7f342540ca1c25e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a532b8f7580f1994f20a32f45c8ef5a72}\label{class_c_sound_manager_a532b8f7580f1994f20a32f45c8ef5a72}} 
+\index{CSoundManager@{CSoundManager}!SaveVolume@{SaveVolume}}
+\index{SaveVolume@{SaveVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SaveVolume()}{SaveVolume()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Save\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a532b8f7580f1994f20a32f45c8ef5a72_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a532b8f7580f1994f20a32f45c8ef5a72_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_af387f105b620d7dadd4428331303bd0e}\label{class_c_sound_manager_af387f105b620d7dadd4428331303bd0e}} 
+\index{CSoundManager@{CSoundManager}!SetAnotherSEVolume@{SetAnotherSEVolume}}
+\index{SetAnotherSEVolume@{SetAnotherSEVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetAnotherSEVolume()}{SetAnotherSEVolume()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+Another\+SEVolume (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const float \&}]{Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_af387f105b620d7dadd4428331303bd0e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_abc843686a26591bd6bdaa026b661e6b7}\label{class_c_sound_manager_abc843686a26591bd6bdaa026b661e6b7}} 
+\index{CSoundManager@{CSoundManager}!SetBGMPitch@{SetBGMPitch}}
+\index{SetBGMPitch@{SetBGMPitch}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetBGMPitch()}{SetBGMPitch()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+BGMPitch (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const float}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_abc843686a26591bd6bdaa026b661e6b7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_acdd98d40cc1221b754aad5fa544d4e75}\label{class_c_sound_manager_acdd98d40cc1221b754aad5fa544d4e75}} 
+\index{CSoundManager@{CSoundManager}!SetBGMVolume@{SetBGMVolume}}
+\index{SetBGMVolume@{SetBGMVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetBGMVolume()}{SetBGMVolume()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+BGMVolume (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const float}]{Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_acdd98d40cc1221b754aad5fa544d4e75_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a77003980933a13ba0d6af77327fa7375}\label{class_c_sound_manager_a77003980933a13ba0d6af77327fa7375}} 
+\index{CSoundManager@{CSoundManager}!SetMasterVolume@{SetMasterVolume}}
+\index{SetMasterVolume@{SetMasterVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetMasterVolume()}{SetMasterVolume()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+Master\+Volume (\begin{DoxyParamCaption}\item[{float \&}]{Master\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a77003980933a13ba0d6af77327fa7375_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a62d35acc75b28d6307f395a34905406d}\label{class_c_sound_manager_a62d35acc75b28d6307f395a34905406d}} 
+\index{CSoundManager@{CSoundManager}!SetSelectChangeSEVolumeFlag@{SetSelectChangeSEVolumeFlag}}
+\index{SetSelectChangeSEVolumeFlag@{SetSelectChangeSEVolumeFlag}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetSelectChangeSEVolumeFlag()}{SetSelectChangeSEVolumeFlag()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+Select\+Change\+SEVolume\+Flag (\begin{DoxyParamCaption}\item[{std\+::string \&}]{s\+Name,  }\item[{const bool \&}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a62d35acc75b28d6307f395a34905406d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a0b740aa968c9b433c9f56e0b621f158f}\label{class_c_sound_manager_a0b740aa968c9b433c9f56e0b621f158f}} 
+\index{CSoundManager@{CSoundManager}!SetSEVolume@{SetSEVolume}}
+\index{SetSEVolume@{SetSEVolume}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetSEVolume()}{SetSEVolume()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+SEVolume (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const float}]{Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a0b740aa968c9b433c9f56e0b621f158f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_ae379945a16f43eefc28f827d03553e91}\label{class_c_sound_manager_ae379945a16f43eefc28f827d03553e91}} 
+\index{CSoundManager@{CSoundManager}!SetUseAnotherSEVolumeFlag@{SetUseAnotherSEVolumeFlag}}
+\index{SetUseAnotherSEVolumeFlag@{SetUseAnotherSEVolumeFlag}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{SetUseAnotherSEVolumeFlag()}{SetUseAnotherSEVolumeFlag()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Set\+Use\+Another\+SEVolume\+Flag (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const bool \&}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_ae379945a16f43eefc28f827d03553e91_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_aefe1b2266278c63787a4759fc3219d70}\label{class_c_sound_manager_aefe1b2266278c63787a4759fc3219d70}} 
+\index{CSoundManager@{CSoundManager}!StateChangeVolumeThread@{StateChangeVolumeThread}}
+\index{StateChangeVolumeThread@{StateChangeVolumeThread}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{StateChangeVolumeThread()}{StateChangeVolumeThread()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+State\+Change\+Volume\+Thread (\begin{DoxyParamCaption}\item[{const bool \&}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_aefe1b2266278c63787a4759fc3219d70_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_aefe1b2266278c63787a4759fc3219d70_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a6c6461fcd5d67d79cca2d09a5c6b63e3}\label{class_c_sound_manager_a6c6461fcd5d67d79cca2d09a5c6b63e3}} 
+\index{CSoundManager@{CSoundManager}!StopAllSE@{StopAllSE}}
+\index{StopAllSE@{StopAllSE}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{StopAllSE()}{StopAllSE()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Stop\+All\+SE (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a6c6461fcd5d67d79cca2d09a5c6b63e3_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a6c6461fcd5d67d79cca2d09a5c6b63e3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_ae6f2e0b45b00bbc766e2f5b7bae3c9c6}\label{class_c_sound_manager_ae6f2e0b45b00bbc766e2f5b7bae3c9c6}} 
+\index{CSoundManager@{CSoundManager}!StopBGM@{StopBGM}}
+\index{StopBGM@{StopBGM}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{StopBGM()}{StopBGM()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Stop\+BGM (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_ae6f2e0b45b00bbc766e2f5b7bae3c9c6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_aa788dd79b3775927bc0ca39a1b1486d7}\label{class_c_sound_manager_aa788dd79b3775927bc0ca39a1b1486d7}} 
+\index{CSoundManager@{CSoundManager}!StopBGMThread@{StopBGMThread}}
+\index{StopBGMThread@{StopBGMThread}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{StopBGMThread()}{StopBGMThread()}}
+{\footnotesize\ttfamily bool CSound\+Manager\+::\+Stop\+BGMThread (\begin{DoxyParamCaption}\item[{const std\+::string}]{BGMName }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_aa788dd79b3775927bc0ca39a1b1486d7_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_aa788dd79b3775927bc0ca39a1b1486d7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a31b8ad3facb95b12dc4fe1c1d906d479}\label{class_c_sound_manager_a31b8ad3facb95b12dc4fe1c1d906d479}} 
+\index{CSoundManager@{CSoundManager}!StopSE@{StopSE}}
+\index{StopSE@{StopSE}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{StopSE()}{StopSE()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Stop\+SE (\begin{DoxyParamCaption}\item[{const std\+::string}]{Name,  }\item[{const size\+\_\+t}]{Array\+Num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a31b8ad3facb95b12dc4fe1c1d906d479_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sound_manager_a6e6693de88423866b3f5d3c42c249c6d}\label{class_c_sound_manager_a6e6693de88423866b3f5d3c42c249c6d}} 
+\index{CSoundManager@{CSoundManager}!ThreadPlayBGM@{ThreadPlayBGM}}
+\index{ThreadPlayBGM@{ThreadPlayBGM}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{ThreadPlayBGM()}{ThreadPlayBGM()}}
+{\footnotesize\ttfamily void CSound\+Manager\+::\+Thread\+Play\+BGM (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{Name,  }\item[{const bool \&}]{Loop\+Flag = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a6e6693de88423866b3f5d3c42c249c6d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sound_manager_a6e6693de88423866b3f5d3c42c249c6d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_sound_manager_a65a80fc3000c3c2012e229507af84f05}\label{class_c_sound_manager_a65a80fc3000c3c2012e229507af84f05}} 
+\index{CSoundManager@{CSoundManager}!m\_stSound@{m\_stSound}}
+\index{m\_stSound@{m\_stSound}!CSoundManager@{CSoundManager}}
+\doxysubsubsection{\texorpdfstring{m\_stSound}{m\_stSound}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_sound_manager_1_1_sound_volume}{Sound\+Volume}} CSound\+Manager\+::m\+\_\+st\+Sound}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\mbox{\hyperlink{_sound_manager_8h}{Sound\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\mbox{\hyperlink{_sound_manager_8cpp}{Sound\+Manager.\+cpp}}\end{DoxyCompactItemize}

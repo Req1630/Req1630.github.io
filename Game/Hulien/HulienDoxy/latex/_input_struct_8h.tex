@@ -1,0 +1,177 @@
+\hypertarget{_input_struct_8h}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Input/\+Input\+Struct.h ファイル}
+\label{_input_struct_8h}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/Input/InputStruct.h@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/Input/InputStruct.h}}
+被依存関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_input_struct_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a5d30f54fc5f12894fd1afbf4d41c5969}{Decision}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aea4788705e6873b424c65e91c2846b19}{Cancel}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a72ef2b9b6965d078e3c7f95487a82d1c}{Skip}}
+, \newline
+\mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177adcfafcb4323b102c7e204555d313ba0a}{Attack}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096}{Special\+Ability}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aba913c28b8c4b7753a9b5326b86994a5}{Avoidance}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177ab0ee7baf56e0d75af1bdd18e256dffe0}{STGAttack}}
+, \newline
+\mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a258f49887ef8d14ac268c92b02503aaa}{Up}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a08a38277b0309070706f6652eeae9a53}{Down}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a92b09c7c48c520c3c55e497875da437c}{Right}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a945d5e233cf7d6240f6b783b36a374ff}{Left}}
+, \newline
+\mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a5c4060063a9a98be4e31d7b43209982d}{Up\+Axis}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a39d3d6df34ac631237e493d8c369ed31}{Right\+Axis}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aa6122a65eaa676f700ae68d393054a37}{Start}}
+, \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a0557fa923dcee4d0f86b1409f5c2167f}{Back}}
+ \}
+\item 
+enum class \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea4aa5bd17119f7cb6827d67208639a4a7}{L\+\_\+\+Forward}}
+, \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea919c0efd010166df25ce26ea7b07bf23}{L\+\_\+\+Right}}
+, \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea233b95147ddfee107c5bddb964b75882}{R\+\_\+\+Forward}}
+, \newline
+\mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ead07c2b8f400c6799000224ccbe4c824c}{R\+\_\+\+Right}}
+ \}
+\item 
+enum \mbox{\hyperlink{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126}{EInput\+State}} \+: unsigned char \{ \mbox{\hyperlink{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f}{EInput\+State\+\_\+\+Not\+Press}} = 1 $<$$<$ 0
+, \mbox{\hyperlink{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd}{EInput\+State\+\_\+\+Moment\+Press}} = 1 $<$$<$ 1
+, \mbox{\hyperlink{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8}{EInput\+State\+\_\+\+Hold}} = 1 $<$$<$ 2
+, \mbox{\hyperlink{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883}{EInput\+State\+\_\+\+Release}} = 1 $<$$<$ 3
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}\label{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}} 
+\index{InputStruct.h@{InputStruct.h}!EAxisBind@{EAxisBind}}
+\index{EAxisBind@{EAxisBind}!InputStruct.h@{InputStruct.h}}
+\doxysubsubsection{\texorpdfstring{EAxisBind}{EAxisBind}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \+: unsigned char\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!None@{None}}}\mbox{\Hypertarget{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea6adf97f83acf6453d4a6a4b1070f3754}\label{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\_Forward@{L\_Forward}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!L\_Forward@{L\_Forward}}}\mbox{\Hypertarget{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea4aa5bd17119f7cb6827d67208639a4a7}\label{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea4aa5bd17119f7cb6827d67208639a4a7}} 
+L\+\_\+\+Forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\_Right@{L\_Right}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!L\_Right@{L\_Right}}}\mbox{\Hypertarget{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea919c0efd010166df25ce26ea7b07bf23}\label{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea919c0efd010166df25ce26ea7b07bf23}} 
+L\+\_\+\+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\_Forward@{R\_Forward}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!R\_Forward@{R\_Forward}}}\mbox{\Hypertarget{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea233b95147ddfee107c5bddb964b75882}\label{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ea233b95147ddfee107c5bddb964b75882}} 
+R\+\_\+\+Forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\_Right@{R\_Right}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!R\_Right@{R\_Right}}}\mbox{\Hypertarget{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ead07c2b8f400c6799000224ccbe4c824c}\label{_input_struct_8h_a2a598686170e1cf651b5cb969600b96ead07c2b8f400c6799000224ccbe4c824c}} 
+R\+\_\+\+Right&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126}\label{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126}} 
+\index{InputStruct.h@{InputStruct.h}!EInputState@{EInputState}}
+\index{EInputState@{EInputState}!InputStruct.h@{InputStruct.h}}
+\doxysubsubsection{\texorpdfstring{EInputState}{EInputState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126}{EInput\+State}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EInputState\_NotPress@{EInputState\_NotPress}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!EInputState\_NotPress@{EInputState\_NotPress}}}\mbox{\Hypertarget{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f}\label{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126aee93f40121c8f7dfc20f34b688e9650f}} 
+EInput\+State\+\_\+\+Not\+Press&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EInputState\_MomentPress@{EInputState\_MomentPress}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!EInputState\_MomentPress@{EInputState\_MomentPress}}}\mbox{\Hypertarget{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd}\label{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a9526c472bd86288f078773f0c44509cd}} 
+EInput\+State\+\_\+\+Moment\+Press&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EInputState\_Hold@{EInputState\_Hold}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!EInputState\_Hold@{EInputState\_Hold}}}\mbox{\Hypertarget{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8}\label{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a10063997c305b569ffedfc87195921f8}} 
+EInput\+State\+\_\+\+Hold&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EInputState\_Release@{EInputState\_Release}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!EInputState\_Release@{EInputState\_Release}}}\mbox{\Hypertarget{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883}\label{_input_struct_8h_a8b5d9206562e69dff1bd6dad9fee7126a4fe92fd2306f37773241c3371b36c883}} 
+EInput\+State\+\_\+\+Release&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}} 
+\index{InputStruct.h@{InputStruct.h}!EKeyBind@{EKeyBind}}
+\index{EKeyBind@{EKeyBind}!InputStruct.h@{InputStruct.h}}
+\doxysubsubsection{\texorpdfstring{EKeyBind}{EKeyBind}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \+: unsigned char\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!None@{None}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a6adf97f83acf6453d4a6a4b1070f3754}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Decision@{Decision}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Decision@{Decision}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a5d30f54fc5f12894fd1afbf4d41c5969}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a5d30f54fc5f12894fd1afbf4d41c5969}} 
+Decision&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cancel@{Cancel}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Cancel@{Cancel}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aea4788705e6873b424c65e91c2846b19}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aea4788705e6873b424c65e91c2846b19}} 
+Cancel&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Skip@{Skip}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Skip@{Skip}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a72ef2b9b6965d078e3c7f95487a82d1c}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a72ef2b9b6965d078e3c7f95487a82d1c}} 
+Skip&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Attack@{Attack}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Attack@{Attack}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177adcfafcb4323b102c7e204555d313ba0a}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177adcfafcb4323b102c7e204555d313ba0a}} 
+Attack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SpecialAbility@{SpecialAbility}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!SpecialAbility@{SpecialAbility}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177acef30a72e563e255a7148318592cd096}} 
+Special\+Ability&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Avoidance@{Avoidance}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Avoidance@{Avoidance}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aba913c28b8c4b7753a9b5326b86994a5}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aba913c28b8c4b7753a9b5326b86994a5}} 
+Avoidance&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STGAttack@{STGAttack}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!STGAttack@{STGAttack}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177ab0ee7baf56e0d75af1bdd18e256dffe0}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177ab0ee7baf56e0d75af1bdd18e256dffe0}} 
+STGAttack&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Up@{Up}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Up@{Up}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a258f49887ef8d14ac268c92b02503aaa}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a258f49887ef8d14ac268c92b02503aaa}} 
+Up&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Down@{Down}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Down@{Down}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a08a38277b0309070706f6652eeae9a53}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a08a38277b0309070706f6652eeae9a53}} 
+Down&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Right@{Right}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Right@{Right}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a92b09c7c48c520c3c55e497875da437c}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a92b09c7c48c520c3c55e497875da437c}} 
+Right&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Left@{Left}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Left@{Left}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a945d5e233cf7d6240f6b783b36a374ff}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a945d5e233cf7d6240f6b783b36a374ff}} 
+Left&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UpAxis@{UpAxis}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!UpAxis@{UpAxis}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a5c4060063a9a98be4e31d7b43209982d}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a5c4060063a9a98be4e31d7b43209982d}} 
+Up\+Axis&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RightAxis@{RightAxis}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!RightAxis@{RightAxis}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a39d3d6df34ac631237e493d8c369ed31}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a39d3d6df34ac631237e493d8c369ed31}} 
+Right\+Axis&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Start@{Start}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Start@{Start}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aa6122a65eaa676f700ae68d393054a37}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177aa6122a65eaa676f700ae68d393054a37}} 
+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Back@{Back}!InputStruct.h@{InputStruct.h}}\index{InputStruct.h@{InputStruct.h}!Back@{Back}}}\mbox{\Hypertarget{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a0557fa923dcee4d0f86b1409f5c2167f}\label{_input_struct_8h_af62677a53bac65e3f0df6a394b816177a0557fa923dcee4d0f86b1409f5c2167f}} 
+Back&\\
+\hline
+
+\end{DoxyEnumFields}

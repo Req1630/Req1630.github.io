@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: CFileManager クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-static-methods">静的公開メンバ関数</a> &#124;
+<a href="class_c_file_manager-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">CFileManager クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_file_manager_8h_source.html">FileManager.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:a1d3ba17b61ddcf573f89fcf280a0fa19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a1d3ba17b61ddcf573f89fcf280a0fa19">CFileManager</a> ()</td></tr>
+<tr class="separator:a1d3ba17b61ddcf573f89fcf280a0fa19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990385c46ffb068437733e964f2eb655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a990385c46ffb068437733e964f2eb655">~CFileManager</a> ()</td></tr>
+<tr class="separator:a990385c46ffb068437733e964f2eb655"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+静的公開メンバ関数</h2></td></tr>
+<tr class="memitem:a0b3629561e959f15a179a49a5b91d7a4"><td class="memTemplParams" colspan="2">template&lt;class outDATA &gt; </td></tr>
+<tr class="memitem:a0b3629561e959f15a179a49a5b91d7a4"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a0b3629561e959f15a179a49a5b91d7a4">BinaryWriting</a> (const char *fileName, const outDATA &amp;outData)</td></tr>
+<tr class="separator:a0b3629561e959f15a179a49a5b91d7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5791a16903642e5e5ef658a0f171bc52"><td class="memTemplParams" colspan="2">template&lt;class inDATA &gt; </td></tr>
+<tr class="memitem:a5791a16903642e5e5ef658a0f171bc52"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a5791a16903642e5e5ef658a0f171bc52">BinaryReading</a> (const char *fileName, inDATA &amp;inData, const int &amp;seekPoint=0)</td></tr>
+<tr class="separator:a5791a16903642e5e5ef658a0f171bc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5484862ae11ba926c48201c74958a0bf"><td class="memTemplParams" colspan="2">template&lt;class outDATA &gt; </td></tr>
+<tr class="memitem:a5484862ae11ba926c48201c74958a0bf"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a5484862ae11ba926c48201c74958a0bf">BinaryVectorWriting</a> (const char *fileName, const std::vector&lt; outDATA &gt; &amp;outDataList)</td></tr>
+<tr class="separator:a5484862ae11ba926c48201c74958a0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175974f33c224743bc53b096aeaafa21"><td class="memTemplParams" colspan="2">template&lt;class inDATA &gt; </td></tr>
+<tr class="memitem:a175974f33c224743bc53b096aeaafa21"><td class="memTemplItemLeft" align="right" valign="top">static bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a175974f33c224743bc53b096aeaafa21">BinaryVectorReading</a> (const char *fileName, std::vector&lt; inDATA &gt; &amp;inDataList)</td></tr>
+<tr class="separator:a175974f33c224743bc53b096aeaafa21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06fbcdb239901f29a856bfd6e299714d"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_file_manager.html#a06fbcdb239901f29a856bfd6e299714d">TextLoading</a> (const std::string &amp;fileName, char delimiter=',')</td></tr>
+<tr class="separator:a06fbcdb239901f29a856bfd6e299714d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">構築子と解体子</h2>
+<a id="a1d3ba17b61ddcf573f89fcf280a0fa19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3ba17b61ddcf573f89fcf280a0fa19">&#9670;&nbsp;</a></span>CFileManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFileManager::CFileManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a990385c46ffb068437733e964f2eb655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a990385c46ffb068437733e964f2eb655">&#9670;&nbsp;</a></span>~CFileManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFileManager::~CFileManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a5791a16903642e5e5ef658a0f171bc52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5791a16903642e5e5ef658a0f171bc52">&#9670;&nbsp;</a></span>BinaryReading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class inDATA &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CFileManager::BinaryReading </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">inDATA &amp;&#160;</td>
+          <td class="paramname"><em>inData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>seekPoint</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_file_manager_a5791a16903642e5e5ef658a0f171bc52_icgraph.png" border="0" usemap="#aclass_c_file_manager_a5791a16903642e5e5ef658a0f171bc52_icgraph" alt=""/></div>
+<map name="aclass_c_file_manager_a5791a16903642e5e5ef658a0f171bc52_icgraph" id="aclass_c_file_manager_a5791a16903642e5e5ef658a0f171bc52_icgraph">
+<area shape="rect" title=" " alt="" coords="804,420,999,447"/>
+<area shape="rect" href="class_c_x_input.html#a839a4fe4d76764db7a5b177351d014d6" title="コンストラクタ." alt="" coords="583,5,702,32"/>
+<area shape="rect" href="class_c_item_manager.html#a866e6a6b4f2e172a821b7fabcdbcf166" title=" " alt="" coords="577,56,708,83"/>
+<area shape="rect" href="class_c_girl_edit.html#a3fed4de6c632633f453b51222a3f0e02" title=" " alt="" coords="593,107,692,133"/>
+<area shape="rect" href="class_c_invisible_wall_edit.html#a90163916fcb3cc462017d10cbc12483c" title=" " alt="" coords="580,158,705,199"/>
+<area shape="rect" href="class_c_mother_ship_u_f_o_edit.html#a38353163dd583581129a3410e348efb3" title=" " alt="" coords="569,223,716,265"/>
+<area shape="rect" href="class_c_player_edit.html#acab053348e7dfaa50a457c6b5a6327b2" title=" " alt="" coords="585,289,701,316"/>
+<area shape="rect" href="class_c_girl.html#a6229e7916d0ce55e9d0ff152fdffe3a2" title=" " alt="" coords="605,340,681,367"/>
+<area shape="rect" href="class_c_mother_ship_u_f_o.html#a71beb7e8878c30f97dedf949188af58a" title=" " alt="" coords="568,391,717,417"/>
+<area shape="rect" href="class_c_camera_config_widget.html#a67964b70f17f3ca484789f8121ea9d05" title=" " alt="" coords="566,442,719,483"/>
+<area shape="rect" href="class_c_rot_look_at_center.html#ad1df5fd8840eeb4525181c81786f908d" title=" " alt="" coords="529,508,756,535"/>
+<area shape="rect" href="class_c_sound_manager.html#a299c6a7021e4f697eb3b5c4bb559aaab" title=" " alt="" coords="543,559,742,585"/>
+<area shape="rect" href="class_c_character.html#a1d5f11cb4b469258a8622168bb01c6f5" title=" " alt="" coords="545,609,741,636"/>
+<area shape="rect" href="class_c_girl_edit.html#a98488e1f2ebdc80eb155a724b6635a21" title=" " alt="" coords="581,660,704,687"/>
+<area shape="rect" href="class_c_invisible_wall_edit.html#a23fd699a6a4fa3b405727599ab0393a6" title=" " alt="" coords="580,711,705,753"/>
+<area shape="rect" href="class_c_mother_ship_u_f_o_edit.html#aaeb558849bbc13d9fa09e760efe98a33" title=" " alt="" coords="569,777,716,818"/>
+<area shape="rect" href="class_c_player_edit.html#a3263504fb55faf686e13db872e6ca4bf" title=" " alt="" coords="573,843,713,869"/>
+<area shape="rect" href="class_c_rot_look_at_center.html#a927898467c0cb34cd6add9fae7fc0c10" title=" " alt="" coords="270,493,465,534"/>
+<area shape="rect" href="class_c_sound_manager.html#a9666c70442921299d8f3046787ae47fe" title=" " alt="" coords="253,559,481,585"/>
+<area shape="rect" href="class_c_load_manager.html#ae35d4808bfc59db84fd8a3d3997bff2f" title=" " alt="" coords="5,559,205,585"/>
+<area shape="rect" href="class_c_player.html#af427666ac35a0b3d90fcc4ffa42c8fd3" title=" " alt="" coords="321,609,414,636"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a175974f33c224743bc53b096aeaafa21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a175974f33c224743bc53b096aeaafa21">&#9670;&nbsp;</a></span>BinaryVectorReading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class inDATA &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CFileManager::BinaryVectorReading </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; inDATA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>inDataList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_file_manager_a175974f33c224743bc53b096aeaafa21_icgraph.png" border="0" usemap="#aclass_c_file_manager_a175974f33c224743bc53b096aeaafa21_icgraph" alt=""/></div>
+<map name="aclass_c_file_manager_a175974f33c224743bc53b096aeaafa21_icgraph" id="aclass_c_file_manager_a175974f33c224743bc53b096aeaafa21_icgraph">
+<area shape="rect" title=" " alt="" coords="200,5,385,47"/>
+<area shape="rect" href="class_c_alien_param_edit.html#af9725586661b1561acf249ea6538e7ea" title=" " alt="" coords="5,13,152,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5484862ae11ba926c48201c74958a0bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5484862ae11ba926c48201c74958a0bf">&#9670;&nbsp;</a></span>BinaryVectorWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class outDATA &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CFileManager::BinaryVectorWriting </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; outDATA &gt; &amp;&#160;</td>
+          <td class="paramname"><em>outDataList</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0b3629561e959f15a179a49a5b91d7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b3629561e959f15a179a49a5b91d7a4">&#9670;&nbsp;</a></span>BinaryWriting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class outDATA &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool CFileManager::BinaryWriting </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const outDATA &amp;&#160;</td>
+          <td class="paramname"><em>outData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4_icgraph.png" border="0" usemap="#aclass_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4_icgraph" alt=""/></div>
+<map name="aclass_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4_icgraph" id="aclass_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4_icgraph">
+<area shape="rect" title=" " alt="" coords="452,195,640,222"/>
+<area shape="rect" href="class_c_camera_config_widget.html#a066bbc6fc7d24d68eb8aebbc08b551ed" title=" " alt="" coords="228,5,381,47"/>
+<area shape="rect" href="class_c_controller_config_widget.html#a92d51bab853dff060d2ff7e5ba56d5ff" title=" " alt="" coords="223,71,386,112"/>
+<area shape="rect" href="class_c_girl_edit.html#a98488e1f2ebdc80eb155a724b6635a21" title=" " alt="" coords="243,137,366,163"/>
+<area shape="rect" href="class_c_invisible_wall_edit.html#a23fd699a6a4fa3b405727599ab0393a6" title=" " alt="" coords="242,188,367,229"/>
+<area shape="rect" href="class_c_mother_ship_u_f_o_edit.html#aaeb558849bbc13d9fa09e760efe98a33" title=" " alt="" coords="231,253,378,295"/>
+<area shape="rect" href="class_c_player_edit.html#a3263504fb55faf686e13db872e6ca4bf" title=" " alt="" coords="235,319,375,346"/>
+<area shape="rect" href="class_c_sound_manager.html#a532b8f7580f1994f20a32f45c8ef5a72" title=" " alt="" coords="205,370,404,397"/>
+<area shape="rect" href="class_c_volume_config_widget.html#a335bf50b32a0719ad42854f077afa402" title=" " alt="" coords="5,363,157,404"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a06fbcdb239901f29a856bfd6e299714d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06fbcdb239901f29a856bfd6e299714d">&#9670;&nbsp;</a></span>TextLoading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; CFileManager::TextLoading </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>delimiter</em> = <code>','</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_cgraph.png" border="0" usemap="#aclass_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_cgraph" alt=""/></div>
+<map name="aclass_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_cgraph" id="aclass_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,185,32"/>
+<area shape="rect" href="_global_8h.html#aa283894c924650d8db619a0f93f97b25" title=" " alt="" coords="233,5,375,32"/>
+<area shape="rect" href="class_c_log.html#acff1fd25b324a62fca5dcb050073eea5" title=" " alt="" coords="423,5,509,32"/>
+<area shape="rect" href="class_c_log.html#a2c38f57ef8b010d0d2c11990a6eb9098" title=" " alt="" coords="557,5,688,32"/>
+</map>
+</div>
+<div class="dynheader">
+被呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_icgraph.png" border="0" usemap="#aclass_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_icgraph" alt=""/></div>
+<map name="aclass_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_icgraph" id="aclass_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_icgraph">
+<area shape="rect" title=" " alt="" coords="515,31,695,57"/>
+<area shape="rect" href="class_c_x_input_config.html#ac8b296a6ea8619a550de580e6e524678" title=" " alt="" coords="266,5,445,32"/>
+<area shape="rect" href="class_c_sprite_resource.html#af2abd5850e523d4c05a33974d5ce2794" title=" " alt="" coords="244,56,467,83"/>
+<area shape="rect" href="class_c_x_input_config.html#af31de41660a6310f53e9fc42561f1715" title=" " alt="" coords="5,5,196,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/FileManager/<a class="el" href="_file_manager_8h_source.html">FileManager.h</a></li>
+<li>C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Utility/FileManager/<a class="el" href="_file_manager_8cpp.html">FileManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

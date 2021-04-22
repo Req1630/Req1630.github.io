@@ -1,0 +1,7 @@
+<map id="CItemBase::EffectRender" name="CItemBase::EffectRender">
+<area shape="rect" id="node1" title=" " alt="" coords="245,97,413,124"/>
+<area shape="rect" id="node2" href="$class_c_attack_up_item.html#a96b6267c70bf8cc15b2743a33b676632" title=" " alt="" coords="5,5,197,32"/>
+<area shape="rect" id="node3" href="$class_c_life_recovery_item.html#ab06210b2542bcf953d707f6c0beea09a" title=" " alt="" coords="33,57,170,98"/>
+<area shape="rect" id="node4" href="$class_c_move_speed_up_item.html#a15b64c44e622371dd78bb5e6f2861c19" title=" " alt="" coords="11,122,191,163"/>
+<area shape="rect" id="node5" href="$class_c_s_p_effect_time_item.html#a315fd4de26cb35d5cca0a818d10f0e3f" title=" " alt="" coords="30,187,173,229"/>
+</map>

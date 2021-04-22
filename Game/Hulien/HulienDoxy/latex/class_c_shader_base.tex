@@ -1,0 +1,195 @@
+\hypertarget{class_c_shader_base}{}\doxysection{CShader\+Base クラス}
+\label{class_c_shader_base}\index{CShaderBase@{CShaderBase}}
+
+
+{\ttfamily \#include $<$Shader\+Base.\+h$>$}
+
+
+
+CShader\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_c_shader_base__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_shader_base_a49e9ff85d6f526090ddb148416098a01}{CShader\+Base}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_shader_base_a7ec92ce9e566a1bc6248c4ba5952d6fd}{$\sim$\+CShader\+Base}} ()
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)=0
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}{Release}} ()=0
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_shader_base_a22c772529658c8d6d2599185c3630b22}{Init\+Shader}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+HRESULT \mbox{\hyperlink{class_c_shader_base_abd44de91ce6fe59797b5be7eb2d9e393}{Create\+Vertex\+Shader}} (ID3\+DBlob $\ast$p\+Compiled\+Shader, ID3\+D11\+Vertex\+Shader $\ast$$\ast$p\+Vertex\+Shader)
+\item 
+HRESULT \mbox{\hyperlink{class_c_shader_base_af450d765de88aae615ab2de630c49ba3}{Create\+Pixel\+Shader}} (ID3\+DBlob $\ast$p\+Compiled\+Shader, ID3\+D11\+Pixel\+Shader $\ast$$\ast$p\+Pixel\+Shader)
+\item 
+HRESULT \mbox{\hyperlink{class_c_shader_base_a01550949bf511b3a3c45b9310829b2dc}{Create\+Input\+Layout}} (D3\+D11\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC $\ast$p\+Layout, UINT num\+Elements, ID3\+DBlob $\ast$p\+Compiled\+Shader, ID3\+D11\+Input\+Layout $\ast$$\ast$\mbox{\hyperlink{class_c_shader_base_a956a27e5c1685b103844c94ba25e2707}{m\+\_\+p\+Vertex\+Layout}})
+\item 
+HRESULT \mbox{\hyperlink{class_c_shader_base_ad4d8c2e48921a1f57a460ea32106d602}{Create\+Constant\+Buffer}} (ID3\+D11\+Buffer $\ast$$\ast$p\+Constant\+Buffer, UINT size)
+\item 
+D3\+D11\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC \mbox{\hyperlink{class_c_shader_base_a772063ab92b04e577feca59320a4d657}{Get\+Position\+Input\+Element}} () const
+\item 
+D3\+D11\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC \mbox{\hyperlink{class_c_shader_base_aa05e61503b69891ba5b5671248865a08}{Get\+Texcoord\+Input\+Element}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{静的限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static HRESULT \mbox{\hyperlink{class_c_shader_base_a365fb0c8895fd869a46f0d970e84b235}{Init\+Shader}} (const char $\ast$file\+Path, const char $\ast$entry\+Point, const char $\ast$shader\+Model, UINT compile\+Flag, ID3\+DBlob $\ast$$\ast$pp\+Compiled\+Shader, ID3\+DBlob $\ast$$\ast$pp\+Errors)
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+ID3\+D11\+Device $\ast$ \mbox{\hyperlink{class_c_shader_base_a2bafc1e291ea54cb2544977a1cbb0d45}{m\+\_\+p\+Device11}}
+\item 
+ID3\+D11\+Device\+Context $\ast$ \mbox{\hyperlink{class_c_shader_base_aefe7429b336015bf592c35b7359cfb22}{m\+\_\+p\+Context11}}
+\item 
+ID3\+D11\+Vertex\+Shader $\ast$ \mbox{\hyperlink{class_c_shader_base_a788c0181fca8067e0c5b02a37c6bcfb2}{m\+\_\+p\+Vertex\+Shader}}
+\item 
+ID3\+D11\+Pixel\+Shader $\ast$ \mbox{\hyperlink{class_c_shader_base_ac6e1bc8b5138003c4b4a97f24b91487f}{m\+\_\+p\+Pixel\+Shader}}
+\item 
+ID3\+D11\+Input\+Layout $\ast$ \mbox{\hyperlink{class_c_shader_base_a956a27e5c1685b103844c94ba25e2707}{m\+\_\+p\+Vertex\+Layout}}
+\item 
+ID3\+D11\+Buffer $\ast$ \mbox{\hyperlink{class_c_shader_base_a238c789ff8a9ba18dcabc8457ae3bae8}{m\+\_\+p\+Constant\+Buffer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_shader_base_a49e9ff85d6f526090ddb148416098a01}\label{class_c_shader_base_a49e9ff85d6f526090ddb148416098a01}} 
+\index{CShaderBase@{CShaderBase}!CShaderBase@{CShaderBase}}
+\index{CShaderBase@{CShaderBase}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{CShaderBase()}{CShaderBase()}}
+{\footnotesize\ttfamily CShader\+Base\+::\+CShader\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_shader_base_a7ec92ce9e566a1bc6248c4ba5952d6fd}\label{class_c_shader_base_a7ec92ce9e566a1bc6248c4ba5952d6fd}} 
+\index{CShaderBase@{CShaderBase}!````~CShaderBase@{$\sim$CShaderBase}}
+\index{````~CShaderBase@{$\sim$CShaderBase}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$CShaderBase()}{~CShaderBase()}}
+{\footnotesize\ttfamily CShader\+Base\+::$\sim$\+CShader\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_shader_base_ad4d8c2e48921a1f57a460ea32106d602}\label{class_c_shader_base_ad4d8c2e48921a1f57a460ea32106d602}} 
+\index{CShaderBase@{CShaderBase}!CreateConstantBuffer@{CreateConstantBuffer}}
+\index{CreateConstantBuffer@{CreateConstantBuffer}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{CreateConstantBuffer()}{CreateConstantBuffer()}}
+{\footnotesize\ttfamily HRESULT CShader\+Base\+::\+Create\+Constant\+Buffer (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$$\ast$}]{p\+Constant\+Buffer,  }\item[{UINT}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a01550949bf511b3a3c45b9310829b2dc}\label{class_c_shader_base_a01550949bf511b3a3c45b9310829b2dc}} 
+\index{CShaderBase@{CShaderBase}!CreateInputLayout@{CreateInputLayout}}
+\index{CreateInputLayout@{CreateInputLayout}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{CreateInputLayout()}{CreateInputLayout()}}
+{\footnotesize\ttfamily HRESULT CShader\+Base\+::\+Create\+Input\+Layout (\begin{DoxyParamCaption}\item[{D3\+D11\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC $\ast$}]{p\+Layout,  }\item[{UINT}]{num\+Elements,  }\item[{ID3\+DBlob $\ast$}]{p\+Compiled\+Shader,  }\item[{ID3\+D11\+Input\+Layout $\ast$$\ast$}]{m\+\_\+p\+Vertex\+Layout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_af450d765de88aae615ab2de630c49ba3}\label{class_c_shader_base_af450d765de88aae615ab2de630c49ba3}} 
+\index{CShaderBase@{CShaderBase}!CreatePixelShader@{CreatePixelShader}}
+\index{CreatePixelShader@{CreatePixelShader}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{CreatePixelShader()}{CreatePixelShader()}}
+{\footnotesize\ttfamily HRESULT CShader\+Base\+::\+Create\+Pixel\+Shader (\begin{DoxyParamCaption}\item[{ID3\+DBlob $\ast$}]{p\+Compiled\+Shader,  }\item[{ID3\+D11\+Pixel\+Shader $\ast$$\ast$}]{p\+Pixel\+Shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_abd44de91ce6fe59797b5be7eb2d9e393}\label{class_c_shader_base_abd44de91ce6fe59797b5be7eb2d9e393}} 
+\index{CShaderBase@{CShaderBase}!CreateVertexShader@{CreateVertexShader}}
+\index{CreateVertexShader@{CreateVertexShader}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{CreateVertexShader()}{CreateVertexShader()}}
+{\footnotesize\ttfamily HRESULT CShader\+Base\+::\+Create\+Vertex\+Shader (\begin{DoxyParamCaption}\item[{ID3\+DBlob $\ast$}]{p\+Compiled\+Shader,  }\item[{ID3\+D11\+Vertex\+Shader $\ast$$\ast$}]{p\+Vertex\+Shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a772063ab92b04e577feca59320a4d657}\label{class_c_shader_base_a772063ab92b04e577feca59320a4d657}} 
+\index{CShaderBase@{CShaderBase}!GetPositionInputElement@{GetPositionInputElement}}
+\index{GetPositionInputElement@{GetPositionInputElement}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{GetPositionInputElement()}{GetPositionInputElement()}}
+{\footnotesize\ttfamily D3\+D11\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC CShader\+Base\+::\+Get\+Position\+Input\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_aa05e61503b69891ba5b5671248865a08}\label{class_c_shader_base_aa05e61503b69891ba5b5671248865a08}} 
+\index{CShaderBase@{CShaderBase}!GetTexcoordInputElement@{GetTexcoordInputElement}}
+\index{GetTexcoordInputElement@{GetTexcoordInputElement}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{GetTexcoordInputElement()}{GetTexcoordInputElement()}}
+{\footnotesize\ttfamily D3\+D11\+\_\+\+INPUT\+\_\+\+ELEMENT\+\_\+\+DESC CShader\+Base\+::\+Get\+Texcoord\+Input\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}\label{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}} 
+\index{CShaderBase@{CShaderBase}!Init@{Init}}
+\index{Init@{Init}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual HRESULT CShader\+Base\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_trajectory_ac8ded6ad24567c510c9dd2c1318a8ab6}{CTrajectory}}, \mbox{\hyperlink{class_c_sprite_shader_ab59765c606516a97b63fd2a4265ffd70}{CSprite\+Shader}}, \mbox{\hyperlink{class_c_simple_shader_ac760261329037cf21306f1ec9971f004}{CSimple\+Shader}}, \mbox{\hyperlink{class_c_debug_text_shader_a9b80a9abf6948cc1b79b4194dc5af1e0}{CDebug\+Text\+Shader}}で実装されています。
+
+\mbox{\Hypertarget{class_c_shader_base_a22c772529658c8d6d2599185c3630b22}\label{class_c_shader_base_a22c772529658c8d6d2599185c3630b22}} 
+\index{CShaderBase@{CShaderBase}!InitShader@{InitShader}}
+\index{InitShader@{InitShader}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{InitShader()}{InitShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual HRESULT CShader\+Base\+::\+Init\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a365fb0c8895fd869a46f0d970e84b235}\label{class_c_shader_base_a365fb0c8895fd869a46f0d970e84b235}} 
+\index{CShaderBase@{CShaderBase}!InitShader@{InitShader}}
+\index{InitShader@{InitShader}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{InitShader()}{InitShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CShader\+Base\+::\+Init\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Path,  }\item[{const char $\ast$}]{entry\+Point,  }\item[{const char $\ast$}]{shader\+Model,  }\item[{UINT}]{compile\+Flag,  }\item[{ID3\+DBlob $\ast$$\ast$}]{pp\+Compiled\+Shader,  }\item[{ID3\+DBlob $\ast$$\ast$}]{pp\+Errors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}\label{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}} 
+\index{CShaderBase@{CShaderBase}!Release@{Release}}
+\index{Release@{Release}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily virtual HRESULT CShader\+Base\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_trajectory_a5e0140fa35f931b6d7d4f646cfcab280}{CTrajectory}}, \mbox{\hyperlink{class_c_sprite_shader_a6b7e0ae3cdae610acc199829cfda9ced}{CSprite\+Shader}}, \mbox{\hyperlink{class_c_simple_shader_ad6bb31d4b8c595e820d06b20a6c95ef6}{CSimple\+Shader}}, \mbox{\hyperlink{class_c_debug_text_shader_ae8cb520859f3eb47579f3a24d8b93722}{CDebug\+Text\+Shader}}で実装されています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_shader_base_a238c789ff8a9ba18dcabc8457ae3bae8}\label{class_c_shader_base_a238c789ff8a9ba18dcabc8457ae3bae8}} 
+\index{CShaderBase@{CShaderBase}!m\_pConstantBuffer@{m\_pConstantBuffer}}
+\index{m\_pConstantBuffer@{m\_pConstantBuffer}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pConstantBuffer}{m\_pConstantBuffer}}
+{\footnotesize\ttfamily ID3\+D11\+Buffer$\ast$ CShader\+Base\+::m\+\_\+p\+Constant\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_aefe7429b336015bf592c35b7359cfb22}\label{class_c_shader_base_aefe7429b336015bf592c35b7359cfb22}} 
+\index{CShaderBase@{CShaderBase}!m\_pContext11@{m\_pContext11}}
+\index{m\_pContext11@{m\_pContext11}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pContext11}{m\_pContext11}}
+{\footnotesize\ttfamily ID3\+D11\+Device\+Context$\ast$ CShader\+Base\+::m\+\_\+p\+Context11\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a2bafc1e291ea54cb2544977a1cbb0d45}\label{class_c_shader_base_a2bafc1e291ea54cb2544977a1cbb0d45}} 
+\index{CShaderBase@{CShaderBase}!m\_pDevice11@{m\_pDevice11}}
+\index{m\_pDevice11@{m\_pDevice11}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pDevice11}{m\_pDevice11}}
+{\footnotesize\ttfamily ID3\+D11\+Device$\ast$ CShader\+Base\+::m\+\_\+p\+Device11\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_ac6e1bc8b5138003c4b4a97f24b91487f}\label{class_c_shader_base_ac6e1bc8b5138003c4b4a97f24b91487f}} 
+\index{CShaderBase@{CShaderBase}!m\_pPixelShader@{m\_pPixelShader}}
+\index{m\_pPixelShader@{m\_pPixelShader}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pPixelShader}{m\_pPixelShader}}
+{\footnotesize\ttfamily ID3\+D11\+Pixel\+Shader$\ast$ CShader\+Base\+::m\+\_\+p\+Pixel\+Shader\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a956a27e5c1685b103844c94ba25e2707}\label{class_c_shader_base_a956a27e5c1685b103844c94ba25e2707}} 
+\index{CShaderBase@{CShaderBase}!m\_pVertexLayout@{m\_pVertexLayout}}
+\index{m\_pVertexLayout@{m\_pVertexLayout}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pVertexLayout}{m\_pVertexLayout}}
+{\footnotesize\ttfamily ID3\+D11\+Input\+Layout$\ast$ CShader\+Base\+::m\+\_\+p\+Vertex\+Layout\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_shader_base_a788c0181fca8067e0c5b02a37c6bcfb2}\label{class_c_shader_base_a788c0181fca8067e0c5b02a37c6bcfb2}} 
+\index{CShaderBase@{CShaderBase}!m\_pVertexShader@{m\_pVertexShader}}
+\index{m\_pVertexShader@{m\_pVertexShader}!CShaderBase@{CShaderBase}}
+\doxysubsubsection{\texorpdfstring{m\_pVertexShader}{m\_pVertexShader}}
+{\footnotesize\ttfamily ID3\+D11\+Vertex\+Shader$\ast$ CShader\+Base\+::m\+\_\+p\+Vertex\+Shader\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\mbox{\hyperlink{_shader_base_8h}{Shader\+Base.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\mbox{\hyperlink{_shader_base_8cpp}{Shader\+Base.\+cpp}}\end{DoxyCompactItemize}

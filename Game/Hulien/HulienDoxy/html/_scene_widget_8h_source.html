@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/SceneWidget.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SceneWidget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_scene_widget_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SCENEWIDGET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SCENEWIDGET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Widget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_cursor.html">CCursor</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_return_title.html">CReturnTitle</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/*******************************************</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*   シーンUI元クラス.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_c_scene_widget.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_scene_widget.html">CSceneWidget</a> : <span class="keyword">public</span> <a class="code" href="class_c_widget.html">CWidget</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_scene_widget.html#addc1c462968d99344a36148583db7204">   15</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="class_c_scene_widget.html#addc1c462968d99344a36148583db7204">INPUT_WAIT_TIME_MAX</a> = 30.0f;  <span class="comment">// 入力時の待機フレーム.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//  描画状態.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_c_scene_widget.html#a415a8591762e1caf3cbd22809a70ca95">   17</a></span>&#160;    <span class="keyword">enum class</span> enDrawingState</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        NowDrawing, <span class="comment">// 描画中.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        Finish,     <span class="comment">// 描画終了.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    } <span class="keyword">typedef</span> <a class="code" href="class_c_scene_widget.html#a415a8591762e1caf3cbd22809a70ca95">EDrawingState</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_c_scene_widget.html#a3800f19a10a2c6ccec577534ad5fad6f">CSceneWidget</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_scene_widget.html#a410e8819a04f5f24fbafa7ad218854d0">~CSceneWidget</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_c_scene_widget.html#aaa20e1d6ca885f14724eaeb87e606513">   28</a></span>&#160;    <a class="code" href="class_c_scene_widget.html#a415a8591762e1caf3cbd22809a70ca95">EDrawingState</a>   <a class="code" href="class_c_scene_widget.html#aaa20e1d6ca885f14724eaeb87e606513">m_DrawingState</a>;     <span class="comment">// 描画状態.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_c_scene_widget.html#ae185f05b782e6286caf8cba920facb1c">   29</a></span>&#160;    <span class="keywordtype">float</span>           <a class="code" href="class_c_scene_widget.html#ae185f05b782e6286caf8cba920facb1c">m_InputWaitTime</a>;    <span class="comment">// 入力した際の待機時間.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef SCENEWIDGET_H.</span></div>
+<div class="ttc" id="aclass_c_cursor_html"><div class="ttname"><a href="class_c_cursor.html">CCursor</a></div><div class="ttdef"><b>Definition:</b> Cursor.h:10</div></div>
+<div class="ttc" id="aclass_c_return_title_html"><div class="ttname"><a href="class_c_return_title.html">CReturnTitle</a></div><div class="ttdef"><b>Definition:</b> ReturnTitle.h:12</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html"><div class="ttname"><a href="class_c_scene_widget.html">CSceneWidget</a></div><div class="ttdef"><b>Definition:</b> SceneWidget.h:13</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html_a3800f19a10a2c6ccec577534ad5fad6f"><div class="ttname"><a href="class_c_scene_widget.html#a3800f19a10a2c6ccec577534ad5fad6f">CSceneWidget::CSceneWidget</a></div><div class="ttdeci">CSceneWidget()</div><div class="ttdef"><b>Definition:</b> SceneWidget.cpp:6</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html_a410e8819a04f5f24fbafa7ad218854d0"><div class="ttname"><a href="class_c_scene_widget.html#a410e8819a04f5f24fbafa7ad218854d0">CSceneWidget::~CSceneWidget</a></div><div class="ttdeci">virtual ~CSceneWidget()</div><div class="ttdef"><b>Definition:</b> SceneWidget.cpp:11</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html_a415a8591762e1caf3cbd22809a70ca95"><div class="ttname"><a href="class_c_scene_widget.html#a415a8591762e1caf3cbd22809a70ca95">CSceneWidget::EDrawingState</a></div><div class="ttdeci">EDrawingState</div><div class="ttdef"><b>Definition:</b> SceneWidget.h:18</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html_aaa20e1d6ca885f14724eaeb87e606513"><div class="ttname"><a href="class_c_scene_widget.html#aaa20e1d6ca885f14724eaeb87e606513">CSceneWidget::m_DrawingState</a></div><div class="ttdeci">EDrawingState m_DrawingState</div><div class="ttdef"><b>Definition:</b> SceneWidget.h:28</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html_addc1c462968d99344a36148583db7204"><div class="ttname"><a href="class_c_scene_widget.html#addc1c462968d99344a36148583db7204">CSceneWidget::INPUT_WAIT_TIME_MAX</a></div><div class="ttdeci">static const float INPUT_WAIT_TIME_MAX</div><div class="ttdef"><b>Definition:</b> SceneWidget.h:15</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html_ae185f05b782e6286caf8cba920facb1c"><div class="ttname"><a href="class_c_scene_widget.html#ae185f05b782e6286caf8cba920facb1c">CSceneWidget::m_InputWaitTime</a></div><div class="ttdeci">float m_InputWaitTime</div><div class="ttdef"><b>Definition:</b> SceneWidget.h:29</div></div>
+<div class="ttc" id="aclass_c_widget_html"><div class="ttname"><a href="class_c_widget.html">CWidget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

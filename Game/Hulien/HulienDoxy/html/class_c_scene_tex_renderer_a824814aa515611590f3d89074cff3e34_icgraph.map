@@ -1,0 +1,13 @@
+<map id="CSceneTexRenderer::SetIsStartLoad" name="CSceneTexRenderer::SetIsStartLoad">
+<area shape="rect" id="node1" title=" " alt="" coords="524,201,673,242"/>
+<area shape="rect" id="node2" href="$class_c_editor.html#a9aff35dac676527f5e1ec8fade01875f" title=" " alt="" coords="320,5,421,32"/>
+<area shape="rect" id="node3" href="$class_c_game.html#acc8934bf2f3c9c6466405dbd5cba56e3" title=" " alt="" coords="319,56,422,83"/>
+<area shape="rect" id="node4" href="$class_c_game_clear.html#a7b9d98ca879f2b10dd9126d050778614" title=" " alt="" coords="305,107,437,133"/>
+<area shape="rect" id="node5" href="$class_c_game_over.html#a852b6bfc0638bd23176bd7f997357b28" title=" " alt="" coords="307,157,435,184"/>
+<area shape="rect" id="node6" href="$class_c_title.html#a9370f8925d0381bba8fedd7d2834ab74" title=" " alt="" coords="325,208,416,235"/>
+<area shape="rect" id="node7" href="$class_c_game_clear_event.html#a1dab676fd2def2f7fd4236632a851102" title=" " alt="" coords="289,259,453,285"/>
+<area shape="rect" id="node8" href="$class_c_game_over_event.html#a97f5e3a7bcec69ed6a3e5be735e2a648" title=" " alt="" coords="291,309,451,336"/>
+<area shape="rect" id="node9" href="$class_c_event_manager.html#a661e9e12a978ae9bbc77ba030d4396f2" title=" " alt="" coords="265,360,476,387"/>
+<area shape="rect" id="node11" href="$class_c_game_over.html#a2f7ab7e3bf1717ec503fd9f3dcc5da90" title=" " alt="" coords="300,411,441,437"/>
+<area shape="rect" id="node10" href="$class_c_event_manager.html#a75de83a90dda94c96d3804520b048aba" title=" " alt="" coords="5,360,217,387"/>
+</map>

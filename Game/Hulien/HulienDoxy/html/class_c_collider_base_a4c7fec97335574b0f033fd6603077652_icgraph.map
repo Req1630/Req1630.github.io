@@ -1,0 +1,8 @@
+<map id="CColliderBase::GetBoundingBox" name="CColliderBase::GetBoundingBox">
+<area shape="rect" id="node1" title=" " alt="" coords="461,71,672,98"/>
+<area shape="rect" id="node2" href="$class_c_o_b_box_collision.html#a6cc879def3064124f66ab3edc580f68b" title=" " alt="" coords="208,42,413,69"/>
+<area shape="rect" id="node5" href="$class_c_capsule_collision.html#a7b4d33ae4ebaf942d94841a703a4ef6e" title=" " alt="" coords="243,93,378,135"/>
+<area shape="rect" id="node3" href="$class_c_collision_manager.html#ab745441286cb42d1655a1fb74caa3af8" title=" " alt="" coords="5,71,160,98"/>
+<area shape="rect" id="node4" href="$class_c_collision_manager.html#a73dbc56ae6e2ac34d9a18a1c59a55081" title=" " alt="" coords="13,5,152,47"/>
+<area shape="rect" id="node6" href="$class_c_collision_manager.html#a514743a2e9d437e371a2040865d02db9" title=" " alt="" coords="13,123,152,164"/>
+</map>

@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Scene/Scenes/Game/Game.cpp ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_26b02589e53dd6a6cf02171ae1971281.html">Scene</a></li><li class="navelem"><a class="el" href="dir_cc68c70b817f35837718f58411e6202b.html">Scenes</a></li><li class="navelem"><a class="el" href="dir_675160f1614aee33b2586526a622345d.html">Game</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Game.cpp ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_scene_list_8h_source.html">..\SceneList.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_game_actor_manager_8h_source.html">..\..\..\GameObject\Actor\ActorManager\GameActorManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_ground_stage_8h_source.html">..\..\..\GameObject\GroundStage\GroundStage.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_player_8h_source.html">..\..\..\GameObject\Actor\Character\Player\Player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_alien_manager_8h_source.html">..\..\..\GameObject\Actor\Character\Alien\AlienManager\AlienManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_game_widget_manager_8h_source.html">..\..\..\GameObject\Widget\SceneWidget\GameWidget\GameWidgetManager\GameWidgetManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_continue_widget_8h_source.html">..\..\..\GameObject\Widget\SceneWidget\ContinueWidget\ContinueWidget.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_config_widget_8h_source.html">..\..\..\GameObject\Widget\SceneWidget\ConfigWidget\ConfigWidget.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sky_dome_8h_source.html">..\..\..\GameObject\SkyDome\SkyDome.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_event_manager_8h_source.html">..\..\..\SceneEvent\EventManager\EventManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_c_sprite_8h_source.html">..\..\..\Common\Sprite\CSprite.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sprite_resource_8h_source.html">..\..\..\Resource\SpriteResource\SpriteResource.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_fade_8h_source.html">..\..\..\GameObject\Widget\Fade\Fade.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_transition_8h_source.html">..\..\..\GameObject\Widget\SceneTransition\SceneTransition.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_input_8h_source.html">..\..\..\Utility\Input\Input.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_sound_manager_8h_source.html">..\..\..\XAudio2\SoundManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_tutorial_8h_source.html">..\..\..\GameObject\Widget\Tutorial\Tutorial.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_im_gui_manager_8h_source.html">..\..\..\Utility\ImGuiManager\ImGuiManager.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_edit_renderer_8h_source.html">..\..\..\Editor\EditRenderer\EditRenderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_d3_d_x11_8h_source.html">..\..\..\Common\D3DX\D3DX11.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_shadow_map_8h_source.html">..\..\..\Common\Shader\ShadowMap\ShadowMap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_scene_tex_renderer_8h_source.html">..\..\..\Common\SceneTexRenderer\SceneTexRenderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_fog_8h_source.html">..\..\..\Common\Fog\Fog.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_effect_resource_8h_source.html">..\..\..\Resource\EffectResource\EffectResource.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Game.cpp の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_game_8cpp__incl.png" border="0" usemap="#a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_game_2_game_8cpp" alt=""/></div>
+<map name="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_game_2_game_8cpp" id="a_c_1_2_users_2hera_2_desktop_2_req1630_2_hulien_2_hulien_2_source_code_2_scene_2_scenes_2_game_2_game_8cpp">
+<area shape="rect" title=" " alt="" coords="1757,5,1944,76"/>
+<area shape="rect" href="_scene_list_8h.html" title=" " alt="" coords="769,139,871,165"/>
+<area shape="rect" href="_fade_8h.html" title=" " alt="" coords="83,347,247,388"/>
+<area shape="rect" href="_c_sprite_8h.html" title=" " alt="" coords="2278,347,2426,388"/>
+<area shape="rect" href="_d3_d_x11_8h.html" title="DirectX11 Deviceを持っているクラス." alt="" coords="2366,741,2445,767"/>
+<area shape="rect" href="_game_actor_manager_8h.html" title="Actorクラスを管理するクラス." alt="" coords="2643,228,2797,284"/>
+<area shape="rect" href="_ground_stage_8h.html" title="地面クラス." alt="" coords="2550,131,2743,173"/>
+<area shape="rect" href="_shadow_map_8h.html" title=" " alt="" coords="2977,347,3183,388"/>
+<area shape="rect" href="_player_8h.html" title="プレイヤークラス." alt="" coords="35,540,194,596"/>
+<area shape="rect" href="_alien_manager_8h.html" title="宇宙人管理クラス." alt="" coords="858,540,1057,596"/>
+<area shape="rect" href="_game_widget_manager_8h.html" title=" " alt="" coords="2451,332,2683,403"/>
+<area shape="rect" href="_continue_widget_8h.html" title=" " alt="" coords="947,124,1173,180"/>
+<area shape="rect" href="_config_widget_8h.html" title=" " alt="" coords="1248,124,1443,180"/>
+<area shape="rect" href="_sky_dome_8h.html" title="背景クラス." alt="" coords="2791,131,2945,173"/>
+<area shape="rect" href="_event_manager_8h.html" title=" " alt="" coords="1819,131,2024,173"/>
+<area shape="rect" href="_sprite_resource_8h.html" title="画像リソースクラス." alt="" coords="1681,235,1863,277"/>
+<area shape="rect" href="_scene_transition_8h.html" title=" " alt="" coords="2150,124,2314,180"/>
+<area shape="rect" href="_input_8h.html" title=" " alt="" coords="1553,547,1676,589"/>
+<area shape="rect" href="_sound_manager_8h.html" title=" " alt="" coords="1487,651,1694,678"/>
+<area shape="rect" href="_tutorial_8h.html" title=" " alt="" coords="1385,733,1556,775"/>
+<area shape="rect" href="_im_gui_manager_8h.html" title="ImGuiライブラリを管理するクラス." alt="" coords="3041,451,3220,492"/>
+<area shape="rect" href="_edit_renderer_8h.html" title=" " alt="" coords="1148,547,1319,589"/>
+<area shape="rect" href="_scene_tex_renderer_8h.html" title="ポストエフェクトなどを描画する." alt="" coords="2055,347,2254,388"/>
+<area shape="rect" href="_fog_8h.html" title="フォグの情報を持っている." alt="" coords="2004,451,2140,492"/>
+<area shape="rect" href="_effect_resource_8h.html" title="エフェクト(Effekseer)リソースクラス." alt="" coords="1903,547,2083,589"/>
+<area shape="rect" href="_scene_manager_8h.html" title="シーン管理クラス." alt="" coords="94,243,317,269"/>
+<area shape="rect" href="_title_8h.html" title=" " alt="" coords="2189,243,2275,269"/>
+<area shape="rect" href="_game_8h.html" title=" " alt="" coords="900,243,1007,269"/>
+<area shape="rect" href="_game_clear_8h.html" title=" " alt="" coords="393,243,559,269"/>
+<area shape="rect" href="_game_over_8h.html" title=" " alt="" coords="583,243,742,269"/>
+<area shape="rect" href="_config_8h.html" title=" " alt="" coords="767,243,876,269"/>
+<area shape="rect" href="_editor_8h.html" title=" " alt="" coords="353,458,458,485"/>
+<area shape="rect" href="_common_8h.html" title=" " alt="" coords="2442,555,2539,581"/>
+<area shape="rect" href="_sprite_shader_8h.html" title=" " alt="" coords="2265,451,2420,492"/>
+<area shape="rect" href="_sprite_state_8h.html" title=" " alt="" coords="2444,458,2543,485"/>
+<area shape="rect" href="_global_8h.html" title=" " alt="" coords="2358,651,2453,678"/>
+<area shape="rect" title=" " alt="" coords="1852,741,1921,767"/>
+<area shape="rect" title=" " alt="" coords="2094,741,2149,767"/>
+<area shape="rect" title=" " alt="" coords="1443,823,1499,849"/>
+<area shape="rect" href="_object_list_8h.html" title="ゲーム内で出てくるオブジェクトのタグリスト." alt="" coords="2809,354,2901,381"/>
+<area shape="rect" href="_game_object_8h.html" title="ゲーム内のオブジェクト基底クラス." alt="" coords="2821,243,2939,269"/>
+<area shape="rect" href="_character_8h.html" title=" " alt="" coords="209,741,311,767"/>
+<area shape="rect" href="_player_param_8h.html" title="プレイヤーの構造体などのヘッター." alt="" coords="114,651,222,678"/>
+<area shape="rect" title=" " alt="" coords="33,651,90,678"/>
+<area shape="rect" href="_alien_8h.html" title="宇宙人基底クラス." alt="" coords="693,651,768,678"/>
+<area shape="rect" href="_explosion_8h.html" title="爆発クラス." alt="" coords="943,644,1057,685"/>
+<area shape="rect" title=" " alt="" coords="1233,651,1311,678"/>
+<area shape="rect" href="_scene_widget_8h.html" title=" " alt="" coords="1244,243,1367,269"/>
+<area shape="rect" href="_event_base_8h.html" title=" " alt="" coords="2108,555,2281,581"/>
+<area shape="rect" title=" " alt="" coords="1821,651,1931,678"/>
+</map>
+</div>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Collider/Colliders/Sphere/SphereCollision.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_4791eaf9ff3d97ee7ff22b1c289030db.html">Collider</a></li><li class="navelem"><a class="el" href="dir_284bc412922346988271b5f6c23425d9.html">Colliders</a></li><li class="navelem"><a class="el" href="dir_aa02782127d618c211a0dadc5fb7d602.html">Sphere</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">SphereCollision.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_sphere_collision_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SPHERE_COLLISION_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SPHERE_COLLISION_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\..\ColliderBase\ColliderBase.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_sphere_model.html">CSphereModel</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/***********************************************</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">*   球体の当たり判定用クラス.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_c_sphere_collision.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_sphere_collision.html">CSphereCollision</a> : <span class="keyword">public</span> <a class="code" href="class_c_collider_base.html">CColliderBase</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:  <span class="comment">//------- 関数 -------.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_c_sphere_collision.html#aa7fc6c87bef15647cbce13a4faa065a1">CSphereCollision</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_sphere_collision.html#add76339749cd45e57b2b4edc645ee658">~CSphereCollision</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// モデルの半径の作成.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    HRESULT <a class="code" href="class_c_sphere_collision.html#a5f89cf3c6934850031092e196d8a1f8d">InitModelRadius</a>( LPD3DXMESH pMesh );</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    HRESULT <a class="code" href="class_c_sphere_collision.html#a5f89cf3c6934850031092e196d8a1f8d">InitModelRadius</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; radius );</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// 当たり判定の表示.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_sphere_collision.html#a48cba9a82505edbbd7c97c651ab97a84">DebugRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// 色を変えるかどうか.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sphere_collision.html#a7d4e7ba3ae5e70f03fcf529074af4834">SetChangeColor</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; changed );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 半径の取得.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_c_sphere_collision.html#a6e5e23f773be11ab2d236c6d898dc4f0">   31</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_sphere_collision.html#a6e5e23f773be11ab2d236c6d898dc4f0">GetRadius</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Radius; }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 調整用の球体半径の設定.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_sphere_collision.html#ac969a1bff85bafb78192941abefb2390">   33</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_sphere_collision.html#ac969a1bff85bafb78192941abefb2390">SetAdjRadius</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; radius ){ m_AdjRadius = radius; }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>: <span class="comment">//------- 変数 -------.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">float</span> m_Radius;     <span class="comment">// 球体の半径.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">float</span> m_AdjRadius;  <span class="comment">// 調整用の球体半径.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef _DEBUG</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::unique_ptr&lt;CSphereModel&gt; m_pDebugSphere;   <span class="comment">// デバッグ用の球体.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> m_IsRender; <span class="comment">// 描画するかどうか.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifdef _DEBUG.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef SPHERE_COLLISION_H.</span></div>
+<div class="ttc" id="aclass_c_collider_base_html"><div class="ttname"><a href="class_c_collider_base.html">CColliderBase</a></div><div class="ttdef"><b>Definition:</b> ColliderBase.h:15</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html"><div class="ttname"><a href="class_c_sphere_collision.html">CSphereCollision</a></div><div class="ttdef"><b>Definition:</b> SphereCollision.h:17</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_a48cba9a82505edbbd7c97c651ab97a84"><div class="ttname"><a href="class_c_sphere_collision.html#a48cba9a82505edbbd7c97c651ab97a84">CSphereCollision::DebugRender</a></div><div class="ttdeci">virtual void DebugRender() override</div><div class="ttdef"><b>Definition:</b> SphereCollision.cpp:58</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_a5f89cf3c6934850031092e196d8a1f8d"><div class="ttname"><a href="class_c_sphere_collision.html#a5f89cf3c6934850031092e196d8a1f8d">CSphereCollision::InitModelRadius</a></div><div class="ttdeci">HRESULT InitModelRadius(LPD3DXMESH pMesh)</div><div class="ttdef"><b>Definition:</b> SphereCollision.cpp:24</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_a6e5e23f773be11ab2d236c6d898dc4f0"><div class="ttname"><a href="class_c_sphere_collision.html#a6e5e23f773be11ab2d236c6d898dc4f0">CSphereCollision::GetRadius</a></div><div class="ttdeci">float GetRadius() const</div><div class="ttdef"><b>Definition:</b> SphereCollision.h:31</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_a7d4e7ba3ae5e70f03fcf529074af4834"><div class="ttname"><a href="class_c_sphere_collision.html#a7d4e7ba3ae5e70f03fcf529074af4834">CSphereCollision::SetChangeColor</a></div><div class="ttdeci">void SetChangeColor(const bool &amp;changed)</div><div class="ttdef"><b>Definition:</b> SphereCollision.cpp:71</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_aa7fc6c87bef15647cbce13a4faa065a1"><div class="ttname"><a href="class_c_sphere_collision.html#aa7fc6c87bef15647cbce13a4faa065a1">CSphereCollision::CSphereCollision</a></div><div class="ttdeci">CSphereCollision()</div><div class="ttdef"><b>Definition:</b> SphereCollision.cpp:8</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_ac969a1bff85bafb78192941abefb2390"><div class="ttname"><a href="class_c_sphere_collision.html#ac969a1bff85bafb78192941abefb2390">CSphereCollision::SetAdjRadius</a></div><div class="ttdeci">void SetAdjRadius(const float &amp;radius)</div><div class="ttdef"><b>Definition:</b> SphereCollision.h:33</div></div>
+<div class="ttc" id="aclass_c_sphere_collision_html_add76339749cd45e57b2b4edc645ee658"><div class="ttname"><a href="class_c_sphere_collision.html#add76339749cd45e57b2b4edc645ee658">CSphereCollision::~CSphereCollision</a></div><div class="ttdeci">virtual ~CSphereCollision()</div><div class="ttdef"><b>Definition:</b> SphereCollision.cpp:17</div></div>
+<div class="ttc" id="aclass_c_sphere_model_html"><div class="ttname"><a href="class_c_sphere_model.html">CSphereModel</a></div><div class="ttdef"><b>Definition:</b> SphereModel.h:17</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

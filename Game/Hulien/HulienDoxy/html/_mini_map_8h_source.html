@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget/MiniMap/MiniMap.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_c815d2af617786c0f5a537c28156456c.html">GameWidget</a></li><li class="navelem"><a class="el" href="dir_7b1abe7ead1c7ac2bdb493431de1ae5b.html">MiniMap</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MiniMap.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_mini_map_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MINIMAP_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MINIMAP_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\SceneWidget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_game_actor_manager.html">CGameActorManager</a>;    <span class="comment">//アクタ管理クラス.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**********************************</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*   ミニマップクラス.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_c_mini_map.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_mini_map.html">CMiniMap</a> : <span class="keyword">public</span> <a class="code" href="class_c_scene_widget.html">CSceneWidget</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">typedef</span> std::pair&lt;D3DXVECTOR3, float&gt; pos_rot_pair; <span class="comment">// 座標と回転のペア.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">typedef</span> std::vector&lt;std::pair&lt;EObjectTag, pos_rot_pair&gt;&gt; OBJLIST;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_MAP_BACK     = <span class="stringliteral">&quot;minimapBase&quot;</span>;        <span class="comment">//ミニマップ背景スプライト名.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_MAP_FRONT    = <span class="stringliteral">&quot;minimapWaku&quot;</span>;        <span class="comment">//ミニマップ背景スプライト名.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_DEFAULT_ICON = <span class="stringliteral">&quot;mapiconsize&quot;</span>;    <span class="comment">//標準アイコンスプライト名.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>   MAP_BACK = 0;                           <span class="comment">//ミニマップ背景配列番号.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> MAP_ICON_POSITION_CORRECTION_VALUE  = 0.55f;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// アイコン情報.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">struct </span>stIconInfo</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::shared_ptr&lt;CSprite&gt; pSprite;   <span class="comment">// スプライト.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        D3DXVECTOR3 Pos;                    <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        D3DXVECTOR3 Rot;                    <span class="comment">// 回転.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a> EObjTag;                 <span class="comment">// タグ.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">int</span> AnimNumber;                     <span class="comment">// アニメーション番号.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        stIconInfo()</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            : pSprite   ( <span class="keyword">nullptr</span> )</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            , Pos       (D3DXVECTOR3(0.0f,0.0f,0.0f))</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            , Rot       (D3DXVECTOR3(0.0f,0.0f,0.0f))</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            , EObjTag   (<a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca6a061313d22e51e0f25b7cd4dc065233">EObjectTag::Max</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            , AnimNumber (0)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }<span class="keyword">typedef</span> SIconInfo;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// アイコンの種類.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">enum class</span> IconType</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca636da1d35e805b00eae0fcd8333f9234">Player</a> = 0,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca635c6c282d4385b8a6b6083d0151054d">Girl</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca35dae1162ef7780f6e5035b37ba4d01f">Alien_A</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca4da2aa71638b0e7e529bfec584de071a">Alien_B</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca4f03f95b618a4e97e83eaf1c6057fa8d">Alien_C</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95cae679a3bf57ac6488a9800580aa68ddab">Alien_D</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        Item,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca2df17a3f7c241feb59fc3cf1b809e3d6">MotherShipUFO</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }<span class="keyword">typedef</span> EIconType;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_c_mini_map.html#a071bae3148ccfa15b2107dc3e006f488">CMiniMap</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_mini_map.html#a7729e1ddbb4fc4076cd7745fde5c9fa6">~CMiniMap</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_mini_map.html#af6897d4d380328eb7c96742dda29b809">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mini_map.html#af6fba41583c9920b89b88c9ef463e1a3">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// オブジェクト位置設定関数.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_mini_map.html#a19cf627f8b99bbef103efa6896d158e4">SetObjPosition</a>(<a class="code" href="class_c_game_actor_manager.html">CGameActorManager</a>* pObj);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_mini_map.html#a5ffb395ba18d000cf88f2b437f2e850d">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//スプライト設定関数.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> SpriteSetting(OBJLIST objList);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// オブジェクトのスプライト設定関数.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> ObjSpriteSetting(<span class="keyword">const</span> <span class="keywordtype">char</span>* spriteName, <span class="keyword">const</span> <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a>&amp; tag);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// アニメーション番号の設定関数.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">int</span> SetAnimNumber(<span class="keyword">const</span> <a class="code" href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a>&amp; tag);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::vector&lt;SIconInfo&gt;  m_IconList;         <span class="comment">//アイコンリスト,</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">size_t</span>                  m_ObjPosListCount;  <span class="comment">//オブジェクトのカウント.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef MINIMAP_H.</span></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95c"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95c">EObjectTag</a></div><div class="ttdeci">EObjectTag</div><div class="ttdef"><b>Definition:</b> ObjectList.h:11</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca2df17a3f7c241feb59fc3cf1b809e3d6"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca2df17a3f7c241feb59fc3cf1b809e3d6">EObjectTag::MotherShipUFO</a></div><div class="ttdeci">@ MotherShipUFO</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca35dae1162ef7780f6e5035b37ba4d01f"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca35dae1162ef7780f6e5035b37ba4d01f">EObjectTag::Alien_A</a></div><div class="ttdeci">@ Alien_A</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca4da2aa71638b0e7e529bfec584de071a"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca4da2aa71638b0e7e529bfec584de071a">EObjectTag::Alien_B</a></div><div class="ttdeci">@ Alien_B</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca4f03f95b618a4e97e83eaf1c6057fa8d"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca4f03f95b618a4e97e83eaf1c6057fa8d">EObjectTag::Alien_C</a></div><div class="ttdeci">@ Alien_C</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca635c6c282d4385b8a6b6083d0151054d"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca635c6c282d4385b8a6b6083d0151054d">EObjectTag::Girl</a></div><div class="ttdeci">@ Girl</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca636da1d35e805b00eae0fcd8333f9234"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca636da1d35e805b00eae0fcd8333f9234">EObjectTag::Player</a></div><div class="ttdeci">@ Player</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95ca6a061313d22e51e0f25b7cd4dc065233"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95ca6a061313d22e51e0f25b7cd4dc065233">EObjectTag::Max</a></div><div class="ttdeci">@ Max</div></div>
+<div class="ttc" id="a_object_list_8h_html_ae3918515e36084aa17b48b6b6d9da95cae679a3bf57ac6488a9800580aa68ddab"><div class="ttname"><a href="_object_list_8h.html#ae3918515e36084aa17b48b6b6d9da95cae679a3bf57ac6488a9800580aa68ddab">EObjectTag::Alien_D</a></div><div class="ttdeci">@ Alien_D</div></div>
+<div class="ttc" id="aclass_c_game_actor_manager_html"><div class="ttname"><a href="class_c_game_actor_manager.html">CGameActorManager</a></div><div class="ttdef"><b>Definition:</b> GameActorManager.h:30</div></div>
+<div class="ttc" id="aclass_c_mini_map_html"><div class="ttname"><a href="class_c_mini_map.html">CMiniMap</a></div><div class="ttdef"><b>Definition:</b> MiniMap.h:13</div></div>
+<div class="ttc" id="aclass_c_mini_map_html_a071bae3148ccfa15b2107dc3e006f488"><div class="ttname"><a href="class_c_mini_map.html#a071bae3148ccfa15b2107dc3e006f488">CMiniMap::CMiniMap</a></div><div class="ttdeci">CMiniMap()</div><div class="ttdef"><b>Definition:</b> MiniMap.cpp:11</div></div>
+<div class="ttc" id="aclass_c_mini_map_html_a19cf627f8b99bbef103efa6896d158e4"><div class="ttname"><a href="class_c_mini_map.html#a19cf627f8b99bbef103efa6896d158e4">CMiniMap::SetObjPosition</a></div><div class="ttdeci">void SetObjPosition(CGameActorManager *pObj)</div><div class="ttdef"><b>Definition:</b> MiniMap.cpp:36</div></div>
+<div class="ttc" id="aclass_c_mini_map_html_a5ffb395ba18d000cf88f2b437f2e850d"><div class="ttname"><a href="class_c_mini_map.html#a5ffb395ba18d000cf88f2b437f2e850d">CMiniMap::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> MiniMap.cpp:65</div></div>
+<div class="ttc" id="aclass_c_mini_map_html_a7729e1ddbb4fc4076cd7745fde5c9fa6"><div class="ttname"><a href="class_c_mini_map.html#a7729e1ddbb4fc4076cd7745fde5c9fa6">CMiniMap::~CMiniMap</a></div><div class="ttdeci">virtual ~CMiniMap()</div><div class="ttdef"><b>Definition:</b> MiniMap.cpp:17</div></div>
+<div class="ttc" id="aclass_c_mini_map_html_af6897d4d380328eb7c96742dda29b809"><div class="ttname"><a href="class_c_mini_map.html#af6897d4d380328eb7c96742dda29b809">CMiniMap::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> MiniMap.cpp:22</div></div>
+<div class="ttc" id="aclass_c_mini_map_html_af6fba41583c9920b89b88c9ef463e1a3"><div class="ttname"><a href="class_c_mini_map.html#af6fba41583c9920b89b88c9ef463e1a3">CMiniMap::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> MiniMap.cpp:31</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html"><div class="ttname"><a href="class_c_scene_widget.html">CSceneWidget</a></div><div class="ttdef"><b>Definition:</b> SceneWidget.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

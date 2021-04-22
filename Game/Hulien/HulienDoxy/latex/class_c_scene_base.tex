@@ -1,0 +1,106 @@
+\hypertarget{class_c_scene_base}{}\doxysection{CScene\+Base クラス}
+\label{class_c_scene_base}\index{CSceneBase@{CSceneBase}}
+
+
+{\ttfamily \#include $<$Scene\+Base.\+h$>$}
+
+
+
+CScene\+Base の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_scene_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CScene\+Base 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{class_c_scene_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_scene_base_abc650553d8243b125c8f70f0a93ad65c}{CScene\+Base}} (\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$p\+Scene\+Manager)
+\item 
+virtual \mbox{\hyperlink{class_c_scene_base_afadd422e19e83c48dc9ef8b9740b450a}{$\sim$\+CScene\+Base}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_scene_base_a2f939458091e8be68dd4a2a7797f5ee7}{Load}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_scene_base_a3bf927b04b1ea8ef265d84b04fbaa96c}{Update}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_scene_base_a72cc6cb52a745200614dd2ea73891f03}{Render}} ()=0
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$ \mbox{\hyperlink{class_c_scene_base_ac2075b292f0eddb3863f2fbfaa1bcbd3}{m\+\_\+p\+Scene\+Manager}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_scene_base_abc650553d8243b125c8f70f0a93ad65c}\label{class_c_scene_base_abc650553d8243b125c8f70f0a93ad65c}} 
+\index{CSceneBase@{CSceneBase}!CSceneBase@{CSceneBase}}
+\index{CSceneBase@{CSceneBase}!CSceneBase@{CSceneBase}}
+\doxysubsubsection{\texorpdfstring{CSceneBase()}{CSceneBase()}}
+{\footnotesize\ttfamily CScene\+Base\+::\+CScene\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}} $\ast$}]{p\+Scene\+Manager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_scene_base_afadd422e19e83c48dc9ef8b9740b450a}\label{class_c_scene_base_afadd422e19e83c48dc9ef8b9740b450a}} 
+\index{CSceneBase@{CSceneBase}!````~CSceneBase@{$\sim$CSceneBase}}
+\index{````~CSceneBase@{$\sim$CSceneBase}!CSceneBase@{CSceneBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSceneBase()}{~CSceneBase()}}
+{\footnotesize\ttfamily virtual CScene\+Base\+::$\sim$\+CScene\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_scene_base_a2f939458091e8be68dd4a2a7797f5ee7}\label{class_c_scene_base_a2f939458091e8be68dd4a2a7797f5ee7}} 
+\index{CSceneBase@{CSceneBase}!Load@{Load}}
+\index{Load@{Load}!CSceneBase@{CSceneBase}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily virtual bool CScene\+Base\+::\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_title_a9370f8925d0381bba8fedd7d2834ab74}{CTitle}}, \mbox{\hyperlink{class_c_game_over_a852b6bfc0638bd23176bd7f997357b28}{CGame\+Over}}, \mbox{\hyperlink{class_c_game_clear_a7b9d98ca879f2b10dd9126d050778614}{CGame\+Clear}}, \mbox{\hyperlink{class_c_game_acc8934bf2f3c9c6466405dbd5cba56e3}{CGame}}, \mbox{\hyperlink{class_c_editor_a9aff35dac676527f5e1ec8fade01875f}{CEditor}}, \mbox{\hyperlink{class_c_config_acfcbaa03159360129f5cd8a5fd53d806}{CConfig}}で実装されています。
+
+\mbox{\Hypertarget{class_c_scene_base_a72cc6cb52a745200614dd2ea73891f03}\label{class_c_scene_base_a72cc6cb52a745200614dd2ea73891f03}} 
+\index{CSceneBase@{CSceneBase}!Render@{Render}}
+\index{Render@{Render}!CSceneBase@{CSceneBase}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void CScene\+Base\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_title_a2fb880a5c88c2818ff0c9e9252279b42}{CTitle}}, \mbox{\hyperlink{class_c_game_over_a63b5922af121e34d257fca6e1aa6349c}{CGame\+Over}}, \mbox{\hyperlink{class_c_game_clear_a898fa12637598b3970529b95bda0cd93}{CGame\+Clear}}, \mbox{\hyperlink{class_c_game_a31537642830499ad33e27c3105179b57}{CGame}}, \mbox{\hyperlink{class_c_editor_a7df0a2744742e8eefb745b62f4070894}{CEditor}}, \mbox{\hyperlink{class_c_config_ad093776b286dba772252b1d16f030676}{CConfig}}で実装されています。
+
+\mbox{\Hypertarget{class_c_scene_base_a3bf927b04b1ea8ef265d84b04fbaa96c}\label{class_c_scene_base_a3bf927b04b1ea8ef265d84b04fbaa96c}} 
+\index{CSceneBase@{CSceneBase}!Update@{Update}}
+\index{Update@{Update}!CSceneBase@{CSceneBase}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void CScene\+Base\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_title_a7e67436b1e74d58a861c31572363398c}{CTitle}}, \mbox{\hyperlink{class_c_game_over_a2f7ab7e3bf1717ec503fd9f3dcc5da90}{CGame\+Over}}, \mbox{\hyperlink{class_c_game_clear_aa02636678f201ccd88679ed440ee1bca}{CGame\+Clear}}, \mbox{\hyperlink{class_c_game_a0ed61556ac846afaef2fc174d89757d6}{CGame}}, \mbox{\hyperlink{class_c_editor_a7053b546216734f2ffe68b43bb35d683}{CEditor}}, \mbox{\hyperlink{class_c_config_a5f2647736750d86a830c2052b1bddc3b}{CConfig}}で実装されています。
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_scene_base_ac2075b292f0eddb3863f2fbfaa1bcbd3}\label{class_c_scene_base_ac2075b292f0eddb3863f2fbfaa1bcbd3}} 
+\index{CSceneBase@{CSceneBase}!m\_pSceneManager@{m\_pSceneManager}}
+\index{m\_pSceneManager@{m\_pSceneManager}!CSceneBase@{CSceneBase}}
+\doxysubsubsection{\texorpdfstring{m\_pSceneManager}{m\_pSceneManager}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_scene_manager}{CScene\+Manager}}$\ast$ CScene\+Base\+::m\+\_\+p\+Scene\+Manager\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Scene/\+Scene\+Base/\mbox{\hyperlink{_scene_base_8h}{Scene\+Base.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{class_c_mother_ship_u_f_o}{}\doxysection{CMother\+Ship\+UFO クラス}
+\label{class_c_mother_ship_u_f_o}\index{CMotherShipUFO@{CMotherShipUFO}}
+
+
+{\ttfamily \#include $<$Mother\+Ship\+UFO.\+h$>$}
+
+
+
+CMother\+Ship\+UFO の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_c_mother_ship_u_f_o__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CMother\+Ship\+UFO 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_c_mother_ship_u_f_o__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param}{SMother\+Ship\+UFOParam}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mother_ship_u_f_o_aa5c9bd7d4e07037e2af8d7447ec59050}{CMother\+Ship\+UFO}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_mother_ship_u_f_o_a89ef9347a227dbe602d10e158a82556e}{$\sim$\+CMother\+Ship\+UFO}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_mother_ship_u_f_o_a71beb7e8878c30f97dedf949188af58a}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_mother_ship_u_f_o_a73d8176667ce58ce1302519a0fc595dd}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_mother_ship_u_f_o_ab63ece9c5cee9a624fca448fa5292cf6}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_a75be84fc3340ca7c86af0e3856cc2bb3}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor)
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_afe9f1aa9f9a3dc281de3d09515631398}{Set\+Parameter}} (const \mbox{\hyperlink{struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param}{SMother\+Ship\+UFOParam}} \&param)
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_a8b79dee826d84ad8969e136dc2dc9908}{Set\+Disp}} (const bool \&disp)
+\item 
+bool \mbox{\hyperlink{class_c_mother_ship_u_f_o_aec686d6b92e12760d95d01f7ed6c9268}{Is\+Return\+Alien}} () const
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_ad8b949fdac1149722048b53b8ffd3baf}{Light\+Discharge}} ()
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_a9ffe5fc98c7cf33c8dd1b4a3394208c5}{Light\+Clean\+UP}} ()
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_a1d9c2e902ccae4a2145631cad6462328}{Discharge\+Preparation}} ()
+\item 
+void \mbox{\hyperlink{class_c_mother_ship_u_f_o_a381a002f7b53c0e6cdc2dd6a3344644f}{Clean\+UPPreparation}} ()
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_mother_ship_u_f_o_a63ef6ab9a75deaf417001b7f9ac4c862}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor, const bool \&is\+Event)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_aa5c9bd7d4e07037e2af8d7447ec59050}\label{class_c_mother_ship_u_f_o_aa5c9bd7d4e07037e2af8d7447ec59050}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!CMotherShipUFO@{CMotherShipUFO}}
+\index{CMotherShipUFO@{CMotherShipUFO}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{CMotherShipUFO()}{CMotherShipUFO()}}
+{\footnotesize\ttfamily CMother\+Ship\+UFO\+::\+CMother\+Ship\+UFO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a89ef9347a227dbe602d10e158a82556e}\label{class_c_mother_ship_u_f_o_a89ef9347a227dbe602d10e158a82556e}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!````~CMotherShipUFO@{$\sim$CMotherShipUFO}}
+\index{````~CMotherShipUFO@{$\sim$CMotherShipUFO}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMotherShipUFO()}{~CMotherShipUFO()}}
+{\footnotesize\ttfamily CMother\+Ship\+UFO\+::$\sim$\+CMother\+Ship\+UFO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a381a002f7b53c0e6cdc2dd6a3344644f}\label{class_c_mother_ship_u_f_o_a381a002f7b53c0e6cdc2dd6a3344644f}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!CleanUPPreparation@{CleanUPPreparation}}
+\index{CleanUPPreparation@{CleanUPPreparation}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{CleanUPPreparation()}{CleanUPPreparation()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Clean\+UPPreparation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a75be84fc3340ca7c86af0e3856cc2bb3}\label{class_c_mother_ship_u_f_o_a75be84fc3340ca7c86af0e3856cc2bb3}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!Collision@{Collision}}
+\index{Collision@{Collision}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mother_ship_u_f_o_a75be84fc3340ca7c86af0e3856cc2bb3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a63ef6ab9a75deaf417001b7f9ac4c862}\label{class_c_mother_ship_u_f_o_a63ef6ab9a75deaf417001b7f9ac4c862}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!Collision@{Collision}}
+\index{Collision@{Collision}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CMother\+Ship\+UFO\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor,  }\item[{const bool \&}]{is\+Event }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mother_ship_u_f_o_a63ef6ab9a75deaf417001b7f9ac4c862_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a1d9c2e902ccae4a2145631cad6462328}\label{class_c_mother_ship_u_f_o_a1d9c2e902ccae4a2145631cad6462328}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!DischargePreparation@{DischargePreparation}}
+\index{DischargePreparation@{DischargePreparation}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{DischargePreparation()}{DischargePreparation()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Discharge\+Preparation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a71beb7e8878c30f97dedf949188af58a}\label{class_c_mother_ship_u_f_o_a71beb7e8878c30f97dedf949188af58a}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!Init@{Init}}
+\index{Init@{Init}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CMother\+Ship\+UFO\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mother_ship_u_f_o_a71beb7e8878c30f97dedf949188af58a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_aec686d6b92e12760d95d01f7ed6c9268}\label{class_c_mother_ship_u_f_o_aec686d6b92e12760d95d01f7ed6c9268}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!IsReturnAlien@{IsReturnAlien}}
+\index{IsReturnAlien@{IsReturnAlien}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{IsReturnAlien()}{IsReturnAlien()}}
+{\footnotesize\ttfamily bool CMother\+Ship\+UFO\+::\+Is\+Return\+Alien (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a9ffe5fc98c7cf33c8dd1b4a3394208c5}\label{class_c_mother_ship_u_f_o_a9ffe5fc98c7cf33c8dd1b4a3394208c5}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!LightCleanUP@{LightCleanUP}}
+\index{LightCleanUP@{LightCleanUP}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{LightCleanUP()}{LightCleanUP()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Light\+Clean\+UP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_ad8b949fdac1149722048b53b8ffd3baf}\label{class_c_mother_ship_u_f_o_ad8b949fdac1149722048b53b8ffd3baf}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!LightDischarge@{LightDischarge}}
+\index{LightDischarge@{LightDischarge}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{LightDischarge()}{LightDischarge()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Light\+Discharge (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_ab63ece9c5cee9a624fca448fa5292cf6}\label{class_c_mother_ship_u_f_o_ab63ece9c5cee9a624fca448fa5292cf6}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!Render@{Render}}
+\index{Render@{Render}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mother_ship_u_f_o_ab63ece9c5cee9a624fca448fa5292cf6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a8b79dee826d84ad8969e136dc2dc9908}\label{class_c_mother_ship_u_f_o_a8b79dee826d84ad8969e136dc2dc9908}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!SetDisp@{SetDisp}}
+\index{SetDisp@{SetDisp}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{SetDisp()}{SetDisp()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Set\+Disp (\begin{DoxyParamCaption}\item[{const bool \&}]{disp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_afe9f1aa9f9a3dc281de3d09515631398}\label{class_c_mother_ship_u_f_o_afe9f1aa9f9a3dc281de3d09515631398}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!SetParameter@{SetParameter}}
+\index{SetParameter@{SetParameter}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{SetParameter()}{SetParameter()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Set\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_c_mother_ship_u_f_o_1_1_s_mother_ship_u_f_o_param}{SMother\+Ship\+UFOParam}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mother_ship_u_f_o_a73d8176667ce58ce1302519a0fc595dd}\label{class_c_mother_ship_u_f_o_a73d8176667ce58ce1302519a0fc595dd}} 
+\index{CMotherShipUFO@{CMotherShipUFO}!Update@{Update}}
+\index{Update@{Update}!CMotherShipUFO@{CMotherShipUFO}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CMother\+Ship\+UFO\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Mother\+Ship\+UFO/\mbox{\hyperlink{_mother_ship_u_f_o_8h}{Mother\+Ship\+UFO.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Mother\+Ship\+UFO/\mbox{\hyperlink{_mother_ship_u_f_o_8cpp}{Mother\+Ship\+UFO.\+cpp}}\end{DoxyCompactItemize}

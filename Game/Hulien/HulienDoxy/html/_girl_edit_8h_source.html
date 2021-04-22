@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Editor/GirlEdit/GirlEdit.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_d7e28324c96a20d858a4fcc410946a4e.html">Editor</a></li><li class="navelem"><a class="el" href="dir_577885d936022c75e9fd450905322161.html">GirlEdit</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">GirlEdit.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_girl_edit_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef GIRL_EDIT_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define GIRL_EDIT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\EditBase.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;..\..\GameObject\Actor\Character\Girl\Girl.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/***********************************************</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*   女の子のパラメータエディタクラス.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_c_girl_edit.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_girl_edit.html">CGirlEdit</a> : <span class="keyword">public</span> <a class="code" href="class_c_edit_base.html">CEditBase</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// パラメータのファイルパス.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* PARAMETER_FILE_PATH = <span class="stringliteral">&quot;Data\\GameParam\\Girl\\Girl.bin&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// エディタ用のパラメータ番号.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">enum</span> enParamNo</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        EParamNo_None,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        EParamNo_MoveSpeed = 0,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        EParamNo_RotationSpeed,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        EParamNo_SphereAdjPosX,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        EParamNo_SphereAdjPosY,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        EParamNo_SphereAdjPosZ,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        EParamNo_SphereAdjRadius,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_c_girl_edit.html#af7b9f475693d348d2ea8e9f5e8be4ab5">CGirlEdit</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_girl_edit.html#a5b59b946d9aa6a10d6bf40c34507b8a7">~CGirlEdit</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_girl_edit.html#a3fed4de6c632633f453b51222a3f0e02">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_girl_edit.html#a2a0c25f347ca743a6bf52963be136982">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_girl_edit.html#a98488e1f2ebdc80eb155a724b6635a21">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// モデルの描画.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_girl_edit.html#a26bf12fc286d6268801ab477024c317e">ModelRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// エフェクトの描画.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_girl_edit.html#a640900cfce050afa2e4a5ba807205791">EffectRender</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::unique_ptr&lt;CGirl&gt;  m_pGirl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="struct_s_girl_param.html">SGirlParam</a>              m_GirlParam;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef GIRL_EDIT_H.</span></div>
+<div class="ttc" id="aclass_c_edit_base_html"><div class="ttname"><a href="class_c_edit_base.html">CEditBase</a></div><div class="ttdef"><b>Definition:</b> EditBase.h:16</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html"><div class="ttname"><a href="class_c_girl_edit.html">CGirlEdit</a></div><div class="ttdef"><b>Definition:</b> GirlEdit.h:16</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_a26bf12fc286d6268801ab477024c317e"><div class="ttname"><a href="class_c_girl_edit.html#a26bf12fc286d6268801ab477024c317e">CGirlEdit::ModelRender</a></div><div class="ttdeci">virtual void ModelRender() override</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:95</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_a2a0c25f347ca743a6bf52963be136982"><div class="ttname"><a href="class_c_girl_edit.html#a2a0c25f347ca743a6bf52963be136982">CGirlEdit::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:27</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_a3fed4de6c632633f453b51222a3f0e02"><div class="ttname"><a href="class_c_girl_edit.html#a3fed4de6c632633f453b51222a3f0e02">CGirlEdit::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:16</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_a5b59b946d9aa6a10d6bf40c34507b8a7"><div class="ttname"><a href="class_c_girl_edit.html#a5b59b946d9aa6a10d6bf40c34507b8a7">CGirlEdit::~CGirlEdit</a></div><div class="ttdeci">virtual ~CGirlEdit()</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:11</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_a640900cfce050afa2e4a5ba807205791"><div class="ttname"><a href="class_c_girl_edit.html#a640900cfce050afa2e4a5ba807205791">CGirlEdit::EffectRender</a></div><div class="ttdeci">virtual void EffectRender() override</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:101</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_a98488e1f2ebdc80eb155a724b6635a21"><div class="ttname"><a href="class_c_girl_edit.html#a98488e1f2ebdc80eb155a724b6635a21">CGirlEdit::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:33</div></div>
+<div class="ttc" id="aclass_c_girl_edit_html_af7b9f475693d348d2ea8e9f5e8be4ab5"><div class="ttname"><a href="class_c_girl_edit.html#af7b9f475693d348d2ea8e9f5e8be4ab5">CGirlEdit::CGirlEdit</a></div><div class="ttdeci">CGirlEdit()</div><div class="ttdef"><b>Definition:</b> GirlEdit.cpp:4</div></div>
+<div class="ttc" id="astruct_s_girl_param_html"><div class="ttname"><a href="struct_s_girl_param.html">SGirlParam</a></div><div class="ttdef"><b>Definition:</b> GirlParam.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

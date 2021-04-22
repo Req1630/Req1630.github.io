@@ -1,0 +1,409 @@
+\hypertarget{class_c_d_x9_skin_mesh}{}\doxysection{CDX9\+Skin\+Mesh クラス}
+\label{class_c_d_x9_skin_mesh}\index{CDX9SkinMesh@{CDX9SkinMesh}}
+
+
+{\ttfamily \#include $<$Dx9\+Skin\+Mesh.\+h$>$}
+
+
+
+CDX9\+Skin\+Mesh の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_d_x9_skin_mesh__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CDX9\+Skin\+Mesh 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_d_x9_skin_mesh__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_d_x9_skin_mesh_1_1_c_b_u_f_f_e_r___p_e_r___b_o_n_e_s}{CBUFFER\+\_\+\+PER\+\_\+\+BONES}}
+\item 
+struct \mbox{\hyperlink{struct_c_d_x9_skin_mesh_1_1_m_y___s_k_i_n_v_e_r_t_e_x}{MY\+\_\+\+SKINVERTEX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+LPD3\+DXANIMATIONCONTROLLER \mbox{\hyperlink{class_c_d_x9_skin_mesh_a07073ef54b9c188122b0dfc371e42ccb}{Get\+Anim\+Controller}} ()
+\item 
+\mbox{\hyperlink{class_c_d_x9_skin_mesh_a0c04c97adf2e731ad45456db83c05b92}{CDX9\+Skin\+Mesh}} (HWND h\+Wnd, ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, LPDIRECT3\+DDEVICE9 p\+Device9, const char $\ast$file\+Name)
+\item 
+\mbox{\hyperlink{class_c_d_x9_skin_mesh_a0d37c7092c9aa8a7f3a0a763c9f169e7}{CDX9\+Skin\+Mesh}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_d_x9_skin_mesh_a858fc1af70dd2b4f41b65e0a176ec3b3}{$\sim$\+CDX9\+Skin\+Mesh}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_d_x9_skin_mesh_a7a8b7ab6fa660f0048d9ac38e0d38411}{Init}} (HWND h\+Wnd, ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, LPDIRECT3\+DDEVICE9 p\+Device9, const char $\ast$file\+Name)
+\item 
+HRESULT \mbox{\hyperlink{class_c_d_x9_skin_mesh_abb90054d5a455fae4e001e20665dad10}{Load\+XMesh}} (const char $\ast$file\+Name)
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_af4a4f1c2a7484b4b1fcfbe2fe5a3dcc0}{Render}} (const LPD3\+DXANIMATIONCONTROLLER p\+AC=NULL)
+\item 
+HRESULT \mbox{\hyperlink{class_c_d_x9_skin_mesh_aa88cea24639040d80932f324910b7a5b}{Release}} ()
+\item 
+double \mbox{\hyperlink{class_c_d_x9_skin_mesh_a2c6a283a5f30735bd6a576230aa457b1}{Get\+Anim\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_a29dcf0af298c8360657d687fb9e437cc}{Set\+Anim\+Speed}} (double d\+Speed)
+\item 
+double \mbox{\hyperlink{class_c_d_x9_skin_mesh_ac8dc67f724bd8867e3d55b3c5f258003}{Get\+Anim\+Time}} ()
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_a7dae9e82fcdde69cb8c84092239569b4}{Set\+Anim\+Time}} (double d\+Time)
+\item 
+LPD3\+DXANIMATIONCONTROLLER \mbox{\hyperlink{class_c_d_x9_skin_mesh_ac6096499de87cb74ccc531db0a764235}{Get\+Animation\+Controller}} ()
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_a332a052f9f7053b5d1c54d323f4d2a2a}{Change\+Anim\+Set}} (int index, LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_a245c83183b72d6ff7e474c7a3dfe48fc}{Change\+Anim\+Set\+\_\+\+Start\+Pos}} (int index, double d\+Start\+Frame\+Pos, LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_a75f49d32bfea96ef4fc728280e77eb05}{Change\+Anim\+Blend}} (int index, int old\+Index, LPD3\+DXANIMATIONCONTROLLER p\+AC=nullptr)
+\item 
+void \mbox{\hyperlink{class_c_d_x9_skin_mesh_ae34c2e5d1b05a1075b5f9dccdc390cd9}{Blend\+Anim\+Update}} ()
+\item 
+double \mbox{\hyperlink{class_c_d_x9_skin_mesh_ade62d0e530d2f801382299fc190f9311}{Get\+Anim\+Period}} (int index)
+\item 
+int \mbox{\hyperlink{class_c_d_x9_skin_mesh_a553625ed21423aa5960365a77d14b0ed}{Get\+Anim\+Max}} (LPD3\+DXANIMATIONCONTROLLER p\+AC=NULL)
+\item 
+bool \mbox{\hyperlink{class_c_d_x9_skin_mesh_a8757367364f7d34803354b780d2e1b21}{Get\+Matrix\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXMATRIX $\ast$p\+Out\+Mat)
+\item 
+bool \mbox{\hyperlink{class_c_d_x9_skin_mesh_ad7daffe35bba07d74f4f0b97cdad5efe}{Get\+Pos\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXVECTOR3 $\ast$p\+Out\+Pos)
+\item 
+bool \mbox{\hyperlink{class_c_d_x9_skin_mesh_ace8258b71b497a182f6f89bdab38a770}{Set\+Matrix\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXMATRIX in\+Mat)
+\item 
+bool \mbox{\hyperlink{class_c_d_x9_skin_mesh_a7d5cc4eb120b2619f2a4cbc3cc95571b}{Set\+Pos\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXVECTOR3 in\+Pos)
+\item 
+bool \mbox{\hyperlink{class_c_d_x9_skin_mesh_a688d6d55335b3f3a2b0a467838cfab87}{Get\+Devia\+Pos\+From\+Bone}} (const char $\ast$s\+Bone\+Name, D3\+DXVECTOR3 $\ast$p\+Out\+Pos, D3\+DXVECTOR3 v\+Specified\+Pos=\{ 0.\+0f, 0.\+0f, 0.\+0f \})
+\item 
+LPD3\+DXMESH \mbox{\hyperlink{class_c_d_x9_skin_mesh_afa3bae94ccb8fec133eaa1f3b46b0c10}{Get\+Mesh}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a0c04c97adf2e731ad45456db83c05b92}\label{class_c_d_x9_skin_mesh_a0c04c97adf2e731ad45456db83c05b92}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\index{CDX9SkinMesh@{CDX9SkinMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{CDX9SkinMesh()}{CDX9SkinMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CDX9\+Skin\+Mesh\+::\+CDX9\+Skin\+Mesh (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{LPDIRECT3\+DDEVICE9}]{p\+Device9,  }\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a0c04c97adf2e731ad45456db83c05b92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a0d37c7092c9aa8a7f3a0a763c9f169e7}\label{class_c_d_x9_skin_mesh_a0d37c7092c9aa8a7f3a0a763c9f169e7}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\index{CDX9SkinMesh@{CDX9SkinMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{CDX9SkinMesh()}{CDX9SkinMesh()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CDX9\+Skin\+Mesh\+::\+CDX9\+Skin\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a858fc1af70dd2b4f41b65e0a176ec3b3}\label{class_c_d_x9_skin_mesh_a858fc1af70dd2b4f41b65e0a176ec3b3}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!````~CDX9SkinMesh@{$\sim$CDX9SkinMesh}}
+\index{````~CDX9SkinMesh@{$\sim$CDX9SkinMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{$\sim$CDX9SkinMesh()}{~CDX9SkinMesh()}}
+{\footnotesize\ttfamily CDX9\+Skin\+Mesh\+::$\sim$\+CDX9\+Skin\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a858fc1af70dd2b4f41b65e0a176ec3b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_ae34c2e5d1b05a1075b5f9dccdc390cd9}\label{class_c_d_x9_skin_mesh_ae34c2e5d1b05a1075b5f9dccdc390cd9}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!BlendAnimUpdate@{BlendAnimUpdate}}
+\index{BlendAnimUpdate@{BlendAnimUpdate}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{BlendAnimUpdate()}{BlendAnimUpdate()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Blend\+Anim\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_ae34c2e5d1b05a1075b5f9dccdc390cd9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a75f49d32bfea96ef4fc728280e77eb05}\label{class_c_d_x9_skin_mesh_a75f49d32bfea96ef4fc728280e77eb05}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!ChangeAnimBlend@{ChangeAnimBlend}}
+\index{ChangeAnimBlend@{ChangeAnimBlend}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{ChangeAnimBlend()}{ChangeAnimBlend()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Change\+Anim\+Blend (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{old\+Index,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a75f49d32bfea96ef4fc728280e77eb05_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a332a052f9f7053b5d1c54d323f4d2a2a}\label{class_c_d_x9_skin_mesh_a332a052f9f7053b5d1c54d323f4d2a2a}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!ChangeAnimSet@{ChangeAnimSet}}
+\index{ChangeAnimSet@{ChangeAnimSet}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{ChangeAnimSet()}{ChangeAnimSet()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Change\+Anim\+Set (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a332a052f9f7053b5d1c54d323f4d2a2a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a245c83183b72d6ff7e474c7a3dfe48fc}\label{class_c_d_x9_skin_mesh_a245c83183b72d6ff7e474c7a3dfe48fc}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!ChangeAnimSet\_StartPos@{ChangeAnimSet\_StartPos}}
+\index{ChangeAnimSet\_StartPos@{ChangeAnimSet\_StartPos}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{ChangeAnimSet\_StartPos()}{ChangeAnimSet\_StartPos()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Change\+Anim\+Set\+\_\+\+Start\+Pos (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{double}]{d\+Start\+Frame\+Pos,  }\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a245c83183b72d6ff7e474c7a3dfe48fc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_ac6096499de87cb74ccc531db0a764235}\label{class_c_d_x9_skin_mesh_ac6096499de87cb74ccc531db0a764235}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetAnimationController@{GetAnimationController}}
+\index{GetAnimationController@{GetAnimationController}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetAnimationController()}{GetAnimationController()}}
+{\footnotesize\ttfamily LPD3\+DXANIMATIONCONTROLLER CDX9\+Skin\+Mesh\+::\+Get\+Animation\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a07073ef54b9c188122b0dfc371e42ccb}\label{class_c_d_x9_skin_mesh_a07073ef54b9c188122b0dfc371e42ccb}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetAnimController@{GetAnimController}}
+\index{GetAnimController@{GetAnimController}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetAnimController()}{GetAnimController()}}
+{\footnotesize\ttfamily LPD3\+DXANIMATIONCONTROLLER CDX9\+Skin\+Mesh\+::\+Get\+Anim\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a553625ed21423aa5960365a77d14b0ed}\label{class_c_d_x9_skin_mesh_a553625ed21423aa5960365a77d14b0ed}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetAnimMax@{GetAnimMax}}
+\index{GetAnimMax@{GetAnimMax}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetAnimMax()}{GetAnimMax()}}
+{\footnotesize\ttfamily int CDX9\+Skin\+Mesh\+::\+Get\+Anim\+Max (\begin{DoxyParamCaption}\item[{LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a553625ed21423aa5960365a77d14b0ed_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_ade62d0e530d2f801382299fc190f9311}\label{class_c_d_x9_skin_mesh_ade62d0e530d2f801382299fc190f9311}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetAnimPeriod@{GetAnimPeriod}}
+\index{GetAnimPeriod@{GetAnimPeriod}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetAnimPeriod()}{GetAnimPeriod()}}
+{\footnotesize\ttfamily double CDX9\+Skin\+Mesh\+::\+Get\+Anim\+Period (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_ade62d0e530d2f801382299fc190f9311_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a2c6a283a5f30735bd6a576230aa457b1}\label{class_c_d_x9_skin_mesh_a2c6a283a5f30735bd6a576230aa457b1}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetAnimSpeed@{GetAnimSpeed}}
+\index{GetAnimSpeed@{GetAnimSpeed}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetAnimSpeed()}{GetAnimSpeed()}}
+{\footnotesize\ttfamily double CDX9\+Skin\+Mesh\+::\+Get\+Anim\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_ac8dc67f724bd8867e3d55b3c5f258003}\label{class_c_d_x9_skin_mesh_ac8dc67f724bd8867e3d55b3c5f258003}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetAnimTime@{GetAnimTime}}
+\index{GetAnimTime@{GetAnimTime}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetAnimTime()}{GetAnimTime()}}
+{\footnotesize\ttfamily double CDX9\+Skin\+Mesh\+::\+Get\+Anim\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a688d6d55335b3f3a2b0a467838cfab87}\label{class_c_d_x9_skin_mesh_a688d6d55335b3f3a2b0a467838cfab87}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetDeviaPosFromBone@{GetDeviaPosFromBone}}
+\index{GetDeviaPosFromBone@{GetDeviaPosFromBone}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetDeviaPosFromBone()}{GetDeviaPosFromBone()}}
+{\footnotesize\ttfamily bool CDX9\+Skin\+Mesh\+::\+Get\+Devia\+Pos\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Out\+Pos,  }\item[{D3\+DXVECTOR3}]{v\+Specified\+Pos = {\ttfamily \{~0.0f,~0.0f,~0.0f~\}} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a688d6d55335b3f3a2b0a467838cfab87_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a8757367364f7d34803354b780d2e1b21}\label{class_c_d_x9_skin_mesh_a8757367364f7d34803354b780d2e1b21}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetMatrixFromBone@{GetMatrixFromBone}}
+\index{GetMatrixFromBone@{GetMatrixFromBone}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetMatrixFromBone()}{GetMatrixFromBone()}}
+{\footnotesize\ttfamily bool CDX9\+Skin\+Mesh\+::\+Get\+Matrix\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXMATRIX $\ast$}]{p\+Out\+Mat }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a8757367364f7d34803354b780d2e1b21_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_afa3bae94ccb8fec133eaa1f3b46b0c10}\label{class_c_d_x9_skin_mesh_afa3bae94ccb8fec133eaa1f3b46b0c10}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetMesh@{GetMesh}}
+\index{GetMesh@{GetMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetMesh()}{GetMesh()}}
+{\footnotesize\ttfamily LPD3\+DXMESH CDX9\+Skin\+Mesh\+::\+Get\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_ad7daffe35bba07d74f4f0b97cdad5efe}\label{class_c_d_x9_skin_mesh_ad7daffe35bba07d74f4f0b97cdad5efe}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!GetPosFromBone@{GetPosFromBone}}
+\index{GetPosFromBone@{GetPosFromBone}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{GetPosFromBone()}{GetPosFromBone()}}
+{\footnotesize\ttfamily bool CDX9\+Skin\+Mesh\+::\+Get\+Pos\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXVECTOR3 $\ast$}]{p\+Out\+Pos }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_ad7daffe35bba07d74f4f0b97cdad5efe_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a7a8b7ab6fa660f0048d9ac38e0d38411}\label{class_c_d_x9_skin_mesh_a7a8b7ab6fa660f0048d9ac38e0d38411}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!Init@{Init}}
+\index{Init@{Init}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CDX9\+Skin\+Mesh\+::\+Init (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{LPDIRECT3\+DDEVICE9}]{p\+Device9,  }\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a7a8b7ab6fa660f0048d9ac38e0d38411_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a7a8b7ab6fa660f0048d9ac38e0d38411_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_abb90054d5a455fae4e001e20665dad10}\label{class_c_d_x9_skin_mesh_abb90054d5a455fae4e001e20665dad10}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!LoadXMesh@{LoadXMesh}}
+\index{LoadXMesh@{LoadXMesh}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{LoadXMesh()}{LoadXMesh()}}
+{\footnotesize\ttfamily HRESULT CDX9\+Skin\+Mesh\+::\+Load\+XMesh (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_abb90054d5a455fae4e001e20665dad10_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_abb90054d5a455fae4e001e20665dad10_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_aa88cea24639040d80932f324910b7a5b}\label{class_c_d_x9_skin_mesh_aa88cea24639040d80932f324910b7a5b}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!Release@{Release}}
+\index{Release@{Release}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT CDX9\+Skin\+Mesh\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_aa88cea24639040d80932f324910b7a5b_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_aa88cea24639040d80932f324910b7a5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_af4a4f1c2a7484b4b1fcfbe2fe5a3dcc0}\label{class_c_d_x9_skin_mesh_af4a4f1c2a7484b4b1fcfbe2fe5a3dcc0}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!Render@{Render}}
+\index{Render@{Render}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Render (\begin{DoxyParamCaption}\item[{const LPD3\+DXANIMATIONCONTROLLER}]{p\+AC = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_af4a4f1c2a7484b4b1fcfbe2fe5a3dcc0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a29dcf0af298c8360657d687fb9e437cc}\label{class_c_d_x9_skin_mesh_a29dcf0af298c8360657d687fb9e437cc}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!SetAnimSpeed@{SetAnimSpeed}}
+\index{SetAnimSpeed@{SetAnimSpeed}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{SetAnimSpeed()}{SetAnimSpeed()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Set\+Anim\+Speed (\begin{DoxyParamCaption}\item[{double}]{d\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a7dae9e82fcdde69cb8c84092239569b4}\label{class_c_d_x9_skin_mesh_a7dae9e82fcdde69cb8c84092239569b4}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!SetAnimTime@{SetAnimTime}}
+\index{SetAnimTime@{SetAnimTime}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{SetAnimTime()}{SetAnimTime()}}
+{\footnotesize\ttfamily void CDX9\+Skin\+Mesh\+::\+Set\+Anim\+Time (\begin{DoxyParamCaption}\item[{double}]{d\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_ace8258b71b497a182f6f89bdab38a770}\label{class_c_d_x9_skin_mesh_ace8258b71b497a182f6f89bdab38a770}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!SetMatrixFromBone@{SetMatrixFromBone}}
+\index{SetMatrixFromBone@{SetMatrixFromBone}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{SetMatrixFromBone()}{SetMatrixFromBone()}}
+{\footnotesize\ttfamily bool CDX9\+Skin\+Mesh\+::\+Set\+Matrix\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXMATRIX}]{in\+Mat }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_ace8258b71b497a182f6f89bdab38a770_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_d_x9_skin_mesh_a7d5cc4eb120b2619f2a4cbc3cc95571b}\label{class_c_d_x9_skin_mesh_a7d5cc4eb120b2619f2a4cbc3cc95571b}} 
+\index{CDX9SkinMesh@{CDX9SkinMesh}!SetPosFromBone@{SetPosFromBone}}
+\index{SetPosFromBone@{SetPosFromBone}!CDX9SkinMesh@{CDX9SkinMesh}}
+\doxysubsubsection{\texorpdfstring{SetPosFromBone()}{SetPosFromBone()}}
+{\footnotesize\ttfamily bool CDX9\+Skin\+Mesh\+::\+Set\+Pos\+From\+Bone (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Bone\+Name,  }\item[{D3\+DXVECTOR3}]{in\+Pos }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_d_x9_skin_mesh_a7d5cc4eb120b2619f2a4cbc3cc95571b_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Mesh/\+Dx9\+Skin\+Mesh/\mbox{\hyperlink{_dx9_skin_mesh_8h}{Dx9\+Skin\+Mesh.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Mesh/\+Dx9\+Skin\+Mesh/\mbox{\hyperlink{_dx9_skin_mesh_8cpp}{Dx9\+Skin\+Mesh.\+cpp}}\end{DoxyCompactItemize}

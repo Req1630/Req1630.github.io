@@ -1,0 +1,12 @@
+<map id="CGame::Render" name="CGame::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,153,120,179"/>
+<area shape="rect" id="node2" href="$class_c_scene_tex_renderer.html#a88db59b8a94f340abe3bb49a752dd240" title=" " alt="" coords="447,61,596,103"/>
+<area shape="rect" id="node4" href="$class_c_scene_tex_renderer.html#a7e735db3b1b8c10da3b6761e0c15db01" title=" " alt="" coords="447,179,596,220"/>
+<area shape="rect" id="node5" href="$class_c_scene_tex_renderer.html#af651a38ec36f53d97c14ece0833c5026" title=" " alt="" coords="198,229,350,271"/>
+<area shape="rect" id="node6" href="$class_c_scene_tex_renderer.html#a621bb907b60335ccb523fc51c41404d2" title=" " alt="" coords="199,5,349,47"/>
+<area shape="rect" id="node7" href="$class_c_edit_renderer.html#ae9305f6340b6f68727a01e00676c7116" title=" " alt="" coords="168,295,380,322"/>
+<area shape="rect" id="node9" href="$class_c_config_widget.html#ac01d037bf67f570e8a7883c43c7b5d2b" title=" " alt="" coords="195,127,353,154"/>
+<area shape="rect" id="node3" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="663,120,812,161"/>
+<area shape="rect" id="node8" href="$class_c_edit_renderer.html#ac9aa297e1336bd77b8ae6149dc3ecd49" title=" " alt="" coords="429,295,613,322"/>
+<area shape="rect" id="node10" href="$class_c_config_widget.html#a35f2817da9d71fa3d08dec4d40111928" title=" " alt="" coords="428,127,615,154"/>
+</map>

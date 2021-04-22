@@ -1,0 +1,416 @@
+\hypertarget{class_c_event_character}{}\doxysection{CEvent\+Character クラス}
+\label{class_c_event_character}\index{CEventCharacter@{CEventCharacter}}
+
+
+{\ttfamily \#include $<$Event\+Character.\+h$>$}
+
+
+
+CEvent\+Character の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_c_event_character__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEvent\+Character 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_event_character_1_1st_character_param}{st\+Character\+Param}}
+\item 
+struct \mbox{\hyperlink{struct_c_event_character_1_1st_optional_state}{st\+Optional\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_event_character_a665e1f01847f6be0468639d6748e9f24}{CEvent\+Character}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_event_character_a17882587ddcc62408f618db674814d6a}{$\sim$\+CEvent\+Character}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_event_character_a4b44b20c6ed315b2c39220a386370edc}{Move}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_c_event_character_ab9a0184a2edef78f2c9bcece5f2469d1}{Set\+Optional\+State}} (const \mbox{\hyperlink{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}{SOptional\+State}} \&state)
+\item 
+void \mbox{\hyperlink{class_c_event_character_ab7cf24abd70b5d1c3423237b7551bf99}{Set\+PositionX}} (const float \&v\+Pos\+\_\+x)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a80212bdd3047efdbfbd8f0aa04b01255}{Set\+PositionY}} (const float \&v\+Pos\+\_\+y)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a7edd30b22aad2cc3519f617b99d75372}{Set\+PositionZ}} (const float \&v\+Pos\+\_\+z)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_event_character_abf63033fcb04310e9429015167dc59e6}{Get\+Rotation}} () const
+\item 
+void \mbox{\hyperlink{class_c_event_character_adc403eb27363115237e3fe10e249857c}{Set\+Rotation}} (const D3\+DXVECTOR3 \&v\+Rot)
+\item 
+void \mbox{\hyperlink{class_c_event_character_acac6006e44d35bc7ab12cf16fcc1acef}{Set\+RotationX}} (const float \&v\+Rot\+\_\+x)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a0ef868890ed9287fbf8f9fbb26037cd5}{Set\+RotationY}} (const float \&v\+Rot\+\_\+y)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a8a355e52986d17d1c9ef3ccde9cc4665}{Set\+RotationZ}} (const float \&v\+Rot\+\_\+z)
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_event_character_af0da0056d1f945abebb97327002a3621}{Get\+Scale}} () const
+\item 
+void \mbox{\hyperlink{class_c_event_character_a2c0137b582ae82060cc90c5b3e53dbfb}{Set\+Scale}} (const D3\+DXVECTOR3 \&v\+Scale)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a7465df9275c209a4cd854e71e969943f}{Set\+ScaleX}} (const float \&v\+Scale\+\_\+x)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a1c31416c11ef623baa011dfad2cadcc4}{Set\+ScaleY}} (const float \&v\+Scale\+\_\+y)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a49682b56e06d2b70091ac375b3211ea6}{Set\+ScaleZ}} (const float \&v\+Scale\+\_\+z)
+\item 
+float \mbox{\hyperlink{class_c_event_character_aafab048f35da16746738b343a01e1f73}{Rotation\+Move\+Right}} (const float \&rot\+Value, const float \&rot\+Speed, bool Is\+Right\+Rot=true)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a290dff06d5af9656f33ae1d952565767}{Set\+Animation}} (const int \&anim\+No)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a910483c2528486ff4363888c1b2ccb12}{Set\+Animation\+Blend}} (const int \&anim\+No)
+\item 
+void \mbox{\hyperlink{class_c_event_character_a65ef5fb1ea425a7edefae491d5d170ea}{Set\+Anim\+Speed}} (const double \&speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_event_character_1_1st_optional_state}{CEvent\+Character\+::st\+Optional\+State}} \mbox{\hyperlink{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}{SOptional\+State}}
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_event_character_a70401b6c2c1f66ed7a76630339cdef15}{Mesh\+Render}} ()
+\item 
+bool \mbox{\hyperlink{class_c_event_character_a320671eaf8de601debc2537a3c6b730f}{Get\+Model}} (const char $\ast$model\+Name)
+\item 
+void \mbox{\hyperlink{class_c_event_character_abd5e073f7477bd3fd0766a41393aa645}{Foot\+Step}} (const char $\ast$rightfoot, const char $\ast$leftfoot)
+\item 
+bool \mbox{\hyperlink{class_c_event_character_abb6f14e944f25a655730badb78ad301d}{Foot\+Step\+Collision\+Setting}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+const float \mbox{\hyperlink{class_c_event_character_a9d351622764acedfd7a516b3cacbf61a}{MODEL\+\_\+\+ALPHA\+\_\+\+MAX}} = 1.\+0f
+\item 
+const float \mbox{\hyperlink{class_c_event_character_ada9757a489dae0e17428c0d889d8aaac}{MODEL\+\_\+\+SCALE\+\_\+\+MAX}} = 1.\+0f
+\item 
+\mbox{\hyperlink{struct_c_event_character_1_1st_character_param}{CEvent\+Character\+::st\+Character\+Param}} \mbox{\hyperlink{class_c_event_character_aee081fce441d65149f0763fca03b6bf3}{SCharacter\+Param}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}} $>$ \mbox{\hyperlink{class_c_event_character_aa9040f6020859827c0143c8bf2e64d28}{m\+\_\+p\+Skin\+Mesh}}
+\item 
+\mbox{\hyperlink{namespaceanim_a68d2d2cd7731372f3f57e24df472067f}{anim\+::\+AAnim\+Frame\+List}} \mbox{\hyperlink{class_c_event_character_aabf6965a1df1d917f3b53e00a637ffac}{m\+\_\+\+Anim\+Frame\+List}}
+\item 
+int \mbox{\hyperlink{class_c_event_character_aafee229f7ccf42b8557f2b051daa8994}{m\+\_\+\+Now\+Anim\+No}}
+\item 
+int \mbox{\hyperlink{class_c_event_character_a19bb3f13b445fe6faaa03c8c03c437ca}{m\+\_\+\+Old\+Anim\+No}}
+\item 
+double \mbox{\hyperlink{class_c_event_character_a374cca72c53328ad9d15c26c0b8c6e5c}{m\+\_\+\+Anim\+Speed}}
+\item 
+\mbox{\hyperlink{class_c_event_character_aee081fce441d65149f0763fca03b6bf3}{SCharacter\+Param}} \mbox{\hyperlink{class_c_event_character_a96fad4f6f5bff0de64cad59407887565}{m\+\_\+\+Parameter}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_event_character_a665e1f01847f6be0468639d6748e9f24}\label{class_c_event_character_a665e1f01847f6be0468639d6748e9f24}} 
+\index{CEventCharacter@{CEventCharacter}!CEventCharacter@{CEventCharacter}}
+\index{CEventCharacter@{CEventCharacter}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{CEventCharacter()}{CEventCharacter()}}
+{\footnotesize\ttfamily CEvent\+Character\+::\+CEvent\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a17882587ddcc62408f618db674814d6a}\label{class_c_event_character_a17882587ddcc62408f618db674814d6a}} 
+\index{CEventCharacter@{CEventCharacter}!````~CEventCharacter@{$\sim$CEventCharacter}}
+\index{````~CEventCharacter@{$\sim$CEventCharacter}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEventCharacter()}{~CEventCharacter()}}
+{\footnotesize\ttfamily CEvent\+Character\+::$\sim$\+CEvent\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_event_character_abd5e073f7477bd3fd0766a41393aa645}\label{class_c_event_character_abd5e073f7477bd3fd0766a41393aa645}} 
+\index{CEventCharacter@{CEventCharacter}!FootStep@{FootStep}}
+\index{FootStep@{FootStep}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{FootStep()}{FootStep()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Foot\+Step (\begin{DoxyParamCaption}\item[{const char $\ast$}]{rightfoot,  }\item[{const char $\ast$}]{leftfoot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_abd5e073f7477bd3fd0766a41393aa645_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_abd5e073f7477bd3fd0766a41393aa645_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_abb6f14e944f25a655730badb78ad301d}\label{class_c_event_character_abb6f14e944f25a655730badb78ad301d}} 
+\index{CEventCharacter@{CEventCharacter}!FootStepCollisionSetting@{FootStepCollisionSetting}}
+\index{FootStepCollisionSetting@{FootStepCollisionSetting}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{FootStepCollisionSetting()}{FootStepCollisionSetting()}}
+{\footnotesize\ttfamily bool CEvent\+Character\+::\+Foot\+Step\+Collision\+Setting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_c_event_character_abb6f14e944f25a655730badb78ad301d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_a320671eaf8de601debc2537a3c6b730f}\label{class_c_event_character_a320671eaf8de601debc2537a3c6b730f}} 
+\index{CEventCharacter@{CEventCharacter}!GetModel@{GetModel}}
+\index{GetModel@{GetModel}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{GetModel()}{GetModel()}}
+{\footnotesize\ttfamily bool CEvent\+Character\+::\+Get\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_a320671eaf8de601debc2537a3c6b730f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_a320671eaf8de601debc2537a3c6b730f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_abf63033fcb04310e9429015167dc59e6}\label{class_c_event_character_abf63033fcb04310e9429015167dc59e6}} 
+\index{CEventCharacter@{CEventCharacter}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CEvent\+Character\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_c_event_character_af0da0056d1f945abebb97327002a3621}\label{class_c_event_character_af0da0056d1f945abebb97327002a3621}} 
+\index{CEventCharacter@{CEventCharacter}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CEvent\+Character\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{class_c_event_character_a70401b6c2c1f66ed7a76630339cdef15}\label{class_c_event_character_a70401b6c2c1f66ed7a76630339cdef15}} 
+\index{CEventCharacter@{CEventCharacter}!MeshRender@{MeshRender}}
+\index{MeshRender@{MeshRender}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{MeshRender()}{MeshRender()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Mesh\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_a70401b6c2c1f66ed7a76630339cdef15_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_a4b44b20c6ed315b2c39220a386370edc}\label{class_c_event_character_a4b44b20c6ed315b2c39220a386370edc}} 
+\index{CEventCharacter@{CEventCharacter}!Move@{Move}}
+\index{Move@{Move}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily virtual void CEvent\+Character\+::\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_a4b44b20c6ed315b2c39220a386370edc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_aafab048f35da16746738b343a01e1f73}\label{class_c_event_character_aafab048f35da16746738b343a01e1f73}} 
+\index{CEventCharacter@{CEventCharacter}!RotationMoveRight@{RotationMoveRight}}
+\index{RotationMoveRight@{RotationMoveRight}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{RotationMoveRight()}{RotationMoveRight()}}
+{\footnotesize\ttfamily float CEvent\+Character\+::\+Rotation\+Move\+Right (\begin{DoxyParamCaption}\item[{const float \&}]{rot\+Value,  }\item[{const float \&}]{rot\+Speed,  }\item[{bool}]{Is\+Right\+Rot = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a290dff06d5af9656f33ae1d952565767}\label{class_c_event_character_a290dff06d5af9656f33ae1d952565767}} 
+\index{CEventCharacter@{CEventCharacter}!SetAnimation@{SetAnimation}}
+\index{SetAnimation@{SetAnimation}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetAnimation()}{SetAnimation()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+Animation (\begin{DoxyParamCaption}\item[{const int \&}]{anim\+No }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_a290dff06d5af9656f33ae1d952565767_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_a910483c2528486ff4363888c1b2ccb12}\label{class_c_event_character_a910483c2528486ff4363888c1b2ccb12}} 
+\index{CEventCharacter@{CEventCharacter}!SetAnimationBlend@{SetAnimationBlend}}
+\index{SetAnimationBlend@{SetAnimationBlend}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetAnimationBlend()}{SetAnimationBlend()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+Animation\+Blend (\begin{DoxyParamCaption}\item[{const int \&}]{anim\+No }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_event_character_a910483c2528486ff4363888c1b2ccb12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_event_character_a65ef5fb1ea425a7edefae491d5d170ea}\label{class_c_event_character_a65ef5fb1ea425a7edefae491d5d170ea}} 
+\index{CEventCharacter@{CEventCharacter}!SetAnimSpeed@{SetAnimSpeed}}
+\index{SetAnimSpeed@{SetAnimSpeed}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetAnimSpeed()}{SetAnimSpeed()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+Anim\+Speed (\begin{DoxyParamCaption}\item[{const double \&}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_event_character_ab9a0184a2edef78f2c9bcece5f2469d1}\label{class_c_event_character_ab9a0184a2edef78f2c9bcece5f2469d1}} 
+\index{CEventCharacter@{CEventCharacter}!SetOptionalState@{SetOptionalState}}
+\index{SetOptionalState@{SetOptionalState}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetOptionalState()}{SetOptionalState()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+Optional\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}{SOptional\+State}} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_event_girl_af20e422836182a6069ed3708a933a90e}{CEvent\+Girl}}で再実装されています。
+
+\mbox{\Hypertarget{class_c_event_character_ab7cf24abd70b5d1c3423237b7551bf99}\label{class_c_event_character_ab7cf24abd70b5d1c3423237b7551bf99}} 
+\index{CEventCharacter@{CEventCharacter}!SetPositionX@{SetPositionX}}
+\index{SetPositionX@{SetPositionX}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetPositionX()}{SetPositionX()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+PositionX (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Pos\+\_\+x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a80212bdd3047efdbfbd8f0aa04b01255}\label{class_c_event_character_a80212bdd3047efdbfbd8f0aa04b01255}} 
+\index{CEventCharacter@{CEventCharacter}!SetPositionY@{SetPositionY}}
+\index{SetPositionY@{SetPositionY}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetPositionY()}{SetPositionY()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+PositionY (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Pos\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a7edd30b22aad2cc3519f617b99d75372}\label{class_c_event_character_a7edd30b22aad2cc3519f617b99d75372}} 
+\index{CEventCharacter@{CEventCharacter}!SetPositionZ@{SetPositionZ}}
+\index{SetPositionZ@{SetPositionZ}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetPositionZ()}{SetPositionZ()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+PositionZ (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Pos\+\_\+z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_adc403eb27363115237e3fe10e249857c}\label{class_c_event_character_adc403eb27363115237e3fe10e249857c}} 
+\index{CEventCharacter@{CEventCharacter}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Rot }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_acac6006e44d35bc7ab12cf16fcc1acef}\label{class_c_event_character_acac6006e44d35bc7ab12cf16fcc1acef}} 
+\index{CEventCharacter@{CEventCharacter}!SetRotationX@{SetRotationX}}
+\index{SetRotationX@{SetRotationX}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetRotationX()}{SetRotationX()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+RotationX (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Rot\+\_\+x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a0ef868890ed9287fbf8f9fbb26037cd5}\label{class_c_event_character_a0ef868890ed9287fbf8f9fbb26037cd5}} 
+\index{CEventCharacter@{CEventCharacter}!SetRotationY@{SetRotationY}}
+\index{SetRotationY@{SetRotationY}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetRotationY()}{SetRotationY()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+RotationY (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Rot\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a8a355e52986d17d1c9ef3ccde9cc4665}\label{class_c_event_character_a8a355e52986d17d1c9ef3ccde9cc4665}} 
+\index{CEventCharacter@{CEventCharacter}!SetRotationZ@{SetRotationZ}}
+\index{SetRotationZ@{SetRotationZ}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetRotationZ()}{SetRotationZ()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+RotationZ (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Rot\+\_\+z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a2c0137b582ae82060cc90c5b3e53dbfb}\label{class_c_event_character_a2c0137b582ae82060cc90c5b3e53dbfb}} 
+\index{CEventCharacter@{CEventCharacter}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Scale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a7465df9275c209a4cd854e71e969943f}\label{class_c_event_character_a7465df9275c209a4cd854e71e969943f}} 
+\index{CEventCharacter@{CEventCharacter}!SetScaleX@{SetScaleX}}
+\index{SetScaleX@{SetScaleX}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetScaleX()}{SetScaleX()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+ScaleX (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Scale\+\_\+x }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a1c31416c11ef623baa011dfad2cadcc4}\label{class_c_event_character_a1c31416c11ef623baa011dfad2cadcc4}} 
+\index{CEventCharacter@{CEventCharacter}!SetScaleY@{SetScaleY}}
+\index{SetScaleY@{SetScaleY}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetScaleY()}{SetScaleY()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+ScaleY (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Scale\+\_\+y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_event_character_a49682b56e06d2b70091ac375b3211ea6}\label{class_c_event_character_a49682b56e06d2b70091ac375b3211ea6}} 
+\index{CEventCharacter@{CEventCharacter}!SetScaleZ@{SetScaleZ}}
+\index{SetScaleZ@{SetScaleZ}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SetScaleZ()}{SetScaleZ()}}
+{\footnotesize\ttfamily void CEvent\+Character\+::\+Set\+ScaleZ (\begin{DoxyParamCaption}\item[{const float \&}]{v\+Scale\+\_\+z }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_event_character_aabf6965a1df1d917f3b53e00a637ffac}\label{class_c_event_character_aabf6965a1df1d917f3b53e00a637ffac}} 
+\index{CEventCharacter@{CEventCharacter}!m\_AnimFrameList@{m\_AnimFrameList}}
+\index{m\_AnimFrameList@{m\_AnimFrameList}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_AnimFrameList}{m\_AnimFrameList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceanim_a68d2d2cd7731372f3f57e24df472067f}{anim\+::\+AAnim\+Frame\+List}} CEvent\+Character\+::m\+\_\+\+Anim\+Frame\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_a374cca72c53328ad9d15c26c0b8c6e5c}\label{class_c_event_character_a374cca72c53328ad9d15c26c0b8c6e5c}} 
+\index{CEventCharacter@{CEventCharacter}!m\_AnimSpeed@{m\_AnimSpeed}}
+\index{m\_AnimSpeed@{m\_AnimSpeed}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_AnimSpeed}{m\_AnimSpeed}}
+{\footnotesize\ttfamily double CEvent\+Character\+::m\+\_\+\+Anim\+Speed\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_aafee229f7ccf42b8557f2b051daa8994}\label{class_c_event_character_aafee229f7ccf42b8557f2b051daa8994}} 
+\index{CEventCharacter@{CEventCharacter}!m\_NowAnimNo@{m\_NowAnimNo}}
+\index{m\_NowAnimNo@{m\_NowAnimNo}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_NowAnimNo}{m\_NowAnimNo}}
+{\footnotesize\ttfamily int CEvent\+Character\+::m\+\_\+\+Now\+Anim\+No\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_a19bb3f13b445fe6faaa03c8c03c437ca}\label{class_c_event_character_a19bb3f13b445fe6faaa03c8c03c437ca}} 
+\index{CEventCharacter@{CEventCharacter}!m\_OldAnimNo@{m\_OldAnimNo}}
+\index{m\_OldAnimNo@{m\_OldAnimNo}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_OldAnimNo}{m\_OldAnimNo}}
+{\footnotesize\ttfamily int CEvent\+Character\+::m\+\_\+\+Old\+Anim\+No\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_a96fad4f6f5bff0de64cad59407887565}\label{class_c_event_character_a96fad4f6f5bff0de64cad59407887565}} 
+\index{CEventCharacter@{CEventCharacter}!m\_Parameter@{m\_Parameter}}
+\index{m\_Parameter@{m\_Parameter}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_Parameter}{m\_Parameter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_event_character_aee081fce441d65149f0763fca03b6bf3}{SCharacter\+Param}} CEvent\+Character\+::m\+\_\+\+Parameter\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_aa9040f6020859827c0143c8bf2e64d28}\label{class_c_event_character_aa9040f6020859827c0143c8bf2e64d28}} 
+\index{CEventCharacter@{CEventCharacter}!m\_pSkinMesh@{m\_pSkinMesh}}
+\index{m\_pSkinMesh@{m\_pSkinMesh}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{m\_pSkinMesh}{m\_pSkinMesh}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}}$>$ CEvent\+Character\+::m\+\_\+p\+Skin\+Mesh\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_a9d351622764acedfd7a516b3cacbf61a}\label{class_c_event_character_a9d351622764acedfd7a516b3cacbf61a}} 
+\index{CEventCharacter@{CEventCharacter}!MODEL\_ALPHA\_MAX@{MODEL\_ALPHA\_MAX}}
+\index{MODEL\_ALPHA\_MAX@{MODEL\_ALPHA\_MAX}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{MODEL\_ALPHA\_MAX}{MODEL\_ALPHA\_MAX}}
+{\footnotesize\ttfamily const float CEvent\+Character\+::\+MODEL\+\_\+\+ALPHA\+\_\+\+MAX = 1.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_ada9757a489dae0e17428c0d889d8aaac}\label{class_c_event_character_ada9757a489dae0e17428c0d889d8aaac}} 
+\index{CEventCharacter@{CEventCharacter}!MODEL\_SCALE\_MAX@{MODEL\_SCALE\_MAX}}
+\index{MODEL\_SCALE\_MAX@{MODEL\_SCALE\_MAX}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{MODEL\_SCALE\_MAX}{MODEL\_SCALE\_MAX}}
+{\footnotesize\ttfamily const float CEvent\+Character\+::\+MODEL\+\_\+\+SCALE\+\_\+\+MAX = 1.\+0f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_aee081fce441d65149f0763fca03b6bf3}\label{class_c_event_character_aee081fce441d65149f0763fca03b6bf3}} 
+\index{CEventCharacter@{CEventCharacter}!SCharacterParam@{SCharacterParam}}
+\index{SCharacterParam@{SCharacterParam}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SCharacterParam}{SCharacterParam}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_event_character_1_1st_character_param}{CEvent\+Character\+::st\+Character\+Param}} CEvent\+Character\+::\+SCharacter\+Param\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}\label{class_c_event_character_a5edbd0c057775def9c7a4ae5b5414b68}} 
+\index{CEventCharacter@{CEventCharacter}!SOptionalState@{SOptionalState}}
+\index{SOptionalState@{SOptionalState}!CEventCharacter@{CEventCharacter}}
+\doxysubsubsection{\texorpdfstring{SOptionalState}{SOptionalState}}
+{\footnotesize\ttfamily struct \mbox{\hyperlink{struct_c_event_character_1_1st_optional_state}{CEvent\+Character\+::st\+Optional\+State}} CEvent\+Character\+::\+SOptional\+State}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\mbox{\hyperlink{_event_character_8h}{Event\+Character.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Event\+Character/\mbox{\hyperlink{_event_character_8cpp}{Event\+Character.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="CGameOver::Load" name="CGameOver::Load">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,133,133"/>
+<area shape="rect" id="node2" href="$class_c_sound_manager.html#a017eb1bf9f19eb00ca082b53f4303401" title=" " alt="" coords="201,107,396,133"/>
+<area shape="rect" id="node4" href="$class_c_fade.html#a3af1504e0b8a9f84ed671bd7b1ea6470" title=" " alt="" coords="229,5,368,32"/>
+<area shape="rect" id="node6" href="$class_c_scene_tex_renderer.html#a824814aa515611590f3d89074cff3e34" title=" " alt="" coords="224,209,373,250"/>
+<area shape="rect" id="node8" href="$class_c_scene_manager.html#a90aca1802b1c37d55441c611df80fff3" title=" " alt="" coords="181,157,416,184"/>
+<area shape="rect" id="node9" href="$class_c_sound_manager.html#a6e6693de88423866b3f5d3c42c249c6d" title=" " alt="" coords="188,56,409,83"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="464,81,660,108"/>
+<area shape="rect" id="node5" href="$class_c_fade.html#a16098384b1c429b884c50c86e0120807" title=" " alt="" coords="493,5,631,32"/>
+<area shape="rect" id="node7" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="487,209,637,250"/>
+</map>

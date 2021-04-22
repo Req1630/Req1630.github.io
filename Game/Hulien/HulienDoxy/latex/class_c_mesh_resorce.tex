@@ -1,0 +1,160 @@
+\hypertarget{class_c_mesh_resorce}{}\doxysection{CMesh\+Resorce クラス}
+\label{class_c_mesh_resorce}\index{CMeshResorce@{CMeshResorce}}
+
+
+{\ttfamily \#include $<$Mesh\+Resource.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_mesh_resorce_ae36a483285b7c27fc864173b524578b2}{CMesh\+Resorce}} ()
+\item 
+\mbox{\hyperlink{class_c_mesh_resorce_afcecb338ca98402cc5144faa74babcd4}{$\sim$\+CMesh\+Resorce}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_mesh_resorce}{CMesh\+Resorce}} $\ast$ \mbox{\hyperlink{class_c_mesh_resorce_a9b844e3c52eb2df7b1f3d9f645886e8d}{Get\+Instance}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_mesh_resorce_a39191ef6adfe682a3c2a6d5ee2554779}{Load}} (HWND h\+Wnd, ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, LPDIRECT3\+DDEVICE9 p\+Device9)
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}} $>$ \mbox{\hyperlink{class_c_mesh_resorce_a4ecabcb946f15454c4c427d4aedbb83c}{Get\+Static}} (const std\+::string \&name)
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}} $>$ \mbox{\hyperlink{class_c_mesh_resorce_a71c025934b78dfb4c4160a7e2a2a84ec}{Get\+Skin}} (const std\+::string \&name)
+\item 
+static bool \mbox{\hyperlink{class_c_mesh_resorce_a8699c33090bfd4f2ed2f5370adde649c}{Get\+Static}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}} $>$ \&model, const std\+::string \&name)
+\item 
+static bool \mbox{\hyperlink{class_c_mesh_resorce_a5e81e6e911b13ef385e4f98eaa246c00}{Get\+Skin}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}} $>$ \&model, const std\+::string \&name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_mesh_resorce_ae36a483285b7c27fc864173b524578b2}\label{class_c_mesh_resorce_ae36a483285b7c27fc864173b524578b2}} 
+\index{CMeshResorce@{CMeshResorce}!CMeshResorce@{CMeshResorce}}
+\index{CMeshResorce@{CMeshResorce}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{CMeshResorce()}{CMeshResorce()}}
+{\footnotesize\ttfamily CMesh\+Resorce\+::\+CMesh\+Resorce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_mesh_resorce_afcecb338ca98402cc5144faa74babcd4}\label{class_c_mesh_resorce_afcecb338ca98402cc5144faa74babcd4}} 
+\index{CMeshResorce@{CMeshResorce}!````~CMeshResorce@{$\sim$CMeshResorce}}
+\index{````~CMeshResorce@{$\sim$CMeshResorce}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{$\sim$CMeshResorce()}{~CMeshResorce()}}
+{\footnotesize\ttfamily CMesh\+Resorce\+::$\sim$\+CMesh\+Resorce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_mesh_resorce_a9b844e3c52eb2df7b1f3d9f645886e8d}\label{class_c_mesh_resorce_a9b844e3c52eb2df7b1f3d9f645886e8d}} 
+\index{CMeshResorce@{CMeshResorce}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_mesh_resorce}{CMesh\+Resorce}} $\ast$ CMesh\+Resorce\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a9b844e3c52eb2df7b1f3d9f645886e8d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mesh_resorce_a71c025934b78dfb4c4160a7e2a2a84ec}\label{class_c_mesh_resorce_a71c025934b78dfb4c4160a7e2a2a84ec}} 
+\index{CMeshResorce@{CMeshResorce}!GetSkin@{GetSkin}}
+\index{GetSkin@{GetSkin}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{GetSkin()}{GetSkin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}} $>$ CMesh\+Resorce\+::\+Get\+Skin (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a71c025934b78dfb4c4160a7e2a2a84ec_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a71c025934b78dfb4c4160a7e2a2a84ec_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mesh_resorce_a5e81e6e911b13ef385e4f98eaa246c00}\label{class_c_mesh_resorce_a5e81e6e911b13ef385e4f98eaa246c00}} 
+\index{CMeshResorce@{CMeshResorce}!GetSkin@{GetSkin}}
+\index{GetSkin@{GetSkin}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{GetSkin()}{GetSkin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool CMesh\+Resorce\+::\+Get\+Skin (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_skin_mesh}{CDX9\+Skin\+Mesh}} $>$ \&}]{model,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a5e81e6e911b13ef385e4f98eaa246c00_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mesh_resorce_a4ecabcb946f15454c4c427d4aedbb83c}\label{class_c_mesh_resorce_a4ecabcb946f15454c4c427d4aedbb83c}} 
+\index{CMeshResorce@{CMeshResorce}!GetStatic@{GetStatic}}
+\index{GetStatic@{GetStatic}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{GetStatic()}{GetStatic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}} $>$ CMesh\+Resorce\+::\+Get\+Static (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a4ecabcb946f15454c4c427d4aedbb83c_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a4ecabcb946f15454c4c427d4aedbb83c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mesh_resorce_a8699c33090bfd4f2ed2f5370adde649c}\label{class_c_mesh_resorce_a8699c33090bfd4f2ed2f5370adde649c}} 
+\index{CMeshResorce@{CMeshResorce}!GetStatic@{GetStatic}}
+\index{GetStatic@{GetStatic}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{GetStatic()}{GetStatic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool CMesh\+Resorce\+::\+Get\+Static (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_d_x9_static_mesh}{CDX9\+Static\+Mesh}} $>$ \&}]{model,  }\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a8699c33090bfd4f2ed2f5370adde649c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_mesh_resorce_a39191ef6adfe682a3c2a6d5ee2554779}\label{class_c_mesh_resorce_a39191ef6adfe682a3c2a6d5ee2554779}} 
+\index{CMeshResorce@{CMeshResorce}!Load@{Load}}
+\index{Load@{Load}!CMeshResorce@{CMeshResorce}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily HRESULT CMesh\+Resorce\+::\+Load (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{LPDIRECT3\+DDEVICE9}]{p\+Device9 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a39191ef6adfe682a3c2a6d5ee2554779_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_mesh_resorce_a39191ef6adfe682a3c2a6d5ee2554779_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Mesh\+Resource/\mbox{\hyperlink{_mesh_resource_8h}{Mesh\+Resource.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Mesh\+Resource/\mbox{\hyperlink{_mesh_resource_8cpp}{Mesh\+Resource.\+cpp}}\end{DoxyCompactItemize}

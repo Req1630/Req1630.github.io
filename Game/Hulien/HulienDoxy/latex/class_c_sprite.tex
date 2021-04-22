@@ -1,0 +1,218 @@
+\hypertarget{class_c_sprite}{}\doxysection{CSprite クラス}
+\label{class_c_sprite}\index{CSprite@{CSprite}}
+
+
+{\ttfamily \#include $<$CSprite.\+h$>$}
+
+
+
+CSprite の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_sprite__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CSprite 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_c_sprite__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_sprite_a9a1f71b65de92ccde491a8f9335ccde7}{CSprite}} ()
+\item 
+\mbox{\hyperlink{class_c_sprite_a0b964b5be463b270f415f6fd084453e8}{CSprite}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, const char $\ast$file\+Name, const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&p\+Ss)
+\item 
+virtual \mbox{\hyperlink{class_c_sprite_a274146d807d98947cff67621e783d31d}{$\sim$\+CSprite}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_sprite_acc86d110750d89f7c29c8c54fe3ea447}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, const char $\ast$file\+Name, const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&p\+Ss)
+\item 
+void \mbox{\hyperlink{class_c_sprite_ac792f309461325813cf28b5cccdee507}{Release}} ()
+\item 
+void \mbox{\hyperlink{class_c_sprite_a381519c93a7260a857b6d3447e0107e8}{Render}} (const bool \&is\+Billboard=false)
+\item 
+void \mbox{\hyperlink{class_c_sprite_a15676e1e4d73ea47e4f9bca69742f1f7}{Render\+UI}} ()
+\item 
+void \mbox{\hyperlink{class_c_sprite_a9681e26e4a3fcdaf28b03ca685570cf9}{Set\+Anim\+Number}} (const int \&anim\+Number)
+\item 
+void \mbox{\hyperlink{class_c_sprite_a487cec91339b11905ae4a2c13ea62433}{Set\+Frame\+Time}} (const int \&frame\+Time)
+\item 
+void \mbox{\hyperlink{class_c_sprite_aad33e1b8091d28d033dd4515078ad1fa}{Play\+Animation}} ()
+\item 
+D3\+DXVECTOR2 \mbox{\hyperlink{class_c_sprite_a2646046112a2792a97a45f292efba5cd}{Get\+Sprite\+Size}} ()
+\item 
+D3\+DXVECTOR3 \mbox{\hyperlink{class_c_sprite_a431cb1a7355fce5a279091ed4ab88920}{Get\+Render\+Pos}} ()
+\item 
+void \mbox{\hyperlink{class_c_sprite_a81d3a99b5552660822bf5cf9e7633c40}{Set\+Sprite\+Data}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}} $>$ \&p\+Sprite\+Data)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}} $>$ \mbox{\hyperlink{class_c_sprite_abf8f791e7242b1c223a6b480a10da46f}{Get\+Sprite\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_c_sprite_af28caeaf201ae0fb73b739b6e5fc3104}{Set\+Is\+Animation}} (const bool \&is\+Anim)
+\item 
+void \mbox{\hyperlink{class_c_sprite_aceba0b9bb9640dd118445b363159bf8e}{Set\+Is\+UVScroll}} (const bool \&is\+Scroll)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_sprite_a9a1f71b65de92ccde491a8f9335ccde7}\label{class_c_sprite_a9a1f71b65de92ccde491a8f9335ccde7}} 
+\index{CSprite@{CSprite}!CSprite@{CSprite}}
+\index{CSprite@{CSprite}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{CSprite()}{CSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily ﻿ CSprite\+::\+CSprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_a0b964b5be463b270f415f6fd084453e8}\label{class_c_sprite_a0b964b5be463b270f415f6fd084453e8}} 
+\index{CSprite@{CSprite}!CSprite@{CSprite}}
+\index{CSprite@{CSprite}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{CSprite()}{CSprite()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CSprite\+::\+CSprite (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{const char $\ast$}]{file\+Name,  }\item[{const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&}]{p\+Ss }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_a0b964b5be463b270f415f6fd084453e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_a274146d807d98947cff67621e783d31d}\label{class_c_sprite_a274146d807d98947cff67621e783d31d}} 
+\index{CSprite@{CSprite}!````~CSprite@{$\sim$CSprite}}
+\index{````~CSprite@{$\sim$CSprite}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSprite()}{~CSprite()}}
+{\footnotesize\ttfamily CSprite\+::$\sim$\+CSprite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_c_sprite_a274146d807d98947cff67621e783d31d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_sprite_a431cb1a7355fce5a279091ed4ab88920}\label{class_c_sprite_a431cb1a7355fce5a279091ed4ab88920}} 
+\index{CSprite@{CSprite}!GetRenderPos@{GetRenderPos}}
+\index{GetRenderPos@{GetRenderPos}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{GetRenderPos()}{GetRenderPos()}}
+{\footnotesize\ttfamily D3\+DXVECTOR3 CSprite\+::\+Get\+Render\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_abf8f791e7242b1c223a6b480a10da46f}\label{class_c_sprite_abf8f791e7242b1c223a6b480a10da46f}} 
+\index{CSprite@{CSprite}!GetSpriteData@{GetSpriteData}}
+\index{GetSpriteData@{GetSpriteData}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{GetSpriteData()}{GetSpriteData()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}}$>$ CSprite\+::\+Get\+Sprite\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_a2646046112a2792a97a45f292efba5cd}\label{class_c_sprite_a2646046112a2792a97a45f292efba5cd}} 
+\index{CSprite@{CSprite}!GetSpriteSize@{GetSpriteSize}}
+\index{GetSpriteSize@{GetSpriteSize}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{GetSpriteSize()}{GetSpriteSize()}}
+{\footnotesize\ttfamily D3\+DXVECTOR2 CSprite\+::\+Get\+Sprite\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_acc86d110750d89f7c29c8c54fe3ea447}\label{class_c_sprite_acc86d110750d89f7c29c8c54fe3ea447}} 
+\index{CSprite@{CSprite}!Init@{Init}}
+\index{Init@{Init}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CSprite\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{const char $\ast$}]{file\+Name,  }\item[{const \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \&}]{p\+Ss }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_c_sprite_acc86d110750d89f7c29c8c54fe3ea447_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{class_c_sprite_acc86d110750d89f7c29c8c54fe3ea447_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_aad33e1b8091d28d033dd4515078ad1fa}\label{class_c_sprite_aad33e1b8091d28d033dd4515078ad1fa}} 
+\index{CSprite@{CSprite}!PlayAnimation@{PlayAnimation}}
+\index{PlayAnimation@{PlayAnimation}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{PlayAnimation()}{PlayAnimation()}}
+{\footnotesize\ttfamily void CSprite\+::\+Play\+Animation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_ac792f309461325813cf28b5cccdee507}\label{class_c_sprite_ac792f309461325813cf28b5cccdee507}} 
+\index{CSprite@{CSprite}!Release@{Release}}
+\index{Release@{Release}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void CSprite\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_c_sprite_ac792f309461325813cf28b5cccdee507_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_a381519c93a7260a857b6d3447e0107e8}\label{class_c_sprite_a381519c93a7260a857b6d3447e0107e8}} 
+\index{CSprite@{CSprite}!Render@{Render}}
+\index{Render@{Render}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CSprite\+::\+Render (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Billboard = {\ttfamily false} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_a381519c93a7260a857b6d3447e0107e8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_a15676e1e4d73ea47e4f9bca69742f1f7}\label{class_c_sprite_a15676e1e4d73ea47e4f9bca69742f1f7}} 
+\index{CSprite@{CSprite}!RenderUI@{RenderUI}}
+\index{RenderUI@{RenderUI}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{RenderUI()}{RenderUI()}}
+{\footnotesize\ttfamily void CSprite\+::\+Render\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_a9681e26e4a3fcdaf28b03ca685570cf9}\label{class_c_sprite_a9681e26e4a3fcdaf28b03ca685570cf9}} 
+\index{CSprite@{CSprite}!SetAnimNumber@{SetAnimNumber}}
+\index{SetAnimNumber@{SetAnimNumber}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{SetAnimNumber()}{SetAnimNumber()}}
+{\footnotesize\ttfamily void CSprite\+::\+Set\+Anim\+Number (\begin{DoxyParamCaption}\item[{const int \&}]{anim\+Number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_a487cec91339b11905ae4a2c13ea62433}\label{class_c_sprite_a487cec91339b11905ae4a2c13ea62433}} 
+\index{CSprite@{CSprite}!SetFrameTime@{SetFrameTime}}
+\index{SetFrameTime@{SetFrameTime}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{SetFrameTime()}{SetFrameTime()}}
+{\footnotesize\ttfamily void CSprite\+::\+Set\+Frame\+Time (\begin{DoxyParamCaption}\item[{const int \&}]{frame\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_af28caeaf201ae0fb73b739b6e5fc3104}\label{class_c_sprite_af28caeaf201ae0fb73b739b6e5fc3104}} 
+\index{CSprite@{CSprite}!SetIsAnimation@{SetIsAnimation}}
+\index{SetIsAnimation@{SetIsAnimation}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{SetIsAnimation()}{SetIsAnimation()}}
+{\footnotesize\ttfamily void CSprite\+::\+Set\+Is\+Animation (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Anim }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_aceba0b9bb9640dd118445b363159bf8e}\label{class_c_sprite_aceba0b9bb9640dd118445b363159bf8e}} 
+\index{CSprite@{CSprite}!SetIsUVScroll@{SetIsUVScroll}}
+\index{SetIsUVScroll@{SetIsUVScroll}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{SetIsUVScroll()}{SetIsUVScroll()}}
+{\footnotesize\ttfamily void CSprite\+::\+Set\+Is\+UVScroll (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Scroll }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_sprite_a81d3a99b5552660822bf5cf9e7633c40}\label{class_c_sprite_a81d3a99b5552660822bf5cf9e7633c40}} 
+\index{CSprite@{CSprite}!SetSpriteData@{SetSpriteData}}
+\index{SetSpriteData@{SetSpriteData}!CSprite@{CSprite}}
+\doxysubsubsection{\texorpdfstring{SetSpriteData()}{SetSpriteData()}}
+{\footnotesize\ttfamily void CSprite\+::\+Set\+Sprite\+Data (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_s_sprite_data}{SSprite\+Data}} $>$ \&}]{p\+Sprite\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Sprite/\mbox{\hyperlink{_c_sprite_8h}{CSprite.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Sprite/\mbox{\hyperlink{_c_sprite_8cpp}{CSprite.\+cpp}}\end{DoxyCompactItemize}

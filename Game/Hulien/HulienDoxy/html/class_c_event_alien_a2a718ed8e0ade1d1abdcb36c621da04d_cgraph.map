@@ -1,0 +1,5 @@
+<map id="CEventAlien::BarrierCollision" name="CEventAlien::BarrierCollision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,192,57"/>
+<area shape="rect" id="node2" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="255,5,417,32"/>
+<area shape="rect" id="node3" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="240,56,432,83"/>
+</map>

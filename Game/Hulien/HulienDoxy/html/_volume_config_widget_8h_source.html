@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/ConfigWidget/VolumeConfigWidget/VolumeConfigWidget.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_ec8fa4a8506d3437e9f39135306526a9.html">ConfigWidget</a></li><li class="navelem"><a class="el" href="dir_9720f7ece766b12d143224ed69aea60b.html">VolumeConfigWidget</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">VolumeConfigWidget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_volume_config_widget_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VOLUME_CONFIG_WIDGET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VOLUME_CONFIG_WIDGET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\..\Widget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_slinder.html">CSlinder</a>;         <span class="comment">// スライダー.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_config_cursor.html">CConfigCursor</a>;    <span class="comment">// カーソル.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_button_exp.html">CButtonExp</a>;       <span class="comment">// ボタン説明UIクラス.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/********************************************</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*   音量設定UIクラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_volume_config_widget.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_volume_config_widget.html">CVolumeConfigWidget</a> : <span class="keyword">public</span> <a class="code" href="class_c_widget.html">CWidget</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_MASTER_NAME  = <span class="stringliteral">&quot;MasterVolume&quot;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_BGM_NAME     = <span class="stringliteral">&quot;BGMVolume&quot;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_SE_NAME      = <span class="stringliteral">&quot;SEVolume&quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_MARK_NAME    = <span class="stringliteral">&quot;VolumeMark&quot;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_MARK_ICON_NAME   = <span class="stringliteral">&quot;volumeMarkIcon&quot;</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> BAR_POSITION_X = 200.0f;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> DEFALUT_VOLUME = 1.0f;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> MARK_ICON_POS_X = 10.0f;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">float</span> INPUT_WAIT_TIME_MAX = 30.0f;  <span class="comment">// 入力時の待機フレーム.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">const</span> D3DXVECTOR3 BUTTON_EXP_RENDER_POS = { 900.0f, 650.0f, 0.0f };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">// 設定の状態.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">enum</span> enConfigState</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        EConfigState_None,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        EConfigState_Select,    <span class="comment">// 選択状態.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        EConfigState_Seting,    <span class="comment">// 設定状態.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        EConfigState_Max,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    } <span class="keyword">typedef</span> EConfigState;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 選択の種類.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">enum</span> enSelectType</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        ESelectType_None = -1,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        ESelectType_Master, <span class="comment">// マスター.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        ESelectType_BGM,    <span class="comment">// BGM.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        ESelectType_SE,     <span class="comment">// SE.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        EVolumeType_Mark,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        EVolumeType_MarkIcon,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        EVolumeType_End,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        ESelectType_Max,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        ESelectType_Begin   = ESelectType_Master,   <span class="comment">// 始まり.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        ESelectType_End     = EVolumeType_End,      <span class="comment">// 終了.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ESelectType_VolumeMax = ESelectType_SE+1</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    } <span class="keyword">typedef</span> EVolumeType;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// スプライトの種類.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">enum</span> enSpriteNo</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        ESpriteNo_None = -1,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        ESpriteNo_Master,       <span class="comment">// マスター.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ESpriteNo_BGM,          <span class="comment">// BGM.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        ESpriteNo_SE,           <span class="comment">// SE.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        ESpriteNo_Max,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    } <span class="keyword">typedef</span> ESpriteNo;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_c_volume_config_widget.html#a276f527826368688fe0019f4b748671c">CVolumeConfigWidget</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_volume_config_widget.html#abcc17468e9d152b77ae07bb0ad2525a5">~CVolumeConfigWidget</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_volume_config_widget.html#a123e5fa4073e68ce298dc28e794ad034">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_volume_config_widget.html#aae82b0cf439387c45e7819b44386b8b5">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// 描画関数.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_volume_config_widget.html#a1bc3eebf623af4874a4791cdde7b13ba">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// 音量の設定をできるようにする.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_volume_config_widget.html#a4be99ad2cea2bb03dd02507258df109b">OnVolumeSeting</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// 音量の設定をできないようにする.</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_volume_config_widget.html#a7824ae11ae4c7db0da7a434ced83bfe3">OffVolumeSeting</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// 保存終了.</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_volume_config_widget.html#a335bf50b32a0719ad42854f077afa402">IsSaveEnd</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// 種類の選択.</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> SelectType();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// 決定.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> Determination();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// 音量の設定.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> VolumeSeting();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::unique_ptr&lt;CConfigCursor&gt;          m_pCursor;          <span class="comment">// カーソルクラス.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::unique_ptr&lt;CButtonExp&gt;             m_pButtonExp;       <span class="comment">// ボタン説明UI.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSlinder&gt;&gt;  m_pVolumeSlinders;  <span class="comment">// 音量スライダー.</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt;   m_pSprites;         <span class="comment">// 画像.</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::vector&lt;D3DXVECTOR3&gt;                m_SlinderPositions; <span class="comment">// スライダーの座標.</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    D3DXVECTOR3 m_CursorPosition;   <span class="comment">// カーソルの座標.</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span>         m_NowConfigState;   <span class="comment">// 現在の設定状態.</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span>         m_NowSelectVolume;  <span class="comment">// 現在の選択している音量種類.</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">int</span>         m_OldSelectVolume;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">float</span>       m_OldVolume;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">float</span>       m_InputWaitTime;    <span class="comment">// 入力した際の待機時間.</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span>        m_IsOneStep;        <span class="comment">// 一回だけ動作.</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef VOLUME_CONFIG_WIDGET_H.</span></div>
+<div class="ttc" id="aclass_c_button_exp_html"><div class="ttname"><a href="class_c_button_exp.html">CButtonExp</a></div><div class="ttdef"><b>Definition:</b> ButtonExplanation.h:9</div></div>
+<div class="ttc" id="aclass_c_config_cursor_html"><div class="ttname"><a href="class_c_config_cursor.html">CConfigCursor</a></div><div class="ttdef"><b>Definition:</b> ConfigCursor.h:10</div></div>
+<div class="ttc" id="aclass_c_slinder_html"><div class="ttname"><a href="class_c_slinder.html">CSlinder</a></div><div class="ttdef"><b>Definition:</b> Slider.h:8</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html"><div class="ttname"><a href="class_c_volume_config_widget.html">CVolumeConfigWidget</a></div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.h:15</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_a123e5fa4073e68ce298dc28e794ad034"><div class="ttname"><a href="class_c_volume_config_widget.html#a123e5fa4073e68ce298dc28e794ad034">CVolumeConfigWidget::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:42</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_a1bc3eebf623af4874a4791cdde7b13ba"><div class="ttname"><a href="class_c_volume_config_widget.html#a1bc3eebf623af4874a4791cdde7b13ba">CVolumeConfigWidget::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:104</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_a276f527826368688fe0019f4b748671c"><div class="ttname"><a href="class_c_volume_config_widget.html#a276f527826368688fe0019f4b748671c">CVolumeConfigWidget::CVolumeConfigWidget</a></div><div class="ttdeci">CVolumeConfigWidget()</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:13</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_a335bf50b32a0719ad42854f077afa402"><div class="ttname"><a href="class_c_volume_config_widget.html#a335bf50b32a0719ad42854f077afa402">CVolumeConfigWidget::IsSaveEnd</a></div><div class="ttdeci">bool IsSaveEnd()</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:230</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_a4be99ad2cea2bb03dd02507258df109b"><div class="ttname"><a href="class_c_volume_config_widget.html#a4be99ad2cea2bb03dd02507258df109b">CVolumeConfigWidget::OnVolumeSeting</a></div><div class="ttdeci">void OnVolumeSeting()</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:207</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_a7824ae11ae4c7db0da7a434ced83bfe3"><div class="ttname"><a href="class_c_volume_config_widget.html#a7824ae11ae4c7db0da7a434ced83bfe3">CVolumeConfigWidget::OffVolumeSeting</a></div><div class="ttdeci">void OffVolumeSeting()</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:222</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_aae82b0cf439387c45e7819b44386b8b5"><div class="ttname"><a href="class_c_volume_config_widget.html#aae82b0cf439387c45e7819b44386b8b5">CVolumeConfigWidget::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:53</div></div>
+<div class="ttc" id="aclass_c_volume_config_widget_html_abcc17468e9d152b77ae07bb0ad2525a5"><div class="ttname"><a href="class_c_volume_config_widget.html#abcc17468e9d152b77ae07bb0ad2525a5">CVolumeConfigWidget::~CVolumeConfigWidget</a></div><div class="ttdeci">virtual ~CVolumeConfigWidget()</div><div class="ttdef"><b>Definition:</b> VolumeConfigWidget.cpp:37</div></div>
+<div class="ttc" id="aclass_c_widget_html"><div class="ttname"><a href="class_c_widget.html">CWidget</a></div><div class="ttdef"><b>Definition:</b> Widget.h:10</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

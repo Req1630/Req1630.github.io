@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Item/EachItemEffectStruct.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1b47204da93e096d6b7fa248830ac630.html">Item</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EachItemEffectStruct.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_each_item_effect_struct_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef EACH_ITEM_EFFECT_STRUCT_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define EACH_ITEM_EFFECT_STRUCT_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 各アイテムの効果構造体.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html">   10</a></span>&#160;<span class="keyword">struct </span>stEachItemEffect</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">// 回復アイテム.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#af558583bbebc7dc91ea222d7f2bf3848">   13</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#af558583bbebc7dc91ea222d7f2bf3848">LifeRecoveryValue</a>;    <span class="comment">// 回復力.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// 特殊能力回復速度UPアイテム.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#afb85287bfd77988122a117de330afbfd">   16</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#afb85287bfd77988122a117de330afbfd">SPRecoveryValue</a>;  <span class="comment">// 特殊能力回復力.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#a172280b6d4eeae575774ae5dbe292dfe">   17</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#a172280b6d4eeae575774ae5dbe292dfe">SPRecoveryTime</a>;   <span class="comment">// 特殊能力回復時間.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// 攻撃力UPアイテム.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#a463fa84485d1d78d8cf87ea8c9db0c22">   20</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#a463fa84485d1d78d8cf87ea8c9db0c22">AttackPower</a>;  <span class="comment">// 攻撃力.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#a2119b82932037c5986b0e4a1d22ad3a8">   21</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#a2119b82932037c5986b0e4a1d22ad3a8">AttackUpTime</a>; <span class="comment">// 攻撃力UP時間.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// 移動速度UPアイテム.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#ad2879c2a75857c7b1b6b799a33da8b61">   24</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#ad2879c2a75857c7b1b6b799a33da8b61">MovePower</a>;    <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#ab5cfaa09ed922c671e3290500d483d15">   25</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_s_each_item_effect.html#ab5cfaa09ed922c671e3290500d483d15">MoveUpTime</a>;   <span class="comment">// 移動速度UP時間.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_s_each_item_effect.html#aa117e7103c8898ed28d8ea98bf6949e9">   27</a></span>&#160;    <a class="code" href="struct_s_each_item_effect.html#aa117e7103c8898ed28d8ea98bf6949e9">stEachItemEffect</a>()</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        : LifeRecoveryValue ( 0.0f )</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        , SPRecoveryValue   ( 0.0f )</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        , SPRecoveryTime    ( 0.0f )</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        , AttackPower       ( 0.0f )</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        , AttackUpTime      ( 0.0f )</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        , MovePower         ( 0.0f )</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        , MoveUpTime        ( 0.0f )</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="struct_s_each_item_effect.html">SEachItemEffect</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef EACH_ITEM_EFFECT_STRUCT_H.</span></div>
+<div class="ttc" id="astruct_s_each_item_effect_html"><div class="ttname"><a href="struct_s_each_item_effect.html">SEachItemEffect</a></div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:11</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_a172280b6d4eeae575774ae5dbe292dfe"><div class="ttname"><a href="struct_s_each_item_effect.html#a172280b6d4eeae575774ae5dbe292dfe">SEachItemEffect::SPRecoveryTime</a></div><div class="ttdeci">float SPRecoveryTime</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:17</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_a2119b82932037c5986b0e4a1d22ad3a8"><div class="ttname"><a href="struct_s_each_item_effect.html#a2119b82932037c5986b0e4a1d22ad3a8">SEachItemEffect::AttackUpTime</a></div><div class="ttdeci">float AttackUpTime</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:21</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_a463fa84485d1d78d8cf87ea8c9db0c22"><div class="ttname"><a href="struct_s_each_item_effect.html#a463fa84485d1d78d8cf87ea8c9db0c22">SEachItemEffect::AttackPower</a></div><div class="ttdeci">float AttackPower</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:20</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_aa117e7103c8898ed28d8ea98bf6949e9"><div class="ttname"><a href="struct_s_each_item_effect.html#aa117e7103c8898ed28d8ea98bf6949e9">SEachItemEffect::stEachItemEffect</a></div><div class="ttdeci">stEachItemEffect()</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:27</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_ab5cfaa09ed922c671e3290500d483d15"><div class="ttname"><a href="struct_s_each_item_effect.html#ab5cfaa09ed922c671e3290500d483d15">SEachItemEffect::MoveUpTime</a></div><div class="ttdeci">float MoveUpTime</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:25</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_ad2879c2a75857c7b1b6b799a33da8b61"><div class="ttname"><a href="struct_s_each_item_effect.html#ad2879c2a75857c7b1b6b799a33da8b61">SEachItemEffect::MovePower</a></div><div class="ttdeci">float MovePower</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:24</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_af558583bbebc7dc91ea222d7f2bf3848"><div class="ttname"><a href="struct_s_each_item_effect.html#af558583bbebc7dc91ea222d7f2bf3848">SEachItemEffect::LifeRecoveryValue</a></div><div class="ttdeci">float LifeRecoveryValue</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:13</div></div>
+<div class="ttc" id="astruct_s_each_item_effect_html_afb85287bfd77988122a117de330afbfd"><div class="ttname"><a href="struct_s_each_item_effect.html#afb85287bfd77988122a117de330afbfd">SEachItemEffect::SPRecoveryValue</a></div><div class="ttdeci">float SPRecoveryValue</div><div class="ttdef"><b>Definition:</b> EachItemEffectStruct.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

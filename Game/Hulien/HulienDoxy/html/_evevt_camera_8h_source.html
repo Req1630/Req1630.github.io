@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Camera/EvevtCamera/EvevtCamera.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_23e5e4b3920a638f0c227c8a779ccb46.html">Camera</a></li><li class="navelem"><a class="el" href="dir_06d559a5e5f71e16cdcb608d482e790d.html">EvevtCamera</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">EvevtCamera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_evevt_camera_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EVENT_CAMERA_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EVENT_CAMERA_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\Camera.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/****************************************</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">* イベント用カメラ.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_c_event_camera.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_event_camera.html">CEventCamera</a> : <span class="keyword">public</span> <a class="code" href="class_c_camera.html">CCamera</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> INITIAL_VIEWING_ANGLE = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DX_PI / 4.0);   <span class="comment">// 初期視野角.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// カメラのパラメータ.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html">   15</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_event_camera_1_1st_camera_state.html">stCameraState</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#aab1f2ea3d801ed1fe1079a8f4db2e858">   17</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#aab1f2ea3d801ed1fe1079a8f4db2e858">vPosition</a>;      <span class="comment">// 位置.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#a04d94b3d0494c04917a9b9c37fad9c1a">   18</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a04d94b3d0494c04917a9b9c37fad9c1a">vRotation</a>;      <span class="comment">// 回転値.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#a9cc76c8351abf90c9d0cc07cf92fa00a">   19</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a9cc76c8351abf90c9d0cc07cf92fa00a">vLookPosition</a>;  <span class="comment">// 注視位置.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#ae72c65d4b1ca30b26218b0003528e07d">   20</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#ae72c65d4b1ca30b26218b0003528e07d">vLenght</a>;        <span class="comment">// ターゲットへの長さ.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#ac7a2960bbd364f0282b6896d26a29b37">   21</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#ac7a2960bbd364f0282b6896d26a29b37">ViewingAngle</a>;   <span class="comment">// 視野角.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#a3a5f4ac8e1781d863692b17ef2310938">   22</a></span>&#160;        <span class="keywordtype">float</span>       <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a3a5f4ac8e1781d863692b17ef2310938">MoveSpeed</a>;      <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_c_event_camera_1_1st_camera_state.html#a78bb636ec4bf80856976af563b7b993b">   24</a></span>&#160;        <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a78bb636ec4bf80856976af563b7b993b">stCameraState</a>()</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            : <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#aab1f2ea3d801ed1fe1079a8f4db2e858">vPosition</a>         ({0.0f,0.0f,0.0f})</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            , <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a04d94b3d0494c04917a9b9c37fad9c1a">vRotation</a>         ({0.0f,0.0f,0.0f})</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            , <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a9cc76c8351abf90c9d0cc07cf92fa00a">vLookPosition</a>     ({0.0f,0.0f,0.0f})</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            , <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#ae72c65d4b1ca30b26218b0003528e07d">vLenght</a>           ({10.0f,0.0f,7.0f})</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            , <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#ac7a2960bbd364f0282b6896d26a29b37">ViewingAngle</a>      (<span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DX_PI / 4.0))</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            , <a class="code" href="struct_c_event_camera_1_1st_camera_state.html#a3a5f4ac8e1781d863692b17ef2310938">MoveSpeed</a>         (0.0f)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        {}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_c_event_camera.html#a38face466fdd61a728e05fc83c7ef3af">   33</a></span>&#160;    }<span class="keyword">typedef</span> <a class="code" href="class_c_event_camera.html#a38face466fdd61a728e05fc83c7ef3af">SCameraState</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_c_event_camera.html#a848d387e5eae5c68136116e0054053e3">CEventCamera</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_event_camera.html#ac77a3ff16e08437973ca258e567de050">~CEventCamera</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// 視野角取得関数.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_c_event_camera.html#a3e6749d0140188ceee899ba6e49cdeac">   40</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_event_camera.html#a3e6749d0140188ceee899ba6e49cdeac">GetViewingAngle</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="class_c_camera.html#a8895164780159ed80bbc5efae2a2c1de">m_ViewingAngle</a>; }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 視野角リセット.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_event_camera.html#afa856c676a1975f41ba4beba2a4be171">   42</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_event_camera.html#afa856c676a1975f41ba4beba2a4be171">ResetViewingAngle</a>() { <span class="keywordflow">return</span> INITIAL_VIEWING_ANGLE; }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// 目的地に移動.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    D3DXVECTOR3 <a class="code" href="class_c_event_camera.html#a9a3cfb6f9f7a21cd54ad95d45a418f78">MoveToTargetPosition</a>(<span class="keyword">const</span> D3DXVECTOR3&amp; vTargetPos, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; speed);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// オブジェクトを中心に回転.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_camera.html#a5dfe280273d2fbb75c8162478527e3db">RotationLookAtObject</a>(<span class="keyword">const</span> D3DXVECTOR3&amp; vLookPos, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; Degree);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// カメラの情報設定.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_event_camera.html#a6c9e9c8b33c54d84674976832b3d1a63">SetState</a>(<span class="keyword">const</span> <a class="code" href="class_c_event_camera.html#a38face466fdd61a728e05fc83c7ef3af">SCameraState</a>&amp; param);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="class_c_event_camera.html#a38face466fdd61a728e05fc83c7ef3af">SCameraState</a> m_Parameter;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//#ifndef EVENT_CAMERA_H.</span></div>
+<div class="ttc" id="aclass_c_camera_html"><div class="ttname"><a href="class_c_camera.html">CCamera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:10</div></div>
+<div class="ttc" id="aclass_c_camera_html_a8895164780159ed80bbc5efae2a2c1de"><div class="ttname"><a href="class_c_camera.html#a8895164780159ed80bbc5efae2a2c1de">CCamera::m_ViewingAngle</a></div><div class="ttdeci">float m_ViewingAngle</div><div class="ttdef"><b>Definition:</b> Camera.h:48</div></div>
+<div class="ttc" id="aclass_c_event_camera_html"><div class="ttname"><a href="class_c_event_camera.html">CEventCamera</a></div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:10</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_a38face466fdd61a728e05fc83c7ef3af"><div class="ttname"><a href="class_c_event_camera.html#a38face466fdd61a728e05fc83c7ef3af">CEventCamera::SCameraState</a></div><div class="ttdeci">struct CEventCamera::stCameraState SCameraState</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_a3e6749d0140188ceee899ba6e49cdeac"><div class="ttname"><a href="class_c_event_camera.html#a3e6749d0140188ceee899ba6e49cdeac">CEventCamera::GetViewingAngle</a></div><div class="ttdeci">float GetViewingAngle() const</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:40</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_a5dfe280273d2fbb75c8162478527e3db"><div class="ttname"><a href="class_c_event_camera.html#a5dfe280273d2fbb75c8162478527e3db">CEventCamera::RotationLookAtObject</a></div><div class="ttdeci">void RotationLookAtObject(const D3DXVECTOR3 &amp;vLookPos, const float &amp;Degree)</div><div class="ttdef"><b>Definition:</b> EvevtCamera.cpp:31</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_a6c9e9c8b33c54d84674976832b3d1a63"><div class="ttname"><a href="class_c_event_camera.html#a6c9e9c8b33c54d84674976832b3d1a63">CEventCamera::SetState</a></div><div class="ttdeci">void SetState(const SCameraState &amp;param)</div><div class="ttdef"><b>Definition:</b> EvevtCamera.cpp:43</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_a848d387e5eae5c68136116e0054053e3"><div class="ttname"><a href="class_c_event_camera.html#a848d387e5eae5c68136116e0054053e3">CEventCamera::CEventCamera</a></div><div class="ttdeci">CEventCamera()</div><div class="ttdef"><b>Definition:</b> EvevtCamera.cpp:3</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_a9a3cfb6f9f7a21cd54ad95d45a418f78"><div class="ttname"><a href="class_c_event_camera.html#a9a3cfb6f9f7a21cd54ad95d45a418f78">CEventCamera::MoveToTargetPosition</a></div><div class="ttdeci">D3DXVECTOR3 MoveToTargetPosition(const D3DXVECTOR3 &amp;vTargetPos, const float &amp;speed)</div><div class="ttdef"><b>Definition:</b> EvevtCamera.cpp:12</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_ac77a3ff16e08437973ca258e567de050"><div class="ttname"><a href="class_c_event_camera.html#ac77a3ff16e08437973ca258e567de050">CEventCamera::~CEventCamera</a></div><div class="ttdeci">virtual ~CEventCamera()</div><div class="ttdef"><b>Definition:</b> EvevtCamera.cpp:7</div></div>
+<div class="ttc" id="aclass_c_event_camera_html_afa856c676a1975f41ba4beba2a4be171"><div class="ttname"><a href="class_c_event_camera.html#afa856c676a1975f41ba4beba2a4be171">CEventCamera::ResetViewingAngle</a></div><div class="ttdeci">float ResetViewingAngle()</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:42</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html">CEventCamera::stCameraState</a></div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:16</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_a04d94b3d0494c04917a9b9c37fad9c1a"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#a04d94b3d0494c04917a9b9c37fad9c1a">CEventCamera::stCameraState::vRotation</a></div><div class="ttdeci">D3DXVECTOR3 vRotation</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:18</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_a3a5f4ac8e1781d863692b17ef2310938"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#a3a5f4ac8e1781d863692b17ef2310938">CEventCamera::stCameraState::MoveSpeed</a></div><div class="ttdeci">float MoveSpeed</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:22</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_a78bb636ec4bf80856976af563b7b993b"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#a78bb636ec4bf80856976af563b7b993b">CEventCamera::stCameraState::stCameraState</a></div><div class="ttdeci">stCameraState()</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:24</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_a9cc76c8351abf90c9d0cc07cf92fa00a"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#a9cc76c8351abf90c9d0cc07cf92fa00a">CEventCamera::stCameraState::vLookPosition</a></div><div class="ttdeci">D3DXVECTOR3 vLookPosition</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:19</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_aab1f2ea3d801ed1fe1079a8f4db2e858"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#aab1f2ea3d801ed1fe1079a8f4db2e858">CEventCamera::stCameraState::vPosition</a></div><div class="ttdeci">D3DXVECTOR3 vPosition</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:17</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_ac7a2960bbd364f0282b6896d26a29b37"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#ac7a2960bbd364f0282b6896d26a29b37">CEventCamera::stCameraState::ViewingAngle</a></div><div class="ttdeci">float ViewingAngle</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:21</div></div>
+<div class="ttc" id="astruct_c_event_camera_1_1st_camera_state_html_ae72c65d4b1ca30b26218b0003528e07d"><div class="ttname"><a href="struct_c_event_camera_1_1st_camera_state.html#ae72c65d4b1ca30b26218b0003528e07d">CEventCamera::stCameraState::vLenght</a></div><div class="ttdeci">D3DXVECTOR3 vLenght</div><div class="ttdef"><b>Definition:</b> EvevtCamera.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

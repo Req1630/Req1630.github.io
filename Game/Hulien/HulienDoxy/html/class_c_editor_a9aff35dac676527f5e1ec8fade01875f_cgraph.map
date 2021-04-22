@@ -1,0 +1,17 @@
+<map id="CEditor::Load" name="CEditor::Load">
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,107,260"/>
+<area shape="rect" id="node2" href="$class_c_sound_manager.html#a017eb1bf9f19eb00ca082b53f4303401" title=" " alt="" coords="175,259,369,285"/>
+<area shape="rect" id="node4" href="$class_c_direct_x11.html#a4fe7f4d36f2e5e34d3ee20a49d5e17c1" title=" " alt="" coords="192,5,352,32"/>
+<area shape="rect" id="node6" href="$class_c_direct_x11.html#afa4cf11fa8d868b09eea919420850ab4" title=" " alt="" coords="195,56,349,83"/>
+<area shape="rect" id="node7" href="$class_c_scene_manager.html#a2a045ded8d248f911114d9111757e308" title=" " alt="" coords="181,157,363,184"/>
+<area shape="rect" id="node8" href="$class_c_effect_resource.html#a8db15e660ee9b6777764485ac380ec27" title=" " alt="" coords="195,107,349,133"/>
+<area shape="rect" id="node10" href="$class_c_effect_resource.html#aafcc0b57987c958ea14682ae6bcc6b67" title=" " alt="" coords="185,208,359,235"/>
+<area shape="rect" id="node11" href="$class_c_camera_manager.html#a761aa408fcf914e5fdc7f9235a3af045" title=" " alt="" coords="173,309,371,336"/>
+<area shape="rect" id="node12" href="$class_c_scene_tex_renderer.html#a824814aa515611590f3d89074cff3e34" title=" " alt="" coords="197,462,347,503"/>
+<area shape="rect" id="node14" href="$class_c_scene_manager.html#a90aca1802b1c37d55441c611df80fff3" title=" " alt="" coords="155,411,389,437"/>
+<area shape="rect" id="node15" href="$class_c_sound_manager.html#a6e6693de88423866b3f5d3c42c249c6d" title=" " alt="" coords="161,360,383,387"/>
+<area shape="rect" id="node3" href="$class_c_sound_manager.html#a19134e728f19e7a4950200fa741a6805" title=" " alt="" coords="438,309,634,336"/>
+<area shape="rect" id="node5" href="$class_c_direct_x11.html#aa7695b2671456d12f8aaf57b09b6c802" title=" " alt="" coords="454,31,618,57"/>
+<area shape="rect" id="node9" href="$class_c_effect_resource.html#a1e3e9a6c4aa8f25096b598f9ce9dedfa" title=" " alt="" coords="437,157,635,184"/>
+<area shape="rect" id="node13" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="461,462,611,503"/>
+</map>

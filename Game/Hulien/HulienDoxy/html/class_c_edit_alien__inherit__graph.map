@@ -1,0 +1,11 @@
+<map id="CEditAlien" name="CEditAlien">
+<area shape="rect" id="node1" title=" " alt="" coords="183,304,266,331"/>
+<area shape="rect" id="node6" href="$class_c_edit_alien_a.html" title=" " alt="" coords="5,379,97,405"/>
+<area shape="rect" id="node7" href="$class_c_edit_alien_b.html" title=" " alt="" coords="121,379,213,405"/>
+<area shape="rect" id="node8" href="$class_c_edit_alien_c.html" title=" " alt="" coords="237,379,329,405"/>
+<area shape="rect" id="node9" href="$class_c_edit_alien_d.html" title=" " alt="" coords="353,379,445,405"/>
+<area shape="rect" id="node2" href="$class_c_alien.html" title=" " alt="" coords="195,229,255,256"/>
+<area shape="rect" id="node3" href="$class_c_character.html" title=" " alt="" coords="181,155,268,181"/>
+<area shape="rect" id="node4" href="$class_c_actor.html" title=" " alt="" coords="193,80,256,107"/>
+<area shape="rect" id="node5" href="$class_c_game_object.html" title=" " alt="" coords="173,5,277,32"/>
+</map>

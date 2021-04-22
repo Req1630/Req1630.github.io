@@ -1,0 +1,6 @@
+<map id="CCamera" name="CCamera">
+<area shape="rect" id="node1" title=" " alt="" coords="145,5,221,32"/>
+<area shape="rect" id="node2" href="$class_c_edit_camera.html" title=" " alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$class_c_event_camera.html" title=" " alt="" coords="129,80,237,107"/>
+<area shape="rect" id="node4" href="$class_c_rot_look_at_center.html" title=" " alt="" coords="261,80,392,107"/>
+</map>

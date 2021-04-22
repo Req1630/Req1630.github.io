@@ -1,0 +1,130 @@
+\hypertarget{class_c_invisible_wall}{}\doxysection{CInvisible\+Wall クラス}
+\label{class_c_invisible_wall}\index{CInvisibleWall@{CInvisibleWall}}
+
+
+{\ttfamily \#include $<$Invisible\+Wall.\+h$>$}
+
+
+
+CInvisible\+Wall の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_invisible_wall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CInvisible\+Wall 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_invisible_wall__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_invisible_wall_ae21d0055cd4d10446062799433954158}{CInvisible\+Wall}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_invisible_wall_af29fa552e5058b20f9e2ce82c3a4eb26}{$\sim$\+CInvisible\+Wall}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_invisible_wall_a2f6e409b90a837a4b03b3d109bd9a927}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_invisible_wall_aec6605dddf111c689fec9162f94ec4ad}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_invisible_wall_a07be8a4feeb75be1ace64b926432e588}{Render}} () override
+\item 
+void \mbox{\hyperlink{class_c_invisible_wall_a1c290907bf0ac21ff880cce8d1661dc9}{Set\+Box\+Wall}} (const \mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}} \&box\+Wall)
+\item 
+\mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}} $\ast$ \mbox{\hyperlink{class_c_invisible_wall_a780cb915fc7a79e7193fdb2b516a3d1e}{Get\+Box\+Wall}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_invisible_wall_ad3861b6b2ae4770b24f58ffded5a2910}{Set\+Position}} (const D3\+DXVECTOR3 \&v\+Pos) override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_invisible_wall_ae21d0055cd4d10446062799433954158}\label{class_c_invisible_wall_ae21d0055cd4d10446062799433954158}} 
+\index{CInvisibleWall@{CInvisibleWall}!CInvisibleWall@{CInvisibleWall}}
+\index{CInvisibleWall@{CInvisibleWall}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{CInvisibleWall()}{CInvisibleWall()}}
+{\footnotesize\ttfamily CInvisible\+Wall\+::\+CInvisible\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_invisible_wall_af29fa552e5058b20f9e2ce82c3a4eb26}\label{class_c_invisible_wall_af29fa552e5058b20f9e2ce82c3a4eb26}} 
+\index{CInvisibleWall@{CInvisibleWall}!````~CInvisibleWall@{$\sim$CInvisibleWall}}
+\index{````~CInvisibleWall@{$\sim$CInvisibleWall}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{$\sim$CInvisibleWall()}{~CInvisibleWall()}}
+{\footnotesize\ttfamily CInvisible\+Wall\+::$\sim$\+CInvisible\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_invisible_wall_a780cb915fc7a79e7193fdb2b516a3d1e}\label{class_c_invisible_wall_a780cb915fc7a79e7193fdb2b516a3d1e}} 
+\index{CInvisibleWall@{CInvisibleWall}!GetBoxWall@{GetBoxWall}}
+\index{GetBoxWall@{GetBoxWall}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{GetBoxWall()}{GetBoxWall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}}$\ast$ CInvisible\+Wall\+::\+Get\+Box\+Wall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_invisible_wall_a2f6e409b90a837a4b03b3d109bd9a927}\label{class_c_invisible_wall_a2f6e409b90a837a4b03b3d109bd9a927}} 
+\index{CInvisibleWall@{CInvisibleWall}!Init@{Init}}
+\index{Init@{Init}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CInvisible\+Wall\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_invisible_wall_a2f6e409b90a837a4b03b3d109bd9a927_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_invisible_wall_a07be8a4feeb75be1ace64b926432e588}\label{class_c_invisible_wall_a07be8a4feeb75be1ace64b926432e588}} 
+\index{CInvisibleWall@{CInvisibleWall}!Render@{Render}}
+\index{Render@{Render}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CInvisible\+Wall\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_invisible_wall_a1c290907bf0ac21ff880cce8d1661dc9}\label{class_c_invisible_wall_a1c290907bf0ac21ff880cce8d1661dc9}} 
+\index{CInvisibleWall@{CInvisibleWall}!SetBoxWall@{SetBoxWall}}
+\index{SetBoxWall@{SetBoxWall}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{SetBoxWall()}{SetBoxWall()}}
+{\footnotesize\ttfamily void CInvisible\+Wall\+::\+Set\+Box\+Wall (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_box_wall}{SBox\+Wall}} \&}]{box\+Wall }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_invisible_wall_ad3861b6b2ae4770b24f58ffded5a2910}\label{class_c_invisible_wall_ad3861b6b2ae4770b24f58ffded5a2910}} 
+\index{CInvisibleWall@{CInvisibleWall}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void CInvisible\+Wall\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}{CGame\+Object}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_invisible_wall_aec6605dddf111c689fec9162f94ec4ad}\label{class_c_invisible_wall_aec6605dddf111c689fec9162f94ec4ad}} 
+\index{CInvisibleWall@{CInvisibleWall}!Update@{Update}}
+\index{Update@{Update}!CInvisibleWall@{CInvisibleWall}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CInvisible\+Wall\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Invisible\+Wall/\mbox{\hyperlink{_invisible_wall_8h}{Invisible\+Wall.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Invisible\+Wall/\mbox{\hyperlink{_invisible_wall_8cpp}{Invisible\+Wall.\+cpp}}\end{DoxyCompactItemize}

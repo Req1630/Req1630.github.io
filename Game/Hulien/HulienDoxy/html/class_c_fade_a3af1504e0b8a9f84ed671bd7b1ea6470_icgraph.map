@@ -1,0 +1,12 @@
+<map id="CFade::SetFadeOut" name="CFade::SetFadeOut">
+<area shape="rect" id="node1" title=" " alt="" coords="232,208,371,235"/>
+<area shape="rect" id="node2" href="$class_c_config.html#aa0ded54a0fe3af728919d0e7302b38bf" title=" " alt="" coords="35,5,155,32"/>
+<area shape="rect" id="node3" href="$class_c_editor.html#a178ec42472d3e945246cee35ae4c599c" title=" " alt="" coords="37,56,153,83"/>
+<area shape="rect" id="node4" href="$class_c_game_clear.html#a4ee485447e48e29bfd1c6f0032139540" title=" " alt="" coords="5,107,184,133"/>
+<area shape="rect" id="node5" href="$class_c_title.html#aab5e506893be609a0e2041a3149333d5" title=" " alt="" coords="47,157,143,184"/>
+<area shape="rect" id="node6" href="$class_c_game.html#acc8934bf2f3c9c6466405dbd5cba56e3" title=" " alt="" coords="43,208,146,235"/>
+<area shape="rect" id="node7" href="$class_c_game_over.html#a852b6bfc0638bd23176bd7f997357b28" title=" " alt="" coords="31,259,159,285"/>
+<area shape="rect" id="node8" href="$class_c_game_clear_event.html#a1dab676fd2def2f7fd4236632a851102" title=" " alt="" coords="13,309,177,336"/>
+<area shape="rect" id="node9" href="$class_c_game_over_event.html#a97f5e3a7bcec69ed6a3e5be735e2a648" title=" " alt="" coords="15,360,175,387"/>
+<area shape="rect" id="node10" href="$class_c_game_start_event.html#a4ea7ca47cd2a3fbe768a40408fbc807c" title=" " alt="" coords="13,411,176,437"/>
+</map>

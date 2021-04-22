@@ -1,0 +1,233 @@
+\hypertarget{namespace_s_t_g}{}\doxysection{STG 名前空間}
+\label{namespace_s_t_g}\index{STG@{STG}}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager}{CBullet\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_s_t_g_1_1_s_bullet_manager_param}{SBullet\+Manager\+Param}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_bullet}{CBullet}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_enemy}{CEnemy}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_factory}{CEnemy\+Factory}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_enemy_manager}{CEnemy\+Manager}}
+\item 
+struct \mbox{\hyperlink{struct_s_t_g_1_1_s_enemy_param}{SEnemy\+Param}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_player}{CPlayer}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_character}{CCharacter}}
+\item 
+class \mbox{\hyperlink{class_s_t_g_1_1_c_actor}{CActor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{列挙型}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04b}{EBullet\+Manager\+Param\+No}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04bafe877b902e76c3717cb26ab759355eb7}{EBullet\+Manager\+Param\+No\+\_\+\+None}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04badc40a92901a7cd60fb29d7329fc72b28}{EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Speed}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04bac1d82ec82c7168ae3161375dee3bb77e}{EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Count\+Max}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04badac7024664369ad6dee8b471433964a3}{EBullet\+Manager\+Param\+No\+\_\+\+Any\+Bullet\+Count\+Max}}
+, \newline
+\mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba55b24cf9e30854fb9ce25760d9d5cfc9}{EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Angle}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba251f3ac7c249cc4e38013585bb91dd12}{EBullet\+Manager\+Param\+No\+\_\+\+Shot\+Angle}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba3cb9c28347139b94b4c275bbabe6c312}{EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Angle\+Add\+Acc\+Value}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04baf4fd031da6856d8885b6e0fc11e35215}{EBullet\+Manager\+Param\+No\+\_\+\+Shot\+Interval\+Frame}}
+, \newline
+\mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba6b27533a2acbe4da1716b5312de5dba0}{EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Coll\+Disappear}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba1c4dbf23c007b9ce263b49232f57d64a}{EBullet\+Manager\+Param\+No\+\_\+\+Max}}
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04bac3e5abf8035e22aa132eb7a0ed701624}{EBullet\+Manager\+Param\+No\+\_\+\+Start}} = EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Speed
+, \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba6db8b5200afe2fd449ee74291230bcfe}{EBullet\+Manager\+Param\+No\+\_\+\+End}} = EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Coll\+Disappear
+ \}
+\item 
+enum class \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adb}{EEnemy\+State}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6adf97f83acf6453d4a6a4b1070f3754}{None}}
+, \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba4fd1dddbd78f7f7cdcd62e926266611e}{Spawn}}
+, \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6bc362dbf494c61ea117fe3c71ca48a5}{Move}}
+, \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba2b24e50062d401d2aa3ace1a4e42e12f}{Shot}}
+, \newline
+\mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba013ec032d3460d4be4431c6ab1f8f224}{Escape}}
+, \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba183b62c7f067711f9c5a54913c054617}{Dead}}
+, \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6a061313d22e51e0f25b7cd4dc065233}{Max}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9}{EEnemy\+Param\+No}} \+: unsigned char \{ \newline
+\mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a228f2968d014bdde3599ac7248013636}{EEnemy\+Param\+No\+\_\+\+None}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a725cabce83c7b3471caaf4f8fbcf046d}{EEnemy\+Param\+No\+\_\+\+Spawn\+Time}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ad51d46c3ebd957f558f06cb0793e53d7}{EEnemy\+Param\+No\+\_\+\+PositionX}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9aaa1ebcbf81168aa2a49cea1e6db620f3}{EEnemy\+Param\+No\+\_\+\+Text}}
+, \newline
+\mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ac8036f042ca0a1e68463aa24d128a7a6}{EEnemy\+Param\+No\+\_\+\+Text\+Size}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ae24a2bdad9f2edf2a9f2b8b9184c7ade}{EEnemy\+Param\+No\+\_\+\+Life\+Point}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9af44389fe9f2c6abe6ad1e506f8649abd}{EEnemy\+Param\+No\+\_\+\+Move\+Speed}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a45a199da35e7d22a34f6b2268715fa8e}{EEnemy\+Param\+No\+\_\+\+Bullet\+Index}}
+, \newline
+\mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a2ee8206cf8bdecd7e5a55d5ef9e54ddd}{EEnemy\+Param\+No\+\_\+\+Max}}
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a3d0ba5034391f1be3921a453e1948b9b}{EEnemy\+Param\+No\+\_\+\+Start}} = EEnemy\+Param\+No\+\_\+\+Spawn\+Time
+, \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a5eb4754b64edda883a6aac26e93089e9}{EEnemy\+Param\+No\+\_\+\+End}} = EEnemy\+Param\+No\+\_\+\+Bullet\+Index
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+struct st\+Bullet\+Manager\+Param typedef \mbox{\hyperlink{namespace_s_t_g_a7938e9c4280e54705218d4ec8c7169b7}{SBullet\+Manager\+Param}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{列挙型詳解}
+\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04b}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04b}} 
+\index{STG@{STG}!EBulletManagerParamNo@{EBulletManagerParamNo}}
+\index{EBulletManagerParamNo@{EBulletManagerParamNo}!STG@{STG}}
+\doxysubsubsection{\texorpdfstring{EBulletManagerParamNo}{EBulletManagerParamNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_s_t_g_abd7450425797277817b6c31eac83f04b}{STG\+::\+EBullet\+Manager\+Param\+No}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_None@{EBulletManagerParamNo\_None}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_None@{EBulletManagerParamNo\_None}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04bafe877b902e76c3717cb26ab759355eb7}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04bafe877b902e76c3717cb26ab759355eb7}} 
+EBullet\+Manager\+Param\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_BulletSpeed@{EBulletManagerParamNo\_BulletSpeed}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_BulletSpeed@{EBulletManagerParamNo\_BulletSpeed}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04badc40a92901a7cd60fb29d7329fc72b28}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04badc40a92901a7cd60fb29d7329fc72b28}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Speed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_BulletCountMax@{EBulletManagerParamNo\_BulletCountMax}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_BulletCountMax@{EBulletManagerParamNo\_BulletCountMax}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04bac1d82ec82c7168ae3161375dee3bb77e}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04bac1d82ec82c7168ae3161375dee3bb77e}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Count\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_AnyBulletCountMax@{EBulletManagerParamNo\_AnyBulletCountMax}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_AnyBulletCountMax@{EBulletManagerParamNo\_AnyBulletCountMax}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04badac7024664369ad6dee8b471433964a3}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04badac7024664369ad6dee8b471433964a3}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Any\+Bullet\+Count\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_BulletAngle@{EBulletManagerParamNo\_BulletAngle}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_BulletAngle@{EBulletManagerParamNo\_BulletAngle}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba55b24cf9e30854fb9ce25760d9d5cfc9}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba55b24cf9e30854fb9ce25760d9d5cfc9}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Angle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_ShotAngle@{EBulletManagerParamNo\_ShotAngle}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_ShotAngle@{EBulletManagerParamNo\_ShotAngle}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba251f3ac7c249cc4e38013585bb91dd12}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba251f3ac7c249cc4e38013585bb91dd12}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Shot\+Angle&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_BulletAngleAddAccValue@{EBulletManagerParamNo\_BulletAngleAddAccValue}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_BulletAngleAddAccValue@{EBulletManagerParamNo\_BulletAngleAddAccValue}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba3cb9c28347139b94b4c275bbabe6c312}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba3cb9c28347139b94b4c275bbabe6c312}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Angle\+Add\+Acc\+Value&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_ShotIntervalFrame@{EBulletManagerParamNo\_ShotIntervalFrame}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_ShotIntervalFrame@{EBulletManagerParamNo\_ShotIntervalFrame}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04baf4fd031da6856d8885b6e0fc11e35215}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04baf4fd031da6856d8885b6e0fc11e35215}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Shot\+Interval\+Frame&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_BulletCollDisappear@{EBulletManagerParamNo\_BulletCollDisappear}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_BulletCollDisappear@{EBulletManagerParamNo\_BulletCollDisappear}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba6b27533a2acbe4da1716b5312de5dba0}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba6b27533a2acbe4da1716b5312de5dba0}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Bullet\+Coll\+Disappear&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_Max@{EBulletManagerParamNo\_Max}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_Max@{EBulletManagerParamNo\_Max}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba1c4dbf23c007b9ce263b49232f57d64a}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba1c4dbf23c007b9ce263b49232f57d64a}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_Start@{EBulletManagerParamNo\_Start}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_Start@{EBulletManagerParamNo\_Start}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04bac3e5abf8035e22aa132eb7a0ed701624}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04bac3e5abf8035e22aa132eb7a0ed701624}} 
+EBullet\+Manager\+Param\+No\+\_\+\+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBulletManagerParamNo\_End@{EBulletManagerParamNo\_End}!STG@{STG}}\index{STG@{STG}!EBulletManagerParamNo\_End@{EBulletManagerParamNo\_End}}}\mbox{\Hypertarget{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba6db8b5200afe2fd449ee74291230bcfe}\label{namespace_s_t_g_abd7450425797277817b6c31eac83f04ba6db8b5200afe2fd449ee74291230bcfe}} 
+EBullet\+Manager\+Param\+No\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9}} 
+\index{STG@{STG}!EEnemyParamNo@{EEnemyParamNo}}
+\index{EEnemyParamNo@{EEnemyParamNo}!STG@{STG}}
+\doxysubsubsection{\texorpdfstring{EEnemyParamNo}{EEnemyParamNo}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9}{STG\+::\+EEnemy\+Param\+No}} \+: unsigned char}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_None@{EEnemyParamNo\_None}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_None@{EEnemyParamNo\_None}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a228f2968d014bdde3599ac7248013636}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a228f2968d014bdde3599ac7248013636}} 
+EEnemy\+Param\+No\+\_\+\+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_SpawnTime@{EEnemyParamNo\_SpawnTime}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_SpawnTime@{EEnemyParamNo\_SpawnTime}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a725cabce83c7b3471caaf4f8fbcf046d}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a725cabce83c7b3471caaf4f8fbcf046d}} 
+EEnemy\+Param\+No\+\_\+\+Spawn\+Time&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_PositionX@{EEnemyParamNo\_PositionX}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_PositionX@{EEnemyParamNo\_PositionX}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ad51d46c3ebd957f558f06cb0793e53d7}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ad51d46c3ebd957f558f06cb0793e53d7}} 
+EEnemy\+Param\+No\+\_\+\+PositionX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_Text@{EEnemyParamNo\_Text}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_Text@{EEnemyParamNo\_Text}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9aaa1ebcbf81168aa2a49cea1e6db620f3}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9aaa1ebcbf81168aa2a49cea1e6db620f3}} 
+EEnemy\+Param\+No\+\_\+\+Text&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_TextSize@{EEnemyParamNo\_TextSize}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_TextSize@{EEnemyParamNo\_TextSize}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ac8036f042ca0a1e68463aa24d128a7a6}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ac8036f042ca0a1e68463aa24d128a7a6}} 
+EEnemy\+Param\+No\+\_\+\+Text\+Size&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_LifePoint@{EEnemyParamNo\_LifePoint}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_LifePoint@{EEnemyParamNo\_LifePoint}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ae24a2bdad9f2edf2a9f2b8b9184c7ade}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9ae24a2bdad9f2edf2a9f2b8b9184c7ade}} 
+EEnemy\+Param\+No\+\_\+\+Life\+Point&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_MoveSpeed@{EEnemyParamNo\_MoveSpeed}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_MoveSpeed@{EEnemyParamNo\_MoveSpeed}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9af44389fe9f2c6abe6ad1e506f8649abd}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9af44389fe9f2c6abe6ad1e506f8649abd}} 
+EEnemy\+Param\+No\+\_\+\+Move\+Speed&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_BulletIndex@{EEnemyParamNo\_BulletIndex}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_BulletIndex@{EEnemyParamNo\_BulletIndex}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a45a199da35e7d22a34f6b2268715fa8e}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a45a199da35e7d22a34f6b2268715fa8e}} 
+EEnemy\+Param\+No\+\_\+\+Bullet\+Index&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_Max@{EEnemyParamNo\_Max}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_Max@{EEnemyParamNo\_Max}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a2ee8206cf8bdecd7e5a55d5ef9e54ddd}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a2ee8206cf8bdecd7e5a55d5ef9e54ddd}} 
+EEnemy\+Param\+No\+\_\+\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_Start@{EEnemyParamNo\_Start}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_Start@{EEnemyParamNo\_Start}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a3d0ba5034391f1be3921a453e1948b9b}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a3d0ba5034391f1be3921a453e1948b9b}} 
+EEnemy\+Param\+No\+\_\+\+Start&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EEnemyParamNo\_End@{EEnemyParamNo\_End}!STG@{STG}}\index{STG@{STG}!EEnemyParamNo\_End@{EEnemyParamNo\_End}}}\mbox{\Hypertarget{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a5eb4754b64edda883a6aac26e93089e9}\label{namespace_s_t_g_ad18ac9284ca61e0eceefe18b14ab6fe9a5eb4754b64edda883a6aac26e93089e9}} 
+EEnemy\+Param\+No\+\_\+\+End&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adb}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adb}} 
+\index{STG@{STG}!EEnemyState@{EEnemyState}}
+\index{EEnemyState@{EEnemyState}!STG@{STG}}
+\doxysubsubsection{\texorpdfstring{EEnemyState}{EEnemyState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adb}{STG\+::\+EEnemy\+State}} \+: unsigned char\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{列挙値}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!STG@{STG}}\index{STG@{STG}!None@{None}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6adf97f83acf6453d4a6a4b1070f3754}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6adf97f83acf6453d4a6a4b1070f3754}} 
+None&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Spawn@{Spawn}!STG@{STG}}\index{STG@{STG}!Spawn@{Spawn}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba4fd1dddbd78f7f7cdcd62e926266611e}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba4fd1dddbd78f7f7cdcd62e926266611e}} 
+Spawn&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Move@{Move}!STG@{STG}}\index{STG@{STG}!Move@{Move}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6bc362dbf494c61ea117fe3c71ca48a5}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6bc362dbf494c61ea117fe3c71ca48a5}} 
+Move&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Shot@{Shot}!STG@{STG}}\index{STG@{STG}!Shot@{Shot}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba2b24e50062d401d2aa3ace1a4e42e12f}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba2b24e50062d401d2aa3ace1a4e42e12f}} 
+Shot&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Escape@{Escape}!STG@{STG}}\index{STG@{STG}!Escape@{Escape}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba013ec032d3460d4be4431c6ab1f8f224}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba013ec032d3460d4be4431c6ab1f8f224}} 
+Escape&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Dead@{Dead}!STG@{STG}}\index{STG@{STG}!Dead@{Dead}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba183b62c7f067711f9c5a54913c054617}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba183b62c7f067711f9c5a54913c054617}} 
+Dead&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Max@{Max}!STG@{STG}}\index{STG@{STG}!Max@{Max}}}\mbox{\Hypertarget{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6a061313d22e51e0f25b7cd4dc065233}\label{namespace_s_t_g_a55dc19c0d7ddc2215e7227af70c29adba6a061313d22e51e0f25b7cd4dc065233}} 
+Max&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{変数詳解}
+\mbox{\Hypertarget{namespace_s_t_g_a7938e9c4280e54705218d4ec8c7169b7}\label{namespace_s_t_g_a7938e9c4280e54705218d4ec8c7169b7}} 
+\index{STG@{STG}!SBulletManagerParam@{SBulletManagerParam}}
+\index{SBulletManagerParam@{SBulletManagerParam}!STG@{STG}}
+\doxysubsubsection{\texorpdfstring{SBulletManagerParam}{SBulletManagerParam}}
+{\footnotesize\ttfamily struct st\+Bullet\+Manager\+Param typedef \mbox{\hyperlink{struct_s_t_g_1_1_s_bullet_manager_param}{STG\+::\+SBullet\+Manager\+Param}}}
+

@@ -1,0 +1,9 @@
+<map id="CBackGauge" name="CBackGauge">
+<area shape="rect" id="node1" title=" " alt="" coords="183,337,281,364"/>
+<area shape="rect" id="node2" href="$class_c_character_widget.html" title=" " alt="" coords="168,261,296,288"/>
+<area shape="rect" id="node3" href="$class_c_scene_widget.html" title=" " alt="" coords="5,165,115,191"/>
+<area shape="rect" id="node4" href="$class_c_widget.html" title=" " alt="" coords="24,81,96,108"/>
+<area shape="rect" id="node5" href="$class_c_game_object.html" title=" " alt="" coords="8,5,112,32"/>
+<area shape="rect" id="node6" href="$struct_c_character_widget_1_1st_gauge_state.html" title=" " alt="" coords="139,157,325,199"/>
+<area shape="rect" id="node7" href="$struct_c_character_widget_1_1st_character_param.html" title=" " alt="" coords="349,157,552,199"/>
+</map>

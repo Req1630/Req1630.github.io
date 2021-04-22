@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Camera/RotLookAtCenter/RotLookAtCenter.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_23e5e4b3920a638f0c227c8a779ccb46.html">Camera</a></li><li class="navelem"><a class="el" href="dir_e038e276ad0aab5247b43caf04c764ad.html">RotLookAtCenter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">RotLookAtCenter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_rot_look_at_center_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ROTATION_LOOK_AT_CENTER_CAMERA_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ROTATION_LOOK_AT_CENTER_CAMERA_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;..\Camera.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/********************************************</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*   ターゲットを中心に回転するカメラクラス.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_c_rot_look_at_center.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_rot_look_at_center.html">CRotLookAtCenter</a> : <span class="keyword">public</span> <a class="code" href="class_c_camera.html">CCamera</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">private</span>: <span class="comment">//------ 定数 -------.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> DEFAULT_LENGTH           = 20.0f;    <span class="comment">// カメラ位置と注視位置の距離.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> DEFAULT_HORIZONTAL_MAX   = 360.0f;   <span class="comment">// 横回転の最大サイズ.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> DEFAULT_HORIZONTAL_MIN   = 0.0f;     <span class="comment">// 横回転の最小サイズ.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> DEFAULT_VERTICAL_MAX     = 90.0f;    <span class="comment">// 縦回転の最大サイズ.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> DEFAULT_VERTICAL_MIN     = 0.0f;     <span class="comment">// 縦回転の最小サイズ.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">static</span> constexpr <span class="keywordtype">float</span> DEFAULT_MOVE_SPEED       = 0.01f;    <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// カメラ設定ファイルのパス.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_c_rot_look_at_center.html#a5cf5b312cd8bdff6327f63e51a728170">   26</a></span>&#160;    <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*   <a class="code" href="class_c_rot_look_at_center.html#a5cf5b312cd8bdff6327f63e51a728170">CONFIG_FILE_PATH</a>        = <span class="stringliteral">&quot;Data\\Config\\Camera.bin&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// カメラ設定の状態.</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_c_rot_look_at_center_1_1_s_config_state.html">   28</a></span>&#160;    <span class="keyword">struct </span>stConfigState</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_c_rot_look_at_center_1_1_s_config_state.html#a5303ed5818303d3207732a772c7bcff8">   30</a></span>&#160;        <span class="keywordtype">bool</span>    <a class="code" href="struct_c_rot_look_at_center_1_1_s_config_state.html#a5303ed5818303d3207732a772c7bcff8">IsReverse</a>;  <span class="comment">// 反転するか.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_rot_look_at_center_1_1_s_config_state.html#aaa7356052b2dc9f1381472619cea6d50">   31</a></span>&#160;        <span class="keywordtype">float</span>   <a class="code" href="struct_c_rot_look_at_center_1_1_s_config_state.html#aaa7356052b2dc9f1381472619cea6d50">MoveSpeed</a>;  <span class="comment">// 移動速度.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_rot_look_at_center_1_1_s_config_state.html#a458701b33c4484e97367d1175524f259">   33</a></span>&#160;        <a class="code" href="struct_c_rot_look_at_center_1_1_s_config_state.html#a458701b33c4484e97367d1175524f259">stConfigState</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            : IsReverse ( false )</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            , MoveSpeed ( 0.01f )</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    } <span class="keyword">typedef</span> SConfigState;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:  <span class="comment">//------ 関数 -------.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="class_c_rot_look_at_center.html#a70406dcb8988172448e6dd44a941d762">CRotLookAtCenter</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="class_c_rot_look_at_center.html#a70406dcb8988172448e6dd44a941d762">CRotLookAtCenter</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isLoad );</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_rot_look_at_center.html#a43659afd01e7800d393913e560f10370">~CRotLookAtCenter</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// パラメーターの読み込み.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_c_rot_look_at_center.html#ad1df5fd8840eeb4525181c81786f908d">LoadParameter</a>( <span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; isLoad );</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 更新.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#aed98f0c4ea577e2be3fb99ec9bb327a8">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// オブジェクトをを注視に回転.</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#ad5c8b5dc0cbc6c4567f18a3684202cf2">RotationLookAtObject</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; vLookPos, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; attenRate );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// 横方向の回転.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#af6cc459860b267b9f908bb84d6a34dfb">DegreeHorizontalMove</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; movePower );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// 横方向の右回転.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#a49350e335da2d350c7ee2c893037a2df">DegreeHorizontalRightMove</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// 横方向の左回転.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#ade12a7ebda03a933d2eb62db1ce79a5e">DegreeHorizontalLeftMove</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// 縦方向の回転.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#af88f7317831620466c2487a8b41ad6ed">DegreeVerticalMove</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; movePower );</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// ラジアンの取得関数.</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="class_c_rot_look_at_center.html#a8a897620a2020f34d85303d06398ecbf">   62</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_c_rot_look_at_center.html#a8a897620a2020f34d85303d06398ecbf">GetRadianX</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_vDegree.x; }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// カメラと注視点の長さ設定.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#ac14480d01badbd77d790370ee2f3beb2">SetLength</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; length );</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// 高さの設定.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#a57192336d0b1e208ed406cf3ac7e8853">SetHeight</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; height );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// 横方向の最大、最小の設定.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#a1e3570050baa7c2f8c0d67afe2a03099">SetHorizontalDegree</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; max, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; min );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// 縦方向の最大、最小の設定.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#a2e1fb4f5e6aafa99c3f4796a8263fba4">SetVerticalDegree</a>( <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; max, <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; min );</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// 座標に足し合わせる値の設定.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_c_rot_look_at_center.html#a68a616d1d2d25814b4c7ac2c386fc9e7">SetAddPositionValue</a>( <span class="keyword">const</span> D3DXVECTOR3&amp; addValue );</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>: <span class="comment">//------ 変数 -------.</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    D3DXVECTOR2     m_vDegree;          <span class="comment">// カメラの角度.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">float</span>           m_Length;           <span class="comment">// カメラと注視点の長さ.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">float</span>           m_HorizontalMax;    <span class="comment">// 横方向の最大サイズ.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">float</span>           m_HorizontalMin;    <span class="comment">// 横方向の最小サイズ.</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">float</span>           m_VerticalMax;      <span class="comment">// 縦方向の最大サイズ.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">float</span>           m_VerticalMin;      <span class="comment">// 縦方向の最小サイズ.</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">float</span>           m_RightMoveSpeed;   <span class="comment">// 右の移動速度.</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">float</span>           m_LeftMoveSpeed;    <span class="comment">// 左の移動速度.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    D3DXVECTOR3     m_AddValue;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef ROTATION_LOOK_AT_CENTER_CAMERA_H.</span></div>
+<div class="ttc" id="aclass_c_camera_html"><div class="ttname"><a href="class_c_camera.html">CCamera</a></div><div class="ttdef"><b>Definition:</b> Camera.h:10</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html"><div class="ttname"><a href="class_c_rot_look_at_center.html">CRotLookAtCenter</a></div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:15</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a1e3570050baa7c2f8c0d67afe2a03099"><div class="ttname"><a href="class_c_rot_look_at_center.html#a1e3570050baa7c2f8c0d67afe2a03099">CRotLookAtCenter::SetHorizontalDegree</a></div><div class="ttdeci">void SetHorizontalDegree(const float &amp;max, const float &amp;min)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:135</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a2e1fb4f5e6aafa99c3f4796a8263fba4"><div class="ttname"><a href="class_c_rot_look_at_center.html#a2e1fb4f5e6aafa99c3f4796a8263fba4">CRotLookAtCenter::SetVerticalDegree</a></div><div class="ttdeci">void SetVerticalDegree(const float &amp;max, const float &amp;min)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:144</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a43659afd01e7800d393913e560f10370"><div class="ttname"><a href="class_c_rot_look_at_center.html#a43659afd01e7800d393913e560f10370">CRotLookAtCenter::~CRotLookAtCenter</a></div><div class="ttdeci">virtual ~CRotLookAtCenter()</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:25</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a49350e335da2d350c7ee2c893037a2df"><div class="ttname"><a href="class_c_rot_look_at_center.html#a49350e335da2d350c7ee2c893037a2df">CRotLookAtCenter::DegreeHorizontalRightMove</a></div><div class="ttdeci">void DegreeHorizontalRightMove()</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:89</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a57192336d0b1e208ed406cf3ac7e8853"><div class="ttname"><a href="class_c_rot_look_at_center.html#a57192336d0b1e208ed406cf3ac7e8853">CRotLookAtCenter::SetHeight</a></div><div class="ttdeci">void SetHeight(const float &amp;height)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:127</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a5cf5b312cd8bdff6327f63e51a728170"><div class="ttname"><a href="class_c_rot_look_at_center.html#a5cf5b312cd8bdff6327f63e51a728170">CRotLookAtCenter::CONFIG_FILE_PATH</a></div><div class="ttdeci">static const char * CONFIG_FILE_PATH</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:26</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a68a616d1d2d25814b4c7ac2c386fc9e7"><div class="ttname"><a href="class_c_rot_look_at_center.html#a68a616d1d2d25814b4c7ac2c386fc9e7">CRotLookAtCenter::SetAddPositionValue</a></div><div class="ttdeci">void SetAddPositionValue(const D3DXVECTOR3 &amp;addValue)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:153</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a70406dcb8988172448e6dd44a941d762"><div class="ttname"><a href="class_c_rot_look_at_center.html#a70406dcb8988172448e6dd44a941d762">CRotLookAtCenter::CRotLookAtCenter</a></div><div class="ttdeci">CRotLookAtCenter()</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:5</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_a8a897620a2020f34d85303d06398ecbf"><div class="ttname"><a href="class_c_rot_look_at_center.html#a8a897620a2020f34d85303d06398ecbf">CRotLookAtCenter::GetRadianX</a></div><div class="ttdeci">float GetRadianX() const</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:62</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_ac14480d01badbd77d790370ee2f3beb2"><div class="ttname"><a href="class_c_rot_look_at_center.html#ac14480d01badbd77d790370ee2f3beb2">CRotLookAtCenter::SetLength</a></div><div class="ttdeci">void SetLength(const float &amp;length)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:119</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_ad1df5fd8840eeb4525181c81786f908d"><div class="ttname"><a href="class_c_rot_look_at_center.html#ad1df5fd8840eeb4525181c81786f908d">CRotLookAtCenter::LoadParameter</a></div><div class="ttdeci">bool LoadParameter(const bool &amp;isLoad)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:30</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_ad5c8b5dc0cbc6c4567f18a3684202cf2"><div class="ttname"><a href="class_c_rot_look_at_center.html#ad5c8b5dc0cbc6c4567f18a3684202cf2">CRotLookAtCenter::RotationLookAtObject</a></div><div class="ttdeci">void RotationLookAtObject(const D3DXVECTOR3 &amp;vLookPos, const float &amp;attenRate)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:56</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_ade12a7ebda03a933d2eb62db1ce79a5e"><div class="ttname"><a href="class_c_rot_look_at_center.html#ade12a7ebda03a933d2eb62db1ce79a5e">CRotLookAtCenter::DegreeHorizontalLeftMove</a></div><div class="ttdeci">void DegreeHorizontalLeftMove()</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:97</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_aed98f0c4ea577e2be3fb99ec9bb327a8"><div class="ttname"><a href="class_c_rot_look_at_center.html#aed98f0c4ea577e2be3fb99ec9bb327a8">CRotLookAtCenter::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:49</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_af6cc459860b267b9f908bb84d6a34dfb"><div class="ttname"><a href="class_c_rot_look_at_center.html#af6cc459860b267b9f908bb84d6a34dfb">CRotLookAtCenter::DegreeHorizontalMove</a></div><div class="ttdeci">void DegreeHorizontalMove(const float &amp;movePower)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:75</div></div>
+<div class="ttc" id="aclass_c_rot_look_at_center_html_af88f7317831620466c2487a8b41ad6ed"><div class="ttname"><a href="class_c_rot_look_at_center.html#af88f7317831620466c2487a8b41ad6ed">CRotLookAtCenter::DegreeVerticalMove</a></div><div class="ttdeci">void DegreeVerticalMove(const float &amp;movePower)</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.cpp:105</div></div>
+<div class="ttc" id="astruct_c_rot_look_at_center_1_1_s_config_state_html_a458701b33c4484e97367d1175524f259"><div class="ttname"><a href="struct_c_rot_look_at_center_1_1_s_config_state.html#a458701b33c4484e97367d1175524f259">CRotLookAtCenter::SConfigState::stConfigState</a></div><div class="ttdeci">stConfigState()</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:33</div></div>
+<div class="ttc" id="astruct_c_rot_look_at_center_1_1_s_config_state_html_a5303ed5818303d3207732a772c7bcff8"><div class="ttname"><a href="struct_c_rot_look_at_center_1_1_s_config_state.html#a5303ed5818303d3207732a772c7bcff8">CRotLookAtCenter::SConfigState::IsReverse</a></div><div class="ttdeci">bool IsReverse</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:30</div></div>
+<div class="ttc" id="astruct_c_rot_look_at_center_1_1_s_config_state_html_aaa7356052b2dc9f1381472619cea6d50"><div class="ttname"><a href="struct_c_rot_look_at_center_1_1_s_config_state.html#aaa7356052b2dc9f1381472619cea6d50">CRotLookAtCenter::SConfigState::MoveSpeed</a></div><div class="ttdeci">float MoveSpeed</div><div class="ttdef"><b>Definition:</b> RotLookAtCenter.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

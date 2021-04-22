@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget/CharacterWidget/ChatacterWidget.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_c815d2af617786c0f5a537c28156456c.html">GameWidget</a></li><li class="navelem"><a class="el" href="dir_de75b8b0a54ec62b68d83c00686fcff3.html">CharacterWidget</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ChatacterWidget.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_chatacter_widget_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CHARACTERWIDGET_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CHARACTERWIDGET_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\SceneWidget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="class_c_character.html">CCharacter</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*****************************************</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*   キャラクタUIクラス.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_character_widget.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_character_widget.html">CCharacterWidget</a> : <span class="keyword">public</span> <a class="code" href="class_c_scene_widget.html">CSceneWidget</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">// キャラクタのパラメータ.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_character_param.html">   14</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_character_widget_1_1st_character_param.html">stCharacterParam</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_character_param.html#a6833893435e46d5c743fd2f0c44c5644">   16</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a6833893435e46d5c743fd2f0c44c5644">Life</a>;                     <span class="comment">//ライフ.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_character_param.html#a4fcd965b479a841461fbe97818a42850">   17</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a4fcd965b479a841461fbe97818a42850">LifeMax</a>;                  <span class="comment">//ライフ最大数.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_character_param.html#a847d56345a0ea74f0ce74517b760841d">   18</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a847d56345a0ea74f0ce74517b760841d">SpecialAbility</a>;           <span class="comment">//特殊ゲージ</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_character_param.html#a79216732f104dec4b1eb786adf6d011c">   19</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a79216732f104dec4b1eb786adf6d011c">SpecialAbilityMax</a>;        <span class="comment">//特殊ゲージ最大数.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_character_param.html#a17955c7b41ec6ebc4955242ab3dc9cca">   20</a></span>&#160;        <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a17955c7b41ec6ebc4955242ab3dc9cca">stCharacterParam</a>()</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            : <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a6833893435e46d5c743fd2f0c44c5644">Life</a>              ( 0.0f )</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            , <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a4fcd965b479a841461fbe97818a42850">LifeMax</a>           ( 0.0f )</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            , <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a847d56345a0ea74f0ce74517b760841d">SpecialAbility</a>    ( 0.0f )</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            , <a class="code" href="struct_c_character_widget_1_1st_character_param.html#a79216732f104dec4b1eb786adf6d011c">SpecialAbilityMax</a> ( 0.0f )</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        {}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_c_character_widget.html#a3cabf2edb9f88a0fcfcd7c2e7d9461eb">   27</a></span>&#160;    }<span class="keyword">typedef</span> <a class="code" href="class_c_character_widget.html#a3cabf2edb9f88a0fcfcd7c2e7d9461eb">SCharacterParam</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// ゲージの情報.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_gauge_state.html">   31</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="struct_c_character_widget_1_1st_gauge_state.html">stGaugeState</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_gauge_state.html#a470b6524a0d96c06512e559cfdd8dd44">   33</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a470b6524a0d96c06512e559cfdd8dd44">vPosition</a>;  <span class="comment">//位置.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_gauge_state.html#a312c8d991265a1011ad1dff64fd1b9db">   34</a></span>&#160;        D3DXVECTOR3 <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a312c8d991265a1011ad1dff64fd1b9db">vScale</a>;     <span class="comment">//大きさ.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_gauge_state.html#a87a97dbf4dd40f4c778b6c799bb31f7a">   35</a></span>&#160;        <span class="keywordtype">int</span>                     <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a87a97dbf4dd40f4c778b6c799bb31f7a">AnimNum</a>;    <span class="comment">//アニメーション番号.</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="struct_c_character_widget_1_1st_gauge_state.html#a5fed08d47bd8cf8984714c82b6ce87af">   37</a></span>&#160;        <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a5fed08d47bd8cf8984714c82b6ce87af">stGaugeState</a>()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            : <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a470b6524a0d96c06512e559cfdd8dd44">vPosition</a>(D3DXVECTOR3(0.0f, 0.0f, 0.0f))</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            , <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a312c8d991265a1011ad1dff64fd1b9db">vScale</a>(D3DXVECTOR3(1.0f, 1.0f, 1.0f))</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            , <a class="code" href="struct_c_character_widget_1_1st_gauge_state.html#a87a97dbf4dd40f4c778b6c799bb31f7a">AnimNum</a>(0)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {}</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_c_character_widget.html#a6e58b6e120970e490b6ebb02fed1c8c1">   42</a></span>&#160;    }<span class="keyword">typedef</span> <a class="code" href="class_c_character_widget.html#a6e58b6e120970e490b6ebb02fed1c8c1">SGaugeState</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_c_character_widget.html#ae1441ce095246612948770f52fac37c7">CCharacterWidget</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_character_widget.html#a989fa0c18b4039d8f8c11f49bc3bba3d">~CCharacterWidget</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// パラメータ設定関数.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_c_character_widget.html#a57bee41df75e09ea32f0f95e41c900bc">   49</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_character_widget.html#a57bee41df75e09ea32f0f95e41c900bc">SetParameter</a>( <a class="code" href="class_c_character_widget.html#a3cabf2edb9f88a0fcfcd7c2e7d9461eb">SCharacterParam</a>&amp; pChara ) {<a class="code" href="class_c_character_widget.html#a9eaf7cf0f5d3951fa149e327b39706df">m_Parameter</a> = pChara;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_c_character_widget.html#a9eaf7cf0f5d3951fa149e327b39706df">   52</a></span>&#160;    <a class="code" href="class_c_character_widget.html#a3cabf2edb9f88a0fcfcd7c2e7d9461eb">SCharacterParam</a> <a class="code" href="class_c_character_widget.html#a9eaf7cf0f5d3951fa149e327b39706df">m_Parameter</a>;                            <span class="comment">//パラメータ.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef CHARACTERWIDGET_H.</span></div>
+<div class="ttc" id="aclass_c_character_html"><div class="ttname"><a href="class_c_character.html">CCharacter</a></div><div class="ttdef"><b>Definition:</b> Character.h:16</div></div>
+<div class="ttc" id="aclass_c_character_widget_html"><div class="ttname"><a href="class_c_character_widget.html">CCharacterWidget</a></div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:11</div></div>
+<div class="ttc" id="aclass_c_character_widget_html_a3cabf2edb9f88a0fcfcd7c2e7d9461eb"><div class="ttname"><a href="class_c_character_widget.html#a3cabf2edb9f88a0fcfcd7c2e7d9461eb">CCharacterWidget::SCharacterParam</a></div><div class="ttdeci">struct CCharacterWidget::stCharacterParam SCharacterParam</div></div>
+<div class="ttc" id="aclass_c_character_widget_html_a57bee41df75e09ea32f0f95e41c900bc"><div class="ttname"><a href="class_c_character_widget.html#a57bee41df75e09ea32f0f95e41c900bc">CCharacterWidget::SetParameter</a></div><div class="ttdeci">virtual void SetParameter(SCharacterParam &amp;pChara)</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:49</div></div>
+<div class="ttc" id="aclass_c_character_widget_html_a6e58b6e120970e490b6ebb02fed1c8c1"><div class="ttname"><a href="class_c_character_widget.html#a6e58b6e120970e490b6ebb02fed1c8c1">CCharacterWidget::SGaugeState</a></div><div class="ttdeci">struct CCharacterWidget::stGaugeState SGaugeState</div></div>
+<div class="ttc" id="aclass_c_character_widget_html_a989fa0c18b4039d8f8c11f49bc3bba3d"><div class="ttname"><a href="class_c_character_widget.html#a989fa0c18b4039d8f8c11f49bc3bba3d">CCharacterWidget::~CCharacterWidget</a></div><div class="ttdeci">virtual ~CCharacterWidget()</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.cpp:11</div></div>
+<div class="ttc" id="aclass_c_character_widget_html_a9eaf7cf0f5d3951fa149e327b39706df"><div class="ttname"><a href="class_c_character_widget.html#a9eaf7cf0f5d3951fa149e327b39706df">CCharacterWidget::m_Parameter</a></div><div class="ttdeci">SCharacterParam m_Parameter</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:52</div></div>
+<div class="ttc" id="aclass_c_character_widget_html_ae1441ce095246612948770f52fac37c7"><div class="ttname"><a href="class_c_character_widget.html#ae1441ce095246612948770f52fac37c7">CCharacterWidget::CCharacterWidget</a></div><div class="ttdeci">CCharacterWidget()</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.cpp:6</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html"><div class="ttname"><a href="class_c_scene_widget.html">CSceneWidget</a></div><div class="ttdef"><b>Definition:</b> SceneWidget.h:13</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_character_param_html"><div class="ttname"><a href="struct_c_character_widget_1_1st_character_param.html">CCharacterWidget::stCharacterParam</a></div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:15</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_character_param_html_a17955c7b41ec6ebc4955242ab3dc9cca"><div class="ttname"><a href="struct_c_character_widget_1_1st_character_param.html#a17955c7b41ec6ebc4955242ab3dc9cca">CCharacterWidget::stCharacterParam::stCharacterParam</a></div><div class="ttdeci">stCharacterParam()</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:20</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_character_param_html_a4fcd965b479a841461fbe97818a42850"><div class="ttname"><a href="struct_c_character_widget_1_1st_character_param.html#a4fcd965b479a841461fbe97818a42850">CCharacterWidget::stCharacterParam::LifeMax</a></div><div class="ttdeci">float LifeMax</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:17</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_character_param_html_a6833893435e46d5c743fd2f0c44c5644"><div class="ttname"><a href="struct_c_character_widget_1_1st_character_param.html#a6833893435e46d5c743fd2f0c44c5644">CCharacterWidget::stCharacterParam::Life</a></div><div class="ttdeci">float Life</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:16</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_character_param_html_a79216732f104dec4b1eb786adf6d011c"><div class="ttname"><a href="struct_c_character_widget_1_1st_character_param.html#a79216732f104dec4b1eb786adf6d011c">CCharacterWidget::stCharacterParam::SpecialAbilityMax</a></div><div class="ttdeci">float SpecialAbilityMax</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:19</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_character_param_html_a847d56345a0ea74f0ce74517b760841d"><div class="ttname"><a href="struct_c_character_widget_1_1st_character_param.html#a847d56345a0ea74f0ce74517b760841d">CCharacterWidget::stCharacterParam::SpecialAbility</a></div><div class="ttdeci">float SpecialAbility</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:18</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_gauge_state_html"><div class="ttname"><a href="struct_c_character_widget_1_1st_gauge_state.html">CCharacterWidget::stGaugeState</a></div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:32</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_gauge_state_html_a312c8d991265a1011ad1dff64fd1b9db"><div class="ttname"><a href="struct_c_character_widget_1_1st_gauge_state.html#a312c8d991265a1011ad1dff64fd1b9db">CCharacterWidget::stGaugeState::vScale</a></div><div class="ttdeci">D3DXVECTOR3 vScale</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:34</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_gauge_state_html_a470b6524a0d96c06512e559cfdd8dd44"><div class="ttname"><a href="struct_c_character_widget_1_1st_gauge_state.html#a470b6524a0d96c06512e559cfdd8dd44">CCharacterWidget::stGaugeState::vPosition</a></div><div class="ttdeci">D3DXVECTOR3 vPosition</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:33</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_gauge_state_html_a5fed08d47bd8cf8984714c82b6ce87af"><div class="ttname"><a href="struct_c_character_widget_1_1st_gauge_state.html#a5fed08d47bd8cf8984714c82b6ce87af">CCharacterWidget::stGaugeState::stGaugeState</a></div><div class="ttdeci">stGaugeState()</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:37</div></div>
+<div class="ttc" id="astruct_c_character_widget_1_1st_gauge_state_html_a87a97dbf4dd40f4c778b6c799bb31f7a"><div class="ttname"><a href="struct_c_character_widget_1_1st_gauge_state.html#a87a97dbf4dd40f4c778b6c799bb31f7a">CCharacterWidget::stGaugeState::AnimNum</a></div><div class="ttdeci">int AnimNum</div><div class="ttdef"><b>Definition:</b> ChatacterWidget.h:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

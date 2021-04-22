@@ -1,0 +1,105 @@
+\hypertarget{class_c_simple_shader}{}\doxysection{CSimple\+Shader クラス}
+\label{class_c_simple_shader}\index{CSimpleShader@{CSimpleShader}}
+
+
+{\ttfamily \#include $<$Simple\+Shader.\+h$>$}
+
+
+
+CSimple\+Shader の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_simple_shader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CSimple\+Shader 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{class_c_simple_shader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_simple_shader_1_1_c___b_u_f_f_e_r}{C\+\_\+\+BUFFER}}
+\item 
+struct \mbox{\hyperlink{struct_c_simple_shader_1_1_v_e_r_t_e_x}{VERTEX}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_simple_shader_af015de73fe6d37166c6d59f8c975586b}{CSimple\+Shader}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_simple_shader_af25ccd1a9d46d1f7040ffbaf1d7a9c62}{$\sim$\+CSimple\+Shader}} ()
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_simple_shader_ac760261329037cf21306f1ec9971f004}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11) override
+\item 
+virtual HRESULT \mbox{\hyperlink{class_c_simple_shader_ad6bb31d4b8c595e820d06b20a6c95ef6}{Release}} () override
+\item 
+void \mbox{\hyperlink{class_c_simple_shader_a72d88187a1690d361db2dd20b3f69b00}{Set\+Constant\+Buffer\+Data}} (const D3\+DXMATRIX \&m\+WVP, const D3\+DXVECTOR4 \&color)
+\item 
+void \mbox{\hyperlink{class_c_simple_shader_a2501c6d260a4f34f8b9f788ddb3d19e2}{Shader\+Set}} (ID3\+D11\+Buffer $\ast$p\+Vertex\+Buffer, ID3\+D11\+Buffer $\ast$p\+Index\+Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_simple_shader_af015de73fe6d37166c6d59f8c975586b}\label{class_c_simple_shader_af015de73fe6d37166c6d59f8c975586b}} 
+\index{CSimpleShader@{CSimpleShader}!CSimpleShader@{CSimpleShader}}
+\index{CSimpleShader@{CSimpleShader}!CSimpleShader@{CSimpleShader}}
+\doxysubsubsection{\texorpdfstring{CSimpleShader()}{CSimpleShader()}}
+{\footnotesize\ttfamily CSimple\+Shader\+::\+CSimple\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_simple_shader_af25ccd1a9d46d1f7040ffbaf1d7a9c62}\label{class_c_simple_shader_af25ccd1a9d46d1f7040ffbaf1d7a9c62}} 
+\index{CSimpleShader@{CSimpleShader}!````~CSimpleShader@{$\sim$CSimpleShader}}
+\index{````~CSimpleShader@{$\sim$CSimpleShader}!CSimpleShader@{CSimpleShader}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSimpleShader()}{~CSimpleShader()}}
+{\footnotesize\ttfamily CSimple\+Shader\+::$\sim$\+CSimple\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_simple_shader_ac760261329037cf21306f1ec9971f004}\label{class_c_simple_shader_ac760261329037cf21306f1ec9971f004}} 
+\index{CSimpleShader@{CSimpleShader}!Init@{Init}}
+\index{Init@{Init}!CSimpleShader@{CSimpleShader}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CSimple\+Shader\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3826d26d0e9791ca3c08d664d203a2d4}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_simple_shader_ad6bb31d4b8c595e820d06b20a6c95ef6}\label{class_c_simple_shader_ad6bb31d4b8c595e820d06b20a6c95ef6}} 
+\index{CSimpleShader@{CSimpleShader}!Release@{Release}}
+\index{Release@{Release}!CSimpleShader@{CSimpleShader}}
+\doxysubsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily HRESULT CSimple\+Shader\+::\+Release (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_shader_base_a3b2a11871858fd1666906ad7a45ec602}{CShader\+Base}}を実装しています。
+
+\mbox{\Hypertarget{class_c_simple_shader_a72d88187a1690d361db2dd20b3f69b00}\label{class_c_simple_shader_a72d88187a1690d361db2dd20b3f69b00}} 
+\index{CSimpleShader@{CSimpleShader}!SetConstantBufferData@{SetConstantBufferData}}
+\index{SetConstantBufferData@{SetConstantBufferData}!CSimpleShader@{CSimpleShader}}
+\doxysubsubsection{\texorpdfstring{SetConstantBufferData()}{SetConstantBufferData()}}
+{\footnotesize\ttfamily void CSimple\+Shader\+::\+Set\+Constant\+Buffer\+Data (\begin{DoxyParamCaption}\item[{const D3\+DXMATRIX \&}]{m\+WVP,  }\item[{const D3\+DXVECTOR4 \&}]{color }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_simple_shader_a2501c6d260a4f34f8b9f788ddb3d19e2}\label{class_c_simple_shader_a2501c6d260a4f34f8b9f788ddb3d19e2}} 
+\index{CSimpleShader@{CSimpleShader}!ShaderSet@{ShaderSet}}
+\index{ShaderSet@{ShaderSet}!CSimpleShader@{CSimpleShader}}
+\doxysubsubsection{\texorpdfstring{ShaderSet()}{ShaderSet()}}
+{\footnotesize\ttfamily void CSimple\+Shader\+::\+Shader\+Set (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$}]{p\+Vertex\+Buffer,  }\item[{ID3\+D11\+Buffer $\ast$}]{p\+Index\+Buffer }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Simple\+Shader/\mbox{\hyperlink{_simple_shader_8h}{Simple\+Shader.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Simple\+Shader/\mbox{\hyperlink{_simple_shader_8cpp}{Simple\+Shader.\+cpp}}\end{DoxyCompactItemize}

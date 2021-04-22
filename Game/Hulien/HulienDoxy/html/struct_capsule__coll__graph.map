@@ -1,0 +1,7 @@
+<map id="Capsule" name="Capsule">
+<area shape="rect" id="node1" title=" " alt="" coords="11,336,80,363"/>
+<area shape="rect" id="node2" href="$struct_segment.html" title=" " alt="" coords="8,247,83,273"/>
+<area shape="rect" id="node3" href="$struct_line.html" title=" " alt="" coords="22,171,69,197"/>
+<area shape="rect" id="node4" href="$struct_vec3.html" title=" " alt="" coords="55,81,107,108"/>
+<area shape="rect" id="node5" href="$struct_float3.html" title=" " alt="" coords="5,5,64,32"/>
+</map>

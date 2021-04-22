@@ -1,0 +1,5 @@
+<map id="CPlayer::SpriteRender" name="CPlayer::SpriteRender">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$class_c_edit_renderer.html#ae9305f6340b6f68727a01e00676c7116" title=" " alt="" coords="204,5,416,32"/>
+<area shape="rect" id="node3" href="$class_c_edit_renderer.html#ac9aa297e1336bd77b8ae6149dc3ecd49" title=" " alt="" coords="464,5,648,32"/>
+</map>

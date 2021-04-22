@@ -1,0 +1,8 @@
+<map id="CItemBase::Render" name="CItemBase::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="241,115,376,141"/>
+<area shape="rect" id="node2" href="$class_c_edit_item.html#aac4d076b3a7078eeaacf86fcf370afac" title=" " alt="" coords="35,5,163,32"/>
+<area shape="rect" id="node3" href="$class_c_attack_up_item.html#a4f3dee657e19ea7820607be75c47efdf" title=" " alt="" coords="20,56,179,83"/>
+<area shape="rect" id="node4" href="$class_c_life_recovery_item.html#a008cbb2f714072e2f3a306039c8e5310" title=" " alt="" coords="31,107,168,149"/>
+<area shape="rect" id="node5" href="$class_c_move_speed_up_item.html#ab18d614bdc44bd817c32764da181f42f" title=" " alt="" coords="5,173,193,200"/>
+<area shape="rect" id="node6" href="$class_c_s_p_effect_time_item.html#ac0328a500427c4a7b463dbbfebe12048" title=" " alt="" coords="28,225,171,266"/>
+</map>

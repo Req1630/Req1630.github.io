@@ -1,0 +1,93 @@
+\hypertarget{_win_main_8cpp}{}\doxysection{C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Main/\+Win\+Main.cpp ファイル}
+\label{_win_main_8cpp}\index{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Main/WinMain.cpp@{C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/Main/WinMain.cpp}}
+{\ttfamily \#include \char`\"{}Main.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$Windows.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Utility\textbackslash{}\+Im\+Gui\+Manager\textbackslash{}\+Im\+Gui\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Utility\textbackslash{}\+My\+Log\textbackslash{}\+My\+Log.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+XAudio2\textbackslash{}\+Sound\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Common\textbackslash{}\+D3\+DX\textbackslash{}\+D3\+DX11.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Common\textbackslash{}\+Scene\+Tex\+Renderer\textbackslash{}\+Scene\+Tex\+Renderer.\+h\char`\"{}}\newline
+Win\+Main.\+cpp の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_win_main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+LRESULT \mbox{\hyperlink{_win_main_8cpp_a2bcb68d2099a72357912bbdccd30163d}{Im\+Gui\+\_\+\+Impl\+Win32\+\_\+\+Wnd\+Proc\+Handler}} (HWND, UINT, WPARAM, LPARAM)
+\item 
+int WINAPI \mbox{\hyperlink{_win_main_8cpp_a493debae12166d5499f3c793c9dfdf29}{Win\+Main}} (HINSTANCE h\+Instance, HINSTANCE h\+Instance\+Prev, LPSTR p\+Cmd\+Line, int n\+Cmd\+Show)
+\item 
+LRESULT CALLBACK \mbox{\hyperlink{_win_main_8cpp_ae749e989b362e19783c7af4a2bf46c95}{Wnd\+Proc}} (HWND h\+Wnd, UINT u\+Msg, WPARAM w\+Param, LPARAM l\+Param)
+\end{DoxyCompactItemize}
+\doxysubsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_c_main}{CMain}} $>$ \mbox{\hyperlink{_win_main_8cpp_a7607897356ec0f26cc0ee6f4b3dab21e}{p\+Main}} = std\+::make\+\_\+unique$<$\mbox{\hyperlink{class_c_main}{CMain}}$>$()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{_win_main_8cpp_a2bcb68d2099a72357912bbdccd30163d}\label{_win_main_8cpp_a2bcb68d2099a72357912bbdccd30163d}} 
+\index{WinMain.cpp@{WinMain.cpp}!ImGui\_ImplWin32\_WndProcHandler@{ImGui\_ImplWin32\_WndProcHandler}}
+\index{ImGui\_ImplWin32\_WndProcHandler@{ImGui\_ImplWin32\_WndProcHandler}!WinMain.cpp@{WinMain.cpp}}
+\doxysubsubsection{\texorpdfstring{ImGui\_ImplWin32\_WndProcHandler()}{ImGui\_ImplWin32\_WndProcHandler()}}
+{\footnotesize\ttfamily LRESULT Im\+Gui\+\_\+\+Impl\+Win32\+\_\+\+Wnd\+Proc\+Handler (\begin{DoxyParamCaption}\item[{HWND}]{,  }\item[{UINT}]{,  }\item[{WPARAM}]{,  }\item[{LPARAM}]{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_win_main_8cpp_a2bcb68d2099a72357912bbdccd30163d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_win_main_8cpp_a493debae12166d5499f3c793c9dfdf29}\label{_win_main_8cpp_a493debae12166d5499f3c793c9dfdf29}} 
+\index{WinMain.cpp@{WinMain.cpp}!WinMain@{WinMain}}
+\index{WinMain@{WinMain}!WinMain.cpp@{WinMain.cpp}}
+\doxysubsubsection{\texorpdfstring{WinMain()}{WinMain()}}
+{\footnotesize\ttfamily int WINAPI Win\+Main (\begin{DoxyParamCaption}\item[{HINSTANCE}]{h\+Instance,  }\item[{HINSTANCE}]{h\+Instance\+Prev,  }\item[{LPSTR}]{p\+Cmd\+Line,  }\item[{int}]{n\+Cmd\+Show }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_win_main_8cpp_a493debae12166d5499f3c793c9dfdf29_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_win_main_8cpp_ae749e989b362e19783c7af4a2bf46c95}\label{_win_main_8cpp_ae749e989b362e19783c7af4a2bf46c95}} 
+\index{WinMain.cpp@{WinMain.cpp}!WndProc@{WndProc}}
+\index{WndProc@{WndProc}!WinMain.cpp@{WinMain.cpp}}
+\doxysubsubsection{\texorpdfstring{WndProc()}{WndProc()}}
+{\footnotesize\ttfamily LRESULT CALLBACK Wnd\+Proc (\begin{DoxyParamCaption}\item[{HWND}]{h\+Wnd,  }\item[{UINT}]{u\+Msg,  }\item[{WPARAM}]{w\+Param,  }\item[{LPARAM}]{l\+Param }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_win_main_8cpp_ae749e989b362e19783c7af4a2bf46c95_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{_win_main_8cpp_ae749e989b362e19783c7af4a2bf46c95_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{変数詳解}
+\mbox{\Hypertarget{_win_main_8cpp_a7607897356ec0f26cc0ee6f4b3dab21e}\label{_win_main_8cpp_a7607897356ec0f26cc0ee6f4b3dab21e}} 
+\index{WinMain.cpp@{WinMain.cpp}!pMain@{pMain}}
+\index{pMain@{pMain}!WinMain.cpp@{WinMain.cpp}}
+\doxysubsubsection{\texorpdfstring{pMain}{pMain}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_c_main}{CMain}}$>$ p\+Main = std\+::make\+\_\+unique$<$\mbox{\hyperlink{class_c_main}{CMain}}$>$()}
+

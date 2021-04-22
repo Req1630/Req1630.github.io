@@ -1,0 +1,16 @@
+<map id="CDX9StaticMesh::Render" name="CDX9StaticMesh::Render">
+<area shape="rect" id="node1" title=" " alt="" coords="5,259,175,285"/>
+<area shape="rect" id="node2" href="$class_c_light_manager.html#aaa0341a952eabd4d4e3a165d4a2db38d" title=" " alt="" coords="237,5,427,32"/>
+<area shape="rect" id="node3" href="$class_c_fog.html#aa2d70300fd562c1d1278ae6e36cf93c1" title=" " alt="" coords="280,56,384,83"/>
+<area shape="rect" id="node5" href="$class_c_light_manager.html#a18da9fd205450dc914d540fca6c39338" title=" " alt="" coords="239,107,425,133"/>
+<area shape="rect" id="node6" href="$class_c_camera_manager.html#aee6441b686ce18610a4748aeb37c6c8a" title=" " alt="" coords="231,157,433,184"/>
+<area shape="rect" id="node7" href="$class_c_light_manager.html#acf81de181a7ec0d43d61de411da38aa4" title=" " alt="" coords="239,208,425,235"/>
+<area shape="rect" id="node8" href="$class_c_camera_manager.html#ac60999cfe7c66600c721367dc3d87c45" title=" " alt="" coords="225,259,439,285"/>
+<area shape="rect" id="node9" href="$class_c_light_manager.html#a02ecbbb3d9a2e1ce69ff6a3648b05419" title=" " alt="" coords="239,310,425,351"/>
+<area shape="rect" id="node10" href="$class_c_scene_tex_renderer.html#a5d203ef44927d21e8b098792af28e08b" title=" " alt="" coords="257,375,407,417"/>
+<area shape="rect" id="node12" href="$class_c_light_manager.html#ab2d42739ce92a497cc0594ddc5fa139d" title=" " alt="" coords="231,441,433,468"/>
+<area shape="rect" id="node13" href="$class_c_light_manager.html#abf9d062bde8191826200e559fa3e17c4" title=" " alt="" coords="238,492,426,519"/>
+<area shape="rect" id="node14" href="$class_c_camera_manager.html#a52bbaea5e90b571603d650f46db105de" title=" " alt="" coords="223,543,441,569"/>
+<area shape="rect" id="node4" href="$class_c_fog.html#aa2131ba35e2efaf906fad79279fc1879" title=" " alt="" coords="499,56,629,83"/>
+<area shape="rect" id="node11" href="$class_c_scene_tex_renderer.html#aefd3a4ccdd562d7c5864c0bd3efd84f5" title=" " alt="" coords="489,375,639,417"/>
+</map>

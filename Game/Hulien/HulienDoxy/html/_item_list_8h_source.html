@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Actor/Item/ItemList.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_40fab4784450d0fd56d432a856d9854f.html">Actor</a></li><li class="navelem"><a class="el" href="dir_1b47204da93e096d6b7fa248830ac630.html">Item</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ItemList.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_item_list_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef ITEM_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define ITEM_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;..\..\..\Global.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// アイテムリスト.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782">   13</a></span>&#160;<span class="keyword">enum class</span> enItemList : unsigned char</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">None</a>,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a961235f47b7ab9468c98c042ac63bf66">LifeRecovery</a>,   <span class="comment">// 体力回復.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782ada7405772c96935815588c7d2d85d717">SPEffectTime</a>,   <span class="comment">// 特殊能力回復速度UP.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a5fa7f29151be9cf361c259e4eda6f349">AttackUp</a>,       <span class="comment">// 攻撃力UP.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a2cefb9fa6a1e88cd1a776b09dbd3b6b5">MoveSpeedUp</a>,    <span class="comment">// 移動速度UP.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">Max</a>,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_alien_list_8h.html#aab265f9ff919d5c2c8845999f0452d37a7fb55ed0b7a30342ba6da306428cae04">First</a>   = <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a961235f47b7ab9468c98c042ac63bf66">LifeRecovery</a>, <span class="comment">// 開始位置.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="_alien_list_8h.html#aab265f9ff919d5c2c8845999f0452d37ad55b30607c2a9a2616347d6edb789f6b">Last</a>    = <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a2cefb9fa6a1e88cd1a776b09dbd3b6b5">MoveSpeedUp</a>,  <span class="comment">// 終了位置.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="keyword">typedef</span> <a class="code" href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782">EItemList</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="_item_list_8h.html#ab54d8bd1b19edbea410c5d1237bc31cf">   29</a></span>&#160;<span class="keyword">typedef</span> std::unordered_map&lt;EItemList, D3DXVECTOR3&gt;  <a class="code" href="_item_list_8h.html#ab54d8bd1b19edbea410c5d1237bc31cf">DropItemList</a>;   <span class="comment">// 落とすアイテムのリスト.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// #ifndef ITEM_H.</span></div>
+<div class="ttc" id="a_alien_list_8h_html_aab265f9ff919d5c2c8845999f0452d37a7fb55ed0b7a30342ba6da306428cae04"><div class="ttname"><a href="_alien_list_8h.html#aab265f9ff919d5c2c8845999f0452d37a7fb55ed0b7a30342ba6da306428cae04">EAlienList::First</a></div><div class="ttdeci">@ First</div></div>
+<div class="ttc" id="a_alien_list_8h_html_aab265f9ff919d5c2c8845999f0452d37ad55b30607c2a9a2616347d6edb789f6b"><div class="ttname"><a href="_alien_list_8h.html#aab265f9ff919d5c2c8845999f0452d37ad55b30607c2a9a2616347d6edb789f6b">EAlienList::Last</a></div><div class="ttdeci">@ Last</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6a061313d22e51e0f25b7cd4dc065233">ERS_STATE::Max</a></div><div class="ttdeci">@ Max</div></div>
+<div class="ttc" id="a_d3_d_x11_8h_html_a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="_d3_d_x11_8h.html#a8af445d37ec08e03396d04112dcd4a47a6adf97f83acf6453d4a6a4b1070f3754">ERS_STATE::None</a></div><div class="ttdeci">@ None</div></div>
+<div class="ttc" id="a_item_list_8h_html_ab54d8bd1b19edbea410c5d1237bc31cf"><div class="ttname"><a href="_item_list_8h.html#ab54d8bd1b19edbea410c5d1237bc31cf">DropItemList</a></div><div class="ttdeci">std::unordered_map&lt; EItemList, D3DXVECTOR3 &gt; DropItemList</div><div class="ttdef"><b>Definition:</b> ItemList.h:29</div></div>
+<div class="ttc" id="a_item_list_8h_html_ac7f7634f7374d0bc60cd4eae8851c782"><div class="ttname"><a href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782">EItemList</a></div><div class="ttdeci">EItemList</div><div class="ttdef"><b>Definition:</b> ItemList.h:14</div></div>
+<div class="ttc" id="a_item_list_8h_html_ac7f7634f7374d0bc60cd4eae8851c782a2cefb9fa6a1e88cd1a776b09dbd3b6b5"><div class="ttname"><a href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a2cefb9fa6a1e88cd1a776b09dbd3b6b5">EItemList::MoveSpeedUp</a></div><div class="ttdeci">@ MoveSpeedUp</div></div>
+<div class="ttc" id="a_item_list_8h_html_ac7f7634f7374d0bc60cd4eae8851c782a5fa7f29151be9cf361c259e4eda6f349"><div class="ttname"><a href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a5fa7f29151be9cf361c259e4eda6f349">EItemList::AttackUp</a></div><div class="ttdeci">@ AttackUp</div></div>
+<div class="ttc" id="a_item_list_8h_html_ac7f7634f7374d0bc60cd4eae8851c782a961235f47b7ab9468c98c042ac63bf66"><div class="ttname"><a href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782a961235f47b7ab9468c98c042ac63bf66">EItemList::LifeRecovery</a></div><div class="ttdeci">@ LifeRecovery</div></div>
+<div class="ttc" id="a_item_list_8h_html_ac7f7634f7374d0bc60cd4eae8851c782ada7405772c96935815588c7d2d85d717"><div class="ttname"><a href="_item_list_8h.html#ac7f7634f7374d0bc60cd4eae8851c782ada7405772c96935815588c7d2d85d717">EItemList::SPEffectTime</a></div><div class="ttdeci">@ SPEffectTime</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

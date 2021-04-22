@@ -1,0 +1,124 @@
+\hypertarget{class_c_file_manager}{}\doxysection{CFile\+Manager クラス}
+\label{class_c_file_manager}\index{CFileManager@{CFileManager}}
+
+
+{\ttfamily \#include $<$File\+Manager.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_file_manager_a1d3ba17b61ddcf573f89fcf280a0fa19}{CFile\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_c_file_manager_a990385c46ffb068437733e964f2eb655}{$\sim$\+CFile\+Manager}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class out\+DATA $>$ }\\static bool \mbox{\hyperlink{class_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4}{Binary\+Writing}} (const char $\ast$file\+Name, const out\+DATA \&out\+Data)
+\item 
+{\footnotesize template$<$class in\+DATA $>$ }\\static bool \mbox{\hyperlink{class_c_file_manager_a5791a16903642e5e5ef658a0f171bc52}{Binary\+Reading}} (const char $\ast$file\+Name, in\+DATA \&in\+Data, const int \&seek\+Point=0)
+\item 
+{\footnotesize template$<$class out\+DATA $>$ }\\static bool \mbox{\hyperlink{class_c_file_manager_a5484862ae11ba926c48201c74958a0bf}{Binary\+Vector\+Writing}} (const char $\ast$file\+Name, const std\+::vector$<$ out\+DATA $>$ \&out\+Data\+List)
+\item 
+{\footnotesize template$<$class in\+DATA $>$ }\\static bool \mbox{\hyperlink{class_c_file_manager_a175974f33c224743bc53b096aeaafa21}{Binary\+Vector\+Reading}} (const char $\ast$file\+Name, std\+::vector$<$ in\+DATA $>$ \&in\+Data\+List)
+\item 
+static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d}{Text\+Loading}} (const std\+::string \&file\+Name, char delimiter=\textquotesingle{},\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_file_manager_a1d3ba17b61ddcf573f89fcf280a0fa19}\label{class_c_file_manager_a1d3ba17b61ddcf573f89fcf280a0fa19}} 
+\index{CFileManager@{CFileManager}!CFileManager@{CFileManager}}
+\index{CFileManager@{CFileManager}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{CFileManager()}{CFileManager()}}
+{\footnotesize\ttfamily CFile\+Manager\+::\+CFile\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_file_manager_a990385c46ffb068437733e964f2eb655}\label{class_c_file_manager_a990385c46ffb068437733e964f2eb655}} 
+\index{CFileManager@{CFileManager}!````~CFileManager@{$\sim$CFileManager}}
+\index{````~CFileManager@{$\sim$CFileManager}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CFileManager()}{~CFileManager()}}
+{\footnotesize\ttfamily CFile\+Manager\+::$\sim$\+CFile\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_file_manager_a5791a16903642e5e5ef658a0f171bc52}\label{class_c_file_manager_a5791a16903642e5e5ef658a0f171bc52}} 
+\index{CFileManager@{CFileManager}!BinaryReading@{BinaryReading}}
+\index{BinaryReading@{BinaryReading}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{BinaryReading()}{BinaryReading()}}
+{\footnotesize\ttfamily template$<$class in\+DATA $>$ \\
+static bool CFile\+Manager\+::\+Binary\+Reading (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{in\+DATA \&}]{in\+Data,  }\item[{const int \&}]{seek\+Point = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_file_manager_a5791a16903642e5e5ef658a0f171bc52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_file_manager_a175974f33c224743bc53b096aeaafa21}\label{class_c_file_manager_a175974f33c224743bc53b096aeaafa21}} 
+\index{CFileManager@{CFileManager}!BinaryVectorReading@{BinaryVectorReading}}
+\index{BinaryVectorReading@{BinaryVectorReading}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{BinaryVectorReading()}{BinaryVectorReading()}}
+{\footnotesize\ttfamily template$<$class in\+DATA $>$ \\
+static bool CFile\+Manager\+::\+Binary\+Vector\+Reading (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{std\+::vector$<$ in\+DATA $>$ \&}]{in\+Data\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_file_manager_a175974f33c224743bc53b096aeaafa21_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_file_manager_a5484862ae11ba926c48201c74958a0bf}\label{class_c_file_manager_a5484862ae11ba926c48201c74958a0bf}} 
+\index{CFileManager@{CFileManager}!BinaryVectorWriting@{BinaryVectorWriting}}
+\index{BinaryVectorWriting@{BinaryVectorWriting}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{BinaryVectorWriting()}{BinaryVectorWriting()}}
+{\footnotesize\ttfamily template$<$class out\+DATA $>$ \\
+static bool CFile\+Manager\+::\+Binary\+Vector\+Writing (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{const std\+::vector$<$ out\+DATA $>$ \&}]{out\+Data\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4}\label{class_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4}} 
+\index{CFileManager@{CFileManager}!BinaryWriting@{BinaryWriting}}
+\index{BinaryWriting@{BinaryWriting}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{BinaryWriting()}{BinaryWriting()}}
+{\footnotesize\ttfamily template$<$class out\+DATA $>$ \\
+static bool CFile\+Manager\+::\+Binary\+Writing (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Name,  }\item[{const out\+DATA \&}]{out\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_file_manager_a0b3629561e959f15a179a49a5b91d7a4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d}\label{class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d}} 
+\index{CFileManager@{CFileManager}!TextLoading@{TextLoading}}
+\index{TextLoading@{TextLoading}!CFileManager@{CFileManager}}
+\doxysubsubsection{\texorpdfstring{TextLoading()}{TextLoading()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ CFile\+Manager\+::\+Text\+Loading (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{char}]{delimiter = {\ttfamily \textquotesingle{},\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_file_manager_a06fbcdb239901f29a856bfd6e299714d_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+File\+Manager/\mbox{\hyperlink{_file_manager_8h}{File\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+File\+Manager/\mbox{\hyperlink{_file_manager_8cpp}{File\+Manager.\+cpp}}\end{DoxyCompactItemize}

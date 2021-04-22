@@ -1,0 +1,14 @@
+<map id="CCollisionManager::IsCapsuleToCapsule" name="CCollisionManager::IsCapsuleToCapsule">
+<area shape="rect" id="node1" title=" " alt="" coords="5,205,145,246"/>
+<area shape="rect" id="node2" href="$class_c_capsule_collision.html#ae4e9f14efb848aa1301d941093a64d31" title=" " alt="" coords="193,74,367,115"/>
+<area shape="rect" id="node9" href="$class_c_collision_manager.html#a97e7f14b7759584e3c6c0b8df6b6342a" title=" " alt="" coords="211,139,349,181"/>
+<area shape="rect" id="node10" href="$class_c_capsule_collision.html#a777917645dfe64ac1bc7c0d7c53fb27b" title=" " alt="" coords="213,205,347,246"/>
+<area shape="rect" id="node11" href="$class_c_capsule_collision.html#a4fa7a74375b83ee181166cf6560f75a3" title=" " alt="" coords="213,270,347,311"/>
+<area shape="rect" id="node12" href="$class_c_capsule_collision.html#a9c4c60670aa5e3fbac593c4a3e6d2964" title=" " alt="" coords="213,335,347,377"/>
+<area shape="rect" id="node3" href="$struct_line.html#a688afbb1e5ad2497214201d4d24f83b5" title=" " alt="" coords="420,5,523,32"/>
+<area shape="rect" id="node4" href="$struct_vec3.html#afa12c7ca485a2a29113e8b3c8e3373a7" title=" " alt="" coords="415,56,528,83"/>
+<area shape="rect" id="node7" href="$struct_float3.html#ad634f6cf4789d8ac1c30f396fbd4285a" title=" " alt="" coords="576,107,693,133"/>
+<area shape="rect" id="node8" href="$struct_float3.html#a566bfcd6621a7881a24f2a9848a9c98e" title=" " alt="" coords="421,157,522,184"/>
+<area shape="rect" id="node5" href="$struct_float3.html#a6e08c8b1e1f89e9aee33d462913e400c" title=" " alt="" coords="585,56,684,83"/>
+<area shape="rect" id="node6" href="$struct_float3.html#aeb39e3054aabcd3c3bbbe2950e6957ae" title=" " alt="" coords="741,56,844,83"/>
+</map>

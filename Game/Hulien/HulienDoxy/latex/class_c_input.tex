@@ -1,0 +1,289 @@
+\hypertarget{class_c_input}{}\doxysection{CInput クラス}
+\label{class_c_input}\index{CInput@{CInput}}
+
+
+{\ttfamily \#include $<$Input.\+h$>$}
+
+\doxysubsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_c_input_1_1_s_axis_bind}{SAxis\+Bind}}
+\item 
+struct \mbox{\hyperlink{struct_c_input_1_1_s_key_bind_pair}{SKey\+Bind\+Pair}}
+\item 
+struct \mbox{\hyperlink{struct_c_input_1_1_vector2}{Vector2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_input_aff3c546eecb1d947c92c81ea7d76329d}{CInput}} ()
+\item 
+\mbox{\hyperlink{class_c_input_a282370813c9dfe52799b1a1ec49e497e}{$\sim$\+CInput}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_input_ad8ec1ef782274373c374060721f4cd56}{Init\+Bind}} ()
+\item 
+static void \mbox{\hyperlink{class_c_input_a52992ee5d6f40e3d24c23a5f8e2957cb}{Init\+Bind}} (std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_key_bind_pair}{SKey\+Bind\+Pair}} $>$ \&)$>$ key\+Func, std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_axis_bind}{SAxis\+Bind}} $>$ \&)$>$ axis\+Func)
+\item 
+static void \mbox{\hyperlink{class_c_input_ab89a3d05539ed3769a7d515c7c6c739f}{Init\+Key\+Bind}} ()
+\item 
+static void \mbox{\hyperlink{class_c_input_aed378e373b0fd06b539ff31846cba88a}{Init\+Axis\+Bind}} ()
+\item 
+static void \mbox{\hyperlink{class_c_input_a3c536def5e4b3fcd809585c62f6460a0}{Init\+Key\+Bind}} (std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_key_bind_pair}{SKey\+Bind\+Pair}} $>$ \&)$>$ func)
+\item 
+static void \mbox{\hyperlink{class_c_input_a112b28985ff60d1d0cdcb66ee1e332ac}{Init\+Axis\+Bind}} (std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_axis_bind}{SAxis\+Bind}} $>$ \&)$>$ func)
+\item 
+static void \mbox{\hyperlink{class_c_input_a2d34adba35130a5a3b3f87b5708b4197}{State\+Update}} ()
+\item 
+static bool \mbox{\hyperlink{class_c_input_a1442fa8a9617d09e84d2ad98cd8df969}{Is\+Press}} (const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&key)
+\item 
+static bool \mbox{\hyperlink{class_c_input_a6a05cb0f29e7cae3fe68d46dbe3b7c4f}{Is\+Moment\+Press}} (const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&key)
+\item 
+static bool \mbox{\hyperlink{class_c_input_a129dbc11e6034e740e2a6003d4bfce08}{Is\+Hold}} (const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&key)
+\item 
+static bool \mbox{\hyperlink{class_c_input_a590a96eb8cbe3263e3b06f29007112f8}{Is\+Release}} (const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&key)
+\item 
+static bool \mbox{\hyperlink{class_c_input_a5ce001fa12ecb7364b482720ddbe9ed0}{Not\+Press}} (const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&key)
+\item 
+static \mbox{\hyperlink{struct_c_input_1_1_vector2}{Vector2}} \mbox{\hyperlink{class_c_input_a8e16abc84eb96f878b1e08e02f6e87c6}{Get\+Axis\+Vector}} (const \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \&key\+\_\+x, const \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \&key\+\_\+y)
+\item 
+static float \mbox{\hyperlink{class_c_input_a6c8e8a35a9fcba9bae4246abe42edea3}{Get\+Axis\+Value}} (const \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \&key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_input_aff3c546eecb1d947c92c81ea7d76329d}\label{class_c_input_aff3c546eecb1d947c92c81ea7d76329d}} 
+\index{CInput@{CInput}!CInput@{CInput}}
+\index{CInput@{CInput}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{CInput()}{CInput()}}
+{\footnotesize\ttfamily CInput\+::\+CInput (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_input_a282370813c9dfe52799b1a1ec49e497e}\label{class_c_input_a282370813c9dfe52799b1a1ec49e497e}} 
+\index{CInput@{CInput}!````~CInput@{$\sim$CInput}}
+\index{````~CInput@{$\sim$CInput}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{$\sim$CInput()}{~CInput()}}
+{\footnotesize\ttfamily CInput\+::$\sim$\+CInput (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_input_a6c8e8a35a9fcba9bae4246abe42edea3}\label{class_c_input_a6c8e8a35a9fcba9bae4246abe42edea3}} 
+\index{CInput@{CInput}!GetAxisValue@{GetAxisValue}}
+\index{GetAxisValue@{GetAxisValue}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{GetAxisValue()}{GetAxisValue()}}
+{\footnotesize\ttfamily float CInput\+::\+Get\+Axis\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a6c8e8a35a9fcba9bae4246abe42edea3_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_c_input_a6c8e8a35a9fcba9bae4246abe42edea3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a8e16abc84eb96f878b1e08e02f6e87c6}\label{class_c_input_a8e16abc84eb96f878b1e08e02f6e87c6}} 
+\index{CInput@{CInput}!GetAxisVector@{GetAxisVector}}
+\index{GetAxisVector@{GetAxisVector}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{GetAxisVector()}{GetAxisVector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_c_input_1_1_vector2}{CInput\+::\+Vector2}} CInput\+::\+Get\+Axis\+Vector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \&}]{key\+\_\+x,  }\item[{const \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}} \&}]{key\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a8e16abc84eb96f878b1e08e02f6e87c6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_aed378e373b0fd06b539ff31846cba88a}\label{class_c_input_aed378e373b0fd06b539ff31846cba88a}} 
+\index{CInput@{CInput}!InitAxisBind@{InitAxisBind}}
+\index{InitAxisBind@{InitAxisBind}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{InitAxisBind()}{InitAxisBind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CInput\+::\+Init\+Axis\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_c_input_aed378e373b0fd06b539ff31846cba88a_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_aed378e373b0fd06b539ff31846cba88a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a112b28985ff60d1d0cdcb66ee1e332ac}\label{class_c_input_a112b28985ff60d1d0cdcb66ee1e332ac}} 
+\index{CInput@{CInput}!InitAxisBind@{InitAxisBind}}
+\index{InitAxisBind@{InitAxisBind}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{InitAxisBind()}{InitAxisBind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CInput\+::\+Init\+Axis\+Bind (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_axis_bind}{SAxis\+Bind}} $>$ \&)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_input_ad8ec1ef782274373c374060721f4cd56}\label{class_c_input_ad8ec1ef782274373c374060721f4cd56}} 
+\index{CInput@{CInput}!InitBind@{InitBind}}
+\index{InitBind@{InitBind}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{InitBind()}{InitBind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CInput\+::\+Init\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_ad8ec1ef782274373c374060721f4cd56_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_ad8ec1ef782274373c374060721f4cd56_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a52992ee5d6f40e3d24c23a5f8e2957cb}\label{class_c_input_a52992ee5d6f40e3d24c23a5f8e2957cb}} 
+\index{CInput@{CInput}!InitBind@{InitBind}}
+\index{InitBind@{InitBind}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{InitBind()}{InitBind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CInput\+::\+Init\+Bind (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_key_bind_pair}{SKey\+Bind\+Pair}} $>$ \&)$>$}]{key\+Func,  }\item[{std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_a2a598686170e1cf651b5cb969600b96e}{EAxis\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_axis_bind}{SAxis\+Bind}} $>$ \&)$>$}]{axis\+Func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_input_ab89a3d05539ed3769a7d515c7c6c739f}\label{class_c_input_ab89a3d05539ed3769a7d515c7c6c739f}} 
+\index{CInput@{CInput}!InitKeyBind@{InitKeyBind}}
+\index{InitKeyBind@{InitKeyBind}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{InitKeyBind()}{InitKeyBind()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CInput\+::\+Init\+Key\+Bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_ab89a3d05539ed3769a7d515c7c6c739f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a3c536def5e4b3fcd809585c62f6460a0}\label{class_c_input_a3c536def5e4b3fcd809585c62f6460a0}} 
+\index{CInput@{CInput}!InitKeyBind@{InitKeyBind}}
+\index{InitKeyBind@{InitKeyBind}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{InitKeyBind()}{InitKeyBind()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CInput\+::\+Init\+Key\+Bind (\begin{DoxyParamCaption}\item[{std\+::function$<$ void(std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}}, \mbox{\hyperlink{struct_c_input_1_1_s_key_bind_pair}{SKey\+Bind\+Pair}} $>$ \&)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_input_a129dbc11e6034e740e2a6003d4bfce08}\label{class_c_input_a129dbc11e6034e740e2a6003d4bfce08}} 
+\index{CInput@{CInput}!IsHold@{IsHold}}
+\index{IsHold@{IsHold}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{IsHold()}{IsHold()}}
+{\footnotesize\ttfamily bool CInput\+::\+Is\+Hold (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a129dbc11e6034e740e2a6003d4bfce08_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a6a05cb0f29e7cae3fe68d46dbe3b7c4f}\label{class_c_input_a6a05cb0f29e7cae3fe68d46dbe3b7c4f}} 
+\index{CInput@{CInput}!IsMomentPress@{IsMomentPress}}
+\index{IsMomentPress@{IsMomentPress}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{IsMomentPress()}{IsMomentPress()}}
+{\footnotesize\ttfamily bool CInput\+::\+Is\+Moment\+Press (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a6a05cb0f29e7cae3fe68d46dbe3b7c4f_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a6a05cb0f29e7cae3fe68d46dbe3b7c4f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a1442fa8a9617d09e84d2ad98cd8df969}\label{class_c_input_a1442fa8a9617d09e84d2ad98cd8df969}} 
+\index{CInput@{CInput}!IsPress@{IsPress}}
+\index{IsPress@{IsPress}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{IsPress()}{IsPress()}}
+{\footnotesize\ttfamily bool CInput\+::\+Is\+Press (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a1442fa8a9617d09e84d2ad98cd8df969_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a590a96eb8cbe3263e3b06f29007112f8}\label{class_c_input_a590a96eb8cbe3263e3b06f29007112f8}} 
+\index{CInput@{CInput}!IsRelease@{IsRelease}}
+\index{IsRelease@{IsRelease}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{IsRelease()}{IsRelease()}}
+{\footnotesize\ttfamily bool CInput\+::\+Is\+Release (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a590a96eb8cbe3263e3b06f29007112f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a5ce001fa12ecb7364b482720ddbe9ed0}\label{class_c_input_a5ce001fa12ecb7364b482720ddbe9ed0}} 
+\index{CInput@{CInput}!NotPress@{NotPress}}
+\index{NotPress@{NotPress}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{NotPress()}{NotPress()}}
+{\footnotesize\ttfamily bool CInput\+::\+Not\+Press (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_input_struct_8h_af62677a53bac65e3f0df6a394b816177}{EKey\+Bind}} \&}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_input_a5ce001fa12ecb7364b482720ddbe9ed0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_input_a2d34adba35130a5a3b3f87b5708b4197}\label{class_c_input_a2d34adba35130a5a3b3f87b5708b4197}} 
+\index{CInput@{CInput}!StateUpdate@{StateUpdate}}
+\index{StateUpdate@{StateUpdate}!CInput@{CInput}}
+\doxysubsubsection{\texorpdfstring{StateUpdate()}{StateUpdate()}}
+{\footnotesize\ttfamily void CInput\+::\+State\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_c_input_a2d34adba35130a5a3b3f87b5708b4197_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_c_input_a2d34adba35130a5a3b3f87b5708b4197_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Input/\mbox{\hyperlink{_input_8h}{Input.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Input/\mbox{\hyperlink{_input_8cpp}{Input.\+cpp}}\end{DoxyCompactItemize}

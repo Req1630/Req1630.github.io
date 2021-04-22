@@ -1,0 +1,8 @@
+<map id="CEventAlienA::Collision" name="CEventAlienA::Collision">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$class_c_event_alien.html#a2a718ed8e0ade1d1abdcb36c621da04d" title=" " alt="" coords="212,5,399,32"/>
+<area shape="rect" id="node5" href="$class_c_event_alien.html#a3e073ed3bc1dd073169e00e820055dc4" title=" " alt="" coords="221,56,390,83"/>
+<area shape="rect" id="node3" href="$class_c_actor.html#a114e2a11ec99c15ea17d5a20ab6a089b" title=" " alt="" coords="461,56,624,83"/>
+<area shape="rect" id="node4" href="$class_c_game_object.html#ae27e9fdbbfa03a20b111d95ece9ff345" title=" " alt="" coords="447,5,639,32"/>
+<area shape="rect" id="node6" href="$class_c_game_object.html#ac96a6cda895f9d0f520e6b43b82d2d77" title=" " alt="" coords="453,107,632,133"/>
+</map>

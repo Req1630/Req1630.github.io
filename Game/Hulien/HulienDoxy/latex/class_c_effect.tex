@@ -1,0 +1,283 @@
+\hypertarget{class_c_effect}{}\doxysection{CEffect クラス}
+\label{class_c_effect}\index{CEffect@{CEffect}}
+
+
+{\ttfamily \#include $<$Effect.\+h$>$}
+
+\doxysubsection*{公開型}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \mbox{\hyperlink{class_c_effect_ad5437921fcb4d827e18aea3027468a24}{Handle}}
+\end{DoxyCompactItemize}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_effect_ad26531a884ce763eda29449fe774c322}{CEffect}} ()
+\item 
+\mbox{\hyperlink{class_c_effect_aca5c71ef8404fa05b27e77aebd79fb4d}{CEffect}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, const std\+::string \&file\+Name)
+\item 
+\mbox{\hyperlink{class_c_effect_a82e0afb2d8f454d9490b1663b84053b2}{$\sim$\+CEffect}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_effect_a7d43c03098e1a23c7d0c005a8b60bb38}{Init}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11, const std\+::string \&file\+Name)
+\item 
+HRESULT \mbox{\hyperlink{class_c_effect_a37405f3d0ce9ebd97116f151e88da37f}{Create}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+void \mbox{\hyperlink{class_c_effect_ab3b12465e61a502c72595843e8bff713}{Destroy}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_effect_a686e381fab3d0ae134b3146da33a8786}{Load\+Data}} (const std\+::string \&file\+Name)
+\item 
+void \mbox{\hyperlink{class_c_effect_afee3fc1a1597f12ed629314add95da7c}{Release\+Data}} ()
+\item 
+void \mbox{\hyperlink{class_c_effect_aa869140a2f60db97edbccf9308af7a76}{Render}} (const Effekseer\+::\+Handle \&e\+Handle)
+\item 
+Effekseer\+::\+Handle \mbox{\hyperlink{class_c_effect_a3f186ee213e6a8458f6a5b8c91820988}{Play}} (const D3\+DXVECTOR3 \&v\+Pos) const
+\item 
+void \mbox{\hyperlink{class_c_effect_a29d584e7dbd1250ef9d167143c8335ca}{Stop}} (const Effekseer\+::\+Handle \&handle)
+\item 
+void \mbox{\hyperlink{class_c_effect_ad97b0a040b7ed0e4cabdc54cce9025af}{Stop\+All}} ()
+\item 
+void \mbox{\hyperlink{class_c_effect_a586c7af096b2cdffeeb2b96a22cecc67}{Pause}} (const Effekseer\+::\+Handle \&handle, bool b\+Flag)
+\item 
+void \mbox{\hyperlink{class_c_effect_a001c0cef39b155c883da3662a0602ce6}{All\+Pause}} (const bool \&b\+Flag)
+\item 
+void \mbox{\hyperlink{class_c_effect_ae84640f92e902c1716f3b28150df6b5d}{Set\+Location}} (const Effekseer\+::\+Handle \&handle, const D3\+DXVECTOR3 \&v\+Pos)
+\item 
+void \mbox{\hyperlink{class_c_effect_a31af844320a81525f50a0320d973a497}{Set\+Location}} (const Effekseer\+::\+Handle \&handle, const float \&x, const float \&y, const float \&z)
+\item 
+void \mbox{\hyperlink{class_c_effect_a9fe176db7114a2baf887ed1ec37b28e9}{Set\+Scale}} (const Effekseer\+::\+Handle \&handle, const D3\+DXVECTOR3 \&v\+Scale)
+\item 
+void \mbox{\hyperlink{class_c_effect_a37a878fcb351fe1f87668654f75987f6}{Set\+Rotation}} (const Effekseer\+::\+Handle \&handle, const D3\+DXVECTOR3 \&v\+Rot)
+\item 
+void \mbox{\hyperlink{class_c_effect_aeaa910b88602b8fa297d5e83d97640cc}{Set\+Rotation}} (const Effekseer\+::\+Handle \&handle, const D3\+DXVECTOR3 \&v\+Axis, float f\+Radian)
+\item 
+void \mbox{\hyperlink{class_c_effect_aaf2b4c4ec917bd27c793b14936366f4e}{Set\+Speed}} (const Effekseer\+::\+Handle \&handle, float f\+Speed)
+\item 
+bool \mbox{\hyperlink{class_c_effect_a941f45796c7337ec845d1618df6a7f38}{Is\+Exists}} (const Effekseer\+::\+Handle \&handle)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{型定義メンバ詳解}
+\mbox{\Hypertarget{class_c_effect_ad5437921fcb4d827e18aea3027468a24}\label{class_c_effect_ad5437921fcb4d827e18aea3027468a24}} 
+\index{CEffect@{CEffect}!Handle@{Handle}}
+\index{Handle@{Handle}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Handle}{Handle}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{class_c_effect_ad5437921fcb4d827e18aea3027468a24}{CEffect\+::\+Handle}}}
+
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_effect_ad26531a884ce763eda29449fe774c322}\label{class_c_effect_ad26531a884ce763eda29449fe774c322}} 
+\index{CEffect@{CEffect}!CEffect@{CEffect}}
+\index{CEffect@{CEffect}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{CEffect()}{CEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily CEffect\+::\+CEffect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_effect_aca5c71ef8404fa05b27e77aebd79fb4d}\label{class_c_effect_aca5c71ef8404fa05b27e77aebd79fb4d}} 
+\index{CEffect@{CEffect}!CEffect@{CEffect}}
+\index{CEffect@{CEffect}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{CEffect()}{CEffect()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily CEffect\+::\+CEffect (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_effect_aca5c71ef8404fa05b27e77aebd79fb4d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_a82e0afb2d8f454d9490b1663b84053b2}\label{class_c_effect_a82e0afb2d8f454d9490b1663b84053b2}} 
+\index{CEffect@{CEffect}!````~CEffect@{$\sim$CEffect}}
+\index{````~CEffect@{$\sim$CEffect}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEffect()}{~CEffect()}}
+{\footnotesize\ttfamily CEffect\+::$\sim$\+CEffect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_effect_a82e0afb2d8f454d9490b1663b84053b2_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_effect_a001c0cef39b155c883da3662a0602ce6}\label{class_c_effect_a001c0cef39b155c883da3662a0602ce6}} 
+\index{CEffect@{CEffect}!AllPause@{AllPause}}
+\index{AllPause@{AllPause}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{AllPause()}{AllPause()}}
+{\footnotesize\ttfamily void CEffect\+::\+All\+Pause (\begin{DoxyParamCaption}\item[{const bool \&}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a37405f3d0ce9ebd97116f151e88da37f}\label{class_c_effect_a37405f3d0ce9ebd97116f151e88da37f}} 
+\index{CEffect@{CEffect}!Create@{Create}}
+\index{Create@{Create}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}}
+{\footnotesize\ttfamily HRESULT CEffect\+::\+Create (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_effect_a37405f3d0ce9ebd97116f151e88da37f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_ab3b12465e61a502c72595843e8bff713}\label{class_c_effect_ab3b12465e61a502c72595843e8bff713}} 
+\index{CEffect@{CEffect}!Destroy@{Destroy}}
+\index{Destroy@{Destroy}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Destroy()}{Destroy()}}
+{\footnotesize\ttfamily void CEffect\+::\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_c_effect_ab3b12465e61a502c72595843e8bff713_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_c_effect_ab3b12465e61a502c72595843e8bff713_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_a7d43c03098e1a23c7d0c005a8b60bb38}\label{class_c_effect_a7d43c03098e1a23c7d0c005a8b60bb38}} 
+\index{CEffect@{CEffect}!Init@{Init}}
+\index{Init@{Init}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CEffect\+::\+Init (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11,  }\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_c_effect_a7d43c03098e1a23c7d0c005a8b60bb38_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{class_c_effect_a7d43c03098e1a23c7d0c005a8b60bb38_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_a941f45796c7337ec845d1618df6a7f38}\label{class_c_effect_a941f45796c7337ec845d1618df6a7f38}} 
+\index{CEffect@{CEffect}!IsExists@{IsExists}}
+\index{IsExists@{IsExists}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{IsExists()}{IsExists()}}
+{\footnotesize\ttfamily bool CEffect\+::\+Is\+Exists (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a686e381fab3d0ae134b3146da33a8786}\label{class_c_effect_a686e381fab3d0ae134b3146da33a8786}} 
+\index{CEffect@{CEffect}!LoadData@{LoadData}}
+\index{LoadData@{LoadData}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{LoadData()}{LoadData()}}
+{\footnotesize\ttfamily HRESULT CEffect\+::\+Load\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_effect_a686e381fab3d0ae134b3146da33a8786_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_a586c7af096b2cdffeeb2b96a22cecc67}\label{class_c_effect_a586c7af096b2cdffeeb2b96a22cecc67}} 
+\index{CEffect@{CEffect}!Pause@{Pause}}
+\index{Pause@{Pause}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Pause()}{Pause()}}
+{\footnotesize\ttfamily void CEffect\+::\+Pause (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{bool}]{b\+Flag }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a3f186ee213e6a8458f6a5b8c91820988}\label{class_c_effect_a3f186ee213e6a8458f6a5b8c91820988}} 
+\index{CEffect@{CEffect}!Play@{Play}}
+\index{Play@{Play}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily Effekseer\+::\+Handle CEffect\+::\+Play (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_afee3fc1a1597f12ed629314add95da7c}\label{class_c_effect_afee3fc1a1597f12ed629314add95da7c}} 
+\index{CEffect@{CEffect}!ReleaseData@{ReleaseData}}
+\index{ReleaseData@{ReleaseData}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{ReleaseData()}{ReleaseData()}}
+{\footnotesize\ttfamily void CEffect\+::\+Release\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_effect_afee3fc1a1597f12ed629314add95da7c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_aa869140a2f60db97edbccf9308af7a76}\label{class_c_effect_aa869140a2f60db97edbccf9308af7a76}} 
+\index{CEffect@{CEffect}!Render@{Render}}
+\index{Render@{Render}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEffect\+::\+Render (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{e\+Handle }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_effect_aa869140a2f60db97edbccf9308af7a76_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_effect_ae84640f92e902c1716f3b28150df6b5d}\label{class_c_effect_ae84640f92e902c1716f3b28150df6b5d}} 
+\index{CEffect@{CEffect}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CEffect\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a31af844320a81525f50a0320d973a497}\label{class_c_effect_a31af844320a81525f50a0320d973a497}} 
+\index{CEffect@{CEffect}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CEffect\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{const float \&}]{x,  }\item[{const float \&}]{y,  }\item[{const float \&}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_aeaa910b88602b8fa297d5e83d97640cc}\label{class_c_effect_aeaa910b88602b8fa297d5e83d97640cc}} 
+\index{CEffect@{CEffect}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void CEffect\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{const D3\+DXVECTOR3 \&}]{v\+Axis,  }\item[{float}]{f\+Radian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a37a878fcb351fe1f87668654f75987f6}\label{class_c_effect_a37a878fcb351fe1f87668654f75987f6}} 
+\index{CEffect@{CEffect}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void CEffect\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{const D3\+DXVECTOR3 \&}]{v\+Rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a9fe176db7114a2baf887ed1ec37b28e9}\label{class_c_effect_a9fe176db7114a2baf887ed1ec37b28e9}} 
+\index{CEffect@{CEffect}!SetScale@{SetScale}}
+\index{SetScale@{SetScale}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{SetScale()}{SetScale()}}
+{\footnotesize\ttfamily void CEffect\+::\+Set\+Scale (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{const D3\+DXVECTOR3 \&}]{v\+Scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_aaf2b4c4ec917bd27c793b14936366f4e}\label{class_c_effect_aaf2b4c4ec917bd27c793b14936366f4e}} 
+\index{CEffect@{CEffect}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void CEffect\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle,  }\item[{float}]{f\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_a29d584e7dbd1250ef9d167143c8335ca}\label{class_c_effect_a29d584e7dbd1250ef9d167143c8335ca}} 
+\index{CEffect@{CEffect}!Stop@{Stop}}
+\index{Stop@{Stop}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void CEffect\+::\+Stop (\begin{DoxyParamCaption}\item[{const Effekseer\+::\+Handle \&}]{handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_effect_ad97b0a040b7ed0e4cabdc54cce9025af}\label{class_c_effect_ad97b0a040b7ed0e4cabdc54cce9025af}} 
+\index{CEffect@{CEffect}!StopAll@{StopAll}}
+\index{StopAll@{StopAll}!CEffect@{CEffect}}
+\doxysubsubsection{\texorpdfstring{StopAll()}{StopAll()}}
+{\footnotesize\ttfamily void CEffect\+::\+Stop\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Effect/\mbox{\hyperlink{_effect_8h}{Effect.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Effect/\mbox{\hyperlink{_effect_8cpp}{Effect.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,138 @@
+\hypertarget{class_s_t_g_1_1_c_player}{}\doxysection{STG\+::CPlayer クラス}
+\label{class_s_t_g_1_1_c_player}\index{STG::CPlayer@{STG::CPlayer}}
+
+
+{\ttfamily \#include $<$STGPlayer.\+h$>$}
+
+
+
+STG\+::CPlayer の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_s_t_g_1_1_c_player__inherit__graph}
+\end{center}
+\end{figure}
+
+
+STG\+::CPlayer 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_s_t_g_1_1_c_player__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_player_a931a59adf2ada5376122e30b33ae2c4c}{CPlayer}} ()
+\item 
+virtual \mbox{\hyperlink{class_s_t_g_1_1_c_player_ad02df04887bccfe3b82298895da24af6}{$\sim$\+CPlayer}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_player_a4582a8020f6734842edea64909bd4b40}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_player_adde42d001de461b2192bbb39d7e69aa1}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_player_a1b0e6cdb21839d7ea2d53a94bbffea99}{Collision}} (\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$p\+Actor) override
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_player_a5c3f90436cf01f779c89a0c7c3cf090e}{Controller}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_a931a59adf2ada5376122e30b33ae2c4c}\label{class_s_t_g_1_1_c_player_a931a59adf2ada5376122e30b33ae2c4c}} 
+\index{STG::CPlayer@{STG::CPlayer}!CPlayer@{CPlayer}}
+\index{CPlayer@{CPlayer}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{CPlayer()}{CPlayer()}}
+{\footnotesize\ttfamily CPlayer\+::\+CPlayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_ad02df04887bccfe3b82298895da24af6}\label{class_s_t_g_1_1_c_player_ad02df04887bccfe3b82298895da24af6}} 
+\index{STG::CPlayer@{STG::CPlayer}!````~CPlayer@{$\sim$CPlayer}}
+\index{````~CPlayer@{$\sim$CPlayer}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{$\sim$CPlayer()}{~CPlayer()}}
+{\footnotesize\ttfamily CPlayer\+::$\sim$\+CPlayer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_a1b0e6cdb21839d7ea2d53a94bbffea99}\label{class_s_t_g_1_1_c_player_a1b0e6cdb21839d7ea2d53a94bbffea99}} 
+\index{STG::CPlayer@{STG::CPlayer}!Collision@{Collision}}
+\index{Collision@{Collision}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}{STG\+::\+CActor}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_player_a1b0e6cdb21839d7ea2d53a94bbffea99_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_a5c3f90436cf01f779c89a0c7c3cf090e}\label{class_s_t_g_1_1_c_player_a5c3f90436cf01f779c89a0c7c3cf090e}} 
+\index{STG::CPlayer@{STG::CPlayer}!Controller@{Controller}}
+\index{Controller@{Controller}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{Controller()}{Controller()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_player_a5c3f90436cf01f779c89a0c7c3cf090e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}\label{class_s_t_g_1_1_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3}} 
+\index{STG::CPlayer@{STG::CPlayer}!Init@{Init}}
+\index{Init@{Init}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CPlayer\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s_t_g_1_1_c_player_af427666ac35a0b3d90fcc4ffa42c8fd3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_adde42d001de461b2192bbb39d7e69aa1}\label{class_s_t_g_1_1_c_player_adde42d001de461b2192bbb39d7e69aa1}} 
+\index{STG::CPlayer@{STG::CPlayer}!Render@{Render}}
+\index{Render@{Render}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_player_a4582a8020f6734842edea64909bd4b40}\label{class_s_t_g_1_1_c_player_a4582a8020f6734842edea64909bd4b40}} 
+\index{STG::CPlayer@{STG::CPlayer}!Update@{Update}}
+\index{Update@{Update}!STG::CPlayer@{STG::CPlayer}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CPlayer\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Character/\+Player/\mbox{\hyperlink{_s_t_g_player_8h}{STGPlayer.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Character/\+Player/\mbox{\hyperlink{_s_t_g_player_8cpp}{STGPlayer.\+cpp}}\end{DoxyCompactItemize}

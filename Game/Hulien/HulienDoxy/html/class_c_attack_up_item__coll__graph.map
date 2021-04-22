@@ -1,0 +1,8 @@
+<map id="CAttackUpItem" name="CAttackUpItem">
+<area shape="rect" id="node1" title=" " alt="" coords="127,260,238,287"/>
+<area shape="rect" id="node2" href="$class_c_item_base.html" title=" " alt="" coords="139,184,226,211"/>
+<area shape="rect" id="node3" href="$class_c_actor.html" title=" " alt="" coords="83,95,146,121"/>
+<area shape="rect" id="node4" href="$class_c_game_object.html" title=" " alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node5" href="$struct_s_box_wall.html" title=" " alt="" coords="133,5,213,32"/>
+<area shape="rect" id="node6" href="$struct_c_item_base_1_1_s_parameter.html" title=" " alt="" coords="171,95,333,121"/>
+</map>

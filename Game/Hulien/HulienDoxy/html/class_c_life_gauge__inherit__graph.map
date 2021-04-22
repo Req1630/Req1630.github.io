@@ -1,0 +1,7 @@
+<map id="CLifeGauge" name="CLifeGauge">
+<area shape="rect" id="node1" title=" " alt="" coords="25,304,114,331"/>
+<area shape="rect" id="node2" href="$class_c_character_widget.html" title=" " alt="" coords="5,229,133,256"/>
+<area shape="rect" id="node3" href="$class_c_scene_widget.html" title=" " alt="" coords="15,155,124,181"/>
+<area shape="rect" id="node4" href="$class_c_widget.html" title=" " alt="" coords="33,80,105,107"/>
+<area shape="rect" id="node5" href="$class_c_game_object.html" title=" " alt="" coords="17,5,121,32"/>
+</map>

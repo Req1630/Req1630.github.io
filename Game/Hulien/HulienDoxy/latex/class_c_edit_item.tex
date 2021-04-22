@@ -1,0 +1,198 @@
+\hypertarget{class_c_edit_item}{}\doxysection{CEdit\+Item クラス}
+\label{class_c_edit_item}\index{CEditItem@{CEditItem}}
+
+
+{\ttfamily \#include $<$Edit\+Item.\+h$>$}
+
+
+
+CEdit\+Item の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_edit_item__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEdit\+Item 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_c_edit_item__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_edit_item_acfd5ca2f4187ed9fccd8f38971cdf689}{CEdit\+Item}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_edit_item_a4e2160f81e72b0522116f7c5929fddfb}{$\sim$\+CEdit\+Item}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_edit_item_acc7b5f175b699e701f1f0b24bf619395}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_item_acd266f028b7ad41e563e6afb7f5ec608}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_item_aac4d076b3a7078eeaacf86fcf370afac}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_item_aebbefbfc7ac0c773308380c637c8748e}{Effect\+Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_item_a9f484219212602be75a182f1b8198e1b}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_item_a0a4fc1242e37550a5bd2b90e5b444e7f}{Set\+Target\+Pos}} (\mbox{\hyperlink{class_c_actor}{CActor}} \&p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_item_a3173bd5f52de2b0f4d61ddc1fba89b34}{Drop}} (const D3\+DXVECTOR3 \&v\+Pos) override
+\item 
+void \mbox{\hyperlink{class_c_edit_item_aa5b794e9b5d516780ae121012063e511}{Set\+Paramter}} (const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}} \&param)
+\item 
+void \mbox{\hyperlink{class_c_edit_item_a9f39a705d957c811d9aa77ee12c0766c}{Set\+Item\+No}} (const int \&no)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_edit_item_acfd5ca2f4187ed9fccd8f38971cdf689}\label{class_c_edit_item_acfd5ca2f4187ed9fccd8f38971cdf689}} 
+\index{CEditItem@{CEditItem}!CEditItem@{CEditItem}}
+\index{CEditItem@{CEditItem}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{CEditItem()}{CEditItem()}}
+{\footnotesize\ttfamily CEdit\+Item\+::\+CEdit\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_edit_item_a4e2160f81e72b0522116f7c5929fddfb}\label{class_c_edit_item_a4e2160f81e72b0522116f7c5929fddfb}} 
+\index{CEditItem@{CEditItem}!````~CEditItem@{$\sim$CEditItem}}
+\index{````~CEditItem@{$\sim$CEditItem}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEditItem()}{~CEditItem()}}
+{\footnotesize\ttfamily CEdit\+Item\+::$\sim$\+CEdit\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_edit_item_a9f484219212602be75a182f1b8198e1b}\label{class_c_edit_item_a9f484219212602be75a182f1b8198e1b}} 
+\index{CEditItem@{CEditItem}!Collision@{Collision}}
+\index{Collision@{Collision}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a4d5f47448403bdfc77279a7f04644861}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_item_a9f484219212602be75a182f1b8198e1b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_edit_item_a3173bd5f52de2b0f4d61ddc1fba89b34}\label{class_c_edit_item_a3173bd5f52de2b0f4d61ddc1fba89b34}} 
+\index{CEditItem@{CEditItem}!Drop@{Drop}}
+\index{Drop@{Drop}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{Drop()}{Drop()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Drop (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{v\+Pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a6832c8281b3b4ab87b8084c741276e13}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_item_a3173bd5f52de2b0f4d61ddc1fba89b34_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_edit_item_aebbefbfc7ac0c773308380c637c8748e}\label{class_c_edit_item_aebbefbfc7ac0c773308380c637c8748e}} 
+\index{CEditItem@{CEditItem}!EffectRender@{EffectRender}}
+\index{EffectRender@{EffectRender}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{EffectRender()}{EffectRender()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Effect\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_aede174da0d6542991784e337db4e8c9e}{CItem\+Base}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_edit_item_acc7b5f175b699e701f1f0b24bf619395}\label{class_c_edit_item_acc7b5f175b699e701f1f0b24bf619395}} 
+\index{CEditItem@{CEditItem}!Init@{Init}}
+\index{Init@{Init}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CEdit\+Item\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_c_edit_item_aac4d076b3a7078eeaacf86fcf370afac}\label{class_c_edit_item_aac4d076b3a7078eeaacf86fcf370afac}} 
+\index{CEditItem@{CEditItem}!Render@{Render}}
+\index{Render@{Render}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a9f7f50fd8c9f42f8beb33fe43cb33ccd}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_item_aac4d076b3a7078eeaacf86fcf370afac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_edit_item_a9f39a705d957c811d9aa77ee12c0766c}\label{class_c_edit_item_a9f39a705d957c811d9aa77ee12c0766c}} 
+\index{CEditItem@{CEditItem}!SetItemNo@{SetItemNo}}
+\index{SetItemNo@{SetItemNo}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{SetItemNo()}{SetItemNo()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Set\+Item\+No (\begin{DoxyParamCaption}\item[{const int \&}]{no }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_edit_item_aa5b794e9b5d516780ae121012063e511}\label{class_c_edit_item_aa5b794e9b5d516780ae121012063e511}} 
+\index{CEditItem@{CEditItem}!SetParamter@{SetParamter}}
+\index{SetParamter@{SetParamter}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{SetParamter()}{SetParamter()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Set\+Paramter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_c_item_base_1_1_s_parameter}{SParameter}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_edit_item_a0a4fc1242e37550a5bd2b90e5b444e7f}\label{class_c_edit_item_a0a4fc1242e37550a5bd2b90e5b444e7f}} 
+\index{CEditItem@{CEditItem}!SetTargetPos@{SetTargetPos}}
+\index{SetTargetPos@{SetTargetPos}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{SetTargetPos()}{SetTargetPos()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Set\+Target\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} \&}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a9e4ade532df05c70266d698e0a56ba57}{CActor}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_item_a0a4fc1242e37550a5bd2b90e5b444e7f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_edit_item_acd266f028b7ad41e563e6afb7f5ec608}\label{class_c_edit_item_acd266f028b7ad41e563e6afb7f5ec608}} 
+\index{CEditItem@{CEditItem}!Update@{Update}}
+\index{Update@{Update}!CEditItem@{CEditItem}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CEdit\+Item\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_item_base_a3004be29e0ea1f21672acd5375f4c0ad}{CItem\+Base}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_c_edit_item_acd266f028b7ad41e563e6afb7f5ec608_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Item/\+Edit\+Item/\mbox{\hyperlink{_edit_item_8h}{Edit\+Item.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Item/\+Edit\+Item/\mbox{\hyperlink{_edit_item_8cpp}{Edit\+Item.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="CGameClear" name="CGameClear">
+<area shape="rect" id="node1" title=" " alt="" coords="17,171,113,197"/>
+<area shape="rect" id="node2" href="$class_c_scene_base.html" title=" " alt="" coords="15,95,114,121"/>
+<area shape="rect" id="node3" href="$class_c_scene_manager.html" title=" " alt="" coords="5,5,124,32"/>
+</map>

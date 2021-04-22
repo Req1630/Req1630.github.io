@@ -1,0 +1,323 @@
+\hypertarget{class_c_x_input}{}\doxysection{CXInput クラス}
+\label{class_c_x_input}\index{CXInput@{CXInput}}
+
+
+XInput Class(\+Singleton).  
+
+
+
+
+{\ttfamily \#include $<$XInput.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_x_input_a839a4fe4d76764db7a5b177351d014d6}{CXInput}} ()
+\begin{DoxyCompactList}\small\item\em コンストラクタ. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_x_input_ae4abace7f29e5df01549db58bc7b1503}{$\sim$\+CXInput}} ()
+\begin{DoxyCompactList}\small\item\em デストラクタ. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_c_x_input_abc24e3e638cf24fd9fe83f96bda123d6}{Stats\+Update}} ()
+\begin{DoxyCompactList}\small\item\em コントローラーの状態を更新. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_c_x_input_a045db34bf722c38089a17cb88dff4dc1}{Get\+Connect\+Count}} ()
+\begin{DoxyCompactList}\small\item\em コントローラーの接続している数を取得. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_c_x_input_aaf0981598043834ae732b948769b7f43}{Is\+Press}} (const WORD \&button\+\_\+mask, const int \&connect\+Num=0)
+\item 
+static bool \mbox{\hyperlink{class_c_x_input_af325b18bf39addfde11f511da4b090ef}{Is\+Moment\+Press}} (const WORD \&button\+\_\+mask, const int \&connect\+Num=0)
+\item 
+static bool \mbox{\hyperlink{class_c_x_input_aec7cfa910a6cfac5b449fd43713ac08f}{Is\+Hold}} (const WORD \&button\+\_\+mask, const int \&connect\+Num=0)
+\item 
+static bool \mbox{\hyperlink{class_c_x_input_a805f59343a364ab38691dbf37c1fa5c7}{Is\+Release}} (const WORD \&button\+\_\+mask, const int \&connect\+Num=0)
+\item 
+static bool \mbox{\hyperlink{class_c_x_input_aafa40f595e063e69f42a6aedcf1d793a}{Not\+Press}} (const WORD \&button\+\_\+mask, const int \&connect\+Num=0)
+\item 
+static SHORT \mbox{\hyperlink{class_c_x_input_a281a3f32681b5573538fd21dda015440}{LThumb\+X\+\_\+\+Axis}} (const int \&connect\+Num=0)
+\item 
+static SHORT \mbox{\hyperlink{class_c_x_input_a7aed4dcbe2bcaf6a3e66cc75deae64fc}{LThumb\+Y\+\_\+\+Axis}} (const int \&connect\+Num=0)
+\item 
+static SHORT \mbox{\hyperlink{class_c_x_input_a5a4c1fb5bc724d78dbd9560ded102f9b}{RThumb\+X\+\_\+\+Axis}} (const int \&connect\+Num=0)
+\item 
+static SHORT \mbox{\hyperlink{class_c_x_input_aeec3dcae35bac5fdea886d3553f1fca5}{RThumb\+Y\+\_\+\+Axis}} (const int \&connect\+Num=0)
+\item 
+static BYTE \mbox{\hyperlink{class_c_x_input_a4c2c6bcb1d38262781172ccc89a6fa0c}{LTrigger}} (const int \&connect\+Num=0)
+\item 
+static BYTE \mbox{\hyperlink{class_c_x_input_af35609cb084912a036b9507d7aa2c31c}{RTrigger}} (const int \&connect\+Num=0)
+\item 
+static bool \mbox{\hyperlink{class_c_x_input_a962f2c5688c06513dd9042908448d641}{Set\+Vibration}} (WORD LMotor\+Spd, WORD RMotor\+Spd, const int \&connect\+Num=0)
+\item 
+static void \mbox{\hyperlink{class_c_x_input_a9b79d5307de283ea54b9dfbe93a82fe7}{Set\+Vibration}} (const bool \&is\+Vib)
+\item 
+static bool \mbox{\hyperlink{class_c_x_input_a46c06175f7c781c3449856d3f7d14722}{Is\+Vibration}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \mbox{\hyperlink{class_c_x_input_a4bc98bf05248326998d7c0410b6635e7}{VIBRATION\+\_\+\+CONFIG\+\_\+\+FILE\+\_\+\+PATH}} = \char`\"{}Data\textbackslash{}\textbackslash{}\+Config\textbackslash{}\textbackslash{}\+Con\+\_\+\+Vib.\+bin\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{詳解}
+XInput Class(\+Singleton). 
+
+バイブレーション機能以外の機能はついてます. 
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_x_input_a839a4fe4d76764db7a5b177351d014d6}\label{class_c_x_input_a839a4fe4d76764db7a5b177351d014d6}} 
+\index{CXInput@{CXInput}!CXInput@{CXInput}}
+\index{CXInput@{CXInput}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{CXInput()}{CXInput()}}
+{\footnotesize\ttfamily CXInput\+::\+CXInput (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+コンストラクタ. 
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_a839a4fe4d76764db7a5b177351d014d6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_ae4abace7f29e5df01549db58bc7b1503}\label{class_c_x_input_ae4abace7f29e5df01549db58bc7b1503}} 
+\index{CXInput@{CXInput}!````~CXInput@{$\sim$CXInput}}
+\index{````~CXInput@{$\sim$CXInput}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{$\sim$CXInput()}{~CXInput()}}
+{\footnotesize\ttfamily CXInput\+::$\sim$\+CXInput (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+デストラクタ. 
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_c_x_input_ae4abace7f29e5df01549db58bc7b1503_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_x_input_a045db34bf722c38089a17cb88dff4dc1}\label{class_c_x_input_a045db34bf722c38089a17cb88dff4dc1}} 
+\index{CXInput@{CXInput}!GetConnectCount@{GetConnectCount}}
+\index{GetConnectCount@{GetConnectCount}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{GetConnectCount()}{GetConnectCount()}}
+{\footnotesize\ttfamily static int CXInput\+::\+Get\+Connect\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+コントローラーの接続している数を取得. 
+
+\begin{DoxyReturn}{戻り値}
+int 現在のコントローラーの接続数. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_x_input_aec7cfa910a6cfac5b449fd43713ac08f}\label{class_c_x_input_aec7cfa910a6cfac5b449fd43713ac08f}} 
+\index{CXInput@{CXInput}!IsHold@{IsHold}}
+\index{IsHold@{IsHold}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{IsHold()}{IsHold()}}
+{\footnotesize\ttfamily bool CXInput\+::\+Is\+Hold (\begin{DoxyParamCaption}\item[{const WORD \&}]{button\+\_\+mask,  }\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_c_x_input_aec7cfa910a6cfac5b449fd43713ac08f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_af325b18bf39addfde11f511da4b090ef}\label{class_c_x_input_af325b18bf39addfde11f511da4b090ef}} 
+\index{CXInput@{CXInput}!IsMomentPress@{IsMomentPress}}
+\index{IsMomentPress@{IsMomentPress}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{IsMomentPress()}{IsMomentPress()}}
+{\footnotesize\ttfamily bool CXInput\+::\+Is\+Moment\+Press (\begin{DoxyParamCaption}\item[{const WORD \&}]{button\+\_\+mask,  }\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_af325b18bf39addfde11f511da4b090ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_aaf0981598043834ae732b948769b7f43}\label{class_c_x_input_aaf0981598043834ae732b948769b7f43}} 
+\index{CXInput@{CXInput}!IsPress@{IsPress}}
+\index{IsPress@{IsPress}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{IsPress()}{IsPress()}}
+{\footnotesize\ttfamily bool CXInput\+::\+Is\+Press (\begin{DoxyParamCaption}\item[{const WORD \&}]{button\+\_\+mask,  }\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_c_x_input_aaf0981598043834ae732b948769b7f43_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_a805f59343a364ab38691dbf37c1fa5c7}\label{class_c_x_input_a805f59343a364ab38691dbf37c1fa5c7}} 
+\index{CXInput@{CXInput}!IsRelease@{IsRelease}}
+\index{IsRelease@{IsRelease}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{IsRelease()}{IsRelease()}}
+{\footnotesize\ttfamily bool CXInput\+::\+Is\+Release (\begin{DoxyParamCaption}\item[{const WORD \&}]{button\+\_\+mask,  }\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_c_x_input_a805f59343a364ab38691dbf37c1fa5c7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_a46c06175f7c781c3449856d3f7d14722}\label{class_c_x_input_a46c06175f7c781c3449856d3f7d14722}} 
+\index{CXInput@{CXInput}!IsVibration@{IsVibration}}
+\index{IsVibration@{IsVibration}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{IsVibration()}{IsVibration()}}
+{\footnotesize\ttfamily static bool CXInput\+::\+Is\+Vibration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_c_x_input_a46c06175f7c781c3449856d3f7d14722_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_a281a3f32681b5573538fd21dda015440}\label{class_c_x_input_a281a3f32681b5573538fd21dda015440}} 
+\index{CXInput@{CXInput}!LThumbX\_Axis@{LThumbX\_Axis}}
+\index{LThumbX\_Axis@{LThumbX\_Axis}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{LThumbX\_Axis()}{LThumbX\_Axis()}}
+{\footnotesize\ttfamily SHORT CXInput\+::\+LThumb\+X\+\_\+\+Axis (\begin{DoxyParamCaption}\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_a281a3f32681b5573538fd21dda015440_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_a7aed4dcbe2bcaf6a3e66cc75deae64fc}\label{class_c_x_input_a7aed4dcbe2bcaf6a3e66cc75deae64fc}} 
+\index{CXInput@{CXInput}!LThumbY\_Axis@{LThumbY\_Axis}}
+\index{LThumbY\_Axis@{LThumbY\_Axis}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{LThumbY\_Axis()}{LThumbY\_Axis()}}
+{\footnotesize\ttfamily SHORT CXInput\+::\+LThumb\+Y\+\_\+\+Axis (\begin{DoxyParamCaption}\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_a7aed4dcbe2bcaf6a3e66cc75deae64fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_a4c2c6bcb1d38262781172ccc89a6fa0c}\label{class_c_x_input_a4c2c6bcb1d38262781172ccc89a6fa0c}} 
+\index{CXInput@{CXInput}!LTrigger@{LTrigger}}
+\index{LTrigger@{LTrigger}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{LTrigger()}{LTrigger()}}
+{\footnotesize\ttfamily BYTE CXInput\+::\+LTrigger (\begin{DoxyParamCaption}\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_input_aafa40f595e063e69f42a6aedcf1d793a}\label{class_c_x_input_aafa40f595e063e69f42a6aedcf1d793a}} 
+\index{CXInput@{CXInput}!NotPress@{NotPress}}
+\index{NotPress@{NotPress}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{NotPress()}{NotPress()}}
+{\footnotesize\ttfamily bool CXInput\+::\+Not\+Press (\begin{DoxyParamCaption}\item[{const WORD \&}]{button\+\_\+mask,  }\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_c_x_input_aafa40f595e063e69f42a6aedcf1d793a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_a5a4c1fb5bc724d78dbd9560ded102f9b}\label{class_c_x_input_a5a4c1fb5bc724d78dbd9560ded102f9b}} 
+\index{CXInput@{CXInput}!RThumbX\_Axis@{RThumbX\_Axis}}
+\index{RThumbX\_Axis@{RThumbX\_Axis}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{RThumbX\_Axis()}{RThumbX\_Axis()}}
+{\footnotesize\ttfamily SHORT CXInput\+::\+RThumb\+X\+\_\+\+Axis (\begin{DoxyParamCaption}\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_a5a4c1fb5bc724d78dbd9560ded102f9b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_aeec3dcae35bac5fdea886d3553f1fca5}\label{class_c_x_input_aeec3dcae35bac5fdea886d3553f1fca5}} 
+\index{CXInput@{CXInput}!RThumbY\_Axis@{RThumbY\_Axis}}
+\index{RThumbY\_Axis@{RThumbY\_Axis}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{RThumbY\_Axis()}{RThumbY\_Axis()}}
+{\footnotesize\ttfamily SHORT CXInput\+::\+RThumb\+Y\+\_\+\+Axis (\begin{DoxyParamCaption}\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_aeec3dcae35bac5fdea886d3553f1fca5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_af35609cb084912a036b9507d7aa2c31c}\label{class_c_x_input_af35609cb084912a036b9507d7aa2c31c}} 
+\index{CXInput@{CXInput}!RTrigger@{RTrigger}}
+\index{RTrigger@{RTrigger}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{RTrigger()}{RTrigger()}}
+{\footnotesize\ttfamily BYTE CXInput\+::\+RTrigger (\begin{DoxyParamCaption}\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_input_a9b79d5307de283ea54b9dfbe93a82fe7}\label{class_c_x_input_a9b79d5307de283ea54b9dfbe93a82fe7}} 
+\index{CXInput@{CXInput}!SetVibration@{SetVibration}}
+\index{SetVibration@{SetVibration}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{SetVibration()}{SetVibration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void CXInput\+::\+Set\+Vibration (\begin{DoxyParamCaption}\item[{const bool \&}]{is\+Vib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_c_x_input_a962f2c5688c06513dd9042908448d641}\label{class_c_x_input_a962f2c5688c06513dd9042908448d641}} 
+\index{CXInput@{CXInput}!SetVibration@{SetVibration}}
+\index{SetVibration@{SetVibration}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{SetVibration()}{SetVibration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool CXInput\+::\+Set\+Vibration (\begin{DoxyParamCaption}\item[{WORD}]{LMotor\+Spd,  }\item[{WORD}]{RMotor\+Spd,  }\item[{const int \&}]{connect\+Num = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_c_x_input_a962f2c5688c06513dd9042908448d641_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_x_input_abc24e3e638cf24fd9fe83f96bda123d6}\label{class_c_x_input_abc24e3e638cf24fd9fe83f96bda123d6}} 
+\index{CXInput@{CXInput}!StatsUpdate@{StatsUpdate}}
+\index{StatsUpdate@{StatsUpdate}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{StatsUpdate()}{StatsUpdate()}}
+{\footnotesize\ttfamily static void CXInput\+::\+Stats\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+コントローラーの状態を更新. 
+
+毎フレーム事に更新すること. 被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_x_input_abc24e3e638cf24fd9fe83f96bda123d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{メンバ詳解}
+\mbox{\Hypertarget{class_c_x_input_a4bc98bf05248326998d7c0410b6635e7}\label{class_c_x_input_a4bc98bf05248326998d7c0410b6635e7}} 
+\index{CXInput@{CXInput}!VIBRATION\_CONFIG\_FILE\_PATH@{VIBRATION\_CONFIG\_FILE\_PATH}}
+\index{VIBRATION\_CONFIG\_FILE\_PATH@{VIBRATION\_CONFIG\_FILE\_PATH}!CXInput@{CXInput}}
+\doxysubsubsection{\texorpdfstring{VIBRATION\_CONFIG\_FILE\_PATH}{VIBRATION\_CONFIG\_FILE\_PATH}}
+{\footnotesize\ttfamily const char$\ast$ CXInput\+::\+VIBRATION\+\_\+\+CONFIG\+\_\+\+FILE\+\_\+\+PATH = \char`\"{}Data\textbackslash{}\textbackslash{}\+Config\textbackslash{}\textbackslash{}\+Con\+\_\+\+Vib.\+bin\char`\"{}\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Input/\+XInput/\mbox{\hyperlink{_x_input_8h}{XInput.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+Input/\+XInput/\mbox{\hyperlink{_x_input_8cpp}{XInput.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Hulien: C:/Users/hera/Desktop/Req1630/Hulien/Hulien/SourceCode/GameObject/Widget/SceneWidget/GameWidget/Warning/Warning.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Hulien
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ce10b7ecbc1ebb37060da4d7df0fe460.html">Req1630</a></li><li class="navelem"><a class="el" href="dir_2dd72f5d0052a7629df430cf0ef2ca70.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_f526e0a866e7cea693827fd710c7c286.html">Hulien</a></li><li class="navelem"><a class="el" href="dir_cccc6f797f3f0fd4a8640f996ea5a69f.html">SourceCode</a></li><li class="navelem"><a class="el" href="dir_1f5de274e9e06ffbe73d444c031d73a8.html">GameObject</a></li><li class="navelem"><a class="el" href="dir_37324a57fc665916c0a0eb687ecca80e.html">Widget</a></li><li class="navelem"><a class="el" href="dir_2fa40860709c421cc587a8d528cac278.html">SceneWidget</a></li><li class="navelem"><a class="el" href="dir_c815d2af617786c0f5a537c28156456c.html">GameWidget</a></li><li class="navelem"><a class="el" href="dir_8194c87194ee613d16ed9fdd1ea086fd.html">Warning</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Warning.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_warning_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WARNING_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WARNING_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\SceneWidget.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*************************************</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*   警告クラス.</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">**/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_c_warning.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_warning.html">CWarning</a> : <span class="keyword">public</span> <a class="code" href="class_c_scene_widget.html">CSceneWidget</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITE_NAME         = <span class="stringliteral">&quot;dangersignsize&quot;</span>; <span class="comment">// スプライト名.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* SPRITEUI_NAME       = <span class="stringliteral">&quot;arrowsize&quot;</span>;          <span class="comment">// スプライトUI名.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>   DANGER_SIGN         = 0;                        <span class="comment">// 警告サイン.</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>   DANGER_ARROW        = 1;                        <span class="comment">// 警告矢印.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ADJ_POS_Y           = 6.0f;                 <span class="comment">// y座標調整.</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// 警告矢印.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> RIGHT_POSITION_X    = <a class="code" href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a> - 90.0f;        <span class="comment">//右表示のy座標.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> LEFT_POSITION_X     = 70.0f;                    <span class="comment">//左表示のy座標.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> ARROWPOSITION_Y     = <a class="code" href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a> / 2 - 40;           <span class="comment">//矢印のy座標.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> RIGHT_ROTATION      = 0.0f;                 <span class="comment">//右表示の回転値.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">float</span> LEFT_ROTATION       = <span class="keyword">static_cast&lt;</span><span class="keywordtype">float</span><span class="keyword">&gt;</span>(D3DXToDegree(180.0));  <span class="comment">//左表示の回転値.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_c_warning.html#a93f80d4013bc88e2697ff4b09f0f9085">CWarning</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_c_warning.html#a8334a91aca2b5d7a2999d54821b6ad55">~CWarning</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// 初期化関数.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_c_warning.html#af4ed6b5fced5f3136e6c0f0932147b92">Init</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// 更新関数.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_warning.html#a167cff167c945012024040a83bdae4de">Update</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">//描画関数.</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_warning.html#ae2f55dc4832caad2a62dda05412ac1bd">Render</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// 女の子の状態設定関数.</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_c_warning.html#a3f3d753b8c5df6614a07ffa4bff4350e">   37</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_c_warning.html#a3f3d753b8c5df6614a07ffa4bff4350e">SetPosition</a>(<span class="keyword">const</span> D3DXVECTOR3&amp; vPos)<span class="keyword">override </span>{ m_vTargetPos = vPos; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// 女の子が画面外か.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_c_warning.html#a9213be32292afb11a8bd9c1a15e5f144">   39</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_warning.html#a9213be32292afb11a8bd9c1a15e5f144">SetIsGirlOffScreen</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; IsOffScreen) { m_IsGirlOffScreen = IsOffScreen; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 矢印を右に表示するか.</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_c_warning.html#a859dc6359494a971396e6d464dba6158">   41</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_c_warning.html#a859dc6359494a971396e6d464dba6158">SetIsDispRight</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span>&amp; IsDispRight) { m_IsDispRight = IsDispRight; }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// スプライト設定関数.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> SpriteSetting() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// スプライトの描画関数.</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> RenderDangerSign();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// スプライトUIの描画関数.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> RenderDangerArrow();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::vector&lt;std::shared_ptr&lt;CSprite&gt;&gt; m_pSprite;                    <span class="comment">// スプライトクラス.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    D3DXVECTOR3                             m_vTargetPos;               <span class="comment">//ターゲット位置.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">bool</span>                                                m_IsGirlOffScreen;      <span class="comment">//女の子が画面外か.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span>                                                m_IsDispRight;              <span class="comment">//右に表示するか.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">//#ifndef WARNING_H.</span></div>
+<div class="ttc" id="a_global_8h_html_a6a02f87f580d8b9e0e5b3bbc964efb1c"><div class="ttname"><a href="_global_8h.html#a6a02f87f580d8b9e0e5b3bbc964efb1c">WND_W</a></div><div class="ttdeci">const int WND_W</div><div class="ttdef"><b>Definition:</b> Global.h:28</div></div>
+<div class="ttc" id="a_global_8h_html_a6ba6a18a896a6e1a88f7ec592f5efc20"><div class="ttname"><a href="_global_8h.html#a6ba6a18a896a6e1a88f7ec592f5efc20">WND_H</a></div><div class="ttdeci">const int WND_H</div><div class="ttdef"><b>Definition:</b> Global.h:29</div></div>
+<div class="ttc" id="aclass_c_scene_widget_html"><div class="ttname"><a href="class_c_scene_widget.html">CSceneWidget</a></div><div class="ttdef"><b>Definition:</b> SceneWidget.h:13</div></div>
+<div class="ttc" id="aclass_c_warning_html"><div class="ttname"><a href="class_c_warning.html">CWarning</a></div><div class="ttdef"><b>Definition:</b> Warning.h:11</div></div>
+<div class="ttc" id="aclass_c_warning_html_a167cff167c945012024040a83bdae4de"><div class="ttname"><a href="class_c_warning.html#a167cff167c945012024040a83bdae4de">CWarning::Update</a></div><div class="ttdeci">virtual void Update() override</div><div class="ttdef"><b>Definition:</b> Warning.cpp:27</div></div>
+<div class="ttc" id="aclass_c_warning_html_a3f3d753b8c5df6614a07ffa4bff4350e"><div class="ttname"><a href="class_c_warning.html#a3f3d753b8c5df6614a07ffa4bff4350e">CWarning::SetPosition</a></div><div class="ttdeci">virtual void SetPosition(const D3DXVECTOR3 &amp;vPos) override</div><div class="ttdef"><b>Definition:</b> Warning.h:37</div></div>
+<div class="ttc" id="aclass_c_warning_html_a8334a91aca2b5d7a2999d54821b6ad55"><div class="ttname"><a href="class_c_warning.html#a8334a91aca2b5d7a2999d54821b6ad55">CWarning::~CWarning</a></div><div class="ttdeci">virtual ~CWarning()</div><div class="ttdef"><b>Definition:</b> Warning.cpp:15</div></div>
+<div class="ttc" id="aclass_c_warning_html_a859dc6359494a971396e6d464dba6158"><div class="ttname"><a href="class_c_warning.html#a859dc6359494a971396e6d464dba6158">CWarning::SetIsDispRight</a></div><div class="ttdeci">void SetIsDispRight(const bool &amp;IsDispRight)</div><div class="ttdef"><b>Definition:</b> Warning.h:41</div></div>
+<div class="ttc" id="aclass_c_warning_html_a9213be32292afb11a8bd9c1a15e5f144"><div class="ttname"><a href="class_c_warning.html#a9213be32292afb11a8bd9c1a15e5f144">CWarning::SetIsGirlOffScreen</a></div><div class="ttdeci">void SetIsGirlOffScreen(const bool &amp;IsOffScreen)</div><div class="ttdef"><b>Definition:</b> Warning.h:39</div></div>
+<div class="ttc" id="aclass_c_warning_html_a93f80d4013bc88e2697ff4b09f0f9085"><div class="ttname"><a href="class_c_warning.html#a93f80d4013bc88e2697ff4b09f0f9085">CWarning::CWarning</a></div><div class="ttdeci">CWarning()</div><div class="ttdef"><b>Definition:</b> Warning.cpp:8</div></div>
+<div class="ttc" id="aclass_c_warning_html_ae2f55dc4832caad2a62dda05412ac1bd"><div class="ttname"><a href="class_c_warning.html#ae2f55dc4832caad2a62dda05412ac1bd">CWarning::Render</a></div><div class="ttdeci">virtual void Render() override</div><div class="ttdef"><b>Definition:</b> Warning.cpp:35</div></div>
+<div class="ttc" id="aclass_c_warning_html_af4ed6b5fced5f3136e6c0f0932147b92"><div class="ttname"><a href="class_c_warning.html#af4ed6b5fced5f3136e6c0f0932147b92">CWarning::Init</a></div><div class="ttdeci">virtual bool Init() override</div><div class="ttdef"><b>Definition:</b> Warning.cpp:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築:&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

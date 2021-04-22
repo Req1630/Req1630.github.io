@@ -1,0 +1,165 @@
+\hypertarget{class_c_shadow_map}{}\doxysection{CShadow\+Map クラス}
+\label{class_c_shadow_map}\index{CShadowMap@{CShadowMap}}
+
+
+{\ttfamily \#include $<$Shadow\+Map.\+h$>$}
+
+
+
+CShadow\+Map の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_c_shadow_map__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CShadow\+Map 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_c_shadow_map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_shadow_map_a0a989f7f33fdfce61e1f3330fca5b58d}{CShadow\+Map}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_shadow_map_a9110c83f9129b4c75812034f989bd261}{$\sim$\+CShadow\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_shadow_map}{CShadow\+Map}} $\ast$ \mbox{\hyperlink{class_c_shadow_map_a15e896c4d598666bd65d01146ca9e02f}{Get\+Instance}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_shadow_map_a9c799d9459560161caccf4f72e308c51}{Init}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_shadow_map_a41e7515191bdb0014f9de7bdfd7443da}{Release\+Shader}} ()
+\item 
+static void \mbox{\hyperlink{class_c_shadow_map_a394fefedbf254bfadba90103b42e2c87}{Set\+Constant\+Buffer\+Data}} (const D3\+DXMATRIX \&m\+LWVP, const bool is\+Skin=false)
+\item 
+static void \mbox{\hyperlink{class_c_shadow_map_ac2798950d529cffbfd80a0a232473878}{Shader\+Set}} (ID3\+D11\+Buffer $\ast$p\+Vertex\+Buffer, ID3\+D11\+Buffer $\ast$p\+Index\+Buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_shadow_map_a0a989f7f33fdfce61e1f3330fca5b58d}\label{class_c_shadow_map_a0a989f7f33fdfce61e1f3330fca5b58d}} 
+\index{CShadowMap@{CShadowMap}!CShadowMap@{CShadowMap}}
+\index{CShadowMap@{CShadowMap}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{CShadowMap()}{CShadowMap()}}
+{\footnotesize\ttfamily CShadow\+Map\+::\+CShadow\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_shadow_map_a9110c83f9129b4c75812034f989bd261}\label{class_c_shadow_map_a9110c83f9129b4c75812034f989bd261}} 
+\index{CShadowMap@{CShadowMap}!````~CShadowMap@{$\sim$CShadowMap}}
+\index{````~CShadowMap@{$\sim$CShadowMap}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{$\sim$CShadowMap()}{~CShadowMap()}}
+{\footnotesize\ttfamily CShadow\+Map\+::$\sim$\+CShadow\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_a9110c83f9129b4c75812034f989bd261_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_shadow_map_a15e896c4d598666bd65d01146ca9e02f}\label{class_c_shadow_map_a15e896c4d598666bd65d01146ca9e02f}} 
+\index{CShadowMap@{CShadowMap}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_shadow_map}{CShadow\+Map}} $\ast$ CShadow\+Map\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_a15e896c4d598666bd65d01146ca9e02f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_shadow_map_a9c799d9459560161caccf4f72e308c51}\label{class_c_shadow_map_a9c799d9459560161caccf4f72e308c51}} 
+\index{CShadowMap@{CShadowMap}!Init@{Init}}
+\index{Init@{Init}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily HRESULT CShadow\+Map\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_a9c799d9459560161caccf4f72e308c51_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{class_c_shadow_map_a9c799d9459560161caccf4f72e308c51_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_shadow_map_a41e7515191bdb0014f9de7bdfd7443da}\label{class_c_shadow_map_a41e7515191bdb0014f9de7bdfd7443da}} 
+\index{CShadowMap@{CShadowMap}!ReleaseShader@{ReleaseShader}}
+\index{ReleaseShader@{ReleaseShader}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{ReleaseShader()}{ReleaseShader()}}
+{\footnotesize\ttfamily HRESULT CShadow\+Map\+::\+Release\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_a41e7515191bdb0014f9de7bdfd7443da_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_a41e7515191bdb0014f9de7bdfd7443da_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_shadow_map_a394fefedbf254bfadba90103b42e2c87}\label{class_c_shadow_map_a394fefedbf254bfadba90103b42e2c87}} 
+\index{CShadowMap@{CShadowMap}!SetConstantBufferData@{SetConstantBufferData}}
+\index{SetConstantBufferData@{SetConstantBufferData}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{SetConstantBufferData()}{SetConstantBufferData()}}
+{\footnotesize\ttfamily void CShadow\+Map\+::\+Set\+Constant\+Buffer\+Data (\begin{DoxyParamCaption}\item[{const D3\+DXMATRIX \&}]{m\+LWVP,  }\item[{const bool}]{is\+Skin = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_a394fefedbf254bfadba90103b42e2c87_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_shadow_map_ac2798950d529cffbfd80a0a232473878}\label{class_c_shadow_map_ac2798950d529cffbfd80a0a232473878}} 
+\index{CShadowMap@{CShadowMap}!ShaderSet@{ShaderSet}}
+\index{ShaderSet@{ShaderSet}!CShadowMap@{CShadowMap}}
+\doxysubsubsection{\texorpdfstring{ShaderSet()}{ShaderSet()}}
+{\footnotesize\ttfamily void CShadow\+Map\+::\+Shader\+Set (\begin{DoxyParamCaption}\item[{ID3\+D11\+Buffer $\ast$}]{p\+Vertex\+Buffer,  }\item[{ID3\+D11\+Buffer $\ast$}]{p\+Index\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_shadow_map_ac2798950d529cffbfd80a0a232473878_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Shadow\+Map/\mbox{\hyperlink{_shadow_map_8h}{Shadow\+Map.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Common/\+Shader/\+Shadow\+Map/\mbox{\hyperlink{_shadow_map_8cpp}{Shadow\+Map.\+cpp}}\end{DoxyCompactItemize}

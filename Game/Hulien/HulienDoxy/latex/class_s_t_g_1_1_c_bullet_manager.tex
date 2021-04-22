@@ -1,0 +1,154 @@
+\hypertarget{class_s_t_g_1_1_c_bullet_manager}{}\doxysection{STG\+::CBullet\+Manager クラス}
+\label{class_s_t_g_1_1_c_bullet_manager}\index{STG::CBulletManager@{STG::CBulletManager}}
+
+
+{\ttfamily \#include $<$Bulet\+Manager.\+h$>$}
+
+
+
+STG\+::CBullet\+Manager の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_s_t_g_1_1_c_bullet_manager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+STG\+::CBullet\+Manager 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_s_t_g_1_1_c_bullet_manager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a380d1c0017ac521f4d442c0f33541c9b}{CBullet\+Manager}} ()
+\item 
+\mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a125d1ffd7c13283e81467bd455ef51cc}{CBullet\+Manager}} (const \mbox{\hyperlink{struct_s_t_g_1_1_s_bullet_manager_param}{SBullet\+Manager\+Param}} \&param)
+\item 
+virtual \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a6e78585f836919d56e776d17e763e798}{$\sim$\+CBullet\+Manager}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_ac65ac78a9916dc1b7f0a614920658863}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_ab5246a88f70e399e522b9d9c2554f059}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a11418fd63eb0c85936dee27ff4398e26}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a3c3fc3658eaa219be08153f3d69154a7}{Collision}} (\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$p\+Actor) override
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a132162c8c34732f2fae5cc1aa5dc33c6}{Shot}} ()
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_a0522c5cacbc853fe07973f70bcba0b5b}{Random\+Shot}} ()
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_aecdfb34386d544ed808605e47ecad6eb}{Is\+Shot\+End}} () const
+\item 
+void \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_aff5774b1352a17ae83abde432285f0cb}{Set\+Init\+Angle}} (const D3\+DXVECTOR3 \&pos, const D3\+DXVECTOR3 \&target\+Pos)
+\item 
+bool \mbox{\hyperlink{class_s_t_g_1_1_c_bullet_manager_af4b8540985a63eac35923f994698a345}{Is\+All\+Bullet\+Update\+End}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a380d1c0017ac521f4d442c0f33541c9b}\label{class_s_t_g_1_1_c_bullet_manager_a380d1c0017ac521f4d442c0f33541c9b}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!CBulletManager@{CBulletManager}}
+\index{CBulletManager@{CBulletManager}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{CBulletManager()}{CBulletManager()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily STG\+::\+CBullet\+Manager\+::\+CBullet\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a125d1ffd7c13283e81467bd455ef51cc}\label{class_s_t_g_1_1_c_bullet_manager_a125d1ffd7c13283e81467bd455ef51cc}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!CBulletManager@{CBulletManager}}
+\index{CBulletManager@{CBulletManager}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{CBulletManager()}{CBulletManager()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily STG\+::\+CBullet\+Manager\+::\+CBullet\+Manager (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_t_g_1_1_s_bullet_manager_param}{SBullet\+Manager\+Param}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a6e78585f836919d56e776d17e763e798}\label{class_s_t_g_1_1_c_bullet_manager_a6e78585f836919d56e776d17e763e798}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!````~CBulletManager@{$\sim$CBulletManager}}
+\index{````~CBulletManager@{$\sim$CBulletManager}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$CBulletManager()}{~CBulletManager()}}
+{\footnotesize\ttfamily STG\+::\+CBullet\+Manager\+::$\sim$\+CBullet\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a3c3fc3658eaa219be08153f3d69154a7}\label{class_s_t_g_1_1_c_bullet_manager_a3c3fc3658eaa219be08153f3d69154a7}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!Collision@{Collision}}
+\index{Collision@{Collision}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+Manager\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_s_t_g_1_1_c_actor}{STG\+::\+CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_s_t_g_1_1_c_actor_a0c69af60d637b416b1212b6b589ad74e}{STG\+::\+CActor}}を実装しています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_ac65ac78a9916dc1b7f0a614920658863}\label{class_s_t_g_1_1_c_bullet_manager_ac65ac78a9916dc1b7f0a614920658863}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!Init@{Init}}
+\index{Init@{Init}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+Manager\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_af4b8540985a63eac35923f994698a345}\label{class_s_t_g_1_1_c_bullet_manager_af4b8540985a63eac35923f994698a345}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!IsAllBulletUpdateEnd@{IsAllBulletUpdateEnd}}
+\index{IsAllBulletUpdateEnd@{IsAllBulletUpdateEnd}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{IsAllBulletUpdateEnd()}{IsAllBulletUpdateEnd()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+Manager\+::\+Is\+All\+Bullet\+Update\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_aecdfb34386d544ed808605e47ecad6eb}\label{class_s_t_g_1_1_c_bullet_manager_aecdfb34386d544ed808605e47ecad6eb}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!IsShotEnd@{IsShotEnd}}
+\index{IsShotEnd@{IsShotEnd}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{IsShotEnd()}{IsShotEnd()}}
+{\footnotesize\ttfamily bool STG\+::\+CBullet\+Manager\+::\+Is\+Shot\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a0522c5cacbc853fe07973f70bcba0b5b}\label{class_s_t_g_1_1_c_bullet_manager_a0522c5cacbc853fe07973f70bcba0b5b}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!RandomShot@{RandomShot}}
+\index{RandomShot@{RandomShot}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{RandomShot()}{RandomShot()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+Manager\+::\+Random\+Shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a11418fd63eb0c85936dee27ff4398e26}\label{class_s_t_g_1_1_c_bullet_manager_a11418fd63eb0c85936dee27ff4398e26}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!Render@{Render}}
+\index{Render@{Render}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+Manager\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_aff5774b1352a17ae83abde432285f0cb}\label{class_s_t_g_1_1_c_bullet_manager_aff5774b1352a17ae83abde432285f0cb}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!SetInitAngle@{SetInitAngle}}
+\index{SetInitAngle@{SetInitAngle}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{SetInitAngle()}{SetInitAngle()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+Manager\+::\+Set\+Init\+Angle (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos,  }\item[{const D3\+DXVECTOR3 \&}]{target\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_a132162c8c34732f2fae5cc1aa5dc33c6}\label{class_s_t_g_1_1_c_bullet_manager_a132162c8c34732f2fae5cc1aa5dc33c6}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!Shot@{Shot}}
+\index{Shot@{Shot}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{Shot()}{Shot()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+Manager\+::\+Shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_s_t_g_1_1_c_bullet_manager_ab5246a88f70e399e522b9d9c2554f059}\label{class_s_t_g_1_1_c_bullet_manager_ab5246a88f70e399e522b9d9c2554f059}} 
+\index{STG::CBulletManager@{STG::CBulletManager}!Update@{Update}}
+\index{Update@{Update}!STG::CBulletManager@{STG::CBulletManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void STG\+::\+CBullet\+Manager\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Bullet/\+Bulet\+Manager/\mbox{\hyperlink{_bulet_manager_8h}{Bulet\+Manager.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+STG/\+Bullet/\+Bulet\+Manager/\mbox{\hyperlink{_bulet_manager_8cpp}{Bulet\+Manager.\+cpp}}\end{DoxyCompactItemize}

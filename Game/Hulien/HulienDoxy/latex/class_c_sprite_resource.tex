@@ -1,0 +1,136 @@
+\hypertarget{class_c_sprite_resource}{}\doxysection{CSprite\+Resource クラス}
+\label{class_c_sprite_resource}\index{CSpriteResource@{CSpriteResource}}
+
+
+{\ttfamily \#include $<$Sprite\+Resource.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_sprite_resource_ad445a76325c43fc0834ca0072e3e7fe8}{CSprite\+Resource}} ()
+\item 
+\mbox{\hyperlink{class_c_sprite_resource_a8983a78a259f46bdaefe074813569a9b}{$\sim$\+CSprite\+Resource}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_sprite_resource}{CSprite\+Resource}} $\ast$ \mbox{\hyperlink{class_c_sprite_resource_ad8a70c45c286d57ab3a178cd38286cda}{Get\+Instance}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_sprite_resource_a57baaa7f14aa8d03b21f95401e981c04}{Load}} (ID3\+D11\+Device $\ast$p\+Device11, ID3\+D11\+Device\+Context $\ast$p\+Context11)
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_sprite}{CSprite}} $>$ \mbox{\hyperlink{class_c_sprite_resource_a3e813ba3318f4a45a8967d158e89bebc}{Get\+Sprite}} (const std\+::string \&sprite\+Name)
+\item 
+static \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} \mbox{\hyperlink{class_c_sprite_resource_af2abd5850e523d4c05a33974d5ce2794}{Sprite\+State\+Read}} (const std\+::string \&file\+Path)
+\item 
+static HRESULT \mbox{\hyperlink{class_c_sprite_resource_a47941d08aeec93e8626915b50c3c8062}{Sprite\+State\+Read}} (const std\+::string \&file\+Path, \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} $\ast$ss)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_sprite_resource_ad445a76325c43fc0834ca0072e3e7fe8}\label{class_c_sprite_resource_ad445a76325c43fc0834ca0072e3e7fe8}} 
+\index{CSpriteResource@{CSpriteResource}!CSpriteResource@{CSpriteResource}}
+\index{CSpriteResource@{CSpriteResource}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{CSpriteResource()}{CSpriteResource()}}
+{\footnotesize\ttfamily CSprite\+Resource\+::\+CSprite\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_sprite_resource_a8983a78a259f46bdaefe074813569a9b}\label{class_c_sprite_resource_a8983a78a259f46bdaefe074813569a9b}} 
+\index{CSpriteResource@{CSpriteResource}!````~CSpriteResource@{$\sim$CSpriteResource}}
+\index{````~CSpriteResource@{$\sim$CSpriteResource}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{$\sim$CSpriteResource()}{~CSpriteResource()}}
+{\footnotesize\ttfamily CSprite\+Resource\+::$\sim$\+CSprite\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_sprite_resource_ad8a70c45c286d57ab3a178cd38286cda}\label{class_c_sprite_resource_ad8a70c45c286d57ab3a178cd38286cda}} 
+\index{CSpriteResource@{CSpriteResource}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_sprite_resource}{CSprite\+Resource}} $\ast$ CSprite\+Resource\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_ad8a70c45c286d57ab3a178cd38286cda_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_resource_a3e813ba3318f4a45a8967d158e89bebc}\label{class_c_sprite_resource_a3e813ba3318f4a45a8967d158e89bebc}} 
+\index{CSpriteResource@{CSpriteResource}!GetSprite@{GetSprite}}
+\index{GetSprite@{GetSprite}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{GetSprite()}{GetSprite()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_sprite}{CSprite}} $>$ CSprite\+Resource\+::\+Get\+Sprite (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sprite\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_a3e813ba3318f4a45a8967d158e89bebc_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_a3e813ba3318f4a45a8967d158e89bebc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_resource_a57baaa7f14aa8d03b21f95401e981c04}\label{class_c_sprite_resource_a57baaa7f14aa8d03b21f95401e981c04}} 
+\index{CSpriteResource@{CSpriteResource}!Load@{Load}}
+\index{Load@{Load}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily HRESULT CSprite\+Resource\+::\+Load (\begin{DoxyParamCaption}\item[{ID3\+D11\+Device $\ast$}]{p\+Device11,  }\item[{ID3\+D11\+Device\+Context $\ast$}]{p\+Context11 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_a57baaa7f14aa8d03b21f95401e981c04_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_a57baaa7f14aa8d03b21f95401e981c04_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_resource_af2abd5850e523d4c05a33974d5ce2794}\label{class_c_sprite_resource_af2abd5850e523d4c05a33974d5ce2794}} 
+\index{CSpriteResource@{CSpriteResource}!SpriteStateRead@{SpriteStateRead}}
+\index{SpriteStateRead@{SpriteStateRead}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{SpriteStateRead()}{SpriteStateRead()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} CSprite\+Resource\+::\+Sprite\+State\+Read (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_af2abd5850e523d4c05a33974d5ce2794_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_sprite_resource_a47941d08aeec93e8626915b50c3c8062}\label{class_c_sprite_resource_a47941d08aeec93e8626915b50c3c8062}} 
+\index{CSpriteResource@{CSpriteResource}!SpriteStateRead@{SpriteStateRead}}
+\index{SpriteStateRead@{SpriteStateRead}!CSpriteResource@{CSpriteResource}}
+\doxysubsubsection{\texorpdfstring{SpriteStateRead()}{SpriteStateRead()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily HRESULT CSprite\+Resource\+::\+Sprite\+State\+Read (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path,  }\item[{\mbox{\hyperlink{struct_s_sprite_state}{SSprite\+State}} $\ast$}]{ss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_sprite_resource_a47941d08aeec93e8626915b50c3c8062_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Sprite\+Resource/\mbox{\hyperlink{_sprite_resource_8h}{Sprite\+Resource.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Resource/\+Sprite\+Resource/\mbox{\hyperlink{_sprite_resource_8cpp}{Sprite\+Resource.\+cpp}}\end{DoxyCompactItemize}

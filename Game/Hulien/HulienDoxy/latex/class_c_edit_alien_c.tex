@@ -1,0 +1,142 @@
+\hypertarget{class_c_edit_alien_c}{}\doxysection{CEdit\+AlienC クラス}
+\label{class_c_edit_alien_c}\index{CEditAlienC@{CEditAlienC}}
+
+
+{\ttfamily \#include $<$Edit\+Alien\+\_\+\+C.\+h$>$}
+
+
+
+CEdit\+AlienC の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_edit_alien_c__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CEdit\+AlienC 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_c_edit_alien_c__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_edit_alien_c_a692af95e59767404a0b92474bd5553a0}{CEdit\+AlienC}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_edit_alien_c_a5b4f95d62cbf9b866eee472d55c6bc96}{$\sim$\+CEdit\+AlienC}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_edit_alien_c_a896418e49f2a9dee3664cd3dc15a8d2d}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_alien_c_a5ee56b1c583ba78a99a443e1b03b679a}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_alien_c_a94fbf76c4eed79b7e9ac5453582b373e}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_alien_c_ae32818a3a5ac736c6c639754a3b51b51}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_edit_alien_c_ae6fe9b24f3f2f04bc79366202478fd86}{Set\+Paramter}} (const \mbox{\hyperlink{struct_s_alien_param}{SAlien\+Param}} \&param) override
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_edit_alien_c_a692af95e59767404a0b92474bd5553a0}\label{class_c_edit_alien_c_a692af95e59767404a0b92474bd5553a0}} 
+\index{CEditAlienC@{CEditAlienC}!CEditAlienC@{CEditAlienC}}
+\index{CEditAlienC@{CEditAlienC}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{CEditAlienC()}{CEditAlienC()}}
+{\footnotesize\ttfamily CEdit\+Alien\+C\+::\+CEdit\+AlienC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_edit_alien_c_a5b4f95d62cbf9b866eee472d55c6bc96}\label{class_c_edit_alien_c_a5b4f95d62cbf9b866eee472d55c6bc96}} 
+\index{CEditAlienC@{CEditAlienC}!````~CEditAlienC@{$\sim$CEditAlienC}}
+\index{````~CEditAlienC@{$\sim$CEditAlienC}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{$\sim$CEditAlienC()}{~CEditAlienC()}}
+{\footnotesize\ttfamily CEdit\+Alien\+C\+::$\sim$\+CEdit\+AlienC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_edit_alien_c_ae32818a3a5ac736c6c639754a3b51b51}\label{class_c_edit_alien_c_ae32818a3a5ac736c6c639754a3b51b51}} 
+\index{CEditAlienC@{CEditAlienC}!Collision@{Collision}}
+\index{Collision@{Collision}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CEdit\+Alien\+C\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+\mbox{\Hypertarget{class_c_edit_alien_c_a896418e49f2a9dee3664cd3dc15a8d2d}\label{class_c_edit_alien_c_a896418e49f2a9dee3664cd3dc15a8d2d}} 
+\index{CEditAlienC@{CEditAlienC}!Init@{Init}}
+\index{Init@{Init}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CEdit\+Alien\+C\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_alien_c_a896418e49f2a9dee3664cd3dc15a8d2d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_edit_alien_c_a94fbf76c4eed79b7e9ac5453582b373e}\label{class_c_edit_alien_c_a94fbf76c4eed79b7e9ac5453582b373e}} 
+\index{CEditAlienC@{CEditAlienC}!Render@{Render}}
+\index{Render@{Render}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CEdit\+Alien\+C\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_alien_c_a94fbf76c4eed79b7e9ac5453582b373e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_edit_alien_c_ae6fe9b24f3f2f04bc79366202478fd86}\label{class_c_edit_alien_c_ae6fe9b24f3f2f04bc79366202478fd86}} 
+\index{CEditAlienC@{CEditAlienC}!SetParamter@{SetParamter}}
+\index{SetParamter@{SetParamter}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{SetParamter()}{SetParamter()}}
+{\footnotesize\ttfamily void CEdit\+Alien\+C\+::\+Set\+Paramter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_alien_param}{SAlien\+Param}} \&}]{param }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_edit_alien_a770a60c3ad055a3891f3b997f944af6e}{CEdit\+Alien}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_edit_alien_c_a5ee56b1c583ba78a99a443e1b03b679a}\label{class_c_edit_alien_c_a5ee56b1c583ba78a99a443e1b03b679a}} 
+\index{CEditAlienC@{CEditAlienC}!Update@{Update}}
+\index{Update@{Update}!CEditAlienC@{CEditAlienC}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CEdit\+Alien\+C\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_edit_alien_c_a5ee56b1c583ba78a99a443e1b03b679a_cgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Alien/\+Edit\+Alien/\+Alien\+\_\+\+C/\mbox{\hyperlink{_edit_alien___c_8h}{Edit\+Alien\+\_\+\+C.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Alien/\+Edit\+Alien/\+Alien\+\_\+\+C/\mbox{\hyperlink{_edit_alien___c_8cpp}{Edit\+Alien\+\_\+\+C.\+cpp}}\end{DoxyCompactItemize}

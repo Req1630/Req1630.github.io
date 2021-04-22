@@ -1,0 +1,26 @@
+<map id="CGameObject::GetPosition" name="CGameObject::GetPosition">
+<area shape="rect" id="node1" title=" " alt="" coords="728,427,908,453"/>
+<area shape="rect" id="node2" href="$class_c_mother_ship_u_f_o.html#a75be84fc3340ca7c86af0e3856cc2bb3" title=" " alt="" coords="476,72,657,99"/>
+<area shape="rect" id="node3" href="$class_c_spawn_u_f_o.html#ae9918c23520a0a8ffc9e2eaede217e8d" title=" " alt="" coords="489,123,644,149"/>
+<area shape="rect" id="node4" href="$class_c_item_base.html#a4d5f47448403bdfc77279a7f04644861" title=" " alt="" coords="495,173,638,200"/>
+<area shape="rect" id="node10" href="$class_c_alien.html#ad8ef815fde8263511051c8139f35671c" title=" " alt="" coords="501,224,632,251"/>
+<area shape="rect" id="node13" href="$class_c_event_alien.html#ac62bb5b4220baf4a9e80440e25ccbf3c" title=" " alt="" coords="485,275,648,301"/>
+<area shape="rect" id="node15" href="$class_c_player.html#a4e84d2e83cec95fa94fe2b0bd08f6d12" title=" " alt="" coords="489,325,644,352"/>
+<area shape="rect" id="node16" href="$class_c_event_girl.html#aa12cba5ad5747b282a2ebc1e9784e806" title=" " alt="" coords="481,376,652,403"/>
+<area shape="rect" id="node17" href="$class_c_laser_beam.html#aad63781b5a27b674b7f1dbb5f7f48859" title=" " alt="" coords="475,427,659,453"/>
+<area shape="rect" id="node18" href="$class_c_barrier.html#ae57dba15369c48116679a3831661b91e" title=" " alt="" coords="489,477,645,504"/>
+<area shape="rect" id="node19" href="$class_c_explosion.html#aff3589b04282e52a0e236ed67b7e0de5" title=" " alt="" coords="479,528,654,555"/>
+<area shape="rect" id="node20" href="$class_c_edit_item.html#a0a4fc1242e37550a5bd2b90e5b444e7f" title=" " alt="" coords="483,579,650,605"/>
+<area shape="rect" id="node21" href="$class_c_attack_up_item.html#a11116205a836c36d955444505e516473" title=" " alt="" coords="468,629,665,656"/>
+<area shape="rect" id="node22" href="$class_c_life_recovery_item.html#a5c2a6f29e45fb38fa01aec7343a471e2" title=" " alt="" coords="498,681,635,722"/>
+<area shape="rect" id="node23" href="$class_c_move_speed_up_item.html#a754cc7cab69f79700db5f00180e2f135" title=" " alt="" coords="453,747,680,773"/>
+<area shape="rect" id="node24" href="$class_c_s_p_effect_time_item.html#a5195f4985fc54d61110ec7590c592aae" title=" " alt="" coords="495,798,638,839"/>
+<area shape="rect" id="node5" href="$class_c_edit_item.html#a9f484219212602be75a182f1b8198e1b" title=" " alt="" coords="239,5,375,32"/>
+<area shape="rect" id="node6" href="$class_c_attack_up_item.html#a9e54f33a20df50628c3aa12f112c286d" title=" " alt="" coords="224,56,391,83"/>
+<area shape="rect" id="node7" href="$class_c_life_recovery_item.html#a6220636a1df5343bb4a86c0daba721b4" title=" " alt="" coords="239,107,376,149"/>
+<area shape="rect" id="node8" href="$class_c_move_speed_up_item.html#a81b7ab428d8bcf1a4d7d33b46eef3dd3" title=" " alt="" coords="209,173,405,200"/>
+<area shape="rect" id="node9" href="$class_c_s_p_effect_time_item.html#a3f3b567a12771a547f1df956ac172460" title=" " alt="" coords="236,225,379,266"/>
+<area shape="rect" id="node11" href="$class_c_alien.html#adfc13a7afa0726e893795888824899cc" title=" " alt="" coords="234,291,381,317"/>
+<area shape="rect" id="node12" href="$class_c_alien_b.html#a8d4f303adcaa4f12ca112e245e265d72" title=" " alt="" coords="5,291,161,317"/>
+<area shape="rect" id="node14" href="$class_c_event_alien.html#ac67066554c3c3e7f1ff978e8869dc9d3" title=" " alt="" coords="218,341,397,368"/>
+</map>

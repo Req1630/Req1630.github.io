@@ -1,0 +1,178 @@
+\hypertarget{class_c_girl}{}\doxysection{CGirl クラス}
+\label{class_c_girl}\index{CGirl@{CGirl}}
+
+
+{\ttfamily \#include $<$Girl.\+h$>$}
+
+
+
+CGirl の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_c_girl__inherit__graph}
+\end{center}
+\end{figure}
+
+
+CGirl 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{class_c_girl__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_girl_abc84c0737195721314b7c9e776bc3d14}{CGirl}} ()
+\item 
+\mbox{\hyperlink{class_c_girl_ae5dc8fcc0419e1bacbfd2f6ff3837f01}{$\sim$\+CGirl}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_girl_a6229e7916d0ce55e9d0ff152fdffe3a2}{Init}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_girl_adc60ac4ea780cb61fc79766765a815f4}{Update}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_girl_a97a6ea9adc70b741ad209ad37ddef2d4}{Render}} () override
+\item 
+virtual void \mbox{\hyperlink{class_c_girl_ae5349011c477ea48a6daeb475c58acb6}{Collision}} (\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$p\+Actor) override
+\item 
+virtual void \mbox{\hyperlink{class_c_girl_a748564e9a7944e9a19c1d22057b25334}{Set\+Position}} (const D3\+DXVECTOR3 \&pos) override
+\item 
+virtual void \mbox{\hyperlink{class_c_girl_a16b40c80620efae7d618382ac7c9ff27}{Sprite\+Render}} () override
+\item 
+bool \mbox{\hyperlink{class_c_girl_a4a439a987a5f0e73544888308e0f4799}{Is\+Danger}} ()
+\item 
+void \mbox{\hyperlink{class_c_girl_ad4324880d3aa038666dd0cd532c02cc6}{Set\+Camera\+RadianX}} (const float \&radian)
+\item 
+void \mbox{\hyperlink{class_c_girl_a5b26eedc653bc3209d3d8162f7e37326}{Set\+Parameter}} (const \mbox{\hyperlink{struct_s_girl_param}{SGirl\+Param}} \&param, const bool \&is\+Edit=false)
+\end{DoxyCompactItemize}
+\doxysubsection*{その他の継承メンバ}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_girl_abc84c0737195721314b7c9e776bc3d14}\label{class_c_girl_abc84c0737195721314b7c9e776bc3d14}} 
+\index{CGirl@{CGirl}!CGirl@{CGirl}}
+\index{CGirl@{CGirl}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{CGirl()}{CGirl()}}
+{\footnotesize\ttfamily CGirl\+::\+CGirl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_girl_ae5dc8fcc0419e1bacbfd2f6ff3837f01}\label{class_c_girl_ae5dc8fcc0419e1bacbfd2f6ff3837f01}} 
+\index{CGirl@{CGirl}!````~CGirl@{$\sim$CGirl}}
+\index{````~CGirl@{$\sim$CGirl}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGirl()}{~CGirl()}}
+{\footnotesize\ttfamily CGirl\+::$\sim$\+CGirl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_girl_ae5349011c477ea48a6daeb475c58acb6}\label{class_c_girl_ae5349011c477ea48a6daeb475c58acb6}} 
+\index{CGirl@{CGirl}!Collision@{Collision}}
+\index{Collision@{Collision}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void CGirl\+::\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_actor}{CActor}} $\ast$}]{p\+Actor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_actor_a8625400f65db4910b23c6d820fea0e35}{CActor}}を実装しています。
+
+\mbox{\Hypertarget{class_c_girl_a6229e7916d0ce55e9d0ff152fdffe3a2}\label{class_c_girl_a6229e7916d0ce55e9d0ff152fdffe3a2}} 
+\index{CGirl@{CGirl}!Init@{Init}}
+\index{Init@{Init}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily bool CGirl\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ad898aaafe84a7975ed56a1630f75aa61}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_girl_a6229e7916d0ce55e9d0ff152fdffe3a2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_girl_a4a439a987a5f0e73544888308e0f4799}\label{class_c_girl_a4a439a987a5f0e73544888308e0f4799}} 
+\index{CGirl@{CGirl}!IsDanger@{IsDanger}}
+\index{IsDanger@{IsDanger}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{IsDanger()}{IsDanger()}}
+{\footnotesize\ttfamily bool CGirl\+::\+Is\+Danger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_girl_a97a6ea9adc70b741ad209ad37ddef2d4}\label{class_c_girl_a97a6ea9adc70b741ad209ad37ddef2d4}} 
+\index{CGirl@{CGirl}!Render@{Render}}
+\index{Render@{Render}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void CGirl\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a7b7202d2b8c34d76baab6dce15de2070}{CGame\+Object}}を実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_girl_a97a6ea9adc70b741ad209ad37ddef2d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_girl_ad4324880d3aa038666dd0cd532c02cc6}\label{class_c_girl_ad4324880d3aa038666dd0cd532c02cc6}} 
+\index{CGirl@{CGirl}!SetCameraRadianX@{SetCameraRadianX}}
+\index{SetCameraRadianX@{SetCameraRadianX}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{SetCameraRadianX()}{SetCameraRadianX()}}
+{\footnotesize\ttfamily void CGirl\+::\+Set\+Camera\+RadianX (\begin{DoxyParamCaption}\item[{const float \&}]{radian }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_girl_a5b26eedc653bc3209d3d8162f7e37326}\label{class_c_girl_a5b26eedc653bc3209d3d8162f7e37326}} 
+\index{CGirl@{CGirl}!SetParameter@{SetParameter}}
+\index{SetParameter@{SetParameter}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{SetParameter()}{SetParameter()}}
+{\footnotesize\ttfamily void CGirl\+::\+Set\+Parameter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_s_girl_param}{SGirl\+Param}} \&}]{param,  }\item[{const bool \&}]{is\+Edit = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_girl_a748564e9a7944e9a19c1d22057b25334}\label{class_c_girl_a748564e9a7944e9a19c1d22057b25334}} 
+\index{CGirl@{CGirl}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void CGirl\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const D3\+DXVECTOR3 \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_ac96a6cda895f9d0f520e6b43b82d2d77}{CGame\+Object}}を再実装しています。
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_c_girl_a748564e9a7944e9a19c1d22057b25334_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_girl_a16b40c80620efae7d618382ac7c9ff27}\label{class_c_girl_a16b40c80620efae7d618382ac7c9ff27}} 
+\index{CGirl@{CGirl}!SpriteRender@{SpriteRender}}
+\index{SpriteRender@{SpriteRender}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{SpriteRender()}{SpriteRender()}}
+{\footnotesize\ttfamily void CGirl\+::\+Sprite\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_character_a267ad6ac87787684bc6065d8b0dc3ff2}{CCharacter}}を再実装しています。
+
+\mbox{\Hypertarget{class_c_girl_adc60ac4ea780cb61fc79766765a815f4}\label{class_c_girl_adc60ac4ea780cb61fc79766765a815f4}} 
+\index{CGirl@{CGirl}!Update@{Update}}
+\index{Update@{Update}!CGirl@{CGirl}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void CGirl\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_c_game_object_a0cac96898083c118adc5c054af44b37b}{CGame\+Object}}を実装しています。
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Girl/\mbox{\hyperlink{_girl_8h}{Girl.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Game\+Object/\+Actor/\+Character/\+Girl/\mbox{\hyperlink{_girl_8cpp}{Girl.\+cpp}}\end{DoxyCompactItemize}

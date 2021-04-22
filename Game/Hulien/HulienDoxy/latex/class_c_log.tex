@@ -1,0 +1,128 @@
+\hypertarget{class_c_log}{}\doxysection{CLog クラス}
+\label{class_c_log}\index{CLog@{CLog}}
+
+
+{\ttfamily \#include $<$My\+Log.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_log_ac3e81955a022e0c205354caadbed8a3c}{CLog}} ()
+\item 
+\mbox{\hyperlink{class_c_log_a569ed11d9b2dcd2f57753b000beb67e9}{$\sim$\+CLog}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{静的公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_c_log}{CLog}} $\ast$ \mbox{\hyperlink{class_c_log_a2c38f57ef8b010d0d2c11990a6eb9098}{Get\+Instance}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_log_adedd3bfc8a251546a7fa427ffd3632b5}{Open\+Log\+Text\+File}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_log_a3f789f47720f9458ab403bb73b0b05c2}{Close\+Log\+Text\+File}} ()
+\item 
+static HRESULT \mbox{\hyperlink{class_c_log_acff1fd25b324a62fca5dcb050073eea5}{Print}} (const std\+::string \&message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_log_ac3e81955a022e0c205354caadbed8a3c}\label{class_c_log_ac3e81955a022e0c205354caadbed8a3c}} 
+\index{CLog@{CLog}!CLog@{CLog}}
+\index{CLog@{CLog}!CLog@{CLog}}
+\doxysubsubsection{\texorpdfstring{CLog()}{CLog()}}
+{\footnotesize\ttfamily CLog\+::\+CLog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_log_a569ed11d9b2dcd2f57753b000beb67e9}\label{class_c_log_a569ed11d9b2dcd2f57753b000beb67e9}} 
+\index{CLog@{CLog}!````~CLog@{$\sim$CLog}}
+\index{````~CLog@{$\sim$CLog}!CLog@{CLog}}
+\doxysubsubsection{\texorpdfstring{$\sim$CLog()}{~CLog()}}
+{\footnotesize\ttfamily CLog\+::$\sim$\+CLog (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_log_a3f789f47720f9458ab403bb73b0b05c2}\label{class_c_log_a3f789f47720f9458ab403bb73b0b05c2}} 
+\index{CLog@{CLog}!CloseLogTextFile@{CloseLogTextFile}}
+\index{CloseLogTextFile@{CloseLogTextFile}!CLog@{CLog}}
+\doxysubsubsection{\texorpdfstring{CloseLogTextFile()}{CloseLogTextFile()}}
+{\footnotesize\ttfamily HRESULT CLog\+::\+Close\+Log\+Text\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_log_a3f789f47720f9458ab403bb73b0b05c2_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{class_c_log_a3f789f47720f9458ab403bb73b0b05c2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_log_a2c38f57ef8b010d0d2c11990a6eb9098}\label{class_c_log_a2c38f57ef8b010d0d2c11990a6eb9098}} 
+\index{CLog@{CLog}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!CLog@{CLog}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_log}{CLog}} $\ast$ CLog\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_log_a2c38f57ef8b010d0d2c11990a6eb9098_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_log_adedd3bfc8a251546a7fa427ffd3632b5}\label{class_c_log_adedd3bfc8a251546a7fa427ffd3632b5}} 
+\index{CLog@{CLog}!OpenLogTextFile@{OpenLogTextFile}}
+\index{OpenLogTextFile@{OpenLogTextFile}!CLog@{CLog}}
+\doxysubsubsection{\texorpdfstring{OpenLogTextFile()}{OpenLogTextFile()}}
+{\footnotesize\ttfamily HRESULT CLog\+::\+Open\+Log\+Text\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_log_adedd3bfc8a251546a7fa427ffd3632b5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_c_log_adedd3bfc8a251546a7fa427ffd3632b5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_log_acff1fd25b324a62fca5dcb050073eea5}\label{class_c_log_acff1fd25b324a62fca5dcb050073eea5}} 
+\index{CLog@{CLog}!Print@{Print}}
+\index{Print@{Print}!CLog@{CLog}}
+\doxysubsubsection{\texorpdfstring{Print()}{Print()}}
+{\footnotesize\ttfamily HRESULT CLog\+::\+Print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_c_log_acff1fd25b324a62fca5dcb050073eea5_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_log_acff1fd25b324a62fca5dcb050073eea5_icgraph}
+\end{center}
+\end{figure}
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+My\+Log/\mbox{\hyperlink{_my_log_8h}{My\+Log.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+Utility/\+My\+Log/\mbox{\hyperlink{_my_log_8cpp}{My\+Log.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,269 @@
+\hypertarget{class_c_ogg_load}{}\doxysection{COgg\+Load クラス}
+\label{class_c_ogg_load}\index{COggLoad@{COggLoad}}
+
+
+{\ttfamily \#include $<$Ogg\+Load.\+h$>$}
+
+\doxysubsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_ogg_load_a27afd752089bf409adf0eaeb06b9fd76}{COgg\+Load}} ()
+\item 
+virtual \mbox{\hyperlink{class_c_ogg_load_a6d9b76f8cfc54168e6137d908e28d95f}{$\sim$\+COgg\+Load}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_abfa641b3952b47c7a6f3cfba514bb874}{Create\+Ogg\+Data}} (std\+::string s\+File\+Name, const bool \&is\+SE=false, bool is\+Buffered=false)
+\item 
+bool \mbox{\hyperlink{class_c_ogg_load_adfb883a43cbe893157741be401151ef7}{Get\+Ready}} ()
+\item 
+const char $\ast$ \mbox{\hyperlink{class_c_ogg_load_a7d853742ccbb0fbba166ea6665d9ce86}{Get\+File\+Name}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_ab25c3a6f165a9651e12e9e85dfd63275}{Open}} (std\+::string s\+File\+Name, bool is\+Buffered=false)
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_a01277d1490bc1608eed9e5c4c4122fc2}{Close}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_ada93e26b09c836426ad4aac0ed1365a3}{Read}} (BYTE $\ast$buffer, DWORD size, DWORD $\ast$read\+Size)
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_a29c443632c44fbae21cebba23f4ccff4}{Write}} (UINT write\+Size, BYTE $\ast$data, UINT wrote\+Size)
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_a0054aaf78182db4b7fc6a2342c265f35}{Read\+Chunk}} (BYTE $\ast$$\ast$buffer, int buffer\+Count, const int len, int $\ast$read\+Size)
+\item 
+DWORD \mbox{\hyperlink{class_c_ogg_load_a1d053ff03d4fd6d505a01a4a793b2259}{Get\+Size}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_a2ede1e0ee0d94fbc9cb7a945c43d29ca}{Reset\+File}} ()
+\item 
+HRESULT \mbox{\hyperlink{class_c_ogg_load_a121bdb3d9f4527d1eec2718592feb4cc}{Seek\+File}} (double \&Second)
+\item 
+double \mbox{\hyperlink{class_c_ogg_load_a483e1285142eeab1a2f7bde3fc254683}{Get\+File\+Frame}} ()
+\item 
+WAVEFORMATEX $\ast$ \mbox{\hyperlink{class_c_ogg_load_ab9a347b27010560fb2b7502a355a1527}{Get\+Format}} ()
+\item 
+BYTE $\ast$ \mbox{\hyperlink{class_c_ogg_load_a58cd180071c286748e291836b15d8fda}{Get\+SEWave\+Buffer}} ()
+\item 
+DWORD \mbox{\hyperlink{class_c_ogg_load_af5df906827a7faff4f1362fff6a4c164}{Get\+SEFile\+Size}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{構築子と解体子}
+\mbox{\Hypertarget{class_c_ogg_load_a27afd752089bf409adf0eaeb06b9fd76}\label{class_c_ogg_load_a27afd752089bf409adf0eaeb06b9fd76}} 
+\index{COggLoad@{COggLoad}!COggLoad@{COggLoad}}
+\index{COggLoad@{COggLoad}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{COggLoad()}{COggLoad()}}
+{\footnotesize\ttfamily COgg\+Load\+::\+COgg\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_c_ogg_load_a6d9b76f8cfc54168e6137d908e28d95f}\label{class_c_ogg_load_a6d9b76f8cfc54168e6137d908e28d95f}} 
+\index{COggLoad@{COggLoad}!````~COggLoad@{$\sim$COggLoad}}
+\index{````~COggLoad@{$\sim$COggLoad}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{$\sim$COggLoad()}{~COggLoad()}}
+{\footnotesize\ttfamily COgg\+Load\+::$\sim$\+COgg\+Load (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_c_ogg_load_a6d9b76f8cfc54168e6137d908e28d95f_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{関数詳解}
+\mbox{\Hypertarget{class_c_ogg_load_a01277d1490bc1608eed9e5c4c4122fc2}\label{class_c_ogg_load_a01277d1490bc1608eed9e5c4c4122fc2}} 
+\index{COggLoad@{COggLoad}!Close@{Close}}
+\index{Close@{Close}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{class_c_ogg_load_a01277d1490bc1608eed9e5c4c4122fc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_abfa641b3952b47c7a6f3cfba514bb874}\label{class_c_ogg_load_abfa641b3952b47c7a6f3cfba514bb874}} 
+\index{COggLoad@{COggLoad}!CreateOggData@{CreateOggData}}
+\index{CreateOggData@{CreateOggData}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{CreateOggData()}{CreateOggData()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Create\+Ogg\+Data (\begin{DoxyParamCaption}\item[{std\+::string}]{s\+File\+Name,  }\item[{const bool \&}]{is\+SE = {\ttfamily false},  }\item[{bool}]{is\+Buffered = {\ttfamily false} }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_abfa641b3952b47c7a6f3cfba514bb874_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_a483e1285142eeab1a2f7bde3fc254683}\label{class_c_ogg_load_a483e1285142eeab1a2f7bde3fc254683}} 
+\index{COggLoad@{COggLoad}!GetFileFrame@{GetFileFrame}}
+\index{GetFileFrame@{GetFileFrame}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetFileFrame()}{GetFileFrame()}}
+{\footnotesize\ttfamily double COgg\+Load\+::\+Get\+File\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_a483e1285142eeab1a2f7bde3fc254683_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_a7d853742ccbb0fbba166ea6665d9ce86}\label{class_c_ogg_load_a7d853742ccbb0fbba166ea6665d9ce86}} 
+\index{COggLoad@{COggLoad}!GetFileName@{GetFileName}}
+\index{GetFileName@{GetFileName}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetFileName()}{GetFileName()}}
+{\footnotesize\ttfamily const char$\ast$ COgg\+Load\+::\+Get\+File\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_ogg_load_ab9a347b27010560fb2b7502a355a1527}\label{class_c_ogg_load_ab9a347b27010560fb2b7502a355a1527}} 
+\index{COggLoad@{COggLoad}!GetFormat@{GetFormat}}
+\index{GetFormat@{GetFormat}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetFormat()}{GetFormat()}}
+{\footnotesize\ttfamily WAVEFORMATEX$\ast$ COgg\+Load\+::\+Get\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_ab9a347b27010560fb2b7502a355a1527_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_adfb883a43cbe893157741be401151ef7}\label{class_c_ogg_load_adfb883a43cbe893157741be401151ef7}} 
+\index{COggLoad@{COggLoad}!GetReady@{GetReady}}
+\index{GetReady@{GetReady}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetReady()}{GetReady()}}
+{\footnotesize\ttfamily bool COgg\+Load\+::\+Get\+Ready (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_adfb883a43cbe893157741be401151ef7_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_af5df906827a7faff4f1362fff6a4c164}\label{class_c_ogg_load_af5df906827a7faff4f1362fff6a4c164}} 
+\index{COggLoad@{COggLoad}!GetSEFileSize@{GetSEFileSize}}
+\index{GetSEFileSize@{GetSEFileSize}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetSEFileSize()}{GetSEFileSize()}}
+{\footnotesize\ttfamily DWORD COgg\+Load\+::\+Get\+SEFile\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_ogg_load_a58cd180071c286748e291836b15d8fda}\label{class_c_ogg_load_a58cd180071c286748e291836b15d8fda}} 
+\index{COggLoad@{COggLoad}!GetSEWaveBuffer@{GetSEWaveBuffer}}
+\index{GetSEWaveBuffer@{GetSEWaveBuffer}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetSEWaveBuffer()}{GetSEWaveBuffer()}}
+{\footnotesize\ttfamily BYTE$\ast$ COgg\+Load\+::\+Get\+SEWave\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_c_ogg_load_a1d053ff03d4fd6d505a01a4a793b2259}\label{class_c_ogg_load_a1d053ff03d4fd6d505a01a4a793b2259}} 
+\index{COggLoad@{COggLoad}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily DWORD COgg\+Load\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_a1d053ff03d4fd6d505a01a4a793b2259_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_ab25c3a6f165a9651e12e9e85dfd63275}\label{class_c_ogg_load_ab25c3a6f165a9651e12e9e85dfd63275}} 
+\index{COggLoad@{COggLoad}!Open@{Open}}
+\index{Open@{Open}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Open (\begin{DoxyParamCaption}\item[{std\+::string}]{s\+File\+Name,  }\item[{bool}]{is\+Buffered = {\ttfamily false} }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_c_ogg_load_ab25c3a6f165a9651e12e9e85dfd63275_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_ada93e26b09c836426ad4aac0ed1365a3}\label{class_c_ogg_load_ada93e26b09c836426ad4aac0ed1365a3}} 
+\index{COggLoad@{COggLoad}!Read@{Read}}
+\index{Read@{Read}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Read (\begin{DoxyParamCaption}\item[{BYTE $\ast$}]{buffer,  }\item[{DWORD}]{size,  }\item[{DWORD $\ast$}]{read\+Size }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_c_ogg_load_ada93e26b09c836426ad4aac0ed1365a3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_a0054aaf78182db4b7fc6a2342c265f35}\label{class_c_ogg_load_a0054aaf78182db4b7fc6a2342c265f35}} 
+\index{COggLoad@{COggLoad}!ReadChunk@{ReadChunk}}
+\index{ReadChunk@{ReadChunk}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{ReadChunk()}{ReadChunk()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Read\+Chunk (\begin{DoxyParamCaption}\item[{BYTE $\ast$$\ast$}]{buffer,  }\item[{int}]{buffer\+Count,  }\item[{const int}]{len,  }\item[{int $\ast$}]{read\+Size }\end{DoxyParamCaption})}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_a0054aaf78182db4b7fc6a2342c265f35_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_a2ede1e0ee0d94fbc9cb7a945c43d29ca}\label{class_c_ogg_load_a2ede1e0ee0d94fbc9cb7a945c43d29ca}} 
+\index{COggLoad@{COggLoad}!ResetFile@{ResetFile}}
+\index{ResetFile@{ResetFile}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{ResetFile()}{ResetFile()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Reset\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_c_ogg_load_a2ede1e0ee0d94fbc9cb7a945c43d29ca_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_a2ede1e0ee0d94fbc9cb7a945c43d29ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_a121bdb3d9f4527d1eec2718592feb4cc}\label{class_c_ogg_load_a121bdb3d9f4527d1eec2718592feb4cc}} 
+\index{COggLoad@{COggLoad}!SeekFile@{SeekFile}}
+\index{SeekFile@{SeekFile}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{SeekFile()}{SeekFile()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Seek\+File (\begin{DoxyParamCaption}\item[{double \&}]{Second }\end{DoxyParamCaption})}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_c_ogg_load_a121bdb3d9f4527d1eec2718592feb4cc_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_c_ogg_load_a121bdb3d9f4527d1eec2718592feb4cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_c_ogg_load_a29c443632c44fbae21cebba23f4ccff4}\label{class_c_ogg_load_a29c443632c44fbae21cebba23f4ccff4}} 
+\index{COggLoad@{COggLoad}!Write@{Write}}
+\index{Write@{Write}!COggLoad@{COggLoad}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily HRESULT COgg\+Load\+::\+Write (\begin{DoxyParamCaption}\item[{UINT}]{write\+Size,  }\item[{BYTE $\ast$}]{data,  }\item[{UINT}]{wrote\+Size }\end{DoxyParamCaption})}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\+Ogg\+Load/\mbox{\hyperlink{_ogg_load_8h}{Ogg\+Load.\+h}}\item 
+C\+:/\+Users/hera/\+Desktop/\+Req1630/\+Hulien/\+Hulien/\+Source\+Code/\+XAudio2/\+Ogg\+Load/\mbox{\hyperlink{_ogg_load_8cpp}{Ogg\+Load.\+cpp}}\end{DoxyCompactItemize}
